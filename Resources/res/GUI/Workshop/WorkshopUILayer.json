@@ -1,0 +1,1004 @@
+{
+  "ID": "2ff90a97-3611-44f8-b3cf-35a91b09eba4",
+  "Version": "2.3.4",
+  "Name": "WorkshopUILayer",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Children": [
+          {
+            "ClipAble": false,
+            "BackColorAlpha": 102,
+            "SingleColor": {
+              "R": 150,
+              "G": 200
+            },
+            "FirstColor": {
+              "R": 150,
+              "G": 200
+            },
+            "EndColor": {},
+            "ColorVector": {
+              "ScaleY": 1.0
+            },
+            "Scale9Width": 1,
+            "Scale9Height": 1,
+            "TouchEnable": true,
+            "StretchWidthEnable": true,
+            "StretchHeightEnable": true,
+            "AnchorPoint": {},
+            "Position": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "PreSize": {
+              "X": 1.0,
+              "Y": 1.0
+            },
+            "HorizontalEdge": "BothEdge",
+            "VerticalEdge": "BothEdge",
+            "Tag": 143,
+            "Children": [
+              {
+                "FileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "normal_bg.png",
+                  "Plist": "Resources/Backgrounds.plist"
+                },
+                "Scale9OriginX": 374,
+                "Scale9OriginY": 211,
+                "Scale9Width": 388,
+                "Scale9Height": 218,
+                "StretchWidthEnable": true,
+                "StretchHeightEnable": true,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "PreSize": {
+                  "X": 1.0,
+                  "Y": 1.0
+                },
+                "HorizontalEdge": "BothEdge",
+                "VerticalEdge": "BothEdge",
+                "Tag": 142,
+                "ActionTag": -263215039,
+                "Size": {
+                  "X": 1136.0,
+                  "Y": 640.0
+                },
+                "Name": "imgBg",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "ClipAble": false,
+                "BackColorAlpha": 102,
+                "SingleColor": {
+                  "R": 150,
+                  "G": 200
+                },
+                "FirstColor": {
+                  "R": 150,
+                  "G": 200
+                },
+                "EndColor": {},
+                "ColorVector": {
+                  "ScaleY": 1.0
+                },
+                "TouchEnable": true,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PositionPercentXEnabled": true,
+                "PositionPercentYEnabled": true,
+                "PrePosition": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "PercentWidthEnable": true,
+                "PercentHeightEnable": true,
+                "PercentWidthEnabled": true,
+                "PercentHeightEnabled": true,
+                "PreSize": {
+                  "X": 1.0,
+                  "Y": 1.0
+                },
+                "Tag": 128,
+                "ActionTag": -114065005,
+                "Size": {
+                  "X": 1136.0,
+                  "Y": 640.0
+                },
+                "Name": "pnContent",
+                "ctype": "PanelObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "inven_Glass_Title.png",
+                  "Plist": "Resources/Inventory.plist"
+                },
+                "Scale9Enable": true,
+                "Scale9OriginX": 66,
+                "Scale9Width": 308,
+                "Scale9Height": 70,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 1.0
+                },
+                "Position": {
+                  "X": 566.0,
+                  "Y": 640.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PositionPercentXEnabled": true,
+                "PositionPercentYEnabled": true,
+                "PrePosition": {
+                  "X": 0.4982,
+                  "Y": 1.0
+                },
+                "PreSize": {
+                  "X": 0.3873,
+                  "Y": 0.1094
+                },
+                "LeftMargin": 346.0,
+                "RightMargin": 350.0,
+                "BottomMargin": 570.0,
+                "Tag": 137,
+                "Children": [
+                  {
+                    "FileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "workshop_Title.png",
+                      "Plist": "Workshop/res/Workshop.plist"
+                    },
+                    "Scale9OriginX": 112,
+                    "Scale9OriginY": 11,
+                    "Scale9Width": 53,
+                    "Scale9Height": 16,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 220.0,
+                      "Y": 35.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PositionPercentXEnabled": true,
+                    "PositionPercentYEnabled": true,
+                    "PrePosition": {
+                      "X": 0.5,
+                      "Y": 0.5
+                    },
+                    "PreSize": {
+                      "X": 0.6295,
+                      "Y": 0.5429
+                    },
+                    "LeftMargin": 81.5,
+                    "RightMargin": 81.5,
+                    "TopMargin": 16.0,
+                    "BottomMargin": 16.0,
+                    "Tag": 138,
+                    "ActionTag": 1546969944,
+                    "Size": {
+                      "X": 277.0,
+                      "Y": 38.0
+                    },
+                    "Name": "imgTitle",
+                    "ctype": "ImageViewObjectData"
+                  }
+                ],
+                "ActionTag": -1198495649,
+                "Size": {
+                  "X": 440.0,
+                  "Y": 70.0
+                },
+                "Name": "imgTitleBar",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FontSize": 14,
+                "ButtonText": "",
+                "TextColor": {
+                  "R": 65,
+                  "G": 65,
+                  "B": 70
+                },
+                "DisabledFileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "inven_Glass_Back.png",
+                  "Plist": "Resources/Inventory.plist"
+                },
+                "PressedFileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "inven_Glass_Back.png",
+                  "Plist": "Resources/Inventory.plist"
+                },
+                "NormalFileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "inven_Glass_Back.png",
+                  "Plist": "Resources/Inventory.plist"
+                },
+                "Scale9Enable": true,
+                "Scale9OriginX": 15,
+                "Scale9OriginY": 11,
+                "Scale9Width": 52,
+                "Scale9Height": 34,
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "TouchEnable": true,
+                "AnchorPoint": {
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 0.0,
+                  "Y": 602.1702
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.0,
+                  "Y": 0.9409
+                },
+                "PreSize": {
+                  "X": 0.0722,
+                  "Y": 0.0875
+                },
+                "HorizontalEdge": "LeftEdge",
+                "VerticalEdge": "TopEdge",
+                "RightMargin": 1054.0,
+                "TopMargin": 9.8298,
+                "BottomMargin": 574.1702,
+                "Tag": 140,
+                "Children": [
+                  {
+                    "FileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "Button_Back.png",
+                      "Plist": "Resources/Buttons.plist"
+                    },
+                    "Scale9OriginX": 18,
+                    "Scale9OriginY": 15,
+                    "Scale9Width": 19,
+                    "Scale9Height": 18,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 39.4748,
+                      "Y": 27.0648
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.4814,
+                      "Y": 0.4833
+                    },
+                    "PreSize": {
+                      "X": 0.6707,
+                      "Y": 0.8571
+                    },
+                    "HorizontalEdge": "BothEdge",
+                    "VerticalEdge": "BothEdge",
+                    "LeftMargin": 11.9748,
+                    "RightMargin": 15.0252,
+                    "TopMargin": 4.9352,
+                    "BottomMargin": 3.0648,
+                    "Tag": 141,
+                    "ActionTag": 751818500,
+                    "Size": {
+                      "X": 55.0,
+                      "Y": 48.0
+                    },
+                    "Name": "imgBack",
+                    "ctype": "ImageViewObjectData"
+                  }
+                ],
+                "ActionTag": -1158848215,
+                "Size": {
+                  "X": 82.0,
+                  "Y": 56.0
+                },
+                "Name": "btnBack",
+                "ctype": "ButtonObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "workshop_changecue_Tab.png",
+                  "Plist": "Workshop/res/Workshop.plist"
+                },
+                "Scale9OriginX": 40,
+                "Scale9OriginY": 21,
+                "Scale9Width": 43,
+                "Scale9Height": 23,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 1074.5371,
+                  "Y": 600.4834
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.9459,
+                  "Y": 0.9383
+                },
+                "PreSize": {
+                  "X": 0.1083,
+                  "Y": 0.1016
+                },
+                "HorizontalEdge": "RightEdge",
+                "VerticalEdge": "TopEdge",
+                "LeftMargin": 1013.0371,
+                "RightMargin": -0.0371,
+                "TopMargin": 7.0166,
+                "BottomMargin": 567.9834,
+                "Tag": 744,
+                "Children": [
+                  {
+                    "FontSize": 14,
+                    "ButtonText": "",
+                    "TextColor": {
+                      "R": 65,
+                      "G": 65,
+                      "B": 70
+                    },
+                    "Scale9Enable": true,
+                    "Scale9OriginX": -15,
+                    "Scale9OriginY": -5,
+                    "Scale9Width": 30,
+                    "Scale9Height": 10,
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "R": 110,
+                      "G": 110,
+                      "B": 110
+                    },
+                    "ShadowOffsetX": 2.0,
+                    "ShadowOffsetY": -2.0,
+                    "TouchEnable": true,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 52.1949,
+                      "Y": 28.8941
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.4243,
+                      "Y": 0.4445
+                    },
+                    "PreSize": {
+                      "X": 0.7122,
+                      "Y": 0.8771
+                    },
+                    "HorizontalEdge": "RightEdge",
+                    "VerticalEdge": "TopEdge",
+                    "LeftMargin": 8.3944,
+                    "RightMargin": 27.0047,
+                    "TopMargin": 7.6016,
+                    "BottomMargin": 0.3899,
+                    "Tag": 745,
+                    "Children": [
+                      {
+                        "FileData": {
+                          "Type": "PlistSubImage",
+                          "Path": "workshop_changecue_icon.png",
+                          "Plist": "Workshop/res/Workshop.plist"
+                        },
+                        "Scale9OriginX": 25,
+                        "Scale9OriginY": 13,
+                        "Scale9Width": 27,
+                        "Scale9Height": 14,
+                        "AnchorPoint": {
+                          "ScaleX": 0.5,
+                          "ScaleY": 0.5
+                        },
+                        "Position": {
+                          "X": 46.0,
+                          "Y": 29.0005
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "CColor": {},
+                        "IconVisible": false,
+                        "PrePosition": {
+                          "X": 0.5251,
+                          "Y": 0.5087
+                        },
+                        "PreSize": {
+                          "X": 0.879,
+                          "Y": 0.7016
+                        },
+                        "LeftMargin": 7.5,
+                        "RightMargin": 3.1009,
+                        "TopMargin": 8.008,
+                        "BottomMargin": 9.0005,
+                        "Tag": 746,
+                        "ActionTag": 726401012,
+                        "Size": {
+                          "X": 77.0,
+                          "Y": 40.0
+                        },
+                        "Name": "img",
+                        "ctype": "ImageViewObjectData"
+                      }
+                    ],
+                    "ActionTag": -124951532,
+                    "Size": {
+                      "X": 87.6009,
+                      "Y": 57.0085
+                    },
+                    "Name": "btnInventory",
+                    "ctype": "ButtonObjectData"
+                  }
+                ],
+                "ActionTag": -1598105770,
+                "Size": {
+                  "X": 123.0,
+                  "Y": 65.0
+                },
+                "Name": "dockInventory",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "workshop_Tab_All.png",
+                  "Plist": "Workshop/res/Workshop.plist"
+                },
+                "Scale9OriginX": 33,
+                "Scale9OriginY": 109,
+                "Scale9Width": 35,
+                "Scale9Height": 113,
+                "AnchorPoint": {
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 0.0,
+                  "Y": 320.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PositionPercentYEnabled": true,
+                "PrePosition": {
+                  "X": 0.0,
+                  "Y": 0.5
+                },
+                "PreSize": {
+                  "X": 0.0889,
+                  "Y": 0.5172
+                },
+                "RightMargin": 1035.0,
+                "TopMargin": 154.5,
+                "BottomMargin": 154.5,
+                "Tag": 332,
+                "Children": [
+                  {
+                    "FileData": {
+                      "Type": "Normal",
+                      "Path": "Shop/res/BLACKMARKET/Tab_choose_01.png",
+                      "Plist": ""
+                    },
+                    "Scale9OriginX": 33,
+                    "Scale9OriginY": 35,
+                    "Scale9Width": 35,
+                    "Scale9Height": 37,
+                    "AnchorPoint": {
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 0.0,
+                      "Y": 277.4547
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.0,
+                      "Y": 0.8382
+                    },
+                    "PreSize": {
+                      "X": 1.0,
+                      "Y": 0.3233
+                    },
+                    "TopMargin": 0.0453,
+                    "BottomMargin": 223.9547,
+                    "Tag": 333,
+                    "ActionTag": -249553118,
+                    "Size": {
+                      "X": 101.0,
+                      "Y": 107.0
+                    },
+                    "Name": "imgTabActive1",
+                    "ctype": "ImageViewObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "Normal",
+                      "Path": "Shop/res/BLACKMARKET/Tab_choose_02.png",
+                      "Plist": ""
+                    },
+                    "Scale9OriginX": 33,
+                    "Scale9OriginY": 35,
+                    "Scale9Width": 35,
+                    "Scale9Height": 37,
+                    "AnchorPoint": {
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 0.0,
+                      "Y": 168.4526
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.0,
+                      "Y": 0.5089
+                    },
+                    "PreSize": {
+                      "X": 1.0,
+                      "Y": 0.3233
+                    },
+                    "TopMargin": 109.0474,
+                    "BottomMargin": 114.9526,
+                    "Tag": 334,
+                    "ActionTag": 1510706645,
+                    "Size": {
+                      "X": 101.0,
+                      "Y": 107.0
+                    },
+                    "Name": "imgTabActive2",
+                    "ctype": "ImageViewObjectData"
+                  },
+                  {
+                    "FlipY": true,
+                    "FileData": {
+                      "Type": "Normal",
+                      "Path": "Shop/res/BLACKMARKET/Tab_choose_01.png",
+                      "Plist": ""
+                    },
+                    "Scale9OriginX": 33,
+                    "Scale9OriginY": 35,
+                    "Scale9Width": 35,
+                    "Scale9Height": 37,
+                    "AnchorPoint": {
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": -0.0001,
+                      "Y": 58.7075
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.0,
+                      "Y": 0.1774
+                    },
+                    "PreSize": {
+                      "X": 1.0,
+                      "Y": 0.3233
+                    },
+                    "LeftMargin": -0.0001,
+                    "RightMargin": 0.0001,
+                    "TopMargin": 218.7925,
+                    "BottomMargin": 5.2075,
+                    "Tag": 335,
+                    "ActionTag": 1281643969,
+                    "Size": {
+                      "X": 101.0,
+                      "Y": 107.0
+                    },
+                    "Name": "imgTabActive3",
+                    "ctype": "ImageViewObjectData"
+                  },
+                  {
+                    "FontSize": 14,
+                    "ButtonText": "",
+                    "TextColor": {
+                      "R": 65,
+                      "G": 65,
+                      "B": 70
+                    },
+                    "DisabledFileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "workshop_Upgrade_Tab_02.png",
+                      "Plist": "Workshop/res/Workshop.plist"
+                    },
+                    "PressedFileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "workshop_Upgrade_Tab_02.png",
+                      "Plist": "Workshop/res/Workshop.plist"
+                    },
+                    "NormalFileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "workshop_Upgrade_Tab_02.png",
+                      "Plist": "Workshop/res/Workshop.plist"
+                    },
+                    "Scale9Enable": true,
+                    "Scale9OriginX": 15,
+                    "Scale9OriginY": 5,
+                    "Scale9Width": 56,
+                    "Scale9Height": 77,
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "R": 110,
+                      "G": 110,
+                      "B": 110
+                    },
+                    "ShadowOffsetX": 2.0,
+                    "ShadowOffsetY": -2.0,
+                    "TouchEnable": true,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 49.49,
+                      "Y": 277.0007
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.49,
+                      "Y": 0.8369
+                    },
+                    "PreSize": {
+                      "X": 0.8515,
+                      "Y": 0.2628
+                    },
+                    "HorizontalEdge": "BothEdge",
+                    "LeftMargin": 6.49,
+                    "RightMargin": 8.51,
+                    "TopMargin": 10.4993,
+                    "BottomMargin": 233.5007,
+                    "Tag": 145,
+                    "ActionTag": 1322830035,
+                    "Size": {
+                      "X": 86.0,
+                      "Y": 87.0
+                    },
+                    "Name": "btnTabUpgrade",
+                    "ctype": "ButtonObjectData"
+                  },
+                  {
+                    "FontSize": 14,
+                    "ButtonText": "",
+                    "TextColor": {
+                      "R": 65,
+                      "G": 65,
+                      "B": 70
+                    },
+                    "DisabledFileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "workshop_Swap_Tab_02.png",
+                      "Plist": "Workshop/res/Workshop.plist"
+                    },
+                    "PressedFileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "workshop_Swap_Tab_02.png",
+                      "Plist": "Workshop/res/Workshop.plist"
+                    },
+                    "NormalFileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "workshop_Swap_Tab_02.png",
+                      "Plist": "Workshop/res/Workshop.plist"
+                    },
+                    "Scale9Enable": true,
+                    "Scale9OriginX": 15,
+                    "Scale9OriginY": 11,
+                    "Scale9Width": 56,
+                    "Scale9Height": 65,
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "R": 110,
+                      "G": 110,
+                      "B": 110
+                    },
+                    "ShadowOffsetX": 2.0,
+                    "ShadowOffsetY": -2.0,
+                    "TouchEnable": true,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 50.6717,
+                      "Y": 56.7705
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.5017,
+                      "Y": 0.1715
+                    },
+                    "PreSize": {
+                      "X": 0.8515,
+                      "Y": 0.2628
+                    },
+                    "HorizontalEdge": "BothEdge",
+                    "LeftMargin": 7.6717,
+                    "RightMargin": 7.3283,
+                    "TopMargin": 230.7295,
+                    "BottomMargin": 13.2705,
+                    "Tag": 147,
+                    "ActionTag": -731982039,
+                    "Size": {
+                      "X": 86.0,
+                      "Y": 87.0
+                    },
+                    "Name": "btnTabSwap",
+                    "ctype": "ButtonObjectData"
+                  },
+                  {
+                    "FontSize": 14,
+                    "ButtonText": "",
+                    "TextColor": {
+                      "R": 65,
+                      "G": 65,
+                      "B": 70
+                    },
+                    "DisabledFileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "workshop_Fusion_Tab_02.png",
+                      "Plist": "Workshop/res/Workshop.plist"
+                    },
+                    "PressedFileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "workshop_Fusion_Tab_02.png",
+                      "Plist": "Workshop/res/Workshop.plist"
+                    },
+                    "NormalFileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "workshop_Fusion_Tab_02.png",
+                      "Plist": "Workshop/res/Workshop.plist"
+                    },
+                    "Scale9Enable": true,
+                    "Scale9OriginX": 15,
+                    "Scale9OriginY": 11,
+                    "Scale9Width": 56,
+                    "Scale9Height": 64,
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "R": 110,
+                      "G": 110,
+                      "B": 110
+                    },
+                    "ShadowOffsetX": 2.0,
+                    "ShadowOffsetY": -2.0,
+                    "TouchEnable": true,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 50.0253,
+                      "Y": 170.9156
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.4953,
+                      "Y": 0.5164
+                    },
+                    "PreSize": {
+                      "X": 0.8515,
+                      "Y": 0.2598
+                    },
+                    "HorizontalEdge": "BothEdge",
+                    "LeftMargin": 7.0253,
+                    "RightMargin": 7.9747,
+                    "TopMargin": 117.0844,
+                    "BottomMargin": 127.9156,
+                    "Tag": 146,
+                    "ActionTag": 828305207,
+                    "Size": {
+                      "X": 86.0,
+                      "Y": 86.0
+                    },
+                    "Name": "btnTabFusion",
+                    "ctype": "ButtonObjectData"
+                  }
+                ],
+                "ActionTag": -1626137538,
+                "Size": {
+                  "X": 101.0,
+                  "Y": 331.0
+                },
+                "Name": "imgTabs",
+                "ctype": "ImageViewObjectData"
+              }
+            ],
+            "ActionTag": 1739922183,
+            "Size": {
+              "X": 1136.0,
+              "Y": 640.0
+            },
+            "Name": "bg",
+            "ctype": "PanelObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "Workshop/res/Fake_XuongGay_01_i5_UPGRADE.png",
+              "Plist": ""
+            },
+            "Scale9OriginX": 374,
+            "Scale9OriginY": 211,
+            "Scale9Width": 388,
+            "Scale9Height": 218,
+            "AnchorPoint": {},
+            "Position": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "PreSize": {
+              "X": 1.0,
+              "Y": 1.0
+            },
+            "Tag": 331,
+            "ActionTag": -94136477,
+            "Size": {
+              "X": 1136.0,
+              "Y": 640.0
+            },
+            "Alpha": 124,
+            "Name": "fake",
+            "ctype": "ImageViewObjectData"
+          }
+        ],
+        "Size": {
+          "X": 1136.0,
+          "Y": 640.0
+        },
+        "Name": "Layer",
+        "ctype": "LayerObjectData"
+      },
+      "UsedResources": [
+        "../Resources/Backgrounds.plist",
+        "../Resources/Backgrounds.png",
+        "../Resources/Buttons.plist",
+        "../Resources/Buttons.png",
+        "../Resources/Inventory.plist",
+        "../Resources/Inventory.png",
+        "../Shop/res/BLACKMARKET/Tab_choose_01.png",
+        "../Shop/res/BLACKMARKET/Tab_choose_02.png",
+        "res/Fake_XuongGay_01_i5_UPGRADE.png",
+        "res/Workshop.plist",
+        "res/Workshop.png"
+      ],
+      "ctype": "GameFileData"
+    }
+  },
+  "Type": "Layer"
+}

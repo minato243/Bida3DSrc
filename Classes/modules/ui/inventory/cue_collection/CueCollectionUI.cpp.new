@@ -1,0 +1,225 @@
+#include "CueCollectionUI.cpp.h"
+
+{
+    CueCollectionUI::CueCollectionUI(){
+        this->_super({tag: Popup.CUE_COLLECTION_UI});
+        this->keep = true;
+        this->initCamera();
+        this->initWithJsonFile(res.GUI.CueCollectionUI);
+    }
+
+    void CueCollectionUI::show(){
+        this->_super();
+        this->refresh();
+
+        MainLayer.instance.setVisible(false);
+        if(gv.GuiMgr.isCached(Popup.LOBBY_UI)){
+            gv.GuiMgr.getGui(Popup.LOBBY_UI, LobbyUILayer).setVisible(false);
+        }
+    }
+
+    void CueCollectionUI::hide(){
+        this->_super();
+
+        MainLayer.instance.setVisible(true);
+        if(gv.GuiMgr.isCached(Popup.LOBBY_UI)){
+            gv.GuiMgr.getGui(Popup.LOBBY_UI, LobbyUILayer).setVisible(true);
+        }
+    }
+
+    void CueCollectionUI::refresh(){
+        this->_super();
+        this->updateTab();
+    }
+
+    void CueCollectionUI::updateTab(){
+        if(this->_curTab < 0) return;
+
+        auto type = [3,4,2,1][this->_curTab];
+        auto iconName = {
+            1: "CC_Icon_Yellow_Big_01.png",
+            2: "CC_Icon_Red_Big_01.png",
+            3: "CC_Icon_Purple_Big_01.png",
+            4: "CC_Icon_Green_Big_01.png"
+        };
+
+        auto typeData = gv.inventoryMgr.getCueCollectionData(type);
+        auto ownedInType = typeData.filter(e => e.owned);
+
+        auto img = this->_bg._pnDockCount._imgPanel._imgType;
+        auto countString = ownedInType.length + "/" + typeData.length;
+        img.loadTexture(iconName[type], ccui.Widget.PLIST_TEXTURE);
+        this->_bg._pnDockCount._imgPanel._lbCount.setString(countString);
+
+        auto scale = 40 / img.width;
+        img.setScale(scale);
+    }
+
+    void CueCollectionUI::initCamera(){
+        this->cam = new cc.Camera(
+            cc.Camera.Mode.ORTHOGRAPHIC,
+            cc.winSize.width,
+            cc.winSize.height,
+            -10,
+            50
+        );
+        this->addChild(this->cam);
+        this->cam.setDepth(3);
+        this->cam.setPosition3D(Vec3(0,0,10));
+        this->cam.lookAt(Vec3(0,0,0));
+        this->cam.setCameraFlag(GameCamera.FLAG_3D_ABOVE_UI);
+
+        this->cam = new cc.Camera(
+            cc.Camera.Mode.ORTHOGRAPHIC,
+            cc.winSize.width,
+            cc.winSize.height,
+            -10,
+            50
+        );
+        this->addChild(this->cam);
+        this->cam.setDepth(4);
+        this->cam.setPosition3D(Vec3(0,0,10));
+        this->cam.lookAt(Vec3(0,0,0));
+        this->cam.setCameraFlag(GameCamera.FLAG_UI_HIGHEST);
+
+        this->cam = new cc.Camera(
+            cc.Camera.Mode.ORTHOGRAPHIC,
+            cc.winSize.width,
+            cc.winSize.height,
+            -10,
+            50
+        );
+
+        this->addChild(this->cam);
+        this->cam.setDepth(5);
+        this->cam.setPosition3D(Vec3(0,0,10));
+        this->cam.lookAt(Vec3(0,0,0));
+        this->cam.setCameraFlag(GameCamera.FLAG_UI_ALWAYS_TOP);
+    }
+
+    void CueCollectionUI::initComponent(){
+        this->autoInitComponent();
+        this->_fake.setVisible(false);
+        this->_bg._pnDockCount._imgPanel._imgType.ignoreContentAdaptWithSize(true);
+        this->_bg._imgBg.setCameraMask(GameCamera.FLAG_BG_LOWEST, false);
+        this->initList();
+        this->initTabs();
+    }
+
+    void CueCollectionUI::initTabs(){
+        this->_curTab = 1;
+        this->_tabActivePosX = this->_bg._btnTabMasse.x;
+        this->_tabInactivePosX = this->_bg._btnTabBreak.x;
+        this->btnTab = [this->_bg._btnTabJump, this->_bg._btnTabMasse, this->_bg._btnTabBreak, this->_bg._btnTabBreak];
+        this->btnTab[0]._iconName = "Purple";
+        this->btnTab[1]._iconName = "Green";
+        this->btnTab[2]._iconName = "Red";
+        //this.btnTab[3]._iconName = "Yellow";
+        this->btnTab.forEach(button => button._img.ignoreContentAdaptWithSize(true));
+        this->_bg._imgTabBar._imgTabActive0.setVisible(false);
+        this->_bg._imgTabBar._imgTabActive1.setVisible(false);
+        this->_bg._imgTabBar._imgTabActive2.setVisible(false);
+        //this._bg._imgTabBar._imgTabActive3.setVisible(false);
+        this->switchTab(0);
+    }
+
+    void CueCollectionUI::switchTab(double tabIdx){
+        if(this->_curTab == tabIdx) return;
+        auto oldTab = this->_curTab;
+        this->_curTab = tabIdx;
+
+        auto oldIconName = this->btnTab[oldTab]._iconName;
+        auto newIconName = this->btnTab[tabIdx]._iconName;
+        // this.btnTab[oldTab].x = this._tabInactivePosX;
+        // this.btnTab[oldTab].loadTextures('inventory.v2_Tab_02.png', 'inventory.v2_Tab_02.png', 'inventory.v2_Tab_02.png', ccui.Widget.PLIST_TEXTURE);
+        this->btnTab[oldTab]._img.loadTexture('CC_Icon_' + oldIconName + '_Big_02.png', ccui.Widget.PLIST_TEXTURE);
+        // this.btnTab[oldTab]._img.setPosition(this.btnTab[oldTab].getContentSize().width/2, this.btnTab[oldTab].getContentSize().height/2);
+        // this.btnTab[tabIdx].x = this._tabActivePosX;
+        // this.btnTab[tabIdx].loadTextures('inventory.v2_Tab_01.png', 'inventory.v2_Tab_01.png', 'inventory.v2_Tab_01.png', ccui.Widget.PLIST_TEXTURE);
+        this->btnTab[tabIdx]._img.loadTexture('CC_Icon_' + newIconName + '_Big_01.png', ccui.Widget.PLIST_TEXTURE);
+        // this.btnTab[tabIdx]._img.setPosition(this.btnTab[tabIdx].getContentSize().width/2, this.btnTab[tabIdx].getContentSize().height/2);
+
+        this->_bg._imgTabBar['_imgTabActive'+oldTab].setVisible(false);
+        this->_bg._imgTabBar['_imgTabActive'+tabIdx].setVisible(true);
+
+        this->reloadTableViewData();
+        this->updateTab();
+    }
+
+    void CueCollectionUI::getTypeByTabIndex(double idx){
+        if(isNaN(idx)) idx = this->_curTab;
+        return {
+            0: 3,
+            1: 4,
+            2: 2,
+            3: 1
+        }[idx];
+    }
+
+    void CueCollectionUI::reloadTableViewData(int keep){
+        auto offset;
+        if(keep){
+            offset = this->list.tbView.getContentOffset();
+        }
+        auto data = gv.inventoryMgr.getCueCollectionData(this->getTypeByTabIndex(this->_curTab));
+        // padding with 2 null value
+        // utils.log("data", data);
+        data.unshift(null);
+        data.push_back(null);
+        this->list.loadData(data);
+        if(keep){
+            this->list.tbView.setContentOffset(offset);
+        }
+        else{
+            auto firstOwnIndex = data.findIndex(e => e != null && e.owned);
+            if(firstOwnIndex >= 0){
+                void CueCollectionUI::(int function(){
+                    this->list.scrollToIndex(firstOwnIndex - 1, false);
+                }.bind(this), 0);
+            }
+        }
+    }
+
+    void CueCollectionUI::initList(){
+        auto panel = this->_bg._pnContent;
+        auto sideBarSize = this->_bg._imgTabBar.getContentSize();
+        auto scaleWidth = utils.getScaleFactor().width;
+        auto scaleHeight = utils.getScaleFactor().height;
+        sideBarSize.width *= scaleWidth;
+        sideBarSize.height *= scaleHeight;
+        auto list = new QuickCustomTableView(panel, cc.SCROLLVIEW_DIRECTION_HORIZONTAL, CueCollectionCueItem, -1, 1);
+        panel.addChild(list);
+        void CueCollectionUI::list.onInitItem (int item){
+            item.setModeDetail(false);
+            // item.y -= panel.height * 0.1;
+            item.updateFadeAndOpaqueRect(
+                cc.p(panel.x + sideBarSize.width, panel.y),
+                cc.p(panel.x + panel.width * scaleWidth, panel.y + panel.height * scaleHeight),
+                cc.p(panel.x + sideBarSize.width + 50 * utils.getScaleFactor().width, panel.y),
+                cc.p(panel.x + panel.width * scaleWidth - 50 * utils.getScaleFactor().width, panel.y + panel.height * scaleHeight));
+        }
+        // list.loadData(gv.inventoryMgr.getCueCollectionData(1));
+        // list.loadData([1,2,3,4,5,6,7,8,9,10,11,12,12,3,14,41]);
+        this->list = list;
+    }
+
+    void CueCollectionUI::onButtonTouchEnded(int sender, int tag){
+        switch(tag){
+            case this->tagMap.btnTabMasse:
+                this->switchTab(1);
+                break;
+            case this->tagMap.btnTabBreak:
+                this->switchTab(2);
+                break;
+            // case this.tagMap.btnTabNeutral:
+            //     this.switchTab(3);
+            //     break;
+            case this->tagMap.btnTabJump:
+                this->switchTab(0);
+                break;
+            case this->tagMap.btnBack:
+                this->hide();
+                break;
+        }
+    }
+});

@@ -1,0 +1,34 @@
+
+Round.png
+size: 512,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+2
+  rotate: false
+  xy: 2, 2
+  size: 52, 61
+  orig: 52, 61
+  offset: 0, 0
+  index: -1
+4
+  rotate: false
+  xy: 266, 66
+  size: 52, 60
+  orig: 52, 60
+  offset: 0, 0
+  index: -1
+Layer 1
+  rotate: false
+  xy: 2, 65
+  size: 262, 61
+  orig: 262, 61
+  offset: 0, 0
+  index: -1
+Layer 2
+  rotate: false
+  xy: 56, 2
+  size: 49, 61
+  orig: 49, 61
+  offset: 0, 0
+  index: -1

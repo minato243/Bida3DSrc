@@ -1,0 +1,259 @@
+{
+  "ID": "1a25a851-338e-4348-bab2-0d9df54e10e6",
+  "Version": "2.3.4",
+  "Name": "RankingCupGUI",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Tag": 116,
+        "Children": [
+          {
+            "ClipAble": false,
+            "BackColorAlpha": 102,
+            "SingleColor": {
+              "R": 150,
+              "G": 200
+            },
+            "FirstColor": {
+              "R": 150,
+              "G": 200
+            },
+            "EndColor": {},
+            "ColorVector": {
+              "ScaleY": 1.0
+            },
+            "Scale9Width": 1,
+            "Scale9Height": 1,
+            "TouchEnable": true,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "PercentWidthEnable": true,
+            "PercentHeightEnable": true,
+            "PercentWidthEnabled": true,
+            "PercentHeightEnabled": true,
+            "PreSize": {
+              "X": 1.0,
+              "Y": 1.0
+            },
+            "LeftMargin": -555.0,
+            "RightMargin": 555.0,
+            "TopMargin": 256.0,
+            "BottomMargin": -256.0,
+            "Tag": 176,
+            "Children": [
+              {
+                "InnerNodeSize": {
+                  "Width": 5000,
+                  "Height": 493
+                },
+                "ScrollDirectionType": "Horizontal",
+                "ClipAble": true,
+                "BackColorAlpha": 102,
+                "SingleColor": {
+                  "G": 150,
+                  "B": 100
+                },
+                "FirstColor": {
+                  "G": 150,
+                  "B": 100
+                },
+                "EndColor": {},
+                "ColorVector": {
+                  "ScaleY": 1.0
+                },
+                "Scale9Width": 1,
+                "Scale9Height": 1,
+                "TouchEnable": true,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 555.0,
+                  "Y": 256.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PositionPercentXEnabled": true,
+                "PositionPercentYEnabled": true,
+                "PrePosition": {
+                  "X": 0.5,
+                  "Y": 0.5
+                },
+                "PreSize": {
+                  "X": 0.9459,
+                  "Y": 0.9609
+                },
+                "LeftMargin": 30.0,
+                "RightMargin": 30.0,
+                "TopMargin": 10.0,
+                "BottomMargin": 10.0,
+                "Tag": 195,
+                "Children": [
+                  {
+                    "FileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "League_01_LO_01b.png",
+                      "Plist": "Resources/LeagueSession.plist"
+                    },
+                    "BlendFunc": {
+                      "Src": 1,
+                      "Dst": 771
+                    },
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 1.0
+                    },
+                    "Position": {
+                      "X": 321.9217,
+                      "Y": 140.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.0644,
+                      "Y": 0.284
+                    },
+                    "PreSize": {
+                      "X": 0.017,
+                      "Y": 0.2799
+                    },
+                    "LeftMargin": 279.4217,
+                    "RightMargin": 4635.5781,
+                    "TopMargin": 353.0,
+                    "BottomMargin": 2.0,
+                    "Tag": 105,
+                    "Children": [
+                      {
+                        "FontSize": 28,
+                        "LabelText": "900",
+                        "FontResource": {
+                          "Type": "Normal",
+                          "Path": "Font/facebook.TTF",
+                          "Plist": ""
+                        },
+                        "HorizontalAlignmentType": "HT_Center",
+                        "VerticalAlignmentType": "VT_Center",
+                        "OutlineColor": {
+                          "G": 0,
+                          "B": 0
+                        },
+                        "ShadowColor": {
+                          "R": 110,
+                          "G": 110,
+                          "B": 110
+                        },
+                        "ShadowOffsetX": 2.0,
+                        "ShadowOffsetY": -2.0,
+                        "AnchorPoint": {
+                          "ScaleX": 0.5,
+                          "ScaleY": 0.5
+                        },
+                        "Position": {
+                          "X": 42.5,
+                          "Y": 46.0
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "CColor": {},
+                        "IconVisible": false,
+                        "PositionPercentXEnabled": true,
+                        "PrePosition": {
+                          "X": 0.5,
+                          "Y": 0.3333
+                        },
+                        "PreSize": {
+                          "X": 0.6941,
+                          "Y": 0.2971
+                        },
+                        "LeftMargin": 13.0,
+                        "RightMargin": 13.0,
+                        "TopMargin": 71.5,
+                        "BottomMargin": 25.5,
+                        "Tag": 197,
+                        "ActionTag": -1548806262,
+                        "Size": {
+                          "X": 59.0,
+                          "Y": 41.0
+                        },
+                        "Name": "lb_CurScore",
+                        "ctype": "TextObjectData"
+                      }
+                    ],
+                    "ActionTag": -1695786313,
+                    "Size": {
+                      "X": 85.0,
+                      "Y": 138.0
+                    },
+                    "Name": "iconPoint",
+                    "ctype": "SpriteObjectData"
+                  }
+                ],
+                "ActionTag": -1554630646,
+                "Size": {
+                  "X": 1050.0,
+                  "Y": 492.0
+                },
+                "Name": "srView",
+                "ctype": "ScrollViewObjectData"
+              }
+            ],
+            "ActionTag": -20538202,
+            "Size": {
+              "X": 1110.0,
+              "Y": 512.0
+            },
+            "Name": "bg",
+            "ctype": "PanelObjectData"
+          }
+        ],
+        "Size": {
+          "X": 1110.0,
+          "Y": 512.0
+        },
+        "Name": "Layer",
+        "ctype": "LayerObjectData"
+      },
+      "UsedResources": [
+        "../Font/facebook.TTF",
+        "../Resources/LeagueSession.plist",
+        "../Resources/LeagueSession.png"
+      ],
+      "ctype": "GameFileData"
+    }
+  },
+  "Type": "Layer"
+}

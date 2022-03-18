@@ -1,0 +1,1832 @@
+{
+  "ID": "371a743e-9a87-4e2b-b949-40e024e6bd32",
+  "Version": "2.3.4",
+  "Name": "WorkshopUpgradeCueSelect",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Tag": 257,
+        "Children": [
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "Workshop/res/Fake_XuongGay_02_i5_FUSION.png",
+              "Plist": ""
+            },
+            "Scale9OriginX": 374,
+            "Scale9OriginY": 211,
+            "Scale9Width": 388,
+            "Scale9Height": 218,
+            "AnchorPoint": {},
+            "Position": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "PreSize": {
+              "X": 1.0,
+              "Y": 1.0
+            },
+            "Tag": 574,
+            "ActionTag": -2033563213,
+            "Size": {
+              "X": 1136.0,
+              "Y": 640.0
+            },
+            "Name": "fake",
+            "ctype": "ImageViewObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "Workshop/res/Fake_XuongGay_06_i5_UPGRADE.png",
+              "Plist": ""
+            },
+            "Scale9OriginX": 374,
+            "Scale9OriginY": 211,
+            "Scale9Width": 388,
+            "Scale9Height": 218,
+            "AnchorPoint": {},
+            "Position": {
+              "X": -5.0004,
+              "Y": -32.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": -0.0044,
+              "Y": -0.05
+            },
+            "PreSize": {
+              "X": 1.0,
+              "Y": 1.0
+            },
+            "LeftMargin": -5.0004,
+            "RightMargin": 5.0004,
+            "TopMargin": 32.0,
+            "BottomMargin": -32.0,
+            "Tag": 575,
+            "ActionTag": -1774438384,
+            "Size": {
+              "X": 1136.0,
+              "Y": 640.0
+            },
+            "Name": "fake1",
+            "ctype": "ImageViewObjectData"
+          },
+          {
+            "ClipAble": false,
+            "SingleColor": {
+              "R": 89,
+              "G": 89,
+              "B": 89
+            },
+            "FirstColor": {
+              "R": 150,
+              "G": 200
+            },
+            "EndColor": {},
+            "ColorVector": {
+              "ScaleY": 1.0
+            },
+            "Scale9Width": 1,
+            "Scale9Height": 1,
+            "TouchEnable": true,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 568.0,
+              "Y": 320.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.5,
+              "Y": 0.5
+            },
+            "PreSize": {
+              "X": 0.7042,
+              "Y": 0.8594
+            },
+            "HorizontalEdge": "BothEdge",
+            "VerticalEdge": "BothEdge",
+            "LeftMargin": 168.0,
+            "RightMargin": 168.0,
+            "TopMargin": 45.0,
+            "BottomMargin": 45.0,
+            "Tag": 258,
+            "Children": [
+              {
+                "FileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "workshop_Info_smallbox.png",
+                  "Plist": "Workshop/res/Workshop.plist"
+                },
+                "Scale9OriginX": 197,
+                "Scale9OriginY": 155,
+                "Scale9Width": 205,
+                "Scale9Height": 160,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 399.3073,
+                  "Y": 275.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.4991,
+                  "Y": 0.5
+                },
+                "PreSize": {
+                  "X": 0.9987,
+                  "Y": 0.9636
+                },
+                "HorizontalEdge": "BothEdge",
+                "VerticalEdge": "BothEdge",
+                "LeftMargin": -0.1927,
+                "RightMargin": 1.1926,
+                "TopMargin": 10.0,
+                "BottomMargin": 10.0,
+                "Tag": 576,
+                "ActionTag": -849978507,
+                "Size": {
+                  "X": 799.0,
+                  "Y": 530.0
+                },
+                "Name": "imgBg",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FontSize": 30,
+                "LabelText": "SELECT CUE",
+                "FontResource": {
+                  "Type": "Normal",
+                  "Path": "Font/facebook.TTF",
+                  "Plist": ""
+                },
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 400.0,
+                  "Y": 517.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "RotationSkewX": 8.0,
+                "CColor": {},
+                "IconVisible": false,
+                "PositionPercentXEnabled": true,
+                "PositionPercentYEnabled": true,
+                "PrePosition": {
+                  "X": 0.5,
+                  "Y": 0.94
+                },
+                "PreSize": {
+                  "X": 0.2138,
+                  "Y": 0.08
+                },
+                "LeftMargin": 314.5,
+                "RightMargin": 314.5,
+                "TopMargin": 11.0,
+                "BottomMargin": 495.0,
+                "Tag": 259,
+                "ActionTag": 1947540203,
+                "Size": {
+                  "X": 171.0,
+                  "Y": 44.0
+                },
+                "Name": "lbTitle",
+                "ctype": "TextObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "workshop_Tab_smallbox_01.png",
+                  "Plist": "Workshop/res/Workshop.plist"
+                },
+                "Scale9OriginX": 192,
+                "Scale9OriginY": 121,
+                "Scale9Width": 199,
+                "Scale9Height": 125,
+                "StretchWidthEnable": true,
+                "AnchorPoint": {
+                  "ScaleX": 0.5
+                },
+                "Position": {
+                  "X": 400.0,
+                  "Y": 18.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PositionPercentXEnabled": true,
+                "PrePosition": {
+                  "X": 0.5,
+                  "Y": 0.0327
+                },
+                "PreSize": {
+                  "X": 0.975,
+                  "Y": 0.7636
+                },
+                "VerticalEdge": "BottomEdge",
+                "LeftMargin": 10.0,
+                "RightMargin": 10.0,
+                "TopMargin": 112.0,
+                "BottomMargin": 18.0,
+                "Tag": 577,
+                "ActionTag": 18350055,
+                "Size": {
+                  "X": 780.0,
+                  "Y": 420.0
+                },
+                "Name": "imgPn",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "ClipAble": false,
+                "BackColorAlpha": 0,
+                "SingleColor": {
+                  "R": 150,
+                  "G": 200
+                },
+                "FirstColor": {
+                  "R": 150,
+                  "G": 200
+                },
+                "EndColor": {},
+                "ColorVector": {
+                  "ScaleY": 1.0
+                },
+                "Scale9Width": 1,
+                "Scale9Height": 1,
+                "TouchEnable": true,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 400.0,
+                  "Y": 464.75
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PositionPercentXEnabled": true,
+                "PositionPercentYEnabled": true,
+                "PrePosition": {
+                  "X": 0.5,
+                  "Y": 0.845
+                },
+                "PreSize": {
+                  "X": 0.9625,
+                  "Y": 0.0909
+                },
+                "LeftMargin": 15.0,
+                "RightMargin": 15.0,
+                "TopMargin": 60.25,
+                "BottomMargin": 439.75,
+                "Tag": 909,
+                "Children": [
+                  {
+                    "FontSize": 14,
+                    "ButtonText": "",
+                    "TextColor": {
+                      "R": 65,
+                      "G": 65,
+                      "B": 70
+                    },
+                    "DisabledFileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "workshop_Tab_smallbox_03.png",
+                      "Plist": "Workshop/res/Workshop.plist"
+                    },
+                    "PressedFileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "workshop_Tab_smallbox_03.png",
+                      "Plist": "Workshop/res/Workshop.plist"
+                    },
+                    "NormalFileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "workshop_Tab_smallbox_03.png",
+                      "Plist": "Workshop/res/Workshop.plist"
+                    },
+                    "Scale9Enable": true,
+                    "Scale9OriginX": 15,
+                    "Scale9OriginY": 11,
+                    "Scale9Width": 114,
+                    "Scale9Height": 15,
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "R": 110,
+                      "G": 110,
+                      "B": 110
+                    },
+                    "ShadowOffsetX": 2.0,
+                    "ShadowOffsetY": -2.0,
+                    "TouchEnable": true,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5
+                    },
+                    "Position": {
+                      "X": 644.49,
+                      "Y": 0.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.837,
+                      "Y": 0.0
+                    },
+                    "PreSize": {
+                      "X": 0.3377,
+                      "Y": 1.0
+                    },
+                    "HorizontalEdge": "BothEdge",
+                    "LeftMargin": 514.49,
+                    "RightMargin": -4.49,
+                    "Tag": 263,
+                    "Children": [
+                      {
+                        "FileData": {
+                          "Type": "PlistSubImage",
+                          "Path": "workshop_Icon_b_01.png",
+                          "Plist": "Workshop/res/Workshop.plist"
+                        },
+                        "Scale9OriginX": 17,
+                        "Scale9OriginY": 17,
+                        "Scale9Width": 20,
+                        "Scale9Height": 19,
+                        "AnchorPoint": {
+                          "ScaleX": 0.5,
+                          "ScaleY": 0.5
+                        },
+                        "Position": {
+                          "X": 130.0,
+                          "Y": 25.0
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "CColor": {},
+                        "IconVisible": false,
+                        "PositionPercentXEnabled": true,
+                        "PositionPercentYEnabled": true,
+                        "PrePosition": {
+                          "X": 0.5,
+                          "Y": 0.5
+                        },
+                        "PreSize": {
+                          "X": 0.1154,
+                          "Y": 0.588
+                        },
+                        "LeftMargin": 115.0,
+                        "RightMargin": 115.0,
+                        "TopMargin": 10.3,
+                        "BottomMargin": 10.3,
+                        "Tag": 599,
+                        "ActionTag": -19938840,
+                        "Size": {
+                          "X": 30.0,
+                          "Y": 29.4
+                        },
+                        "Name": "imgIcon",
+                        "ctype": "ImageViewObjectData"
+                      }
+                    ],
+                    "ActionTag": 114155809,
+                    "Size": {
+                      "X": 260.0,
+                      "Y": 50.0
+                    },
+                    "Name": "btnCueType4",
+                    "ctype": "ButtonObjectData"
+                  },
+                  {
+                    "FontSize": 14,
+                    "ButtonText": "",
+                    "TextColor": {
+                      "R": 65,
+                      "G": 65,
+                      "B": 70
+                    },
+                    "DisabledFileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "workshop_Tab_smallbox_03.png",
+                      "Plist": "Workshop/res/Workshop.plist"
+                    },
+                    "PressedFileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "workshop_Tab_smallbox_03.png",
+                      "Plist": "Workshop/res/Workshop.plist"
+                    },
+                    "NormalFileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "workshop_Tab_smallbox_03.png",
+                      "Plist": "Workshop/res/Workshop.plist"
+                    },
+                    "Scale9Enable": true,
+                    "Scale9OriginX": 15,
+                    "Scale9OriginY": 11,
+                    "Scale9Width": 114,
+                    "Scale9Height": 15,
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "R": 110,
+                      "G": 110,
+                      "B": 110
+                    },
+                    "ShadowOffsetX": 2.0,
+                    "ShadowOffsetY": -2.0,
+                    "TouchEnable": true,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5
+                    },
+                    "Position": {
+                      "X": 385.0,
+                      "Y": 0.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.5,
+                      "Y": 0.0
+                    },
+                    "PreSize": {
+                      "X": 0.3377,
+                      "Y": 1.0
+                    },
+                    "HorizontalEdge": "BothEdge",
+                    "LeftMargin": 255.0,
+                    "RightMargin": 255.0,
+                    "Tag": 262,
+                    "Children": [
+                      {
+                        "FileData": {
+                          "Type": "PlistSubImage",
+                          "Path": "workshop_Icon_a_01.png",
+                          "Plist": "Workshop/res/Workshop.plist"
+                        },
+                        "Scale9OriginX": 17,
+                        "Scale9OriginY": 17,
+                        "Scale9Width": 23,
+                        "Scale9Height": 21,
+                        "AnchorPoint": {
+                          "ScaleX": 0.5,
+                          "ScaleY": 0.5
+                        },
+                        "Position": {
+                          "X": 130.0,
+                          "Y": 25.0
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "CColor": {},
+                        "IconVisible": false,
+                        "PositionPercentXEnabled": true,
+                        "PositionPercentYEnabled": true,
+                        "PrePosition": {
+                          "X": 0.5,
+                          "Y": 0.5
+                        },
+                        "PreSize": {
+                          "X": 0.1164,
+                          "Y": 0.5839
+                        },
+                        "LeftMargin": 114.8728,
+                        "RightMargin": 114.8728,
+                        "TopMargin": 10.4036,
+                        "BottomMargin": 10.4036,
+                        "Tag": 602,
+                        "ActionTag": 988546804,
+                        "Size": {
+                          "X": 30.2544,
+                          "Y": 29.1928
+                        },
+                        "Name": "imgIcon",
+                        "ctype": "ImageViewObjectData"
+                      }
+                    ],
+                    "ActionTag": 704133666,
+                    "Size": {
+                      "X": 260.0,
+                      "Y": 50.0
+                    },
+                    "Name": "btnCueType3",
+                    "ctype": "ButtonObjectData"
+                  },
+                  {
+                    "FontSize": 14,
+                    "ButtonText": "",
+                    "TextColor": {
+                      "R": 65,
+                      "G": 65,
+                      "B": 70
+                    },
+                    "DisabledFileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "workshop_Tab_smallbox_03.png",
+                      "Plist": "Workshop/res/Workshop.plist"
+                    },
+                    "PressedFileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "workshop_Tab_smallbox_03.png",
+                      "Plist": "Workshop/res/Workshop.plist"
+                    },
+                    "NormalFileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "workshop_Tab_smallbox_03.png",
+                      "Plist": "Workshop/res/Workshop.plist"
+                    },
+                    "Scale9Enable": true,
+                    "Scale9OriginX": 15,
+                    "Scale9OriginY": 11,
+                    "Scale9Width": 114,
+                    "Scale9Height": 15,
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "R": 110,
+                      "G": 110,
+                      "B": 110
+                    },
+                    "ShadowOffsetX": 2.0,
+                    "ShadowOffsetY": -2.0,
+                    "TouchEnable": true,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5
+                    },
+                    "Position": {
+                      "X": 125.51,
+                      "Y": 0.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.163,
+                      "Y": 0.0
+                    },
+                    "PreSize": {
+                      "X": 0.3377,
+                      "Y": 1.0
+                    },
+                    "HorizontalEdge": "BothEdge",
+                    "LeftMargin": -4.49,
+                    "RightMargin": 514.49,
+                    "Tag": 261,
+                    "Children": [
+                      {
+                        "FileData": {
+                          "Type": "PlistSubImage",
+                          "Path": "workshop_Icon_c_01.png",
+                          "Plist": "Workshop/res/Workshop.plist"
+                        },
+                        "Scale9OriginX": 17,
+                        "Scale9OriginY": 17,
+                        "Scale9Width": 38,
+                        "Scale9Height": 21,
+                        "AnchorPoint": {
+                          "ScaleX": 0.5,
+                          "ScaleY": 0.5
+                        },
+                        "Position": {
+                          "X": 130.0,
+                          "Y": 25.0
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "CColor": {},
+                        "IconVisible": false,
+                        "PositionPercentXEnabled": true,
+                        "PositionPercentYEnabled": true,
+                        "PrePosition": {
+                          "X": 0.5,
+                          "Y": 0.5
+                        },
+                        "PreSize": {
+                          "X": 0.132,
+                          "Y": 0.5241
+                        },
+                        "LeftMargin": 112.8461,
+                        "RightMargin": 112.8461,
+                        "TopMargin": 11.8964,
+                        "BottomMargin": 11.8963,
+                        "Tag": 601,
+                        "ActionTag": -1563116587,
+                        "Size": {
+                          "X": 34.3077,
+                          "Y": 26.2073
+                        },
+                        "Name": "imgIcon",
+                        "ctype": "ImageViewObjectData"
+                      }
+                    ],
+                    "ActionTag": -2061018631,
+                    "Size": {
+                      "X": 260.0,
+                      "Y": 50.0
+                    },
+                    "Name": "btnCueType2",
+                    "ctype": "ButtonObjectData"
+                  }
+                ],
+                "ActionTag": 173939866,
+                "Size": {
+                  "X": 770.0,
+                  "Y": 50.0
+                },
+                "Name": "nodeCueType",
+                "ctype": "PanelObjectData"
+              },
+              {
+                "FontSize": 14,
+                "ButtonText": "",
+                "TextColor": {
+                  "R": 65,
+                  "G": 65,
+                  "B": 70
+                },
+                "DisabledFileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "workshop_Close_button.png",
+                  "Plist": "Workshop/res/Workshop.plist"
+                },
+                "PressedFileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "workshop_Close_button.png",
+                  "Plist": "Workshop/res/Workshop.plist"
+                },
+                "NormalFileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "workshop_Close_button.png",
+                  "Plist": "Workshop/res/Workshop.plist"
+                },
+                "Scale9Enable": true,
+                "Scale9OriginX": 15,
+                "Scale9OriginY": 11,
+                "Scale9Width": 44,
+                "Scale9Height": 52,
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "TouchEnable": true,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 799.5168,
+                  "Y": 535.3757
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.9994,
+                  "Y": 0.9734
+                },
+                "PreSize": {
+                  "X": 0.0925,
+                  "Y": 0.1345
+                },
+                "HorizontalEdge": "RightEdge",
+                "VerticalEdge": "TopEdge",
+                "LeftMargin": 762.5168,
+                "RightMargin": -36.5168,
+                "TopMargin": -22.3757,
+                "BottomMargin": 498.3757,
+                "Tag": 199,
+                "ActionTag": 50224606,
+                "Size": {
+                  "X": 74.0,
+                  "Y": 74.0
+                },
+                "Name": "btnClose",
+                "ctype": "ButtonObjectData"
+              },
+              {
+                "ClipAble": false,
+                "BackColorAlpha": 102,
+                "SingleColor": {
+                  "R": 150,
+                  "G": 200
+                },
+                "FirstColor": {
+                  "R": 150,
+                  "G": 200
+                },
+                "EndColor": {},
+                "ColorVector": {
+                  "ScaleY": 1.0
+                },
+                "Scale9Width": 1,
+                "Scale9Height": 1,
+                "TouchEnable": true,
+                "StretchWidthEnable": true,
+                "AnchorPoint": {
+                  "ScaleX": 0.5
+                },
+                "Position": {
+                  "X": 400.0,
+                  "Y": 17.3073
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PositionPercentXEnabled": true,
+                "PrePosition": {
+                  "X": 0.5,
+                  "Y": 0.0315
+                },
+                "PreSize": {
+                  "X": 0.975,
+                  "Y": 0.7636
+                },
+                "VerticalEdge": "BottomEdge",
+                "LeftMargin": 10.0,
+                "RightMargin": 10.0,
+                "TopMargin": 112.6927,
+                "BottomMargin": 17.3073,
+                "Tag": 264,
+                "ActionTag": 2134885735,
+                "Size": {
+                  "X": 780.0,
+                  "Y": 420.0
+                },
+                "Name": "pnContent",
+                "ctype": "PanelObjectData"
+              },
+              {
+                "ClipAble": false,
+                "BackColorAlpha": 0,
+                "SingleColor": {
+                  "R": 150,
+                  "G": 200
+                },
+                "FirstColor": {
+                  "R": 150,
+                  "G": 200
+                },
+                "EndColor": {},
+                "ColorVector": {
+                  "ScaleY": 1.0
+                },
+                "Scale9Width": 1,
+                "Scale9Height": 1,
+                "TouchEnable": true,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 400.0,
+                  "Y": 464.75
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PositionPercentXEnabled": true,
+                "PositionPercentYEnabled": true,
+                "PrePosition": {
+                  "X": 0.5,
+                  "Y": 0.845
+                },
+                "PreSize": {
+                  "X": 0.9625,
+                  "Y": 0.0909
+                },
+                "LeftMargin": 15.0,
+                "RightMargin": 15.0,
+                "TopMargin": 60.25,
+                "BottomMargin": 439.75,
+                "Tag": 908,
+                "Children": [
+                  {
+                    "FontSize": 14,
+                    "ButtonText": "",
+                    "TextColor": {
+                      "R": 65,
+                      "G": 65,
+                      "B": 70
+                    },
+                    "DisabledFileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "workshop_Tab_smallbox_03.png",
+                      "Plist": "Workshop/res/Workshop.plist"
+                    },
+                    "PressedFileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "workshop_Tab_smallbox_03.png",
+                      "Plist": "Workshop/res/Workshop.plist"
+                    },
+                    "NormalFileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "workshop_Tab_smallbox_03.png",
+                      "Plist": "Workshop/res/Workshop.plist"
+                    },
+                    "Scale9Enable": true,
+                    "Scale9OriginX": 15,
+                    "Scale9OriginY": 11,
+                    "Scale9Width": 114,
+                    "Scale9Height": 15,
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "R": 110,
+                      "G": 110,
+                      "B": 110
+                    },
+                    "ShadowOffsetX": 2.0,
+                    "ShadowOffsetY": -2.0,
+                    "TouchEnable": true,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5
+                    },
+                    "Position": {
+                      "X": 677.6,
+                      "Y": 0.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PositionPercentXEnabled": true,
+                    "PrePosition": {
+                      "X": 0.88,
+                      "Y": 0.0
+                    },
+                    "PreSize": {
+                      "X": 0.2532,
+                      "Y": 1.0
+                    },
+                    "LeftMargin": 580.1,
+                    "RightMargin": -5.1,
+                    "Tag": 884,
+                    "Children": [
+                      {
+                        "AnchorPoint": {},
+                        "Position": {
+                          "X": 97.5,
+                          "Y": 25.0
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "CColor": {},
+                        "IconVisible": true,
+                        "PositionPercentXEnabled": true,
+                        "PositionPercentYEnabled": true,
+                        "PrePosition": {
+                          "X": 0.5,
+                          "Y": 0.5
+                        },
+                        "PreSize": {
+                          "X": 0.0,
+                          "Y": 0.0
+                        },
+                        "LeftMargin": 97.5,
+                        "RightMargin": 97.5,
+                        "TopMargin": 25.0,
+                        "BottomMargin": 25.0,
+                        "Tag": 885,
+                        "Children": [
+                          {
+                            "FileData": {
+                              "Type": "PlistSubImage",
+                              "Path": "workshop_Star.png",
+                              "Plist": "Workshop/res/Workshop.plist"
+                            },
+                            "Scale9OriginX": 7,
+                            "Scale9OriginY": 7,
+                            "Scale9Width": 10,
+                            "Scale9Height": 8,
+                            "AnchorPoint": {
+                              "ScaleX": 0.5,
+                              "ScaleY": 0.5
+                            },
+                            "Position": {
+                              "X": -40.0,
+                              "Y": 0.0
+                            },
+                            "Scale": {
+                              "ScaleX": 1.0,
+                              "ScaleY": 1.0
+                            },
+                            "CColor": {},
+                            "IconVisible": false,
+                            "PrePosition": {
+                              "X": 0.0,
+                              "Y": 0.0
+                            },
+                            "PreSize": {
+                              "X": 0.0,
+                              "Y": 0.0
+                            },
+                            "LeftMargin": -52.0,
+                            "RightMargin": 28.0,
+                            "TopMargin": -11.0,
+                            "BottomMargin": -11.0,
+                            "Tag": 886,
+                            "ActionTag": 1154474528,
+                            "Size": {
+                              "X": 24.0,
+                              "Y": 22.0
+                            },
+                            "Name": "star0",
+                            "ctype": "ImageViewObjectData"
+                          },
+                          {
+                            "FileData": {
+                              "Type": "PlistSubImage",
+                              "Path": "workshop_Star.png",
+                              "Plist": "Workshop/res/Workshop.plist"
+                            },
+                            "Scale9OriginX": 7,
+                            "Scale9OriginY": 7,
+                            "Scale9Width": 10,
+                            "Scale9Height": 8,
+                            "AnchorPoint": {
+                              "ScaleX": 0.5,
+                              "ScaleY": 0.5
+                            },
+                            "Position": {
+                              "X": -13.33,
+                              "Y": 0.0
+                            },
+                            "Scale": {
+                              "ScaleX": 1.0,
+                              "ScaleY": 1.0
+                            },
+                            "CColor": {},
+                            "IconVisible": false,
+                            "PrePosition": {
+                              "X": 0.0,
+                              "Y": 0.0
+                            },
+                            "PreSize": {
+                              "X": 0.0,
+                              "Y": 0.0
+                            },
+                            "LeftMargin": -25.33,
+                            "RightMargin": 1.33,
+                            "TopMargin": -11.0,
+                            "BottomMargin": -11.0,
+                            "Tag": 887,
+                            "ActionTag": 1748974148,
+                            "Size": {
+                              "X": 24.0,
+                              "Y": 22.0
+                            },
+                            "Name": "star1",
+                            "ctype": "ImageViewObjectData"
+                          },
+                          {
+                            "FileData": {
+                              "Type": "PlistSubImage",
+                              "Path": "workshop_Star.png",
+                              "Plist": "Workshop/res/Workshop.plist"
+                            },
+                            "Scale9OriginX": 7,
+                            "Scale9OriginY": 7,
+                            "Scale9Width": 10,
+                            "Scale9Height": 8,
+                            "AnchorPoint": {
+                              "ScaleX": 0.5,
+                              "ScaleY": 0.5
+                            },
+                            "Position": {
+                              "X": 13.33,
+                              "Y": 0.0
+                            },
+                            "Scale": {
+                              "ScaleX": 1.0,
+                              "ScaleY": 1.0
+                            },
+                            "CColor": {},
+                            "IconVisible": false,
+                            "PrePosition": {
+                              "X": 0.0,
+                              "Y": 0.0
+                            },
+                            "PreSize": {
+                              "X": 0.0,
+                              "Y": 0.0
+                            },
+                            "LeftMargin": 1.33,
+                            "RightMargin": -25.33,
+                            "TopMargin": -11.0,
+                            "BottomMargin": -11.0,
+                            "Tag": 888,
+                            "ActionTag": 824109250,
+                            "Size": {
+                              "X": 24.0,
+                              "Y": 22.0
+                            },
+                            "Name": "star2",
+                            "ctype": "ImageViewObjectData"
+                          },
+                          {
+                            "FileData": {
+                              "Type": "PlistSubImage",
+                              "Path": "workshop_Star.png",
+                              "Plist": "Workshop/res/Workshop.plist"
+                            },
+                            "Scale9OriginX": 7,
+                            "Scale9OriginY": 7,
+                            "Scale9Width": 10,
+                            "Scale9Height": 8,
+                            "AnchorPoint": {
+                              "ScaleX": 0.5,
+                              "ScaleY": 0.5
+                            },
+                            "Position": {
+                              "X": 40.0,
+                              "Y": 0.0
+                            },
+                            "Scale": {
+                              "ScaleX": 1.0,
+                              "ScaleY": 1.0
+                            },
+                            "CColor": {},
+                            "IconVisible": false,
+                            "PrePosition": {
+                              "X": 0.0,
+                              "Y": 0.0
+                            },
+                            "PreSize": {
+                              "X": 0.0,
+                              "Y": 0.0
+                            },
+                            "LeftMargin": 28.0,
+                            "RightMargin": -52.0,
+                            "TopMargin": -11.0,
+                            "BottomMargin": -11.0,
+                            "Tag": 889,
+                            "ActionTag": 2081143438,
+                            "Size": {
+                              "X": 24.0,
+                              "Y": 22.0
+                            },
+                            "Name": "star3",
+                            "ctype": "ImageViewObjectData"
+                          }
+                        ],
+                        "ActionTag": -1244766159,
+                        "Size": {
+                          "X": 0.0,
+                          "Y": 0.0
+                        },
+                        "Name": "nodeStar",
+                        "ctype": "SingleNodeObjectData"
+                      }
+                    ],
+                    "ActionTag": 609227602,
+                    "Size": {
+                      "X": 195.0,
+                      "Y": 50.0
+                    },
+                    "Name": "btnNodeStar4",
+                    "ctype": "ButtonObjectData"
+                  },
+                  {
+                    "FontSize": 14,
+                    "ButtonText": "",
+                    "TextColor": {
+                      "R": 65,
+                      "G": 65,
+                      "B": 70
+                    },
+                    "DisabledFileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "workshop_Tab_smallbox_03.png",
+                      "Plist": "Workshop/res/Workshop.plist"
+                    },
+                    "PressedFileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "workshop_Tab_smallbox_03.png",
+                      "Plist": "Workshop/res/Workshop.plist"
+                    },
+                    "NormalFileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "workshop_Tab_smallbox_03.png",
+                      "Plist": "Workshop/res/Workshop.plist"
+                    },
+                    "Scale9Enable": true,
+                    "Scale9OriginX": 15,
+                    "Scale9OriginY": 11,
+                    "Scale9Width": 114,
+                    "Scale9Height": 15,
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "R": 110,
+                      "G": 110,
+                      "B": 110
+                    },
+                    "ShadowOffsetX": 2.0,
+                    "ShadowOffsetY": -2.0,
+                    "TouchEnable": true,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5
+                    },
+                    "Position": {
+                      "X": 482.02,
+                      "Y": 0.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PositionPercentXEnabled": true,
+                    "PrePosition": {
+                      "X": 0.626,
+                      "Y": 0.0
+                    },
+                    "PreSize": {
+                      "X": 0.2532,
+                      "Y": 1.0
+                    },
+                    "LeftMargin": 384.52,
+                    "RightMargin": 190.48,
+                    "Tag": 891,
+                    "Children": [
+                      {
+                        "AnchorPoint": {},
+                        "Position": {
+                          "X": 97.5,
+                          "Y": 25.0
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "CColor": {},
+                        "IconVisible": true,
+                        "PositionPercentXEnabled": true,
+                        "PositionPercentYEnabled": true,
+                        "PrePosition": {
+                          "X": 0.5,
+                          "Y": 0.5
+                        },
+                        "PreSize": {
+                          "X": 0.0,
+                          "Y": 0.0
+                        },
+                        "LeftMargin": 97.5,
+                        "RightMargin": 97.5,
+                        "TopMargin": 25.0,
+                        "BottomMargin": 25.0,
+                        "Tag": 892,
+                        "Children": [
+                          {
+                            "FileData": {
+                              "Type": "PlistSubImage",
+                              "Path": "workshop_Star.png",
+                              "Plist": "Workshop/res/Workshop.plist"
+                            },
+                            "Scale9OriginX": 7,
+                            "Scale9OriginY": 7,
+                            "Scale9Width": 10,
+                            "Scale9Height": 8,
+                            "AnchorPoint": {
+                              "ScaleX": 0.5,
+                              "ScaleY": 0.5
+                            },
+                            "Position": {
+                              "X": -26.67,
+                              "Y": 0.0
+                            },
+                            "Scale": {
+                              "ScaleX": 1.0,
+                              "ScaleY": 1.0
+                            },
+                            "CColor": {},
+                            "IconVisible": false,
+                            "PrePosition": {
+                              "X": 0.0,
+                              "Y": 0.0
+                            },
+                            "PreSize": {
+                              "X": 0.0,
+                              "Y": 0.0
+                            },
+                            "LeftMargin": -38.67,
+                            "RightMargin": 14.67,
+                            "TopMargin": -11.0,
+                            "BottomMargin": -11.0,
+                            "Tag": 893,
+                            "ActionTag": -1903381283,
+                            "Size": {
+                              "X": 24.0,
+                              "Y": 22.0
+                            },
+                            "Name": "star0",
+                            "ctype": "ImageViewObjectData"
+                          },
+                          {
+                            "FileData": {
+                              "Type": "PlistSubImage",
+                              "Path": "workshop_Star.png",
+                              "Plist": "Workshop/res/Workshop.plist"
+                            },
+                            "Scale9OriginX": 7,
+                            "Scale9OriginY": 7,
+                            "Scale9Width": 10,
+                            "Scale9Height": 8,
+                            "AnchorPoint": {
+                              "ScaleX": 0.5,
+                              "ScaleY": 0.5
+                            },
+                            "Position": {
+                              "X": 0.0,
+                              "Y": 0.0
+                            },
+                            "Scale": {
+                              "ScaleX": 1.0,
+                              "ScaleY": 1.0
+                            },
+                            "CColor": {},
+                            "IconVisible": false,
+                            "PrePosition": {
+                              "X": 0.0,
+                              "Y": 0.0
+                            },
+                            "PreSize": {
+                              "X": 0.0,
+                              "Y": 0.0
+                            },
+                            "LeftMargin": -12.0,
+                            "RightMargin": -12.0,
+                            "TopMargin": -11.0,
+                            "BottomMargin": -11.0,
+                            "Tag": 894,
+                            "ActionTag": -235785922,
+                            "Size": {
+                              "X": 24.0,
+                              "Y": 22.0
+                            },
+                            "Name": "star1",
+                            "ctype": "ImageViewObjectData"
+                          },
+                          {
+                            "FileData": {
+                              "Type": "PlistSubImage",
+                              "Path": "workshop_Star.png",
+                              "Plist": "Workshop/res/Workshop.plist"
+                            },
+                            "Scale9OriginX": 7,
+                            "Scale9OriginY": 7,
+                            "Scale9Width": 10,
+                            "Scale9Height": 8,
+                            "AnchorPoint": {
+                              "ScaleX": 0.5,
+                              "ScaleY": 0.5
+                            },
+                            "Position": {
+                              "X": 26.67,
+                              "Y": 0.0
+                            },
+                            "Scale": {
+                              "ScaleX": 1.0,
+                              "ScaleY": 1.0
+                            },
+                            "CColor": {},
+                            "IconVisible": false,
+                            "PrePosition": {
+                              "X": 0.0,
+                              "Y": 0.0
+                            },
+                            "PreSize": {
+                              "X": 0.0,
+                              "Y": 0.0
+                            },
+                            "LeftMargin": 14.67,
+                            "RightMargin": -38.67,
+                            "TopMargin": -11.0,
+                            "BottomMargin": -11.0,
+                            "Tag": 895,
+                            "ActionTag": 1228750342,
+                            "Size": {
+                              "X": 24.0,
+                              "Y": 22.0
+                            },
+                            "Name": "star2",
+                            "ctype": "ImageViewObjectData"
+                          }
+                        ],
+                        "ActionTag": -1958178035,
+                        "Size": {
+                          "X": 0.0,
+                          "Y": 0.0
+                        },
+                        "Name": "nodeStar",
+                        "ctype": "SingleNodeObjectData"
+                      }
+                    ],
+                    "ActionTag": 1127117300,
+                    "Size": {
+                      "X": 195.0,
+                      "Y": 50.0
+                    },
+                    "Name": "btnNodeStar3",
+                    "ctype": "ButtonObjectData"
+                  },
+                  {
+                    "FontSize": 14,
+                    "ButtonText": "",
+                    "TextColor": {
+                      "R": 65,
+                      "G": 65,
+                      "B": 70
+                    },
+                    "DisabledFileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "workshop_Tab_smallbox_03.png",
+                      "Plist": "Workshop/res/Workshop.plist"
+                    },
+                    "PressedFileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "workshop_Tab_smallbox_03.png",
+                      "Plist": "Workshop/res/Workshop.plist"
+                    },
+                    "NormalFileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "workshop_Tab_smallbox_03.png",
+                      "Plist": "Workshop/res/Workshop.plist"
+                    },
+                    "Scale9Enable": true,
+                    "Scale9OriginX": 15,
+                    "Scale9OriginY": 11,
+                    "Scale9Width": 114,
+                    "Scale9Height": 15,
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "R": 110,
+                      "G": 110,
+                      "B": 110
+                    },
+                    "ShadowOffsetX": 2.0,
+                    "ShadowOffsetY": -2.0,
+                    "TouchEnable": true,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5
+                    },
+                    "Position": {
+                      "X": 287.21,
+                      "Y": 0.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PositionPercentXEnabled": true,
+                    "PrePosition": {
+                      "X": 0.373,
+                      "Y": 0.0
+                    },
+                    "PreSize": {
+                      "X": 0.2532,
+                      "Y": 1.0
+                    },
+                    "LeftMargin": 189.71,
+                    "RightMargin": 385.29,
+                    "Tag": 897,
+                    "Children": [
+                      {
+                        "AnchorPoint": {},
+                        "Position": {
+                          "X": 97.5,
+                          "Y": 25.0
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "CColor": {},
+                        "IconVisible": true,
+                        "PositionPercentXEnabled": true,
+                        "PositionPercentYEnabled": true,
+                        "PrePosition": {
+                          "X": 0.5,
+                          "Y": 0.5
+                        },
+                        "PreSize": {
+                          "X": 0.0,
+                          "Y": 0.0
+                        },
+                        "LeftMargin": 97.5,
+                        "RightMargin": 97.5,
+                        "TopMargin": 25.0,
+                        "BottomMargin": 25.0,
+                        "Tag": 898,
+                        "Children": [
+                          {
+                            "FileData": {
+                              "Type": "PlistSubImage",
+                              "Path": "workshop_Star.png",
+                              "Plist": "Workshop/res/Workshop.plist"
+                            },
+                            "Scale9OriginX": 7,
+                            "Scale9OriginY": 7,
+                            "Scale9Width": 10,
+                            "Scale9Height": 8,
+                            "AnchorPoint": {
+                              "ScaleX": 0.5,
+                              "ScaleY": 0.5
+                            },
+                            "Position": {
+                              "X": -13.33,
+                              "Y": 0.0
+                            },
+                            "Scale": {
+                              "ScaleX": 1.0,
+                              "ScaleY": 1.0
+                            },
+                            "CColor": {},
+                            "IconVisible": false,
+                            "PrePosition": {
+                              "X": 0.0,
+                              "Y": 0.0
+                            },
+                            "PreSize": {
+                              "X": 0.0,
+                              "Y": 0.0
+                            },
+                            "LeftMargin": -25.33,
+                            "RightMargin": 1.33,
+                            "TopMargin": -11.0,
+                            "BottomMargin": -11.0,
+                            "Tag": 899,
+                            "ActionTag": -649114528,
+                            "Size": {
+                              "X": 24.0,
+                              "Y": 22.0
+                            },
+                            "Name": "star1",
+                            "ctype": "ImageViewObjectData"
+                          },
+                          {
+                            "FileData": {
+                              "Type": "PlistSubImage",
+                              "Path": "workshop_Star.png",
+                              "Plist": "Workshop/res/Workshop.plist"
+                            },
+                            "Scale9OriginX": 7,
+                            "Scale9OriginY": 7,
+                            "Scale9Width": 10,
+                            "Scale9Height": 8,
+                            "AnchorPoint": {
+                              "ScaleX": 0.5,
+                              "ScaleY": 0.5
+                            },
+                            "Position": {
+                              "X": 13.33,
+                              "Y": 0.0
+                            },
+                            "Scale": {
+                              "ScaleX": 1.0,
+                              "ScaleY": 1.0
+                            },
+                            "CColor": {},
+                            "IconVisible": false,
+                            "PrePosition": {
+                              "X": 0.0,
+                              "Y": 0.0
+                            },
+                            "PreSize": {
+                              "X": 0.0,
+                              "Y": 0.0
+                            },
+                            "LeftMargin": 1.33,
+                            "RightMargin": -25.33,
+                            "TopMargin": -11.0,
+                            "BottomMargin": -11.0,
+                            "Tag": 900,
+                            "ActionTag": 1784628714,
+                            "Size": {
+                              "X": 24.0,
+                              "Y": 22.0
+                            },
+                            "Name": "star2",
+                            "ctype": "ImageViewObjectData"
+                          }
+                        ],
+                        "ActionTag": 50070561,
+                        "Size": {
+                          "X": 0.0,
+                          "Y": 0.0
+                        },
+                        "Name": "nodeStar",
+                        "ctype": "SingleNodeObjectData"
+                      }
+                    ],
+                    "ActionTag": 685552083,
+                    "Size": {
+                      "X": 195.0,
+                      "Y": 50.0
+                    },
+                    "Name": "btnNodeStar2",
+                    "ctype": "ButtonObjectData"
+                  },
+                  {
+                    "FontSize": 14,
+                    "ButtonText": "",
+                    "TextColor": {
+                      "R": 65,
+                      "G": 65,
+                      "B": 70
+                    },
+                    "DisabledFileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "workshop_Tab_smallbox_03.png",
+                      "Plist": "Workshop/res/Workshop.plist"
+                    },
+                    "PressedFileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "workshop_Tab_smallbox_03.png",
+                      "Plist": "Workshop/res/Workshop.plist"
+                    },
+                    "NormalFileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "workshop_Tab_smallbox_03.png",
+                      "Plist": "Workshop/res/Workshop.plist"
+                    },
+                    "Scale9Enable": true,
+                    "Scale9OriginX": 15,
+                    "Scale9OriginY": 11,
+                    "Scale9Width": 114,
+                    "Scale9Height": 15,
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "R": 110,
+                      "G": 110,
+                      "B": 110
+                    },
+                    "ShadowOffsetX": 2.0,
+                    "ShadowOffsetY": -2.0,
+                    "TouchEnable": true,
+                    "AnchorPoint": {},
+                    "Position": {
+                      "X": -4.62,
+                      "Y": 0.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PositionPercentXEnabled": true,
+                    "PrePosition": {
+                      "X": -0.006,
+                      "Y": 0.0
+                    },
+                    "PreSize": {
+                      "X": 0.2532,
+                      "Y": 1.0
+                    },
+                    "LeftMargin": -4.62,
+                    "RightMargin": 579.62,
+                    "Tag": 902,
+                    "Children": [
+                      {
+                        "AnchorPoint": {},
+                        "Position": {
+                          "X": 97.5,
+                          "Y": 25.0
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "CColor": {},
+                        "IconVisible": true,
+                        "PositionPercentXEnabled": true,
+                        "PositionPercentYEnabled": true,
+                        "PrePosition": {
+                          "X": 0.5,
+                          "Y": 0.5
+                        },
+                        "PreSize": {
+                          "X": 0.0,
+                          "Y": 0.0
+                        },
+                        "LeftMargin": 97.5,
+                        "RightMargin": 97.5,
+                        "TopMargin": 25.0,
+                        "BottomMargin": 25.0,
+                        "Tag": 903,
+                        "Children": [
+                          {
+                            "FileData": {
+                              "Type": "PlistSubImage",
+                              "Path": "workshop_Star.png",
+                              "Plist": "Workshop/res/Workshop.plist"
+                            },
+                            "Scale9OriginX": 7,
+                            "Scale9OriginY": 7,
+                            "Scale9Width": 10,
+                            "Scale9Height": 8,
+                            "AnchorPoint": {
+                              "ScaleX": 0.5,
+                              "ScaleY": 0.5
+                            },
+                            "Position": {
+                              "X": 0.0,
+                              "Y": 0.0
+                            },
+                            "Scale": {
+                              "ScaleX": 1.0,
+                              "ScaleY": 1.0
+                            },
+                            "CColor": {},
+                            "IconVisible": false,
+                            "PrePosition": {
+                              "X": 0.0,
+                              "Y": 0.0
+                            },
+                            "PreSize": {
+                              "X": 0.0,
+                              "Y": 0.0
+                            },
+                            "LeftMargin": -12.0,
+                            "RightMargin": -12.0,
+                            "TopMargin": -11.0,
+                            "BottomMargin": -11.0,
+                            "Tag": 904,
+                            "ActionTag": -1950967612,
+                            "Size": {
+                              "X": 24.0,
+                              "Y": 22.0
+                            },
+                            "Name": "star0",
+                            "ctype": "ImageViewObjectData"
+                          }
+                        ],
+                        "ActionTag": 1086229486,
+                        "Size": {
+                          "X": 0.0,
+                          "Y": 0.0
+                        },
+                        "Name": "nodeStar",
+                        "ctype": "SingleNodeObjectData"
+                      }
+                    ],
+                    "ActionTag": -1116485301,
+                    "Size": {
+                      "X": 195.0,
+                      "Y": 50.0
+                    },
+                    "Name": "btnNodeStar1",
+                    "ctype": "ButtonObjectData"
+                  }
+                ],
+                "ActionTag": 1022898550,
+                "Size": {
+                  "X": 770.0,
+                  "Y": 50.0
+                },
+                "Name": "nodeStar",
+                "ctype": "PanelObjectData"
+              }
+            ],
+            "ActionTag": -1636165752,
+            "Size": {
+              "X": 800.0,
+              "Y": 550.0
+            },
+            "Name": "bg",
+            "ctype": "PanelObjectData"
+          }
+        ],
+        "Size": {
+          "X": 1136.0,
+          "Y": 640.0
+        },
+        "Name": "Layer",
+        "ctype": "LayerObjectData"
+      },
+      "UsedResources": [
+        "../Font/facebook.TTF",
+        "res/Fake_XuongGay_02_i5_FUSION.png",
+        "res/Fake_XuongGay_06_i5_UPGRADE.png",
+        "res/Workshop.plist",
+        "res/Workshop.png"
+      ],
+      "ctype": "GameFileData"
+    }
+  },
+  "Type": "Layer"
+}

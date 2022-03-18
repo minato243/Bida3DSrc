@@ -1,0 +1,20 @@
+
+Foul.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+FAIL
+  rotate: false
+  xy: 2, 2
+  size: 277, 144
+  orig: 277, 144
+  offset: 0, 0
+  index: -1
+Hue/Saturation 1 copy
+  rotate: false
+  xy: 2, 148
+  size: 722, 253
+  orig: 722, 253
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,523 @@
+{
+  "ID": "b4635849-53f1-4815-b6f9-96719c85f8eb",
+  "Version": "2.3.4",
+  "Name": "CellMyLeague",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Tag": 658,
+        "Children": [
+          {
+            "FileData": {
+              "Type": "PlistSubImage",
+              "Path": "League_02_BG_02.png",
+              "Plist": "Resources/LeagueSession.plist"
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 377.5,
+              "Y": 58.5
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PositionPercentXEnabled": true,
+            "PositionPercentYEnabled": true,
+            "PrePosition": {
+              "X": 0.5,
+              "Y": 0.5
+            },
+            "PreSize": {
+              "X": 1.0,
+              "Y": 1.0
+            },
+            "Tag": 96,
+            "ActionTag": 921186148,
+            "Size": {
+              "X": 755.0,
+              "Y": 117.0
+            },
+            "Name": "bg",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "PlistSubImage",
+              "Path": "League_02_IC_04.png",
+              "Plist": "Resources/LeagueSession.plist"
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 50.0,
+              "Y": 58.5
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PositionPercentYEnabled": true,
+            "PrePosition": {
+              "X": 0.0662,
+              "Y": 0.5
+            },
+            "PreSize": {
+              "X": 0.0781,
+              "Y": 0.8291
+            },
+            "LeftMargin": 20.5,
+            "RightMargin": 675.5,
+            "TopMargin": 10.0,
+            "BottomMargin": 10.0,
+            "Tag": 209,
+            "ActionTag": -2038893168,
+            "Size": {
+              "X": 59.0,
+              "Y": 97.0
+            },
+            "Name": "iconRank",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FontSize": 30,
+            "LabelText": "#26",
+            "FontResource": {
+              "Type": "Normal",
+              "Path": "Font/facebook.TTF",
+              "Plist": ""
+            },
+            "HorizontalAlignmentType": "HT_Center",
+            "VerticalAlignmentType": "VT_Center",
+            "OutlineColor": {
+              "G": 0,
+              "B": 0
+            },
+            "ShadowColor": {
+              "R": 110,
+              "G": 110,
+              "B": 110
+            },
+            "ShadowOffsetX": 2.0,
+            "ShadowOffsetY": -2.0,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 50.0,
+              "Y": 58.5
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PositionPercentYEnabled": true,
+            "PrePosition": {
+              "X": 0.0662,
+              "Y": 0.5
+            },
+            "PreSize": {
+              "X": 0.0781,
+              "Y": 0.3761
+            },
+            "LeftMargin": 20.5,
+            "RightMargin": 675.5,
+            "TopMargin": 36.5,
+            "BottomMargin": 36.5,
+            "Tag": 753,
+            "ActionTag": 2134999028,
+            "Size": {
+              "X": 59.0,
+              "Y": 44.0
+            },
+            "Name": "lb_Rank",
+            "ctype": "TextObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "PlistSubImage",
+              "Path": "League_02_AV_01.png",
+              "Plist": "Resources/LeagueSession.plist"
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 138.3767,
+              "Y": 58.5
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PositionPercentYEnabled": true,
+            "PrePosition": {
+              "X": 0.1833,
+              "Y": 0.5
+            },
+            "PreSize": {
+              "X": 0.1219,
+              "Y": 0.7863
+            },
+            "LeftMargin": 92.3767,
+            "RightMargin": 570.6233,
+            "TopMargin": 12.5,
+            "BottomMargin": 12.5,
+            "Tag": 754,
+            "Children": [
+              {
+                "FileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "League_02_IC_03e.png",
+                  "Plist": "Resources/LeagueSession.plist"
+                },
+                "BlendFunc": {
+                  "Src": 1,
+                  "Dst": 771
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 81.0052,
+                  "Y": 17.971
+                },
+                "Scale": {
+                  "ScaleX": 0.75,
+                  "ScaleY": 0.75
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.8805,
+                  "Y": 0.1953
+                },
+                "PreSize": {
+                  "X": 0.5326,
+                  "Y": 0.6413
+                },
+                "LeftMargin": 56.5052,
+                "RightMargin": -13.5052,
+                "TopMargin": 44.529,
+                "BottomMargin": -11.529,
+                "Tag": 97,
+                "ActionTag": -1747702620,
+                "Size": {
+                  "X": 49.0,
+                  "Y": 59.0
+                },
+                "Name": "iconLeague",
+                "ctype": "SpriteObjectData"
+              }
+            ],
+            "ActionTag": -103131863,
+            "Size": {
+              "X": 92.0,
+              "Y": 92.0
+            },
+            "Name": "imgAvatarBorder",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "PlistSubImage",
+              "Path": "League_02_BG_04.png",
+              "Plist": "Resources/LeagueSession.plist"
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 580.6375,
+              "Y": 59.2268
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.7691,
+              "Y": 0.5062
+            },
+            "PreSize": {
+              "X": 0.2464,
+              "Y": 0.2308
+            },
+            "LeftMargin": 487.6375,
+            "RightMargin": 81.3625,
+            "TopMargin": 44.2732,
+            "BottomMargin": 45.7268,
+            "Tag": 99,
+            "ActionTag": -997616750,
+            "Size": {
+              "X": 186.0,
+              "Y": 27.0
+            },
+            "Name": "bgGold",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "PlistSubImage",
+              "Path": "Icon_Gold.png",
+              "Plist": "Resources/ItemIcons.plist"
+            },
+            "Scale9OriginX": 15,
+            "Scale9OriginY": 16,
+            "Scale9Width": 18,
+            "Scale9Height": 18,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 494.6255,
+              "Y": 59.2488
+            },
+            "Scale": {
+              "ScaleX": 0.6,
+              "ScaleY": 0.6
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PositionPercentYEnabled": true,
+            "PrePosition": {
+              "X": 0.6551,
+              "Y": 0.5064
+            },
+            "PreSize": {
+              "X": 0.0636,
+              "Y": 0.4274
+            },
+            "LeftMargin": 470.6255,
+            "RightMargin": 236.3745,
+            "TopMargin": 32.7512,
+            "BottomMargin": 34.2488,
+            "Tag": 758,
+            "ActionTag": 348620658,
+            "Size": {
+              "X": 48.0,
+              "Y": 50.0
+            },
+            "Name": "iconCoin",
+            "ctype": "ImageViewObjectData"
+          },
+          {
+            "FontSize": 22,
+            "LabelText": "Conzzzzzzzzzzzzzzzzz",
+            "FontResource": {
+              "Type": "Normal",
+              "Path": "Font/facebook.TTF",
+              "Plist": ""
+            },
+            "OutlineColor": {
+              "G": 0,
+              "B": 0
+            },
+            "ShadowColor": {
+              "R": 0,
+              "G": 0,
+              "B": 0
+            },
+            "ShadowOffsetX": 0.0,
+            "ShadowOffsetY": -1.0,
+            "ShadowEnabled": true,
+            "AnchorPoint": {
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 208.5712,
+              "Y": 61.7175
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "RotationSkewX": 5.0001,
+            "CColor": {},
+            "IconVisible": false,
+            "PositionPercentYEnabled": true,
+            "PrePosition": {
+              "X": 0.2763,
+              "Y": 0.5275
+            },
+            "PreSize": {
+              "X": 0.3007,
+              "Y": 0.2735
+            },
+            "LeftMargin": 208.5712,
+            "RightMargin": 319.4288,
+            "TopMargin": 39.2825,
+            "BottomMargin": 45.7175,
+            "Tag": 759,
+            "ActionTag": 100526126,
+            "Size": {
+              "X": 227.0,
+              "Y": 32.0
+            },
+            "Name": "lbDisplayName",
+            "ctype": "TextObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "PlistSubImage",
+              "Path": "League_01_IC_02.png",
+              "Plist": "Resources/LeagueSession.plist"
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 705.0,
+              "Y": 52.65
+            },
+            "Scale": {
+              "ScaleX": 0.4,
+              "ScaleY": 0.4
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PositionPercentYEnabled": true,
+            "PrePosition": {
+              "X": 0.9338,
+              "Y": 0.45
+            },
+            "PreSize": {
+              "X": 0.1589,
+              "Y": 2.2308
+            },
+            "LeftMargin": 645.0,
+            "RightMargin": -10.0,
+            "TopMargin": -66.15,
+            "BottomMargin": -77.85,
+            "Tag": 98,
+            "ActionTag": -1239620541,
+            "Size": {
+              "X": 120.0,
+              "Y": 261.0
+            },
+            "Name": "iconRankCup",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FontSize": 22,
+            "LabelText": "300.000.079",
+            "FontResource": {
+              "Type": "Normal",
+              "Path": "Font/facebook.TTF",
+              "Plist": ""
+            },
+            "OutlineColor": {
+              "G": 0,
+              "B": 0
+            },
+            "ShadowColor": {
+              "R": 110,
+              "G": 110,
+              "B": 110
+            },
+            "ShadowOffsetX": 2.0,
+            "ShadowOffsetY": -2.0,
+            "AnchorPoint": {
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 517.2546,
+              "Y": 61.8111
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "RotationSkewX": 5.0001,
+            "CColor": {},
+            "IconVisible": false,
+            "PositionPercentYEnabled": true,
+            "PrePosition": {
+              "X": 0.6851,
+              "Y": 0.5283
+            },
+            "PreSize": {
+              "X": 0.1881,
+              "Y": 0.2735
+            },
+            "LeftMargin": 517.2546,
+            "RightMargin": 95.7454,
+            "TopMargin": 39.1889,
+            "BottomMargin": 45.8111,
+            "Tag": 760,
+            "ActionTag": -893832603,
+            "Size": {
+              "X": 142.0,
+              "Y": 32.0
+            },
+            "Name": "lb_Score",
+            "ctype": "TextObjectData"
+          }
+        ],
+        "Size": {
+          "X": 755.0,
+          "Y": 117.0
+        },
+        "Name": "Layer",
+        "ctype": "LayerObjectData"
+      },
+      "UsedResources": [
+        "../Font/facebook.TTF",
+        "../Resources/ItemIcons.plist",
+        "../Resources/ItemIcons.png",
+        "../Resources/LeagueSession.plist",
+        "../Resources/LeagueSession.png"
+      ],
+      "ctype": "GameFileData"
+    }
+  },
+  "Type": "Layer"
+}

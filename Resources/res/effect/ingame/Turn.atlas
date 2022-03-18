@@ -1,0 +1,62 @@
+
+Turn.png
+size: 2048,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+6
+  rotate: false
+  xy: 2, 285
+  size: 658, 658
+  orig: 658, 658
+  offset: 0, 0
+  index: -1
+Group 193
+  rotate: false
+  xy: 662, 439
+  size: 832, 251
+  orig: 832, 251
+  offset: 0, 0
+  index: -1
+Group 193_1
+  rotate: false
+  xy: 662, 692
+  size: 935, 251
+  orig: 935, 251
+  offset: 0, 0
+  index: -1
+WIN
+  rotate: false
+  xy: 1599, 796
+  size: 300, 147
+  orig: 300, 147
+  offset: 0, 0
+  index: -1
+WIN_11
+  rotate: false
+  xy: 2, 2
+  size: 256, 139
+  orig: 256, 139
+  offset: 0, 0
+  index: -1
+YOU
+  rotate: false
+  xy: 662, 290
+  size: 299, 147
+  orig: 299, 147
+  offset: 0, 0
+  index: -1
+YOU_1
+  rotate: false
+  xy: 2, 143
+  size: 443, 140
+  orig: 443, 140
+  offset: 0, 0
+  index: -1
+light1
+  rotate: true
+  xy: 1496, 528
+  size: 162, 67
+  orig: 162, 67
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,1577 @@
+{
+  "ID": "beacab96-744a-4e0f-93fb-479d94938ae6",
+  "Version": "2.3.4",
+  "Name": "InventoryElementUIv2.1",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Tag": 713,
+        "Children": [
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "Inventory/res/fakes/Fake_Inventory_NEWWORK_03a_i5.png",
+              "Plist": ""
+            },
+            "Scale9OriginX": 374,
+            "Scale9OriginY": 211,
+            "Scale9Width": 388,
+            "Scale9Height": 218,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 93.1758,
+              "Y": 6.0648
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.082,
+              "Y": 0.0095
+            },
+            "PreSize": {
+              "X": 1.0,
+              "Y": 1.0
+            },
+            "LeftMargin": -474.8242,
+            "RightMargin": 474.8242,
+            "TopMargin": 313.9352,
+            "BottomMargin": -313.9352,
+            "Tag": 714,
+            "ActionTag": -614690429,
+            "Size": {
+              "X": 1136.0,
+              "Y": 640.0
+            },
+            "Name": "fake",
+            "ctype": "ImageViewObjectData"
+          },
+          {
+            "ClipAble": false,
+            "BackColorAlpha": 102,
+            "SingleColor": {
+              "R": 150,
+              "G": 200
+            },
+            "FirstColor": {
+              "R": 150,
+              "G": 200
+            },
+            "EndColor": {},
+            "ColorVector": {
+              "ScaleY": 1.0
+            },
+            "Scale9Width": 1,
+            "Scale9Height": 1,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "PreSize": {
+              "X": 0.9243,
+              "Y": 0.2344
+            },
+            "LeftMargin": -525.0,
+            "RightMargin": 611.0,
+            "TopMargin": 565.0,
+            "BottomMargin": -75.0,
+            "Tag": 118,
+            "Children": [
+              {
+                "FileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "inven_Cue_Board.png",
+                  "Plist": "Resources/Inventory.plist"
+                },
+                "Scale9OriginX": 270,
+                "Scale9OriginY": 49,
+                "Scale9Width": 281,
+                "Scale9Height": 52,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "PreSize": {
+                  "X": 1.0,
+                  "Y": 1.0
+                },
+                "Tag": 146,
+                "ActionTag": 475483603,
+                "Size": {
+                  "X": 1050.0,
+                  "Y": 150.0
+                },
+                "Name": "imgBg",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FontSize": 16,
+                "LabelText": "Auto Recharge",
+                "FontResource": {
+                  "Type": "Normal",
+                  "Path": "Font/facebook.TTF",
+                  "Plist": ""
+                },
+                "HorizontalAlignmentType": "HT_Right",
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 15,
+                  "G": 61,
+                  "B": 74
+                },
+                "ShadowOffsetX": 0.0,
+                "ShadowOffsetY": -2.0,
+                "ShadowEnabled": true,
+                "AnchorPoint": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 995.1887,
+                  "Y": 123.5485
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "RotationSkewX": 9.0,
+                "CColor": {
+                  "R": 87,
+                  "G": 209,
+                  "B": 250
+                },
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.9478,
+                  "Y": 0.8237
+                },
+                "PreSize": {
+                  "X": 0.1086,
+                  "Y": 0.1533
+                },
+                "LeftMargin": 881.1887,
+                "RightMargin": 54.8113,
+                "TopMargin": 14.9515,
+                "BottomMargin": 112.0485,
+                "Tag": 722,
+                "ActionTag": 2004210550,
+                "Size": {
+                  "X": 114.0,
+                  "Y": 23.0
+                },
+                "Name": "lbAutoRecharge",
+                "ctype": "TextObjectData"
+              },
+              {
+                "FontSize": 24,
+                "LabelText": "Tịch Tà Cơ Phổ ____________",
+                "FontResource": {
+                  "Type": "Normal",
+                  "Path": "Font/facebook.TTF",
+                  "Plist": ""
+                },
+                "OutlineColor": {
+                  "R": 15,
+                  "G": 61,
+                  "B": 74
+                },
+                "ShadowColor": {
+                  "R": 15,
+                  "G": 61,
+                  "B": 74
+                },
+                "ShadowOffsetX": 0.0,
+                "ShadowOffsetY": -1.0,
+                "ShadowEnabled": true,
+                "AnchorPoint": {
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 217.0717,
+                  "Y": 123.0924
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "RotationSkewX": 9.0,
+                "CColor": {
+                  "R": 244,
+                  "G": 241,
+                  "B": 228
+                },
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.2067,
+                  "Y": 0.8206
+                },
+                "PreSize": {
+                  "X": 0.3314,
+                  "Y": 0.2333
+                },
+                "LeftMargin": 217.0717,
+                "RightMargin": 484.9283,
+                "TopMargin": 9.4076,
+                "BottomMargin": 105.5924,
+                "Tag": 727,
+                "ActionTag": 1544676365,
+                "Size": {
+                  "X": 348.0,
+                  "Y": 35.0
+                },
+                "Name": "lbName",
+                "ctype": "TextObjectData"
+              },
+              {
+                "FontSize": 20,
+                "LabelText": "ConfigID: 999",
+                "FontResource": {
+                  "Type": "Normal",
+                  "Path": "Font/UTMFacebook.ttf",
+                  "Plist": ""
+                },
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "AnchorPoint": {
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 23.8174,
+                  "Y": 130.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.0227,
+                  "Y": 0.8667
+                },
+                "PreSize": {
+                  "X": 0.1248,
+                  "Y": 0.1933
+                },
+                "HorizontalEdge": "LeftEdge",
+                "VerticalEdge": "TopEdge",
+                "LeftMargin": 23.8174,
+                "RightMargin": 895.1826,
+                "TopMargin": 5.5,
+                "BottomMargin": 115.5,
+                "Tag": 56,
+                "ActionTag": 1056176236,
+                "Size": {
+                  "X": 131.0,
+                  "Y": 29.0
+                },
+                "VisibleForFrame": false,
+                "Name": "lbConfigId",
+                "ctype": "TextObjectData"
+              },
+              {
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 270.0,
+                  "Y": 64.8101
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": true,
+                "PrePosition": {
+                  "X": 0.2571,
+                  "Y": 0.4321
+                },
+                "PreSize": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "LeftMargin": 270.0,
+                "RightMargin": 780.0,
+                "TopMargin": 85.1899,
+                "BottomMargin": 64.8101,
+                "Tag": 255,
+                "ActionTag": -1847463139,
+                "Size": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "Name": "nodeCue",
+                "ctype": "SingleNodeObjectData"
+              },
+              {
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 40.0,
+                  "Y": 125.0
+                },
+                "Scale": {
+                  "ScaleX": 1.2,
+                  "ScaleY": 1.2
+                },
+                "CColor": {},
+                "IconVisible": true,
+                "PrePosition": {
+                  "X": 0.0381,
+                  "Y": 0.8333
+                },
+                "PreSize": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "LeftMargin": 40.0,
+                "RightMargin": 1010.0,
+                "TopMargin": 25.0,
+                "BottomMargin": 125.0,
+                "Tag": 730,
+                "Children": [
+                  {
+                    "FileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "inven_Star_02.png",
+                      "Plist": "Resources/Inventory.plist"
+                    },
+                    "Scale9OriginX": 13,
+                    "Scale9OriginY": 10,
+                    "Scale9Width": 14,
+                    "Scale9Height": 13,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 9.0,
+                      "Y": 0.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "PreSize": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "LeftMargin": 0.5,
+                    "RightMargin": -17.5,
+                    "TopMargin": -7.0,
+                    "BottomMargin": -7.0,
+                    "Tag": 731,
+                    "ActionTag": -2012859735,
+                    "Size": {
+                      "X": 17.0,
+                      "Y": 14.0
+                    },
+                    "Name": "star_0",
+                    "ctype": "ImageViewObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "inven_Star_01.png",
+                      "Plist": "Resources/Inventory.plist"
+                    },
+                    "Scale9OriginX": 13,
+                    "Scale9OriginY": 10,
+                    "Scale9Width": 13,
+                    "Scale9Height": 13,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 26.0,
+                      "Y": 0.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "PreSize": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "LeftMargin": 17.5,
+                    "RightMargin": -34.5,
+                    "TopMargin": -7.0,
+                    "BottomMargin": -7.0,
+                    "Tag": 732,
+                    "ActionTag": 803398358,
+                    "Size": {
+                      "X": 17.0,
+                      "Y": 14.0
+                    },
+                    "Name": "star_1",
+                    "ctype": "ImageViewObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "inven_Star_01.png",
+                      "Plist": "Resources/Inventory.plist"
+                    },
+                    "Scale9OriginX": 13,
+                    "Scale9OriginY": 10,
+                    "Scale9Width": 13,
+                    "Scale9Height": 13,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 43.0,
+                      "Y": 0.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "PreSize": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "LeftMargin": 34.5,
+                    "RightMargin": -51.5,
+                    "TopMargin": -7.0,
+                    "BottomMargin": -7.0,
+                    "Tag": 733,
+                    "ActionTag": 740427286,
+                    "Size": {
+                      "X": 17.0,
+                      "Y": 14.0
+                    },
+                    "Name": "star_2",
+                    "ctype": "ImageViewObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "inven_Star_01.png",
+                      "Plist": "Resources/Inventory.plist"
+                    },
+                    "Scale9OriginX": 13,
+                    "Scale9OriginY": 10,
+                    "Scale9Width": 13,
+                    "Scale9Height": 13,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 60.0,
+                      "Y": 0.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "PreSize": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "LeftMargin": 51.5,
+                    "RightMargin": -68.5,
+                    "TopMargin": -7.0,
+                    "BottomMargin": -7.0,
+                    "Tag": 734,
+                    "ActionTag": 1014117479,
+                    "Size": {
+                      "X": 17.0,
+                      "Y": 14.0
+                    },
+                    "Name": "star_3",
+                    "ctype": "ImageViewObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "inven_Star_01.png",
+                      "Plist": "Resources/Inventory.plist"
+                    },
+                    "Scale9OriginX": 13,
+                    "Scale9OriginY": 10,
+                    "Scale9Width": 13,
+                    "Scale9Height": 13,
+                    "AnchorPoint": {
+                      "ScaleX": 0.4664,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 77.0,
+                      "Y": 0.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "PreSize": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "LeftMargin": 69.0712,
+                    "RightMargin": -86.0712,
+                    "TopMargin": -7.0,
+                    "BottomMargin": -7.0,
+                    "Tag": 735,
+                    "ActionTag": 38211345,
+                    "Size": {
+                      "X": 17.0,
+                      "Y": 14.0
+                    },
+                    "Name": "star_4",
+                    "ctype": "ImageViewObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "inven_Star_01.png",
+                      "Plist": "Resources/Inventory.plist"
+                    },
+                    "Scale9OriginX": 13,
+                    "Scale9OriginY": 10,
+                    "Scale9Width": 13,
+                    "Scale9Height": 13,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 94.0,
+                      "Y": 0.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "PreSize": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "LeftMargin": 85.5,
+                    "RightMargin": -102.5,
+                    "TopMargin": -7.0,
+                    "BottomMargin": -7.0,
+                    "Tag": 736,
+                    "ActionTag": 745370454,
+                    "Size": {
+                      "X": 17.0,
+                      "Y": 14.0
+                    },
+                    "Alpha": 0,
+                    "Name": "star_5",
+                    "ctype": "ImageViewObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "inven_Star_01.png",
+                      "Plist": "Resources/Inventory.plist"
+                    },
+                    "Scale9OriginX": 13,
+                    "Scale9OriginY": 10,
+                    "Scale9Width": 13,
+                    "Scale9Height": 13,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 111.0,
+                      "Y": 0.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "PreSize": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "LeftMargin": 102.5,
+                    "RightMargin": -119.5,
+                    "TopMargin": -7.0,
+                    "BottomMargin": -7.0,
+                    "Tag": 737,
+                    "ActionTag": 1284374186,
+                    "Size": {
+                      "X": 17.0,
+                      "Y": 14.0
+                    },
+                    "Alpha": 0,
+                    "Name": "star_6",
+                    "ctype": "ImageViewObjectData"
+                  }
+                ],
+                "ActionTag": 841053736,
+                "Size": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "Name": "nodeStars",
+                "ctype": "SingleNodeObjectData"
+              },
+              {
+                "FontSize": 18,
+                "LabelText": "100.000",
+                "FontResource": {
+                  "Type": "Normal",
+                  "Path": "Font/facebook.TTF",
+                  "Plist": ""
+                },
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "AnchorPoint": {
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 927.8903,
+                  "Y": 23.765
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "RotationSkewX": 9.0,
+                "CColor": {
+                  "G": 176,
+                  "B": 39
+                },
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.8837,
+                  "Y": 0.1584
+                },
+                "PreSize": {
+                  "X": 0.0695,
+                  "Y": 0.1733
+                },
+                "HorizontalEdge": "LeftEdge",
+                "VerticalEdge": "BottomEdge",
+                "LeftMargin": 927.8903,
+                "RightMargin": 49.1097,
+                "TopMargin": 113.235,
+                "BottomMargin": 10.765,
+                "Tag": 738,
+                "Children": [
+                  {
+                    "FileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "Icon_Battery_04.png",
+                      "Plist": "Resources/ItemIcons.plist"
+                    },
+                    "Scale9OriginX": 15,
+                    "Scale9OriginY": 16,
+                    "Scale9Width": 14,
+                    "Scale9Height": 2,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": -12.6713,
+                      "Y": 11.6678
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "RotationSkewX": -9.0,
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": -0.1736,
+                      "Y": 0.4488
+                    },
+                    "PreSize": {
+                      "X": 0.3433,
+                      "Y": 0.7448
+                    },
+                    "LeftMargin": -25.2015,
+                    "RightMargin": 73.1411,
+                    "TopMargin": 4.6497,
+                    "BottomMargin": 1.9853,
+                    "Tag": 739,
+                    "ActionTag": 1641890154,
+                    "Size": {
+                      "X": 25.0604,
+                      "Y": 19.3649
+                    },
+                    "Name": "imgGold",
+                    "ctype": "ImageViewObjectData"
+                  }
+                ],
+                "ActionTag": 1209207804,
+                "Size": {
+                  "X": 73.0,
+                  "Y": 26.0
+                },
+                "Name": "lbChargeFee",
+                "ctype": "TextObjectData"
+              },
+              {
+                "FontSize": 20,
+                "LabelText": "Text Label",
+                "FontResource": {
+                  "Type": "Normal",
+                  "Path": "Font/facebook.TTF",
+                  "Plist": ""
+                },
+                "HorizontalAlignmentType": "HT_Right",
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "AnchorPoint": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 808.5532,
+                  "Y": 120.9786
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.7701,
+                  "Y": 0.8065
+                },
+                "PreSize": {
+                  "X": 0.099,
+                  "Y": 0.1933
+                },
+                "HorizontalEdge": "RightEdge",
+                "VerticalEdge": "TopEdge",
+                "LeftMargin": 704.5532,
+                "RightMargin": 241.4468,
+                "TopMargin": 14.5214,
+                "BottomMargin": 106.4786,
+                "Tag": 742,
+                "ActionTag": 1229216963,
+                "Size": {
+                  "X": 104.0,
+                  "Y": 29.0
+                },
+                "Name": "lbBattery",
+                "ctype": "TextObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "inven_Battery_01.png",
+                  "Plist": "Resources/Inventory.plist"
+                },
+                "Scale9OriginX": 12,
+                "Scale9OriginY": 6,
+                "Scale9Width": 14,
+                "Scale9Height": 7,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 828.8329,
+                  "Y": 120.0558
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.7894,
+                  "Y": 0.8004
+                },
+                "PreSize": {
+                  "X": 0.0362,
+                  "Y": 0.1267
+                },
+                "HorizontalEdge": "RightEdge",
+                "VerticalEdge": "TopEdge",
+                "LeftMargin": 809.8329,
+                "RightMargin": 202.1671,
+                "TopMargin": 20.4442,
+                "BottomMargin": 110.5558,
+                "Tag": 728,
+                "Children": [
+                  {
+                    "FileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "inven_Battery_02.png",
+                      "Plist": "Resources/Inventory.plist"
+                    },
+                    "BlendFunc": {
+                      "Src": 1,
+                      "Dst": 771
+                    },
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 17.44,
+                      "Y": 9.5
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.4589,
+                      "Y": 0.5
+                    },
+                    "PreSize": {
+                      "X": 0.8158,
+                      "Y": 0.7895
+                    },
+                    "LeftMargin": 1.94,
+                    "RightMargin": 5.06,
+                    "TopMargin": 2.0,
+                    "BottomMargin": 2.0,
+                    "Tag": 729,
+                    "ActionTag": 136272035,
+                    "Size": {
+                      "X": 31.0,
+                      "Y": 15.0
+                    },
+                    "Name": "battery",
+                    "ctype": "SpriteObjectData"
+                  }
+                ],
+                "ActionTag": 1725072281,
+                "Size": {
+                  "X": 38.0,
+                  "Y": 19.0
+                },
+                "Name": "imgBattery",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FontSize": 17,
+                "LabelText": "Low Battery: Re-charge to equip",
+                "FontResource": {
+                  "Type": "Normal",
+                  "Path": "Font/facebook.TTF",
+                  "Plist": ""
+                },
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 14,
+                  "G": 48,
+                  "B": 71
+                },
+                "ShadowOffsetX": 0.0,
+                "ShadowOffsetY": -2.0,
+                "ShadowEnabled": true,
+                "AnchorPoint": {
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 525.0,
+                  "Y": 36.4021
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "RotationSkewX": 9.0,
+                "CColor": {
+                  "R": 254,
+                  "G": 68,
+                  "B": 68
+                },
+                "IconVisible": false,
+                "PositionPercentXEnabled": true,
+                "PrePosition": {
+                  "X": 0.5,
+                  "Y": 0.2427
+                },
+                "PreSize": {
+                  "X": 0.2543,
+                  "Y": 0.1667
+                },
+                "VerticalEdge": "BottomEdge",
+                "LeftMargin": 525.0,
+                "RightMargin": 258.0,
+                "TopMargin": 101.0979,
+                "BottomMargin": 23.9021,
+                "Tag": 740,
+                "ActionTag": -2049844240,
+                "Size": {
+                  "X": 267.0,
+                  "Y": 25.0
+                },
+                "Name": "lbLowBattery",
+                "ctype": "TextObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "inven_Level.png",
+                  "Plist": "Resources/Inventory.plist"
+                },
+                "Scale9OriginX": 27,
+                "Scale9OriginY": 27,
+                "Scale9Width": 29,
+                "Scale9Height": 26,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 85.7801,
+                  "Y": 59.5977
+                },
+                "Scale": {
+                  "ScaleX": 1.1,
+                  "ScaleY": 1.1
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.0817,
+                  "Y": 0.3973
+                },
+                "PreSize": {
+                  "X": 0.079,
+                  "Y": 0.5333
+                },
+                "LeftMargin": 44.2801,
+                "RightMargin": 922.72,
+                "TopMargin": 50.4023,
+                "BottomMargin": 19.5977,
+                "Tag": 274,
+                "Children": [
+                  {
+                    "FileData": {
+                      "Type": "Default",
+                      "Path": "Default/ImageFile.png",
+                      "Plist": ""
+                    },
+                    "Scale9OriginX": 15,
+                    "Scale9OriginY": 15,
+                    "Scale9Width": 16,
+                    "Scale9Height": 16,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 39.5396,
+                      "Y": 54.6932
+                    },
+                    "Scale": {
+                      "ScaleX": 0.22,
+                      "ScaleY": 0.18
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.4764,
+                      "Y": 0.6837
+                    },
+                    "PreSize": {
+                      "X": 7.0361,
+                      "Y": 5.3375
+                    },
+                    "LeftMargin": -252.4604,
+                    "RightMargin": -248.5396,
+                    "TopMargin": -188.1932,
+                    "BottomMargin": -158.8068,
+                    "Tag": 556,
+                    "ActionTag": -1244277595,
+                    "Size": {
+                      "X": 584.0,
+                      "Y": 427.0
+                    },
+                    "VisibleForFrame": false,
+                    "Name": "imgCrown",
+                    "ctype": "ImageViewObjectData"
+                  },
+                  {
+                    "FontSize": 40,
+                    "LabelText": "100",
+                    "FontResource": {
+                      "Type": "Normal",
+                      "Path": "Font/facebook.TTF",
+                      "Plist": ""
+                    },
+                    "HorizontalAlignmentType": "HT_Center",
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "R": 110,
+                      "G": 110,
+                      "B": 110
+                    },
+                    "ShadowOffsetX": 2.0,
+                    "ShadowOffsetY": -2.0,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 41.5,
+                      "Y": 49.615
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "RotationSkewX": 9.0,
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PositionPercentXEnabled": true,
+                    "PrePosition": {
+                      "X": 0.5,
+                      "Y": 0.6202
+                    },
+                    "PreSize": {
+                      "X": 0.8554,
+                      "Y": 0.725
+                    },
+                    "LeftMargin": 6.0,
+                    "RightMargin": 6.0,
+                    "TopMargin": 1.385,
+                    "BottomMargin": 20.615,
+                    "Tag": 101,
+                    "ActionTag": -1328073163,
+                    "Size": {
+                      "X": 71.0,
+                      "Y": 58.0
+                    },
+                    "Name": "lbLevel",
+                    "ctype": "TextObjectData"
+                  }
+                ],
+                "ActionTag": -1609869481,
+                "Size": {
+                  "X": 83.0,
+                  "Y": 80.0
+                },
+                "Name": "imgLevel",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FontSize": 14,
+                "ButtonText": "",
+                "TextColor": {
+                  "R": 65,
+                  "G": 65,
+                  "B": 70
+                },
+                "DisabledFileData": {
+                  "Type": "Default",
+                  "Path": "Default/Button_Disable.png",
+                  "Plist": ""
+                },
+                "PressedFileData": {
+                  "Type": "Default",
+                  "Path": "Default/Button_Press.png",
+                  "Plist": ""
+                },
+                "NormalFileData": {
+                  "Type": "Default",
+                  "Path": "Default/Button_Normal.png",
+                  "Plist": ""
+                },
+                "Scale9Enable": true,
+                "Scale9OriginX": 15,
+                "Scale9OriginY": 11,
+                "Scale9Width": 16,
+                "Scale9Height": 14,
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "TouchEnable": true,
+                "StretchWidthEnable": true,
+                "StretchHeightEnable": true,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 7.056,
+                  "Y": 6.3012
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.0067,
+                  "Y": 0.042
+                },
+                "PreSize": {
+                  "X": 0.9822,
+                  "Y": 0.9038
+                },
+                "LeftMargin": 7.056,
+                "RightMargin": 11.6339,
+                "TopMargin": 8.1288,
+                "BottomMargin": 6.3012,
+                "Tag": 743,
+                "ActionTag": 1185132978,
+                "Size": {
+                  "X": 1031.3101,
+                  "Y": 135.57
+                },
+                "Alpha": 0,
+                "Name": "btnItem",
+                "ctype": "ButtonObjectData"
+              },
+              {
+                "FontSize": 14,
+                "ButtonText": "",
+                "TextColor": {
+                  "R": 65,
+                  "G": 65,
+                  "B": 70
+                },
+                "DisabledFileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "Button_Green.png",
+                  "Plist": "Resources/Buttons.plist"
+                },
+                "PressedFileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "Button_Green.png",
+                  "Plist": "Resources/Buttons.plist"
+                },
+                "NormalFileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "Button_Green.png",
+                  "Plist": "Resources/Buttons.plist"
+                },
+                "Scale9Enable": true,
+                "Scale9OriginX": 15,
+                "Scale9OriginY": 11,
+                "Scale9Width": 128,
+                "Scale9Height": 34,
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "TouchEnable": true,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 944.2521,
+                  "Y": 69.3806
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.8993,
+                  "Y": 0.4625
+                },
+                "PreSize": {
+                  "X": 0.1505,
+                  "Y": 0.3733
+                },
+                "HorizontalEdge": "LeftEdge",
+                "VerticalEdge": "BothEdge",
+                "LeftMargin": 865.2521,
+                "RightMargin": 26.7479,
+                "TopMargin": 52.6194,
+                "BottomMargin": 41.3806,
+                "Tag": 717,
+                "Children": [
+                  {
+                    "FontSize": 30,
+                    "LabelText": "Text Label",
+                    "FontResource": {
+                      "Type": "Normal",
+                      "Path": "Font/facebook.TTF",
+                      "Plist": ""
+                    },
+                    "HorizontalAlignmentType": "HT_Center",
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "R": 28,
+                      "G": 87,
+                      "B": 69
+                    },
+                    "ShadowOffsetX": 0.0,
+                    "ShadowOffsetY": -3.0,
+                    "ShadowEnabled": true,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 84.0097,
+                      "Y": 32.2402
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "RotationSkewX": 9.0,
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.5317,
+                      "Y": 0.5757
+                    },
+                    "PreSize": {
+                      "X": 0.962,
+                      "Y": 0.7857
+                    },
+                    "LeftMargin": 8.0097,
+                    "RightMargin": -2.0097,
+                    "TopMargin": 1.7598,
+                    "BottomMargin": 10.2402,
+                    "Tag": 718,
+                    "ActionTag": 1890976757,
+                    "Size": {
+                      "X": 152.0,
+                      "Y": 44.0
+                    },
+                    "Name": "lb",
+                    "ctype": "TextObjectData"
+                  }
+                ],
+                "ActionTag": 1514894453,
+                "Size": {
+                  "X": 158.0,
+                  "Y": 56.0
+                },
+                "Name": "btnSwitch",
+                "ctype": "ButtonObjectData"
+              },
+              {
+                "FontSize": 14,
+                "ButtonText": "",
+                "TextColor": {
+                  "R": 65,
+                  "G": 65,
+                  "B": 70
+                },
+                "Scale9Enable": true,
+                "Scale9OriginX": -7,
+                "Scale9OriginY": -11,
+                "Scale9Width": 14,
+                "Scale9Height": 22,
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "TouchEnable": true,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 1013.7515,
+                  "Y": 121.2421
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.9655,
+                  "Y": 0.8083
+                },
+                "PreSize": {
+                  "X": 0.021,
+                  "Y": 0.1533
+                },
+                "HorizontalEdge": "RightEdge",
+                "VerticalEdge": "BottomEdge",
+                "LeftMargin": 1002.7515,
+                "RightMargin": 25.2485,
+                "TopMargin": 17.2579,
+                "BottomMargin": 109.7421,
+                "Tag": 720,
+                "Children": [
+                  {
+                    "FileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "inven_Recharge_Box.png",
+                      "Plist": "Resources/Inventory.plist"
+                    },
+                    "Scale9OriginX": 7,
+                    "Scale9OriginY": 7,
+                    "Scale9Width": 8,
+                    "Scale9Height": 9,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 11.0,
+                      "Y": 11.5
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PositionPercentXEnabled": true,
+                    "PositionPercentYEnabled": true,
+                    "PrePosition": {
+                      "X": 0.5,
+                      "Y": 0.5
+                    },
+                    "PreSize": {
+                      "X": 1.0,
+                      "Y": 1.0
+                    },
+                    "Tag": 127,
+                    "ActionTag": -373668654,
+                    "Size": {
+                      "X": 22.0,
+                      "Y": 23.0
+                    },
+                    "Name": "imgTickBox",
+                    "ctype": "ImageViewObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "inven_Recharge_Check.png",
+                      "Plist": "Resources/Inventory.plist"
+                    },
+                    "Scale9OriginX": 8,
+                    "Scale9OriginY": 6,
+                    "Scale9Width": 9,
+                    "Scale9Height": 9,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 11.0,
+                      "Y": 11.5
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PositionPercentXEnabled": true,
+                    "PositionPercentYEnabled": true,
+                    "PrePosition": {
+                      "X": 0.5,
+                      "Y": 0.5
+                    },
+                    "PreSize": {
+                      "X": 1.1364,
+                      "Y": 0.913
+                    },
+                    "LeftMargin": -1.5,
+                    "RightMargin": -1.5,
+                    "TopMargin": 1.0,
+                    "BottomMargin": 1.0,
+                    "Tag": 721,
+                    "ActionTag": 177890973,
+                    "Size": {
+                      "X": 25.0,
+                      "Y": 21.0
+                    },
+                    "Name": "imgTick",
+                    "ctype": "ImageViewObjectData"
+                  }
+                ],
+                "ActionTag": -1885762598,
+                "Size": {
+                  "X": 22.0,
+                  "Y": 23.0
+                },
+                "Name": "btnAutoRecharge",
+                "ctype": "ButtonObjectData"
+              }
+            ],
+            "ActionTag": -224561969,
+            "Size": {
+              "X": 1050.0,
+              "Y": 150.0
+            },
+            "Name": "bg",
+            "ctype": "PanelObjectData"
+          }
+        ],
+        "Size": {
+          "X": 1136.0,
+          "Y": 640.0
+        },
+        "Name": "Layer",
+        "ctype": "LayerObjectData"
+      },
+      "UsedResources": [
+        "../Default/Button_Disable.png",
+        "../Default/Button_Normal.png",
+        "../Default/Button_Press.png",
+        "../Default/ImageFile.png",
+        "../Font/facebook.TTF",
+        "../Font/UTMFacebook.ttf",
+        "../Resources/Buttons.plist",
+        "../Resources/Buttons.png",
+        "../Resources/Inventory.plist",
+        "../Resources/Inventory.png",
+        "../Resources/ItemIcons.plist",
+        "../Resources/ItemIcons.png",
+        "res/fakes/Fake_Inventory_NEWWORK_03a_i5.png"
+      ],
+      "ctype": "GameFileData"
+    }
+  },
+  "Type": "Layer"
+}

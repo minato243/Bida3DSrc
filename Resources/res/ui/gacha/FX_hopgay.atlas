@@ -1,0 +1,62 @@
+
+FX_hopgay.png
+size: 1024,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1
+  rotate: true
+  xy: 2, 10
+  size: 115, 298
+  orig: 115, 298
+  offset: 0, 0
+  index: -1
+2
+  rotate: true
+  xy: 679, 15
+  size: 41, 231
+  orig: 41, 231
+  offset: 0, 0
+  index: -1
+3
+  rotate: true
+  xy: 457, 16
+  size: 22, 220
+  orig: 22, 220
+  offset: 0, 0
+  index: -1
+Layer 1
+  rotate: false
+  xy: 457, 40
+  size: 153, 85
+  orig: 153, 85
+  offset: 0, 0
+  index: -1
+Layer 2
+  rotate: true
+  xy: 2, 2
+  size: 6, 11
+  orig: 6, 11
+  offset: 0, 0
+  index: -1
+Layer 352 copy
+  rotate: false
+  xy: 302, 19
+  size: 153, 106
+  orig: 153, 106
+  offset: 0, 0
+  index: -1
+Shape 11
+  rotate: false
+  xy: 776, 63
+  size: 153, 62
+  orig: 153, 62
+  offset: 0, 0
+  index: -1
+light1
+  rotate: false
+  xy: 612, 58
+  size: 162, 67
+  orig: 162, 67
+  offset: 0, 0
+  index: -1

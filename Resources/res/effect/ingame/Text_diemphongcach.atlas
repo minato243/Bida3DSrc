@@ -1,0 +1,153 @@
+
+Text_diemphongcach.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+6
+  rotate: false
+  xy: 2, 364
+  size: 658, 658
+  orig: 658, 658
+  offset: 0, 0
+  index: -1
+Ban
+  rotate: false
+  xy: 529, 138
+  size: 98, 50
+  orig: 98, 50
+  offset: 0, 0
+  index: -1
+Ban2
+  rotate: false
+  xy: 529, 86
+  size: 97, 50
+  orig: 97, 50
+  offset: 0, 0
+  index: -1
+Dinh
+  rotate: true
+  xy: 473, 97
+  size: 104, 54
+  orig: 104, 54
+  offset: 0, 0
+  index: -1
+Group 193_1
+  rotate: false
+  xy: 2, 203
+  size: 527, 159
+  orig: 527, 159
+  offset: 0, 0
+  index: -1
+Kha
+  rotate: true
+  xy: 794, 273
+  size: 83, 46
+  orig: 83, 46
+  offset: 0, 0
+  index: -1
+Qua
+  rotate: false
+  xy: 531, 190
+  size: 99, 52
+  orig: 99, 52
+  offset: 0, 0
+  index: -1
+Tot
+  rotate: true
+  xy: 794, 192
+  size: 79, 49
+  orig: 79, 49
+  offset: 0, 0
+  index: -1
+Tuyet
+  rotate: false
+  xy: 531, 305
+  size: 132, 57
+  orig: 132, 57
+  offset: 0, 0
+  index: -1
+Voi
+  rotate: true
+  xy: 794, 358
+  size: 78, 52
+  orig: 78, 52
+  offset: 0, 0
+  index: -1
+WIN_11
+  rotate: true
+  xy: 794, 438
+  size: 88, 55
+  orig: 88, 55
+  offset: 0, 0
+  index: -1
+X1
+  rotate: true
+  xy: 984, 921
+  size: 45, 38
+  orig: 45, 38
+  offset: 0, 0
+  index: -1
+X2
+  rotate: false
+  xy: 2, 2
+  size: 53, 38
+  orig: 53, 38
+  offset: 0, 0
+  index: -1
+X3
+  rotate: false
+  xy: 665, 323
+  size: 51, 39
+  orig: 51, 39
+  offset: 0, 0
+  index: -1
+X4
+  rotate: true
+  xy: 984, 968
+  size: 54, 38
+  orig: 54, 38
+  offset: 0, 0
+  index: -1
+YOU_1
+  rotate: false
+  xy: 531, 244
+  size: 123, 59
+  orig: 123, 59
+  offset: 0, 0
+  index: -1
+do
+  rotate: true
+  xy: 731, 32
+  size: 494, 61
+  orig: 494, 61
+  offset: 0, 0
+  index: -1
+lam
+  rotate: true
+  xy: 823, 554
+  size: 468, 159
+  orig: 468, 159
+  offset: 0, 0
+  index: -1
+light1
+  rotate: true
+  xy: 662, 364
+  size: 162, 67
+  orig: 162, 67
+  offset: 0, 0
+  index: -1
+luc
+  rotate: false
+  xy: 2, 42
+  size: 469, 159
+  orig: 469, 159
+  offset: 0, 0
+  index: -1
+vang
+  rotate: true
+  xy: 662, 528
+  size: 494, 159
+  orig: 494, 159
+  offset: 0, 0
+  index: -1

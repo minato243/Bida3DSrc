@@ -1,0 +1,30 @@
+{
+  "1": {
+    "id": 1,
+    "cueID": 1,
+    "achievementID": 1,
+    "gold": 1000,
+    "coin": 0
+  },
+  "2": {
+    "id": 2,
+    "cueID": 2,
+    "achievementID": 2,
+    "gold": 1000,
+    "coin": 0
+  },
+  "3": {
+    "id": 3,
+    "cueID": 3,
+    "achievementID": 3,
+    "gold": 1000,
+    "coin": 0
+  },
+  "4": {
+    "id": 4,
+    "cueID": 4,
+    "achievementID": 4,
+    "gold": 1000,
+    "coin": 0
+  }
+}

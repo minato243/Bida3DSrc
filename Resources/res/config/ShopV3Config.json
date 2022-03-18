@@ -1,0 +1,608 @@
+{
+  "CUE": [
+    {
+      "id": 0,
+      "type": 0,
+      "shopCategory": "CUE",
+      "value": 0,
+      "BoxName": "Mystery box",
+      "cost": 150,
+      "typeCost": "cash",
+      "discount": 0,
+      "listItem": [
+        {
+          "id": 0,
+          "type": 0,
+          "cueName": ""
+        },
+        {
+          "id": 1,
+          "type": 0,
+          "cueName": ""
+        },
+        {
+          "id": 2,
+          "type": 0,
+          "cueName": ""
+        },
+        {
+          "id": 3,
+          "type": 0,
+          "cueName": ""
+        },
+        {
+          "id": 4,
+          "type": 0,
+          "cueName": ""
+        },
+        {
+          "id": 5,
+          "type": 0,
+          "cueName": ""
+        },
+        {
+          "id": 6,
+          "type": 0,
+          "cueName": ""
+        },
+        {
+          "id": 7,
+          "type": 0,
+          "cueName": ""
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "type": 0,
+      "shopCategory": "CUE",
+      "value": 0,
+      "BoxName": "Mystery box",
+      "cost": 300,
+      "typeCost": "cash",
+      "discount": 0,
+      "listItem": [
+        {
+          "id": 0,
+          "type": 0,
+          "cueName": ""
+        },
+        {
+          "id": 1,
+          "type": 0,
+          "cueName": ""
+        },
+        {
+          "id": 2,
+          "type": 0,
+          "cueName": ""
+        },
+        {
+          "id": 3,
+          "type": 0,
+          "cueName": ""
+        },
+        {
+          "id": 4,
+          "type": 0,
+          "cueName": ""
+        },
+        {
+          "id": 5,
+          "type": 0,
+          "cueName": ""
+        },
+        {
+          "id": 6,
+          "type": 0,
+          "cueName": ""
+        },
+        {
+          "id": 7,
+          "type": 0,
+          "cueName": ""
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "type": 0,
+      "shopCategory": "CUE",
+      "value": 0,
+      "BoxName": "Mystery box",
+      "cost": 450,
+      "typeCost": "cash",
+      "discount": 0,
+      "listItem": [
+        {
+          "id": 0,
+          "type": 0,
+          "cueName": ""
+        },
+        {
+          "id": 1,
+          "type": 0,
+          "cueName": ""
+        },
+        {
+          "id": 2,
+          "type": 0,
+          "cueName": ""
+        },
+        {
+          "id": 3,
+          "type": 0,
+          "cueName": ""
+        },
+        {
+          "id": 4,
+          "type": 0,
+          "cueName": ""
+        },
+        {
+          "id": 5,
+          "type": 0,
+          "cueName": ""
+        },
+        {
+          "id": 6,
+          "type": 0,
+          "cueName": ""
+        },
+        {
+          "id": 7,
+          "type": 0,
+          "cueName": ""
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "type": 0,
+      "shopCategory": "CUE",
+      "value": 0,
+      "BoxName": "Mystery box",
+      "cost": 500,
+      "typeCost": "cash",
+      "discount": 0,
+      "listItem": [
+        {
+          "id": 0,
+          "type": 0,
+          "cueName": ""
+        },
+        {
+          "id": 1,
+          "type": 0,
+          "cueName": ""
+        },
+        {
+          "id": 2,
+          "type": 0,
+          "cueName": ""
+        },
+        {
+          "id": 3,
+          "type": 0,
+          "cueName": ""
+        },
+        {
+          "id": 4,
+          "type": 0,
+          "cueName": ""
+        },
+        {
+          "id": 5,
+          "type": 0,
+          "cueName": ""
+        },
+        {
+          "id": 6,
+          "type": 0,
+          "cueName": ""
+        },
+        {
+          "id": 7,
+          "type": 0,
+          "cueName": ""
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "type": 0,
+      "shopCategory": "CUE",
+      "value": 0,
+      "BoxName": "Mystery box",
+      "cost": 700,
+      "typeCost": "cash",
+      "discount": 0,
+      "listItem": [
+        {
+          "id": 0,
+          "type": 0,
+          "cueName": ""
+        },
+        {
+          "id": 1,
+          "type": 0,
+          "cueName": ""
+        },
+        {
+          "id": 2,
+          "type": 0,
+          "cueName": ""
+        },
+        {
+          "id": 3,
+          "type": 0,
+          "cueName": ""
+        },
+        {
+          "id": 4,
+          "type": 0,
+          "cueName": ""
+        },
+        {
+          "id": 5,
+          "type": 0,
+          "cueName": ""
+        },
+        {
+          "id": 6,
+          "type": 0,
+          "cueName": ""
+        },
+        {
+          "id": 7,
+          "type": 0,
+          "cueName": ""
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "type": 0,
+      "shopCategory": "CUE",
+      "value": 0,
+      "BoxName": "Mystery box",
+      "cost": 50000,
+      "typeCost": "gold",
+      "discount": 0,
+      "listItem": [
+        {
+          "id": 0,
+          "type": 0,
+          "cueName": ""
+        },
+        {
+          "id": 1,
+          "type": 0,
+          "cueName": ""
+        },
+        {
+          "id": 2,
+          "type": 0,
+          "cueName": ""
+        },
+        {
+          "id": 3,
+          "type": 0,
+          "cueName": ""
+        },
+        {
+          "id": 4,
+          "type": 0,
+          "cueName": ""
+        },
+        {
+          "id": 5,
+          "type": 0,
+          "cueName": ""
+        },
+        {
+          "id": 6,
+          "type": 0,
+          "cueName": ""
+        },
+        {
+          "id": 7,
+          "type": 0,
+          "cueName": ""
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "type": 0,
+      "shopCategory": "CUE",
+      "value": 0,
+      "BoxName": "Mystery box",
+      "cost": 10000,
+      "typeCost": "gold",
+      "discount": 0,
+      "listItem": [
+        {
+          "id": 0,
+          "type": 0,
+          "cueName": ""
+        },
+        {
+          "id": 1,
+          "type": 0,
+          "cueName": ""
+        },
+        {
+          "id": 2,
+          "type": 0,
+          "cueName": ""
+        },
+        {
+          "id": 3,
+          "type": 0,
+          "cueName": ""
+        },
+        {
+          "id": 4,
+          "type": 0,
+          "cueName": ""
+        },
+        {
+          "id": 5,
+          "type": 0,
+          "cueName": ""
+        },
+        {
+          "id": 6,
+          "type": 0,
+          "cueName": ""
+        },
+        {
+          "id": 7,
+          "type": 0,
+          "cueName": ""
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "type": 0,
+      "shopCategory": "CUE",
+      "value": 0,
+      "BoxName": "Mystery box",
+      "cost": 15000,
+      "typeCost": "gold",
+      "discount": 0,
+      "listItem": [
+        {
+          "id": 0,
+          "type": 0,
+          "cueName": ""
+        },
+        {
+          "id": 1,
+          "type": 0,
+          "cueName": ""
+        },
+        {
+          "id": 2,
+          "type": 0,
+          "cueName": ""
+        },
+        {
+          "id": 3,
+          "type": 0,
+          "cueName": ""
+        },
+        {
+          "id": 4,
+          "type": 0,
+          "cueName": ""
+        },
+        {
+          "id": 5,
+          "type": 0,
+          "cueName": ""
+        },
+        {
+          "id": 6,
+          "type": 0,
+          "cueName": ""
+        },
+        {
+          "id": 7,
+          "type": 0,
+          "cueName": ""
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "type": 0,
+      "shopCategory": "CUE",
+      "value": 0,
+      "BoxName": "Mystery box",
+      "cost": 25000,
+      "typeCost": "gold",
+      "discount": 0,
+      "listItem": [
+        {
+          "id": 0,
+          "type": 0,
+          "cueName": ""
+        },
+        {
+          "id": 1,
+          "type": 0,
+          "cueName": ""
+        },
+        {
+          "id": 2,
+          "type": 0,
+          "cueName": ""
+        },
+        {
+          "id": 3,
+          "type": 0,
+          "cueName": ""
+        },
+        {
+          "id": 4,
+          "type": 0,
+          "cueName": ""
+        },
+        {
+          "id": 5,
+          "type": 0,
+          "cueName": ""
+        },
+        {
+          "id": 6,
+          "type": 0,
+          "cueName": ""
+        },
+        {
+          "id": 7,
+          "type": 0,
+          "cueName": ""
+        }
+      ]
+    } ],
+  "GOLD": [
+    {
+      "id": 0,
+      "type": 1,
+      "shopCategory": "GOLD",
+      "value": 10000,
+      "cost": 100,
+      "typeCost": "cash",
+      "discount": 0
+    },
+    {
+      "id": 1,
+      "type": 1,
+      "shopCategory": "GOLD",
+      "value": 20000,
+      "cost": 200,
+      "typeCost": "cash",
+      "discount": 0
+    },
+    {
+      "id": 2,
+      "type": 1,
+      "shopCategory": "GOLD",
+      "value": 50000,
+      "cost": 500,
+      "typeCost": "cash",
+      "discount": 0
+    },
+    {
+      "id": 3,
+      "type": 1,
+      "shopCategory": "GOLD",
+      "value": 110000,
+      "cost": 1000,
+      "typeCost": "cash",
+      "discount": 0
+    },
+    {
+      "id": 4,
+      "type": 1,
+      "shopCategory": "GOLD",
+      "value": 230000,
+      "cost": 2000,
+      "typeCost": "cash",
+      "discount": 0
+    },
+    {
+      "id": 5,
+      "type": 1,
+      "shopCategory": "GOLD",
+      "value": 600000,
+      "cost": 5000,
+      "typeCost": "cash",
+      "discount": 0
+    },
+    {
+      "id": 6,
+      "type": 1,
+      "shopCategory": "GOLD",
+      "value": 1400000,
+      "cost": 10000,
+      "typeCost": "cash",
+      "discount": 0
+    },
+    {
+      "id": 7,
+      "type": 1,
+      "shopCategory": "GOLD",
+      "value": 3000000,
+      "cost": 20000,
+      "typeCost": "cash",
+      "discount": 0
+    },
+    {
+      "id": 8,
+      "type": 1,
+      "shopCategory": "GOLD",
+      "value": 8000000,
+      "cost": 50000,
+      "typeCost": "cash",
+      "discount": 0
+    }],
+  "CASH": [
+    {
+      "id": 0,
+      "type": 2,
+      "shopCategory": "CASH",
+      "value": 2000,
+      "cost": 2,
+      "typeCost": "dollar",
+      "discount": 0
+    },
+    {
+      "id": 1,
+      "type": 2,
+      "shopCategory": "CASH",
+      "value": 5500,
+      "cost": 5,
+      "typeCost": "dollar",
+      "discount": 0
+    },
+    {
+      "id": 2,
+      "type": 2,
+      "shopCategory": "CASH",
+      "value": 12000,
+      "cost": 10,
+      "typeCost": "dollar",
+      "discount": 0
+    },
+    {
+      "id": 3,
+      "type": 2,
+      "shopCategory": "CASH",
+      "value": 25000,
+      "cost": 20,
+      "typeCost": "dollar",
+      "discount": 0
+    },
+    {
+      "id": 4,
+      "type": 2,
+      "shopCategory": "CASH",
+      "value": 65000,
+      "cost": 50,
+      "typeCost": "dollar",
+      "discount": 0
+    },
+    {
+      "id": 5,
+      "type": 2,
+      "shopCategory": "CASH",
+      "value": 140000,
+      "cost": 100,
+      "typeCost": "dollar",
+      "discount": 0
+    }]
+}

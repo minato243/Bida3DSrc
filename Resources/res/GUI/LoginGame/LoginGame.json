@@ -1,0 +1,661 @@
+{
+  "ID": "c39d9732-5919-4465-bf33-2055c114f9c5",
+  "Version": "2.3.4",
+  "Name": "LoginGame",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Tag": 62,
+        "Children": [
+          {
+            "FontSize": 14,
+            "ButtonText": "",
+            "TextColor": {
+              "R": 65,
+              "G": 65,
+              "B": 70
+            },
+            "DisabledFileData": {
+              "Type": "Default",
+              "Path": "Default/Button_Disable.png",
+              "Plist": ""
+            },
+            "PressedFileData": {
+              "Type": "Normal",
+              "Path": "LoginGame/res/facebook.png",
+              "Plist": ""
+            },
+            "NormalFileData": {
+              "Type": "Normal",
+              "Path": "LoginGame/res/facebook.png",
+              "Plist": ""
+            },
+            "Scale9Enable": true,
+            "Scale9OriginX": 15,
+            "Scale9OriginY": 11,
+            "Scale9Width": 271,
+            "Scale9Height": 80,
+            "OutlineColor": {
+              "G": 0,
+              "B": 0
+            },
+            "ShadowColor": {
+              "R": 110,
+              "G": 110,
+              "B": 110
+            },
+            "ShadowOffsetX": 2.0,
+            "ShadowOffsetY": -2.0,
+            "TouchEnable": true,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 945.0,
+              "Y": 195.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.8319,
+              "Y": 0.3047
+            },
+            "PreSize": {
+              "X": 0.2377,
+              "Y": 0.1375
+            },
+            "HorizontalEdge": "RightEdge",
+            "VerticalEdge": "BottomEdge",
+            "LeftMargin": 810.0,
+            "RightMargin": 56.0,
+            "TopMargin": 401.0,
+            "BottomMargin": 151.0,
+            "Tag": 65,
+            "ActionTag": 765036618,
+            "Size": {
+              "X": 270.0,
+              "Y": 88.0
+            },
+            "Name": "btnFb",
+            "ctype": "ButtonObjectData"
+          },
+          {
+            "FontSize": 14,
+            "ButtonText": "",
+            "TextColor": {
+              "R": 65,
+              "G": 65,
+              "B": 70
+            },
+            "DisabledFileData": {
+              "Type": "Default",
+              "Path": "Default/Button_Disable.png",
+              "Plist": ""
+            },
+            "PressedFileData": {
+              "Type": "Normal",
+              "Path": "LoginGame/res/icoGoogle.png",
+              "Plist": ""
+            },
+            "NormalFileData": {
+              "Type": "Normal",
+              "Path": "LoginGame/res/icoGoogle.png",
+              "Plist": ""
+            },
+            "Scale9Enable": true,
+            "Scale9OriginX": 15,
+            "Scale9OriginY": 11,
+            "Scale9Width": 238,
+            "Scale9Height": 61,
+            "OutlineColor": {
+              "G": 0,
+              "B": 0
+            },
+            "ShadowColor": {
+              "R": 110,
+              "G": 110,
+              "B": 110
+            },
+            "ShadowOffsetX": 2.0,
+            "ShadowOffsetY": -2.0,
+            "TouchEnable": true,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 945.0,
+              "Y": 86.0001
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.8319,
+              "Y": 0.1344
+            },
+            "PreSize": {
+              "X": 0.2377,
+              "Y": 0.1375
+            },
+            "HorizontalEdge": "RightEdge",
+            "VerticalEdge": "BottomEdge",
+            "LeftMargin": 810.0,
+            "RightMargin": 56.0,
+            "TopMargin": 509.9999,
+            "BottomMargin": 42.0001,
+            "Tag": 66,
+            "ActionTag": 1898941773,
+            "Size": {
+              "X": 270.0,
+              "Y": 88.0
+            },
+            "Name": "btngg",
+            "ctype": "ButtonObjectData"
+          },
+          {
+            "FontSize": 30,
+            "ButtonText": "",
+            "FontResource": {
+              "Type": "Normal",
+              "Path": "Font/facebook.TTF",
+              "Plist": ""
+            },
+            "TextColor": {},
+            "DisabledFileData": {
+              "Type": "PlistSubImage",
+              "Path": "Button_Green.png",
+              "Plist": "Resources/Buttons.plist"
+            },
+            "PressedFileData": {
+              "Type": "PlistSubImage",
+              "Path": "Button_Green.png",
+              "Plist": "Resources/Buttons.plist"
+            },
+            "NormalFileData": {
+              "Type": "PlistSubImage",
+              "Path": "Button_Green.png",
+              "Plist": "Resources/Buttons.plist"
+            },
+            "Scale9Enable": true,
+            "Scale9OriginX": 15,
+            "Scale9OriginY": 11,
+            "Scale9Width": 128,
+            "Scale9Height": 34,
+            "OutlineColor": {
+              "G": 0,
+              "B": 0
+            },
+            "ShadowColor": {
+              "R": 110,
+              "G": 110,
+              "B": 110
+            },
+            "ShadowOffsetX": 2.0,
+            "ShadowOffsetY": -2.0,
+            "TouchEnable": true,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 944.9988,
+              "Y": 305.6497
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.8319,
+              "Y": 0.4776
+            },
+            "PreSize": {
+              "X": 0.2113,
+              "Y": 0.1109
+            },
+            "HorizontalEdge": "RightEdge",
+            "VerticalEdge": "BottomEdge",
+            "LeftMargin": 824.9988,
+            "RightMargin": 71.0012,
+            "TopMargin": 298.8503,
+            "BottomMargin": 270.1497,
+            "Tag": 81,
+            "Children": [
+              {
+                "FontSize": 30,
+                "LabelText": "Login as Guest",
+                "FontResource": {
+                  "Type": "Normal",
+                  "Path": "Font/facebook.TTF",
+                  "Plist": ""
+                },
+                "HorizontalAlignmentType": "HT_Center",
+                "VerticalAlignmentType": "VT_Center",
+                "OutlineColor": {
+                  "R": 19,
+                  "G": 79,
+                  "B": 53
+                },
+                "OutlineEnabled": true,
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 120.0,
+                  "Y": 38.8441
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PositionPercentXEnabled": true,
+                "PositionPercentYEnabled": true,
+                "PrePosition": {
+                  "X": 0.5,
+                  "Y": 0.5471
+                },
+                "PreSize": {
+                  "X": 0.8667,
+                  "Y": 0.6479
+                },
+                "LeftMargin": 16.0,
+                "RightMargin": 16.0,
+                "TopMargin": 9.1559,
+                "BottomMargin": 15.8441,
+                "Tag": 11,
+                "ActionTag": 1887135958,
+                "Size": {
+                  "X": 208.0,
+                  "Y": 46.0
+                },
+                "Name": "txtGuest",
+                "ctype": "TextObjectData"
+              }
+            ],
+            "ActionTag": -385514477,
+            "Size": {
+              "X": 240.0,
+              "Y": 71.0
+            },
+            "Name": "btnGuest",
+            "ctype": "ButtonObjectData"
+          },
+          {
+            "FontSize": 30,
+            "ButtonText": "",
+            "FontResource": {
+              "Type": "Normal",
+              "Path": "Font/facebook.TTF",
+              "Plist": ""
+            },
+            "TextColor": {},
+            "DisabledFileData": {
+              "Type": "PlistSubImage",
+              "Path": "Button_Gray.png",
+              "Plist": "Resources/Buttons.plist"
+            },
+            "PressedFileData": {
+              "Type": "PlistSubImage",
+              "Path": "Button_Gray.png",
+              "Plist": "Resources/Buttons.plist"
+            },
+            "NormalFileData": {
+              "Type": "PlistSubImage",
+              "Path": "Button_Gray.png",
+              "Plist": "Resources/Buttons.plist"
+            },
+            "Scale9Enable": true,
+            "Scale9OriginX": 15,
+            "Scale9OriginY": 11,
+            "Scale9Width": 130,
+            "Scale9Height": 36,
+            "OutlineColor": {
+              "G": 0,
+              "B": 0
+            },
+            "ShadowColor": {
+              "R": 110,
+              "G": 110,
+              "B": 110
+            },
+            "ShadowOffsetX": 2.0,
+            "ShadowOffsetY": -2.0,
+            "TouchEnable": true,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 945.0,
+              "Y": 405.537
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.8319,
+              "Y": 0.6337
+            },
+            "PreSize": {
+              "X": 0.2113,
+              "Y": 0.1109
+            },
+            "HorizontalEdge": "RightEdge",
+            "VerticalEdge": "BottomEdge",
+            "LeftMargin": 825.0,
+            "RightMargin": 71.0,
+            "TopMargin": 198.963,
+            "BottomMargin": 370.037,
+            "Tag": 12,
+            "Children": [
+              {
+                "FontSize": 30,
+                "LabelText": "Dev Login",
+                "FontResource": {
+                  "Type": "Normal",
+                  "Path": "Font/facebook.TTF",
+                  "Plist": ""
+                },
+                "HorizontalAlignmentType": "HT_Center",
+                "VerticalAlignmentType": "VT_Center",
+                "OutlineColor": {
+                  "R": 0,
+                  "G": 24,
+                  "B": 28
+                },
+                "OutlineEnabled": true,
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 120.0,
+                  "Y": 38.8441
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PositionPercentXEnabled": true,
+                "PositionPercentYEnabled": true,
+                "PrePosition": {
+                  "X": 0.5,
+                  "Y": 0.5471
+                },
+                "PreSize": {
+                  "X": 0.5833,
+                  "Y": 0.6479
+                },
+                "LeftMargin": 50.0,
+                "RightMargin": 50.0,
+                "TopMargin": 9.1559,
+                "BottomMargin": 15.8441,
+                "Tag": 13,
+                "ActionTag": -1507923662,
+                "Size": {
+                  "X": 140.0,
+                  "Y": 46.0
+                },
+                "Name": "txtGuest",
+                "ctype": "TextObjectData"
+              }
+            ],
+            "ActionTag": -240487276,
+            "Size": {
+              "X": 240.0,
+              "Y": 71.0
+            },
+            "Name": "btnDev",
+            "ctype": "ButtonObjectData"
+          },
+          {
+            "AnchorPoint": {},
+            "Position": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": true,
+            "PrePosition": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "RightMargin": 1136.0,
+            "TopMargin": 640.0,
+            "Tag": 14,
+            "Children": [
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "LoginGame/res/Reward_Box.png",
+                  "Plist": ""
+                },
+                "Scale9Enable": true,
+                "Scale9OriginX": 30,
+                "Scale9OriginY": 20,
+                "Scale9Width": 31,
+                "Scale9Height": 22,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "PreSize": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "LeftMargin": -125.0,
+                "RightMargin": -125.0,
+                "TopMargin": -31.0,
+                "BottomMargin": -31.0,
+                "Tag": 74,
+                "Children": [
+                  {
+                    "FontResource": {
+                      "Type": "Normal",
+                      "Path": "Font/facebook.TTF",
+                      "Plist": ""
+                    },
+                    "FontSize": 24,
+                    "IsCustomSize": true,
+                    "LabelText": "",
+                    "PlaceHolderText": "Dev Login ID",
+                    "MaxLengthText": 10,
+                    "TouchEnable": true,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 105.0,
+                      "Y": 33.0026
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PositionPercentXEnabled": true,
+                    "PositionPercentYEnabled": true,
+                    "PrePosition": {
+                      "X": 0.42,
+                      "Y": 0.5323
+                    },
+                    "PreSize": {
+                      "X": 0.716,
+                      "Y": 0.6129
+                    },
+                    "LeftMargin": 15.5,
+                    "RightMargin": 55.5,
+                    "TopMargin": 9.9974,
+                    "BottomMargin": 14.0026,
+                    "Tag": 75,
+                    "ActionTag": -88229360,
+                    "Size": {
+                      "X": 179.0,
+                      "Y": 38.0
+                    },
+                    "Name": "tf_ID",
+                    "ctype": "TextFieldObjectData"
+                  }
+                ],
+                "ActionTag": 1609890775,
+                "Size": {
+                  "X": 250.0,
+                  "Y": 62.0
+                },
+                "Name": "boxID",
+                "ctype": "ImageViewObjectData"
+              }
+            ],
+            "ActionTag": -1832267536,
+            "Size": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "Name": "devLoginFrame",
+            "ctype": "SingleNodeObjectData"
+          },
+          {
+            "FontSize": 26,
+            "LabelText": "Logging in...",
+            "FontResource": {
+              "Type": "Normal",
+              "Path": "Font/facebook.TTF",
+              "Plist": ""
+            },
+            "HorizontalAlignmentType": "HT_Center",
+            "VerticalAlignmentType": "VT_Center",
+            "OutlineSize": 2,
+            "OutlineColor": {
+              "R": 0,
+              "G": 62,
+              "B": 47
+            },
+            "OutlineEnabled": true,
+            "ShadowColor": {
+              "R": 0,
+              "G": 6,
+              "B": 4
+            },
+            "ShadowOffsetX": 2.0,
+            "ShadowOffsetY": -2.0,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 939.538,
+              "Y": 29.8515
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.8271,
+              "Y": 0.0466
+            },
+            "PreSize": {
+              "X": 0.125,
+              "Y": 0.0656
+            },
+            "LeftMargin": 868.538,
+            "RightMargin": 125.462,
+            "TopMargin": 589.1485,
+            "BottomMargin": 8.8515,
+            "Tag": 15,
+            "ActionTag": 381113362,
+            "Size": {
+              "X": 142.0,
+              "Y": 42.0
+            },
+            "Name": "textLoginStatus",
+            "ctype": "TextObjectData"
+          }
+        ],
+        "Size": {
+          "X": 1136.0,
+          "Y": 640.0
+        },
+        "Name": "Layer",
+        "ctype": "LayerObjectData"
+      },
+      "UsedResources": [
+        "../Default/Button_Disable.png",
+        "../Font/facebook.TTF",
+        "../Resources/Buttons.plist",
+        "../Resources/Buttons.png",
+        "res/facebook.png",
+        "res/icoGoogle.png",
+        "res/Reward_Box.png"
+      ],
+      "ctype": "GameFileData"
+    }
+  },
+  "Type": "Layer"
+}

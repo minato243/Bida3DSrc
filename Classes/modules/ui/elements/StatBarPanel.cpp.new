@@ -1,0 +1,123 @@
+#include "StatBarPanel.cpp.h"
+
+{
+    valid: true,
+    ANIMATION_TIME: 1000,
+    StatBarPanel::StatBarPanel(int panel){
+        if(!panel)
+            this->valid = false;
+
+        this->updateInfo = this->updateInfo.bind(this);
+        this->animationStartTime = 0;
+        this->animationTime = 0;
+        this->panel = panel;
+        this->_postfix = "";
+        panel._lbValue.ignoreContentAdaptWithSize(true);
+        this->initPanel();
+        this->setDefaultValue();
+    }
+
+    void StatBarPanel::setPostfix(int string){
+        this->_postfix = string.toString();
+    }
+
+    void StatBarPanel::setDefaultValue(){
+        this->panel._lbValue.setString("?");
+        this->setPercent(0);
+        this->animationTime = 0;
+        this->panel.unschedule(this->updateInfo);
+    }
+
+    void StatBarPanel::initPanel(){
+        auto panel = this->panel;
+        auto barSize = panel._bar.getContentSize();
+        barSize.width *= panel._bar.getScale();
+        barSize.height *= panel._bar.getScale();
+        auto stencil = new cc.DrawNode();
+        stencil.setPosition(panel._bar.getPosition());
+        stencil.originalX = stencil.x - barSize.width;
+        auto rotationWidthDif = barSize.height*tan(10 * ExtMath::PI / 180);
+        stencil.setRotationX(10);
+        stencil.drawRect(cc.p(-barSize.width/2 - rotationWidthDif/2, -barSize.height/2), cc.p(barSize.width/2 + rotationWidthDif/2, barSize.height/2), cc.color(255,255,255), 0, cc.color(255,255,255));
+        auto clippingNode = new cc.ClippingNode(stencil);
+        panel._bar.stencil = stencil;
+        panel._bar.removeFromParent();
+        panel.addChild(clippingNode);
+        clippingNode.addChild(panel._bar);
+    }
+
+    void StatBarPanel::setInfo(int val, int percent){
+        auto curTime = gv.getTime();
+        if(curTime - this->animationStartTime > this->animationTime){
+            this->panel.schedule(this->updateInfo);
+        }
+        this->_endVal = val;
+        this->_endPercent = percent;
+        this->animationStartTime = curTime;
+        this->animationTime = this->ANIMATION_TIME * this->_endPercent;
+    }
+
+    void StatBarPanel::updateInfo(double dt){
+        auto curTime = gv.getTime();
+        auto passedTime = curTime - this->animationStartTime;
+        if(passedTime >= this->animationTime){
+            this->_setInfo(this->_endVal, this->_endPercent);
+            this->panel.unschedule(this->updateInfo);
+            return;
+        }
+
+        auto val = this->_endVal * passedTime/this->animationTime;
+        auto percent = this->_endPercent * passedTime/this->animationTime;
+        this->_setInfo(Math.ceil(val), percent);
+    }
+
+    void StatBarPanel::_setInfo(int val, int percent){
+        this->panel._lbValue.setString(val + this->_postfix);
+        this->setPercent(percent);
+    }
+
+    void StatBarPanel::setPercent(int percentOnOne){
+        auto bar = this->panel._bar;
+        bar.stencil.x = bar.stencil.originalX + bar.width * bar.getScaleX() * percentOnOne;
+    }
+});
+
+auto StatBarPanelAngle = StatBarPanel.extend({
+    void StatBarPanel::setInfo(int val1, int val2, int percent){
+        auto curTime = gv.getTime();
+        if(curTime - this->animationStartTime > this->animationTime){
+            this->panel.schedule(this->updateInfo);
+        }
+        this->_endVal1 = val1;
+        this->_endVal2 = val2;
+        this->_endPercent = percent;
+        this->animationStartTime = curTime;
+        this->animationTime = this->_endPercent * this->ANIMATION_TIME;
+    }
+
+    void StatBarPanel::setDefaultValue(){
+        this->_super();
+        this->panel._lbValue.setString("?-?");
+    }
+
+    void StatBarPanel::updateInfo(double dt){
+        auto curTime = gv.getTime();
+        auto passedTime = curTime - this->animationStartTime;
+        if(passedTime >= this->animationTime){
+            this->_setInfo(this->_endVal1, this->_endVal2, this->_endPercent);
+            this->panel.unschedule(this->updateInfo);
+            return;
+        }
+
+
+        auto val1 = this->_endVal1 * passedTime/this->animationTime;
+        auto val2 = this->_endVal2 * passedTime/this->animationTime;
+        auto percent = this->_endPercent * passedTime/this->animationTime;
+        this->_setInfo(Math.ceil(val1), Math.ceil(val2), percent);
+    }
+
+    void StatBarPanel::_setInfo(int val1, int val2, int percent){
+        this->panel._lbValue.setString(val1 + '-' + val2);
+        this->setPercent(percent);
+    }
+});

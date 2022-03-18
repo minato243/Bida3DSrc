@@ -1,0 +1,392 @@
+{
+  "ID": "663442cd-0c3b-4d29-9c9f-bf99cc4d75e6",
+  "Version": "2.3.4",
+  "Name": "TutorialMessagePopup",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Tag": 272,
+        "Children": [
+          {
+            "ClipAble": false,
+            "BackColorAlpha": 178,
+            "ComboBoxIndex": 1,
+            "SingleColor": {
+              "R": 0,
+              "G": 0,
+              "B": 0
+            },
+            "FirstColor": {
+              "R": 150,
+              "G": 200
+            },
+            "EndColor": {},
+            "ColorVector": {
+              "ScaleY": 1.0
+            },
+            "Scale9Width": 1,
+            "Scale9Height": 1,
+            "TouchEnable": true,
+            "AnchorPoint": {},
+            "Position": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "PercentWidthEnable": true,
+            "PercentHeightEnable": true,
+            "PercentWidthEnabled": true,
+            "PercentHeightEnabled": true,
+            "PreSize": {
+              "X": 1.0,
+              "Y": 1.0
+            },
+            "Tag": 277,
+            "ActionTag": -55274548,
+            "Size": {
+              "X": 1136.0,
+              "Y": 640.0
+            },
+            "Name": "cover",
+            "ctype": "PanelObjectData"
+          },
+          {
+            "AnchorPoint": {},
+            "Position": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": true,
+            "PrePosition": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "RightMargin": 1136.0,
+            "TopMargin": 640.0,
+            "Tag": 7,
+            "ActionTag": -1555359731,
+            "Size": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "Name": "circleCover",
+            "ctype": "SingleNodeObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "PlistSubImage",
+              "Path": "inven_Noti_Board.png",
+              "Plist": "Resources/Inventory.plist"
+            },
+            "Scale9Enable": true,
+            "Scale9OriginX": 108,
+            "Scale9OriginY": 130,
+            "Scale9Width": 143,
+            "Scale9Height": 50,
+            "AnchorPoint": {
+              "ScaleX": 0.4,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 568.0,
+              "Y": 101.003
+            },
+            "Scale": {
+              "ScaleX": 0.78,
+              "ScaleY": 0.78
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.5,
+              "Y": 0.1578
+            },
+            "PreSize": {
+              "X": 0.559,
+              "Y": 0.3906
+            },
+            "HorizontalEdge": "BothEdge",
+            "VerticalEdge": "BottomEdge",
+            "LeftMargin": 314.0,
+            "RightMargin": 187.0,
+            "TopMargin": 413.997,
+            "BottomMargin": -23.997,
+            "Tag": 273,
+            "Children": [
+              {
+                "FontSize": 30,
+                "LabelText": "Tung Superman",
+                "FontResource": {
+                  "Type": "Normal",
+                  "Path": "Font/facebook.TTF",
+                  "Plist": ""
+                },
+                "VerticalAlignmentType": "VT_Center",
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "AnchorPoint": {
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 110.109,
+                  "Y": 280.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "RotationSkewX": 9.9999,
+                "CColor": {},
+                "IconVisible": false,
+                "PositionPercentXEnabled": true,
+                "PositionPercentYEnabled": true,
+                "PrePosition": {
+                  "X": 0.1734,
+                  "Y": 1.12
+                },
+                "PreSize": {
+                  "X": 0.348,
+                  "Y": 0.176
+                },
+                "LeftMargin": 110.109,
+                "RightMargin": 303.891,
+                "TopMargin": -52.0,
+                "BottomMargin": 258.0,
+                "Tag": 132,
+                "ActionTag": 1483911970,
+                "Size": {
+                  "X": 221.0,
+                  "Y": 44.0
+                },
+                "Name": "npcName",
+                "ctype": "TextObjectData"
+              },
+              {
+                "FontSize": 30,
+                "LabelText": "Pull and release to\nstroke the ball",
+                "FontResource": {
+                  "Type": "Normal",
+                  "Path": "Font/facebook.TTF",
+                  "Plist": ""
+                },
+                "VerticalAlignmentType": "VT_Center",
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "AnchorPoint": {
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 177.2285,
+                  "Y": 144.1
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "RotationSkewX": 10.0,
+                "CColor": {},
+                "IconVisible": false,
+                "PositionPercentXEnabled": true,
+                "PositionPercentYEnabled": true,
+                "PrePosition": {
+                  "X": 0.2791,
+                  "Y": 0.5764
+                },
+                "PreSize": {
+                  "X": 0.4252,
+                  "Y": 0.352
+                },
+                "LeftMargin": 177.2285,
+                "RightMargin": 187.7715,
+                "TopMargin": 61.9,
+                "BottomMargin": 100.1,
+                "Tag": 274,
+                "ActionTag": -294673148,
+                "Size": {
+                  "X": 270.0,
+                  "Y": 88.0
+                },
+                "Name": "msg",
+                "ctype": "TextObjectData"
+              },
+              {
+                "FontSize": 20,
+                "LabelText": "(Tap to continue)",
+                "FontResource": {
+                  "Type": "Normal",
+                  "Path": "Font/facebook.TTF",
+                  "Plist": ""
+                },
+                "HorizontalAlignmentType": "HT_Center",
+                "VerticalAlignmentType": "VT_Center",
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 256.3495,
+                  "Y": 43.6
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "RotationSkewX": 13.0,
+                "CColor": {
+                  "R": 158,
+                  "G": 158,
+                  "B": 158
+                },
+                "IconVisible": false,
+                "PositionPercentXEnabled": true,
+                "PositionPercentYEnabled": true,
+                "PrePosition": {
+                  "X": 0.4037,
+                  "Y": 0.1744
+                },
+                "PreSize": {
+                  "X": 0.2551,
+                  "Y": 0.116
+                },
+                "LeftMargin": 175.3495,
+                "RightMargin": 297.6505,
+                "TopMargin": 191.9,
+                "BottomMargin": 29.1,
+                "Tag": 275,
+                "ActionTag": 952246460,
+                "Size": {
+                  "X": 162.0,
+                  "Y": 29.0
+                },
+                "Name": "placeholder",
+                "ctype": "TextObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "tuto_npc_01_i5.png",
+                  "Plist": "Resources/tutorial.plist"
+                },
+                "Scale9OriginX": 99,
+                "Scale9OriginY": 140,
+                "Scale9Width": 103,
+                "Scale9Height": 146,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": -18.9981,
+                  "Y": 181.975
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PositionPercentYEnabled": true,
+                "PrePosition": {
+                  "X": -0.0299,
+                  "Y": 0.7279
+                },
+                "PreSize": {
+                  "X": 0.474,
+                  "Y": 1.704
+                },
+                "LeftMargin": -169.4981,
+                "RightMargin": 503.4981,
+                "TopMargin": -144.975,
+                "BottomMargin": -31.025,
+                "Tag": 276,
+                "ActionTag": 1238700171,
+                "Size": {
+                  "X": 301.0,
+                  "Y": 426.0
+                },
+                "Name": "girl",
+                "ctype": "ImageViewObjectData"
+              }
+            ],
+            "ActionTag": 92180574,
+            "Size": {
+              "X": 635.0,
+              "Y": 250.0
+            },
+            "Name": "bg",
+            "ctype": "ImageViewObjectData"
+          }
+        ],
+        "Size": {
+          "X": 1136.0,
+          "Y": 640.0
+        },
+        "Name": "Layer",
+        "ctype": "LayerObjectData"
+      },
+      "UsedResources": [
+        "../Font/facebook.TTF",
+        "../Resources/Inventory.plist",
+        "../Resources/Inventory.png",
+        "../Resources/tutorial.plist",
+        "../Resources/tutorial.png"
+      ],
+      "ctype": "GameFileData"
+    }
+  },
+  "Type": "Layer"
+}

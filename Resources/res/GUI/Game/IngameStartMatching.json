@@ -1,0 +1,3175 @@
+{
+  "ID": "0d064803-b7ad-4965-a3c6-35cb601107f7",
+  "Version": "2.3.4",
+  "Name": "IngameStartMatching",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Tag": 1112,
+        "Children": [
+          {
+            "ClipAble": false,
+            "BackColorAlpha": 204,
+            "ComboBoxIndex": 1,
+            "SingleColor": {
+              "R": 0,
+              "G": 0,
+              "B": 0
+            },
+            "FirstColor": {
+              "R": 150,
+              "G": 200
+            },
+            "EndColor": {},
+            "ColorVector": {
+              "ScaleY": 1.0
+            },
+            "Scale9Width": 1,
+            "Scale9Height": 1,
+            "TouchEnable": true,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 568.0,
+              "Y": 320.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PositionPercentXEnabled": true,
+            "PositionPercentYEnabled": true,
+            "PrePosition": {
+              "X": 0.5,
+              "Y": 0.5
+            },
+            "PercentWidthEnable": true,
+            "PercentHeightEnable": true,
+            "PercentWidthEnabled": true,
+            "PercentHeightEnabled": true,
+            "PreSize": {
+              "X": 1.0,
+              "Y": 1.0
+            },
+            "Tag": 220,
+            "Children": [
+              {
+                "ClipAble": false,
+                "BackColorAlpha": 102,
+                "SingleColor": {
+                  "R": 150,
+                  "G": 200
+                },
+                "FirstColor": {
+                  "R": 150,
+                  "G": 200
+                },
+                "EndColor": {},
+                "ColorVector": {
+                  "ScaleY": 1.0
+                },
+                "Scale9Width": 1,
+                "Scale9Height": 1,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 568.0,
+                  "Y": 224.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PositionPercentXEnabled": true,
+                "PositionPercentYEnabled": true,
+                "PrePosition": {
+                  "X": 0.5,
+                  "Y": 0.35
+                },
+                "PreSize": {
+                  "X": 0.8803,
+                  "Y": 0.0781
+                },
+                "LeftMargin": 68.0,
+                "RightMargin": 68.0,
+                "TopMargin": 391.0,
+                "BottomMargin": 199.0,
+                "Tag": 735,
+                "Children": [
+                  {
+                    "FontSize": 30,
+                    "LabelText": "YOU CHOSE SCISSORZZZZZZZ",
+                    "FontResource": {
+                      "Type": "Normal",
+                      "Path": "Font/facebook.TTF",
+                      "Plist": ""
+                    },
+                    "HorizontalAlignmentType": "HT_Center",
+                    "VerticalAlignmentType": "VT_Center",
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "R": 110,
+                      "G": 110,
+                      "B": 110
+                    },
+                    "ShadowOffsetX": 2.0,
+                    "ShadowOffsetY": -2.0,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 500.0,
+                      "Y": 25.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PositionPercentXEnabled": true,
+                    "PositionPercentYEnabled": true,
+                    "PrePosition": {
+                      "X": 0.5,
+                      "Y": 0.5
+                    },
+                    "PreSize": {
+                      "X": 0.439,
+                      "Y": 0.88
+                    },
+                    "LeftMargin": 280.5,
+                    "RightMargin": 280.5,
+                    "TopMargin": 3.0,
+                    "BottomMargin": 3.0,
+                    "Tag": 360,
+                    "ActionTag": -1895544485,
+                    "Size": {
+                      "X": 439.0,
+                      "Y": 44.0
+                    },
+                    "Name": "lb_Content",
+                    "ctype": "TextObjectData"
+                  },
+                  {
+                    "FlipX": true,
+                    "FileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "StartGame_lines.png",
+                      "Plist": "Resources/StartGame.plist"
+                    },
+                    "BlendFunc": {
+                      "Src": 1,
+                      "Dst": 771
+                    },
+                    "AnchorPoint": {
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 439.0,
+                      "Y": 25.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PositionPercentYEnabled": true,
+                    "PrePosition": {
+                      "X": 0.439,
+                      "Y": 0.5
+                    },
+                    "PreSize": {
+                      "X": 0.2,
+                      "Y": 0.26
+                    },
+                    "LeftMargin": 439.0,
+                    "RightMargin": 361.0,
+                    "TopMargin": 18.5,
+                    "BottomMargin": 18.5,
+                    "Tag": 107,
+                    "ActionTag": 677230703,
+                    "Size": {
+                      "X": 200.0,
+                      "Y": 13.0
+                    },
+                    "Name": "line_1",
+                    "ctype": "SpriteObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "StartGame_lines.png",
+                      "Plist": "Resources/StartGame.plist"
+                    },
+                    "BlendFunc": {
+                      "Src": 1,
+                      "Dst": 771
+                    },
+                    "AnchorPoint": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": -10.0,
+                      "Y": 25.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PositionPercentYEnabled": true,
+                    "PrePosition": {
+                      "X": -0.01,
+                      "Y": 0.5
+                    },
+                    "PreSize": {
+                      "X": 0.2,
+                      "Y": 0.26
+                    },
+                    "LeftMargin": -210.0,
+                    "RightMargin": 1010.0,
+                    "TopMargin": 18.5,
+                    "BottomMargin": 18.5,
+                    "Tag": 106,
+                    "ActionTag": 1902265484,
+                    "Size": {
+                      "X": 200.0,
+                      "Y": 13.0
+                    },
+                    "Name": "line_0",
+                    "ctype": "SpriteObjectData"
+                  }
+                ],
+                "ActionTag": 1045732320,
+                "Size": {
+                  "X": 1000.0,
+                  "Y": 50.0
+                },
+                "Name": "panel_Text",
+                "ctype": "PanelObjectData"
+              },
+              {
+                "ClipAble": false,
+                "BackColorAlpha": 102,
+                "SingleColor": {
+                  "R": 150,
+                  "G": 200
+                },
+                "FirstColor": {
+                  "R": 150,
+                  "G": 200
+                },
+                "EndColor": {},
+                "ColorVector": {
+                  "ScaleY": 1.0
+                },
+                "Scale9Width": 1,
+                "Scale9Height": 1,
+                "TouchEnable": true,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 568.0,
+                  "Y": 321.472
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PositionPercentXEnabled": true,
+                "PositionPercentYEnabled": true,
+                "PrePosition": {
+                  "X": 0.5,
+                  "Y": 0.5023
+                },
+                "PercentWidthEnable": true,
+                "PercentHeightEnable": true,
+                "PercentWidthEnabled": true,
+                "PercentHeightEnabled": true,
+                "PreSize": {
+                  "X": 1.0,
+                  "Y": 1.0
+                },
+                "TopMargin": -1.472,
+                "BottomMargin": 1.472,
+                "Tag": 1624,
+                "Children": [
+                  {
+                    "FileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "StartGame_RT2.png",
+                      "Plist": "Resources/StartGame.plist"
+                    },
+                    "BlendFunc": {
+                      "Src": 1,
+                      "Dst": 771
+                    },
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 568.0,
+                      "Y": 537.6
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.5,
+                      "Y": 0.84
+                    },
+                    "PreSize": {
+                      "X": 0.2641,
+                      "Y": 0.0812
+                    },
+                    "HorizontalEdge": "BothEdge",
+                    "VerticalEdge": "TopEdge",
+                    "LeftMargin": 418.0,
+                    "RightMargin": 418.0,
+                    "TopMargin": 76.4,
+                    "BottomMargin": 511.6,
+                    "Tag": 111,
+                    "ActionTag": 1173228141,
+                    "Size": {
+                      "X": 300.0,
+                      "Y": 52.0
+                    },
+                    "Name": "image",
+                    "ctype": "SpriteObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "StartGame_Box.png",
+                      "Plist": "Resources/StartGame.plist"
+                    },
+                    "Scale9OriginX": 261,
+                    "Scale9OriginY": 75,
+                    "Scale9Width": 271,
+                    "Scale9Height": 79,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 568.0,
+                      "Y": 384.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PositionPercentXEnabled": true,
+                    "PositionPercentYEnabled": true,
+                    "PrePosition": {
+                      "X": 0.5,
+                      "Y": 0.6
+                    },
+                    "PreSize": {
+                      "X": 0.6981,
+                      "Y": 0.3578
+                    },
+                    "LeftMargin": 171.5,
+                    "RightMargin": 171.5,
+                    "TopMargin": 141.5,
+                    "BottomMargin": 269.5,
+                    "Tag": 1114,
+                    "Children": [
+                      {
+                        "FileData": {
+                          "Type": "PlistSubImage",
+                          "Path": "StartGame_line.png",
+                          "Plist": "Resources/StartGame.plist"
+                        },
+                        "BlendFunc": {
+                          "Src": 1,
+                          "Dst": 771
+                        },
+                        "AnchorPoint": {
+                          "ScaleX": 0.5,
+                          "ScaleY": 0.5
+                        },
+                        "Position": {
+                          "X": 396.5,
+                          "Y": 229.0
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "CColor": {},
+                        "IconVisible": false,
+                        "PositionPercentXEnabled": true,
+                        "PositionPercentYEnabled": true,
+                        "PrePosition": {
+                          "X": 0.5,
+                          "Y": 1.0
+                        },
+                        "PreSize": {
+                          "X": 0.8398,
+                          "Y": 0.0087
+                        },
+                        "LeftMargin": 63.5,
+                        "RightMargin": 63.5,
+                        "TopMargin": -1.0,
+                        "BottomMargin": 228.0,
+                        "Tag": 41,
+                        "Children": [
+                          {
+                            "FileData": {
+                              "Type": "PlistSubImage",
+                              "Path": "StartGame_LightFx.png",
+                              "Plist": "Resources/StartGame.plist"
+                            },
+                            "BlendFunc": {
+                              "Src": 1,
+                              "Dst": 771
+                            },
+                            "AnchorPoint": {
+                              "ScaleX": 1.0,
+                              "ScaleY": 0.5
+                            },
+                            "Position": {
+                              "X": 0.0,
+                              "Y": 0.0
+                            },
+                            "Scale": {
+                              "ScaleX": 1.0,
+                              "ScaleY": 1.0
+                            },
+                            "CColor": {},
+                            "IconVisible": false,
+                            "PositionPercentXEnabled": true,
+                            "PrePosition": {
+                              "X": 0.0,
+                              "Y": 0.0
+                            },
+                            "PreSize": {
+                              "X": 0.2417,
+                              "Y": 25.5
+                            },
+                            "LeftMargin": -161.0,
+                            "RightMargin": 666.0,
+                            "TopMargin": -23.5,
+                            "BottomMargin": -25.5,
+                            "Tag": 44,
+                            "ActionTag": 1902113359,
+                            "Size": {
+                              "X": 161.0,
+                              "Y": 51.0
+                            },
+                            "Name": "lightFx",
+                            "ctype": "SpriteObjectData"
+                          }
+                        ],
+                        "ActionTag": -1056910938,
+                        "Size": {
+                          "X": 666.0,
+                          "Y": 2.0
+                        },
+                        "Name": "StartGame_line_1",
+                        "ctype": "SpriteObjectData"
+                      },
+                      {
+                        "FileData": {
+                          "Type": "PlistSubImage",
+                          "Path": "GameModeV2.Icon_01.png",
+                          "Plist": "Resources/Channel.plist"
+                        },
+                        "BlendFunc": {
+                          "Src": 1,
+                          "Dst": 771
+                        },
+                        "AnchorPoint": {
+                          "ScaleX": 0.5,
+                          "ScaleY": 0.5
+                        },
+                        "Position": {
+                          "X": 379.1333,
+                          "Y": 104.2866
+                        },
+                        "Scale": {
+                          "ScaleX": 1.5,
+                          "ScaleY": 1.5
+                        },
+                        "CColor": {},
+                        "IconVisible": false,
+                        "PositionPercentXEnabled": true,
+                        "PositionPercentYEnabled": true,
+                        "PrePosition": {
+                          "X": 0.4781,
+                          "Y": 0.4554
+                        },
+                        "PreSize": {
+                          "X": 0.2119,
+                          "Y": 0.5328
+                        },
+                        "LeftMargin": 295.1333,
+                        "RightMargin": 329.8667,
+                        "TopMargin": 63.7134,
+                        "BottomMargin": 43.2866,
+                        "Tag": 118,
+                        "ActionTag": 197914830,
+                        "Size": {
+                          "X": 168.0,
+                          "Y": 122.0
+                        },
+                        "Name": "icon_Bida",
+                        "ctype": "SpriteObjectData"
+                      },
+                      {
+                        "FileData": {
+                          "Type": "PlistSubImage",
+                          "Path": "StartGame_line.png",
+                          "Plist": "Resources/StartGame.plist"
+                        },
+                        "BlendFunc": {
+                          "Src": 1,
+                          "Dst": 771
+                        },
+                        "AnchorPoint": {
+                          "ScaleX": 0.5,
+                          "ScaleY": 0.5
+                        },
+                        "Position": {
+                          "X": 396.5,
+                          "Y": 0.0
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "CColor": {},
+                        "IconVisible": false,
+                        "PositionPercentXEnabled": true,
+                        "PositionPercentYEnabled": true,
+                        "PrePosition": {
+                          "X": 0.5,
+                          "Y": 0.0
+                        },
+                        "PreSize": {
+                          "X": 0.8398,
+                          "Y": 0.0087
+                        },
+                        "LeftMargin": 63.5,
+                        "RightMargin": 63.5,
+                        "TopMargin": 228.0,
+                        "BottomMargin": -1.0,
+                        "Tag": 42,
+                        "Children": [
+                          {
+                            "FlipX": true,
+                            "FileData": {
+                              "Type": "PlistSubImage",
+                              "Path": "StartGame_LightFx.png",
+                              "Plist": "Resources/StartGame.plist"
+                            },
+                            "BlendFunc": {
+                              "Src": 1,
+                              "Dst": 771
+                            },
+                            "AnchorPoint": {
+                              "ScaleY": 0.5
+                            },
+                            "Position": {
+                              "X": 666.0,
+                              "Y": 0.0
+                            },
+                            "Scale": {
+                              "ScaleX": 1.0,
+                              "ScaleY": 1.0
+                            },
+                            "CColor": {},
+                            "IconVisible": false,
+                            "PositionPercentXEnabled": true,
+                            "PrePosition": {
+                              "X": 1.0,
+                              "Y": 0.0
+                            },
+                            "PreSize": {
+                              "X": 0.2417,
+                              "Y": 25.5
+                            },
+                            "LeftMargin": 666.0,
+                            "RightMargin": -161.0,
+                            "TopMargin": -23.5,
+                            "BottomMargin": -25.5,
+                            "Tag": 43,
+                            "ActionTag": -1519909457,
+                            "Size": {
+                              "X": 161.0,
+                              "Y": 51.0
+                            },
+                            "Name": "lightFx",
+                            "ctype": "SpriteObjectData"
+                          }
+                        ],
+                        "ActionTag": -1938313943,
+                        "Size": {
+                          "X": 666.0,
+                          "Y": 2.0
+                        },
+                        "Name": "StartGame_line_0",
+                        "ctype": "SpriteObjectData"
+                      }
+                    ],
+                    "ActionTag": -1432556960,
+                    "Size": {
+                      "X": 793.0,
+                      "Y": 229.0
+                    },
+                    "Name": "bg_Icon",
+                    "ctype": "ImageViewObjectData"
+                  },
+                  {
+                    "AnchorPoint": {},
+                    "Position": {
+                      "X": 1126.0,
+                      "Y": 256.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": true,
+                    "PositionPercentYEnabled": true,
+                    "PrePosition": {
+                      "X": 0.9912,
+                      "Y": 0.4
+                    },
+                    "PreSize": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "HorizontalEdge": "RightEdge",
+                    "LeftMargin": 1126.0,
+                    "RightMargin": 10.0,
+                    "TopMargin": 384.0,
+                    "BottomMargin": 256.0,
+                    "Tag": 394,
+                    "Children": [
+                      {
+                        "FileData": {
+                          "Type": "PlistSubImage",
+                          "Path": "EndGame_Avatar_Red.png",
+                          "Plist": "Resources/Endgame.plist"
+                        },
+                        "BlendFunc": {
+                          "Src": 1,
+                          "Dst": 771
+                        },
+                        "AnchorPoint": {
+                          "ScaleX": 0.5,
+                          "ScaleY": 0.5
+                        },
+                        "Position": {
+                          "X": -105.0,
+                          "Y": 75.0
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "CColor": {},
+                        "IconVisible": false,
+                        "PrePosition": {
+                          "X": 0.0,
+                          "Y": 0.0
+                        },
+                        "PreSize": {
+                          "X": 0.0,
+                          "Y": 0.0
+                        },
+                        "LeftMargin": -174.5,
+                        "RightMargin": 35.5,
+                        "TopMargin": -146.5,
+                        "BottomMargin": 3.5,
+                        "Tag": 395,
+                        "Children": [
+                          {
+                            "FontSize": 30,
+                            "LabelText": "Bida3D",
+                            "FontResource": {
+                              "Type": "Normal",
+                              "Path": "Font/facebook.TTF",
+                              "Plist": ""
+                            },
+                            "OutlineColor": {
+                              "G": 0,
+                              "B": 0
+                            },
+                            "ShadowColor": {
+                              "R": 110,
+                              "G": 110,
+                              "B": 110
+                            },
+                            "ShadowOffsetX": 2.0,
+                            "ShadowOffsetY": -2.0,
+                            "AnchorPoint": {
+                              "ScaleX": 1.0,
+                              "ScaleY": 0.5
+                            },
+                            "Position": {
+                              "X": -12.0,
+                              "Y": 102.0
+                            },
+                            "Scale": {
+                              "ScaleX": 1.0,
+                              "ScaleY": 1.0
+                            },
+                            "CColor": {},
+                            "IconVisible": false,
+                            "PrePosition": {
+                              "X": -0.0863,
+                              "Y": 0.7133
+                            },
+                            "PreSize": {
+                              "X": 0.6978,
+                              "Y": 0.3077
+                            },
+                            "LeftMargin": -109.0,
+                            "RightMargin": 151.0,
+                            "TopMargin": 19.0,
+                            "BottomMargin": 80.0,
+                            "Tag": 417,
+                            "ActionTag": 174908732,
+                            "Size": {
+                              "X": 97.0,
+                              "Y": 44.0
+                            },
+                            "Name": "lb_Name",
+                            "ctype": "TextObjectData"
+                          },
+                          {
+                            "FontSize": 26,
+                            "LabelText": "Text Label",
+                            "FontResource": {
+                              "Type": "Normal",
+                              "Path": "Font/facebook.TTF",
+                              "Plist": ""
+                            },
+                            "OutlineColor": {
+                              "G": 0,
+                              "B": 0
+                            },
+                            "ShadowColor": {
+                              "R": 110,
+                              "G": 110,
+                              "B": 110
+                            },
+                            "ShadowOffsetX": 2.0,
+                            "ShadowOffsetY": -2.0,
+                            "AnchorPoint": {
+                              "ScaleX": 1.0,
+                              "ScaleY": 0.5
+                            },
+                            "Position": {
+                              "X": -12.0,
+                              "Y": 37.0
+                            },
+                            "Scale": {
+                              "ScaleX": 1.0,
+                              "ScaleY": 1.0
+                            },
+                            "CColor": {
+                              "B": 0
+                            },
+                            "IconVisible": false,
+                            "PrePosition": {
+                              "X": -0.0863,
+                              "Y": 0.2587
+                            },
+                            "PreSize": {
+                              "X": 0.9568,
+                              "Y": 0.2657
+                            },
+                            "LeftMargin": -145.0,
+                            "RightMargin": 151.0,
+                            "TopMargin": 87.0,
+                            "BottomMargin": 18.0,
+                            "Tag": 418,
+                            "ActionTag": -1849394438,
+                            "Size": {
+                              "X": 133.0,
+                              "Y": 38.0
+                            },
+                            "Name": "lb_Gold",
+                            "ctype": "TextObjectData"
+                          },
+                          {
+                            "FileData": {
+                              "Type": "PlistSubImage",
+                              "Path": "League_02_IC_03b.png",
+                              "Plist": "Resources/LeagueSession.plist"
+                            },
+                            "BlendFunc": {
+                              "Src": 1,
+                              "Dst": 771
+                            },
+                            "AnchorPoint": {
+                              "ScaleX": 0.5,
+                              "ScaleY": 0.5
+                            },
+                            "Position": {
+                              "X": 122.3276,
+                              "Y": 32.3124
+                            },
+                            "Scale": {
+                              "ScaleX": 1.0,
+                              "ScaleY": 1.0
+                            },
+                            "CColor": {},
+                            "IconVisible": false,
+                            "PrePosition": {
+                              "X": 0.8801,
+                              "Y": 0.226
+                            },
+                            "PreSize": {
+                              "X": 0.3525,
+                              "Y": 0.4126
+                            },
+                            "LeftMargin": 97.8276,
+                            "RightMargin": -7.8276,
+                            "TopMargin": 81.1876,
+                            "BottomMargin": 2.8124,
+                            "Tag": 424,
+                            "ActionTag": -787838892,
+                            "Size": {
+                              "X": 49.0,
+                              "Y": 59.0
+                            },
+                            "Name": "iconLeague",
+                            "ctype": "SpriteObjectData"
+                          },
+                          {
+                            "FontSize": 26,
+                            "LabelText": "Text Label",
+                            "FontResource": {
+                              "Type": "Normal",
+                              "Path": "Font/facebook.TTF",
+                              "Plist": ""
+                            },
+                            "OutlineColor": {
+                              "G": 0,
+                              "B": 0
+                            },
+                            "ShadowColor": {
+                              "R": 110,
+                              "G": 110,
+                              "B": 110
+                            },
+                            "ShadowOffsetX": 2.0,
+                            "ShadowOffsetY": -2.0,
+                            "AnchorPoint": {
+                              "ScaleX": 1.0,
+                              "ScaleY": 0.5
+                            },
+                            "Position": {
+                              "X": -150.0,
+                              "Y": 37.0
+                            },
+                            "Scale": {
+                              "ScaleX": 1.0,
+                              "ScaleY": 1.0
+                            },
+                            "CColor": {
+                              "B": 0
+                            },
+                            "IconVisible": false,
+                            "PrePosition": {
+                              "X": -1.0791,
+                              "Y": 0.2587
+                            },
+                            "PreSize": {
+                              "X": 0.9568,
+                              "Y": 0.2657
+                            },
+                            "LeftMargin": -283.0,
+                            "RightMargin": 289.0,
+                            "TopMargin": 87.0,
+                            "BottomMargin": 18.0,
+                            "Tag": 64,
+                            "ActionTag": 1063171536,
+                            "Size": {
+                              "X": 133.0,
+                              "Y": 38.0
+                            },
+                            "Name": "lb_Gold_Minus",
+                            "ctype": "TextObjectData"
+                          }
+                        ],
+                        "ActionTag": 171509343,
+                        "Size": {
+                          "X": 139.0,
+                          "Y": 143.0
+                        },
+                        "Name": "imgAvatarBorder_0",
+                        "ctype": "SpriteObjectData"
+                      },
+                      {
+                        "FileData": {
+                          "Type": "PlistSubImage",
+                          "Path": "EndGame_Avatar_Red.png",
+                          "Plist": "Resources/Endgame.plist"
+                        },
+                        "BlendFunc": {
+                          "Src": 1,
+                          "Dst": 771
+                        },
+                        "AnchorPoint": {
+                          "ScaleX": 0.5,
+                          "ScaleY": 0.5
+                        },
+                        "Position": {
+                          "X": -105.0,
+                          "Y": -75.0
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "CColor": {},
+                        "IconVisible": false,
+                        "PrePosition": {
+                          "X": 0.0,
+                          "Y": 0.0
+                        },
+                        "PreSize": {
+                          "X": 0.0,
+                          "Y": 0.0
+                        },
+                        "LeftMargin": -174.5,
+                        "RightMargin": 35.5,
+                        "TopMargin": 3.5,
+                        "BottomMargin": -146.5,
+                        "Tag": 403,
+                        "Children": [
+                          {
+                            "FileData": {
+                              "Type": "PlistSubImage",
+                              "Path": "League_02_IC_03b.png",
+                              "Plist": "Resources/LeagueSession.plist"
+                            },
+                            "BlendFunc": {
+                              "Src": 1,
+                              "Dst": 771
+                            },
+                            "AnchorPoint": {
+                              "ScaleX": 0.5,
+                              "ScaleY": 0.5
+                            },
+                            "Position": {
+                              "X": 122.3276,
+                              "Y": 32.3139
+                            },
+                            "Scale": {
+                              "ScaleX": 1.0,
+                              "ScaleY": 1.0
+                            },
+                            "CColor": {},
+                            "IconVisible": false,
+                            "PrePosition": {
+                              "X": 0.8801,
+                              "Y": 0.226
+                            },
+                            "PreSize": {
+                              "X": 0.3525,
+                              "Y": 0.4126
+                            },
+                            "LeftMargin": 97.8276,
+                            "RightMargin": -7.8276,
+                            "TopMargin": 81.1861,
+                            "BottomMargin": 2.8139,
+                            "Tag": 420,
+                            "ActionTag": -871220153,
+                            "Size": {
+                              "X": 49.0,
+                              "Y": 59.0
+                            },
+                            "Name": "iconLeague",
+                            "ctype": "SpriteObjectData"
+                          },
+                          {
+                            "FontSize": 30,
+                            "LabelText": "Bida3D",
+                            "FontResource": {
+                              "Type": "Normal",
+                              "Path": "Font/facebook.TTF",
+                              "Plist": ""
+                            },
+                            "OutlineColor": {
+                              "G": 0,
+                              "B": 0
+                            },
+                            "ShadowColor": {
+                              "R": 110,
+                              "G": 110,
+                              "B": 110
+                            },
+                            "ShadowOffsetX": 2.0,
+                            "ShadowOffsetY": -2.0,
+                            "AnchorPoint": {
+                              "ScaleX": 1.0,
+                              "ScaleY": 0.5
+                            },
+                            "Position": {
+                              "X": -12.0,
+                              "Y": 102.0
+                            },
+                            "Scale": {
+                              "ScaleX": 1.0,
+                              "ScaleY": 1.0
+                            },
+                            "CColor": {},
+                            "IconVisible": false,
+                            "PrePosition": {
+                              "X": -0.0863,
+                              "Y": 0.7133
+                            },
+                            "PreSize": {
+                              "X": 0.6978,
+                              "Y": 0.3077
+                            },
+                            "LeftMargin": -109.0,
+                            "RightMargin": 151.0,
+                            "TopMargin": 19.0,
+                            "BottomMargin": 80.0,
+                            "Tag": 415,
+                            "ActionTag": -696716295,
+                            "Size": {
+                              "X": 97.0,
+                              "Y": 44.0
+                            },
+                            "Name": "lb_Name",
+                            "ctype": "TextObjectData"
+                          },
+                          {
+                            "FontSize": 26,
+                            "LabelText": "Text Label",
+                            "FontResource": {
+                              "Type": "Normal",
+                              "Path": "Font/facebook.TTF",
+                              "Plist": ""
+                            },
+                            "OutlineColor": {
+                              "G": 0,
+                              "B": 0
+                            },
+                            "ShadowColor": {
+                              "R": 110,
+                              "G": 110,
+                              "B": 110
+                            },
+                            "ShadowOffsetX": 2.0,
+                            "ShadowOffsetY": -2.0,
+                            "AnchorPoint": {
+                              "ScaleX": 1.0,
+                              "ScaleY": 0.5
+                            },
+                            "Position": {
+                              "X": -12.0,
+                              "Y": 37.0
+                            },
+                            "Scale": {
+                              "ScaleX": 1.0,
+                              "ScaleY": 1.0
+                            },
+                            "CColor": {
+                              "B": 0
+                            },
+                            "IconVisible": false,
+                            "PrePosition": {
+                              "X": -0.0863,
+                              "Y": 0.2587
+                            },
+                            "PreSize": {
+                              "X": 0.9568,
+                              "Y": 0.2657
+                            },
+                            "LeftMargin": -145.0,
+                            "RightMargin": 151.0,
+                            "TopMargin": 87.0,
+                            "BottomMargin": 18.0,
+                            "Tag": 416,
+                            "ActionTag": 595049594,
+                            "Size": {
+                              "X": 133.0,
+                              "Y": 38.0
+                            },
+                            "Name": "lb_Gold",
+                            "ctype": "TextObjectData"
+                          },
+                          {
+                            "FontSize": 26,
+                            "LabelText": "Text Label",
+                            "FontResource": {
+                              "Type": "Normal",
+                              "Path": "Font/facebook.TTF",
+                              "Plist": ""
+                            },
+                            "OutlineColor": {
+                              "G": 0,
+                              "B": 0
+                            },
+                            "ShadowColor": {
+                              "R": 110,
+                              "G": 110,
+                              "B": 110
+                            },
+                            "ShadowOffsetX": 2.0,
+                            "ShadowOffsetY": -2.0,
+                            "AnchorPoint": {
+                              "ScaleX": 1.0,
+                              "ScaleY": 0.5
+                            },
+                            "Position": {
+                              "X": -150.0,
+                              "Y": 37.0
+                            },
+                            "Scale": {
+                              "ScaleX": 1.0,
+                              "ScaleY": 1.0
+                            },
+                            "CColor": {
+                              "B": 0
+                            },
+                            "IconVisible": false,
+                            "PrePosition": {
+                              "X": -1.0791,
+                              "Y": 0.2587
+                            },
+                            "PreSize": {
+                              "X": 0.9568,
+                              "Y": 0.2657
+                            },
+                            "LeftMargin": -283.0,
+                            "RightMargin": 289.0,
+                            "TopMargin": 87.0,
+                            "BottomMargin": 18.0,
+                            "Tag": 63,
+                            "ActionTag": 384906865,
+                            "Size": {
+                              "X": 133.0,
+                              "Y": 38.0
+                            },
+                            "Name": "lb_Gold_Minus",
+                            "ctype": "TextObjectData"
+                          }
+                        ],
+                        "ActionTag": -244613946,
+                        "Size": {
+                          "X": 139.0,
+                          "Y": 143.0
+                        },
+                        "Name": "imgAvatarBorder_1",
+                        "ctype": "SpriteObjectData"
+                      }
+                    ],
+                    "ActionTag": -1740566050,
+                    "Size": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "Name": "nodeP2",
+                    "ctype": "SingleNodeObjectData"
+                  },
+                  {
+                    "AnchorPoint": {},
+                    "Position": {
+                      "X": 10.0,
+                      "Y": 256.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": true,
+                    "PositionPercentYEnabled": true,
+                    "PrePosition": {
+                      "X": 0.0088,
+                      "Y": 0.4
+                    },
+                    "PreSize": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "HorizontalEdge": "LeftEdge",
+                    "LeftMargin": 10.0,
+                    "RightMargin": 1126.0,
+                    "TopMargin": 384.0,
+                    "BottomMargin": 256.0,
+                    "Tag": 398,
+                    "Children": [
+                      {
+                        "FileData": {
+                          "Type": "PlistSubImage",
+                          "Path": "EndGame_Avatar_Blue.png",
+                          "Plist": "Resources/Endgame.plist"
+                        },
+                        "BlendFunc": {
+                          "Src": 1,
+                          "Dst": 771
+                        },
+                        "AnchorPoint": {
+                          "ScaleX": 0.5,
+                          "ScaleY": 0.5
+                        },
+                        "Position": {
+                          "X": 105.0,
+                          "Y": 75.0
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "CColor": {},
+                        "IconVisible": false,
+                        "PrePosition": {
+                          "X": 0.0,
+                          "Y": 0.0
+                        },
+                        "PreSize": {
+                          "X": 0.0,
+                          "Y": 0.0
+                        },
+                        "LeftMargin": 36.0,
+                        "RightMargin": -174.0,
+                        "TopMargin": -147.0,
+                        "BottomMargin": 3.0,
+                        "Tag": 399,
+                        "Children": [
+                          {
+                            "FontSize": 30,
+                            "LabelText": "Bida3D",
+                            "FontResource": {
+                              "Type": "Normal",
+                              "Path": "Font/facebook.TTF",
+                              "Plist": ""
+                            },
+                            "OutlineColor": {
+                              "G": 0,
+                              "B": 0
+                            },
+                            "ShadowColor": {
+                              "R": 110,
+                              "G": 110,
+                              "B": 110
+                            },
+                            "ShadowOffsetX": 2.0,
+                            "ShadowOffsetY": -2.0,
+                            "AnchorPoint": {
+                              "ScaleY": 0.5
+                            },
+                            "Position": {
+                              "X": 150.0,
+                              "Y": 102.0
+                            },
+                            "Scale": {
+                              "ScaleX": 1.0,
+                              "ScaleY": 1.0
+                            },
+                            "CColor": {},
+                            "IconVisible": false,
+                            "PrePosition": {
+                              "X": 1.087,
+                              "Y": 0.7083
+                            },
+                            "PreSize": {
+                              "X": 0.7029,
+                              "Y": 0.3056
+                            },
+                            "LeftMargin": 150.0,
+                            "RightMargin": -109.0,
+                            "TopMargin": 20.0,
+                            "BottomMargin": 80.0,
+                            "Tag": 404,
+                            "ActionTag": 617357096,
+                            "Size": {
+                              "X": 97.0,
+                              "Y": 44.0
+                            },
+                            "Name": "lb_Name",
+                            "ctype": "TextObjectData"
+                          },
+                          {
+                            "FontSize": 26,
+                            "LabelText": "Text Label",
+                            "FontResource": {
+                              "Type": "Normal",
+                              "Path": "Font/facebook.TTF",
+                              "Plist": ""
+                            },
+                            "OutlineColor": {
+                              "G": 0,
+                              "B": 0
+                            },
+                            "ShadowColor": {
+                              "R": 110,
+                              "G": 110,
+                              "B": 110
+                            },
+                            "ShadowOffsetX": 2.0,
+                            "ShadowOffsetY": -2.0,
+                            "AnchorPoint": {
+                              "ScaleY": 0.5
+                            },
+                            "Position": {
+                              "X": 150.0,
+                              "Y": 37.0
+                            },
+                            "Scale": {
+                              "ScaleX": 1.0,
+                              "ScaleY": 1.0
+                            },
+                            "CColor": {
+                              "B": 0
+                            },
+                            "IconVisible": false,
+                            "PrePosition": {
+                              "X": 1.087,
+                              "Y": 0.2569
+                            },
+                            "PreSize": {
+                              "X": 0.9638,
+                              "Y": 0.2639
+                            },
+                            "LeftMargin": 150.0,
+                            "RightMargin": -145.0,
+                            "TopMargin": 88.0,
+                            "BottomMargin": 18.0,
+                            "Tag": 412,
+                            "ActionTag": -954920024,
+                            "Size": {
+                              "X": 133.0,
+                              "Y": 38.0
+                            },
+                            "Name": "lb_Gold",
+                            "ctype": "TextObjectData"
+                          },
+                          {
+                            "FileData": {
+                              "Type": "PlistSubImage",
+                              "Path": "League_02_IC_03b.png",
+                              "Plist": "Resources/LeagueSession.plist"
+                            },
+                            "BlendFunc": {
+                              "Src": 1,
+                              "Dst": 771
+                            },
+                            "AnchorPoint": {
+                              "ScaleX": 0.5,
+                              "ScaleY": 0.5
+                            },
+                            "Position": {
+                              "X": 122.3317,
+                              "Y": 32.3125
+                            },
+                            "Scale": {
+                              "ScaleX": 1.0,
+                              "ScaleY": 1.0
+                            },
+                            "CColor": {},
+                            "IconVisible": false,
+                            "PrePosition": {
+                              "X": 0.8865,
+                              "Y": 0.2244
+                            },
+                            "PreSize": {
+                              "X": 0.3551,
+                              "Y": 0.4097
+                            },
+                            "LeftMargin": 97.8317,
+                            "RightMargin": -8.8317,
+                            "TopMargin": 82.1875,
+                            "BottomMargin": 2.8125,
+                            "Tag": 422,
+                            "ActionTag": -2033926081,
+                            "Size": {
+                              "X": 49.0,
+                              "Y": 59.0
+                            },
+                            "Name": "iconLeague",
+                            "ctype": "SpriteObjectData"
+                          },
+                          {
+                            "FontSize": 26,
+                            "LabelText": "Text Label",
+                            "FontResource": {
+                              "Type": "Normal",
+                              "Path": "Font/facebook.TTF",
+                              "Plist": ""
+                            },
+                            "OutlineColor": {
+                              "G": 0,
+                              "B": 0
+                            },
+                            "ShadowColor": {
+                              "R": 110,
+                              "G": 110,
+                              "B": 110
+                            },
+                            "ShadowOffsetX": 2.0,
+                            "ShadowOffsetY": -2.0,
+                            "AnchorPoint": {
+                              "ScaleY": 0.5
+                            },
+                            "Position": {
+                              "X": 297.5517,
+                              "Y": 37.0
+                            },
+                            "Scale": {
+                              "ScaleX": 1.0,
+                              "ScaleY": 1.0
+                            },
+                            "CColor": {
+                              "B": 0
+                            },
+                            "IconVisible": false,
+                            "PrePosition": {
+                              "X": 2.1562,
+                              "Y": 0.2569
+                            },
+                            "PreSize": {
+                              "X": 0.9638,
+                              "Y": 0.2639
+                            },
+                            "LeftMargin": 297.5517,
+                            "RightMargin": -292.5517,
+                            "TopMargin": 88.0,
+                            "BottomMargin": 18.0,
+                            "Tag": 62,
+                            "ActionTag": -774175362,
+                            "Size": {
+                              "X": 133.0,
+                              "Y": 38.0
+                            },
+                            "Name": "lb_Gold_Minus",
+                            "ctype": "TextObjectData"
+                          }
+                        ],
+                        "ActionTag": 1407399271,
+                        "Size": {
+                          "X": 138.0,
+                          "Y": 144.0
+                        },
+                        "Name": "imgAvatarBorder_0",
+                        "ctype": "SpriteObjectData"
+                      },
+                      {
+                        "FileData": {
+                          "Type": "PlistSubImage",
+                          "Path": "EndGame_Avatar_Blue.png",
+                          "Plist": "Resources/Endgame.plist"
+                        },
+                        "BlendFunc": {
+                          "Src": 1,
+                          "Dst": 771
+                        },
+                        "AnchorPoint": {
+                          "ScaleX": 0.5,
+                          "ScaleY": 0.5
+                        },
+                        "Position": {
+                          "X": 105.0,
+                          "Y": -75.0
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "CColor": {},
+                        "IconVisible": false,
+                        "PrePosition": {
+                          "X": 0.0,
+                          "Y": 0.0
+                        },
+                        "PreSize": {
+                          "X": 0.0,
+                          "Y": 0.0
+                        },
+                        "LeftMargin": 36.0,
+                        "RightMargin": -174.0,
+                        "TopMargin": 3.0,
+                        "BottomMargin": -147.0,
+                        "Tag": 402,
+                        "Children": [
+                          {
+                            "FontSize": 30,
+                            "LabelText": "Bida3D",
+                            "FontResource": {
+                              "Type": "Normal",
+                              "Path": "Font/facebook.TTF",
+                              "Plist": ""
+                            },
+                            "OutlineColor": {
+                              "G": 0,
+                              "B": 0
+                            },
+                            "ShadowColor": {
+                              "R": 110,
+                              "G": 110,
+                              "B": 110
+                            },
+                            "ShadowOffsetX": 2.0,
+                            "ShadowOffsetY": -2.0,
+                            "AnchorPoint": {
+                              "ScaleY": 0.5
+                            },
+                            "Position": {
+                              "X": 150.0,
+                              "Y": 102.0
+                            },
+                            "Scale": {
+                              "ScaleX": 1.0,
+                              "ScaleY": 1.0
+                            },
+                            "CColor": {},
+                            "IconVisible": false,
+                            "PrePosition": {
+                              "X": 1.087,
+                              "Y": 0.7083
+                            },
+                            "PreSize": {
+                              "X": 0.7029,
+                              "Y": 0.3056
+                            },
+                            "LeftMargin": 150.0,
+                            "RightMargin": -109.0,
+                            "TopMargin": 20.0,
+                            "BottomMargin": 80.0,
+                            "Tag": 413,
+                            "ActionTag": 374912561,
+                            "Size": {
+                              "X": 97.0,
+                              "Y": 44.0
+                            },
+                            "Name": "lb_Name",
+                            "ctype": "TextObjectData"
+                          },
+                          {
+                            "FontSize": 26,
+                            "LabelText": "Text Label",
+                            "FontResource": {
+                              "Type": "Normal",
+                              "Path": "Font/facebook.TTF",
+                              "Plist": ""
+                            },
+                            "OutlineColor": {
+                              "G": 0,
+                              "B": 0
+                            },
+                            "ShadowColor": {
+                              "R": 110,
+                              "G": 110,
+                              "B": 110
+                            },
+                            "ShadowOffsetX": 2.0,
+                            "ShadowOffsetY": -2.0,
+                            "AnchorPoint": {
+                              "ScaleY": 0.5
+                            },
+                            "Position": {
+                              "X": 150.0,
+                              "Y": 37.0
+                            },
+                            "Scale": {
+                              "ScaleX": 1.0,
+                              "ScaleY": 1.0
+                            },
+                            "CColor": {
+                              "B": 0
+                            },
+                            "IconVisible": false,
+                            "PrePosition": {
+                              "X": 1.087,
+                              "Y": 0.2569
+                            },
+                            "PreSize": {
+                              "X": 0.9638,
+                              "Y": 0.2639
+                            },
+                            "LeftMargin": 150.0,
+                            "RightMargin": -145.0,
+                            "TopMargin": 88.0,
+                            "BottomMargin": 18.0,
+                            "Tag": 414,
+                            "ActionTag": 835086058,
+                            "Size": {
+                              "X": 133.0,
+                              "Y": 38.0
+                            },
+                            "Name": "lb_Gold",
+                            "ctype": "TextObjectData"
+                          },
+                          {
+                            "FileData": {
+                              "Type": "PlistSubImage",
+                              "Path": "League_02_IC_03b.png",
+                              "Plist": "Resources/LeagueSession.plist"
+                            },
+                            "BlendFunc": {
+                              "Src": 1,
+                              "Dst": 771
+                            },
+                            "AnchorPoint": {
+                              "ScaleX": 0.5,
+                              "ScaleY": 0.5
+                            },
+                            "Position": {
+                              "X": 122.3317,
+                              "Y": 32.3133
+                            },
+                            "Scale": {
+                              "ScaleX": 1.0,
+                              "ScaleY": 1.0
+                            },
+                            "CColor": {},
+                            "IconVisible": false,
+                            "PrePosition": {
+                              "X": 0.8865,
+                              "Y": 0.2244
+                            },
+                            "PreSize": {
+                              "X": 0.3551,
+                              "Y": 0.4097
+                            },
+                            "LeftMargin": 97.8317,
+                            "RightMargin": -8.8317,
+                            "TopMargin": 82.1867,
+                            "BottomMargin": 2.8133,
+                            "Tag": 423,
+                            "ActionTag": -312642817,
+                            "Size": {
+                              "X": 49.0,
+                              "Y": 59.0
+                            },
+                            "Name": "iconLeague",
+                            "ctype": "SpriteObjectData"
+                          },
+                          {
+                            "FontSize": 26,
+                            "LabelText": "Text Label",
+                            "FontResource": {
+                              "Type": "Normal",
+                              "Path": "Font/facebook.TTF",
+                              "Plist": ""
+                            },
+                            "OutlineColor": {
+                              "G": 0,
+                              "B": 0
+                            },
+                            "ShadowColor": {
+                              "R": 110,
+                              "G": 110,
+                              "B": 110
+                            },
+                            "ShadowOffsetX": 2.0,
+                            "ShadowOffsetY": -2.0,
+                            "AnchorPoint": {
+                              "ScaleY": 0.5
+                            },
+                            "Position": {
+                              "X": 297.5517,
+                              "Y": 37.0
+                            },
+                            "Scale": {
+                              "ScaleX": 1.0,
+                              "ScaleY": 1.0
+                            },
+                            "CColor": {
+                              "B": 0
+                            },
+                            "IconVisible": false,
+                            "PrePosition": {
+                              "X": 2.1562,
+                              "Y": 0.2569
+                            },
+                            "PreSize": {
+                              "X": 0.9638,
+                              "Y": 0.2639
+                            },
+                            "LeftMargin": 297.5517,
+                            "RightMargin": -292.5517,
+                            "TopMargin": 88.0,
+                            "BottomMargin": 18.0,
+                            "Tag": 61,
+                            "ActionTag": -1806620023,
+                            "Size": {
+                              "X": 133.0,
+                              "Y": 38.0
+                            },
+                            "Name": "lb_Gold_Minus",
+                            "ctype": "TextObjectData"
+                          }
+                        ],
+                        "ActionTag": -1506185441,
+                        "Size": {
+                          "X": 138.0,
+                          "Y": 144.0
+                        },
+                        "Name": "imgAvatarBorder_1",
+                        "ctype": "SpriteObjectData"
+                      }
+                    ],
+                    "ActionTag": -1147806429,
+                    "Size": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "Name": "nodeP1",
+                    "ctype": "SingleNodeObjectData"
+                  }
+                ],
+                "ActionTag": 1751683465,
+                "Size": {
+                  "X": 1136.0,
+                  "Y": 640.0
+                },
+                "Name": "panelShowMode",
+                "ctype": "PanelObjectData"
+              },
+              {
+                "ClipAble": false,
+                "BackColorAlpha": 102,
+                "SingleColor": {
+                  "R": 150,
+                  "G": 200
+                },
+                "FirstColor": {
+                  "R": 150,
+                  "G": 200
+                },
+                "EndColor": {},
+                "ColorVector": {
+                  "ScaleY": 1.0
+                },
+                "Scale9Width": 1,
+                "Scale9Height": 1,
+                "TouchEnable": true,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 568.0,
+                  "Y": 320.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PositionPercentXEnabled": true,
+                "PositionPercentYEnabled": true,
+                "PrePosition": {
+                  "X": 0.5,
+                  "Y": 0.5
+                },
+                "PercentWidthEnable": true,
+                "PercentHeightEnable": true,
+                "PercentWidthEnabled": true,
+                "PercentHeightEnabled": true,
+                "PreSize": {
+                  "X": 1.0,
+                  "Y": 1.0
+                },
+                "Tag": 1625,
+                "Children": [
+                  {
+                    "AnchorPoint": {},
+                    "Position": {
+                      "X": 29.2783,
+                      "Y": 241.408
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": true,
+                    "PositionPercentYEnabled": true,
+                    "PrePosition": {
+                      "X": 0.0258,
+                      "Y": 0.3772
+                    },
+                    "PreSize": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "HorizontalEdge": "LeftEdge",
+                    "LeftMargin": 29.2783,
+                    "RightMargin": 1106.7217,
+                    "TopMargin": 398.592,
+                    "BottomMargin": 241.408,
+                    "Tag": 86,
+                    "Children": [
+                      {
+                        "FileData": {
+                          "Type": "PlistSubImage",
+                          "Path": "StartGame_Board_Blue.png",
+                          "Plist": "Resources/StartGame.plist"
+                        },
+                        "Scale9OriginX": 164,
+                        "Scale9OriginY": 52,
+                        "Scale9Width": 81,
+                        "Scale9Height": 40,
+                        "AnchorPoint": {},
+                        "Position": {
+                          "X": 0.0,
+                          "Y": 0.0
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "CColor": {},
+                        "IconVisible": false,
+                        "PositionPercentXEnabled": true,
+                        "PrePosition": {
+                          "X": 0.0,
+                          "Y": 0.0
+                        },
+                        "PreSize": {
+                          "X": 0.0,
+                          "Y": 0.0
+                        },
+                        "RightMargin": -409.0,
+                        "TopMargin": -144.0,
+                        "Tag": 87,
+                        "ActionTag": 2143451977,
+                        "Size": {
+                          "X": 409.0,
+                          "Y": 144.0
+                        },
+                        "Name": "imgLose",
+                        "ctype": "ImageViewObjectData"
+                      },
+                      {
+                        "FileData": {
+                          "Type": "PlistSubImage",
+                          "Path": "open_card_Box_Item_03.png",
+                          "Plist": "Resources/OpenCard.plist"
+                        },
+                        "BlendFunc": {
+                          "Src": 1,
+                          "Dst": 771
+                        },
+                        "AnchorPoint": {
+                          "ScaleX": 0.5,
+                          "ScaleY": 0.5
+                        },
+                        "Position": {
+                          "X": 273.0102,
+                          "Y": 198.4897
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "CColor": {},
+                        "IconVisible": false,
+                        "PrePosition": {
+                          "X": 0.0,
+                          "Y": 0.0
+                        },
+                        "PreSize": {
+                          "X": 0.0,
+                          "Y": 0.0
+                        },
+                        "LeftMargin": 174.0102,
+                        "RightMargin": -372.0102,
+                        "TopMargin": -321.9897,
+                        "BottomMargin": 74.9897,
+                        "Tag": 358,
+                        "Children": [
+                          {
+                            "FileData": {
+                              "Type": "PlistSubImage",
+                              "Path": "StartGame_0.png",
+                              "Plist": "Resources/StartGame.plist"
+                            },
+                            "BlendFunc": {
+                              "Src": 1,
+                              "Dst": 771
+                            },
+                            "AnchorPoint": {
+                              "ScaleX": 0.5,
+                              "ScaleY": 0.5
+                            },
+                            "Position": {
+                              "X": 99.0,
+                              "Y": 123.5
+                            },
+                            "Scale": {
+                              "ScaleX": 1.0,
+                              "ScaleY": 1.0
+                            },
+                            "CColor": {},
+                            "IconVisible": false,
+                            "PositionPercentXEnabled": true,
+                            "PositionPercentYEnabled": true,
+                            "PrePosition": {
+                              "X": 0.5,
+                              "Y": 0.5
+                            },
+                            "PreSize": {
+                              "X": 0.7374,
+                              "Y": 0.587
+                            },
+                            "LeftMargin": 26.0,
+                            "RightMargin": 26.0,
+                            "TopMargin": 51.0,
+                            "BottomMargin": 51.0,
+                            "Tag": 107,
+                            "ActionTag": -220509105,
+                            "Size": {
+                              "X": 146.0,
+                              "Y": 145.0
+                            },
+                            "Name": "type",
+                            "ctype": "SpriteObjectData"
+                          },
+                          {
+                            "FileData": {
+                              "Type": "PlistSubImage",
+                              "Path": "StartGame_Shadow.png",
+                              "Plist": "Resources/StartGame.plist"
+                            },
+                            "BlendFunc": {
+                              "Src": 1,
+                              "Dst": 771
+                            },
+                            "AnchorPoint": {
+                              "ScaleX": 0.5,
+                              "ScaleY": 0.5
+                            },
+                            "Position": {
+                              "X": 99.0,
+                              "Y": 0.0
+                            },
+                            "Scale": {
+                              "ScaleX": 1.0,
+                              "ScaleY": 1.0
+                            },
+                            "CColor": {},
+                            "IconVisible": false,
+                            "PositionPercentXEnabled": true,
+                            "PositionPercentYEnabled": true,
+                            "PrePosition": {
+                              "X": 0.5,
+                              "Y": 0.0
+                            },
+                            "PreSize": {
+                              "X": 1.2222,
+                              "Y": 0.1943
+                            },
+                            "LeftMargin": -22.0,
+                            "RightMargin": -22.0,
+                            "TopMargin": 223.0,
+                            "BottomMargin": -24.0,
+                            "Tag": 112,
+                            "ActionTag": -821345135,
+                            "Size": {
+                              "X": 242.0,
+                              "Y": 48.0
+                            },
+                            "Name": "shadow",
+                            "ctype": "SpriteObjectData"
+                          }
+                        ],
+                        "ActionTag": -2045477964,
+                        "Size": {
+                          "X": 198.0,
+                          "Y": 247.0
+                        },
+                        "Name": "card",
+                        "ctype": "SpriteObjectData"
+                      },
+                      {
+                        "FileData": {
+                          "Type": "PlistSubImage",
+                          "Path": "StartGame_Avatar_Blue.png",
+                          "Plist": "Resources/StartGame.plist"
+                        },
+                        "BlendFunc": {
+                          "Src": 1,
+                          "Dst": 771
+                        },
+                        "AnchorPoint": {
+                          "ScaleX": 0.5,
+                          "ScaleY": 0.5
+                        },
+                        "Position": {
+                          "X": 67.0,
+                          "Y": 76.0
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "CColor": {},
+                        "IconVisible": false,
+                        "PrePosition": {
+                          "X": 0.0,
+                          "Y": 0.0
+                        },
+                        "PreSize": {
+                          "X": 0.0,
+                          "Y": 0.0
+                        },
+                        "LeftMargin": 5.0,
+                        "RightMargin": -129.0,
+                        "TopMargin": -137.0,
+                        "BottomMargin": 15.0,
+                        "Tag": 88,
+                        "Children": [
+                          {
+                            "FileData": {
+                              "Type": "PlistSubImage",
+                              "Path": "League_02_IC_03b.png",
+                              "Plist": "Resources/LeagueSession.plist"
+                            },
+                            "BlendFunc": {
+                              "Src": 1,
+                              "Dst": 771
+                            },
+                            "AnchorPoint": {
+                              "ScaleX": 0.5,
+                              "ScaleY": 0.5
+                            },
+                            "Position": {
+                              "X": 110.0,
+                              "Y": 23.0
+                            },
+                            "Scale": {
+                              "ScaleX": 1.0,
+                              "ScaleY": 1.0
+                            },
+                            "CColor": {},
+                            "IconVisible": false,
+                            "PrePosition": {
+                              "X": 0.8871,
+                              "Y": 0.1885
+                            },
+                            "PreSize": {
+                              "X": 0.3952,
+                              "Y": 0.4836
+                            },
+                            "LeftMargin": 85.5,
+                            "RightMargin": -10.5,
+                            "TopMargin": 69.5,
+                            "BottomMargin": -6.5,
+                            "Tag": 419,
+                            "ActionTag": 1310240020,
+                            "Size": {
+                              "X": 49.0,
+                              "Y": 59.0
+                            },
+                            "Name": "iconLeague",
+                            "ctype": "SpriteObjectData"
+                          }
+                        ],
+                        "ActionTag": -330550719,
+                        "Size": {
+                          "X": 124.0,
+                          "Y": 122.0
+                        },
+                        "Name": "imgAvatarBorder",
+                        "ctype": "SpriteObjectData"
+                      },
+                      {
+                        "FontSize": 24,
+                        "LabelText": "YOU CHOSE ROCK!!zzz",
+                        "FontResource": {
+                          "Type": "Normal",
+                          "Path": "Font/facebook.TTF",
+                          "Plist": ""
+                        },
+                        "HorizontalAlignmentType": "HT_Center",
+                        "VerticalAlignmentType": "VT_Center",
+                        "OutlineColor": {
+                          "G": 0,
+                          "B": 0
+                        },
+                        "ShadowColor": {
+                          "R": 26,
+                          "G": 26,
+                          "B": 26
+                        },
+                        "ShadowOffsetX": 0.0,
+                        "ShadowOffsetY": -4.0,
+                        "AnchorPoint": {
+                          "ScaleX": 0.5,
+                          "ScaleY": 0.5
+                        },
+                        "Position": {
+                          "X": 258.0,
+                          "Y": 37.0
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "CColor": {
+                          "R": 101,
+                          "G": 231
+                        },
+                        "IconVisible": false,
+                        "PrePosition": {
+                          "X": 0.0,
+                          "Y": 0.0
+                        },
+                        "PreSize": {
+                          "X": 0.0,
+                          "Y": 0.0
+                        },
+                        "LeftMargin": 128.5,
+                        "RightMargin": -387.5,
+                        "TopMargin": -54.5,
+                        "BottomMargin": 19.5,
+                        "Tag": 91,
+                        "ActionTag": -208643831,
+                        "Size": {
+                          "X": 259.0,
+                          "Y": 35.0
+                        },
+                        "Name": "lbChoose",
+                        "ctype": "TextObjectData"
+                      }
+                    ],
+                    "ActionTag": -773714328,
+                    "Size": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "Name": "nodeP1",
+                    "ctype": "SingleNodeObjectData"
+                  },
+                  {
+                    "AnchorPoint": {},
+                    "Position": {
+                      "X": 1105.9761,
+                      "Y": 241.6
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": true,
+                    "PositionPercentYEnabled": true,
+                    "PrePosition": {
+                      "X": 0.9736,
+                      "Y": 0.3775
+                    },
+                    "PreSize": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "HorizontalEdge": "RightEdge",
+                    "LeftMargin": 1105.9761,
+                    "RightMargin": 30.0239,
+                    "TopMargin": 398.4,
+                    "BottomMargin": 241.6,
+                    "Tag": 96,
+                    "Children": [
+                      {
+                        "FileData": {
+                          "Type": "PlistSubImage",
+                          "Path": "StartGame_Board_Red.png",
+                          "Plist": "Resources/StartGame.plist"
+                        },
+                        "Scale9OriginX": 164,
+                        "Scale9OriginY": 52,
+                        "Scale9Width": 92,
+                        "Scale9Height": 40,
+                        "AnchorPoint": {
+                          "ScaleX": 1.0
+                        },
+                        "Position": {
+                          "X": 0.0,
+                          "Y": 0.0
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "CColor": {},
+                        "IconVisible": false,
+                        "PositionPercentXEnabled": true,
+                        "PrePosition": {
+                          "X": 0.0,
+                          "Y": 0.0
+                        },
+                        "PreSize": {
+                          "X": 0.0,
+                          "Y": 0.0
+                        },
+                        "LeftMargin": -420.0,
+                        "TopMargin": -144.0,
+                        "Tag": 97,
+                        "ActionTag": -1993422829,
+                        "Size": {
+                          "X": 420.0,
+                          "Y": 144.0
+                        },
+                        "Name": "imgLose",
+                        "ctype": "ImageViewObjectData"
+                      },
+                      {
+                        "FontSize": 24,
+                        "LabelText": "THEY CHOSE PAPERzzz",
+                        "FontResource": {
+                          "Type": "Normal",
+                          "Path": "Font/facebook.TTF",
+                          "Plist": ""
+                        },
+                        "HorizontalAlignmentType": "HT_Center",
+                        "VerticalAlignmentType": "VT_Center",
+                        "OutlineColor": {
+                          "G": 0,
+                          "B": 0
+                        },
+                        "ShadowColor": {
+                          "R": 26,
+                          "G": 26,
+                          "B": 26
+                        },
+                        "ShadowOffsetX": 0.0,
+                        "ShadowOffsetY": -4.0,
+                        "AnchorPoint": {
+                          "ScaleX": 0.5,
+                          "ScaleY": 0.5
+                        },
+                        "Position": {
+                          "X": -267.0,
+                          "Y": 37.0
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "CColor": {
+                          "G": 114,
+                          "B": 194
+                        },
+                        "IconVisible": false,
+                        "PrePosition": {
+                          "X": 0.0,
+                          "Y": 0.0
+                        },
+                        "PreSize": {
+                          "X": 0.0,
+                          "Y": 0.0
+                        },
+                        "LeftMargin": -401.0,
+                        "RightMargin": 133.0,
+                        "TopMargin": -54.5,
+                        "BottomMargin": 19.5,
+                        "Tag": 105,
+                        "ActionTag": 1882415571,
+                        "Size": {
+                          "X": 268.0,
+                          "Y": 35.0
+                        },
+                        "Name": "lbChoose",
+                        "ctype": "TextObjectData"
+                      },
+                      {
+                        "FileData": {
+                          "Type": "PlistSubImage",
+                          "Path": "open_card_Box_Item_03.png",
+                          "Plist": "Resources/OpenCard.plist"
+                        },
+                        "BlendFunc": {
+                          "Src": 1,
+                          "Dst": 771
+                        },
+                        "AnchorPoint": {
+                          "ScaleX": 0.5,
+                          "ScaleY": 0.5
+                        },
+                        "Position": {
+                          "X": -273.2249,
+                          "Y": 198.7667
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "CColor": {},
+                        "IconVisible": false,
+                        "PrePosition": {
+                          "X": 0.0,
+                          "Y": 0.0
+                        },
+                        "PreSize": {
+                          "X": 0.0,
+                          "Y": 0.0
+                        },
+                        "LeftMargin": -372.2249,
+                        "RightMargin": 174.2249,
+                        "TopMargin": -322.2667,
+                        "BottomMargin": 75.2667,
+                        "Tag": 359,
+                        "Children": [
+                          {
+                            "FileData": {
+                              "Type": "PlistSubImage",
+                              "Path": "StartGame_Loading.png",
+                              "Plist": "Resources/StartGame.plist"
+                            },
+                            "BlendFunc": {
+                              "Src": 1,
+                              "Dst": 771
+                            },
+                            "AnchorPoint": {
+                              "ScaleX": 0.5,
+                              "ScaleY": 0.5
+                            },
+                            "Position": {
+                              "X": 99.0,
+                              "Y": 123.5
+                            },
+                            "Scale": {
+                              "ScaleX": 1.0,
+                              "ScaleY": 1.0
+                            },
+                            "CColor": {},
+                            "IconVisible": false,
+                            "PositionPercentXEnabled": true,
+                            "PositionPercentYEnabled": true,
+                            "PrePosition": {
+                              "X": 0.5,
+                              "Y": 0.5
+                            },
+                            "PreSize": {
+                              "X": 0.5859,
+                              "Y": 0.4656
+                            },
+                            "LeftMargin": 41.0,
+                            "RightMargin": 41.0,
+                            "TopMargin": 66.0,
+                            "BottomMargin": 66.0,
+                            "Tag": 106,
+                            "ActionTag": -1525657231,
+                            "Size": {
+                              "X": 116.0,
+                              "Y": 115.0
+                            },
+                            "Name": "type",
+                            "ctype": "SpriteObjectData"
+                          },
+                          {
+                            "FileData": {
+                              "Type": "PlistSubImage",
+                              "Path": "StartGame_Shadow.png",
+                              "Plist": "Resources/StartGame.plist"
+                            },
+                            "BlendFunc": {
+                              "Src": 1,
+                              "Dst": 771
+                            },
+                            "AnchorPoint": {
+                              "ScaleX": 0.5,
+                              "ScaleY": 0.5
+                            },
+                            "Position": {
+                              "X": 99.0,
+                              "Y": 0.0
+                            },
+                            "Scale": {
+                              "ScaleX": 1.0,
+                              "ScaleY": 1.0
+                            },
+                            "CColor": {},
+                            "IconVisible": false,
+                            "PositionPercentXEnabled": true,
+                            "PositionPercentYEnabled": true,
+                            "PrePosition": {
+                              "X": 0.5,
+                              "Y": 0.0
+                            },
+                            "PreSize": {
+                              "X": 1.2222,
+                              "Y": 0.1943
+                            },
+                            "LeftMargin": -22.0,
+                            "RightMargin": -22.0,
+                            "TopMargin": 223.0,
+                            "BottomMargin": -24.0,
+                            "Tag": 113,
+                            "ActionTag": 124542876,
+                            "Size": {
+                              "X": 242.0,
+                              "Y": 48.0
+                            },
+                            "Name": "shadow",
+                            "ctype": "SpriteObjectData"
+                          }
+                        ],
+                        "ActionTag": 776267162,
+                        "Size": {
+                          "X": 198.0,
+                          "Y": 247.0
+                        },
+                        "Name": "card",
+                        "ctype": "SpriteObjectData"
+                      },
+                      {
+                        "FileData": {
+                          "Type": "PlistSubImage",
+                          "Path": "StartGame_Avatar_Red.png",
+                          "Plist": "Resources/StartGame.plist"
+                        },
+                        "BlendFunc": {
+                          "Src": 1,
+                          "Dst": 771
+                        },
+                        "AnchorPoint": {
+                          "ScaleX": 0.5,
+                          "ScaleY": 0.5
+                        },
+                        "Position": {
+                          "X": -67.0,
+                          "Y": 76.0
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "CColor": {},
+                        "IconVisible": false,
+                        "PrePosition": {
+                          "X": 0.0,
+                          "Y": 0.0
+                        },
+                        "PreSize": {
+                          "X": 0.0,
+                          "Y": 0.0
+                        },
+                        "LeftMargin": -128.0,
+                        "RightMargin": 6.0,
+                        "TopMargin": -136.0,
+                        "BottomMargin": 16.0,
+                        "Tag": 98,
+                        "Children": [
+                          {
+                            "FileData": {
+                              "Type": "PlistSubImage",
+                              "Path": "League_02_IC_03b.png",
+                              "Plist": "Resources/LeagueSession.plist"
+                            },
+                            "BlendFunc": {
+                              "Src": 1,
+                              "Dst": 771
+                            },
+                            "AnchorPoint": {
+                              "ScaleX": 0.5,
+                              "ScaleY": 0.5
+                            },
+                            "Position": {
+                              "X": 110.0,
+                              "Y": 23.0
+                            },
+                            "Scale": {
+                              "ScaleX": 1.0,
+                              "ScaleY": 1.0
+                            },
+                            "CColor": {},
+                            "IconVisible": false,
+                            "PrePosition": {
+                              "X": 0.9016,
+                              "Y": 0.1917
+                            },
+                            "PreSize": {
+                              "X": 0.4016,
+                              "Y": 0.4917
+                            },
+                            "LeftMargin": 85.5,
+                            "RightMargin": -12.5,
+                            "TopMargin": 67.5,
+                            "BottomMargin": -6.5,
+                            "Tag": 421,
+                            "ActionTag": -479337317,
+                            "Size": {
+                              "X": 49.0,
+                              "Y": 59.0
+                            },
+                            "Name": "iconLeague",
+                            "ctype": "SpriteObjectData"
+                          }
+                        ],
+                        "ActionTag": -347406981,
+                        "Size": {
+                          "X": 122.0,
+                          "Y": 120.0
+                        },
+                        "Name": "imgAvatarBorder",
+                        "ctype": "SpriteObjectData"
+                      }
+                    ],
+                    "ActionTag": -1646910522,
+                    "Size": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "Name": "nodeP2",
+                    "ctype": "SingleNodeObjectData"
+                  },
+                  {
+                    "FontSize": 14,
+                    "ButtonText": "",
+                    "TextColor": {
+                      "R": 65,
+                      "G": 65,
+                      "B": 70
+                    },
+                    "DisabledFileData": {
+                      "Type": "Default",
+                      "Path": "Default/Button_Disable.png",
+                      "Plist": ""
+                    },
+                    "PressedFileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "open_card_Box_Item_03.png",
+                      "Plist": "Resources/OpenCard.plist"
+                    },
+                    "NormalFileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "open_card_Box_Item_03.png",
+                      "Plist": "Resources/OpenCard.plist"
+                    },
+                    "Scale9Enable": true,
+                    "Scale9OriginX": 15,
+                    "Scale9OriginY": 11,
+                    "Scale9Width": 168,
+                    "Scale9Height": 225,
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "R": 110,
+                      "G": 110,
+                      "B": 110
+                    },
+                    "ShadowOffsetX": 2.0,
+                    "ShadowOffsetY": -2.0,
+                    "TouchEnable": true,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 340.8,
+                      "Y": 422.78
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PositionPercentXEnabled": true,
+                    "PrePosition": {
+                      "X": 0.3,
+                      "Y": 0.6606
+                    },
+                    "PreSize": {
+                      "X": 0.1743,
+                      "Y": 0.3859
+                    },
+                    "LeftMargin": 241.8,
+                    "RightMargin": 696.2,
+                    "TopMargin": 93.72,
+                    "BottomMargin": 299.28,
+                    "Tag": 219,
+                    "Children": [
+                      {
+                        "FileData": {
+                          "Type": "PlistSubImage",
+                          "Path": "StartGame_0.png",
+                          "Plist": "Resources/StartGame.plist"
+                        },
+                        "BlendFunc": {
+                          "Src": 1,
+                          "Dst": 771
+                        },
+                        "AnchorPoint": {
+                          "ScaleX": 0.5,
+                          "ScaleY": 0.5
+                        },
+                        "Position": {
+                          "X": 99.0,
+                          "Y": 123.5
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "CColor": {},
+                        "IconVisible": false,
+                        "PositionPercentXEnabled": true,
+                        "PositionPercentYEnabled": true,
+                        "PrePosition": {
+                          "X": 0.5,
+                          "Y": 0.5
+                        },
+                        "PreSize": {
+                          "X": 0.7374,
+                          "Y": 0.587
+                        },
+                        "LeftMargin": 26.0,
+                        "RightMargin": 26.0,
+                        "TopMargin": 51.0,
+                        "BottomMargin": 51.0,
+                        "Tag": 108,
+                        "ActionTag": 539400115,
+                        "Size": {
+                          "X": 146.0,
+                          "Y": 145.0
+                        },
+                        "Name": "type",
+                        "ctype": "SpriteObjectData"
+                      },
+                      {
+                        "FileData": {
+                          "Type": "PlistSubImage",
+                          "Path": "StartGame_Shadow.png",
+                          "Plist": "Resources/StartGame.plist"
+                        },
+                        "BlendFunc": {
+                          "Src": 1,
+                          "Dst": 771
+                        },
+                        "AnchorPoint": {
+                          "ScaleX": 0.5,
+                          "ScaleY": 0.5
+                        },
+                        "Position": {
+                          "X": 99.0,
+                          "Y": 0.0
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "CColor": {},
+                        "IconVisible": false,
+                        "PositionPercentXEnabled": true,
+                        "PositionPercentYEnabled": true,
+                        "PrePosition": {
+                          "X": 0.5,
+                          "Y": 0.0
+                        },
+                        "PreSize": {
+                          "X": 1.2222,
+                          "Y": 0.1943
+                        },
+                        "LeftMargin": -22.0,
+                        "RightMargin": -22.0,
+                        "TopMargin": 223.0,
+                        "BottomMargin": -24.0,
+                        "Tag": 114,
+                        "ActionTag": -210080045,
+                        "Size": {
+                          "X": 242.0,
+                          "Y": 48.0
+                        },
+                        "Name": "shadow",
+                        "ctype": "SpriteObjectData"
+                      }
+                    ],
+                    "ActionTag": 1256907042,
+                    "Size": {
+                      "X": 198.0,
+                      "Y": 247.0
+                    },
+                    "Name": "btnCard_0",
+                    "ctype": "ButtonObjectData"
+                  },
+                  {
+                    "FontSize": 14,
+                    "ButtonText": "",
+                    "TextColor": {
+                      "R": 65,
+                      "G": 65,
+                      "B": 70
+                    },
+                    "DisabledFileData": {
+                      "Type": "Default",
+                      "Path": "Default/Button_Disable.png",
+                      "Plist": ""
+                    },
+                    "PressedFileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "open_card_Box_Item_03.png",
+                      "Plist": "Resources/OpenCard.plist"
+                    },
+                    "NormalFileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "open_card_Box_Item_03.png",
+                      "Plist": "Resources/OpenCard.plist"
+                    },
+                    "Scale9Enable": true,
+                    "Scale9OriginX": 15,
+                    "Scale9OriginY": 11,
+                    "Scale9Width": 168,
+                    "Scale9Height": 225,
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "R": 110,
+                      "G": 110,
+                      "B": 110
+                    },
+                    "ShadowOffsetX": 2.0,
+                    "ShadowOffsetY": -2.0,
+                    "TouchEnable": true,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 568.0,
+                      "Y": 423.96
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PositionPercentXEnabled": true,
+                    "PrePosition": {
+                      "X": 0.5,
+                      "Y": 0.6624
+                    },
+                    "PreSize": {
+                      "X": 0.1743,
+                      "Y": 0.3859
+                    },
+                    "LeftMargin": 469.0,
+                    "RightMargin": 469.0,
+                    "TopMargin": 92.54,
+                    "BottomMargin": 300.46,
+                    "Tag": 218,
+                    "Children": [
+                      {
+                        "FileData": {
+                          "Type": "PlistSubImage",
+                          "Path": "StartGame_1.png",
+                          "Plist": "Resources/StartGame.plist"
+                        },
+                        "BlendFunc": {
+                          "Src": 1,
+                          "Dst": 771
+                        },
+                        "AnchorPoint": {
+                          "ScaleX": 0.5,
+                          "ScaleY": 0.5
+                        },
+                        "Position": {
+                          "X": 99.0,
+                          "Y": 123.5
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "CColor": {},
+                        "IconVisible": false,
+                        "PositionPercentXEnabled": true,
+                        "PositionPercentYEnabled": true,
+                        "PrePosition": {
+                          "X": 0.5,
+                          "Y": 0.5
+                        },
+                        "PreSize": {
+                          "X": 0.7374,
+                          "Y": 0.587
+                        },
+                        "LeftMargin": 26.0,
+                        "RightMargin": 26.0,
+                        "TopMargin": 51.0,
+                        "BottomMargin": 51.0,
+                        "Tag": 109,
+                        "ActionTag": 1674127363,
+                        "Size": {
+                          "X": 146.0,
+                          "Y": 145.0
+                        },
+                        "Name": "type",
+                        "ctype": "SpriteObjectData"
+                      },
+                      {
+                        "FileData": {
+                          "Type": "PlistSubImage",
+                          "Path": "StartGame_Shadow.png",
+                          "Plist": "Resources/StartGame.plist"
+                        },
+                        "BlendFunc": {
+                          "Src": 1,
+                          "Dst": 771
+                        },
+                        "AnchorPoint": {
+                          "ScaleX": 0.5,
+                          "ScaleY": 0.5
+                        },
+                        "Position": {
+                          "X": 99.0,
+                          "Y": 0.0
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "CColor": {},
+                        "IconVisible": false,
+                        "PositionPercentXEnabled": true,
+                        "PositionPercentYEnabled": true,
+                        "PrePosition": {
+                          "X": 0.5,
+                          "Y": 0.0
+                        },
+                        "PreSize": {
+                          "X": 1.2222,
+                          "Y": 0.1943
+                        },
+                        "LeftMargin": -22.0,
+                        "RightMargin": -22.0,
+                        "TopMargin": 223.0,
+                        "BottomMargin": -24.0,
+                        "Tag": 115,
+                        "ActionTag": 42706987,
+                        "Size": {
+                          "X": 242.0,
+                          "Y": 48.0
+                        },
+                        "Name": "shadow",
+                        "ctype": "SpriteObjectData"
+                      }
+                    ],
+                    "ActionTag": 1365519126,
+                    "Size": {
+                      "X": 198.0,
+                      "Y": 247.0
+                    },
+                    "Name": "btnCard_1",
+                    "ctype": "ButtonObjectData"
+                  },
+                  {
+                    "FontSize": 14,
+                    "ButtonText": "",
+                    "TextColor": {
+                      "R": 65,
+                      "G": 65,
+                      "B": 70
+                    },
+                    "DisabledFileData": {
+                      "Type": "Default",
+                      "Path": "Default/Button_Disable.png",
+                      "Plist": ""
+                    },
+                    "PressedFileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "open_card_Box_Item_03.png",
+                      "Plist": "Resources/OpenCard.plist"
+                    },
+                    "NormalFileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "open_card_Box_Item_03.png",
+                      "Plist": "Resources/OpenCard.plist"
+                    },
+                    "Scale9Enable": true,
+                    "Scale9OriginX": 15,
+                    "Scale9OriginY": 11,
+                    "Scale9Width": 168,
+                    "Scale9Height": 225,
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "R": 110,
+                      "G": 110,
+                      "B": 110
+                    },
+                    "ShadowOffsetX": 2.0,
+                    "ShadowOffsetY": -2.0,
+                    "TouchEnable": true,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 795.2,
+                      "Y": 423.02
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PositionPercentXEnabled": true,
+                    "PrePosition": {
+                      "X": 0.7,
+                      "Y": 0.661
+                    },
+                    "PreSize": {
+                      "X": 0.1743,
+                      "Y": 0.3859
+                    },
+                    "LeftMargin": 696.2,
+                    "RightMargin": 241.8,
+                    "TopMargin": 93.48,
+                    "BottomMargin": 299.52,
+                    "Tag": 217,
+                    "Children": [
+                      {
+                        "FileData": {
+                          "Type": "PlistSubImage",
+                          "Path": "StartGame_2.png",
+                          "Plist": "Resources/StartGame.plist"
+                        },
+                        "BlendFunc": {
+                          "Src": 1,
+                          "Dst": 771
+                        },
+                        "AnchorPoint": {
+                          "ScaleX": 0.5,
+                          "ScaleY": 0.5
+                        },
+                        "Position": {
+                          "X": 99.0,
+                          "Y": 123.5
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "CColor": {},
+                        "IconVisible": false,
+                        "PositionPercentXEnabled": true,
+                        "PositionPercentYEnabled": true,
+                        "PrePosition": {
+                          "X": 0.5,
+                          "Y": 0.5
+                        },
+                        "PreSize": {
+                          "X": 0.7374,
+                          "Y": 0.587
+                        },
+                        "LeftMargin": 26.0,
+                        "RightMargin": 26.0,
+                        "TopMargin": 51.0,
+                        "BottomMargin": 51.0,
+                        "Tag": 110,
+                        "ActionTag": -1303552149,
+                        "Size": {
+                          "X": 146.0,
+                          "Y": 145.0
+                        },
+                        "Name": "type",
+                        "ctype": "SpriteObjectData"
+                      },
+                      {
+                        "FileData": {
+                          "Type": "PlistSubImage",
+                          "Path": "StartGame_Shadow.png",
+                          "Plist": "Resources/StartGame.plist"
+                        },
+                        "BlendFunc": {
+                          "Src": 1,
+                          "Dst": 771
+                        },
+                        "AnchorPoint": {
+                          "ScaleX": 0.5,
+                          "ScaleY": 0.5
+                        },
+                        "Position": {
+                          "X": 99.0,
+                          "Y": 0.0
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "CColor": {},
+                        "IconVisible": false,
+                        "PositionPercentXEnabled": true,
+                        "PositionPercentYEnabled": true,
+                        "PrePosition": {
+                          "X": 0.5,
+                          "Y": 0.0
+                        },
+                        "PreSize": {
+                          "X": 1.2222,
+                          "Y": 0.1943
+                        },
+                        "LeftMargin": -22.0,
+                        "RightMargin": -22.0,
+                        "TopMargin": 223.0,
+                        "BottomMargin": -24.0,
+                        "Tag": 116,
+                        "ActionTag": -1684924786,
+                        "Size": {
+                          "X": 242.0,
+                          "Y": 48.0
+                        },
+                        "Name": "shadow",
+                        "ctype": "SpriteObjectData"
+                      }
+                    ],
+                    "ActionTag": -2052340666,
+                    "Size": {
+                      "X": 198.0,
+                      "Y": 247.0
+                    },
+                    "Name": "btnCard_2",
+                    "ctype": "ButtonObjectData"
+                  },
+                  {
+                    "FontSize": 100,
+                    "LabelText": "5",
+                    "FontResource": {
+                      "Type": "Normal",
+                      "Path": "Font/facebook.TTF",
+                      "Plist": ""
+                    },
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "R": 19,
+                      "G": 115,
+                      "B": 213
+                    },
+                    "ShadowOffsetX": 4.0,
+                    "ShadowOffsetY": -4.0,
+                    "ShadowEnabled": true,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 568.0,
+                      "Y": 150.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.5,
+                      "ScaleY": 1.5
+                    },
+                    "CColor": {
+                      "R": 42,
+                      "G": 215
+                    },
+                    "IconVisible": false,
+                    "PositionPercentXEnabled": true,
+                    "PrePosition": {
+                      "X": 0.5,
+                      "Y": 0.2344
+                    },
+                    "PreSize": {
+                      "X": 0.0528,
+                      "Y": 0.2281
+                    },
+                    "LeftMargin": 538.0,
+                    "RightMargin": 538.0,
+                    "TopMargin": 417.0,
+                    "BottomMargin": 77.0,
+                    "Tag": 362,
+                    "ActionTag": 946744107,
+                    "Size": {
+                      "X": 60.0,
+                      "Y": 146.0
+                    },
+                    "Name": "lb_TimeRemain",
+                    "ctype": "TextObjectData"
+                  }
+                ],
+                "ActionTag": 550237211,
+                "Size": {
+                  "X": 1136.0,
+                  "Y": 640.0
+                },
+                "VisibleForFrame": false,
+                "Name": "panelSelectCard",
+                "ctype": "PanelObjectData"
+              }
+            ],
+            "ActionTag": -1437698549,
+            "Size": {
+              "X": 1136.0,
+              "Y": 640.0
+            },
+            "Name": "bg",
+            "ctype": "PanelObjectData"
+          }
+        ],
+        "Size": {
+          "X": 1136.0,
+          "Y": 640.0
+        },
+        "Name": "Layer",
+        "ctype": "LayerObjectData"
+      },
+      "UsedResources": [
+        "../Default/Button_Disable.png",
+        "../Font/facebook.TTF",
+        "../Resources/Channel.plist",
+        "../Resources/Channel.png",
+        "../Resources/Endgame.plist",
+        "../Resources/Endgame.png",
+        "../Resources/LeagueSession.plist",
+        "../Resources/LeagueSession.png",
+        "../Resources/OpenCard.plist",
+        "../Resources/OpenCard.png",
+        "../Resources/StartGame.plist",
+        "../Resources/StartGame.png"
+      ],
+      "ctype": "GameFileData"
+    }
+  },
+  "Type": "Layer"
+}

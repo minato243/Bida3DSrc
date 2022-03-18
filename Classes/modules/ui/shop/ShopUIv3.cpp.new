@@ -1,0 +1,925 @@
+#include "ShopUIv3.cpp.h"
+
+{
+    ShopUIv3::ShopUIv3(){
+        this->_super({tag: Popup.SHOP_UI});
+        this->keep = true;
+        this->initWithJsonFile(res.GUI.ShopGUIv3);
+        this->setCameraMask(GameCamera.FLAG_UI, true);
+    }
+
+    void ShopUIv3::initComponent(){
+        this->autoInitComponent();
+        this->initTabs();
+        //this.setCameraMask(GameCamera.FLAG_UI);
+        this->initData();
+        this->initSubscribers();
+        this->refresh();
+        this->initTimerScroll();
+    }
+
+    void ShopUIv3::initTimerScroll() {
+        if(this->timerScroll)  return;
+        var self = this;
+        self.curOffset = 0;
+        void ShopUIv3::this.timerScroll (int function () {
+            auto offset = self.convertPosToOffset(self.scrollView.getInnerContainerPosition().y);
+            if(self.curOffset != offset) {
+                self.curOffset = offset;
+                self.showTabSelected(self.curOffset);
+            }
+        } 200);
+    }
+
+    void ShopUIv3::convertPosToOffset(int posY) {
+        auto pos = Math.abs(posY);
+        auto n = this->listHeight.length;
+        for(auto i = 0; i < n; i++) {
+            if(pos < this->listHeight[i]) {
+                return n-i-1;
+            }
+        }
+    }
+
+    void ShopUIv3::onSceneReload(){
+        this->refresh();
+        this->switchTab(0, true);
+        this->initInterval();
+    }
+
+    void ShopUIv3::reloadGUIHotDeals() {
+        this->switchTab(0, true);
+        this->listTabs[0].reloadHotDeals();
+    }
+
+    void ShopUIv3::initInterval() {
+        this->initTimerScroll();
+        this->listTabs[0].initTimer();
+    }
+
+    void ShopUIv3::initData() {
+        this->listBtnTab[0].loadTextures(IMG_BUTTON[0].select, "", "");
+        this->listTabs = [];
+        this->listTabs.push_back(new ShopTabLimited());
+        for(auto i = 1; i < 4; i++)
+            this->listTabs.push_back(new ShopTabItem(tabsCategory[i]));
+        var totalHeight = 0;
+        for(auto i = 0; i < 4; i++) {
+            totalHeight += this->listTabs[i].getOriginalSize().height;
+        }
+
+        auto container = this->_bg._imgListBg._container;
+        auto size = container.getContentSize();
+        var scrollView = new ccui.ScrollView();
+        scrollView.setDirection(ccui.ScrollView.DIR_VERTICAL);
+        scrollView.setTouchEnabled(true);
+        scrollView.setBounceEnabled(true);
+        scrollView.setContentSize(size);
+        scrollView.setInnerContainerSize(cc.size(size.width, totalHeight + 30));
+        container.addChild(scrollView);
+        this->scrollView = scrollView;
+
+        var h = 0;
+        this->listHeight = [];
+        this->totalHeight = totalHeight;
+        for(auto i = 3; i >= 0; i--) {
+            this->listTabs[i].setPosition(cc.p(0, h));
+            h += this->listTabs[i].getOriginalSize().height+10;
+            this->listHeight.push_back(h);
+            scrollView.addChild(this->listTabs[i]);
+        }
+    }
+
+
+
+    void ShopUIv3::initTabs() {
+        this->listBtnTab = [];
+        this->listBtnTab.push_back(this->_bg._bgTab._btnTab0);
+        this->listBtnTab.push_back(this->_bg._bgTab._btnTab1);
+        this->listBtnTab.push_back(this->_bg._bgTab._btnTab2);
+        this->listBtnTab.push_back(this->_bg._bgTab._btnTab3);
+
+    }
+
+    void ShopUIv3::initSubscribers(){
+        gv.user.registerOnGoldChange(this->setGoldValue.bind(this, gv.user));
+    }
+
+    void ShopUIv3::refresh(){
+        this->setGoldValue(gv.user.gold);
+        this->setCashValue(gv.user.cash);
+        this->listTabs[1].resetListData();
+    }
+
+    void ShopUIv3::setGoldValue(int gold){
+        this->_bg._imgCurrency._lbGold.setString(utils.numToCurrency(gold));
+    }
+
+    void ShopUIv3::setCashValue(int cash){
+        this->_bg._imgCurrency._lbCC.setString(utils.numToCurrency(cash));
+    }
+
+    void ShopUIv3::onButtonTouchEnded(int sender, int tag){
+        switch(tag){
+            case this->tagMap.btnBack:
+                this->onRequestClose();
+                break;
+            case this->tagMap.btnTab0:
+                this->switchTab(0);
+                break;
+            case this->tagMap.btnTab1:
+                this->switchTab(1);
+                break;
+            case this->tagMap.btnTab2:
+                this->switchTab(2);
+                break;
+            case this->tagMap.btnTab3:
+                this->switchTab(3);
+                break;
+            default:
+                return;
+        }
+    }
+
+    void ShopUIv3::switchTab(int id, int isInstant = false) {
+        auto time = 1;
+        if(isInstant){
+            time = 0;
+            this->showTabSelected(id);
+        }
+        this->scrollView.scrollToPercentVertical(100*(1-(this->listHeight[3-id]-160*id)/this->totalHeight), time, 1);
+
+        if(this->listTabs[1].checkSelect)
+            this->listTabs[1].hidePanelSelection();
+    }
+
+    void ShopUIv3::showTabSelected(int id) {
+        for(auto i = 0; i < 4; i ++) {
+            if(i == id){
+                this->listBtnTab[i]._pnSelect.setVisible(true);
+                this->listBtnTab[i].loadTextures(IMG_BUTTON[i].select, "", "");
+            }
+            else {
+                this->listBtnTab[i]._pnSelect.setVisible(false);
+                this->listBtnTab[i].loadTextures(IMG_BUTTON[i].tab, "", "");
+            }
+        }
+
+    }
+
+    void ShopUIv3::onRequestClose(){
+        clearInterval(this->listTabs[0].setRemainTimeDeal);
+        clearInterval(this->timerScroll);
+        this->listTabs[0].setRemainTimeDeal = null;
+        this->timerScroll = null;
+        gv.gameMgr.loadSceneByTag(Scenes.MAIN_SCENE);
+    }
+
+})
+
+auto ShopTabItem = UIBaseLayer.extend({
+    ShopUIv3::ShopUIv3(int category) {
+        this->_super();
+        this->initWithJsonFile(res.GUI.ShopTabItem);
+
+        this->setSizeTabLayer(category);
+        this->loadData(category);
+        this->initEventListener();
+    }
+
+    void ShopUIv3::initComponent() {
+        this->autoInitComponent();
+        this->_bg._ndTop._boxSearch._Search.setDelegate(this);
+    }
+
+    void ShopUIv3::setSizeTabLayer(int category) {
+        auto tbViewTmp = new QuickCustomTableView(this->_bg._pnContent, cc.SCROLLVIEW_DIRECTION_VERTICAL, ShopItemV3, -1, 3);
+        auto hItem = tbViewTmp.tableCellSizeForIndex().height;
+
+        this->listData = gv.shopMgr.getShopData(category);
+        auto numItem = this->listData.length;
+
+        auto addNum = (numItem%3 == 0) ? (numItem/3) : (floor(numItem/3)+1);
+
+        this->_bg.setSize(cc.size(this->_bg.getContentSize().width, (addNum+0.3)*hItem));
+        this->_bg._pnContent.setSize(cc.size(this->_bg._pnContent.getContentSize().width, addNum*hItem));
+        //this._bg._ndTop.setPosition(cc.p(0.45*this._bg.getContentSize().height, this._bg.getContentSize().height));
+        this->_bg._ndTop.setPosition(0, this->_bg.getContentSize().height);
+    }
+
+    void ShopUIv3::loadData(int category) {
+        this->checkSelect = false;
+        this->_bg._ndTop._nd_selection.setVisible(false);
+        if(category != 'CUE') {
+            this->_bg._ndTop._boxSearch.setVisible(false);
+            this->_bg._ndTop._box_sort.setVisible(false);
+        }
+
+        auto tabName = '';
+        switch (category) {
+            case "CUE":
+                tabName = 'Cue Boxes';
+                break;
+            case "GOLD":
+                tabName = 'Gold';
+                break;
+            case "CASH":
+                tabName = 'Cash';
+                break;
+            default:
+                break;
+        }
+        this->_bg._ndTop._title.setString(tabName);
+
+        this->listItem = new QuickCustomTableView(this->_bg._pnContent, cc.SCROLLVIEW_DIRECTION_VERTICAL, ShopItemV3, -1, 3);
+        this->_bg._pnContent.addChild(this->listItem);
+        this->listItem.loadData(this->listData);
+        this->listItem.button.setTouchEnabled(false);
+        this->listItem.tbView.setTouchEnabled(false);
+    }
+
+    void ShopUIv3::getOriginalSize(){
+        return this->_bg.getContentSize();
+    }
+
+    void ShopUIv3::scaleToSize(int size){
+        this->_bg.setScale(size.width/this->_bg.getContentSize().width);
+    }
+
+    void ShopUIv3::initEventListener() {
+        var self = this;
+        void ShopUIv3::(int function () {
+            if(self.checkSelect) {
+                self.checkSelect = false;
+                self._bg._ndTop._nd_selection.setVisible(false);
+            }
+            else {
+                self.checkSelect = true;
+                self._bg._ndTop._nd_selection.setVisible(true);
+            }
+            self._bg._ndTop._box_sort._imgArrow.setRotation(180*(self.checkSelect != 0));
+        })
+
+        var size = this->_bg._ndTop._nd_selection.getContentSize();
+        var pos = this->_bg._ndTop._nd_selection.getPosition();
+        var listener = cc.EventListener.create({
+            event: cc.EventListener.TOUCH_ONE_BY_ONE,
+            swallowTouches: false,
+            void ShopUIv3::onTouchBegan(int touch, int event)
+            {
+                return true;
+            }
+            void ShopUIv3::onTouchMoved(int touch, int event)
+            {
+                return true;
+            }
+            void ShopUIv3::onTouchEnded(int touch, int event)
+            {
+
+                var target = event.getCurrentTarget();
+                var location = touch.getLocation();
+                var rect = cc.rect(pos.x-size.width/2, pos.y-size.height/2, pos.x+size.height, pos.y+size.height);
+                if (cc.rectContainsPoint(rect, location))
+                {
+                    //fr.Sound.playEffectClickButton();
+                } else {
+                    if(self.checkSelect)
+                        self.hidePanelSelection();
+                }
+            }
+        });
+
+        cc.eventManager.addListener(listener, this->_bg._ndTop._nd_selection);
+    }
+
+    void ShopUIv3::onButtonTouchEnded(int sender, int tag){
+        switch(tag){
+            // case this.tagMap._boxSearch:
+            //     gv.GuiMgr.getGui(Popup.POPUP_SEARCH, ShopPopupSearch).show();
+            //     break;
+            case this->tagMap.btn_price_descending:
+                this->sortListByCost('des');
+                this->updateGui('Price Descending');
+                break;
+            case this->tagMap.btn_price_ascending:
+                this->sortListByCost('asc');
+                this->updateGui('Price Ascending');
+                break;
+            case this->tagMap.btn_prefer_neutral:
+                this->sortListByTypeBox("Neutral");
+                this->updateGui('Prefer Neutral');
+                break;
+            case this->tagMap.btn_prefer_break:
+                this->sortListByTypeBox("Break");
+                this->updateGui('Prefer Break');
+                break;
+            case this->tagMap.btn_prefer_jump:
+                this->sortListByTypeBox("Jump");
+                this->updateGui('Prefer Jump');
+                break;
+            case this->tagMap.btn_prefer_masses:
+                this->sortListByTypeBox("Masses");
+                this->updateGui('Prefer Masses');
+                break;
+            default:
+                return;
+        }
+    }
+
+    void ShopUIv3::editBoxEditingDidEnd() {
+        this->searchBoxByName(this->getSearchString());
+    }
+
+    void ShopUIv3::getSearchString() {
+        auto value = this->_bg._ndTop._boxSearch._Search.getString()+"";
+        value = value.toLowerCase();
+        if(value.substring(0, 6) == 'search') value = "";
+        return value;
+    }
+
+    void ShopUIv3::sortListByCost(int oder) {
+        auto comparison = (oder == 'asc') ? 1 : -1;
+        void ShopUIv3::let list (int function(a, int b) {
+            return (parseFloat(a.cost) - parseFloat(b.cost))*comparison;
+        });
+        this->listItem.loadData(list);
+
+    }
+
+    void ShopUIv3::sortListByTypeBox(int typeBox) {
+        auto firstList = this->listData.filter(item => {
+            return (item.name.search(typeBox) !== -1);
+        })
+        void ShopUIv3::firstList (int function(a, int b) {
+            return (parseFloat(b.cost) - parseFloat(a.cost));
+        });
+
+        auto secondList = this->listData.filter(item => {
+            return (item.name.search(typeBox) == -1);
+        })
+
+        void ShopUIv3::secondList (int function(a, int b) {
+            return (parseFloat(b.cost) - parseFloat(a.cost));
+        });
+
+        auto list = firstList.concat(secondList);
+        this->listItem.loadData(list);
+    }
+
+    void ShopUIv3::searchBoxByName(int name) {
+        if(!name)
+            this->resetListData();
+        else {
+            var self = this;
+            auto list = this->listData.filter(item => {
+                return self.isCorrectSearch(item, name);
+            })
+            this->listItem.loadData(list);
+        }
+
+    }
+
+    void ShopUIv3::resetListData() {
+        this->_bg._ndTop._boxSearch._Search.setString("Search..");
+        this->listItem.loadData(this->listData);
+    }
+
+    void ShopUIv3::isCorrectSearch(int item, int name) {
+        if(item.name.toLowerCase().search(name) !== -1)
+            return true;
+        for(auto i in item.listCue) {
+            auto cueItemName = (item.listCue[i].cueId+"").toLowerCase();
+            if(cueItemName.search(name) !== -1)
+                return true;
+        }
+        return false;
+    }
+
+    void ShopUIv3::updateGui(int string) {
+        this->checkSelect = false;
+        this->_bg._ndTop._nd_selection.setVisible(false);
+        this->_bg._ndTop._box_sort._lbText.setString(string);
+        this->_bg._ndTop._box_sort._imgArrow.setRotation(180*(this->checkSelect != 0));
+        this->_bg._ndTop._boxSearch._Search.setString("Search..");
+    }
+
+    void ShopUIv3::hidePanelSelection() {
+        this->checkSelect = false;
+        this->_bg._ndTop._nd_selection.setVisible(false);
+        this->_bg._ndTop._box_sort._imgArrow.setRotation(180*(this->checkSelect != 0));
+    }
+})
+
+auto ShopTabLimited = UIBaseLayer.extend({
+    ShopUIv3::ShopUIv3() {
+        this->_super();
+        this->initWithJsonFile(res.GUI.ShopTabLimited);
+        this->setSizeTabLayer();
+        this->loadData();
+    }
+
+    void ShopUIv3::initTimer() {
+        if(this->setRemainTimeDeal) return;
+        var self = this;
+        this->remainTimeDeal = floor(gv.getRemainTimeEndDay()/1000);
+        if(this->remainTimeDeal <= 1) this->remainTimeDeal = 24*60*60-1;
+        this->_bg._bgTop._time_remain.setString(convertTimeFromSecToDay(this->remainTimeDeal));
+        void ShopUIv3::this.setRemainTimeDeal (int function () {
+            self._bg._bgTop._time_remain.setString(convertTimeFromSecToDay(self.remainTimeDeal));
+            self.remainTimeDeal--;
+        } 1000)
+    }
+
+    void ShopUIv3::initComponent() {
+        this->autoInitComponent();
+        this->initTimer();
+        //this.setCameraMask(GameCamera.FLAG_UI);
+    }
+
+    void ShopUIv3::setSizeTabLayer() {
+        auto tbViewTmp = new QuickCustomTableView(this->_bg._pnContent_1, cc.SCROLLVIEW_DIRECTION_VERTICAL, ShopItemV3, -1, 3);
+        auto hItem = tbViewTmp.tableCellSizeForIndex().height;
+
+        auto deltaHeight = 2*hItem - this->_bg._pnContent_1.getContentSize().height;
+        this->_bg.setSize(cc.size(this->_bg.getContentSize().width, this->_bg.getContentSize().height + deltaHeight));
+        this->_bg._pnContent_1.setSize(cc.size(this->_bg._pnContent_1.getContentSize().width, 2*hItem));
+        this->_bg._bgTop.setPosition(cc.p(0, this->_bg.getContentSize().height));
+    }
+
+    void ShopUIv3::loadData(double idx) {
+        this->loadDataLimited();
+        this->loadDataHotDeals();
+    }
+
+    void ShopUIv3::loadDataLimited() {
+        auto container0 = this->_bg._bgTop._pnContent_0;
+        auto listItemLimited = new QuickCustomTableView(container0, cc.SCROLLVIEW_DIRECTION_HORIZONTAL, ShopItemLimitedV3, 6, 1);
+        container0.addChild(listItemLimited);
+        var tmpData = [];
+        for(auto i = 0; i < fakeData[0].num0; i++){
+            tmpData.push_back(i);
+        }
+
+        listItemLimited.loadData(tmpData);
+        this->listItemLimited = listItemLimited;
+        this->listItemLimited.button.setTouchEnabled(false);
+        this->listItemLimited.tbView.setTouchEnabled(false);
+    }
+
+    void ShopUIv3::loadDataHotDeals() {
+        auto container1 = this->_bg._pnContent_1;
+        auto listItem = new QuickCustomTableView(container1, cc.SCROLLVIEW_DIRECTION_VERTICAL, ShopItemV3, -1, 3);
+        container1.addChild(listItem);
+
+        listItem.loadData(gv.shopMgr.getListHotDeals());
+        this->listItem = listItem;
+        this->listItem.button.setTouchEnabled(false);
+        this->listItem.tbView.setTouchEnabled(false);
+    }
+
+    void ShopUIv3::reloadHotDeals() {
+        clearInterval(this->setRemainTimeDeal);
+        this->setRemainTimeDeal = null;
+        this->initTimer();
+        this->listItem.loadData(gv.shopMgr.getListHotDeals());
+    }
+
+    void ShopUIv3::updateDataHotDeals() {
+        this->listItem.loadData(gv.shopMgr.getListHotDeals());
+    }
+
+    void ShopUIv3::getOriginalSize(){
+        return this->_bg.getContentSize();
+    }
+
+    void ShopUIv3::scaleToSize(int size){
+        this->_bg.setScale(size.width/this->_bg.getContentSize().width);
+    }
+})
+
+auto tabsCategory = ['LIMITED', 'CUE', 'GOLD', 'CASH'];
+auto TabId = {
+    CUE: 0,
+    GOLD: 1,
+    CASH: 2,
+    HOT_DEALS: 3,
+}
+
+auto fakeData = [
+    {
+        name: "Limited deals",
+        num0: 6,
+        num1: 6
+    }
+]
+
+auto ShopItemV3 = UIBaseLayer.extend({
+    ShopUIv3::ShopUIv3(int size) {
+        this->_super();
+        this->_size = size;
+        this->initWithJsonFile(res.GUI.ShopItemV3);
+        if(size) this->scaleToSize(size);
+        this->initEventListener();
+    }
+
+    void ShopUIv3::initComponent() {
+        this->autoInitComponent();
+    }
+
+    void ShopUIv3::getOriginalSize(){
+        return this->_bg.getContentSize();
+    }
+
+    void ShopUIv3::scaleToSize(int size){
+        this->_bg.setScale(0.95*size.width/this->_bg.getContentSize().width);
+    }
+
+    void ShopUIv3::setContainerRect(int rect){
+        this->rect = rect;
+    }
+
+    void ShopUIv3::loadData(int data) {
+        this->data = data;
+        if(data.category == TabId.CUE)
+            this->loadDataCueBox(data);
+        else if(data.category == TabId.HOT_DEALS)
+            this->loadDataHotDeal(data);
+        else
+            this->loadDataItem(data);
+    }
+
+    void ShopUIv3::loadDataItem(int data) {
+        auto newCost = data.cost;
+
+        if(data.discount > 0) {
+            newCost = floor(data.cost*(100-data.discount)/100)
+            this->_bg._ndCostOld.setVisible(true);
+            this->_bg._ndCostOld._lb.setString(utils.numToCurrency(data.cost));
+            if(data.typeCost == 'gold'){
+                this->_bg._ndCostOld._spr.setTexture("res/GUI/GlobalPopup/res/Gold.png");
+                this->_bg._ndCostOld._lb.setTextColor(cc.color(247, 198, 8));
+                this->_bg._ndCostOld._spr.setScale(0.7);
+
+            }
+            if(data.typeCost == 'dollar') {
+                this->_bg._ndCostOld._spr.setVisible(false);
+                this->_bg._ndCostOld._lb.setString("$ " + data.cost);
+            }
+        }
+        else this->_bg._ndCostOld.setVisible(false);
+
+        if(data.value) {
+            this->_bg._ndValue.setVisible(true);
+            this->_bg._ndValue._lb.setString(utils.numToCurrency(data.value));
+            if(data.typeCost == 'cash'){
+                this->_bg._ndValue._spr.setTexture("res/GUI/GlobalPopup/res/Gold.png");
+                this->_bg._ndValue._spr.setScale(0.7);
+                this->_bg._ndValue._lb.setTextColor(cc.color(247, 198, 8));
+            }
+        }
+        else this->_bg._ndValue.setVisible(false);
+
+        this->_bg._ndCost._lb.setString(utils.numToCurrency(newCost));
+        if(data.typeCost == 'gold'){
+            this->_bg._ndCost._spr.setTexture("res/GUI/GlobalPopup/res/Gold.png");
+            this->_bg._ndCost._spr.setScale(0.7);
+            this->_bg._ndCost._lb.setTextColor(cc.color(247, 198, 8));
+        }
+        if(data.typeCost == 'dollar') {
+            this->_bg._ndCost._spr.setVisible(false);
+            this->_bg._ndCost._lb.setString("$ " + newCost);
+        }
+    }
+
+    void ShopUIv3::loadDataHotDeal(int data) {
+        auto newCost = data.cost;
+
+        if(data.isSold) {
+            this->_bg._bgVisible.setVisible(true);
+            this->_bg._btnImgItem.setTouchEnabled(false);
+        }
+        else {
+            this->_bg._bgVisible.setVisible(false);
+            this->_bg._btnImgItem.setTouchEnabled(true);
+        }
+
+        if(data.discount > 0) {
+            newCost = floor(data.cost*(100-data.discount)/100)
+            this->_bg._ndCostOld.setVisible(true);
+            this->_bg._ndCostOld._lb.setString(utils.numToCurrency(data.cost));
+        }
+        else{
+            this->_bg._ndCostOld.setVisible(false);
+
+            this->_bg._ndCostOld._spr.setTexture("res/GUI/GlobalPopup/res/Gold.png");
+            this->_bg._ndCostOld._lb.setTextColor(cc.color(247, 198, 8));
+            this->_bg._ndCostOld._spr.setScale(0.7);
+
+            this->_bg._ndCost._spr.setTexture("res/GUI/GlobalPopup/res/Gold.png");
+            this->_bg._ndCost._spr.setScale(0.7);
+            this->_bg._ndCost._lb.setTextColor(cc.color(247, 198, 8));
+        }
+
+        this->_bg._ndValue.setVisible(false);
+        this->_bg._ndCost._lb.setString(utils.numToCurrency(newCost));
+        this->_bg._imgBoxNameBox.setVisible(true);
+
+        auto arr = data.type.split("_");
+        auto name = data.type;
+        if(arr[0] == "boxId")
+            name = Config.CueBoxConfig["listBox"][arr[1]-1].name;
+        this->_bg._imgBoxNameBox._lbBoxName.setString(name);
+    }
+
+    void ShopUIv3::loadDataCueBox(int data) {
+        this->_bg._ndCost._lb.setString(utils.numToCurrency(data.cost));
+        this->_bg._ndCostOld.setVisible(false);
+        this->_bg._ndValue.setVisible(false);
+
+        this->_bg._imgBoxNameBox.setVisible(true);
+        this->_bg._imgBoxNameBox._lbBoxName.setString(data.name);
+    }
+
+    // onButtonTouchEnded: function(sender, tag){
+    //     switch(tag){
+    //         case this.tagMap.btnImgItem:
+    //             const gui = gv.GuiMgr.getGui(Popup.GACHA_ROLLING, CueGachaRollingList);
+    //             if(this.data.category == TabId.CUE) {
+    //                 gui.show();
+    //                 gui.loadDataCueBox(this.data);
+    //             }
+    //             else if (this.data.category == TabId.HOT_DEALS) {
+    //                 let type = this.data.type.substr(0,5);
+    //                 if(type == "boxId") {
+    //                     gui.show();
+    //                     gui.loadDataCueBoxDeal(this.data);
+    //                 }
+    //                 else this.showPopupConfirm();
+    //             }
+    //             else
+    //                 this.showPopupConfirm();
+    //             break;
+    //         default:
+    //             return;
+    //     }
+    // },
+
+    void ShopUIv3::initEventListener() {
+        auto self = this;
+        void ShopUIv3::(int function () {
+            auto gui = gv.GuiMgr.getGui(Popup.GACHA_ROLLING, CueGachaRollingList);
+            if(self.data.category == TabId.CUE) {
+                gui.show();
+                gui.loadDataCueBox(self.data);
+            }
+            else if (self.data.category == TabId.HOT_DEALS) {
+                auto type = self.data.type.substr(0,5);
+                if(type == "boxId") {
+                    gui.show();
+                    gui.loadDataCueBoxDeal(self.data);
+                }
+                else self.showPopupConfirm();
+            }
+            else
+                self.showPopupConfirm();
+        })
+    }
+
+    void ShopUIv3::showPopupConfirm() {
+        gv.GuiMgr.getGui(Popup.SHOP_UI, ShopUIv3)._bg.setEnabled(false);
+        auto gui = gv.GuiMgr.getGui(Popup.POPUP_CONFIRM, ShopPopupConfirm);
+        gui.show();
+        gui.loadData(this->data);
+    }
+
+})
+
+auto ShopItemLimitedV3 = UIBaseLayer.extend({
+    ShopUIv3::ShopUIv3(int size) {
+        this->_super();
+        this->_size = size;
+        this->initWithJsonFile(res.GUI.ShopItemLimitedV3);
+        //if(size) this.scaleToSize(size);
+    }
+
+    void ShopUIv3::scaleToSize(int size){
+        this->_bg.setScale(0.95*size.width/this->_bg.getContentSize().width);
+    }
+
+    void ShopUIv3::initComponent() {
+        this->autoInitComponent();
+    }
+
+    void ShopUIv3::getOriginalSize(){
+        return this->_bg.getContentSize();
+    }
+
+    void ShopUIv3::setContainerRect(int rect){
+        this->rect = rect;
+    }
+
+    void ShopUIv3::loadData(int data) {
+
+    }
+})
+
+auto ShopPopupConfirm = UIBaseLayer.extend({
+    ShopUIv3::ShopUIv3() {
+        this->_super({tag: Popup.POPUP_CONFIRM});
+        this->keep = true;
+        this->initWithJsonFile(res.GUI.ShopPopupConfirm);
+    }
+
+    void ShopUIv3::initComponent() {
+        this->autoInitComponent();
+    }
+
+    void ShopUIv3::getOriginalSize(){
+        return this->_bg.getContentSize();
+    }
+
+    void ShopUIv3::loadData(int data) {
+        this->data = data;
+        if(data.value) {
+            this->_bg._item._ndValue.setVisible(true);
+            this->_bg._item._ndValue._lb.setString(utils.numToCurrency(data.value));
+            if(data.typeCost == 'cash'){
+                this->_bg._item._ndValue._spr.setTexture("res/GUI/GlobalPopup/res/Gold.png");
+                this->_bg._item._ndValue._spr.setScale(0.7);
+                this->_bg._item._ndValue._lb.setTextColor(cc.color(255, 176, 39));
+            }
+            else {
+                this->_bg._item._ndValue._spr.setTexture("res/GUI/GlobalPopup/res/Coupon_Normal.png");
+                this->_bg._item._ndValue._spr.setScale(0.3);
+                this->_bg._item._ndValue._lb.setTextColor(cc.color(32, 238, 152));
+            }
+        }
+        else this->_bg._item._ndValue.setVisible(false);
+
+        if(data.cost) {
+            this->_bg._ndCost._lb.setString(utils.numToCurrency(data.cost));
+            if(data.typeCost == 'gold'){
+                this->_bg._ndCost._spr.setVisible(true);
+                this->_bg._ndCost._spr.setTexture("res/GUI/GlobalPopup/res/Gold.png");
+                this->_bg._ndCost._spr.setScale(0.7);
+                this->_bg._ndCost._lb.setTextColor(cc.color(255, 176, 39));
+            }
+            else if(data.typeCost == 'dollar') {
+                this->_bg._ndCost._spr.setVisible(false);
+                this->_bg._ndCost._lb.setTextColor(cc.color(32, 238, 152));
+                this->_bg._ndCost._lb.setString("$ " + data.cost);
+            }
+            else {
+                this->_bg._ndCost._spr.setVisible(true);
+                this->_bg._ndCost._spr.setTexture("res/GUI/GlobalPopup/res/Coupon_Normal.png");
+                this->_bg._ndCost._spr.setScale(0.3);
+                this->_bg._ndCost._lb.setTextColor(cc.color(32, 238, 152));
+            }
+        }
+
+        if(data.oldCost) {
+            this->_bg._item._ndCostOld.setVisible(true);
+            this->_bg._item._ndCostOld._lb.setString(utils.numToCurrency(data.oldCost));
+            if(data.typeCost == 'gold'){
+                this->_bg._item._ndCostOld._spr.setTexture("res/GUI/GlobalPopup/res/Gold.png");
+                this->_bg._item._ndCostOld._lb.setTextColor(cc.color(247, 198, 8));
+                this->_bg._item._ndCostOld._spr.setScale(0.7);
+
+            }
+            if(data.typeCost == 'dollar') {
+                this->_bg._item._ndCostOld._spr.setVisible(false);
+                this->_bg._item._ndCostOld._lb.setString("$ " + data.cost);
+            }
+        }
+        else this->_bg._item._ndCostOld.setVisible(false);
+    }
+
+    void ShopUIv3::onButtonTouchEnded(int sender, int tag){
+        switch(tag){
+            case this->tagMap.btnCancel:
+                gv.GuiMgr.getGui(Popup.SHOP_UI, ShopUIv3)._bg.setEnabled(true);
+                this->hide();
+                break;
+            case this->tagMap.btnConfirm:
+                this->processConfirm();
+                break;
+            default:
+                return;
+        }
+    }
+
+    void ShopUIv3::processConfirm() {
+        this->hide();
+        if(this->data.category == TabId.GOLD)
+            gv.shopMgr.buyGold(this->data.itemId);
+        else if(this->data.category == TabId.CUE) {
+            gv.shopMgr.buyCueBox(this->data.boxId, this->data.typeCost);
+        }
+        else if(this->data.category == TabId.HOT_DEALS) {
+            //cc.log("============ " + JSON.stringify(this.data))
+            gv.shopMgr.buyHotDeal(this->data.hotDealIdx, this->data.typeCost);
+        }
+        gv.GuiMgr.getGui(Popup.SHOP_UI, ShopUIv3)._bg.setEnabled(true);
+    }
+})
+
+auto ShopPopupResult = UIBaseLayer.extend({
+    ShopUIv3::ShopUIv3(int data) {
+        this->_super({tag: Popup.POPUP_RESULT});
+        this->initWithJsonFile(res.GUI.ShopPopupResult);
+    }
+
+    void ShopUIv3::initComponent() {
+        this->autoInitComponent();
+        this->hasColorLayer = true;
+    }
+
+    void ShopUIv3::getOriginalSize(){
+        return this->_bg.getContentSize();
+    }
+
+    void ShopUIv3::onTouchOutside() {
+        this->hide();
+    }
+
+    void ShopUIv3::noticeSuccess() {
+        this->_bg._ndError.setVisible(false);
+        this->_bg._btnBuy.setVisible(false);
+    }
+
+    void ShopUIv3::noticeError(int tag) {
+        this->_bg._ndSuccess.setVisible(false);
+
+        if(tag == "GOLD") this->idx = 2;
+        else if(tag == "CASH") this->idx = 3;
+
+        auto gui = gv.GuiMgr.getGui(Popup.GACHA_ROLLING, CueGachaRolling);
+        if(gui.isShow) {
+            this->_bg._btnBuy.setVisible(true);
+        }
+        else {
+            this->_bg._btnBuy.setVisible(false);
+            gv.GuiMgr.getGui(Popup.SHOP_UI, ShopUIv3).switchTab(this->idx);
+        }
+    }
+
+    void ShopUIv3::onButtonTouchEnded(int sender, int tag) {
+        switch (tag) {
+            case this->tagMap.btnBuy:
+                this->hide();
+                auto shop = gv.GuiMgr.getGui(Popup.SHOP_UI, ShopUI);
+                shop.show();
+                shop.switchTab(this->idx);
+                gv.GuiMgr.getGui(Popup.GACHA_ROLLING, CueGachaRolling).hide();
+                break;
+        }
+    }
+})
+
+void ShopUIv3::(int time) {
+    var s = time%60;
+    var m = floor(time/60)%60;
+    var h = floor(time/3600)%24;
+    var d = floor(time/86400);
+    switch(d) {
+        case 0 : d = ''; break;
+        case 1: d = d + ' day '; break;
+        default: d = d + ' days ';
+    }
+    switch(h) {
+        case 0 : h = ''; break;
+        case 1: h = h + ' hour '; break;
+        default: h = h + ' hours ';
+    }
+    switch(m) {
+        case 0 : m = ''; break;
+        case 1: m = m + ' minute '; break;
+        default: m = m + ' minutes ';
+    }
+    switch(s) {
+        case 0 : s = ''; break;
+        case 1: s = s + ' second '; break;
+        default: s = s + ' seconds ';
+    }
+    if(d == 0 && h == 0) return m + s;
+    else return d + h + m;
+}
+
+auto IMG_BUTTON = [
+    {
+        tab: "GUI/BidaGUI/cocosstudio/Shop/res/BLACKMARKET/Hot_02.png",
+        select: "GUI/BidaGUI/cocosstudio/Shop/res/BLACKMARKET/Hot_01.png"
+    }
+    {
+        tab: "GUI/BidaGUI/cocosstudio/Shop/res/BLACKMARKET/Box_02.png",
+        select: "GUI/BidaGUI/cocosstudio/Shop/res/BLACKMARKET/Box_01.png"
+    }
+    {
+        tab: "GUI/BidaGUI/cocosstudio/Shop/res/BLACKMARKET/Gold_02.png",
+        select: "GUI/BidaGUI/cocosstudio/Shop/res/BLACKMARKET/Gold_01.png"
+    }
+    {
+        tab: "GUI/BidaGUI/cocosstudio/Shop/res/BLACKMARKET/Dollar_02.png",
+        select: "GUI/BidaGUI/cocosstudio/Shop/res/BLACKMARKET/Dollar_01.png"
+    }
+]

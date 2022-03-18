@@ -1,0 +1,215 @@
+{
+  "ID": "3fcbdd6d-ac4d-4ff0-8013-ae86c5e19219",
+  "Version": "2.3.4",
+  "Name": "WorkshopSwapGemItem",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Tag": 372,
+        "Children": [
+          {
+            "FileData": {
+              "Type": "PlistSubImage",
+              "Path": "workshop_Box_Icon.png",
+              "Plist": "Workshop/res/Workshop.plist"
+            },
+            "Scale9OriginX": 28,
+            "Scale9OriginY": 28,
+            "Scale9Width": 23,
+            "Scale9Height": 23,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "PreSize": {
+              "X": 0.0695,
+              "Y": 0.1234
+            },
+            "LeftMargin": -39.5,
+            "RightMargin": 1096.5,
+            "TopMargin": 600.5,
+            "BottomMargin": -39.5,
+            "Tag": 373,
+            "Children": [
+              {
+                "FontSize": 14,
+                "ButtonText": "",
+                "TextColor": {
+                  "R": 65,
+                  "G": 65,
+                  "B": 70
+                },
+                "DisabledFileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "workshop_Blue_icon.png",
+                  "Plist": "Workshop/res/Workshop.plist"
+                },
+                "PressedFileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "workshop_Blue_icon.png",
+                  "Plist": "Workshop/res/Workshop.plist"
+                },
+                "NormalFileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "workshop_Blue_icon.png",
+                  "Plist": "Workshop/res/Workshop.plist"
+                },
+                "Scale9OriginX": 8,
+                "Scale9OriginY": 11,
+                "Scale9Width": 50,
+                "Scale9Height": 28,
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "TouchEnable": true,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 39.5,
+                  "Y": 39.5
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PositionPercentXEnabled": true,
+                "PositionPercentYEnabled": true,
+                "PrePosition": {
+                  "X": 0.5,
+                  "Y": 0.5
+                },
+                "PreSize": {
+                  "X": 0.8354,
+                  "Y": 0.6329
+                },
+                "LeftMargin": 6.5,
+                "RightMargin": 6.5,
+                "TopMargin": 14.5,
+                "BottomMargin": 14.5,
+                "Tag": 374,
+                "ActionTag": 143188213,
+                "Size": {
+                  "X": 66.0,
+                  "Y": 50.0
+                },
+                "Name": "btnItem",
+                "ctype": "ButtonObjectData"
+              },
+              {
+                "FontSize": 24,
+                "LabelText": "99/99",
+                "FontResource": {
+                  "Type": "Normal",
+                  "Path": "Font/facebook.TTF",
+                  "Plist": ""
+                },
+                "HorizontalAlignmentType": "HT_Right",
+                "OutlineColor": {
+                  "R": 0,
+                  "G": 0,
+                  "B": 0
+                },
+                "OutlineEnabled": true,
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "AnchorPoint": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 75.6299,
+                  "Y": 20.6077
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "RotationSkewX": 9.0,
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.9573,
+                  "Y": 0.2609
+                },
+                "PreSize": {
+                  "X": 0.9747,
+                  "Y": 0.4684
+                },
+                "LeftMargin": -1.3701,
+                "RightMargin": 3.3701,
+                "TopMargin": 39.8923,
+                "BottomMargin": 2.1077,
+                "Tag": 375,
+                "ActionTag": 1173693668,
+                "Size": {
+                  "X": 77.0,
+                  "Y": 37.0
+                },
+                "Name": "lbQuantity",
+                "ctype": "TextObjectData"
+              }
+            ],
+            "ActionTag": -582630665,
+            "Size": {
+              "X": 79.0,
+              "Y": 79.0
+            },
+            "Name": "bg",
+            "ctype": "ImageViewObjectData"
+          }
+        ],
+        "Size": {
+          "X": 1136.0,
+          "Y": 640.0
+        },
+        "Name": "Layer",
+        "ctype": "LayerObjectData"
+      },
+      "UsedResources": [
+        "../Font/facebook.TTF",
+        "res/Workshop.plist",
+        "res/Workshop.png"
+      ],
+      "ctype": "GameFileData"
+    }
+  },
+  "Type": "Layer"
+}

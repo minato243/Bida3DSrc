@@ -1,0 +1,44 @@
+#ifndef 	_CUSTOMTABLEVIEW_H_
+#define 	_CUSTOMTABLEVIEW_H_
+
+
+#include <cocos2d.h>
+
+class CustomTableView{
+public:
+
+	CustomTableViewint props);
+	void tableCellTouched(int table, int cell);
+	void scrollViewDidScroll(int sender);
+	void tableCellSizeForIndex(int table, double idx);
+	void tableCellAtIndex(int table, double idx);
+	void numberOfCellsInTableView(int table);
+	void lockScroll();
+	void touchBtn(int sender, int type);
+	void loadData(int data);
+	double getCellAtIdx(double idx);
+	double reloadAtIdx(double idx, int type);
+	double removeCellAtIdx(double idx);
+	void scrollToIndex(int index, int scrollAnim = true);
+	void scrollToOffsetIn(int offset, int time);
+	void scrollUpdate(double dt);
+	void loadText();
+	void scrollBy(int p);
+	void scrollTo(int p, int scrollAnim = true);
+
+
+private:
+	int props;
+	int data;
+	int _touching;
+	int tbView;
+	int button;
+	int scrollUpdate;
+	int offset;
+	int getOffset;
+	int _curOffset;
+	int _destOffset;
+	int _scrollTime;
+	int _scrollTotalTime;
+};
+#endif

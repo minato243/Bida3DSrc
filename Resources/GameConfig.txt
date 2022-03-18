@@ -1,0 +1,17 @@
+GAME = "siete"
+GAME_LOGIN_ID = "siete"
+GAME_LOGIN_SECRET_KEY = "";
+GAME_ID = "321"
+
+DEFAULT_PACKAGE_NAME = "com.gsn.sieteymedia"
+
+com.gsn.sieteymedia = "siete_mx_gg"
+com.gsn.sieteymedia.us = "siete_us_gg"
+
+KEY_DATA_URL = "data_app_version"
+KEY_APP_VERSION = "key_app_version"
+KEY_JS_VERSION = "key_js_version"
+JS_VERSION = "key_js_version"
+
+COUNTRY = "mx"
+GLOBAL = "us"

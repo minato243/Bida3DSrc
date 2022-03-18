@@ -1,0 +1,111 @@
+
+zp_indent.png
+size: 2048,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Comp 1_0000
+  rotate: false
+  xy: 682, 350
+  size: 193, 39
+  orig: 193, 39
+  offset: 0, 0
+  index: -1
+Comp 1_0001
+  rotate: false
+  xy: 682, 391
+  size: 427, 107
+  orig: 427, 107
+  offset: 0, 0
+  index: -1
+Comp 1_0002
+  rotate: false
+  xy: 2, 141
+  size: 498, 144
+  orig: 498, 144
+  offset: 0, 0
+  index: -1
+Comp 1_0003
+  rotate: false
+  xy: 1622, 307
+  size: 238, 191
+  orig: 238, 191
+  offset: 0, 0
+  index: -1
+Comp 1_0004
+  rotate: false
+  xy: 2, 2
+  size: 180, 137
+  orig: 180, 137
+  offset: 0, 0
+  index: -1
+Comp 1_0005
+  rotate: true
+  xy: 502, 199
+  size: 86, 145
+  orig: 86, 145
+  offset: 0, 0
+  index: -1
+Comp 1_0006
+  rotate: true
+  xy: 1419, 224
+  size: 37, 71
+  orig: 37, 71
+  offset: 0, 0
+  index: -1
+bg
+  rotate: false
+  xy: 1622, 275
+  size: 30, 30
+  orig: 30, 30
+  offset: 0, 0
+  index: -1
+cricles_2
+  rotate: false
+  xy: 682, 318
+  size: 30, 30
+  orig: 30, 30
+  offset: 0, 0
+  index: -1
+gradient
+  rotate: false
+  xy: 184, 64
+  size: 75, 75
+  orig: 75, 75
+  offset: 0, 0
+  index: -1
+logo2
+  rotate: false
+  xy: 1419, 263
+  size: 201, 235
+  orig: 201, 235
+  offset: 0, 0
+  index: -1
+maskLogo
+  rotate: true
+  xy: 1111, 213
+  size: 285, 306
+  orig: 285, 306
+  offset: 0, 0
+  index: -1
+orange_text
+  rotate: false
+  xy: 877, 359
+  size: 30, 30
+  orig: 30, 30
+  offset: 0, 0
+  index: -1
+white_fur
+  rotate: false
+  xy: 1862, 337
+  size: 153, 161
+  orig: 153, 161
+  offset: 0, 0
+  index: -1
+zp_text_mask
+  rotate: false
+  xy: 2, 287
+  size: 678, 211
+  orig: 678, 211
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,739 @@
+{
+  "ID": "ab3c6ed2-041e-4b3a-a53f-81b78cafe1dc",
+  "Version": "2.3.4",
+  "Name": "ProfileCueInfo",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Tag": 127,
+        "Children": [
+          {
+            "ClipAble": false,
+            "BackColorAlpha": 0,
+            "ComboBoxIndex": 1,
+            "SingleColor": {
+              "R": 150,
+              "G": 200
+            },
+            "FirstColor": {
+              "R": 150,
+              "G": 200
+            },
+            "EndColor": {},
+            "ColorVector": {
+              "ScaleY": 1.0
+            },
+            "Scale9Width": 1,
+            "Scale9Height": 1,
+            "TouchEnable": true,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "PreSize": {
+              "X": 0.4842,
+              "Y": 0.1406
+            },
+            "LeftMargin": -275.0,
+            "RightMargin": 861.0,
+            "TopMargin": 595.0,
+            "BottomMargin": -45.0,
+            "Tag": 180,
+            "Children": [
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "Profile/res/PLAYER_PROFILE/Cue_Board.png",
+                  "Plist": ""
+                },
+                "Scale9OriginX": 205,
+                "Scale9OriginY": 38,
+                "Scale9Width": 214,
+                "Scale9Height": 41,
+                "TouchEnable": true,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 275.0,
+                  "Y": 45.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PositionPercentXEnabled": true,
+                "PositionPercentYEnabled": true,
+                "PrePosition": {
+                  "X": 0.5,
+                  "Y": 0.5
+                },
+                "PreSize": {
+                  "X": 1.0182,
+                  "Y": 1.0889
+                },
+                "LeftMargin": -5.0,
+                "RightMargin": -5.0,
+                "TopMargin": -4.0,
+                "BottomMargin": -4.0,
+                "Tag": 128,
+                "ActionTag": 1426450438,
+                "Size": {
+                  "X": 560.0,
+                  "Y": 98.0
+                },
+                "Name": "imgBg",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "Profile/res/PLAYER_PROFILE/Cue_Unknown.png",
+                  "Plist": ""
+                },
+                "BlendFunc": {
+                  "Src": 1,
+                  "Dst": 771
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 330.9925,
+                  "Y": 23.7853
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.6018,
+                  "Y": 0.2643
+                },
+                "PreSize": {
+                  "X": 0.7618,
+                  "Y": 0.4778
+                },
+                "LeftMargin": 121.4925,
+                "RightMargin": 9.5075,
+                "TopMargin": 44.7147,
+                "BottomMargin": 2.2853,
+                "Tag": 129,
+                "ActionTag": 1289284683,
+                "Size": {
+                  "X": 419.0,
+                  "Y": 43.0
+                },
+                "Name": "imgNoCue",
+                "ctype": "SpriteObjectData"
+              },
+              {
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 146.8836,
+                  "Y": 21.9895
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": true,
+                "PrePosition": {
+                  "X": 0.2671,
+                  "Y": 0.2443
+                },
+                "PreSize": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "VerticalEdge": "BothEdge",
+                "LeftMargin": 146.8836,
+                "RightMargin": 403.1165,
+                "TopMargin": 68.0105,
+                "BottomMargin": 21.9895,
+                "Tag": 130,
+                "ActionTag": -1795988425,
+                "Size": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "Name": "nodeCue",
+                "ctype": "SingleNodeObjectData"
+              },
+              {
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 143.9319,
+                  "Y": 46.5442
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": true,
+                "PrePosition": {
+                  "X": 0.2617,
+                  "Y": 0.5172
+                },
+                "PreSize": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "LeftMargin": 143.9319,
+                "RightMargin": 406.0681,
+                "TopMargin": 43.4558,
+                "BottomMargin": 46.5442,
+                "Tag": 131,
+                "Children": [
+                  {
+                    "FileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "inven_Star_02.png",
+                      "Plist": "Resources/Inventory.plist"
+                    },
+                    "Scale9OriginX": 13,
+                    "Scale9OriginY": 10,
+                    "Scale9Width": 14,
+                    "Scale9Height": 13,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 9.0,
+                      "Y": 0.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "PreSize": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "LeftMargin": 0.3257,
+                    "RightMargin": -17.6743,
+                    "TopMargin": -7.1563,
+                    "BottomMargin": -7.1563,
+                    "Tag": 132,
+                    "ActionTag": 1133274551,
+                    "Size": {
+                      "X": 17.3486,
+                      "Y": 14.3126
+                    },
+                    "Name": "star_0",
+                    "ctype": "ImageViewObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "inven_Star_02.png",
+                      "Plist": "Resources/Inventory.plist"
+                    },
+                    "Scale9OriginX": 13,
+                    "Scale9OriginY": 10,
+                    "Scale9Width": 14,
+                    "Scale9Height": 13,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 26.0,
+                      "Y": 0.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "PreSize": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "LeftMargin": 17.3257,
+                    "RightMargin": -34.6743,
+                    "TopMargin": -7.1563,
+                    "BottomMargin": -7.1563,
+                    "Tag": 133,
+                    "ActionTag": -324636919,
+                    "Size": {
+                      "X": 17.3486,
+                      "Y": 14.3126
+                    },
+                    "Name": "star_1",
+                    "ctype": "ImageViewObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "inven_Star_02.png",
+                      "Plist": "Resources/Inventory.plist"
+                    },
+                    "Scale9OriginX": 13,
+                    "Scale9OriginY": 10,
+                    "Scale9Width": 14,
+                    "Scale9Height": 13,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 43.0,
+                      "Y": 0.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "PreSize": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "LeftMargin": 34.3257,
+                    "RightMargin": -51.6743,
+                    "TopMargin": -7.1563,
+                    "BottomMargin": -7.1563,
+                    "Tag": 134,
+                    "ActionTag": 1815689970,
+                    "Size": {
+                      "X": 17.3486,
+                      "Y": 14.3126
+                    },
+                    "Name": "star_2",
+                    "ctype": "ImageViewObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "inven_Star_02.png",
+                      "Plist": "Resources/Inventory.plist"
+                    },
+                    "Scale9OriginX": 13,
+                    "Scale9OriginY": 10,
+                    "Scale9Width": 14,
+                    "Scale9Height": 13,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 60.0,
+                      "Y": 0.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "PreSize": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "LeftMargin": 51.3257,
+                    "RightMargin": -68.6743,
+                    "TopMargin": -7.1563,
+                    "BottomMargin": -7.1563,
+                    "Tag": 135,
+                    "ActionTag": 2053608388,
+                    "Size": {
+                      "X": 17.3486,
+                      "Y": 14.3126
+                    },
+                    "Name": "star_3",
+                    "ctype": "ImageViewObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "inven_Star_02.png",
+                      "Plist": "Resources/Inventory.plist"
+                    },
+                    "Scale9OriginX": 13,
+                    "Scale9OriginY": 10,
+                    "Scale9Width": 14,
+                    "Scale9Height": 13,
+                    "AnchorPoint": {
+                      "ScaleX": 0.4664,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 77.0,
+                      "Y": 0.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "PreSize": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "LeftMargin": 68.9086,
+                    "RightMargin": -86.2572,
+                    "TopMargin": -7.1563,
+                    "BottomMargin": -7.1563,
+                    "Tag": 136,
+                    "ActionTag": -677665217,
+                    "Size": {
+                      "X": 17.3486,
+                      "Y": 14.3126
+                    },
+                    "Name": "star_4",
+                    "ctype": "ImageViewObjectData"
+                  }
+                ],
+                "ActionTag": -237187824,
+                "Size": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "Name": "nodeStars",
+                "ctype": "SingleNodeObjectData"
+              },
+              {
+                "FontSize": 20,
+                "LabelText": "Tịch Tà Cơ Phổ ____________",
+                "FontResource": {
+                  "Type": "Normal",
+                  "Path": "Font/facebook.TTF",
+                  "Plist": ""
+                },
+                "OutlineColor": {
+                  "R": 15,
+                  "G": 61,
+                  "B": 74
+                },
+                "ShadowColor": {
+                  "R": 15,
+                  "G": 61,
+                  "B": 74
+                },
+                "ShadowOffsetX": 0.0,
+                "ShadowOffsetY": -1.0,
+                "ShadowEnabled": true,
+                "AnchorPoint": {
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 148.0461,
+                  "Y": 67.2602
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "RotationSkewX": 9.0,
+                "CColor": {
+                  "R": 244,
+                  "G": 241,
+                  "B": 228
+                },
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.2692,
+                  "Y": 0.7473
+                },
+                "PreSize": {
+                  "X": 0.54,
+                  "Y": 0.3222
+                },
+                "LeftMargin": 148.0461,
+                "RightMargin": 104.9539,
+                "TopMargin": 8.2398,
+                "BottomMargin": 52.7602,
+                "Tag": 137,
+                "ActionTag": -1318947958,
+                "Size": {
+                  "X": 297.0,
+                  "Y": 29.0
+                },
+                "Name": "lbName",
+                "ctype": "TextObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "Icon_Color_02.png",
+                  "Plist": "Resources/CueTypes.plist"
+                },
+                "Scale9OriginX": 9,
+                "Scale9OriginY": 10,
+                "Scale9Width": 17,
+                "Scale9Height": 7,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 135.1755,
+                  "Y": 66.7588
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.2458,
+                  "Y": 0.7418
+                },
+                "PreSize": {
+                  "X": 0.04,
+                  "Y": 0.2444
+                },
+                "LeftMargin": 124.1755,
+                "RightMargin": 403.8245,
+                "TopMargin": 12.2412,
+                "BottomMargin": 55.7588,
+                "Tag": 138,
+                "ActionTag": 954123553,
+                "Size": {
+                  "X": 22.0,
+                  "Y": 22.0
+                },
+                "Name": "imgType",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "inven_Level.png",
+                  "Plist": "Resources/Inventory.plist"
+                },
+                "Scale9OriginX": 27,
+                "Scale9OriginY": 27,
+                "Scale9Width": 29,
+                "Scale9Height": 26,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 59.4901,
+                  "Y": 45.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.1082,
+                  "Y": 0.5
+                },
+                "PreSize": {
+                  "X": 0.1364,
+                  "Y": 0.8333
+                },
+                "LeftMargin": 21.9901,
+                "RightMargin": 453.0099,
+                "TopMargin": 7.5,
+                "BottomMargin": 7.5,
+                "Tag": 139,
+                "Children": [
+                  {
+                    "FontSize": 34,
+                    "LabelText": "99",
+                    "FontResource": {
+                      "Type": "Normal",
+                      "Path": "Font/UTMFacebook.ttf",
+                      "Plist": ""
+                    },
+                    "HorizontalAlignmentType": "HT_Center",
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "R": 41,
+                      "G": 104,
+                      "B": 161
+                    },
+                    "ShadowOffsetX": 0.0,
+                    "ShadowOffsetY": -2.0,
+                    "ShadowEnabled": true,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 38.4525,
+                      "Y": 42.3807
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "RotationSkewX": 8.0,
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PositionPercentXEnabled": true,
+                    "PrePosition": {
+                      "X": 0.5127,
+                      "Y": 0.5651
+                    },
+                    "PreSize": {
+                      "X": 0.6,
+                      "Y": 0.6667
+                    },
+                    "LeftMargin": 15.9525,
+                    "RightMargin": 14.0475,
+                    "TopMargin": 7.6193,
+                    "BottomMargin": 17.3807,
+                    "Tag": 140,
+                    "ActionTag": -1686228631,
+                    "Size": {
+                      "X": 45.0,
+                      "Y": 50.0
+                    },
+                    "Name": "lb",
+                    "ctype": "TextObjectData"
+                  }
+                ],
+                "ActionTag": 414246517,
+                "Size": {
+                  "X": 75.0,
+                  "Y": 75.0
+                },
+                "Name": "imgLevel",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "Profile/res/PLAYER_PROFILE/Board.png",
+                  "Plist": ""
+                },
+                "Scale9OriginX": 396,
+                "Scale9OriginY": 222,
+                "Scale9Width": 409,
+                "Scale9Height": 231,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 190.7585,
+                  "Y": 32.8659
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.3468,
+                  "Y": 0.3652
+                },
+                "PreSize": {
+                  "X": 0.3636,
+                  "Y": 1.6667
+                },
+                "LeftMargin": 90.7585,
+                "RightMargin": 259.2415,
+                "TopMargin": -17.8659,
+                "BottomMargin": -42.1341,
+                "Tag": 390,
+                "ActionTag": -1218269065,
+                "Size": {
+                  "X": 200.0,
+                  "Y": 150.0
+                },
+                "VisibleForFrame": false,
+                "Name": "nodeCueInfo",
+                "ctype": "ImageViewObjectData"
+              }
+            ],
+            "ActionTag": 1878346456,
+            "Size": {
+              "X": 550.0,
+              "Y": 90.0
+            },
+            "Name": "bg",
+            "ctype": "PanelObjectData"
+          }
+        ],
+        "Size": {
+          "X": 1136.0,
+          "Y": 640.0
+        },
+        "Name": "Layer",
+        "ctype": "LayerObjectData"
+      },
+      "UsedResources": [
+        "../Font/facebook.TTF",
+        "../Font/UTMFacebook.ttf",
+        "../Resources/CueTypes.plist",
+        "../Resources/CueTypes.png",
+        "../Resources/Inventory.plist",
+        "../Resources/Inventory.png",
+        "res/PLAYER_PROFILE/Board.png",
+        "res/PLAYER_PROFILE/Cue_Board.png",
+        "res/PLAYER_PROFILE/Cue_Unknown.png"
+      ],
+      "ctype": "GameFileData"
+    }
+  },
+  "Type": "Layer"
+}

@@ -1,0 +1,272 @@
+{
+  "ID": "aec48f1f-9fb6-47d5-8463-74edd8e2c57c",
+  "Version": "2.3.4",
+  "Name": "StatTracking",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Tag": 33,
+        "Children": [
+          {
+            "FontSize": 14,
+            "ButtonText": "",
+            "TextColor": {
+              "R": 65,
+              "G": 65,
+              "B": 70
+            },
+            "DisabledFileData": {
+              "Type": "Default",
+              "Path": "Default/Button_Disable.png",
+              "Plist": ""
+            },
+            "NormalFileData": {
+              "Type": "PlistSubImage",
+              "Path": "achievement_Board.png",
+              "Plist": "Achievement/res/Achievement_new.plist"
+            },
+            "Scale9Enable": true,
+            "Scale9OriginX": 15,
+            "Scale9OriginY": 11,
+            "Scale9Width": 250,
+            "Scale9Height": 368,
+            "OutlineColor": {
+              "G": 0,
+              "B": 0
+            },
+            "ShadowColor": {
+              "R": 110,
+              "G": 110,
+              "B": 110
+            },
+            "ShadowOffsetX": 2.0,
+            "ShadowOffsetY": -2.0,
+            "TouchEnable": true,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "Scale": {
+              "ScaleX": 0.9,
+              "ScaleY": 0.9
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "PreSize": {
+              "X": 0.2201,
+              "Y": 0.2031
+            },
+            "LeftMargin": -125.0,
+            "RightMargin": 1011.0,
+            "TopMargin": 575.0,
+            "BottomMargin": -65.0,
+            "Tag": 36,
+            "Children": [
+              {
+                "FileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "pm_nh_select.png",
+                  "Plist": "Resources/Payment.plist"
+                },
+                "Scale9Enable": true,
+                "Scale9OriginX": 61,
+                "Scale9OriginY": 41,
+                "Scale9Width": 63,
+                "Scale9Height": 42,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 124.4827,
+                  "Y": 65.0774
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.4979,
+                  "Y": 0.5006
+                },
+                "PreSize": {
+                  "X": 1.12,
+                  "Y": 1.2308
+                },
+                "LeftMargin": -15.5173,
+                "RightMargin": -14.4827,
+                "TopMargin": -15.0774,
+                "BottomMargin": -14.9226,
+                "Tag": 61,
+                "ActionTag": -699759063,
+                "Size": {
+                  "X": 280.0,
+                  "Y": 160.0
+                },
+                "Name": "pnSelection",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "IsCustomSize": true,
+                "FontSize": 28,
+                "LabelText": "Win game:",
+                "FontResource": {
+                  "Type": "Normal",
+                  "Path": "Font/facebook.TTF",
+                  "Plist": ""
+                },
+                "HorizontalAlignmentType": "HT_Center",
+                "VerticalAlignmentType": "VT_Center",
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 15,
+                  "G": 61,
+                  "B": 74
+                },
+                "ShadowOffsetX": 0.0,
+                "ShadowOffsetY": -1.0,
+                "ShadowEnabled": true,
+                "AnchorPoint": {
+                  "ScaleX": 0.5196,
+                  "ScaleY": 0.4526
+                },
+                "Position": {
+                  "X": 137.4026,
+                  "Y": 82.4009
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.5496,
+                  "Y": 0.6339
+                },
+                "PreSize": {
+                  "X": 1.0,
+                  "Y": 0.6923
+                },
+                "LeftMargin": 7.5026,
+                "RightMargin": -7.5026,
+                "TopMargin": -1.6669,
+                "BottomMargin": 41.6669,
+                "Tag": 37,
+                "ActionTag": -580343214,
+                "Size": {
+                  "X": 250.0,
+                  "Y": 90.0
+                },
+                "Name": "lbName",
+                "ctype": "TextObjectData"
+              },
+              {
+                "IsCustomSize": true,
+                "FontSize": 36,
+                "LabelText": "10",
+                "FontResource": {
+                  "Type": "Normal",
+                  "Path": "Font/facebook.TTF",
+                  "Plist": ""
+                },
+                "HorizontalAlignmentType": "HT_Center",
+                "VerticalAlignmentType": "VT_Center",
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 15,
+                  "G": 61,
+                  "B": 74
+                },
+                "ShadowOffsetX": 0.0,
+                "ShadowOffsetY": -1.0,
+                "ShadowEnabled": true,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 127.65,
+                  "Y": 32.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PositionPercentXEnabled": true,
+                "PrePosition": {
+                  "X": 0.5106,
+                  "Y": 0.2462
+                },
+                "PreSize": {
+                  "X": 0.8,
+                  "Y": 0.3077
+                },
+                "LeftMargin": 27.65,
+                "RightMargin": 22.35,
+                "TopMargin": 78.0,
+                "BottomMargin": 12.0,
+                "Tag": 38,
+                "ActionTag": 833277367,
+                "Size": {
+                  "X": 200.0,
+                  "Y": 40.0
+                },
+                "Name": "lbValue",
+                "ctype": "TextObjectData"
+              }
+            ],
+            "ActionTag": -1669273142,
+            "Size": {
+              "X": 250.0,
+              "Y": 130.0
+            },
+            "Name": "bg",
+            "ctype": "ButtonObjectData"
+          }
+        ],
+        "Size": {
+          "X": 1136.0,
+          "Y": 640.0
+        },
+        "Name": "Layer",
+        "ctype": "LayerObjectData"
+      },
+      "UsedResources": [
+        "../Achievement/res/Achievement_new.plist",
+        "../Achievement/res/Achievement_new.png",
+        "../Default/Button_Disable.png",
+        "../Font/facebook.TTF",
+        "../Resources/Payment.plist",
+        "../Resources/Payment.png"
+      ],
+      "ctype": "GameFileData"
+    }
+  },
+  "Type": "Layer"
+}

@@ -1,0 +1,88 @@
+{
+  "wheel" :[
+    {
+      "cellId": 0,
+      "gold": 3000,
+      "rateA": 10,
+      "rateB": 10
+    },
+    {
+      "cellId": 1,
+      "gold": 500,
+      "rateA": 500,
+      "rateB": 20
+    },
+    {
+      "cellId": 2,
+      "gold": 2000,
+      "rateA": 20,
+      "rateB": 100
+    },
+    {
+      "cellId": 3,
+      "gold": 1000,
+      "rateA": 50,
+      "rateB": 50
+    },
+    {
+      "cellId": 4,
+      "gold": 4000,
+      "rateA": 5,
+      "rateB": 20
+    },
+    {
+      "cellId": 5,
+      "gold": 3000,
+      "rateA": 100,
+      "rateB": 10
+    },
+    {
+      "cellId": 6,
+      "gold": 500,
+      "rateA": 500,
+      "rateB": 20
+    },
+    {
+      "cellId": 7,
+      "gold": 2000,
+      "rateA": 20,
+      "rateB": 100
+    },
+    {
+      "cellId": 8,
+      "gold": 500,
+      "rateA": 500,
+      "rateB": 20
+    },
+    {
+      "cellId": 9,
+      "gold": 3000,
+      "rateA": 10,
+      "rateB": 10
+    },
+    {
+      "cellId": 10,
+      "gold": 1000,
+      "rateA": 50,
+      "rateB": 50
+    },
+    {
+      "cellId": 11,
+      "gold": 4000,
+      "rateA": 5,
+      "rateB": 20
+    },
+    {
+      "cellId": 12,
+      "gold": 2000,
+      "rateA": 20,
+      "rateB": 100
+    },
+    {
+      "cellId": 13,
+      "gold": 500,
+      "rateA": 500,
+      "rateB": 20
+    }
+  ]
+}

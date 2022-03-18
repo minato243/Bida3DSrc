@@ -1,0 +1,757 @@
+
+{
+  "Achievement": [
+    {
+      "id": 0,
+      "type": 0,
+      "name": "text_achievement_play",
+      "icon": "path_achievement_play",
+      "require": 1,
+      "prevAchievement": -1,
+      "canRequestFromClient": true,
+      "rewards": [
+        {
+          "id": 14,
+          "quantity": 1
+        }
+      ],
+      "triggerType": "PlayGame",
+      "triggerParams": []
+    },
+    {
+      "id": 1,
+      "type": 0,
+      "name": "text_achievement_play",
+      "icon": "path_achievement_play",
+      "require": 10,
+      "prevAchievement": -1,
+      "canRequestFromClient": true,
+      "rewards": [
+        {
+          "id": 14,
+          "quantity": 2
+        }
+      ],
+      "triggerType": "PlayGame",
+      "triggerParams": []
+    },
+    {
+      "id": 2,
+      "type": 0,
+      "name": "text_achievement_play",
+      "icon": "path_achievement_play",
+      "require": 50,
+      "prevAchievement": -1,
+      "canRequestFromClient": true,
+      "rewards": [
+        {
+          "id": 14,
+          "quantity": 5
+        }
+      ],
+      "triggerType": "PlayGame",
+      "triggerParams": []
+    },
+    {
+      "id": 3,
+      "type": 0,
+      "name": "text_achievement_play",
+      "icon": "path_achievement_play",
+      "require": 100,
+      "prevAchievement": -1,
+      "canRequestFromClient": true,
+      "rewards": [
+        {
+          "id": 14,
+          "quantity": 10
+        }
+      ],
+      "triggerType": "PlayGame",
+      "triggerParams": []
+    },
+    {
+      "id": 4,
+      "type": 0,
+      "name": "text_achievement_play",
+      "icon": "path_achievement_play",
+      "require": 200,
+      "prevAchievement": -1,
+      "canRequestFromClient": true,
+      "rewards": [
+        {
+          "id": 14,
+          "quantity": 20
+        }
+      ],
+      "triggerType": "PlayGame",
+      "triggerParams": []
+    },
+    {
+      "id": 5,
+      "type": 0,
+      "name": "text_achievement_play",
+      "icon": "path_achievement_play",
+      "require": 500,
+      "prevAchievement": -1,
+      "canRequestFromClient": true,
+      "rewards": [
+        {
+          "id": 14,
+          "quantity": 50
+        }
+      ],
+      "triggerType": "PlayGame",
+      "triggerParams": []
+    },
+    {
+      "id": 6,
+      "type": 0,
+      "name": "text_achievement_play",
+      "icon": "path_achievement_play",
+      "require": 1000,
+      "prevAchievement": -1,
+      "canRequestFromClient": true,
+      "rewards": [
+        {
+          "id": 14,
+          "quantity": 100
+        }
+      ],
+      "triggerType": "PlayGame",
+      "triggerParams": []
+    },
+    {
+      "id": 7,
+      "type": 0,
+      "name": "text_achievement_play",
+      "icon": "path_achievement_play",
+      "require": 1,
+      "prevAchievement": -1,
+      "canRequestFromClient": true,
+      "rewards": [
+        {
+          "id": 14,
+          "quantity": 150
+        }
+      ],
+      "triggerType": "PlayGame",
+      "triggerParams": []
+    },
+    {
+      "id": 8,
+      "type": 0,
+      "name": "text_achievement_play",
+      "icon": "path_achievement_play",
+      "require": 5000,
+      "prevAchievement": -1,
+      "canRequestFromClient": true,
+      "rewards": [
+        {
+          "id": 14,
+          "quantity": 200
+        }
+      ],
+      "triggerType": "PlayGame",
+      "triggerParams": []
+    },
+    {
+      "id": 9,
+      "type": 0,
+      "name": "text_achievement_play",
+      "icon": "path_achievement_play",
+      "require": 10000,
+      "prevAchievement": -1,
+      "canRequestFromClient": true,
+      "rewards": [
+        {
+          "id": 14,
+          "quantity": 300
+        }
+      ],
+      "triggerType": "PlayGame",
+      "triggerParams": []
+    },
+    {
+      "id": 10,
+      "type": 0,
+      "name": "text_achievement_shoot",
+      "icon": "path_achievement_shoot",
+      "require": 10,
+      "prevAchievement": -1,
+      "canRequestFromClient": true,
+      "rewards": [
+        {
+          "id": 1,
+          "quantity": 1000
+        }
+      ],
+      "triggerType": "Shoot",
+      "triggerParams": []
+    },
+    {
+      "id": 11,
+      "type": 0,
+      "name": "text_achievement_shoot",
+      "icon": "path_achievement_shoot",
+      "require": 100,
+      "prevAchievement": -1,
+      "canRequestFromClient": true,
+      "rewards": [
+        {
+          "id": 1,
+          "quantity": 2000
+        }
+      ],
+      "triggerType": "Shoot",
+      "triggerParams": []
+    },
+    {
+      "id": 12,
+      "type": 0,
+      "name": "text_achievement_shoot",
+      "icon": "path_achievement_shoot",
+      "require": 500,
+      "prevAchievement": -1,
+      "canRequestFromClient": true,
+      "rewards": [
+        {
+          "id": 1,
+          "quantity": 5000
+        }
+      ],
+      "triggerType": "Shoot",
+      "triggerParams": []
+    },
+    {
+      "id": 13,
+      "type": 0,
+      "name": "text_achievement_shoot",
+      "icon": "path_achievement_shoot",
+      "require": 1000,
+      "prevAchievement": -1,
+      "canRequestFromClient": true,
+      "rewards": [
+        {
+          "id": 1,
+          "quantity": 10000
+        }
+      ],
+      "triggerType": "Shoot",
+      "triggerParams": []
+    },
+    {
+      "id": 14,
+      "type": 0,
+      "name": "text_achievement_shoot",
+      "icon": "path_achievement_shoot",
+      "require": 2000,
+      "prevAchievement": -1,
+      "canRequestFromClient": true,
+      "rewards": [
+        {
+          "id": 1,
+          "quantity": 20000
+        }
+      ],
+      "triggerType": "Shoot",
+      "triggerParams": []
+    },
+    {
+      "id": 15,
+      "type": 0,
+      "name": "text_achievement_shoot",
+      "icon": "path_achievement_shoot",
+      "require": 5000,
+      "prevAchievement": -1,
+      "canRequestFromClient": true,
+      "rewards": [
+        {
+          "id": 1,
+          "quantity": 50000
+        }
+      ],
+      "triggerType": "Shoot",
+      "triggerParams": []
+    },
+    {
+      "id": 16,
+      "type": 0,
+      "name": "text_achievement_shoot",
+      "icon": "path_achievement_shoot",
+      "require": 10000,
+      "prevAchievement": -1,
+      "canRequestFromClient": true,
+      "rewards": [
+        {
+          "id": 1,
+          "quantity": 100000
+        }
+      ],
+      "triggerType": "Shoot",
+      "triggerParams": []
+    },
+    {
+      "id": 17,
+      "type": 0,
+      "name": "text_achievement_shoot",
+      "icon": "path_achievement_shoot",
+      "require": 20000,
+      "prevAchievement": -1,
+      "canRequestFromClient": true,
+      "rewards": [
+        {
+          "id": 1,
+          "quantity": 200000
+        }
+      ],
+      "triggerType": "Shoot",
+      "triggerParams": []
+    },
+    {
+      "id": 18,
+      "type": 0,
+      "name": "text_achievement_shoot",
+      "icon": "path_achievement_shoot",
+      "require": 50000,
+      "prevAchievement": -1,
+      "canRequestFromClient": true,
+      "rewards": [
+        {
+          "id": 1,
+          "quantity": 500000
+        }
+      ],
+      "triggerType": "Shoot",
+      "triggerParams": []
+    },
+    {
+      "id": 19,
+      "type": 0,
+      "name": "text_achievement_shoot",
+      "icon": "path_achievement_shoot",
+      "require": 100000,
+      "prevAchievement": -1,
+      "canRequestFromClient": true,
+      "rewards": [
+        {
+          "id": 1,
+          "quantity": 1000000
+        }
+      ],
+      "triggerType": "Shoot",
+      "triggerParams": []
+    },
+    {
+      "id": 20,
+      "type": 0,
+      "name": "text_achievement_play",
+      "icon": "path_achievement_play",
+      "require": 1,
+      "prevAchievement": -1,
+      "canRequestFromClient": true,
+      "rewards": [
+        {
+          "id": 14,
+          "quantity": 1
+        }
+      ],
+      "triggerType": "PlayGame",
+      "triggerParams": []
+    },
+    {
+      "id": 21,
+      "type": 0,
+      "name": "text_achievement_play",
+      "icon": "path_achievement_play",
+      "require": 10,
+      "prevAchievement": -1,
+      "canRequestFromClient": true,
+      "rewards": [
+        {
+          "id": 14,
+          "quantity": 2
+        }
+      ],
+      "triggerType": "PlayGame",
+      "triggerParams": []
+    },
+    {
+      "id": 22,
+      "type": 0,
+      "name": "text_achievement_play",
+      "icon": "path_achievement_play",
+      "require": 50,
+      "prevAchievement": -1,
+      "canRequestFromClient": true,
+      "rewards": [
+        {
+          "id": 14,
+          "quantity": 5
+        }
+      ],
+      "triggerType": "PlayGame",
+      "triggerParams": []
+    },
+    {
+      "id": 23,
+      "type": 0,
+      "name": "text_achievement_play",
+      "icon": "path_achievement_play",
+      "require": 100,
+      "prevAchievement": -1,
+      "canRequestFromClient": true,
+      "rewards": [
+        {
+          "id": 14,
+          "quantity": 10
+        }
+      ],
+      "triggerType": "PlayGame",
+      "triggerParams": []
+    },
+    {
+      "id": 24,
+      "type": 0,
+      "name": "text_achievement_play",
+      "icon": "path_achievement_play",
+      "require": 200,
+      "prevAchievement": -1,
+      "canRequestFromClient": true,
+      "rewards": [
+        {
+          "id": 14,
+          "quantity": 20
+        }
+      ],
+      "triggerType": "PlayGame",
+      "triggerParams": []
+    },
+    {
+      "id": 25,
+      "type": 0,
+      "name": "text_achievement_play",
+      "icon": "path_achievement_play",
+      "require": 500,
+      "prevAchievement": -1,
+      "canRequestFromClient": true,
+      "rewards": [
+        {
+          "id": 14,
+          "quantity": 50
+        }
+      ],
+      "triggerType": "PlayGame",
+      "triggerParams": []
+    },
+    {
+      "id": 26,
+      "type": 0,
+      "name": "text_achievement_play",
+      "icon": "path_achievement_play",
+      "require": 1000,
+      "prevAchievement": -1,
+      "canRequestFromClient": true,
+      "rewards": [
+        {
+          "id": 14,
+          "quantity": 100
+        }
+      ],
+      "triggerType": "PlayGame",
+      "triggerParams": []
+    },
+    {
+      "id": 27,
+      "type": 0,
+      "name": "text_achievement_play",
+      "icon": "path_achievement_play",
+      "require": 2000,
+      "prevAchievement": -1,
+      "canRequestFromClient": true,
+      "rewards": [
+        {
+          "id": 14,
+          "quantity": 150
+        }
+      ],
+      "triggerType": "PlayGame",
+      "triggerParams": []
+    },
+    {
+      "id": 28,
+      "type": 0,
+      "name": "text_achievement_play",
+      "icon": "path_achievement_play",
+      "require": 5000,
+      "prevAchievement": -1,
+      "canRequestFromClient": true,
+      "rewards": [
+        {
+          "id": 14,
+          "quantity": 200
+        }
+      ],
+      "triggerType": "PlayGame",
+      "triggerParams": []
+    },
+    {
+      "id": 29,
+      "type": 0,
+      "name": "text_achievement_play",
+      "icon": "path_achievement_play",
+      "require": 10000,
+      "prevAchievement": -1,
+      "canRequestFromClient": true,
+      "rewards": [
+        {
+          "id": 14,
+          "quantity": 300
+        }
+      ],
+      "triggerType": "PlayGame",
+      "triggerParams": []
+    },
+    {
+      "id": 30,
+      "type": 0,
+      "name": "text_achievement_shoot",
+      "icon": "path_achievement_shoot",
+      "require": 10,
+      "prevAchievement": -1,
+      "canRequestFromClient": true,
+      "rewards": [
+        {
+          "id": 1,
+          "quantity": 1000
+        }
+      ],
+      "triggerType": "Shoot",
+      "triggerParams": []
+    },
+    {
+      "id": 31,
+      "type": 0,
+      "name": "text_achievement_shoot",
+      "icon": "path_achievement_shoot",
+      "require": 100,
+      "prevAchievement": -1,
+      "canRequestFromClient": true,
+      "rewards": [
+        {
+          "id": 1,
+          "quantity": 2000
+        }
+      ],
+      "triggerType": "Shoot",
+      "triggerParams": []
+    },
+    {
+      "id": 32,
+      "type": 0,
+      "name": "text_achievement_shoot",
+      "icon": "path_achievement_shoot",
+      "require": 500,
+      "prevAchievement": -1,
+      "canRequestFromClient": true,
+      "rewards": [
+        {
+          "id": 1,
+          "quantity": 5000
+        }
+      ],
+      "triggerType": "Shoot",
+      "triggerParams": []
+    },
+    {
+      "id": 33,
+      "type": 0,
+      "name": "text_achievement_shoot",
+      "icon": "path_achievement_shoot",
+      "require": 1000,
+      "prevAchievement": -1,
+      "canRequestFromClient": true,
+      "rewards": [
+        {
+          "id": 1,
+          "quantity": 10000
+        }
+      ],
+      "triggerType": "Shoot",
+      "triggerParams": []
+    },
+    {
+      "id": 34,
+      "type": 0,
+      "name": "text_achievement_shoot",
+      "icon": "path_achievement_shoot",
+      "require": 2000,
+      "prevAchievement": -1,
+      "canRequestFromClient": true,
+      "rewards": [
+        {
+          "id": 1,
+          "quantity": 20000
+        }
+      ],
+      "triggerType": "Shoot",
+      "triggerParams": []
+    },
+    {
+      "id": 35,
+      "type": 0,
+      "name": "text_achievement_shoot",
+      "icon": "path_achievement_shoot",
+      "require": 5000,
+      "prevAchievement": -1,
+      "canRequestFromClient": true,
+      "rewards": [
+        {
+          "id": 1,
+          "quantity": 50000
+        }
+      ],
+      "triggerType": "Shoot",
+      "triggerParams": []
+    },
+    {
+      "id": 36,
+      "type": 0,
+      "name": "text_achievement_shoot",
+      "icon": "path_achievement_shoot",
+      "require": 10000,
+      "prevAchievement": -1,
+      "canRequestFromClient": true,
+      "rewards": [
+        {
+          "id": 1,
+          "quantity": 100000
+        }
+      ],
+      "triggerType": "Shoot",
+      "triggerParams": []
+    },
+    {
+      "id": 37,
+      "type": 0,
+      "name": "text_achievement_shoot",
+      "icon": "path_achievement_shoot",
+      "require": 20000,
+      "prevAchievement": -1,
+      "canRequestFromClient": true,
+      "rewards": [
+        {
+          "id": 1,
+          "quantity": 200000
+        }
+      ],
+      "triggerType": "Shoot",
+      "triggerParams": []
+    },
+    {
+      "id": 38,
+      "type": 0,
+      "name": "text_achievement_shoot",
+      "icon": "path_achievement_shoot",
+      "require": 50000,
+      "prevAchievement": -1,
+      "canRequestFromClient": true,
+      "rewards": [
+        {
+          "id": 1,
+          "quantity": 500000
+        }
+      ],
+      "triggerType": "Shoot",
+      "triggerParams": []
+    },
+    {
+      "id": 39,
+      "type": 0,
+      "name": "text_achievement_shoot",
+      "icon": "path_achievement_shoot",
+      "require": 100000,
+      "prevAchievement": -1,
+      "canRequestFromClient": true,
+      "rewards": [
+        {
+          "id": 1,
+          "quantity": 1000000
+        }
+      ],
+      "triggerType": "Shoot",
+      "triggerParams": []
+    }
+  ],
+  "Milestone": [
+    {
+      "id": 0,
+      "name": "place_holder",
+      "require": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "rewards": []
+    },
+    {
+      "id": 1,
+      "name": "place_holder",
+      "require": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "rewards": []
+    },
+    {
+      "id": 2,
+      "name": "place_holder",
+      "require": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "rewards": []
+    },
+    {
+      "id": 3,
+      "name": "place_holder",
+      "require": [
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "rewards": []
+    },
+    {
+      "id": 4,
+      "name": "place_holder",
+      "require": [
+        16,
+        17,
+        18,
+        19
+      ],
+      "rewards": []
+    },
+    {
+      "id": 5,
+      "name": "place_holder",
+      "require": [
+        3,
+        5,
+        6,
+        7
+      ],
+      "rewards": []
+    }
+  ]
+}

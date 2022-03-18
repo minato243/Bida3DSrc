@@ -1,0 +1,582 @@
+#include "InventoryUI.cpp.h"
+
+{
+    InventoryUIv2::InventoryUIv2(){
+        this->_super({tag: Popup.INVENTORY_UI, fullscreenLayer: true});
+        this->keep = true;
+        this->initWithJsonFile(res.GUI.InventoryUIv2)
+    }
+
+    void InventoryUIv2::initComponent(){
+        this->autoInitComponent();
+
+        this->_drawNodeHeight = 300;
+        this->_fake.setVisible(false);
+        this->initTabs();
+        this->initCams();
+        this->initCues();
+        this->initRackDebugOffset();
+    }
+
+    void InventoryUIv2::initRackDebugOffset(){
+
+        void InventoryUIv2::let updateDrawNodeHeight (){
+            this->_drawNodeHeight += this->_heightDiff;
+            this->updateCueRackOffset();
+            utils.log("height", this->_drawNodeHeight);
+        };
+        updateDrawNodeHeight = updateDrawNodeHeight.bind(this);
+        auto listener = cc.EventListener.create({
+            event: cc.EventListener.KEYBOARD,
+            void InventoryUIv2::onKeyPressed(int key){
+                switch(key){
+                    case cc.KEY.s:
+                        this->_heightDiff = -1;
+                        this->schedule(updateDrawNodeHeight);
+                        break;
+                    case cc.KEY.w:
+                        this->_heightDiff = 1;
+                        this->schedule(updateDrawNodeHeight);
+                        break;
+                }
+            }.bind(this),
+            void InventoryUIv2::onKeyReleased(int key){
+                switch(key){
+                    case cc.KEY.s:
+                        this->_heightDiff = 0;
+                        this->unschedule(updateDrawNodeHeight);
+                        break;
+                    case cc.KEY.w:
+                        this->_heightDiff = 0;
+                        this->unschedule(updateDrawNodeHeight);
+                        break;
+                }
+            }.bind(this)
+        });
+        cc.eventManager.addListener(listener, this);
+    }
+
+    void InventoryUIv2::show(){
+        // const superFnc = this._super.bind(this);
+        this->_super();
+        this->refresh();
+        //
+        // gv.GuiMgr.hideMainLayer(function(){
+        //     superFnc();
+        //     this.refresh();
+        // }.bind(this));
+        // MainLayer.instance.setVisible(false);
+        // if(gv.GuiMgr.isCached(Popup.LOBBY_UI)){
+        //     gv.GuiMgr.getGui(Popup.LOBBY_UI, LobbyUILayer).setVisible(false);
+        // }
+    }
+
+    void InventoryUIv2::hide(){
+        this->_super();
+
+        gv.GuiMgr.showMainLayerIfThereIsNoUIUnder();
+        // MainLayer.instance.setVisible(true);
+        // if(gv.GuiMgr.isCached(Popup.LOBBY_UI)){
+        //     gv.GuiMgr.getGui(Popup.LOBBY_UI, LobbyUILayer).setVisible(true);
+        // }
+    }
+
+    void InventoryUIv2::initCams(){
+        this->cam = new cc.Camera(
+            cc.Camera.Mode.ORTHOGRAPHIC,
+            cc.winSize.width,
+            cc.winSize.height,
+            -50,
+            100
+        );
+        this->addChild(this->cam);
+        this->cam.setDepth(3);
+        this->cam.setPosition3D(Vec3(0,0,50));
+        this->cam.lookAt(Vec3(0,0,0));
+        this->cam.setCameraFlag(GameCamera.FLAG_3D_ABOVE_UI);
+
+        auto camUIHigher = new cc.Camera(
+            cc.Camera.Mode.ORTHOGRAPHIC,
+            cc.winSize.width,
+            cc.winSize.height,
+            -1,
+            1000
+        );
+        this->addChild(camUIHigher);
+        camUIHigher.setDepth(4);
+        camUIHigher.setPosition3D(Vec3(0,0,50));
+        camUIHigher.lookAt(Vec3(0,0,0));
+        camUIHigher.setCameraFlag(GameCamera.FLAG_UI_ALWAYS_TOP);
+    }
+
+    void InventoryUIv2::initTabs(){
+        this->curTab = -1;
+        // one container for 4 cue tab
+        auto container = this->_bg._imgListBg._container;
+        auto cueList = new QuickCustomTableView(this->_bg._imgListBg._container, cc.SCROLLVIEW_DIRECTION_VERTICAL, InventoryElementUIv2, -1, 1);
+        container.addChild(cueList);
+
+        auto itemList = new QuickCustomTableView(this->_bg._imgListBg._container, cc.SCROLLVIEW_DIRECTION_VERTICAL, InventoryItemElementUIv2_2, -1, 4);
+        container.addChild(itemList);
+
+        auto boundingBox = container.getBoundingBox();
+        auto frameScale = cc.view.getFrameSize().width/cc.winSize.width*cc.view.getFrameZoomFactor();
+
+        boundingBox.width *= frameScale;
+        boundingBox.height *= frameScale;
+        boundingBox.x += container.getParent().x;
+        boundingBox.y += container.getParent().y;
+        void InventoryUIv2::cueList.onInitItem (int item, double idx){
+            item.setContainerRect(boundingBox)
+        };
+        itemList.setVisible(false);
+        this->_cueList = cueList;
+        this->_itemList = itemList;
+        this->reloadTableViewData();
+        // one container for the other tab
+
+        this->_tabActivePosX = this->_bg._btnTabBreak.x;
+        this->_tabInactivePosX = this->_bg._btnTabBreak.x;
+        this->btnTab = [this->_bg._btnTabBreak, this->_bg._btnTabBreak, this->_bg._btnTabJump, this->_bg._btnTabMasse, this->_bg._btnTabOther];
+        this->btnTab[0]._iconName = "Yellow";
+        this->btnTab[1]._iconName = "Red";
+        this->btnTab[2]._iconName = "Purple";
+        this->btnTab[3]._iconName = "Blue";
+        this->btnTab[4]._iconName = "Other";
+        this->btnTab.forEach(button => button._img.ignoreContentAdaptWithSize(true));
+        this->switchTab(1);
+    }
+
+    void InventoryUIv2::initCues(){
+        this->_bg._imgCueRackIconsBar.setCameraMask(GameCamera.FLAG_UI_ALWAYS_TOP);
+        this->_cues3d = [null, null, null];
+        this->_cues3dCache = [];
+        for(auto i=0;i<gv.GameConst.CUE_IN_BAG;i++){
+            this->_cues3dCache.push_back({});
+            this->_bg._imgCueRackIconsBar['_btnCueActive'+(i+1)]._icon.ignoreContentAdaptWithSize(true);
+
+            this->addCueModelToRack(i, res.CUE_VANG_1, res.CUE_TEXTURE_SET_1, res.CUE_TEXTURE_SET_1_MRAO);
+        }
+    }
+
+    void InventoryUIv2::getTypeByTabIndex(double idx){
+        if(isNaN(idx)) idx = this->curTab;
+        return {
+            0: 1,
+            1: 2,
+            2: 3,
+            3: 4
+        }[idx];
+    }
+
+    void InventoryUIv2::getTabIndexByType(int type){
+        return {
+            1: 0,
+            2: 1,
+            3: 2,
+            4: 3
+        }[type];
+    }
+
+    void InventoryUIv2::refresh(){
+        this->reloadTableViewData(true);
+        this->reloadCue3DView();
+    }
+
+    void InventoryUIv2::reloadTableViewData(int keep){
+        auto cueList = this->_cueList;
+        auto offset;
+        auto minOffset = cueList.tbView.minContainerOffset();
+        if(keep){
+            offset = cueList.tbView.getContentOffset();
+        }
+        cueList.loadData(gv.user.inventory.getCuesArray(this->getTypeByTabIndex(this->curTab)));
+        if(keep && offset.y > minOffset.y){
+            cueList.tbView.setContentOffset(offset);
+        }
+
+        auto itemList = this->_itemList;
+        auto itemMinOffset = itemList.tbView.minContainerOffset();
+        if(keep){
+            offset = itemList.tbView.getContentOffset();
+        }
+        itemList.loadData(gv.user.inventory.getNonZeroItemsArray());
+        if(keep && offset.y > itemMinOffset.y){
+            itemList.tbView.setContentOffset(offset);
+        }
+    }
+
+    void InventoryUIv2::reloadCue3DView(){
+        auto cuesBag = gv.inventoryMgr.getInventory().getCuesBagArray();
+        auto count = cuesBag.length;
+        for(auto i=0;i<gv.GameConst.CUE_IN_BAG;i++){
+            this->_cues3d[i].setVisible(i < count);
+            auto icon = this->_bg._imgCueRackIconsBar['_btnCueActive'+(i+1)]._icon;
+            if(i < count){
+                // const state = this._cues3d[i].state;
+                // const color = InventoryElementUI.TYPE_FRAMES[cuesBag[i].type - 1].color;
+                auto paths = cuesBag[i].getModelPath();
+                this->addCueModelToRack(i, paths.model, paths.tex, paths.mrao);
+                auto texture;
+                switch(cuesBag[i].type){
+                    case 1: texture = "inventory.v2_Yellow_Icon_02.png"; break;
+                    case 2: texture = "inventory.v2_Red_Icon_02.png"; break;
+                    case 3: texture = "inventory.v2_Purple_Icon_02.png"; break;
+                    case 4: texture = "inventory.v2_Blue_Icon_02.png"; break;
+                }
+                icon.setVisible(true);
+                icon.loadTexture(texture, ccui.Widget.PLIST_TEXTURE);
+            }
+            else{
+                icon.setVisible(false);
+            }
+        }
+    }
+
+    void InventoryUIv2::addCueModelToRack(int index, int path, int texPath, int mraoPath){
+        if(this->_cues3d[index])
+            this->_cues3d[index].setVisible(false);
+        if(!this->_cues3dCache[index][path]){
+            auto rack = this->_bg._imgCueRack;
+            auto distance = 180 / gv.GameConst.CUE_IN_BAG;
+
+            auto scale = path.indexOf("Stick") >= 0 ? 2.0 : 1.5;
+            scale *= cc.winSize.width / 1136;
+            auto cue = new jsb.Sprite3D(path);
+            cue._path = path;
+            this->_cues3dCache[index][path] = cue;
+            cue.setCameraMask(GameCamera.FLAG_3D_ABOVE_UI);
+
+            auto cueWidth = scale * modelWidthByPath[path];
+
+            cue.setPosition(rack.width/2 + distance * (index - (gv.GameConst.CUE_IN_BAG/2 - 0.5)), 20 + cueWidth);
+            cue.setScale(scale);
+            cue.setRotation3D(Vec3(270,90,0));
+            rack.addChild(cue);
+            this->_cues3dCache[index][path] = cue;
+        }
+        this->_cues3dCache[index][path].setTexture(texPath);
+        if(index == 0) this->dy = 0;
+        this->_cues3d[index] = this->_cues3dCache[index][path];
+        this->_cues3d[index].setVisible(true);
+    }
+
+    // DEBUG FUNCTION
+    void InventoryUIv2::updateCueRackOffset(){
+        if(!this->_drawNode){
+            this->_drawNode = new cc.DrawNode();
+
+            this->_bg._imgCueRack.addChild(this->_drawNode);
+        }
+        this->_drawNode.clear();
+        this->_drawNode.drawRect(cc.p(0, 0), cc.p(this->_bg._imgCueRack.width, this->_drawNodeHeight), cc.color(255,255,255), 0, cc.color(255,255,255));
+    }
+    // END OF DEBUG FUNCTION
+
+    void InventoryUIv2::selectActivatingCue(double cueIdx){
+        auto cuesBag = gv.inventoryMgr.getInventory().getCuesBagArray();
+        if(cueIdx >= cuesBag.length) return;
+        auto cue = cuesBag[cueIdx];
+        auto type = cue.type;
+        this->switchTab(this->getTabIndexByType(type));
+
+        auto minOffset = this->_cueList.tbView.minContainerOffset().y;
+        auto size = this->_cueList._size.height / this->_cueList._primaryDirCount;
+        auto data = gv.user.inventory.getCuesArray(type);
+        auto idx = data.indexOf(cue);
+        this->_cueList.tbView.setContentOffset(cc.p(0, minOffset + size*idx), true);
+    }
+
+    void InventoryUIv2::switchTab(double tabIdx){
+        if(this->curTab == tabIdx) return;
+        auto oldTab = this->curTab;
+        this->curTab = tabIdx;
+
+        auto newIconName = this->btnTab[tabIdx]._iconName;
+        if(oldTab >= 0){
+            auto oldIconName = this->btnTab[oldTab]._iconName;
+            this->btnTab[oldTab].x = this->_tabInactivePosX;
+            this->btnTab[oldTab].loadTextures('inventory.v2_Tab_02.png', 'inventory.v2_Tab_02.png', 'inventory.v2_Tab_02.png', ccui.Widget.PLIST_TEXTURE);
+            this->btnTab[oldTab]._img.loadTexture('inventory.v2_' + oldIconName + '_Icon_01.png', ccui.Widget.PLIST_TEXTURE);
+            this->btnTab[oldTab]._img.setPosition(this->btnTab[oldTab].getContentSize().width/2, this->btnTab[oldTab].getContentSize().height/2);
+        }
+
+        this->btnTab[tabIdx].x = this->_tabActivePosX;
+        this->btnTab[tabIdx].loadTextures('inventory.v2_Tab_01.png', 'inventory.v2_Tab_01.png', 'inventory.v2_Tab_01.png', ccui.Widget.PLIST_TEXTURE);
+        this->btnTab[tabIdx]._img.loadTexture('inventory.v2_' + newIconName + '_Icon_02.png', ccui.Widget.PLIST_TEXTURE);
+        this->btnTab[tabIdx]._img.setPosition(this->btnTab[tabIdx].getContentSize().width/2, this->btnTab[tabIdx].getContentSize().height/2);
+
+        // utils.log("Switch to tab", tabIdx);
+        if(tabIdx < 4){
+            this->_cueList.setVisible(true);
+            this->_itemList.setVisible(false);
+        }
+        else{
+            this->_cueList.setVisible(false);
+            this->_itemList.setVisible(true);
+        }
+        this->reloadTableViewData();
+    }
+
+    void InventoryUIv2::onButtonTouchEnded(int sender, int tag){
+        switch(tag){
+            case this->tagMap.btnTabMasse: this->switchTab(this->getTabIndexByType(4)); break;
+            case this->tagMap.btnTabBreak: this->switchTab(this->getTabIndexByType(2)); break;
+            //case this.tagMap.btnTabNeutral: this.switchTab(this.getTabIndexByType(1)); break;
+            case this->tagMap.btnTabJump: this->switchTab(this->getTabIndexByType(3)); break;
+            case this->tagMap.btnTabOther: this->switchTab(4); break;
+            case this->tagMap.btnBack: this->hide(); break;
+            case this->tagMap.btnCueActive1: this->selectActivatingCue(0); break;
+            case this->tagMap.btnCueActive2: this->selectActivatingCue(1); break;
+            case this->tagMap.btnCueActive3: this->selectActivatingCue(2); break;
+        }
+    }
+});
+
+auto InventoryElementUIv2 = UIBaseLayer.extend({
+    InventoryUIv2::InventoryUIv2(int size){
+        this->_super();
+        this->_size = size;
+        this->cues = {};
+        this->initWithJsonFile(res.GUI.InventoryElementUIv2);
+        if(size) this->scaleToSize(size);
+    }
+
+    void InventoryUIv2::getOriginalSize(){
+        return this->_bg.getContentSize();
+    }
+
+    void InventoryUIv2::scaleToSize(int size){
+        this->_bg.setScale(size.width/this->_bg.getContentSize().width);
+    }
+
+    void InventoryUIv2::initComponent(){
+        this->autoInitComponent();
+        this->_fake.setVisible(false);
+        // this._bg._chart.setVisible(false);
+        this->initBattery();
+        this->_bg._btnItem.setSwallowTouches(false);
+        this->_bg._btnItem.blockMove = true;
+        this->_bg._lbConfigId.setVisible(InventoryElementUIv2.SHOW_CUE_CONFIG);
+
+        // const state = cc.GLProgramState.create(shaderCache.contrast);
+        auto states = utils.applyGLProgram(this->_bg._imgBg,
+            false,
+            shaderCache.contrast);
+        states.push_back(...utils.applyGLProgram(this->_bg._imgLevel, false, shaderCache.contrast));
+        states.push_back(...utils.applyGLProgram(this->_bg._btnAutoRecharge._imgTickBox, false, shaderCache.contrast));
+        // this._bg._imgBg.setGLProgramState(state);
+        this->_bg._states = states;
+        states.forEach(s => s.setUniformFloat('u_enabled', 1));
+    }
+
+    void InventoryUIv2::initBattery(){
+        auto battery = this->_bg._imgBattery;
+        this->battery = new Battery(battery, battery._battery, this->_bg._lbBattery);
+    }
+
+    void InventoryUIv2::loadData(int data){
+        this->_data = data;
+        this->_bg._lbName.setString(data.name);
+        this->_bg._imgLevel._lbLevel.setString(data.level);
+        this->setStars(data.tier);
+        // this.setBatteryPercent(data.getBatteryPercentage());
+        this->setBattery(data.battery, data.getMaxBattery());
+        this->_bg._lbConfigId.setString("ConfigID: " + data.configId);
+        this->_bg._lbConfigId.setVisible(InventoryElementUIv2.SHOW_CUE_CONFIG);
+        auto btnSwitch = this->_bg._btnSwitch;
+        auto bagFull = gv.inventoryMgr.isCueBagFull();
+        this->_bg._lbLowBattery.setVisible(data.getBatteryPercentage() == 0);
+        this->_bg._lbChargeFee.setVisible(data.getBatteryPercentage() == 0);
+        if(data.getBatteryPercentage() == 0){
+            utils.loadButtonTextures(btnSwitch, 'inventory.v2_Yellow_Button.png');
+            this->_bg._lbChargeFee._imgGold.loadTexture(CueInspectUIv2.getIconName(data.type) + "_inven_2.2.png", ccui.Widget.PLIST_TEXTURE);
+            this->_bg._lbChargeFee.setTextColor(CueInspectUIv2.getColorObjByType(data.type));
+            btnSwitch._lb.setString(fr.Localization.text('text_charge'));
+            btnSwitch._lb.enableShadow(cc.color(58, 72, 54), cc.size(0, -3), 0);
+        }
+
+        else if(data.isInBag()){
+            utils.loadButtonTextures(btnSwitch, 'Red_Button_Glass.png');
+            btnSwitch._lb.setString(fr.Localization.text('text_unequip'));
+            btnSwitch._lb.enableShadow(cc.color(41, 72, 74), cc.size(0, -3), 0);
+            this->_bg._states.forEach(s => s.setUniformFloat('u_enabled', 1));
+        }
+        else{
+            if(bagFull){
+                btnSwitch._lb.setString(fr.Localization.text('text_full'));
+                utils.loadButtonTextures(btnSwitch, 'inventory.v2_Gray_Button.png');
+            }
+            else{
+                btnSwitch._lb.setString(fr.Localization.text('text_equip'));
+                utils.loadButtonTextures(btnSwitch, 'inventory.v2_Green_Button.png');
+            }
+            btnSwitch._lb.enableShadow(cc.color(28, 87, 69), cc.size(0, -3), 0);
+            this->_bg._states.forEach(s => {s.setUniformFloat('u_enabled', 0)});
+        }
+
+        auto paths = data.getModelPath();
+        this->addCue3D(paths.model, paths.tex);
+        this->setAutoRecharge(data.isInBag() && data.autoCharge);
+    }
+
+    void InventoryUIv2::setAutoRecharge(int val){
+        this->_bg._btnAutoRecharge._imgTick.setVisible(val);
+    }
+
+    void InventoryUIv2::setContainerRect(int rect, int scale){
+        this->rect = rect;
+    }
+
+    void InventoryUIv2::addCue3D(int path, int texPath){
+        if(!this->cues[path]){
+            auto cue3D = new jsb.Sprite3D(path);
+            cue3D.setCameraMask(GameCamera.FLAG_3D_ABOVE_UI);
+            // 1136: scale = 2.5
+            // x: scale = x * 2.5 / 1136
+            auto state = cc.GLProgramState.create(new cc.GLProgram('res/shaders/basic_3d.vert', 'res/shaders/basic_3d_rect_mask.frag'));
+            cue3D.setGLProgramState(state);
+            state.setUniformVec2('u_min', cc.p(this->rect.x, this->rect.y));
+            state.setUniformVec2('u_max', cc.p(this->rect.x + this->rect.width, this->rect.y + this->rect.height));
+
+            auto scale = path.indexOf("Stick") >= 0 ? 1.8 : 1.3;
+            scale *= cc.winSize.width / 1136;
+            auto cueWidth = scale * modelWidthByPath[path];
+            cue3D.setPosition3D(Vec3(this->_bg.width * 0.42 + cueWidth, this->_bg.height * 0.4, 0));
+            cue3D.setScale(scale);
+            cue3D.setRotation3D(Vec3(0, 90, 0));
+            this->cues[path] = cue3D;
+            // this.cue3d = cue3D;
+            this->_bg.addChild(cue3D);
+        }
+        this->cues[path].setTexture(texPath);
+
+        if(this->cue3d) this->cue3d.setVisible(false);
+        this->cue3d = this->cues[path];
+        this->cue3d.setVisible(true);
+
+        // const state = utils.setUpCue3DShader(cue3D);
+        // this.cue3d.state = state;
+        // utils.setUpLightsForPBR(state, cc.math.vec3(1,1,1), [cc.math.vec3(550, 250, 50)]);
+    }
+
+    void InventoryUIv2::setBattery(int value, int max){
+        auto percent = max(0, min(100, Math.ceil(value / max * 100)));
+        this->battery.setValue(value, max);
+        this->battery.setPercent(percent);
+    }
+
+    void InventoryUIv2::setBatteryPercent(int percent){
+        this->battery.setPercent(percent);
+    }
+
+    void InventoryUIv2::setStars(int numberOfStar){
+        if(isNaN(numberOfStar)){
+            numberOfStar = 1;
+        }
+        numberOfStar = min(7, max(1, numberOfStar));
+        for(auto i=0;i<7;i++){
+            if(i < numberOfStar){
+                this->_bg._nodeStars['_star_'+i].loadTexture('inventory.v2_Star_02.png', ccui.Widget.PLIST_TEXTURE);
+            }
+            else{
+                this->_bg._nodeStars['_star_'+i].loadTexture('inventory.v2_Star_01.png', ccui.Widget.PLIST_TEXTURE);
+            }
+        }
+    }
+
+    void InventoryUIv2::onButtonTouchEnded(int sender, int tag){
+        switch(tag){
+            case this->tagMap.btnSwitch:
+                if(this->_data.getBatteryPercentage() == 0){
+                    auto color = [
+                        '#FFD34B',
+                        '#FF6666',
+                        '#E852E6',
+                        '#55CCF5'
+                    ];
+                    auto options = gv.GuiMgr.getGui(Popup.POPUP_CONFIRM_2_OPTION, PopupTwoChoices);
+                    options.showWithQuestion(
+                        fr.Localization.text("text_charge"),
+                        fr.Localization.text("text_charge_battery_confirm").replace("@1", '<color=' + color[this->_data.type - 1] + '>' + this->_data.name + '</color>').replace("@2", this->_data.getBatteryPercentage() + "\ \ "),
+                        fr.Localization.text('text_agree'),
+                        fr.Localization.text('text_cancel'),
+                        void InventoryUIv2::(){
+                            gv.inventoryMgr.chargeBatteryCue(this->_data.id);
+                        }.bind(this)
+                    )
+                }
+                else if(this->_data.isInBag()){
+                    gv.inventoryHandler.requestRemoveCueFromBag(this->_data.id)
+                        .then(response => {
+                            if (response.error == 0) {
+                                gv.inventoryMgr.removeCueFromBag(response.id);
+                            }
+                        });
+                }
+                else{
+                    auto bagFull = gv.inventoryMgr.isCueBagFull();
+                    if(!bagFull) {
+                        gv.inventoryHandler.requestAddCueToBag(this->_data.id)
+                            .then(response => {
+                                if (response.error == 0) {
+                                    gv.inventoryMgr.addCueToBag(response.id);
+                                }
+                            });
+                    }
+                }
+                break;
+            case this->tagMap.btnItem:
+                gv.gameMgr.loadSceneByTag(Scenes.INSPECT_SCENE).loadData(this->_data, true);
+                break;
+            case this->tagMap.btnAutoRecharge:
+                if(this->_data.isInBag()){
+                    gv.inventoryHandler.requestAutoChargeCue(this->_data.id, !this->_data.autoCharge);
+                }
+                break;
+        }
+    }
+});
+
+InventoryElementUIv2.SHOW_CUE_CONFIG = gv.privateVersion() != 0;
+
+auto Battery = cc.Node.extend({
+    InventoryUIv2::InventoryUIv2(int batteryBox, int battery, int text){
+        this->_super();
+        this->batteryBox = batteryBox;
+        this->battery = battery;
+        this->text = text;
+        this->init();
+        this->setPercent(30);
+    }
+
+    void InventoryUIv2::init(){
+        auto batteryBox = this->batteryBox;
+        auto battery = this->battery;
+        battery.removeFromParent();
+
+        auto cn = new cc.ClippingNode();
+        auto stencil = new cc.DrawNode();
+        stencil.drawRect(
+            cc.p(battery.x - battery.width*battery.getScaleX()/2, battery.y - battery.height*battery.getScaleY()/2),
+            cc.p(battery.x + battery.width*battery.getScaleX()/2, battery.y + battery.height*battery.getScaleY()/2),
+            cc.color(255,255,255),
+            0, cc.color(255,255,255));
+        stencil._rectWidth = battery.width*battery.getScaleX();
+        cn.setStencil(stencil);
+        batteryBox.addChild(cn);
+        cn.addChild(battery);
+        battery.stencil = stencil;
+        this->stencil = stencil;
+    }
+
+    void InventoryUIv2::setPercent(int percent){
+        auto stencil = this->stencil;
+        stencil.x = -stencil._rectWidth + percent/100*stencil._rectWidth;
+        // this.text.setString(percent + '  %');
+    }
+
+    void InventoryUIv2::setValue(int val, int max){
+        this->text.setString(val + "/" + max);
+    }
+})

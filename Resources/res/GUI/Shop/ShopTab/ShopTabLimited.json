@@ -1,0 +1,573 @@
+{
+  "ID": "2bd93041-0f40-4561-98dd-68bc8dc9c123",
+  "Version": "2.3.4",
+  "Name": "ShopTabLimited",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Tag": 36,
+        "Children": [
+          {
+            "ClipAble": false,
+            "BackColorAlpha": 0,
+            "ComboBoxIndex": 1,
+            "SingleColor": {
+              "R": 150,
+              "G": 200
+            },
+            "FirstColor": {
+              "R": 150,
+              "G": 200
+            },
+            "EndColor": {},
+            "ColorVector": {
+              "ScaleY": 1.0
+            },
+            "Scale9Width": 1,
+            "Scale9Height": 1,
+            "StretchWidthEnable": true,
+            "AnchorPoint": {},
+            "Position": {
+              "X": 5.68,
+              "Y": 2.24
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PositionPercentXEnabled": true,
+            "PositionPercentYEnabled": true,
+            "PrePosition": {
+              "X": 0.005,
+              "Y": 0.0035
+            },
+            "PreSize": {
+              "X": 0.8891,
+              "Y": 1.0469
+            },
+            "LeftMargin": 5.68,
+            "RightMargin": 120.3024,
+            "TopMargin": -32.24,
+            "BottomMargin": 2.24,
+            "Tag": 37,
+            "Children": [
+              {
+                "ClipAble": false,
+                "BackColorAlpha": 0,
+                "ComboBoxIndex": 1,
+                "SingleColor": {
+                  "R": 150,
+                  "G": 200
+                },
+                "FirstColor": {
+                  "R": 150,
+                  "G": 200
+                },
+                "EndColor": {},
+                "ColorVector": {
+                  "ScaleY": 1.0
+                },
+                "Scale9Width": 1,
+                "Scale9Height": 1,
+                "StretchWidthEnable": true,
+                "AnchorPoint": {
+                  "ScaleY": 1.0
+                },
+                "Position": {
+                  "X": 5.0,
+                  "Y": 670.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.005,
+                  "Y": 1.0
+                },
+                "PreSize": {
+                  "X": 0.9901,
+                  "Y": 0.3284
+                },
+                "HorizontalEdge": "BothEdge",
+                "VerticalEdge": "TopEdge",
+                "LeftMargin": 5.0,
+                "RightMargin": 5.0176,
+                "BottomMargin": 450.0,
+                "Tag": 37,
+                "Children": [
+                  {
+                    "FontSize": 22,
+                    "LabelText": "Recently Obtained",
+                    "FontResource": {
+                      "Type": "Normal",
+                      "Path": "Font/facebook.TTF",
+                      "Plist": ""
+                    },
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "R": 110,
+                      "G": 110,
+                      "B": 110
+                    },
+                    "ShadowOffsetX": 2.0,
+                    "ShadowOffsetY": -2.0,
+                    "ShadowEnabled": true,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 478.0,
+                      "Y": 204.0757
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "RotationSkewX": 7.0,
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PositionPercentXEnabled": true,
+                    "PrePosition": {
+                      "X": 0.478,
+                      "Y": 0.9276
+                    },
+                    "PreSize": {
+                      "X": 0.194,
+                      "Y": 0.1455
+                    },
+                    "VerticalEdge": "TopEdge",
+                    "LeftMargin": 381.0,
+                    "RightMargin": 425.0,
+                    "TopMargin": -0.0757,
+                    "BottomMargin": 188.0757,
+                    "Tag": 39,
+                    "ActionTag": -518876864,
+                    "Size": {
+                      "X": 194.0,
+                      "Y": 32.0
+                    },
+                    "Name": "title_0",
+                    "ctype": "TextObjectData"
+                  },
+                  {
+                    "ClipAble": false,
+                    "BackColorAlpha": 0,
+                    "ComboBoxIndex": 1,
+                    "SingleColor": {
+                      "R": 150,
+                      "G": 200
+                    },
+                    "FirstColor": {
+                      "R": 150,
+                      "G": 200
+                    },
+                    "EndColor": {},
+                    "ColorVector": {
+                      "ScaleY": 1.0
+                    },
+                    "Scale9Width": 1,
+                    "Scale9Height": 1,
+                    "TouchEnable": true,
+                    "StretchWidthEnable": true,
+                    "AnchorPoint": {},
+                    "Position": {
+                      "X": 5.0,
+                      "Y": 50.006
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.005,
+                      "Y": 0.2273
+                    },
+                    "PreSize": {
+                      "X": 1.0,
+                      "Y": 0.5909
+                    },
+                    "HorizontalEdge": "BothEdge",
+                    "VerticalEdge": "BothEdge",
+                    "LeftMargin": 5.0,
+                    "RightMargin": -4.9999,
+                    "TopMargin": 39.994,
+                    "BottomMargin": 50.006,
+                    "Tag": 40,
+                    "ActionTag": -1761721354,
+                    "Size": {
+                      "X": 999.9999,
+                      "Y": 130.0
+                    },
+                    "Name": "pnContent_0",
+                    "ctype": "PanelObjectData"
+                  },
+                  {
+                    "FontSize": 22,
+                    "LabelText": "Limited Deals:",
+                    "FontResource": {
+                      "Type": "Normal",
+                      "Path": "Font/facebook.TTF",
+                      "Plist": ""
+                    },
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "R": 110,
+                      "G": 110,
+                      "B": 110
+                    },
+                    "ShadowOffsetX": 2.0,
+                    "ShadowOffsetY": -2.0,
+                    "ShadowEnabled": true,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 377.9,
+                      "Y": 17.3865
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "RotationSkewX": 7.0,
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PositionPercentXEnabled": true,
+                    "PrePosition": {
+                      "X": 0.3779,
+                      "Y": 0.079
+                    },
+                    "PreSize": {
+                      "X": 0.147,
+                      "Y": 0.1455
+                    },
+                    "VerticalEdge": "TopEdge",
+                    "LeftMargin": 304.4,
+                    "RightMargin": 548.6,
+                    "TopMargin": 186.6135,
+                    "BottomMargin": 1.3865,
+                    "Tag": 41,
+                    "ActionTag": 1480242785,
+                    "Size": {
+                      "X": 147.0,
+                      "Y": 32.0
+                    },
+                    "Name": "titel_1",
+                    "ctype": "TextObjectData"
+                  },
+                  {
+                    "IsCustomSize": true,
+                    "FontSize": 22,
+                    "LabelText": "4 hours 13 minutes ",
+                    "FontResource": {
+                      "Type": "Normal",
+                      "Path": "Font/facebook.TTF",
+                      "Plist": ""
+                    },
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "R": 110,
+                      "G": 110,
+                      "B": 110
+                    },
+                    "ShadowOffsetX": 2.0,
+                    "ShadowOffsetY": -2.0,
+                    "AnchorPoint": {
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 455.0,
+                      "Y": 16.1807
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "RotationSkewX": 7.0,
+                    "CColor": {
+                      "R": 214,
+                      "G": 9,
+                      "B": 214
+                    },
+                    "IconVisible": false,
+                    "PositionPercentXEnabled": true,
+                    "PrePosition": {
+                      "X": 0.455,
+                      "Y": 0.0735
+                    },
+                    "PreSize": {
+                      "X": 0.4,
+                      "Y": 0.1455
+                    },
+                    "VerticalEdge": "TopEdge",
+                    "LeftMargin": 455.0,
+                    "RightMargin": 145.0,
+                    "TopMargin": 187.8193,
+                    "BottomMargin": 0.1807,
+                    "Tag": 42,
+                    "ActionTag": 392444983,
+                    "Size": {
+                      "X": 400.0,
+                      "Y": 32.0
+                    },
+                    "Name": "time_remain",
+                    "ctype": "TextObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "achievement_Lines.png",
+                      "Plist": "Achievement/res/Achievement_new.plist"
+                    },
+                    "Scale9OriginX": 101,
+                    "Scale9Width": 107,
+                    "Scale9Height": 2,
+                    "StretchWidthEnable": true,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 510.0,
+                      "Y": 38.962
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PositionPercentXEnabled": true,
+                    "PositionPercentYEnabled": true,
+                    "PrePosition": {
+                      "X": 0.51,
+                      "Y": 0.1771
+                    },
+                    "PreSize": {
+                      "X": 1.0,
+                      "Y": 0.0455
+                    },
+                    "LeftMargin": 10.0,
+                    "RightMargin": -10.0,
+                    "TopMargin": 176.038,
+                    "BottomMargin": 33.962,
+                    "Tag": 44,
+                    "ActionTag": -1575746355,
+                    "Size": {
+                      "X": 1000.0,
+                      "Y": 10.0
+                    },
+                    "Name": "imgLine",
+                    "ctype": "ImageViewObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "Normal",
+                      "Path": "Shop/res/BLACKMARKET/Purple_Lines.png",
+                      "Plist": ""
+                    },
+                    "BlendFunc": {
+                      "Src": 1,
+                      "Dst": 771
+                    },
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 232.5,
+                      "Y": 13.2839
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "RotationSkewY": 180.0,
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PositionPercentXEnabled": true,
+                    "PrePosition": {
+                      "X": 0.2325,
+                      "Y": 0.0604
+                    },
+                    "PreSize": {
+                      "X": 0.117,
+                      "Y": 0.0409
+                    },
+                    "VerticalEdge": "TopEdge",
+                    "LeftMargin": 174.0,
+                    "RightMargin": 709.0,
+                    "TopMargin": 202.2161,
+                    "BottomMargin": 8.7839,
+                    "Tag": 106,
+                    "ActionTag": 1550142808,
+                    "Size": {
+                      "X": 117.0,
+                      "Y": 9.0
+                    },
+                    "Name": "Purple_Lines_1_0",
+                    "ctype": "SpriteObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "Normal",
+                      "Path": "Shop/res/BLACKMARKET/Purple_Lines.png",
+                      "Plist": ""
+                    },
+                    "BlendFunc": {
+                      "Src": 1,
+                      "Dst": 771
+                    },
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 735.3,
+                      "Y": 11.1096
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PositionPercentXEnabled": true,
+                    "PrePosition": {
+                      "X": 0.7353,
+                      "Y": 0.0505
+                    },
+                    "PreSize": {
+                      "X": 0.117,
+                      "Y": 0.0409
+                    },
+                    "VerticalEdge": "TopEdge",
+                    "LeftMargin": 676.8,
+                    "RightMargin": 206.2,
+                    "TopMargin": 204.3904,
+                    "BottomMargin": 6.6096,
+                    "Tag": 105,
+                    "ActionTag": -92238336,
+                    "Size": {
+                      "X": 117.0,
+                      "Y": 9.0
+                    },
+                    "Name": "Purple_Lines_1",
+                    "ctype": "SpriteObjectData"
+                  }
+                ],
+                "ActionTag": 128091061,
+                "Size": {
+                  "X": 1000.0,
+                  "Y": 220.0
+                },
+                "Name": "bgTop",
+                "ctype": "PanelObjectData"
+              },
+              {
+                "ClipAble": false,
+                "BackColorAlpha": 0,
+                "ComboBoxIndex": 1,
+                "SingleColor": {
+                  "R": 150,
+                  "G": 200
+                },
+                "FirstColor": {
+                  "R": 150,
+                  "G": 200
+                },
+                "EndColor": {},
+                "ColorVector": {
+                  "ScaleY": 1.0
+                },
+                "Scale9Width": 1,
+                "Scale9Height": 1,
+                "StretchWidthEnable": true,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 5.0,
+                  "Y": -1.273
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.005,
+                  "Y": -0.0019
+                },
+                "PreSize": {
+                  "X": 0.9901,
+                  "Y": 0.6567
+                },
+                "HorizontalEdge": "BothEdge",
+                "VerticalEdge": "BothEdge",
+                "LeftMargin": 5.0,
+                "RightMargin": 5.0176,
+                "TopMargin": 231.273,
+                "BottomMargin": -1.273,
+                "Tag": 43,
+                "ActionTag": -89088814,
+                "Size": {
+                  "X": 1000.0,
+                  "Y": 440.0
+                },
+                "Alpha": 0,
+                "Name": "pnContent_1",
+                "ctype": "PanelObjectData"
+              }
+            ],
+            "ActionTag": 221709246,
+            "Size": {
+              "X": 1010.0176,
+              "Y": 670.0
+            },
+            "Name": "bg",
+            "ctype": "PanelObjectData"
+          }
+        ],
+        "Size": {
+          "X": 1136.0,
+          "Y": 640.0
+        },
+        "Name": "Layer",
+        "ctype": "LayerObjectData"
+      },
+      "UsedResources": [
+        "../../Achievement/res/Achievement_new.plist",
+        "../../Achievement/res/Achievement_new.png",
+        "../../Font/facebook.TTF",
+        "../res/BLACKMARKET/Purple_Lines.png"
+      ],
+      "ctype": "GameFileData"
+    }
+  },
+  "Type": "Layer"
+}

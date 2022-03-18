@@ -1,0 +1,250 @@
+{
+  "ID": "8b4d67d8-4732-4b37-8101-0b8aff538da9",
+  "Version": "2.3.4",
+  "Name": "CardResultGift",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Tag": 301,
+        "Children": [
+          {
+            "FileData": {
+              "Type": "PlistSubImage",
+              "Path": "EndGame_Item_Board.png",
+              "Plist": "Game/res/Endgame.plist"
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "LeftMargin": -89.0,
+            "RightMargin": -89.0,
+            "TopMargin": -131.0,
+            "BottomMargin": -131.0,
+            "Tag": 302,
+            "Children": [
+              {
+                "FontSize": 18,
+                "LabelText": "ZING BLEU",
+                "FontResource": {
+                  "Type": "Normal",
+                  "Path": "Font/facebook.TTF",
+                  "Plist": ""
+                },
+                "HorizontalAlignmentType": "HT_Center",
+                "OutlineColor": {
+                  "R": 36,
+                  "G": 28,
+                  "B": 75
+                },
+                "ShadowColor": {
+                  "R": 36,
+                  "G": 28,
+                  "B": 75
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -3.0,
+                "ShadowEnabled": true,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 89.0,
+                  "Y": 240.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "RotationSkewX": 8.0002,
+                "CColor": {
+                  "R": 78,
+                  "G": 236
+                },
+                "IconVisible": false,
+                "PositionPercentXEnabled": true,
+                "PrePosition": {
+                  "X": 0.5,
+                  "Y": 0.916
+                },
+                "PreSize": {
+                  "X": 0.5225,
+                  "Y": 0.0992
+                },
+                "LeftMargin": 42.5,
+                "RightMargin": 42.5,
+                "TopMargin": 9.0,
+                "BottomMargin": 227.0,
+                "Tag": 327,
+                "ActionTag": 1420558296,
+                "Size": {
+                  "X": 93.0,
+                  "Y": 26.0
+                },
+                "Name": "lbTitle",
+                "ctype": "TextObjectData"
+              },
+              {
+                "FontSize": 28,
+                "LabelText": "+20",
+                "FontResource": {
+                  "Type": "Normal",
+                  "Path": "Font/facebook.TTF",
+                  "Plist": ""
+                },
+                "HorizontalAlignmentType": "HT_Right",
+                "OutlineColor": {
+                  "R": 0,
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 36,
+                  "G": 28,
+                  "B": 75
+                },
+                "ShadowOffsetX": 0.0,
+                "ShadowOffsetY": -4.0,
+                "ShadowEnabled": true,
+                "AnchorPoint": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 168.833,
+                  "Y": 28.951
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "RotationSkewX": 6.0,
+                "CColor": {},
+                "IconVisible": false,
+                "PositionPercentXEnabled": true,
+                "PositionPercentYEnabled": true,
+                "PrePosition": {
+                  "X": 0.9485,
+                  "Y": 0.1105
+                },
+                "PreSize": {
+                  "X": 0.3146,
+                  "Y": 0.1565
+                },
+                "LeftMargin": 112.833,
+                "RightMargin": 9.167,
+                "TopMargin": 212.549,
+                "BottomMargin": 8.451,
+                "Tag": 329,
+                "ActionTag": -1533655491,
+                "Size": {
+                  "X": 56.0,
+                  "Y": 41.0
+                },
+                "Name": "lbQuantity",
+                "ctype": "TextObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "End_Game_Bleur_Icon.png",
+                  "Plist": "Game/res/Endgame.plist"
+                },
+                "BlendFunc": {
+                  "Src": 1,
+                  "Dst": 771
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 89.0,
+                  "Y": 131.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PositionPercentXEnabled": true,
+                "PositionPercentYEnabled": true,
+                "PrePosition": {
+                  "X": 0.5,
+                  "Y": 0.5
+                },
+                "PreSize": {
+                  "X": 0.8539,
+                  "Y": 0.6107
+                },
+                "LeftMargin": 13.0,
+                "RightMargin": 13.0,
+                "TopMargin": 51.0,
+                "BottomMargin": 51.0,
+                "Tag": 214,
+                "ActionTag": -343899867,
+                "Size": {
+                  "X": 152.0,
+                  "Y": 160.0
+                },
+                "Name": "imgItem",
+                "ctype": "SpriteObjectData"
+              }
+            ],
+            "ActionTag": -953494674,
+            "Size": {
+              "X": 178.0,
+              "Y": 262.0
+            },
+            "Name": "bg",
+            "ctype": "SpriteObjectData"
+          }
+        ],
+        "Size": {
+          "X": 0.0,
+          "Y": 0.0
+        },
+        "Name": "Node",
+        "ctype": "SingleNodeObjectData"
+      },
+      "UsedResources": [
+        "../Font/facebook.TTF",
+        "res/Endgame.plist",
+        "res/Endgame.png"
+      ],
+      "ctype": "GameFileData"
+    }
+  },
+  "Type": "Node"
+}

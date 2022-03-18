@@ -1,0 +1,1585 @@
+{
+  "ID": "6653f17b-c54d-400d-8f7f-3dec026ecdf6",
+  "Version": "2.3.4",
+  "Name": "InventoryUIv2.1",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Tag": 686,
+        "Children": [
+          {
+            "FileData": {
+              "Type": "PlistSubImage",
+              "Path": "normal_bg.png",
+              "Plist": "Resources/Backgrounds.plist"
+            },
+            "Scale9OriginX": 374,
+            "Scale9OriginY": 211,
+            "Scale9Width": 388,
+            "Scale9Height": 218,
+            "StretchWidthEnable": true,
+            "StretchHeightEnable": true,
+            "AnchorPoint": {},
+            "Position": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "PreSize": {
+              "X": 1.0,
+              "Y": 1.0
+            },
+            "HorizontalEdge": "BothEdge",
+            "VerticalEdge": "BothEdge",
+            "Tag": 688,
+            "Children": [
+              {
+                "FileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "inven_Glass_Title.png",
+                  "Plist": "Resources/Inventory.plist"
+                },
+                "Scale9Enable": true,
+                "Scale9OriginX": 66,
+                "Scale9Width": 308,
+                "Scale9Height": 70,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 1.0
+                },
+                "Position": {
+                  "X": 568.1136,
+                  "Y": 640.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.5001,
+                  "Y": 1.0
+                },
+                "PreSize": {
+                  "X": 0.3873,
+                  "Y": 0.1094
+                },
+                "HorizontalEdge": "BothEdge",
+                "VerticalEdge": "TopEdge",
+                "LeftMargin": 348.1136,
+                "RightMargin": 347.8864,
+                "BottomMargin": 570.0,
+                "Tag": 159,
+                "Children": [
+                  {
+                    "FileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "inven_Inventory_title.png",
+                      "Plist": "Resources/Inventory.plist"
+                    },
+                    "Scale9OriginX": 46,
+                    "Scale9OriginY": 12,
+                    "Scale9Width": 153,
+                    "Scale9Height": 11,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 220.748,
+                      "Y": 39.865
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.5017,
+                      "Y": 0.5695
+                    },
+                    "PreSize": {
+                      "X": 0.5568,
+                      "Y": 0.5
+                    },
+                    "HorizontalEdge": "BothEdge",
+                    "VerticalEdge": "BothEdge",
+                    "LeftMargin": 98.248,
+                    "RightMargin": 96.752,
+                    "TopMargin": 12.635,
+                    "BottomMargin": 22.365,
+                    "Tag": 160,
+                    "ActionTag": 468648459,
+                    "Size": {
+                      "X": 245.0,
+                      "Y": 35.0
+                    },
+                    "Name": "imgInventory",
+                    "ctype": "ImageViewObjectData"
+                  }
+                ],
+                "ActionTag": -766089178,
+                "Size": {
+                  "X": 440.0,
+                  "Y": 70.0
+                },
+                "Name": "imgTitleBar",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "inven_CueRack_Base.png",
+                  "Plist": "Resources/Inventory.plist"
+                },
+                "Scale9OriginX": 74,
+                "Scale9OriginY": 152,
+                "Scale9Width": 78,
+                "Scale9Height": 157,
+                "AnchorPoint": {
+                  "ScaleX": 0.5
+                },
+                "Position": {
+                  "X": 1014.5616,
+                  "Y": 16.19
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.8931,
+                  "Y": 0.0253
+                },
+                "PreSize": {
+                  "X": 0.1989,
+                  "Y": 0.7203
+                },
+                "HorizontalEdge": "BothEdge",
+                "VerticalEdge": "BottomEdge",
+                "LeftMargin": 901.5616,
+                "RightMargin": 8.4384,
+                "TopMargin": 162.81,
+                "BottomMargin": 16.19,
+                "Tag": 696,
+                "ActionTag": -1372222347,
+                "Size": {
+                  "X": 226.0,
+                  "Y": 461.0
+                },
+                "VisibleForFrame": false,
+                "Name": "imgCueRack",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "inven_CueRack_Base_02.png",
+                  "Plist": "Resources/Inventory.plist"
+                },
+                "Scale9OriginX": 74,
+                "Scale9OriginY": 16,
+                "Scale9Width": 78,
+                "Scale9Height": 18,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 1014.6752,
+                  "Y": 226.2582
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.8932,
+                  "Y": 0.3535
+                },
+                "PreSize": {
+                  "X": 0.1989,
+                  "Y": 0.0781
+                },
+                "HorizontalEdge": "BothEdge",
+                "VerticalEdge": "BottomEdge",
+                "LeftMargin": 901.6752,
+                "RightMargin": 8.3248,
+                "TopMargin": 388.7418,
+                "BottomMargin": 201.2582,
+                "Tag": 697,
+                "Children": [
+                  {
+                    "FontSize": 14,
+                    "ButtonText": "",
+                    "TextColor": {
+                      "R": 65,
+                      "G": 65,
+                      "B": 70
+                    },
+                    "Scale9Enable": true,
+                    "Scale9OriginX": -15,
+                    "Scale9OriginY": -5,
+                    "Scale9Width": 30,
+                    "Scale9Height": 10,
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "R": 110,
+                      "G": 110,
+                      "B": 110
+                    },
+                    "ShadowOffsetX": 2.0,
+                    "ShadowOffsetY": -2.0,
+                    "TouchEnable": true,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 52.9764,
+                      "Y": 28.896
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.2344,
+                      "Y": 0.5779
+                    },
+                    "PreSize": {
+                      "X": 0.2212,
+                      "Y": 1.0
+                    },
+                    "LeftMargin": 27.9764,
+                    "RightMargin": 148.0236,
+                    "TopMargin": -3.896,
+                    "BottomMargin": 3.896,
+                    "Tag": 242,
+                    "Children": [
+                      {
+                        "FileData": {
+                          "Type": "PlistSubImage",
+                          "Path": "Icon_Active_02.png",
+                          "Plist": "Resources/CueTypes.plist"
+                        },
+                        "Scale9OriginX": 12,
+                        "Scale9OriginY": 11,
+                        "Scale9Width": 48,
+                        "Scale9Height": 33,
+                        "AnchorPoint": {
+                          "ScaleX": 0.5,
+                          "ScaleY": 0.5
+                        },
+                        "Position": {
+                          "X": 25.3139,
+                          "Y": 24.859
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "CColor": {},
+                        "IconVisible": false,
+                        "PrePosition": {
+                          "X": 0.5063,
+                          "Y": 0.4972
+                        },
+                        "PreSize": {
+                          "X": 0.7884,
+                          "Y": 0.6023
+                        },
+                        "LeftMargin": 5.6028,
+                        "RightMargin": 4.975,
+                        "TopMargin": 10.0839,
+                        "BottomMargin": 9.8018,
+                        "Tag": 698,
+                        "ActionTag": -1962271341,
+                        "Size": {
+                          "X": 39.4223,
+                          "Y": 30.1143
+                        },
+                        "Name": "icon",
+                        "ctype": "ImageViewObjectData"
+                      }
+                    ],
+                    "ActionTag": -778244781,
+                    "Size": {
+                      "X": 50.0,
+                      "Y": 50.0
+                    },
+                    "Name": "btnCueActive1",
+                    "ctype": "ButtonObjectData"
+                  },
+                  {
+                    "FontSize": 14,
+                    "ButtonText": "",
+                    "TextColor": {
+                      "R": 65,
+                      "G": 65,
+                      "B": 70
+                    },
+                    "Scale9Enable": true,
+                    "Scale9OriginX": -15,
+                    "Scale9OriginY": -5,
+                    "Scale9Width": 30,
+                    "Scale9Height": 10,
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "R": 110,
+                      "G": 110,
+                      "B": 110
+                    },
+                    "ShadowOffsetX": 2.0,
+                    "ShadowOffsetY": -2.0,
+                    "TouchEnable": true,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 112.7424,
+                      "Y": 27.7253
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.4989,
+                      "Y": 0.5545
+                    },
+                    "PreSize": {
+                      "X": 0.2212,
+                      "Y": 1.0
+                    },
+                    "LeftMargin": 87.7424,
+                    "RightMargin": 88.2576,
+                    "TopMargin": -2.7253,
+                    "BottomMargin": 2.7253,
+                    "Tag": 243,
+                    "Children": [
+                      {
+                        "FileData": {
+                          "Type": "PlistSubImage",
+                          "Path": "Icon_Active_03.png",
+                          "Plist": "Resources/CueTypes.plist"
+                        },
+                        "Scale9OriginX": 15,
+                        "Scale9OriginY": 12,
+                        "Scale9Width": 27,
+                        "Scale9Height": 31,
+                        "AnchorPoint": {
+                          "ScaleX": 0.5,
+                          "ScaleY": 0.5
+                        },
+                        "Position": {
+                          "X": 25.7553,
+                          "Y": 26.9215
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "CColor": {},
+                        "IconVisible": false,
+                        "PrePosition": {
+                          "X": 0.5151,
+                          "Y": 0.5384
+                        },
+                        "PreSize": {
+                          "X": 0.6069,
+                          "Y": 0.5856
+                        },
+                        "LeftMargin": 10.5825,
+                        "RightMargin": 9.0719,
+                        "TopMargin": 8.438,
+                        "BottomMargin": 12.281,
+                        "Tag": 699,
+                        "ActionTag": -1675560130,
+                        "Size": {
+                          "X": 30.3456,
+                          "Y": 29.2809
+                        },
+                        "Name": "icon",
+                        "ctype": "ImageViewObjectData"
+                      }
+                    ],
+                    "ActionTag": -902304729,
+                    "Size": {
+                      "X": 50.0,
+                      "Y": 50.0
+                    },
+                    "Name": "btnCueActive2",
+                    "ctype": "ButtonObjectData"
+                  },
+                  {
+                    "FontSize": 14,
+                    "ButtonText": "",
+                    "TextColor": {
+                      "R": 65,
+                      "G": 65,
+                      "B": 70
+                    },
+                    "Scale9Enable": true,
+                    "Scale9OriginX": -15,
+                    "Scale9OriginY": -5,
+                    "Scale9Width": 30,
+                    "Scale9Height": 10,
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "R": 110,
+                      "G": 110,
+                      "B": 110
+                    },
+                    "ShadowOffsetX": 2.0,
+                    "ShadowOffsetY": -2.0,
+                    "TouchEnable": true,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 173.3106,
+                      "Y": 28.16
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.7669,
+                      "Y": 0.5632
+                    },
+                    "PreSize": {
+                      "X": 0.2212,
+                      "Y": 1.0
+                    },
+                    "LeftMargin": 148.3106,
+                    "RightMargin": 27.6894,
+                    "TopMargin": -3.16,
+                    "BottomMargin": 3.16,
+                    "Tag": 244,
+                    "Children": [
+                      {
+                        "FileData": {
+                          "Type": "PlistSubImage",
+                          "Path": "Icon_Active_04.png",
+                          "Plist": "Resources/CueTypes.plist"
+                        },
+                        "Scale9OriginX": 13,
+                        "Scale9OriginY": 12,
+                        "Scale9Width": 28,
+                        "Scale9Height": 29,
+                        "AnchorPoint": {
+                          "ScaleX": 0.5,
+                          "ScaleY": 0.5
+                        },
+                        "Position": {
+                          "X": 24.224,
+                          "Y": 26.5296
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "CColor": {},
+                        "IconVisible": false,
+                        "PrePosition": {
+                          "X": 0.4845,
+                          "Y": 0.5306
+                        },
+                        "PreSize": {
+                          "X": 0.7246,
+                          "Y": 0.7112
+                        },
+                        "LeftMargin": 6.1088,
+                        "RightMargin": 7.6608,
+                        "TopMargin": 5.6907,
+                        "BottomMargin": 8.7498,
+                        "Tag": 700,
+                        "ActionTag": 94672404,
+                        "Size": {
+                          "X": 36.2305,
+                          "Y": 35.5595
+                        },
+                        "Name": "icon",
+                        "ctype": "ImageViewObjectData"
+                      }
+                    ],
+                    "ActionTag": 749218738,
+                    "Size": {
+                      "X": 50.0,
+                      "Y": 50.0
+                    },
+                    "Name": "btnCueActive3",
+                    "ctype": "ButtonObjectData"
+                  }
+                ],
+                "ActionTag": -711080887,
+                "Size": {
+                  "X": 226.0,
+                  "Y": 50.0
+                },
+                "VisibleForFrame": false,
+                "Name": "imgCueRackIconsBar",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "inven_Board_big.png",
+                  "Plist": "Resources/Inventory.plist"
+                },
+                "Scale9Enable": true,
+                "Scale9OriginX": 15,
+                "Scale9OriginY": 15,
+                "Scale9Width": 308,
+                "Scale9Height": 307,
+                "StretchWidthEnable": true,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 59.5321,
+                  "Y": 0.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.0524,
+                  "Y": 0.0
+                },
+                "PreSize": {
+                  "X": 0.9419,
+                  "Y": 0.8531
+                },
+                "HorizontalEdge": "LeftEdge",
+                "VerticalEdge": "BottomEdge",
+                "LeftMargin": 59.5321,
+                "RightMargin": 6.4679,
+                "TopMargin": 94.0,
+                "Tag": 701,
+                "Children": [
+                  {
+                    "FileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "inven_Board_inside.png",
+                      "Plist": "Resources/Inventory.plist"
+                    },
+                    "Scale9OriginX": 272,
+                    "Scale9OriginY": 178,
+                    "Scale9Width": 281,
+                    "Scale9Height": 185,
+                    "StretchWidthEnable": true,
+                    "AnchorPoint": {},
+                    "Position": {
+                      "X": 5.0,
+                      "Y": 0.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.0047,
+                      "Y": 0.0
+                    },
+                    "PreSize": {
+                      "X": 0.9907,
+                      "Y": 0.989
+                    },
+                    "HorizontalEdge": "BothEdge",
+                    "LeftMargin": 5.0,
+                    "RightMargin": 5.0,
+                    "TopMargin": 6.0,
+                    "Tag": 223,
+                    "ActionTag": -1935768633,
+                    "Size": {
+                      "X": 1060.0,
+                      "Y": 540.0
+                    },
+                    "Name": "imgDark",
+                    "ctype": "ImageViewObjectData"
+                  },
+                  {
+                    "ClipAble": false,
+                    "BackColorAlpha": 102,
+                    "SingleColor": {
+                      "R": 150,
+                      "G": 200
+                    },
+                    "FirstColor": {
+                      "R": 150,
+                      "G": 200
+                    },
+                    "EndColor": {},
+                    "ColorVector": {
+                      "ScaleY": 1.0
+                    },
+                    "Scale9Width": 1,
+                    "Scale9Height": 1,
+                    "TouchEnable": true,
+                    "StretchWidthEnable": true,
+                    "AnchorPoint": {},
+                    "Position": {
+                      "X": 5.0,
+                      "Y": 0.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.0047,
+                      "Y": 0.0
+                    },
+                    "PreSize": {
+                      "X": 0.9907,
+                      "Y": 0.9799
+                    },
+                    "HorizontalEdge": "BothEdge",
+                    "LeftMargin": 5.0,
+                    "RightMargin": 5.0,
+                    "TopMargin": 11.0,
+                    "Tag": 702,
+                    "ActionTag": -650615353,
+                    "Size": {
+                      "X": 1060.0,
+                      "Y": 535.0
+                    },
+                    "Name": "container",
+                    "ctype": "PanelObjectData"
+                  }
+                ],
+                "ActionTag": 1588202167,
+                "Size": {
+                  "X": 1070.0,
+                  "Y": 546.0
+                },
+                "Name": "imgListBg",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FontSize": 14,
+                "ButtonText": "",
+                "TextColor": {
+                  "R": 65,
+                  "G": 65,
+                  "B": 70
+                },
+                "DisabledFileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "inven_Tab_02.png",
+                  "Plist": "Resources/Inventory.plist"
+                },
+                "PressedFileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "inven_Tab_02.png",
+                  "Plist": "Resources/Inventory.plist"
+                },
+                "NormalFileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "inven_Tab_02.png",
+                  "Plist": "Resources/Inventory.plist"
+                },
+                "Scale9Enable": true,
+                "Scale9OriginX": 15,
+                "Scale9OriginY": 11,
+                "Scale9Width": 17,
+                "Scale9Height": 82,
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "TouchEnable": true,
+                "AnchorPoint": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 59.9331,
+                  "Y": 493.9998
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.0528,
+                  "Y": 0.7719
+                },
+                "PreSize": {
+                  "X": 0.0414,
+                  "Y": 0.1625
+                },
+                "LeftMargin": 12.9331,
+                "RightMargin": 1076.0669,
+                "TopMargin": 94.0002,
+                "BottomMargin": 441.9998,
+                "Tag": 705,
+                "Children": [
+                  {
+                    "FileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "inven_Tab_Highlight.png",
+                      "Plist": "Resources/Inventory.plist"
+                    },
+                    "Scale9OriginX": 17,
+                    "Scale9OriginY": 34,
+                    "Scale9Width": 18,
+                    "Scale9Height": 37,
+                    "AnchorPoint": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 52.9999,
+                      "Y": 52.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PositionPercentYEnabled": true,
+                    "PrePosition": {
+                      "X": 1.1277,
+                      "Y": 0.5
+                    },
+                    "PreSize": {
+                      "X": 1.1064,
+                      "Y": 1.0096
+                    },
+                    "HorizontalEdge": "RightEdge",
+                    "LeftMargin": 0.9999,
+                    "RightMargin": -5.9999,
+                    "TopMargin": -0.5,
+                    "BottomMargin": -0.5,
+                    "Tag": 161,
+                    "ActionTag": 513044476,
+                    "Size": {
+                      "X": 52.0,
+                      "Y": 105.0
+                    },
+                    "Name": "imgHighlight",
+                    "ctype": "ImageViewObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "Icon_Inactive_02.png",
+                      "Plist": "Resources/CueTypes.plist"
+                    },
+                    "Scale9OriginX": 12,
+                    "Scale9OriginY": 11,
+                    "Scale9Width": 37,
+                    "Scale9Height": 24,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 23.5,
+                      "Y": 52.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PositionPercentXEnabled": true,
+                    "PositionPercentYEnabled": true,
+                    "PrePosition": {
+                      "X": 0.5,
+                      "Y": 0.5
+                    },
+                    "PreSize": {
+                      "X": 0.745,
+                      "Y": 0.2539
+                    },
+                    "LeftMargin": 5.9926,
+                    "RightMargin": 5.9926,
+                    "TopMargin": 38.7978,
+                    "BottomMargin": 38.7978,
+                    "Tag": 706,
+                    "ActionTag": -1785082118,
+                    "Size": {
+                      "X": 35.0147,
+                      "Y": 26.4045
+                    },
+                    "Name": "img",
+                    "ctype": "ImageViewObjectData"
+                  }
+                ],
+                "ActionTag": 1762450155,
+                "Size": {
+                  "X": 47.0,
+                  "Y": 104.0
+                },
+                "Name": "btnTabBreak",
+                "ctype": "ButtonObjectData"
+              },
+              {
+                "FontSize": 14,
+                "ButtonText": "",
+                "TextColor": {
+                  "R": 65,
+                  "G": 65,
+                  "B": 70
+                },
+                "DisabledFileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "inven_Tab_02.png",
+                  "Plist": "Resources/Inventory.plist"
+                },
+                "PressedFileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "inven_Tab_02.png",
+                  "Plist": "Resources/Inventory.plist"
+                },
+                "NormalFileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "inven_Tab_02.png",
+                  "Plist": "Resources/Inventory.plist"
+                },
+                "Scale9Enable": true,
+                "Scale9OriginX": 15,
+                "Scale9OriginY": 11,
+                "Scale9Width": 17,
+                "Scale9Height": 82,
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "TouchEnable": true,
+                "AnchorPoint": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 59.9331,
+                  "Y": 384.6665
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.0528,
+                  "Y": 0.601
+                },
+                "PreSize": {
+                  "X": 0.0414,
+                  "Y": 0.1625
+                },
+                "LeftMargin": 12.9331,
+                "RightMargin": 1076.0669,
+                "TopMargin": 203.3335,
+                "BottomMargin": 332.6665,
+                "Tag": 707,
+                "Children": [
+                  {
+                    "FileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "inven_Tab_Highlight.png",
+                      "Plist": "Resources/Inventory.plist"
+                    },
+                    "Scale9OriginX": 17,
+                    "Scale9OriginY": 34,
+                    "Scale9Width": 18,
+                    "Scale9Height": 37,
+                    "AnchorPoint": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 53.0,
+                      "Y": 52.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PositionPercentYEnabled": true,
+                    "PrePosition": {
+                      "X": 1.1277,
+                      "Y": 0.5
+                    },
+                    "PreSize": {
+                      "X": 1.1064,
+                      "Y": 1.0096
+                    },
+                    "HorizontalEdge": "RightEdge",
+                    "LeftMargin": 1.0,
+                    "RightMargin": -6.0,
+                    "TopMargin": -0.5,
+                    "BottomMargin": -0.5,
+                    "Tag": 162,
+                    "ActionTag": -705870939,
+                    "Size": {
+                      "X": 52.0,
+                      "Y": 105.0
+                    },
+                    "Name": "imgHighlight",
+                    "ctype": "ImageViewObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "Icon_Inactive_03.png",
+                      "Plist": "Resources/CueTypes.plist"
+                    },
+                    "Scale9OriginX": 12,
+                    "Scale9OriginY": 11,
+                    "Scale9Width": 21,
+                    "Scale9Height": 23,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 23.5,
+                      "Y": 52.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PositionPercentXEnabled": true,
+                    "PositionPercentYEnabled": true,
+                    "PrePosition": {
+                      "X": 0.5,
+                      "Y": 0.5
+                    },
+                    "PreSize": {
+                      "X": 0.7155,
+                      "Y": 0.3233
+                    },
+                    "LeftMargin": 6.6859,
+                    "RightMargin": 6.6859,
+                    "TopMargin": 35.1859,
+                    "BottomMargin": 35.1859,
+                    "Tag": 708,
+                    "ActionTag": -539101322,
+                    "Size": {
+                      "X": 33.6283,
+                      "Y": 33.6283
+                    },
+                    "Name": "img",
+                    "ctype": "ImageViewObjectData"
+                  }
+                ],
+                "ActionTag": 848949879,
+                "Size": {
+                  "X": 47.0,
+                  "Y": 104.0
+                },
+                "Name": "btnTabJump",
+                "ctype": "ButtonObjectData"
+              },
+              {
+                "FontSize": 14,
+                "ButtonText": "",
+                "TextColor": {
+                  "R": 65,
+                  "G": 65,
+                  "B": 70
+                },
+                "DisabledFileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "inven_Tab_02.png",
+                  "Plist": "Resources/Inventory.plist"
+                },
+                "PressedFileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "inven_Tab_02.png",
+                  "Plist": "Resources/Inventory.plist"
+                },
+                "NormalFileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "inven_Tab_02.png",
+                  "Plist": "Resources/Inventory.plist"
+                },
+                "Scale9Enable": true,
+                "Scale9OriginX": 15,
+                "Scale9OriginY": 11,
+                "Scale9Width": 17,
+                "Scale9Height": 82,
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "TouchEnable": true,
+                "AnchorPoint": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 59.9331,
+                  "Y": 275.3332
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.0528,
+                  "Y": 0.4302
+                },
+                "PreSize": {
+                  "X": 0.0414,
+                  "Y": 0.1625
+                },
+                "LeftMargin": 12.9331,
+                "RightMargin": 1076.0669,
+                "TopMargin": 312.6668,
+                "BottomMargin": 223.3332,
+                "Tag": 709,
+                "Children": [
+                  {
+                    "FileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "inven_Tab_Highlight.png",
+                      "Plist": "Resources/Inventory.plist"
+                    },
+                    "Scale9OriginX": 17,
+                    "Scale9OriginY": 34,
+                    "Scale9Width": 18,
+                    "Scale9Height": 37,
+                    "AnchorPoint": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 53.0,
+                      "Y": 52.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PositionPercentYEnabled": true,
+                    "PrePosition": {
+                      "X": 1.1277,
+                      "Y": 0.5
+                    },
+                    "PreSize": {
+                      "X": 1.1064,
+                      "Y": 1.0096
+                    },
+                    "HorizontalEdge": "RightEdge",
+                    "LeftMargin": 1.0,
+                    "RightMargin": -6.0,
+                    "TopMargin": -0.5,
+                    "BottomMargin": -0.5,
+                    "Tag": 163,
+                    "ActionTag": 753281159,
+                    "Size": {
+                      "X": 52.0,
+                      "Y": 105.0
+                    },
+                    "Name": "imgHighlight",
+                    "ctype": "ImageViewObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "Icon_Inactive_04.png",
+                      "Plist": "Resources/CueTypes.plist"
+                    },
+                    "Scale9OriginX": 12,
+                    "Scale9OriginY": 11,
+                    "Scale9Width": 18,
+                    "Scale9Height": 21,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 23.5,
+                      "Y": 52.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PositionPercentXEnabled": true,
+                    "PositionPercentYEnabled": true,
+                    "PrePosition": {
+                      "X": 0.5,
+                      "Y": 0.5
+                    },
+                    "PreSize": {
+                      "X": 0.6862,
+                      "Y": 0.3175
+                    },
+                    "LeftMargin": 7.3736,
+                    "RightMargin": 7.3736,
+                    "TopMargin": 35.4897,
+                    "BottomMargin": 35.4897,
+                    "Tag": 710,
+                    "ActionTag": 442062540,
+                    "Size": {
+                      "X": 32.2527,
+                      "Y": 33.0206
+                    },
+                    "Name": "img",
+                    "ctype": "ImageViewObjectData"
+                  }
+                ],
+                "ActionTag": -1710000807,
+                "Size": {
+                  "X": 47.0,
+                  "Y": 104.0
+                },
+                "Name": "btnTabMasse",
+                "ctype": "ButtonObjectData"
+              },
+              {
+                "FontSize": 14,
+                "ButtonText": "",
+                "TextColor": {
+                  "R": 65,
+                  "G": 65,
+                  "B": 70
+                },
+                "DisabledFileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "inven_Tab_02.png",
+                  "Plist": "Resources/Inventory.plist"
+                },
+                "PressedFileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "inven_Tab_02.png",
+                  "Plist": "Resources/Inventory.plist"
+                },
+                "NormalFileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "inven_Tab_02.png",
+                  "Plist": "Resources/Inventory.plist"
+                },
+                "Scale9Enable": true,
+                "Scale9OriginX": 15,
+                "Scale9OriginY": 11,
+                "Scale9Width": 17,
+                "Scale9Height": 82,
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "TouchEnable": true,
+                "AnchorPoint": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 59.9332,
+                  "Y": 165.9998
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.0528,
+                  "Y": 0.2594
+                },
+                "PreSize": {
+                  "X": 0.0414,
+                  "Y": 0.1625
+                },
+                "LeftMargin": 12.9332,
+                "RightMargin": 1076.0668,
+                "TopMargin": 422.0002,
+                "BottomMargin": 113.9998,
+                "Tag": 711,
+                "Children": [
+                  {
+                    "FileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "inven_Tab_Highlight.png",
+                      "Plist": "Resources/Inventory.plist"
+                    },
+                    "Scale9OriginX": 17,
+                    "Scale9OriginY": 34,
+                    "Scale9Width": 18,
+                    "Scale9Height": 37,
+                    "AnchorPoint": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 53.0,
+                      "Y": 52.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PositionPercentYEnabled": true,
+                    "PrePosition": {
+                      "X": 1.1277,
+                      "Y": 0.5
+                    },
+                    "PreSize": {
+                      "X": 1.1064,
+                      "Y": 1.0096
+                    },
+                    "HorizontalEdge": "RightEdge",
+                    "LeftMargin": 1.0,
+                    "RightMargin": -6.0,
+                    "TopMargin": -0.5,
+                    "BottomMargin": -0.5,
+                    "Tag": 164,
+                    "ActionTag": -38358835,
+                    "Size": {
+                      "X": 52.0,
+                      "Y": 105.0
+                    },
+                    "Name": "imgHighlight",
+                    "ctype": "ImageViewObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "Icon_Inactive_05.png",
+                      "Plist": "Resources/CueTypes.plist"
+                    },
+                    "Scale9OriginX": 12,
+                    "Scale9OriginY": 11,
+                    "Scale9Width": 3,
+                    "Scale9Height": 7,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 23.5,
+                      "Y": 52.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PositionPercentXEnabled": true,
+                    "PositionPercentYEnabled": true,
+                    "PrePosition": {
+                      "X": 0.5,
+                      "Y": 0.5
+                    },
+                    "PreSize": {
+                      "X": 0.5745,
+                      "Y": 0.2788
+                    },
+                    "LeftMargin": 10.0,
+                    "RightMargin": 10.0,
+                    "TopMargin": 37.5,
+                    "BottomMargin": 37.5,
+                    "Tag": 712,
+                    "ActionTag": -1658902505,
+                    "Size": {
+                      "X": 27.0,
+                      "Y": 29.0
+                    },
+                    "Name": "img",
+                    "ctype": "ImageViewObjectData"
+                  }
+                ],
+                "ActionTag": 1769292105,
+                "Size": {
+                  "X": 47.0,
+                  "Y": 104.0
+                },
+                "Name": "btnTabOther",
+                "ctype": "ButtonObjectData"
+              },
+              {
+                "FontSize": 14,
+                "ButtonText": "",
+                "TextColor": {
+                  "R": 65,
+                  "G": 65,
+                  "B": 70
+                },
+                "DisabledFileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "inven_Glass_Back.png",
+                  "Plist": "Resources/Inventory.plist"
+                },
+                "PressedFileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "inven_Glass_Back.png",
+                  "Plist": "Resources/Inventory.plist"
+                },
+                "NormalFileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "inven_Glass_Back.png",
+                  "Plist": "Resources/Inventory.plist"
+                },
+                "Scale9Enable": true,
+                "Scale9OriginX": 15,
+                "Scale9OriginY": 11,
+                "Scale9Width": 52,
+                "Scale9Height": 34,
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "TouchEnable": true,
+                "AnchorPoint": {
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 0.0,
+                  "Y": 597.1702
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.0,
+                  "Y": 0.9331
+                },
+                "PreSize": {
+                  "X": 0.0722,
+                  "Y": 0.0875
+                },
+                "HorizontalEdge": "LeftEdge",
+                "VerticalEdge": "TopEdge",
+                "RightMargin": 1054.0,
+                "TopMargin": 14.8298,
+                "BottomMargin": 569.1702,
+                "Tag": 690,
+                "Children": [
+                  {
+                    "FileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "Button_Back.png",
+                      "Plist": "Resources/Buttons.plist"
+                    },
+                    "Scale9OriginX": 18,
+                    "Scale9OriginY": 15,
+                    "Scale9Width": 19,
+                    "Scale9Height": 18,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 29.4708,
+                      "Y": 27.0648
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.3594,
+                      "Y": 0.4833
+                    },
+                    "PreSize": {
+                      "X": 0.6707,
+                      "Y": 0.8571
+                    },
+                    "HorizontalEdge": "BothEdge",
+                    "VerticalEdge": "BothEdge",
+                    "LeftMargin": 1.9708,
+                    "RightMargin": 25.0292,
+                    "TopMargin": 4.9352,
+                    "BottomMargin": 3.0648,
+                    "Tag": 691,
+                    "ActionTag": -1705999035,
+                    "Size": {
+                      "X": 55.0,
+                      "Y": 48.0
+                    },
+                    "Name": "imgBack",
+                    "ctype": "ImageViewObjectData"
+                  }
+                ],
+                "ActionTag": 1256687765,
+                "Size": {
+                  "X": 82.0,
+                  "Y": 56.0
+                },
+                "Name": "btnBack",
+                "ctype": "ButtonObjectData"
+              }
+            ],
+            "ActionTag": -1870896979,
+            "Size": {
+              "X": 1136.0,
+              "Y": 640.0
+            },
+            "Name": "bg",
+            "ctype": "ImageViewObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "Inventory/res/fakes/Fake_Inventory_NEWWORK_03a_i5.png",
+              "Plist": ""
+            },
+            "Scale9OriginX": 374,
+            "Scale9OriginY": 211,
+            "Scale9Width": 388,
+            "Scale9Height": 218,
+            "AnchorPoint": {},
+            "Position": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "PreSize": {
+              "X": 1.0,
+              "Y": 1.0
+            },
+            "Tag": 687,
+            "ActionTag": 1735717319,
+            "Size": {
+              "X": 1136.0,
+              "Y": 640.0
+            },
+            "Alpha": 141,
+            "Name": "fake",
+            "ctype": "ImageViewObjectData"
+          }
+        ],
+        "Size": {
+          "X": 1136.0,
+          "Y": 640.0
+        },
+        "Name": "Layer",
+        "ctype": "LayerObjectData"
+      },
+      "UsedResources": [
+        "../Resources/Backgrounds.plist",
+        "../Resources/Backgrounds.png",
+        "../Resources/Buttons.plist",
+        "../Resources/Buttons.png",
+        "../Resources/CueTypes.plist",
+        "../Resources/CueTypes.png",
+        "../Resources/Inventory.plist",
+        "../Resources/Inventory.png",
+        "res/fakes/Fake_Inventory_NEWWORK_03a_i5.png"
+      ],
+      "ctype": "GameFileData"
+    }
+  },
+  "Type": "Layer"
+}

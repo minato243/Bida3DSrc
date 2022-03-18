@@ -1,0 +1,209 @@
+{
+  "starter": {
+    "cost": 4.99,
+    "name": "Champion Starter Pack",
+    "itemList": [
+      {
+        "name": "BoxID_9",
+        "itemID": 2,
+        "amount": 10,
+        "itemType": 1
+      },
+      {
+        "name": "Gold",
+        "itemID": 1,
+        "amount": 100000,
+        "itemType": 0
+      },
+      {
+        "name": "Cash",
+        "itemID": 50,
+        "amount": 1000,
+        "itemType": 0
+      },
+      {
+        "name": "Pin_Break",
+        "itemID": 17,
+        "amount": 250,
+        "itemType": 0
+      },
+      {
+        "name": "Pin_Neutral",
+        "itemID": 16,
+        "amount": 250,
+        "itemType": 0
+      },
+      {
+        "name": "Upgrade_Card_Level_1",
+        "itemID": 20,
+        "amount": 10,
+        "itemType": 0
+      },
+      {
+        "name": "Upgrade_Card_Level_2",
+        "itemID": 21,
+        "amount": 10,
+        "itemType": 0
+      }
+    ]
+  },
+  "onlyCash": [
+    {
+      "day": 2,
+      "cash": 4000,
+      "price": 2
+    },
+    {
+      "day": 3,
+      "cash": 4000,
+      "price": 2
+    },
+    {
+      "day": 4,
+      "cash": 11000,
+      "price": 5
+    },
+    {
+      "day": 5,
+      "cash": 11000,
+      "price": 5
+    },
+    {
+      "day": 6,
+      "cash": 24000,
+      "price": 10
+    },
+    {
+      "day": 7,
+      "cash": 24000,
+      "price": 10
+    },
+    {
+      "day": 1,
+      "cash": 50000,
+      "price": 20
+    }
+  ],
+  "onlyGold": [
+    {
+      "gold": 200000,
+      "price": 0.99
+    },
+    {
+      "gold": 500000,
+      "price": 1.99
+    },
+    {
+      "gold": 1500000,
+      "price": 4.99
+    },
+    {
+      "gold": 4000000,
+      "price": 9.99
+    }
+  ],
+  "cumulative": [
+    {
+      "require": 10,
+      "listGift": [
+        {
+          "itemID": 0,
+          "num": 10000
+        },
+        {
+          "itemID": 24,
+          "num": 3
+        },
+        {
+          "itemID": 1,
+          "num": 500000
+        }
+      ]
+    },
+    {
+      "require": 20,
+      "listGift": [
+        {
+          "itemID": 0,
+          "num": 25000
+        },
+        {
+          "itemID": 24,
+          "num": 7
+        },
+        {
+          "itemID": 1,
+          "num": 1500000
+        }
+      ]
+    },
+    {
+      "require": 30,
+      "listGift": [
+        {
+          "itemID": 0,
+          "num": 40000
+        },
+        {
+          "itemID": 24,
+          "num": 15
+        },
+        {
+          "itemID": 1,
+          "num": 3000000
+        }
+      ]
+    },
+    {
+      "require": 40,
+      "listGift": [
+        {
+          "itemID": 0,
+          "num": 50000
+        },
+        {
+          "itemID": 24,
+          "num": 24
+        },
+        {
+          "itemID": 1,
+          "num": 5000000
+        }
+      ]
+    },
+    {
+      "require": 50,
+      "listGift": [
+        {
+          "itemID": 0,
+          "num": 70000
+        },
+        {
+          "itemID": 24,
+          "num": 30
+        },
+        {
+          "itemID": 1,
+          "num": 7000000
+        }
+      ]
+    },
+    {
+      "require": 60,
+      "listGift": [
+        {
+          "itemID": 0,
+          "num": 86000
+        },
+        {
+          "itemID": 24,
+          "num": 50
+        },
+        {
+          "itemID": 1,
+          "num": 10000000
+        }
+      ]
+    }
+  ]
+}

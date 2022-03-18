@@ -1,0 +1,173 @@
+{
+    "Matching" : [
+        {
+            "min": 0,
+            "max": 99,
+            "require": 0,
+            "prize": 50
+        },
+        {
+            "min": 100,
+            "max": 199,
+            "require": 5,
+            "prize": 50
+        },
+        {
+            "min": 200,
+            "max": 299,
+            "require": 10,
+            "prize": 50
+        },
+        {
+            "min": 300,
+            "max": 399,
+            "require": 15,
+            "prize": 50
+        },
+        {
+            "min": 400,
+            "max": 499,
+            "require": 20,
+            "prize": 50
+        },
+        {
+            "min": 500,
+            "max": 599,
+            "require": 25,
+            "prize": 50
+        },
+        {
+            "min": 600,
+            "max": 699,
+            "require": 25,
+            "prize": 45
+        },
+        {
+            "min": 700,
+            "max": 799,
+            "require": 25,
+            "prize": 40
+        },
+        {
+            "min": 800,
+            "max": 899,
+            "require": 25,
+            "prize": 35
+        },
+        {
+            "min": 900,
+            "max": 999999,
+            "require": 25,
+            "prize": 30
+        }
+    ],
+    "GloveToCup" : [
+        {
+            "min": 0,
+            "max": 99,
+            "cupLevel": 0
+        },
+        {
+            "min": 100,
+            "max": 199,
+            "cupLevel": 1
+        },
+        {
+            "min": 200,
+            "max": 299,
+            "cupLevel": 2
+        },
+        {
+            "min": 300,
+            "max": 399,
+            "cupLevel": 3
+        },
+        {
+            "min": 400,
+            "max": 499,
+            "cupLevel": 4
+        },
+        {
+            "min": 500,
+            "max": 599,
+            "cupLevel": 5
+        },
+        {
+            "min": 600,
+            "max": 699,
+            "cupLevel": 6
+        },
+        {
+            "min": 700,
+            "max": 799,
+            "cupLevel": 7
+        },
+        {
+            "min": 800,
+            "max": 899,
+            "cupLevel": 8
+        },
+        {
+            "min": 900,
+            "max": 949,
+            "cupLevel": 9
+        },
+        {
+            "min": 950,
+            "max": 999999,
+            "cupLevel": 10
+        }
+    ],
+    "GloveReset": [
+        {
+            "min": 0,
+            "max": 99,
+            "reset": 100
+        },
+        {
+            "min": 100,
+            "max": 199,
+            "reset": 100
+        },
+        {
+            "min": 200,
+            "max": 299,
+            "reset": 150
+        },
+        {
+            "min": 300,
+            "max": 399,
+            "reset": 200
+        },
+        {
+            "min": 400,
+            "max": 499,
+            "reset": 250
+        },
+        {
+            "min": 500,
+            "max": 599,
+            "reset": 300
+        },
+        {
+            "min": 600,
+            "max": 699,
+            "reset": 350
+        },
+        {
+            "min": 700,
+            "max": 799,
+            "reset": 400
+        },
+        {
+            "min": 800,
+            "max": 899,
+            "reset": 450
+        },
+        {
+            "min": 900,
+            "max": 999999,
+            "reset": 500
+        }
+    ]
+}

@@ -1,0 +1,81 @@
+{
+  "timeCdResetRankingInSec": 604800,
+  "timeCdUpdateRankingTableInSec": 5,
+  "timeCdUpdateRankingCacheInSec": 3,
+  "cacheWarningThresholdInSec": 10,
+  "autoSnapshotDayInWeek": 1,
+  "limitRankingView": 50,
+  "limitPreviosRankingView": 3,
+  "sizeGroupMyLeagueRanking": 30,
+  "leagueConfigMap": {
+    "0": {
+      "rankId": 0,
+      "downGradeRange": {},
+      "stayRange": {
+        "minValue": 1,
+        "maxValue": 15
+      },
+      "upGradeRange": {
+        "minValue": 16,
+        "maxValue": 30
+      }
+    },
+    "1": {
+      "rankId": 1,
+      "downGradeRange": {
+        "minValue": 1,
+        "maxValue": 5
+      },
+      "stayRange": {
+        "minValue": 6,
+        "maxValue": 20
+      },
+      "upGradeRange": {
+        "minValue": 21,
+        "maxValue": 30
+      }
+    },
+    "2": {
+      "rankId": 2,
+      "downGradeRange": {
+        "minValue": 1,
+        "maxValue": 10
+      },
+      "stayRange": {
+        "minValue": 11,
+        "maxValue": 25
+      },
+      "upGradeRange": {
+        "minValue": 26,
+        "maxValue": 30
+      }
+    },
+    "3": {
+      "rankId": 3,
+      "downGradeRange": {
+        "minValue": 1,
+        "maxValue": 15
+      },
+      "stayRange": {
+        "minValue": 16,
+        "maxValue": 25
+      },
+      "upGradeRange": {
+        "minValue": 26,
+        "maxValue": 30
+      }
+    },
+    "4": {
+      "rankId": 4,
+      "downGradeRange": {
+        "minValue": 1,
+        "maxValue": 20
+      },
+      "stayRange": {
+        "minValue": 21,
+        "maxValue": 30
+      },
+      "upGradeRange": {}
+    }
+  }
+}

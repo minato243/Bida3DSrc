@@ -1,0 +1,697 @@
+{
+  "ID": "915cc759-2469-4be5-9d1f-23bbd5c8a1ec",
+  "Version": "2.3.4",
+  "Name": "AchievementItemVer2",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Tag": 44,
+        "Children": [
+          {
+            "FileData": {
+              "Type": "PlistSubImage",
+              "Path": "achievement_Icon_Box.png",
+              "Plist": "Achievement/res/Achievement_new.plist"
+            },
+            "Scale9Enable": true,
+            "Scale9OriginX": 37,
+            "Scale9OriginY": 37,
+            "Scale9Width": 41,
+            "Scale9Height": 41,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "PreSize": {
+              "X": 0.2333,
+              "Y": 0.1719
+            },
+            "LeftMargin": -132.5,
+            "RightMargin": 1003.5,
+            "TopMargin": 585.0,
+            "BottomMargin": -55.0,
+            "Tag": 61,
+            "Children": [
+              {
+                "IsCustomSize": true,
+                "FontSize": 20,
+                "LabelText": "Take the shot",
+                "FontResource": {
+                  "Type": "Normal",
+                  "Path": "Font/facebook.TTF",
+                  "Plist": ""
+                },
+                "HorizontalAlignmentType": "HT_Center",
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 136.5572,
+                  "Y": 93.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "RotationSkewX": 9.9998,
+                "CColor": {
+                  "G": 165,
+                  "B": 0
+                },
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.5153,
+                  "Y": 0.8455
+                },
+                "PreSize": {
+                  "X": 0.9434,
+                  "Y": 0.2636
+                },
+                "LeftMargin": 11.5572,
+                "RightMargin": 3.4428,
+                "TopMargin": 2.5,
+                "BottomMargin": 78.5,
+                "Tag": 49,
+                "ActionTag": 153764681,
+                "Size": {
+                  "X": 250.0,
+                  "Y": 29.0
+                },
+                "Name": "lbAchievement",
+                "ctype": "TextObjectData"
+              },
+              {
+                "ClipAble": false,
+                "BackColorAlpha": 102,
+                "ComboBoxIndex": 1,
+                "SingleColor": {
+                  "R": 150,
+                  "G": 200
+                },
+                "FirstColor": {
+                  "R": 150,
+                  "G": 200
+                },
+                "EndColor": {},
+                "ColorVector": {
+                  "ScaleY": 1.0
+                },
+                "Scale9Width": 1,
+                "Scale9Height": 1,
+                "TouchEnable": true,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 8.0605,
+                  "Y": 28.4249
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.0304,
+                  "Y": 0.2584
+                },
+                "PreSize": {
+                  "X": 0.9434,
+                  "Y": 0.4091
+                },
+                "LeftMargin": 8.0605,
+                "RightMargin": 6.9395,
+                "TopMargin": 36.5751,
+                "BottomMargin": 28.4249,
+                "Tag": 18,
+                "ActionTag": -702848510,
+                "Size": {
+                  "X": 250.0,
+                  "Y": 45.0
+                },
+                "Alpha": 0,
+                "Name": "pnVisibleText",
+                "ctype": "PanelObjectData"
+              },
+              {
+                "IsCustomSize": true,
+                "FontSize": 20,
+                "LabelText": "shot the take",
+                "FontResource": {
+                  "Type": "Normal",
+                  "Path": "Font/facebook.TTF",
+                  "Plist": ""
+                },
+                "TouchScaleChangeAble": true,
+                "HorizontalAlignmentType": "HT_Center",
+                "VerticalAlignmentType": "VT_Center",
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "StretchWidthEnable": true,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 133.0582,
+                  "Y": 53.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "RotationSkewX": 9.9998,
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.5021,
+                  "Y": 0.4818
+                },
+                "PreSize": {
+                  "X": 0.9811,
+                  "Y": 0.4545
+                },
+                "LeftMargin": 3.0624,
+                "RightMargin": 1.9461,
+                "TopMargin": 32.0,
+                "BottomMargin": 28.0,
+                "Tag": 50,
+                "ActionTag": -330692614,
+                "Size": {
+                  "X": 259.9915,
+                  "Y": 50.0
+                },
+                "Name": "lbDescription",
+                "ctype": "TextObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "achievement_Progress_Bar_03.png",
+                  "Plist": "Achievement/res/Achievement_new.plist"
+                },
+                "Scale9OriginX": 102,
+                "Scale9OriginY": 6,
+                "Scale9Width": 106,
+                "Scale9Height": 7,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 7.1285,
+                  "Y": 6.5404
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PositionPercentXEnabled": true,
+                "PrePosition": {
+                  "X": 0.0269,
+                  "Y": 0.0595
+                },
+                "PreSize": {
+                  "X": 0.9418,
+                  "Y": 0.1391
+                },
+                "LeftMargin": 7.1285,
+                "RightMargin": 8.2974,
+                "TopMargin": 88.1631,
+                "BottomMargin": 6.5404,
+                "Tag": 55,
+                "ActionTag": 48125258,
+                "Size": {
+                  "X": 249.5741,
+                  "Y": 15.2965
+                },
+                "Name": "imgProgressBg",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "ProgressInfo": 100,
+                "ImageFileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "achievement_Progress_Bar_04.png",
+                  "Plist": "Achievement/res/Achievement_new.plist"
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 134.0,
+                  "Y": 13.9548
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.5057,
+                  "Y": 0.1269
+                },
+                "PreSize": {
+                  "X": 0.9434,
+                  "Y": 0.1182
+                },
+                "LeftMargin": 9.0,
+                "RightMargin": 6.0,
+                "TopMargin": 89.5452,
+                "BottomMargin": 7.4548,
+                "Tag": 56,
+                "ActionTag": -919122809,
+                "Size": {
+                  "X": 250.0,
+                  "Y": 13.0
+                },
+                "Alpha": 244,
+                "Name": "imgProgressBar",
+                "ctype": "LoadingBarObjectData"
+              },
+              {
+                "ClipAble": false,
+                "BackColorAlpha": 102,
+                "ComboBoxIndex": 1,
+                "SingleColor": {
+                  "R": 150,
+                  "G": 200
+                },
+                "FirstColor": {
+                  "R": 150,
+                  "G": 200
+                },
+                "EndColor": {},
+                "ColorVector": {
+                  "ScaleY": 1.0
+                },
+                "Scale9Width": 1,
+                "Scale9Height": 1,
+                "TouchEnable": true,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "PreSize": {
+                  "X": 1.0,
+                  "Y": 1.0
+                },
+                "Tag": 32,
+                "ActionTag": 1194115710,
+                "Size": {
+                  "X": 265.0,
+                  "Y": 110.0
+                },
+                "VisibleForFrame": false,
+                "Name": "pnVisible",
+                "ctype": "PanelObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "Gacha_Purple_Board.png",
+                  "Plist": "Gacha/res/GachaUI.plist"
+                },
+                "Scale9OriginX": 209,
+                "Scale9OriginY": 49,
+                "Scale9Width": 216,
+                "Scale9Height": 52,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "PreSize": {
+                  "X": 1.0,
+                  "Y": 1.0
+                },
+                "Tag": 109,
+                "Children": [
+                  {
+                    "FontSize": 14,
+                    "ButtonText": "",
+                    "TextColor": {
+                      "R": 65,
+                      "G": 65,
+                      "B": 70
+                    },
+                    "NormalFileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "Gacha_Table_Board.png",
+                      "Plist": "Gacha/res/GachaUI.plist"
+                    },
+                    "Scale9Enable": true,
+                    "Scale9OriginX": 15,
+                    "Scale9OriginY": 11,
+                    "Scale9Width": 278,
+                    "Scale9Height": 154,
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "R": 110,
+                      "G": 110,
+                      "B": 110
+                    },
+                    "ShadowOffsetX": 2.0,
+                    "ShadowOffsetY": -2.0,
+                    "TouchEnable": true,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 133.45,
+                      "Y": 55.37
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.5036,
+                      "Y": 0.5034
+                    },
+                    "PreSize": {
+                      "X": 0.6415,
+                      "Y": 0.7273
+                    },
+                    "LeftMargin": 48.45,
+                    "RightMargin": 46.55,
+                    "TopMargin": 14.63,
+                    "BottomMargin": 15.37,
+                    "Tag": 15,
+                    "ActionTag": -217908927,
+                    "Size": {
+                      "X": 170.0,
+                      "Y": 80.0
+                    },
+                    "Name": "bgReward",
+                    "ctype": "ButtonObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "Ticket_Icon.png",
+                      "Plist": "Inventory/res/Inventory_Reworked.plist"
+                    },
+                    "BlendFunc": {
+                      "Src": 1,
+                      "Dst": 771
+                    },
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 184.6326,
+                      "Y": 68.3435
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.6967,
+                      "Y": 0.6213
+                    },
+                    "PreSize": {
+                      "X": 0.166,
+                      "Y": 0.2545
+                    },
+                    "LeftMargin": 162.6326,
+                    "RightMargin": 58.3674,
+                    "TopMargin": 27.6565,
+                    "BottomMargin": 54.3435,
+                    "Tag": 110,
+                    "ActionTag": -1245017592,
+                    "Size": {
+                      "X": 44.0,
+                      "Y": 28.0
+                    },
+                    "Name": "imgTicket",
+                    "ctype": "SpriteObjectData"
+                  },
+                  {
+                    "FontSize": 20,
+                    "LabelText": "100K",
+                    "FontResource": {
+                      "Type": "Normal",
+                      "Path": "Font/facebook.TTF",
+                      "Plist": ""
+                    },
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "R": 110,
+                      "G": 110,
+                      "B": 110
+                    },
+                    "ShadowOffsetX": 2.0,
+                    "ShadowOffsetY": -2.0,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 95.4991,
+                      "Y": 39.3976
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.3604,
+                      "Y": 0.3582
+                    },
+                    "PreSize": {
+                      "X": 0.1925,
+                      "Y": 0.2636
+                    },
+                    "LeftMargin": 69.9991,
+                    "RightMargin": 144.0009,
+                    "TopMargin": 56.1024,
+                    "BottomMargin": 24.8976,
+                    "Tag": 111,
+                    "ActionTag": -1415461004,
+                    "Size": {
+                      "X": 51.0,
+                      "Y": 29.0
+                    },
+                    "Name": "lbGoldValue",
+                    "ctype": "TextObjectData"
+                  },
+                  {
+                    "FontSize": 20,
+                    "LabelText": "100",
+                    "FontResource": {
+                      "Type": "Normal",
+                      "Path": "Font/facebook.TTF",
+                      "Plist": ""
+                    },
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "R": 110,
+                      "G": 110,
+                      "B": 110
+                    },
+                    "ShadowOffsetX": 2.0,
+                    "ShadowOffsetY": -2.0,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 185.4592,
+                      "Y": 42.0246
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.6998,
+                      "Y": 0.382
+                    },
+                    "PreSize": {
+                      "X": 0.1434,
+                      "Y": 0.2636
+                    },
+                    "LeftMargin": 166.4592,
+                    "RightMargin": 60.5408,
+                    "TopMargin": 53.4754,
+                    "BottomMargin": 27.5246,
+                    "Tag": 112,
+                    "ActionTag": 180240899,
+                    "Size": {
+                      "X": 38.0,
+                      "Y": 29.0
+                    },
+                    "Name": "lbTicketValue",
+                    "ctype": "TextObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "Normal",
+                      "Path": "GlobalPopup/res/Gold.png",
+                      "Plist": ""
+                    },
+                    "BlendFunc": {
+                      "Src": 1,
+                      "Dst": 771
+                    },
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 93.9348,
+                      "Y": 66.3846
+                    },
+                    "Scale": {
+                      "ScaleX": 0.7,
+                      "ScaleY": 0.7
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.3545,
+                      "Y": 0.6035
+                    },
+                    "PreSize": {
+                      "X": 0.1811,
+                      "Y": 0.4545
+                    },
+                    "LeftMargin": 69.9348,
+                    "RightMargin": 147.0652,
+                    "TopMargin": 18.6154,
+                    "BottomMargin": 41.3846,
+                    "Tag": 113,
+                    "ActionTag": 1157692905,
+                    "Size": {
+                      "X": 48.0,
+                      "Y": 50.0
+                    },
+                    "Name": "imgGold",
+                    "ctype": "SpriteObjectData"
+                  }
+                ],
+                "ActionTag": -1421234319,
+                "Size": {
+                  "X": 265.0,
+                  "Y": 110.0
+                },
+                "VisibleForFrame": false,
+                "Name": "imgReward",
+                "ctype": "ImageViewObjectData"
+              }
+            ],
+            "ActionTag": -800728029,
+            "Size": {
+              "X": 265.0,
+              "Y": 110.0
+            },
+            "Name": "bg",
+            "ctype": "ImageViewObjectData"
+          }
+        ],
+        "Size": {
+          "X": 1136.0,
+          "Y": 640.0
+        },
+        "Name": "Layer",
+        "ctype": "LayerObjectData"
+      },
+      "UsedResources": [
+        "../Font/facebook.TTF",
+        "../Gacha/res/GachaUI.plist",
+        "../Gacha/res/GachaUI.png",
+        "../GlobalPopup/res/Gold.png",
+        "../Inventory/res/Inventory_Reworked.plist",
+        "../Inventory/res/Inventory_Reworked.png",
+        "res/Achievement_new.plist",
+        "res/Achievement_new.png"
+      ],
+      "ctype": "GameFileData"
+    }
+  },
+  "Type": "Layer"
+}

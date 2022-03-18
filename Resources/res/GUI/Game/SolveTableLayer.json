@@ -1,0 +1,1096 @@
+{
+  "ID": "41bd9d51-aa93-4f1d-974e-3a86b1c50ccc",
+  "Version": "2.3.4",
+  "Name": "SolveTableLayer",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Tag": 219,
+        "Children": [
+          {
+            "ClipAble": false,
+            "BackColorAlpha": 102,
+            "SingleColor": {
+              "R": 150,
+              "G": 200
+            },
+            "FirstColor": {
+              "R": 150,
+              "G": 200
+            },
+            "EndColor": {},
+            "ColorVector": {
+              "ScaleY": 1.0
+            },
+            "Scale9Width": 1,
+            "Scale9Height": 1,
+            "StretchWidthEnable": true,
+            "StretchHeightEnable": true,
+            "AnchorPoint": {},
+            "Position": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "PreSize": {
+              "X": 1.0,
+              "Y": 1.0
+            },
+            "HorizontalEdge": "BothEdge",
+            "VerticalEdge": "BothEdge",
+            "Tag": 353,
+            "Children": [
+              {
+                "FileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "IngameEBP_Single_Button_Box.png",
+                  "Plist": "Resources/IngameEBP.plist"
+                },
+                "Scale9OriginX": 31,
+                "Scale9OriginY": 26,
+                "Scale9Width": 34,
+                "Scale9Height": 25,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 67.5271,
+                  "Y": 578.1973
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.0594,
+                  "Y": 0.9034
+                },
+                "PreSize": {
+                  "X": 0.0845,
+                  "Y": 0.1203
+                },
+                "HorizontalEdge": "LeftEdge",
+                "VerticalEdge": "TopEdge",
+                "LeftMargin": 19.5271,
+                "RightMargin": 1020.4729,
+                "TopMargin": 23.3027,
+                "BottomMargin": 539.6973,
+                "Tag": 125,
+                "Children": [
+                  {
+                    "FileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "IngameEBP_Single_Button.png",
+                      "Plist": "Resources/IngameEBP.plist"
+                    },
+                    "Scale9OriginX": 26,
+                    "Scale9OriginY": 20,
+                    "Scale9Width": 44,
+                    "Scale9Height": 37,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 48.0,
+                      "Y": 38.5
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PositionPercentXEnabled": true,
+                    "PositionPercentYEnabled": true,
+                    "PrePosition": {
+                      "X": 0.5,
+                      "Y": 0.5
+                    },
+                    "PreSize": {
+                      "X": 1.0,
+                      "Y": 1.0
+                    },
+                    "Tag": 130,
+                    "ActionTag": 1460592331,
+                    "Size": {
+                      "X": 96.0,
+                      "Y": 77.0
+                    },
+                    "Name": "imgBg",
+                    "ctype": "ImageViewObjectData"
+                  },
+                  {
+                    "FontSize": 14,
+                    "ButtonText": "",
+                    "TextColor": {
+                      "R": 65,
+                      "G": 65,
+                      "B": 70
+                    },
+                    "Scale9OriginX": -15,
+                    "Scale9OriginY": -11,
+                    "Scale9Width": 30,
+                    "Scale9Height": 22,
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "R": 110,
+                      "G": 110,
+                      "B": 110
+                    },
+                    "ShadowOffsetX": 2.0,
+                    "ShadowOffsetY": -2.0,
+                    "TouchEnable": true,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 48.0,
+                      "Y": 38.5
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PositionPercentXEnabled": true,
+                    "PositionPercentYEnabled": true,
+                    "PrePosition": {
+                      "X": 0.5,
+                      "Y": 0.5
+                    },
+                    "PreSize": {
+                      "X": 0.7292,
+                      "Y": 0.6494
+                    },
+                    "LeftMargin": 13.0,
+                    "RightMargin": 13.0,
+                    "TopMargin": 13.5,
+                    "BottomMargin": 13.5,
+                    "Tag": 128,
+                    "Children": [
+                      {
+                        "FileData": {
+                          "Type": "PlistSubImage",
+                          "Path": "IngameEBP_Icon_Menu.png",
+                          "Plist": "Resources/IngameEBP.plist"
+                        },
+                        "Scale9OriginX": 12,
+                        "Scale9OriginY": 10,
+                        "Scale9Width": 15,
+                        "Scale9Height": 11,
+                        "AnchorPoint": {
+                          "ScaleX": 0.5,
+                          "ScaleY": 0.5
+                        },
+                        "Position": {
+                          "X": 35.0,
+                          "Y": 25.0
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "CColor": {},
+                        "IconVisible": false,
+                        "PositionPercentXEnabled": true,
+                        "PositionPercentYEnabled": true,
+                        "PrePosition": {
+                          "X": 0.5,
+                          "Y": 0.5
+                        },
+                        "PreSize": {
+                          "X": 0.5571,
+                          "Y": 0.62
+                        },
+                        "LeftMargin": 15.5,
+                        "RightMargin": 15.5,
+                        "TopMargin": 9.5,
+                        "BottomMargin": 9.5,
+                        "Tag": 129,
+                        "ActionTag": -183877139,
+                        "Size": {
+                          "X": 39.0,
+                          "Y": 31.0
+                        },
+                        "Name": "img",
+                        "ctype": "ImageViewObjectData"
+                      }
+                    ],
+                    "ActionTag": -683644385,
+                    "Size": {
+                      "X": 70.0,
+                      "Y": 50.0
+                    },
+                    "Name": "btnMenu",
+                    "ctype": "ButtonObjectData"
+                  }
+                ],
+                "ActionTag": -526768991,
+                "Size": {
+                  "X": 96.0,
+                  "Y": 77.0
+                },
+                "Name": "imgMenuChat",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "ClipAble": false,
+                "BackColorAlpha": 103,
+                "SingleColor": {
+                  "R": 127,
+                  "G": 127,
+                  "B": 127
+                },
+                "FirstColor": {
+                  "R": 150,
+                  "G": 200
+                },
+                "EndColor": {},
+                "ColorVector": {
+                  "ScaleY": 1.0
+                },
+                "Scale9Width": 1,
+                "Scale9Height": 1,
+                "TouchEnable": true,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 1.0
+                },
+                "Position": {
+                  "X": 568.0,
+                  "Y": 639.1328
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PositionPercentXEnabled": true,
+                "PrePosition": {
+                  "X": 0.5,
+                  "Y": 0.9986
+                },
+                "PreSize": {
+                  "X": 0.8044,
+                  "Y": 0.0967
+                },
+                "LeftMargin": 111.1168,
+                "RightMargin": 111.1167,
+                "TopMargin": 0.8672,
+                "BottomMargin": 577.2235,
+                "Tag": 405,
+                "Children": [
+                  {
+                    "FileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "ptb_Board.png",
+                      "Plist": "Resources/IngamePTB.plist"
+                    },
+                    "Scale9OriginX": 278,
+                    "Scale9OriginY": 18,
+                    "Scale9Width": 289,
+                    "Scale9Height": 21,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 1.0
+                    },
+                    "Position": {
+                      "X": 456.8832,
+                      "Y": 62.9092
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PositionPercentXEnabled": true,
+                    "PrePosition": {
+                      "X": 0.5,
+                      "Y": 1.0162
+                    },
+                    "PreSize": {
+                      "X": 0.9247,
+                      "Y": 0.9207
+                    },
+                    "VerticalEdge": "TopEdge",
+                    "LeftMargin": 34.3832,
+                    "RightMargin": 34.3832,
+                    "TopMargin": -0.9999,
+                    "BottomMargin": 5.9092,
+                    "Tag": 51,
+                    "ActionTag": 989767648,
+                    "Size": {
+                      "X": 845.0,
+                      "Y": 57.0
+                    },
+                    "Name": "imgBg",
+                    "ctype": "ImageViewObjectData"
+                  },
+                  {
+                    "FontSize": 24,
+                    "LabelText": "Moves : 45",
+                    "FontResource": {
+                      "Type": "Normal",
+                      "Path": "Font/UTMFacebook.ttf",
+                      "Plist": ""
+                    },
+                    "HorizontalAlignmentType": "HT_Center",
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "R": 110,
+                      "G": 110,
+                      "B": 110
+                    },
+                    "ShadowOffsetX": 2.0,
+                    "ShadowOffsetY": -2.0,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 303.8987,
+                      "Y": 40.2293
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "RotationSkewX": 7.9993,
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.3326,
+                      "Y": 0.6498
+                    },
+                    "PreSize": {
+                      "X": 0.1477,
+                      "Y": 0.5653
+                    },
+                    "LeftMargin": 236.3987,
+                    "RightMargin": 542.3678,
+                    "TopMargin": 4.18,
+                    "BottomMargin": 22.7293,
+                    "Tag": 415,
+                    "ActionTag": -1263359457,
+                    "Size": {
+                      "X": 135.0,
+                      "Y": 35.0
+                    },
+                    "Name": "rtTurn",
+                    "ctype": "TextObjectData"
+                  },
+                  {
+                    "FontSize": 24,
+                    "LabelText": "99:99:99____",
+                    "FontResource": {
+                      "Type": "Normal",
+                      "Path": "Font/UTMFacebook.ttf",
+                      "Plist": ""
+                    },
+                    "HorizontalAlignmentType": "HT_Center",
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "R": 110,
+                      "G": 110,
+                      "B": 110
+                    },
+                    "ShadowOffsetX": 2.0,
+                    "ShadowOffsetY": -2.0,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 137.7888,
+                      "Y": 40.2291
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "RotationSkewX": 8.0002,
+                    "CColor": {
+                      "R": 91,
+                      "G": 186,
+                      "B": 230
+                    },
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.1508,
+                      "Y": 0.6498
+                    },
+                    "PreSize": {
+                      "X": 0.1762,
+                      "Y": 0.5653
+                    },
+                    "LeftMargin": 57.2888,
+                    "RightMargin": 695.4777,
+                    "TopMargin": 4.1802,
+                    "BottomMargin": 22.7291,
+                    "Tag": 416,
+                    "ActionTag": -513343564,
+                    "Size": {
+                      "X": 161.0,
+                      "Y": 35.0
+                    },
+                    "Name": "lbTime",
+                    "ctype": "TextObjectData"
+                  },
+                  {
+                    "FontSize": 24,
+                    "LabelText": "99:99:99____",
+                    "FontResource": {
+                      "Type": "Normal",
+                      "Path": "Font/UTMFacebook.ttf",
+                      "Plist": ""
+                    },
+                    "HorizontalAlignmentType": "HT_Center",
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "R": 110,
+                      "G": 110,
+                      "B": 110
+                    },
+                    "ShadowOffsetX": 2.0,
+                    "ShadowOffsetY": -2.0,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 137.79,
+                      "Y": 40.23
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "RotationSkewX": 8.0002,
+                    "CColor": {
+                      "R": 91,
+                      "G": 186,
+                      "B": 230
+                    },
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.1508,
+                      "Y": 0.6498
+                    },
+                    "PreSize": {
+                      "X": 0.1762,
+                      "Y": 0.5653
+                    },
+                    "LeftMargin": 57.29,
+                    "RightMargin": 695.4765,
+                    "TopMargin": 4.1793,
+                    "BottomMargin": 22.73,
+                    "Tag": 128,
+                    "ActionTag": 729469290,
+                    "Size": {
+                      "X": 161.0,
+                      "Y": 35.0
+                    },
+                    "Name": "lbLevel",
+                    "ctype": "TextObjectData"
+                  },
+                  {
+                    "ClipAble": false,
+                    "BackColorAlpha": 25,
+                    "ComboBoxIndex": 1,
+                    "SingleColor": {},
+                    "FirstColor": {
+                      "R": 150,
+                      "G": 200
+                    },
+                    "EndColor": {},
+                    "ColorVector": {
+                      "ScaleY": 1.0
+                    },
+                    "Scale9Width": 1,
+                    "Scale9Height": 1,
+                    "TouchEnable": true,
+                    "AnchorPoint": {},
+                    "Position": {
+                      "X": 382.9486,
+                      "Y": 7.4841
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "RotationSkewX": 18.0002,
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.4191,
+                      "Y": 0.1209
+                    },
+                    "PreSize": {
+                      "X": 0.0011,
+                      "Y": 0.9369
+                    },
+                    "LeftMargin": 382.9486,
+                    "RightMargin": 529.8179,
+                    "TopMargin": -3.5748,
+                    "BottomMargin": 7.4841,
+                    "Tag": 83,
+                    "ActionTag": -1628717623,
+                    "Size": {
+                      "X": 1.0,
+                      "Y": 58.0
+                    },
+                    "Name": "separator",
+                    "ctype": "PanelObjectData"
+                  },
+                  {
+                    "ClipAble": false,
+                    "BackColorAlpha": 25,
+                    "ComboBoxIndex": 1,
+                    "SingleColor": {},
+                    "FirstColor": {
+                      "R": 150,
+                      "G": 200
+                    },
+                    "EndColor": {},
+                    "ColorVector": {
+                      "ScaleY": 1.0
+                    },
+                    "Scale9Width": 1,
+                    "Scale9Height": 1,
+                    "TouchEnable": true,
+                    "AnchorPoint": {},
+                    "Position": {
+                      "X": 555.3088,
+                      "Y": 7.4425
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "RotationSkewX": 18.0002,
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.6077,
+                      "Y": 0.1202
+                    },
+                    "PreSize": {
+                      "X": 0.0011,
+                      "Y": 0.9369
+                    },
+                    "LeftMargin": 555.3088,
+                    "RightMargin": 357.4577,
+                    "TopMargin": -3.5332,
+                    "BottomMargin": 7.4425,
+                    "Tag": 84,
+                    "ActionTag": -842507053,
+                    "Size": {
+                      "X": 1.0,
+                      "Y": 58.0
+                    },
+                    "Name": "separator_0",
+                    "ctype": "PanelObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "ptb_Bar_Point.png",
+                      "Plist": "Resources/IngamePTB.plist"
+                    },
+                    "Scale9Enable": true,
+                    "Scale9OriginX": 32,
+                    "Scale9Width": 49,
+                    "Scale9Height": 22,
+                    "AnchorPoint": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 549.4146,
+                      "Y": 38.2297
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.6013,
+                      "Y": 0.6175
+                    },
+                    "PreSize": {
+                      "X": 0.1357,
+                      "Y": 0.3554
+                    },
+                    "LeftMargin": 425.4146,
+                    "RightMargin": 364.3519,
+                    "TopMargin": 12.6796,
+                    "BottomMargin": 27.2297,
+                    "Tag": 52,
+                    "Children": [
+                      {
+                        "FontSize": 20,
+                        "LabelText": "200.000",
+                        "FontResource": {
+                          "Type": "Normal",
+                          "Path": "Font/UTMFacebook.ttf",
+                          "Plist": ""
+                        },
+                        "HorizontalAlignmentType": "HT_Right",
+                        "VerticalAlignmentType": "VT_Center",
+                        "OutlineColor": {
+                          "G": 0,
+                          "B": 0
+                        },
+                        "ShadowColor": {
+                          "R": 110,
+                          "G": 110,
+                          "B": 110
+                        },
+                        "ShadowOffsetX": 2.0,
+                        "ShadowOffsetY": -2.0,
+                        "AnchorPoint": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 0.5
+                        },
+                        "Position": {
+                          "X": 117.6101,
+                          "Y": 13.285
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "RotationSkewX": 8.001,
+                        "CColor": {},
+                        "IconVisible": false,
+                        "PrePosition": {
+                          "X": 0.9485,
+                          "Y": 0.6039
+                        },
+                        "PreSize": {
+                          "X": 0.7258,
+                          "Y": 1.3182
+                        },
+                        "HorizontalEdge": "RightEdge",
+                        "LeftMargin": 27.6101,
+                        "RightMargin": 6.3899,
+                        "TopMargin": -5.785,
+                        "BottomMargin": -1.215,
+                        "Tag": 171,
+                        "ActionTag": -790875472,
+                        "Size": {
+                          "X": 90.0,
+                          "Y": 29.0
+                        },
+                        "Name": "lbScore",
+                        "ctype": "TextObjectData"
+                      },
+                      {
+                        "FileData": {
+                          "Type": "PlistSubImage",
+                          "Path": "ChoiNhanh_Icon.png",
+                          "Plist": "FindMatch/res/SelectMode_Reworked.plist"
+                        },
+                        "Scale9OriginX": 56,
+                        "Scale9OriginY": 40,
+                        "Scale9Width": 58,
+                        "Scale9Height": 43,
+                        "AnchorPoint": {
+                          "ScaleX": 0.5,
+                          "ScaleY": 0.5
+                        },
+                        "Position": {
+                          "X": 0.0018,
+                          "Y": 10.995
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "CColor": {},
+                        "IconVisible": false,
+                        "PrePosition": {
+                          "X": 0.0,
+                          "Y": 0.4998
+                        },
+                        "PreSize": {
+                          "X": 0.3798,
+                          "Y": 1.5487
+                        },
+                        "LeftMargin": -23.5436,
+                        "RightMargin": 100.4528,
+                        "TopMargin": -6.0308,
+                        "BottomMargin": -6.0409,
+                        "Tag": 76,
+                        "ActionTag": 422561674,
+                        "Size": {
+                          "X": 47.0909,
+                          "Y": 34.0717
+                        },
+                        "Name": "imgIcon",
+                        "ctype": "ImageViewObjectData"
+                      }
+                    ],
+                    "ActionTag": -1403424795,
+                    "Size": {
+                      "X": 124.0,
+                      "Y": 22.0
+                    },
+                    "Name": "imgScore",
+                    "ctype": "ImageViewObjectData"
+                  },
+                  {
+                    "ClipAble": false,
+                    "BackColorAlpha": 102,
+                    "SingleColor": {
+                      "R": 150,
+                      "G": 200
+                    },
+                    "FirstColor": {
+                      "R": 150,
+                      "G": 200
+                    },
+                    "EndColor": {},
+                    "ColorVector": {
+                      "ScaleY": 1.0
+                    },
+                    "Scale9Width": 1,
+                    "Scale9Height": 1,
+                    "TouchEnable": true,
+                    "AnchorPoint": {},
+                    "Position": {
+                      "X": 568.5024,
+                      "Y": 22.5775
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "RotationSkewY": 0.0001,
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.6222,
+                      "Y": 0.3647
+                    },
+                    "PreSize": {
+                      "X": 0.3044,
+                      "Y": 0.5057
+                    },
+                    "LeftMargin": 568.5024,
+                    "RightMargin": 67.1413,
+                    "TopMargin": 8.0273,
+                    "BottomMargin": 22.5775,
+                    "Tag": 419,
+                    "Children": [
+                      {
+                        "FileData": {
+                          "Type": "PlistSubImage",
+                          "Path": "ptb_Bar_02.png",
+                          "Plist": "Resources/IngamePTB.plist"
+                        },
+                        "Scale9OriginX": 81,
+                        "Scale9OriginY": 5,
+                        "Scale9Width": 86,
+                        "Scale9Height": 7,
+                        "AnchorPoint": {
+                          "ScaleX": 0.5,
+                          "ScaleY": 0.5
+                        },
+                        "Position": {
+                          "X": 137.2685,
+                          "Y": 15.4506
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "RotationSkewX": 15.0,
+                        "CColor": {},
+                        "IconVisible": false,
+                        "PrePosition": {
+                          "X": 0.4936,
+                          "Y": 0.4936
+                        },
+                        "PreSize": {
+                          "X": 0.8917,
+                          "Y": 0.5431
+                        },
+                        "LeftMargin": 13.2685,
+                        "RightMargin": 16.8543,
+                        "TopMargin": 7.3539,
+                        "BottomMargin": 6.9506,
+                        "Tag": 79,
+                        "ActionTag": 1543951469,
+                        "Size": {
+                          "X": 248.0,
+                          "Y": 17.0
+                        },
+                        "Name": "scoreBarBg",
+                        "ctype": "ImageViewObjectData"
+                      },
+                      {
+                        "ProgressInfo": 100,
+                        "ImageFileData": {
+                          "Type": "PlistSubImage",
+                          "Path": "ptb_Bar_01.png",
+                          "Plist": "Resources/IngamePTB.plist"
+                        },
+                        "AnchorPoint": {
+                          "ScaleX": 0.5,
+                          "ScaleY": 0.5
+                        },
+                        "Position": {
+                          "X": 137.2699,
+                          "Y": 15.4522
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "RotationSkewX": 15.0,
+                        "CColor": {},
+                        "IconVisible": false,
+                        "PrePosition": {
+                          "X": 0.4936,
+                          "Y": 0.4936
+                        },
+                        "PreSize": {
+                          "X": 0.8701,
+                          "Y": 0.3514
+                        },
+                        "LeftMargin": 16.2699,
+                        "RightMargin": 19.8529,
+                        "TopMargin": 10.3523,
+                        "BottomMargin": 9.9522,
+                        "Tag": 78,
+                        "ActionTag": 2084793228,
+                        "Size": {
+                          "X": 242.0,
+                          "Y": 11.0
+                        },
+                        "Name": "scoreBar",
+                        "ctype": "LoadingBarObjectData"
+                      },
+                      {
+                        "FileData": {
+                          "Type": "PlistSubImage",
+                          "Path": "ptb_Star_01.png",
+                          "Plist": "Resources/IngamePTB.plist"
+                        },
+                        "Scale9OriginX": 9,
+                        "Scale9OriginY": 9,
+                        "Scale9Width": 10,
+                        "Scale9Height": 10,
+                        "AnchorPoint": {
+                          "ScaleX": 0.5,
+                          "ScaleY": 0.5
+                        },
+                        "Position": {
+                          "X": 89.9764,
+                          "Y": 17.1561
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "CColor": {},
+                        "IconVisible": false,
+                        "PrePosition": {
+                          "X": 0.3235,
+                          "Y": 0.548
+                        },
+                        "PreSize": {
+                          "X": 0.1007,
+                          "Y": 0.8944
+                        },
+                        "LeftMargin": 75.9764,
+                        "RightMargin": 174.1464,
+                        "TopMargin": 0.1484,
+                        "BottomMargin": 3.1561,
+                        "Tag": 80,
+                        "ActionTag": 1044047144,
+                        "Size": {
+                          "X": 28.0,
+                          "Y": 28.0
+                        },
+                        "Name": "star1",
+                        "ctype": "ImageViewObjectData"
+                      },
+                      {
+                        "FileData": {
+                          "Type": "PlistSubImage",
+                          "Path": "ptb_Star_01.png",
+                          "Plist": "Resources/IngamePTB.plist"
+                        },
+                        "Scale9OriginX": 9,
+                        "Scale9OriginY": 9,
+                        "Scale9Width": 10,
+                        "Scale9Height": 10,
+                        "AnchorPoint": {
+                          "ScaleX": 0.5,
+                          "ScaleY": 0.5
+                        },
+                        "Position": {
+                          "X": 174.7159,
+                          "Y": 17.3684
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "CColor": {},
+                        "IconVisible": false,
+                        "PrePosition": {
+                          "X": 0.6282,
+                          "Y": 0.5548
+                        },
+                        "PreSize": {
+                          "X": 0.1007,
+                          "Y": 0.8944
+                        },
+                        "LeftMargin": 160.7159,
+                        "RightMargin": 89.4069,
+                        "TopMargin": -0.0639,
+                        "BottomMargin": 3.3684,
+                        "Tag": 81,
+                        "ActionTag": -476854531,
+                        "Size": {
+                          "X": 28.0,
+                          "Y": 28.0
+                        },
+                        "Name": "star2",
+                        "ctype": "ImageViewObjectData"
+                      },
+                      {
+                        "FileData": {
+                          "Type": "PlistSubImage",
+                          "Path": "ptb_Star_01.png",
+                          "Plist": "Resources/IngamePTB.plist"
+                        },
+                        "Scale9OriginX": 9,
+                        "Scale9OriginY": 9,
+                        "Scale9Width": 10,
+                        "Scale9Height": 10,
+                        "AnchorPoint": {
+                          "ScaleX": 0.5,
+                          "ScaleY": 0.5
+                        },
+                        "Position": {
+                          "X": 259.4554,
+                          "Y": 17.5803
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "CColor": {},
+                        "IconVisible": false,
+                        "PrePosition": {
+                          "X": 0.9329,
+                          "Y": 0.5616
+                        },
+                        "PreSize": {
+                          "X": 0.1007,
+                          "Y": 0.8944
+                        },
+                        "LeftMargin": 245.4554,
+                        "RightMargin": 4.6674,
+                        "TopMargin": -0.2758,
+                        "BottomMargin": 3.5803,
+                        "Tag": 82,
+                        "ActionTag": -1129584566,
+                        "Size": {
+                          "X": 28.0,
+                          "Y": 28.0
+                        },
+                        "Name": "star3",
+                        "ctype": "ImageViewObjectData"
+                      }
+                    ],
+                    "ActionTag": 1189089687,
+                    "Size": {
+                      "X": 278.1228,
+                      "Y": 31.3045
+                    },
+                    "Name": "pnStars",
+                    "ctype": "PanelObjectData"
+                  }
+                ],
+                "ActionTag": 1722068532,
+                "Size": {
+                  "X": 913.7665,
+                  "Y": 61.9093
+                },
+                "Name": "pnScore",
+                "ctype": "PanelObjectData"
+              }
+            ],
+            "ActionTag": -1320169676,
+            "Size": {
+              "X": 1136.0,
+              "Y": 640.0
+            },
+            "Name": "bg",
+            "ctype": "PanelObjectData"
+          }
+        ],
+        "Size": {
+          "X": 1136.0,
+          "Y": 640.0
+        },
+        "Name": "Layer",
+        "ctype": "LayerObjectData"
+      },
+      "UsedResources": [
+        "../FindMatch/res/SelectMode_Reworked.plist",
+        "../FindMatch/res/SelectMode_Reworked.png",
+        "../Font/UTMFacebook.ttf",
+        "../Resources/IngameEBP.plist",
+        "../Resources/IngameEBP.png",
+        "../Resources/IngamePTB.plist",
+        "../Resources/IngamePTB.png"
+      ],
+      "ctype": "GameFileData"
+    }
+  },
+  "Type": "Layer"
+}

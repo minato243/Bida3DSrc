@@ -1,0 +1,123 @@
+{
+"skeleton": { "hash": "a03bw2au8RHfNVe4mEAE7cILpAM", "spine": "3.6.53", "width": 722, "height": 253, "images": "../Foull/" },
+"bones": [
+	{ "name": "root" },
+	{ "name": "FAIL", "parent": "root", "x": 3.74, "y": 1.8 },
+	{ "name": "Hue/Saturation 1 copy", "parent": "root", "length": 122.42, "rotation": 90, "x": 2.79, "y": -61.78 },
+	{ "name": "Hue/Saturation 1 copy2", "parent": "root", "length": 122.42, "rotation": 90, "x": 2.79, "y": -61.78 }
+],
+"slots": [
+	{ "name": "Hue/Saturation 1 copy", "bone": "Hue/Saturation 1 copy", "attachment": "Hue/Saturation 1 copy" },
+	{ "name": "Hue/Saturation 1 copy2", "bone": "Hue/Saturation 1 copy2", "attachment": "Hue/Saturation 1 copy", "blend": "additive" },
+	{ "name": "FAIL", "bone": "FAIL", "attachment": "FAIL" }
+],
+"skins": {
+	"default": {
+		"FAIL": {
+			"FAIL": { "x": -5.27, "y": 0.63, "width": 277, "height": 144 }
+		},
+		"Hue/Saturation 1 copy": {
+			"Hue/Saturation 1 copy": { "x": 65.71, "y": 14.82, "rotation": -90, "width": 722, "height": 253 }
+		},
+		"Hue/Saturation 1 copy2": {
+			"Hue/Saturation 1 copy": { "x": 65.71, "y": 14.82, "rotation": -90, "width": 722, "height": 253 }
+		}
+	}
+},
+"animations": {
+	"animation": {
+		"slots": {
+			"Hue/Saturation 1 copy2": {
+				"color": [
+					{ "time": 0, "color": "ffffff00", "curve": "stepped" },
+					{
+						"time": 0.0667,
+						"color": "ffffff00",
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 0.2,
+						"color": "ffffffff",
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 0.5333, "color": "ffffff00" }
+				]
+			}
+		},
+		"bones": {
+			"Hue/Saturation 1 copy": {
+				"scale": [
+					{
+						"time": 0,
+						"x": 1,
+						"y": 0,
+						"curve": [ 0, 0.2, 0.75, 1 ]
+					},
+					{
+						"time": 0.2667,
+						"x": 1,
+						"y": 1.028,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 0.4,
+						"x": 1,
+						"y": 0.953,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 0.5, "x": 1, "y": 1, "curve": "stepped" },
+					{ "time": 2.3333, "x": 1, "y": 1 }
+				]
+			},
+			"FAIL": {
+				"scale": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{
+						"time": 0.1,
+						"x": 0,
+						"y": 0,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 0.2667,
+						"x": 1.038,
+						"y": 1.038,
+						"curve": [ 0, 0.22, 0.75, 1 ]
+					},
+					{
+						"time": 0.4,
+						"x": 0.973,
+						"y": 0.973,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 0.5,
+						"x": 1.009,
+						"y": 1.009,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 0.6, "x": 1, "y": 1 }
+				]
+			},
+			"Hue/Saturation 1 copy2": {
+				"scale": [
+					{ "time": 0, "x": 1, "y": 0, "curve": "stepped" },
+					{
+						"time": 0.0667,
+						"x": 1,
+						"y": 0,
+						"curve": [ 0, 0.2, 0.75, 1 ]
+					},
+					{
+						"time": 0.2,
+						"x": 1,
+						"y": 1.028,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 0.5333, "x": 1, "y": 4.163 }
+				]
+			}
+		}
+	}
+}
+}

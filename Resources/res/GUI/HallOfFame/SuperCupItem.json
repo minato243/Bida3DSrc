@@ -1,0 +1,132 @@
+{
+  "ID": "b828d243-d5da-4993-8662-9bc118afa044",
+  "Version": "2.3.4",
+  "Name": "SuperCupItem",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Tag": 510,
+        "Children": [
+          {
+            "ClipAble": false,
+            "BackColorAlpha": 102,
+            "SingleColor": {
+              "R": 150,
+              "G": 200
+            },
+            "FirstColor": {
+              "R": 150,
+              "G": 200
+            },
+            "EndColor": {},
+            "ColorVector": {
+              "ScaleY": 1.0
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "LeftMargin": -80.0886,
+            "RightMargin": -80.0886,
+            "TopMargin": -100.0,
+            "BottomMargin": -100.0,
+            "Tag": 512,
+            "Children": [
+              {
+                "FileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "DauGiai1v1_Icon.png",
+                  "Plist": "FindMatch/res/SelectMode_Reworked.plist"
+                },
+                "BlendFunc": {
+                  "Src": 1,
+                  "Dst": 771
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 80.0886,
+                  "Y": 100.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PositionPercentXEnabled": true,
+                "PositionPercentYEnabled": true,
+                "PrePosition": {
+                  "X": 0.5,
+                  "Y": 0.5
+                },
+                "PreSize": {
+                  "X": 1.2611,
+                  "Y": 1.1
+                },
+                "LeftMargin": -20.9114,
+                "RightMargin": -20.9114,
+                "TopMargin": -10.0,
+                "BottomMargin": -10.0,
+                "Tag": 511,
+                "ActionTag": 987614584,
+                "Size": {
+                  "X": 202.0,
+                  "Y": 220.0
+                },
+                "Name": "imgCup",
+                "ctype": "SpriteObjectData"
+              }
+            ],
+            "ActionTag": -1137931282,
+            "Size": {
+              "X": 160.1772,
+              "Y": 200.0
+            },
+            "Name": "bg",
+            "ctype": "PanelObjectData"
+          }
+        ],
+        "Size": {
+          "X": 0.0,
+          "Y": 0.0
+        },
+        "Name": "Node",
+        "ctype": "SingleNodeObjectData"
+      },
+      "UsedResources": [
+        "../FindMatch/res/SelectMode_Reworked.plist",
+        "../FindMatch/res/SelectMode_Reworked.png"
+      ],
+      "ctype": "GameFileData"
+    }
+  },
+  "Type": "Node"
+}

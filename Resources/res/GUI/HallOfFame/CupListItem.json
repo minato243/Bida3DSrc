@@ -1,0 +1,245 @@
+{
+  "ID": "b1beb16e-ae2b-4674-9363-08e31a3144d7",
+  "Version": "2.3.4",
+  "Name": "CupListItem",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Tag": 507,
+        "Children": [
+          {
+            "FileData": {
+              "Type": "PlistSubImage",
+              "Path": "HOF_Cup1.png",
+              "Plist": "HallOfFame/res/HallOfFameUI.plist"
+            },
+            "Scale9OriginX": 45,
+            "Scale9OriginY": 68,
+            "Scale9Width": 49,
+            "Scale9Height": 71,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "LeftMargin": -34.4295,
+            "RightMargin": -34.4295,
+            "TopMargin": -51.2727,
+            "BottomMargin": -51.2727,
+            "Tag": 508,
+            "Children": [
+              {
+                "FontSize": 14,
+                "ButtonText": "",
+                "TextColor": {
+                  "R": 65,
+                  "G": 65,
+                  "B": 70
+                },
+                "Scale9Enable": true,
+                "Scale9OriginX": 15,
+                "Scale9OriginY": 5,
+                "Scale9Width": 11,
+                "Scale9Height": 6,
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "TouchEnable": true,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 34.4295,
+                  "Y": 51.2727
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PositionPercentXEnabled": true,
+                "PositionPercentYEnabled": true,
+                "PrePosition": {
+                  "X": 0.5,
+                  "Y": 0.5
+                },
+                "PreSize": {
+                  "X": 1.0212,
+                  "Y": 0.9955
+                },
+                "LeftMargin": -0.7309,
+                "RightMargin": -0.7309,
+                "TopMargin": 0.2299,
+                "BottomMargin": 0.2299,
+                "Tag": 511,
+                "ActionTag": 1629212970,
+                "Size": {
+                  "X": 70.3209,
+                  "Y": 102.0856
+                },
+                "Name": "btnItem",
+                "ctype": "ButtonObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "HOF_Cup_Amount.png",
+                  "Plist": "HallOfFame/res/HallOfFameUI.plist"
+                },
+                "Scale9OriginX": 8,
+                "Scale9OriginY": 8,
+                "Scale9Width": 11,
+                "Scale9Height": 11,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 57.1487,
+                  "Y": 7.7931
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.8299,
+                  "Y": 0.076
+                },
+                "PreSize": {
+                  "X": 0.3921,
+                  "Y": 0.2633
+                },
+                "LeftMargin": 43.6487,
+                "RightMargin": -1.7897,
+                "TopMargin": 81.2523,
+                "BottomMargin": -5.7069,
+                "Tag": 509,
+                "Children": [
+                  {
+                    "FontSize": 16,
+                    "LabelText": "99",
+                    "FontResource": {
+                      "Type": "Normal",
+                      "Path": "Font/facebook.TTF",
+                      "Plist": ""
+                    },
+                    "HorizontalAlignmentType": "HT_Center",
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "R": 110,
+                      "G": 110,
+                      "B": 110
+                    },
+                    "ShadowOffsetX": 2.0,
+                    "ShadowOffsetY": -2.0,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 12.9888,
+                      "Y": 14.7208
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.4811,
+                      "Y": 0.5452
+                    },
+                    "PreSize": {
+                      "X": 0.8519,
+                      "Y": 0.8519
+                    },
+                    "LeftMargin": 1.4888,
+                    "RightMargin": 2.5112,
+                    "TopMargin": 0.7792,
+                    "BottomMargin": 3.2208,
+                    "Tag": 510,
+                    "ActionTag": -416432964,
+                    "Size": {
+                      "X": 23.0,
+                      "Y": 23.0
+                    },
+                    "Name": "lbAmount",
+                    "ctype": "TextObjectData"
+                  }
+                ],
+                "ActionTag": 207660757,
+                "Size": {
+                  "X": 27.0,
+                  "Y": 27.0
+                },
+                "Name": "imgAmount",
+                "ctype": "ImageViewObjectData"
+              }
+            ],
+            "ActionTag": -1713894200,
+            "Size": {
+              "X": 68.859,
+              "Y": 102.5454
+            },
+            "Name": "bg",
+            "ctype": "ImageViewObjectData"
+          }
+        ],
+        "Size": {
+          "X": 0.0,
+          "Y": 0.0
+        },
+        "Name": "Node",
+        "ctype": "SingleNodeObjectData"
+      },
+      "UsedResources": [
+        "../Font/facebook.TTF",
+        "res/HallOfFameUI.plist",
+        "res/HallOfFameUI.png"
+      ],
+      "ctype": "GameFileData"
+    }
+  },
+  "Type": "Node"
+}

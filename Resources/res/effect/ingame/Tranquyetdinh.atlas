@@ -1,0 +1,27 @@
+
+Tranquyetdinh.png
+size: 1024,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Layer 1
+  rotate: false
+  xy: 253, 2
+  size: 204, 88
+  orig: 204, 88
+  offset: 0, 0
+  index: -1
+Layer 2
+  rotate: false
+  xy: 2, 8
+  size: 249, 82
+  orig: 249, 82
+  offset: 0, 0
+  index: -1
+Layer 3
+  rotate: false
+  xy: 459, 15
+  size: 182, 75
+  orig: 182, 75
+  offset: 0, 0
+  index: -1

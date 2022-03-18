@@ -1,0 +1,899 @@
+{
+  "ID": "80f1c8de-1e4c-42b8-9574-47614b06940e",
+  "Version": "2.3.4",
+  "Name": "MainLeagueGUI",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Tag": 108,
+        "Children": [
+          {
+            "ClipAble": false,
+            "BackColorAlpha": 102,
+            "ComboBoxIndex": 1,
+            "SingleColor": {
+              "R": 26,
+              "G": 26,
+              "B": 26
+            },
+            "FirstColor": {
+              "R": 150,
+              "G": 200
+            },
+            "EndColor": {},
+            "ColorVector": {
+              "ScaleY": 1.0
+            },
+            "Scale9Width": 1,
+            "Scale9Height": 1,
+            "TouchEnable": true,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 568.0,
+              "Y": 320.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PositionPercentXEnabled": true,
+            "PrePosition": {
+              "X": 0.5,
+              "Y": 0.5
+            },
+            "PercentWidthEnable": true,
+            "PercentWidthEnabled": true,
+            "PreSize": {
+              "X": 1.0,
+              "Y": 1.0
+            },
+            "Tag": 135,
+            "Children": [
+              {
+                "ClipAble": false,
+                "BackColorAlpha": 102,
+                "SingleColor": {
+                  "R": 150,
+                  "G": 200
+                },
+                "FirstColor": {
+                  "R": 150,
+                  "G": 200
+                },
+                "EndColor": {},
+                "ColorVector": {
+                  "ScaleY": 1.0
+                },
+                "Scale9Width": 1,
+                "Scale9Height": 1,
+                "TouchEnable": true,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 1.0
+                },
+                "Position": {
+                  "X": 568.8,
+                  "Y": 629.6
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.5007,
+                  "Y": 0.9837
+                },
+                "PercentWidthEnable": true,
+                "PercentWidthEnabled": true,
+                "PreSize": {
+                  "X": 1.0,
+                  "Y": 0.1172
+                },
+                "HorizontalEdge": "BothEdge",
+                "LeftMargin": 0.8,
+                "RightMargin": -0.8,
+                "TopMargin": 10.4,
+                "BottomMargin": 554.6,
+                "Tag": 136,
+                "Children": [
+                  {
+                    "FontSize": 14,
+                    "ButtonText": "",
+                    "TextColor": {
+                      "R": 65,
+                      "G": 65,
+                      "B": 70
+                    },
+                    "DisabledFileData": {
+                      "Type": "Default",
+                      "Path": "Default/Button_Disable.png",
+                      "Plist": ""
+                    },
+                    "PressedFileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "League_01_BT_Back.png",
+                      "Plist": "Resources/LeagueSession.plist"
+                    },
+                    "NormalFileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "League_01_BT_Back.png",
+                      "Plist": "Resources/LeagueSession.plist"
+                    },
+                    "Scale9Enable": true,
+                    "Scale9OriginX": 15,
+                    "Scale9OriginY": 11,
+                    "Scale9Width": 52,
+                    "Scale9Height": 34,
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "R": 110,
+                      "G": 110,
+                      "B": 110
+                    },
+                    "ShadowOffsetX": 2.0,
+                    "ShadowOffsetY": -2.0,
+                    "TouchEnable": true,
+                    "AnchorPoint": {
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 0.0,
+                      "Y": 37.5
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PositionPercentYEnabled": true,
+                    "PrePosition": {
+                      "X": 0.0,
+                      "Y": 0.5
+                    },
+                    "PreSize": {
+                      "X": 0.0722,
+                      "Y": 0.7467
+                    },
+                    "HorizontalEdge": "LeftEdge",
+                    "RightMargin": 1054.0,
+                    "TopMargin": 9.5,
+                    "BottomMargin": 9.5,
+                    "Tag": 109,
+                    "ActionTag": 1391902319,
+                    "Size": {
+                      "X": 82.0,
+                      "Y": 56.0
+                    },
+                    "Name": "btnClose",
+                    "ctype": "ButtonObjectData"
+                  },
+                  {
+                    "FontSize": 14,
+                    "ButtonText": "",
+                    "TextColor": {
+                      "R": 65,
+                      "G": 65,
+                      "B": 70
+                    },
+                    "DisabledFileData": {
+                      "Type": "Default",
+                      "Path": "Default/Button_Disable.png",
+                      "Plist": ""
+                    },
+                    "PressedFileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "League_01_BT_01.png",
+                      "Plist": "Resources/LeagueSession.plist"
+                    },
+                    "NormalFileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "League_01_BT_01.png",
+                      "Plist": "Resources/LeagueSession.plist"
+                    },
+                    "Scale9Enable": true,
+                    "Scale9OriginX": 15,
+                    "Scale9OriginY": 11,
+                    "Scale9Width": 212,
+                    "Scale9Height": 45,
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "R": 110,
+                      "G": 110,
+                      "B": 110
+                    },
+                    "ShadowOffsetX": 2.0,
+                    "ShadowOffsetY": -2.0,
+                    "TouchEnable": true,
+                    "AnchorPoint": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 386.0128,
+                      "Y": 35.685
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PositionPercentYEnabled": true,
+                    "PrePosition": {
+                      "X": 0.3398,
+                      "Y": 0.4758
+                    },
+                    "PreSize": {
+                      "X": 0.213,
+                      "Y": 0.8933
+                    },
+                    "HorizontalEdge": "RightEdge",
+                    "LeftMargin": 144.0128,
+                    "RightMargin": 749.9872,
+                    "TopMargin": 5.815,
+                    "BottomMargin": 2.185,
+                    "Tag": 110,
+                    "Children": [
+                      {
+                        "FontSize": 30,
+                        "LabelText": "Ranking Cup",
+                        "FontResource": {
+                          "Type": "Normal",
+                          "Path": "Font/facebook.TTF",
+                          "Plist": ""
+                        },
+                        "OutlineColor": {
+                          "R": 19,
+                          "G": 41,
+                          "B": 67
+                        },
+                        "ShadowColor": {
+                          "R": 19,
+                          "G": 41,
+                          "B": 67
+                        },
+                        "ShadowOffsetX": 0.0,
+                        "ShadowOffsetY": -1.0,
+                        "ShadowEnabled": true,
+                        "AnchorPoint": {
+                          "ScaleX": 0.5,
+                          "ScaleY": 0.5
+                        },
+                        "Position": {
+                          "X": 121.0,
+                          "Y": 35.0
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "RotationSkewX": 5.0001,
+                        "RotationSkewY": -0.0002,
+                        "CColor": {},
+                        "IconVisible": false,
+                        "PrePosition": {
+                          "X": 0.5,
+                          "Y": 0.5224
+                        },
+                        "PreSize": {
+                          "X": 0.719,
+                          "Y": 0.6567
+                        },
+                        "LeftMargin": 34.0,
+                        "RightMargin": 34.0,
+                        "TopMargin": 10.0,
+                        "BottomMargin": 13.0,
+                        "Tag": 22,
+                        "ActionTag": -358446277,
+                        "Size": {
+                          "X": 174.0,
+                          "Y": 44.0
+                        },
+                        "Name": "text",
+                        "ctype": "TextObjectData"
+                      }
+                    ],
+                    "ActionTag": 939477521,
+                    "Size": {
+                      "X": 242.0,
+                      "Y": 67.0
+                    },
+                    "Name": "btn_RankingCup",
+                    "ctype": "ButtonObjectData"
+                  },
+                  {
+                    "FontSize": 14,
+                    "ButtonText": "",
+                    "TextColor": {
+                      "R": 65,
+                      "G": 65,
+                      "B": 70
+                    },
+                    "DisabledFileData": {
+                      "Type": "Default",
+                      "Path": "Default/Button_Disable.png",
+                      "Plist": ""
+                    },
+                    "PressedFileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "League_01_BT_01.png",
+                      "Plist": "Resources/LeagueSession.plist"
+                    },
+                    "NormalFileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "League_01_BT_01.png",
+                      "Plist": "Resources/LeagueSession.plist"
+                    },
+                    "Scale9Enable": true,
+                    "Scale9OriginX": 15,
+                    "Scale9OriginY": 11,
+                    "Scale9Width": 212,
+                    "Scale9Height": 45,
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "R": 110,
+                      "G": 110,
+                      "B": 110
+                    },
+                    "ShadowOffsetX": 2.0,
+                    "ShadowOffsetY": -2.0,
+                    "TouchEnable": true,
+                    "AnchorPoint": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 636.0464,
+                      "Y": 35.685
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PositionPercentYEnabled": true,
+                    "PrePosition": {
+                      "X": 0.5599,
+                      "Y": 0.4758
+                    },
+                    "PreSize": {
+                      "X": 0.213,
+                      "Y": 0.8933
+                    },
+                    "HorizontalEdge": "RightEdge",
+                    "LeftMargin": 394.0464,
+                    "RightMargin": 499.9536,
+                    "TopMargin": 5.815,
+                    "BottomMargin": 2.185,
+                    "Tag": 112,
+                    "Children": [
+                      {
+                        "FontSize": 30,
+                        "LabelText": "My League",
+                        "FontResource": {
+                          "Type": "Normal",
+                          "Path": "Font/facebook.TTF",
+                          "Plist": ""
+                        },
+                        "OutlineColor": {
+                          "G": 0,
+                          "B": 0
+                        },
+                        "ShadowColor": {
+                          "R": 19,
+                          "G": 41,
+                          "B": 67
+                        },
+                        "ShadowOffsetX": 0.0,
+                        "ShadowOffsetY": 1.0,
+                        "ShadowEnabled": true,
+                        "AnchorPoint": {
+                          "ScaleX": 0.5,
+                          "ScaleY": 0.5
+                        },
+                        "Position": {
+                          "X": 127.0,
+                          "Y": 35.0
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "RotationSkewX": 5.0,
+                        "CColor": {
+                          "R": 95,
+                          "G": 191,
+                          "B": 213
+                        },
+                        "IconVisible": false,
+                        "PrePosition": {
+                          "X": 0.5248,
+                          "Y": 0.5224
+                        },
+                        "PreSize": {
+                          "X": 0.6694,
+                          "Y": 0.6567
+                        },
+                        "LeftMargin": 46.0,
+                        "RightMargin": 34.0,
+                        "TopMargin": 10.0,
+                        "BottomMargin": 13.0,
+                        "Tag": 23,
+                        "ActionTag": -511629177,
+                        "Size": {
+                          "X": 162.0,
+                          "Y": 44.0
+                        },
+                        "Name": "text",
+                        "ctype": "TextObjectData"
+                      }
+                    ],
+                    "ActionTag": -109473658,
+                    "Size": {
+                      "X": 242.0,
+                      "Y": 67.0
+                    },
+                    "Name": "btn_MyLeague",
+                    "ctype": "ButtonObjectData"
+                  },
+                  {
+                    "FontSize": 14,
+                    "ButtonText": "",
+                    "TextColor": {
+                      "R": 65,
+                      "G": 65,
+                      "B": 70
+                    },
+                    "DisabledFileData": {
+                      "Type": "Default",
+                      "Path": "Default/Button_Disable.png",
+                      "Plist": ""
+                    },
+                    "PressedFileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "League_01_BT_01.png",
+                      "Plist": "Resources/LeagueSession.plist"
+                    },
+                    "NormalFileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "League_01_BT_01.png",
+                      "Plist": "Resources/LeagueSession.plist"
+                    },
+                    "Scale9Enable": true,
+                    "Scale9OriginX": 15,
+                    "Scale9OriginY": 11,
+                    "Scale9Width": 212,
+                    "Scale9Height": 45,
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "R": 110,
+                      "G": 110,
+                      "B": 110
+                    },
+                    "ShadowOffsetX": 2.0,
+                    "ShadowOffsetY": -2.0,
+                    "TouchEnable": true,
+                    "AnchorPoint": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 885.9664,
+                      "Y": 36.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PositionPercentYEnabled": true,
+                    "PrePosition": {
+                      "X": 0.7799,
+                      "Y": 0.48
+                    },
+                    "PreSize": {
+                      "X": 0.213,
+                      "Y": 0.8933
+                    },
+                    "HorizontalEdge": "RightEdge",
+                    "LeftMargin": 643.9664,
+                    "RightMargin": 250.0336,
+                    "TopMargin": 5.5,
+                    "BottomMargin": 2.5,
+                    "Tag": 111,
+                    "Children": [
+                      {
+                        "FontSize": 30,
+                        "LabelText": "Leaderboard",
+                        "FontResource": {
+                          "Type": "Normal",
+                          "Path": "Font/facebook.TTF",
+                          "Plist": ""
+                        },
+                        "OutlineColor": {
+                          "G": 0,
+                          "B": 0
+                        },
+                        "ShadowColor": {
+                          "R": 19,
+                          "G": 41,
+                          "B": 67
+                        },
+                        "ShadowOffsetX": 0.0,
+                        "ShadowOffsetY": -1.0,
+                        "ShadowEnabled": true,
+                        "AnchorPoint": {
+                          "ScaleX": 0.5,
+                          "ScaleY": 0.5
+                        },
+                        "Position": {
+                          "X": 122.0,
+                          "Y": 35.4
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "RotationSkewX": 5.0001,
+                        "CColor": {
+                          "R": 95,
+                          "G": 191,
+                          "B": 213
+                        },
+                        "IconVisible": false,
+                        "PrePosition": {
+                          "X": 0.5041,
+                          "Y": 0.5284
+                        },
+                        "PreSize": {
+                          "X": 0.6901,
+                          "Y": 0.6567
+                        },
+                        "LeftMargin": 38.5,
+                        "RightMargin": 36.5,
+                        "TopMargin": 9.6,
+                        "BottomMargin": 13.4,
+                        "Tag": 24,
+                        "ActionTag": -219600836,
+                        "Size": {
+                          "X": 167.0,
+                          "Y": 44.0
+                        },
+                        "Name": "text",
+                        "ctype": "TextObjectData"
+                      }
+                    ],
+                    "ActionTag": 2004622444,
+                    "Size": {
+                      "X": 242.0,
+                      "Y": 67.0
+                    },
+                    "Name": "btn_Leaderboard",
+                    "ctype": "ButtonObjectData"
+                  },
+                  {
+                    "FontSize": 14,
+                    "ButtonText": "",
+                    "TextColor": {
+                      "R": 65,
+                      "G": 65,
+                      "B": 70
+                    },
+                    "DisabledFileData": {
+                      "Type": "Default",
+                      "Path": "Default/Button_Disable.png",
+                      "Plist": ""
+                    },
+                    "PressedFileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "League_01_BT_01.png",
+                      "Plist": "Resources/LeagueSession.plist"
+                    },
+                    "NormalFileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "League_01_BT_01.png",
+                      "Plist": "Resources/LeagueSession.plist"
+                    },
+                    "Scale9Enable": true,
+                    "Scale9OriginX": 15,
+                    "Scale9OriginY": 11,
+                    "Scale9Width": 212,
+                    "Scale9Height": 45,
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "R": 110,
+                      "G": 110,
+                      "B": 110
+                    },
+                    "ShadowOffsetX": 2.0,
+                    "ShadowOffsetY": -2.0,
+                    "TouchEnable": true,
+                    "AnchorPoint": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 1136.0,
+                      "Y": 36.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PositionPercentYEnabled": true,
+                    "PrePosition": {
+                      "X": 1.0,
+                      "Y": 0.48
+                    },
+                    "PreSize": {
+                      "X": 0.213,
+                      "Y": 0.8933
+                    },
+                    "HorizontalEdge": "RightEdge",
+                    "LeftMargin": 894.0,
+                    "TopMargin": 5.5,
+                    "BottomMargin": 2.5,
+                    "Tag": 113,
+                    "Children": [
+                      {
+                        "FontSize": 30,
+                        "LabelText": "Club Placement",
+                        "FontResource": {
+                          "Type": "Normal",
+                          "Path": "Font/facebook.TTF",
+                          "Plist": ""
+                        },
+                        "OutlineColor": {
+                          "G": 0,
+                          "B": 0
+                        },
+                        "ShadowColor": {
+                          "R": 19,
+                          "G": 41,
+                          "B": 67
+                        },
+                        "ShadowOffsetX": 0.0,
+                        "ShadowOffsetY": -1.0,
+                        "ShadowEnabled": true,
+                        "AnchorPoint": {
+                          "ScaleX": 0.5,
+                          "ScaleY": 0.5
+                        },
+                        "Position": {
+                          "X": 121.0,
+                          "Y": 35.0
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "RotationSkewX": 5.0,
+                        "CColor": {
+                          "R": 95,
+                          "G": 191,
+                          "B": 213
+                        },
+                        "IconVisible": false,
+                        "PrePosition": {
+                          "X": 0.5,
+                          "Y": 0.5224
+                        },
+                        "PreSize": {
+                          "X": 0.9132,
+                          "Y": 0.6567
+                        },
+                        "LeftMargin": 10.5,
+                        "RightMargin": 10.5,
+                        "TopMargin": 10.0,
+                        "BottomMargin": 13.0,
+                        "Tag": 25,
+                        "ActionTag": -127885868,
+                        "Size": {
+                          "X": 221.0,
+                          "Y": 44.0
+                        },
+                        "Name": "text",
+                        "ctype": "TextObjectData"
+                      }
+                    ],
+                    "ActionTag": -2028323486,
+                    "Size": {
+                      "X": 242.0,
+                      "Y": 67.0
+                    },
+                    "Name": "btn_ClubPlacement",
+                    "ctype": "ButtonObjectData"
+                  }
+                ],
+                "ActionTag": 1608997072,
+                "Size": {
+                  "X": 1136.0,
+                  "Y": 75.0
+                },
+                "Name": "panelButton",
+                "ctype": "PanelObjectData"
+              },
+              {
+                "ClipAble": false,
+                "BackColorAlpha": 102,
+                "FileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "League_01_BG_01.png",
+                  "Plist": "Resources/LeagueSession.plist"
+                },
+                "SingleColor": {
+                  "R": 150,
+                  "G": 200
+                },
+                "FirstColor": {
+                  "R": 150,
+                  "G": 200
+                },
+                "EndColor": {},
+                "ColorVector": {
+                  "ScaleY": 1.0
+                },
+                "Scale9Enable": true,
+                "Scale9OriginX": 374,
+                "Scale9OriginY": 183,
+                "Scale9Width": 388,
+                "Scale9Height": 191,
+                "TouchEnable": true,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 1.0
+                },
+                "Position": {
+                  "X": 568.0,
+                  "Y": 556.992
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.5,
+                  "Y": 0.8703
+                },
+                "PercentWidthEnable": true,
+                "PercentHeightEnable": true,
+                "PercentWidthEnabled": true,
+                "PercentHeightEnabled": true,
+                "PreSize": {
+                  "X": 1.0,
+                  "Y": 0.8703
+                },
+                "HorizontalEdge": "BothEdge",
+                "VerticalEdge": "BottomEdge",
+                "TopMargin": 83.008,
+                "Tag": 114,
+                "Children": [
+                  {
+                    "ClipAble": false,
+                    "BackColorAlpha": 102,
+                    "SingleColor": {
+                      "R": 150,
+                      "G": 200
+                    },
+                    "FirstColor": {
+                      "R": 150,
+                      "G": 200
+                    },
+                    "EndColor": {},
+                    "ColorVector": {
+                      "ScaleY": 1.0
+                    },
+                    "Scale9Width": 1,
+                    "Scale9Height": 1,
+                    "TouchEnable": true,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 1.0
+                    },
+                    "Position": {
+                      "X": 568.0,
+                      "Y": 556.992
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PositionPercentXEnabled": true,
+                    "PositionPercentYEnabled": true,
+                    "PrePosition": {
+                      "X": 0.5,
+                      "Y": 1.0
+                    },
+                    "PercentWidthEnable": true,
+                    "PercentHeightEnable": true,
+                    "PercentWidthEnabled": true,
+                    "PercentHeightEnabled": true,
+                    "PreSize": {
+                      "X": 1.0,
+                      "Y": 0.9677
+                    },
+                    "BottomMargin": 17.9908,
+                    "Tag": 115,
+                    "ActionTag": 941672618,
+                    "Size": {
+                      "X": 1136.0,
+                      "Y": 539.0012
+                    },
+                    "Name": "uiMain",
+                    "ctype": "PanelObjectData"
+                  }
+                ],
+                "ActionTag": 213199794,
+                "Size": {
+                  "X": 1136.0,
+                  "Y": 556.992
+                },
+                "Name": "layoutContent",
+                "ctype": "PanelObjectData"
+              }
+            ],
+            "ActionTag": 943688999,
+            "Size": {
+              "X": 1136.0,
+              "Y": 640.0
+            },
+            "Name": "bg",
+            "ctype": "PanelObjectData"
+          }
+        ],
+        "Size": {
+          "X": 1136.0,
+          "Y": 640.0
+        },
+        "Name": "Scene",
+        "ctype": "SingleNodeObjectData"
+      },
+      "UsedResources": [
+        "../Default/Button_Disable.png",
+        "../Font/facebook.TTF",
+        "../Resources/LeagueSession.plist",
+        "../Resources/LeagueSession.png"
+      ],
+      "ctype": "GameFileData"
+    }
+  },
+  "Type": "Scene"
+}

@@ -1,0 +1,13 @@
+
+fx_hopgay_xuathien.png
+size: 128,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Layer 1 copy 5
+  rotate: false
+  xy: 2, 2
+  size: 110, 342
+  orig: 110, 342
+  offset: 0, 0
+  index: -1

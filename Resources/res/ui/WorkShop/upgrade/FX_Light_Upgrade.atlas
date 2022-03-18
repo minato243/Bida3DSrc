@@ -1,0 +1,27 @@
+
+FX_Light_Upgrade.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Layer 1
+  rotate: false
+  xy: 2, 71
+  size: 368, 419
+  orig: 368, 419
+  offset: 0, 0
+  index: -1
+Layer 2
+  rotate: false
+  xy: 372, 479
+  size: 6, 11
+  orig: 6, 11
+  offset: 0, 0
+  index: -1
+light1
+  rotate: false
+  xy: 2, 2
+  size: 162, 67
+  orig: 162, 67
+  offset: 0, 0
+  index: -1

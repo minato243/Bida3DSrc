@@ -1,0 +1,244 @@
+{
+  "ID": "5c8443ee-7827-4f18-b746-a608eba9c15a",
+  "Version": "2.3.4",
+  "Name": "DisconnectPlayerPopup",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Children": [
+          {
+            "FileData": {
+              "Type": "PlistSubImage",
+              "Path": "Noti_Box_NoLine.png",
+              "Plist": "Resources/CommonPopups.plist"
+            },
+            "Scale9OriginX": 122,
+            "Scale9OriginY": 94,
+            "Scale9Width": 126,
+            "Scale9Height": 98,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 568.0,
+              "Y": 320.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PositionPercentXEnabled": true,
+            "PositionPercentYEnabled": true,
+            "PrePosition": {
+              "X": 0.5,
+              "Y": 0.5
+            },
+            "PreSize": {
+              "X": 0.3257,
+              "Y": 0.4469
+            },
+            "LeftMargin": 383.0,
+            "RightMargin": 383.0,
+            "TopMargin": 177.0,
+            "BottomMargin": 177.0,
+            "Tag": 2,
+            "Children": [
+              {
+                "FontSize": 20,
+                "LabelText": "PLAYER DISCONNECTING",
+                "FontResource": {
+                  "Type": "Normal",
+                  "Path": "Font/UTMFacebook.ttf",
+                  "Plist": ""
+                },
+                "HorizontalAlignmentType": "HT_Center",
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 185.0,
+                  "Y": 254.1576
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PositionPercentXEnabled": true,
+                "PrePosition": {
+                  "X": 0.5,
+                  "Y": 0.8887
+                },
+                "PreSize": {
+                  "X": 0.6324,
+                  "Y": 0.1014
+                },
+                "LeftMargin": 68.0,
+                "RightMargin": 68.0,
+                "TopMargin": 17.3423,
+                "BottomMargin": 239.6576,
+                "Tag": 3,
+                "ActionTag": -1831463525,
+                "Size": {
+                  "X": 234.0,
+                  "Y": 29.0
+                },
+                "Name": "lbTitle",
+                "ctype": "TextObjectData"
+              },
+              {
+                "FontSize": 20,
+                "LabelText": "Game Paused",
+                "FontResource": {
+                  "Type": "Normal",
+                  "Path": "Font/UTMFacebook.ttf",
+                  "Plist": ""
+                },
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "AnchorPoint": {
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 22.3819,
+                  "Y": 183.2283
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.0605,
+                  "Y": 0.6407
+                },
+                "PreSize": {
+                  "X": 0.3459,
+                  "Y": 0.1014
+                },
+                "LeftMargin": 22.3819,
+                "RightMargin": 219.6181,
+                "TopMargin": 88.2717,
+                "BottomMargin": 168.7283,
+                "Tag": 4,
+                "ActionTag": 732106109,
+                "Size": {
+                  "X": 128.0,
+                  "Y": 29.0
+                },
+                "Name": "lbDesc",
+                "ctype": "TextObjectData"
+              },
+              {
+                "FontSize": 20,
+                "LabelText": "Player 1\nPlayer 2\nPlayer 3 : Testing Name",
+                "FontResource": {
+                  "Type": "Normal",
+                  "Path": "Font/UTMFacebook.ttf",
+                  "Plist": ""
+                },
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "AnchorPoint": {
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 23.8527,
+                  "Y": 87.4729
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.0645,
+                  "Y": 0.3058
+                },
+                "PreSize": {
+                  "X": 0.6324,
+                  "Y": 0.3042
+                },
+                "LeftMargin": 23.8527,
+                "RightMargin": 112.1473,
+                "TopMargin": 155.0271,
+                "BottomMargin": 43.9729,
+                "Tag": 5,
+                "ActionTag": 1748278168,
+                "Size": {
+                  "X": 234.0,
+                  "Y": 87.0
+                },
+                "Name": "rtPlayersList",
+                "ctype": "TextObjectData"
+              }
+            ],
+            "ActionTag": 2000821179,
+            "Size": {
+              "X": 370.0,
+              "Y": 286.0
+            },
+            "Name": "bg",
+            "ctype": "ImageViewObjectData"
+          }
+        ],
+        "Size": {
+          "X": 1136.0,
+          "Y": 640.0
+        },
+        "Name": "Layer",
+        "ctype": "LayerObjectData"
+      },
+      "UsedResources": [
+        "../Font/UTMFacebook.ttf",
+        "../Resources/CommonPopups.plist",
+        "../Resources/CommonPopups.png"
+      ],
+      "ctype": "GameFileData"
+    }
+  },
+  "Type": "Layer"
+}

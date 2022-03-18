@@ -1,0 +1,322 @@
+[
+  {
+    "turns": 10,
+    "time": 5,
+    "scoreMilestones": [
+      8000,
+      10000,
+      13000
+    ],
+    "ball": true,
+    "pocket": true,
+    "minMax": [
+      1,
+      3
+    ],
+    "cap": 3
+  },
+  {
+    "turns": 8,
+    "time": 5,
+    "scoreMilestones": [
+      8000,
+      10000,
+      13000
+    ],
+    "ball": true,
+    "pocket": true,
+    "minMax": [
+      2,
+      3
+    ],
+    "cap": 2
+  },
+  {
+    "turns": 8,
+    "time": 4,
+    "scoreMilestones": [
+      6500,
+      9000,
+      11500
+    ],
+    "ball": true,
+    "pocket": false,
+    "minMax": [
+      3,
+      4
+    ],
+    "cap": 2
+  },
+  {
+    "turns": 9,
+    "time": 7,
+    "scoreMilestones": [
+      10000,
+      12000,
+      14000
+    ],
+    "ball": false,
+    "pocket": false,
+    "minMax": [
+      0,
+      0
+    ],
+    "cap": 0
+  },
+  {
+    "turns": 8,
+    "time": 7,
+    "scoreMilestones": [
+      8000,
+      10000,
+      14000
+    ],
+    "ball": true,
+    "pocket": false,
+    "minMax": [
+      1,
+      4
+    ],
+    "cap": 4
+  },
+  {
+    "turns": 10,
+    "time": 5,
+    "scoreMilestones": [
+      7000,
+      12000,
+      14500
+    ],
+    "ball": true,
+    "pocket": true,
+    "minMax": [
+      2,
+      3
+    ],
+    "cap": 3
+  },
+  {
+    "turns": 9,
+    "time": 3,
+    "scoreMilestones": [
+      6000,
+      8000,
+      10000
+    ],
+    "ball": false,
+    "pocket": false,
+    "minMax": [
+      0,
+      0
+    ],
+    "cap": 0
+  },
+  {
+    "turns": 10,
+    "time": 5,
+    "scoreMilestones": [
+      7500,
+      9000,
+      10500
+    ],
+    "ball": true,
+    "pocket": false,
+    "minMax": [
+      2,
+      3
+    ],
+    "cap": 2
+  },
+  {
+    "turns": 7,
+    "time": 2,
+    "scoreMilestones": [
+      6000,
+      7000,
+      7500
+    ],
+    "ball": true,
+    "pocket": false,
+    "minMax": [
+      2,
+      4
+    ],
+    "cap": 2
+  },
+  {
+    "turns": 14,
+    "time": 8,
+    "scoreMilestones": [
+      13000,
+      14000,
+      15000
+    ],
+    "ball": false,
+    "pocket": false,
+    "minMax": [
+      0,
+      0
+    ],
+    "cap": 0
+  },
+  {
+    "turns": 8,
+    "time": 5,
+    "scoreMilestones": [
+      9000,
+      13000,
+      14500
+    ],
+    "ball": true,
+    "pocket": true,
+    "minMax": [
+      1,
+      6
+    ],
+    "cap": 1
+  },
+  {
+    "turns": 6,
+    "time": 5,
+    "scoreMilestones": [
+      6000,
+      10000,
+      12000
+    ],
+    "ball": false,
+    "pocket": true,
+    "minMax": [
+      1,
+      2
+    ],
+    "cap": 6
+  },
+  {
+    "turns": 7,
+    "time": 3,
+    "scoreMilestones": [
+      15000,
+      17000,
+      20000
+    ],
+    "ball": true,
+    "pocket": false,
+    "minMax": [
+      1,
+      3
+    ],
+    "cap": 4
+  },
+  {
+    "turns": 10,
+    "time": 7,
+    "scoreMilestones": [
+      7000,
+      9000,
+      11000
+    ],
+    "ball": true,
+    "pocket": false,
+    "minMax": [
+      2,
+      3
+    ],
+    "cap": 2
+  },
+  {
+    "turns": 7,
+    "time": 5,
+    "scoreMilestones": [
+      4000,
+      6000,
+      8000
+    ],
+    "ball": true,
+    "pocket": false,
+    "minMax": [
+      1,
+      4
+    ],
+    "cap": 3
+  },
+  {
+    "turns": 12,
+    "time": 8,
+    "scoreMilestones": [
+      10000,
+      13000,
+      15000
+    ],
+    "ball": false,
+    "pocket": false,
+    "minMax": [
+      0,
+      0
+    ],
+    "cap": 0
+  },
+  {
+    "turns": 10,
+    "time": 5,
+    "scoreMilestones": [
+      8000,
+      10000,
+      12000
+    ],
+    "ball": true,
+    "pocket": true,
+    "minMax": [
+      1,
+      2
+    ],
+    "cap": 10
+  },
+  {
+    "turns": 15,
+    "time": 10,
+    "scoreMilestones": [
+      12000,
+      16000,
+      20000
+    ],
+    "ball": false,
+    "pocket": true,
+    "minMax": [
+      1,
+      4
+    ],
+    "cap": 5
+  },
+  {
+    "turns": 10,
+    "time": 6,
+    "scoreMilestones": [
+      7000,
+      8000,
+      9000
+    ],
+    "ball": true,
+    "pocket": false,
+    "minMax": [
+      2,
+      4
+    ],
+    "cap": 3
+  },
+  {
+    "turns": 10,
+    "time": 7,
+    "scoreMilestones": [
+      10000,
+      11000,
+      12000
+    ],
+    "ball": false,
+    "pocket": false,
+    "minMax": [
+      0,
+      0
+    ],
+    "cap": 0
+  }
+]

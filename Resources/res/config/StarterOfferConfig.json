@@ -1,0 +1,44 @@
+[
+  {
+    "name": "BoxID_9",
+    "itemID": 9,
+    "amount": 10,
+    "itemType": 1
+  },
+  {
+    "name": "Gold",
+    "itemID": 1,
+    "amount": 100000,
+    "itemType": 0
+  },
+  {
+    "name": "Cash",
+    "itemID": 50,
+    "amount": 1000,
+    "itemType": 0
+  },
+  {
+    "name": "Pin_Break",
+    "itemID": 17,
+    "amount": 250,
+    "itemType": 0
+  },
+  {
+    "name": "Pin_Neutral",
+    "itemID": 16,
+    "amount": 250,
+    "itemType": 0
+  },
+  {
+    "name": "Upgrade_Card_Level_1",
+    "itemID": 20,
+    "amount": 10,
+    "itemType": 0
+  },
+  {
+    "name": "Upgrade_Card_Level_2",
+    "itemID": 21,
+    "amount": 10,
+    "itemType": 0
+  }
+]

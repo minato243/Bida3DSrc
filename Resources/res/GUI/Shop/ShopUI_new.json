@@ -1,0 +1,1436 @@
+{
+  "ID": "0af418eb-8188-4182-8f60-4f301175830c",
+  "Version": "2.3.4",
+  "Name": "ShopUI_new",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Tag": 39,
+        "Children": [
+          {
+            "ClipAble": false,
+            "BackColorAlpha": 102,
+            "SingleColor": {
+              "R": 150,
+              "G": 200
+            },
+            "FirstColor": {
+              "R": 150,
+              "G": 200
+            },
+            "EndColor": {},
+            "ColorVector": {
+              "ScaleY": 1.0
+            },
+            "Scale9Width": 1,
+            "Scale9Height": 1,
+            "StretchWidthEnable": true,
+            "StretchHeightEnable": true,
+            "AnchorPoint": {},
+            "Position": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "PreSize": {
+              "X": 1.0,
+              "Y": 1.0
+            },
+            "HorizontalEdge": "BothEdge",
+            "VerticalEdge": "BothEdge",
+            "Tag": 40,
+            "Children": [
+              {
+                "FileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "normal_bg.png",
+                  "Plist": "Resources/Backgrounds.plist"
+                },
+                "Scale9OriginX": 374,
+                "Scale9OriginY": 211,
+                "Scale9Width": 388,
+                "Scale9Height": 218,
+                "StretchWidthEnable": true,
+                "StretchHeightEnable": true,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "PreSize": {
+                  "X": 1.0,
+                  "Y": 1.0
+                },
+                "HorizontalEdge": "BothEdge",
+                "VerticalEdge": "BothEdge",
+                "Tag": 41,
+                "ActionTag": 1838887981,
+                "Size": {
+                  "X": 1136.0,
+                  "Y": 640.0
+                },
+                "Name": "imgBg",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FontSize": 14,
+                "ButtonText": "",
+                "TextColor": {
+                  "R": 65,
+                  "G": 65,
+                  "B": 70
+                },
+                "DisabledFileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "inven_Glass_Back.png",
+                  "Plist": "Resources/Inventory.plist"
+                },
+                "PressedFileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "inven_Glass_Back.png",
+                  "Plist": "Resources/Inventory.plist"
+                },
+                "NormalFileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "inven_Glass_Back.png",
+                  "Plist": "Resources/Inventory.plist"
+                },
+                "Scale9Enable": true,
+                "Scale9OriginX": 15,
+                "Scale9OriginY": 11,
+                "Scale9Width": 52,
+                "Scale9Height": 34,
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "TouchEnable": true,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 41.0,
+                  "Y": 608.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PositionPercentYEnabled": true,
+                "PrePosition": {
+                  "X": 0.0361,
+                  "Y": 0.95
+                },
+                "PreSize": {
+                  "X": 0.0722,
+                  "Y": 0.0875
+                },
+                "HorizontalEdge": "LeftEdge",
+                "RightMargin": 1054.0,
+                "TopMargin": 4.0,
+                "BottomMargin": 580.0,
+                "Tag": 42,
+                "Children": [
+                  {
+                    "FileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "Button_Back.png",
+                      "Plist": "Resources/Buttons.plist"
+                    },
+                    "Scale9OriginX": 18,
+                    "Scale9OriginY": 15,
+                    "Scale9Width": 19,
+                    "Scale9Height": 18,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 39.4748,
+                      "Y": 27.0648
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.4814,
+                      "Y": 0.4833
+                    },
+                    "PreSize": {
+                      "X": 0.6707,
+                      "Y": 0.8571
+                    },
+                    "HorizontalEdge": "BothEdge",
+                    "VerticalEdge": "BothEdge",
+                    "LeftMargin": 11.9748,
+                    "RightMargin": 15.0252,
+                    "TopMargin": 4.9352,
+                    "BottomMargin": 3.0648,
+                    "Tag": 43,
+                    "ActionTag": -1575415896,
+                    "Size": {
+                      "X": 55.0,
+                      "Y": 48.0
+                    },
+                    "Name": "imgBack",
+                    "ctype": "ImageViewObjectData"
+                  }
+                ],
+                "ActionTag": 744971939,
+                "Size": {
+                  "X": 82.0,
+                  "Y": 56.0
+                },
+                "Name": "btnBack",
+                "ctype": "ButtonObjectData"
+              },
+              {
+                "ClipAble": false,
+                "BackColorAlpha": 102,
+                "SingleColor": {
+                  "R": 150,
+                  "G": 200
+                },
+                "FirstColor": {
+                  "R": 150,
+                  "G": 200
+                },
+                "EndColor": {},
+                "ColorVector": {
+                  "ScaleY": 1.0
+                },
+                "Scale9Width": 1,
+                "Scale9Height": 1,
+                "TouchEnable": true,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 1.0
+                },
+                "Position": {
+                  "X": 568.0,
+                  "Y": 640.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PositionPercentXEnabled": true,
+                "PrePosition": {
+                  "X": 0.5,
+                  "Y": 1.0
+                },
+                "PreSize": {
+                  "X": 0.3819,
+                  "Y": 0.1487
+                },
+                "VerticalEdge": "TopEdge",
+                "LeftMargin": 351.0804,
+                "RightMargin": 351.0804,
+                "BottomMargin": 544.8245,
+                "Tag": 45,
+                "Children": [
+                  {
+                    "FileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "inven_Glass_Title.png",
+                      "Plist": "Resources/Inventory.plist"
+                    },
+                    "Scale9Enable": true,
+                    "Scale9OriginX": 66,
+                    "Scale9Width": 308,
+                    "Scale9Height": 70,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 1.0
+                    },
+                    "Position": {
+                      "X": 217.527,
+                      "Y": 95.1755
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.5014,
+                      "Y": 1.0
+                    },
+                    "PreSize": {
+                      "X": 0.6915,
+                      "Y": 0.7355
+                    },
+                    "HorizontalEdge": "BothEdge",
+                    "VerticalEdge": "TopEdge",
+                    "LeftMargin": 67.527,
+                    "RightMargin": 66.3122,
+                    "BottomMargin": 25.1755,
+                    "Tag": 48,
+                    "Children": [
+                      {
+                        "FontSize": 42,
+                        "LabelText": "SHOP",
+                        "FontResource": {
+                          "Type": "Normal",
+                          "Path": "Font/facebook.TTF",
+                          "Plist": ""
+                        },
+                        "OutlineColor": {
+                          "R": 0,
+                          "G": 0,
+                          "B": 0
+                        },
+                        "OutlineEnabled": true,
+                        "ShadowColor": {
+                          "R": 110,
+                          "G": 110,
+                          "B": 110
+                        },
+                        "ShadowOffsetX": 2.0,
+                        "ShadowOffsetY": -2.0,
+                        "ShadowEnabled": true,
+                        "AnchorPoint": {
+                          "ScaleX": 0.5,
+                          "ScaleY": 0.5
+                        },
+                        "Position": {
+                          "X": 150.0,
+                          "Y": 43.0
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "RotationSkewX": 7.0002,
+                        "CColor": {
+                          "R": 78,
+                          "G": 236
+                        },
+                        "IconVisible": false,
+                        "PositionPercentXEnabled": true,
+                        "PrePosition": {
+                          "X": 0.5,
+                          "Y": 0.6143
+                        },
+                        "PreSize": {
+                          "X": 0.3767,
+                          "Y": 0.9
+                        },
+                        "LeftMargin": 93.5,
+                        "RightMargin": 93.5,
+                        "TopMargin": -4.5,
+                        "BottomMargin": 11.5,
+                        "Tag": 458,
+                        "ActionTag": -1018922731,
+                        "Size": {
+                          "X": 113.0,
+                          "Y": 63.0
+                        },
+                        "Name": "lbTitle",
+                        "ctype": "TextObjectData"
+                      },
+                      {
+                        "FileData": {
+                          "Type": "PlistSubImage",
+                          "Path": "shop.v2_BLACKMARKET.png",
+                          "Plist": "Shop/res/Shop_UI_v2.1.plist"
+                        },
+                        "Scale9OriginX": 112,
+                        "Scale9OriginY": 11,
+                        "Scale9Width": 116,
+                        "Scale9Height": 12,
+                        "AnchorPoint": {
+                          "ScaleX": 0.5,
+                          "ScaleY": 0.5
+                        },
+                        "Position": {
+                          "X": 151.71,
+                          "Y": 40.054
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "CColor": {},
+                        "IconVisible": false,
+                        "PositionPercentXEnabled": true,
+                        "PositionPercentYEnabled": true,
+                        "PrePosition": {
+                          "X": 0.5057,
+                          "Y": 0.5722
+                        },
+                        "PreSize": {
+                          "X": 1.1333,
+                          "Y": 0.4857
+                        },
+                        "LeftMargin": -18.29,
+                        "RightMargin": -21.71,
+                        "TopMargin": 12.946,
+                        "BottomMargin": 23.054,
+                        "Tag": 49,
+                        "ActionTag": 725075751,
+                        "Size": {
+                          "X": 340.0,
+                          "Y": 34.0
+                        },
+                        "VisibleForFrame": false,
+                        "Name": "imgTitle",
+                        "ctype": "ImageViewObjectData"
+                      }
+                    ],
+                    "ActionTag": -1567468844,
+                    "Size": {
+                      "X": 300.0,
+                      "Y": 70.0
+                    },
+                    "Name": "imgTitleBar",
+                    "ctype": "ImageViewObjectData"
+                  }
+                ],
+                "ActionTag": 2097007402,
+                "Size": {
+                  "X": 433.8392,
+                  "Y": 95.1755
+                },
+                "Name": "pnTitle",
+                "ctype": "PanelObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "inven_Board_inside.png",
+                  "Plist": "Resources/Inventory.plist"
+                },
+                "Scale9Enable": true,
+                "Scale9OriginX": 15,
+                "Scale9OriginY": 15,
+                "Scale9Width": 795,
+                "Scale9Height": 511,
+                "StretchWidthEnable": true,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 114.9632,
+                  "Y": 3.7214
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PositionPercentXEnabled": true,
+                "PrePosition": {
+                  "X": 0.1012,
+                  "Y": 0.0058
+                },
+                "PreSize": {
+                  "X": 0.8979,
+                  "Y": 0.8375
+                },
+                "VerticalEdge": "BottomEdge",
+                "LeftMargin": 114.9632,
+                "RightMargin": 1.0223,
+                "TopMargin": 100.2786,
+                "BottomMargin": 3.7214,
+                "Tag": 68,
+                "Children": [
+                  {
+                    "ClipAble": false,
+                    "BackColorAlpha": 102,
+                    "SingleColor": {
+                      "R": 150,
+                      "G": 200
+                    },
+                    "FirstColor": {
+                      "R": 150,
+                      "G": 200
+                    },
+                    "EndColor": {},
+                    "ColorVector": {
+                      "ScaleY": 1.0
+                    },
+                    "Scale9Width": 1,
+                    "Scale9Height": 1,
+                    "TouchEnable": true,
+                    "StretchWidthEnable": true,
+                    "AnchorPoint": {},
+                    "Position": {
+                      "X": -2.4241,
+                      "Y": 2.4747
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PositionPercentXEnabled": true,
+                    "PrePosition": {
+                      "X": -0.0024,
+                      "Y": 0.0046
+                    },
+                    "PreSize": {
+                      "X": 1.0,
+                      "Y": 0.9888
+                    },
+                    "LeftMargin": -2.4241,
+                    "RightMargin": 2.4241,
+                    "TopMargin": 3.5253,
+                    "BottomMargin": 2.4747,
+                    "Tag": 69,
+                    "ActionTag": -1036773284,
+                    "Size": {
+                      "X": 1020.0144,
+                      "Y": 530.0
+                    },
+                    "Name": "container",
+                    "ctype": "PanelObjectData"
+                  }
+                ],
+                "ActionTag": -1248612615,
+                "Size": {
+                  "X": 1020.0144,
+                  "Y": 536.0
+                },
+                "Name": "imgListBg",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "ClipAble": false,
+                "BackColorAlpha": 0,
+                "ComboBoxIndex": 1,
+                "SingleColor": {
+                  "R": 150,
+                  "G": 200
+                },
+                "FirstColor": {
+                  "R": 150,
+                  "G": 200
+                },
+                "EndColor": {},
+                "ColorVector": {
+                  "ScaleY": 1.0
+                },
+                "Scale9Width": 1,
+                "Scale9Height": 1,
+                "TouchEnable": true,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 120.0,
+                  "Y": 540.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.1056,
+                  "Y": 0.8438
+                },
+                "PreSize": {
+                  "X": 0.8891,
+                  "Y": 0.1563
+                },
+                "LeftMargin": 120.0,
+                "RightMargin": 6.0,
+                "BottomMargin": 540.0,
+                "Tag": 216,
+                "ActionTag": -405285609,
+                "Size": {
+                  "X": 1010.0,
+                  "Y": 100.0
+                },
+                "Name": "pnEnabled",
+                "ctype": "PanelObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "inven_Glass_Units.png",
+                  "Plist": "Resources/Inventory.plist"
+                },
+                "Scale9OriginX": 66,
+                "Scale9OriginY": 20,
+                "Scale9Width": 27,
+                "Scale9Height": 16,
+                "AnchorPoint": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 1136.0,
+                  "Y": 601.6
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PositionPercentXEnabled": true,
+                "PositionPercentYEnabled": true,
+                "PrePosition": {
+                  "X": 1.0,
+                  "Y": 0.94
+                },
+                "PreSize": {
+                  "X": 0.1705,
+                  "Y": 0.1094
+                },
+                "LeftMargin": 942.3293,
+                "TopMargin": 3.4,
+                "BottomMargin": 566.6,
+                "Tag": 71,
+                "Children": [
+                  {
+                    "FileData": {
+                      "Type": "Normal",
+                      "Path": "GlobalPopup/res/Gold.png",
+                      "Plist": ""
+                    },
+                    "Scale9OriginX": 15,
+                    "Scale9OriginY": 16,
+                    "Scale9Width": 18,
+                    "Scale9Height": 18,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 42.0,
+                      "Y": 48.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.2169,
+                      "Y": 0.6857
+                    },
+                    "PreSize": {
+                      "X": 0.1446,
+                      "Y": 0.4
+                    },
+                    "LeftMargin": 28.0,
+                    "RightMargin": 137.6707,
+                    "TopMargin": 8.0,
+                    "BottomMargin": 34.0,
+                    "Tag": 72,
+                    "ActionTag": 1529445977,
+                    "Size": {
+                      "X": 28.0,
+                      "Y": 28.0
+                    },
+                    "Name": "imgGold",
+                    "ctype": "ImageViewObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "Icon_Coupon.png",
+                      "Plist": "Resources/ItemIcons.plist"
+                    },
+                    "Scale9OriginX": 51,
+                    "Scale9OriginY": 36,
+                    "Scale9Width": 54,
+                    "Scale9Height": 38,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 45.0,
+                      "Y": 17.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.2324,
+                      "Y": 0.2429
+                    },
+                    "PreSize": {
+                      "X": 0.2169,
+                      "Y": 0.4143
+                    },
+                    "LeftMargin": 24.0,
+                    "RightMargin": 127.6707,
+                    "TopMargin": 38.5,
+                    "BottomMargin": 2.5,
+                    "Tag": 73,
+                    "ActionTag": -1546256573,
+                    "Size": {
+                      "X": 42.0,
+                      "Y": 29.0
+                    },
+                    "Name": "imgCC",
+                    "ctype": "ImageViewObjectData"
+                  },
+                  {
+                    "FontSize": 22,
+                    "LabelText": "10.000.000",
+                    "FontResource": {
+                      "Type": "Normal",
+                      "Path": "Font/facebook.TTF",
+                      "Plist": ""
+                    },
+                    "HorizontalAlignmentType": "HT_Right",
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "R": 110,
+                      "G": 110,
+                      "B": 110
+                    },
+                    "ShadowOffsetX": 2.0,
+                    "ShadowOffsetY": -2.0,
+                    "AnchorPoint": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 183.9872,
+                      "Y": 50.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "RotationSkewX": 9.0,
+                    "CColor": {
+                      "G": 176,
+                      "B": 39
+                    },
+                    "IconVisible": false,
+                    "PositionPercentXEnabled": true,
+                    "PrePosition": {
+                      "X": 0.95,
+                      "Y": 0.7143
+                    },
+                    "PreSize": {
+                      "X": 0.6506,
+                      "Y": 0.4571
+                    },
+                    "LeftMargin": 57.9872,
+                    "RightMargin": 9.6835,
+                    "TopMargin": 4.0,
+                    "BottomMargin": 34.0,
+                    "Tag": 74,
+                    "ActionTag": 1918890952,
+                    "Size": {
+                      "X": 126.0,
+                      "Y": 32.0
+                    },
+                    "Name": "lbGold",
+                    "ctype": "TextObjectData"
+                  },
+                  {
+                    "FontSize": 22,
+                    "LabelText": "100.000",
+                    "FontResource": {
+                      "Type": "Normal",
+                      "Path": "Font/facebook.TTF",
+                      "Plist": ""
+                    },
+                    "HorizontalAlignmentType": "HT_Right",
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "R": 110,
+                      "G": 110,
+                      "B": 110
+                    },
+                    "ShadowOffsetX": 2.0,
+                    "ShadowOffsetY": -2.0,
+                    "AnchorPoint": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 183.9872,
+                      "Y": 20.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "RotationSkewX": 9.0,
+                    "CColor": {
+                      "R": 32,
+                      "G": 238,
+                      "B": 152
+                    },
+                    "IconVisible": false,
+                    "PositionPercentXEnabled": true,
+                    "PrePosition": {
+                      "X": 0.95,
+                      "Y": 0.2857
+                    },
+                    "PreSize": {
+                      "X": 0.4699,
+                      "Y": 0.4571
+                    },
+                    "LeftMargin": 92.9872,
+                    "RightMargin": 9.6835,
+                    "TopMargin": 34.0,
+                    "BottomMargin": 4.0,
+                    "Tag": 75,
+                    "ActionTag": -890822666,
+                    "Size": {
+                      "X": 91.0,
+                      "Y": 32.0
+                    },
+                    "Name": "lbCC",
+                    "ctype": "TextObjectData"
+                  }
+                ],
+                "ActionTag": -1192989255,
+                "Size": {
+                  "X": 193.6707,
+                  "Y": 70.0
+                },
+                "Name": "imgCurrency",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "Shop/res/BLACKMARKET/All_tab.png",
+                  "Plist": ""
+                },
+                "BlendFunc": {
+                  "Src": 1,
+                  "Dst": 771
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 58.9622,
+                  "Y": 278.5402
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.0519,
+                  "Y": 0.4352
+                },
+                "PreSize": {
+                  "X": 0.0889,
+                  "Y": 0.6859
+                },
+                "LeftMargin": 8.4622,
+                "RightMargin": 1026.5378,
+                "TopMargin": 141.9598,
+                "BottomMargin": 59.0402,
+                "Tag": 40,
+                "Children": [
+                  {
+                    "FontSize": 14,
+                    "ButtonText": "",
+                    "TextColor": {
+                      "R": 65,
+                      "G": 65,
+                      "B": 70
+                    },
+                    "DisabledFileData": {
+                      "Type": "Normal",
+                      "Path": "Shop/res/BLACKMARKET/Hot_01.png",
+                      "Plist": ""
+                    },
+                    "PressedFileData": {
+                      "Type": "Normal",
+                      "Path": "Shop/res/BLACKMARKET/Hot_01.png",
+                      "Plist": ""
+                    },
+                    "NormalFileData": {
+                      "Type": "Normal",
+                      "Path": "Shop/res/BLACKMARKET/Hot_02.png",
+                      "Plist": ""
+                    },
+                    "Scale9Enable": true,
+                    "Scale9OriginX": 15,
+                    "Scale9OriginY": 11,
+                    "Scale9Width": 56,
+                    "Scale9Height": 64,
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "R": 110,
+                      "G": 110,
+                      "B": 110
+                    },
+                    "ShadowOffsetX": 2.0,
+                    "ShadowOffsetY": -2.0,
+                    "TouchEnable": true,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 48.4869,
+                      "Y": 382.5221
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.4801,
+                      "Y": 0.8713
+                    },
+                    "PreSize": {
+                      "X": 0.8515,
+                      "Y": 0.1959
+                    },
+                    "LeftMargin": 5.4869,
+                    "RightMargin": 9.5131,
+                    "TopMargin": 13.4779,
+                    "BottomMargin": 339.5221,
+                    "Tag": 45,
+                    "Children": [
+                      {
+                        "FileData": {
+                          "Type": "Normal",
+                          "Path": "Shop/res/BLACKMARKET/Tab_choose_01.png",
+                          "Plist": ""
+                        },
+                        "BlendFunc": {
+                          "Src": 1,
+                          "Dst": 771
+                        },
+                        "AnchorPoint": {
+                          "ScaleX": 0.5,
+                          "ScaleY": 0.5
+                        },
+                        "Position": {
+                          "X": 43.9571,
+                          "Y": 48.0
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "CColor": {},
+                        "IconVisible": false,
+                        "PrePosition": {
+                          "X": 0.5111,
+                          "Y": 0.5581
+                        },
+                        "PreSize": {
+                          "X": 1.1744,
+                          "Y": 1.2442
+                        },
+                        "LeftMargin": -6.5429,
+                        "RightMargin": -8.4571,
+                        "TopMargin": -15.5,
+                        "BottomMargin": -5.5,
+                        "Tag": 41,
+                        "ActionTag": -1016743962,
+                        "Size": {
+                          "X": 101.0,
+                          "Y": 107.0
+                        },
+                        "Name": "pnSelect",
+                        "ctype": "SpriteObjectData"
+                      }
+                    ],
+                    "ActionTag": -1948682449,
+                    "Size": {
+                      "X": 86.0,
+                      "Y": 86.0
+                    },
+                    "Name": "btnTab0",
+                    "ctype": "ButtonObjectData"
+                  },
+                  {
+                    "FontSize": 14,
+                    "ButtonText": "",
+                    "TextColor": {
+                      "R": 65,
+                      "G": 65,
+                      "B": 70
+                    },
+                    "DisabledFileData": {
+                      "Type": "Normal",
+                      "Path": "Shop/res/BLACKMARKET/Box_01.png",
+                      "Plist": ""
+                    },
+                    "PressedFileData": {
+                      "Type": "Normal",
+                      "Path": "Shop/res/BLACKMARKET/Box_01.png",
+                      "Plist": ""
+                    },
+                    "NormalFileData": {
+                      "Type": "Normal",
+                      "Path": "Shop/res/BLACKMARKET/Box_02.png",
+                      "Plist": ""
+                    },
+                    "Scale9Enable": true,
+                    "Scale9OriginX": 15,
+                    "Scale9OriginY": 11,
+                    "Scale9Width": 56,
+                    "Scale9Height": 64,
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "R": 110,
+                      "G": 110,
+                      "B": 110
+                    },
+                    "ShadowOffsetX": 2.0,
+                    "ShadowOffsetY": -2.0,
+                    "TouchEnable": true,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 48.4869,
+                      "Y": 273.0688
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "RotationSkewX": -0.4216,
+                    "RotationSkewY": -0.4214,
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.4801,
+                      "Y": 0.622
+                    },
+                    "PreSize": {
+                      "X": 0.8515,
+                      "Y": 0.1959
+                    },
+                    "LeftMargin": 5.4869,
+                    "RightMargin": 9.5131,
+                    "TopMargin": 122.9312,
+                    "BottomMargin": 230.0688,
+                    "Tag": 47,
+                    "Children": [
+                      {
+                        "FileData": {
+                          "Type": "Normal",
+                          "Path": "Shop/res/BLACKMARKET/Tab_choose_02.png",
+                          "Plist": ""
+                        },
+                        "BlendFunc": {
+                          "Src": 1,
+                          "Dst": 771
+                        },
+                        "AnchorPoint": {
+                          "ScaleX": 0.5,
+                          "ScaleY": 0.5
+                        },
+                        "Position": {
+                          "X": 44.3892,
+                          "Y": 46.8218
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "CColor": {},
+                        "IconVisible": false,
+                        "PrePosition": {
+                          "X": 0.5162,
+                          "Y": 0.5444
+                        },
+                        "PreSize": {
+                          "X": 1.1744,
+                          "Y": 1.2442
+                        },
+                        "LeftMargin": -6.1108,
+                        "RightMargin": -8.8892,
+                        "TopMargin": -14.3218,
+                        "BottomMargin": -6.6782,
+                        "Tag": 42,
+                        "ActionTag": 807476118,
+                        "Size": {
+                          "X": 101.0,
+                          "Y": 107.0
+                        },
+                        "VisibleForFrame": false,
+                        "Name": "pnSelect",
+                        "ctype": "SpriteObjectData"
+                      }
+                    ],
+                    "ActionTag": -1588149415,
+                    "Size": {
+                      "X": 86.0,
+                      "Y": 86.0
+                    },
+                    "Name": "btnTab1",
+                    "ctype": "ButtonObjectData"
+                  },
+                  {
+                    "FontSize": 14,
+                    "ButtonText": "",
+                    "TextColor": {
+                      "R": 65,
+                      "G": 65,
+                      "B": 70
+                    },
+                    "DisabledFileData": {
+                      "Type": "Normal",
+                      "Path": "Shop/res/BLACKMARKET/Gold_01.png",
+                      "Plist": ""
+                    },
+                    "PressedFileData": {
+                      "Type": "Normal",
+                      "Path": "Shop/res/BLACKMARKET/Gold_01.png",
+                      "Plist": ""
+                    },
+                    "NormalFileData": {
+                      "Type": "Normal",
+                      "Path": "Shop/res/BLACKMARKET/Gold_02.png",
+                      "Plist": ""
+                    },
+                    "Scale9Enable": true,
+                    "Scale9OriginX": 15,
+                    "Scale9OriginY": 11,
+                    "Scale9Width": 56,
+                    "Scale9Height": 64,
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "R": 110,
+                      "G": 110,
+                      "B": 110
+                    },
+                    "ShadowOffsetX": 2.0,
+                    "ShadowOffsetY": -2.0,
+                    "TouchEnable": true,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 48.4869,
+                      "Y": 165.1013
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.4801,
+                      "Y": 0.3761
+                    },
+                    "PreSize": {
+                      "X": 0.8515,
+                      "Y": 0.1959
+                    },
+                    "LeftMargin": 5.4869,
+                    "RightMargin": 9.5131,
+                    "TopMargin": 230.8987,
+                    "BottomMargin": 122.1013,
+                    "Tag": 48,
+                    "Children": [
+                      {
+                        "FileData": {
+                          "Type": "Normal",
+                          "Path": "Shop/res/BLACKMARKET/Tab_choose_02.png",
+                          "Plist": ""
+                        },
+                        "BlendFunc": {
+                          "Src": 1,
+                          "Dst": 771
+                        },
+                        "AnchorPoint": {
+                          "ScaleX": 0.5,
+                          "ScaleY": 0.5
+                        },
+                        "Position": {
+                          "X": 45.0,
+                          "Y": 44.3914
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "CColor": {},
+                        "IconVisible": false,
+                        "PrePosition": {
+                          "X": 0.5233,
+                          "Y": 0.5162
+                        },
+                        "PreSize": {
+                          "X": 1.1744,
+                          "Y": 1.2442
+                        },
+                        "LeftMargin": -5.5,
+                        "RightMargin": -9.5,
+                        "TopMargin": -11.8914,
+                        "BottomMargin": -9.1086,
+                        "Tag": 43,
+                        "ActionTag": -1063185991,
+                        "Size": {
+                          "X": 101.0,
+                          "Y": 107.0
+                        },
+                        "VisibleForFrame": false,
+                        "Name": "pnSelect",
+                        "ctype": "SpriteObjectData"
+                      }
+                    ],
+                    "ActionTag": 437286056,
+                    "Size": {
+                      "X": 86.0,
+                      "Y": 86.0
+                    },
+                    "Name": "btnTab2",
+                    "ctype": "ButtonObjectData"
+                  },
+                  {
+                    "FontSize": 14,
+                    "ButtonText": "",
+                    "TextColor": {
+                      "R": 65,
+                      "G": 65,
+                      "B": 70
+                    },
+                    "DisabledFileData": {
+                      "Type": "Normal",
+                      "Path": "Shop/res/BLACKMARKET/Dollar_01.png",
+                      "Plist": ""
+                    },
+                    "PressedFileData": {
+                      "Type": "Normal",
+                      "Path": "Shop/res/BLACKMARKET/Dollar_01.png",
+                      "Plist": ""
+                    },
+                    "NormalFileData": {
+                      "Type": "Normal",
+                      "Path": "Shop/res/BLACKMARKET/Dollar_02.png",
+                      "Plist": ""
+                    },
+                    "Scale9Enable": true,
+                    "Scale9OriginX": 15,
+                    "Scale9OriginY": 11,
+                    "Scale9Width": 56,
+                    "Scale9Height": 64,
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "R": 110,
+                      "G": 110,
+                      "B": 110
+                    },
+                    "ShadowOffsetX": 2.0,
+                    "ShadowOffsetY": -2.0,
+                    "TouchEnable": true,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 48.49,
+                      "Y": 58.6977
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.4801,
+                      "Y": 0.1337
+                    },
+                    "PreSize": {
+                      "X": 0.8515,
+                      "Y": 0.1959
+                    },
+                    "LeftMargin": 5.49,
+                    "RightMargin": 9.51,
+                    "TopMargin": 337.3023,
+                    "BottomMargin": 15.6977,
+                    "Tag": 49,
+                    "Children": [
+                      {
+                        "FileData": {
+                          "Type": "Normal",
+                          "Path": "Shop/res/BLACKMARKET/Tab_choose_01.png",
+                          "Plist": ""
+                        },
+                        "BlendFunc": {
+                          "Src": 1,
+                          "Dst": 771
+                        },
+                        "AnchorPoint": {
+                          "ScaleX": 0.5,
+                          "ScaleY": 0.5
+                        },
+                        "Position": {
+                          "X": 44.8158,
+                          "Y": 39.3194
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "RotationSkewX": 180.0,
+                        "CColor": {},
+                        "IconVisible": false,
+                        "PrePosition": {
+                          "X": 0.5211,
+                          "Y": 0.4572
+                        },
+                        "PreSize": {
+                          "X": 1.1744,
+                          "Y": 1.2442
+                        },
+                        "LeftMargin": -5.6842,
+                        "RightMargin": -9.3158,
+                        "TopMargin": -6.8194,
+                        "BottomMargin": -14.1806,
+                        "Tag": 50,
+                        "ActionTag": -1250223958,
+                        "Size": {
+                          "X": 101.0,
+                          "Y": 107.0
+                        },
+                        "VisibleForFrame": false,
+                        "Name": "pnSelect",
+                        "ctype": "SpriteObjectData"
+                      }
+                    ],
+                    "ActionTag": 2083412364,
+                    "Size": {
+                      "X": 86.0,
+                      "Y": 86.0
+                    },
+                    "Name": "btnTab3",
+                    "ctype": "ButtonObjectData"
+                  }
+                ],
+                "ActionTag": -1259818510,
+                "Size": {
+                  "X": 101.0,
+                  "Y": 439.0
+                },
+                "Name": "bgTab",
+                "ctype": "SpriteObjectData"
+              }
+            ],
+            "ActionTag": 760333282,
+            "Size": {
+              "X": 1136.0,
+              "Y": 640.0
+            },
+            "Name": "bg",
+            "ctype": "PanelObjectData"
+          }
+        ],
+        "Size": {
+          "X": 1136.0,
+          "Y": 640.0
+        },
+        "Name": "Layer",
+        "ctype": "LayerObjectData"
+      },
+      "UsedResources": [
+        "../Font/facebook.TTF",
+        "../GlobalPopup/res/Gold.png",
+        "../Resources/Backgrounds.plist",
+        "../Resources/Backgrounds.png",
+        "../Resources/Buttons.plist",
+        "../Resources/Buttons.png",
+        "../Resources/Inventory.plist",
+        "../Resources/Inventory.png",
+        "../Resources/ItemIcons.plist",
+        "../Resources/ItemIcons.png",
+        "res/BLACKMARKET/All_tab.png",
+        "res/BLACKMARKET/Box_01.png",
+        "res/BLACKMARKET/Box_02.png",
+        "res/BLACKMARKET/Dollar_01.png",
+        "res/BLACKMARKET/Dollar_02.png",
+        "res/BLACKMARKET/Gold_01.png",
+        "res/BLACKMARKET/Gold_02.png",
+        "res/BLACKMARKET/Hot_01.png",
+        "res/BLACKMARKET/Hot_02.png",
+        "res/BLACKMARKET/Tab_choose_01.png",
+        "res/BLACKMARKET/Tab_choose_02.png",
+        "res/Shop_UI_v2.1.plist",
+        "res/Shop_UI_v2.1.png"
+      ],
+      "ctype": "GameFileData"
+    }
+  },
+  "Type": "Layer"
+}

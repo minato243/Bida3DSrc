@@ -1,0 +1,41 @@
+
+FX_Text_Upgrade.png
+size: 2048,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+6
+  rotate: false
+  xy: 2, 214
+  size: 658, 658
+  orig: 658, 658
+  offset: 0, 0
+  index: -1
+9
+  rotate: false
+  xy: 662, 502
+  size: 658, 370
+  orig: 658, 370
+  offset: 0, 0
+  index: -1
+flash_flare
+  rotate: false
+  xy: 1322, 616
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+light1
+  rotate: false
+  xy: 2, 2
+  size: 162, 67
+  orig: 162, 67
+  offset: 0, 0
+  index: -1
+workshop_FUSION_SUCCESS
+  rotate: false
+  xy: 2, 71
+  size: 808, 141
+  orig: 808, 141
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,71 @@
+{
+"skeleton": { "hash": "F1Q4rMidfIHC822warnVzNE1h3I", "spine": "3.6.53", "width": 110, "height": 342, "images": "../Fusion/FUSION/" },
+"bones": [
+	{ "name": "root" },
+	{ "name": "Layer 1 copy 6", "parent": "root", "rotation": 90, "x": -1.04, "y": -4.79 },
+	{ "name": "Layer 1 copy 7", "parent": "root", "rotation": 90, "x": -1.04, "y": -4.79 },
+	{ "name": "Layer 1 copy 8", "parent": "root", "rotation": 90, "x": -1.04, "y": -4.79 }
+],
+"slots": [
+	{ "name": "Layer 1 copy 5", "bone": "Layer 1 copy 6", "attachment": "Layer 1 copy 5", "blend": "additive" },
+	{ "name": "Layer 1 copy 6", "bone": "Layer 1 copy 7", "attachment": "Layer 1 copy 5", "blend": "additive" },
+	{ "name": "Layer 1 copy 7", "bone": "Layer 1 copy 8", "attachment": "Layer 1 copy 5", "blend": "additive" }
+],
+"skins": {
+	"default": {
+		"Layer 1 copy 5": {
+			"Layer 1 copy 5": { "color": "ffffff8f", "x": 3.82, "y": -1.23, "rotation": -90, "width": 110, "height": 342 }
+		},
+		"Layer 1 copy 6": {
+			"Layer 1 copy 5": { "color": "ffffff8f", "x": 3.82, "y": -1.23, "rotation": -90, "width": 110, "height": 342 }
+		},
+		"Layer 1 copy 7": {
+			"Layer 1 copy 5": { "color": "ffffff8f", "x": 3.82, "y": -1.23, "rotation": -90, "width": 110, "height": 342 }
+		}
+	}
+},
+"animations": {
+	"animation": {
+		"slots": {
+			"Layer 1 copy 5": {
+				"color": [
+					{ "time": 0, "color": "ffffff00" },
+					{ "time": 0.3333, "color": "ffffffd3", "curve": "stepped" },
+					{ "time": 1.3333, "color": "ffffffd3" },
+					{ "time": 1.5, "color": "ffffff00" }
+				]
+			},
+			"Layer 1 copy 6": {
+				"color": [
+					{ "time": 0, "color": "ffffff00" },
+					{ "time": 0.2, "color": "ffffffe5" },
+					{ "time": 0.4, "color": "ffffff00" }
+				]
+			},
+			"Layer 1 copy 7": {
+				"color": [
+					{ "time": 0, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.1667, "color": "ffffff00" },
+					{ "time": 0.3667, "color": "ffffffd9" },
+					{ "time": 0.5667, "color": "ffffff00" }
+				]
+			}
+		},
+		"bones": {
+			"Layer 1 copy 7": {
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1 },
+					{ "time": 0.4, "x": 1.168, "y": 1.468 }
+				]
+			},
+			"Layer 1 copy 8": {
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1, "curve": "stepped" },
+					{ "time": 0.1667, "x": 1, "y": 1 },
+					{ "time": 0.5667, "x": 1.168, "y": 1.468 }
+				]
+			}
+		}
+	}
+}
+}

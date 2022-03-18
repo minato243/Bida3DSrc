@@ -1,0 +1,201 @@
+[
+  {
+    "id": 1,
+    "type": 0,
+    "price": 1000,
+    "priceType": "gold",
+    "discount": 0,
+    "buyable": true,
+    "items": [
+      1
+    ],
+    "itemType": [
+      0
+    ],
+    "itemQuantity": [
+      1
+    ],
+    "shopCategory": "NEUTRAL_CUE",
+    "localPayment": false,
+    "achievementId": -1
+  },
+  {
+    "id": 2,
+    "type": 0,
+    "price": 1000,
+    "priceType": "gold",
+    "discount": 0,
+    "buyable": true,
+    "items": [
+      2
+    ],
+    "itemType": [
+      0
+    ],
+    "itemQuantity": [
+      1
+    ],
+    "shopCategory": "BREAK_CUE",
+    "localPayment": false,
+    "achievementId": -1
+  },
+  {
+    "id": 3,
+    "type": 0,
+    "price": 1000,
+    "priceType": "gold",
+    "discount": 0,
+    "buyable": true,
+    "items": [
+      3
+    ],
+    "itemType": [
+      0
+    ],
+    "itemQuantity": [
+      1
+    ],
+    "shopCategory": "JUMP_CUE",
+    "localPayment": false,
+    "achievementId": -1
+  },
+  {
+    "id": 4,
+    "type": 0,
+    "price": 1000,
+    "priceType": "gold",
+    "discount": 0,
+    "buyable": true,
+    "items": [
+      4
+    ],
+    "itemType": [
+      0
+    ],
+    "itemQuantity": [
+      1
+    ],
+    "shopCategory": "MASSE_CUE",
+    "localPayment": false,
+    "achievementId": -1
+  },
+  {
+    "id": 5,
+    "type": 1,
+    "price": 150000,
+    "priceType": "cue_coupon",
+    "discount": 0,
+    "buyable": false,
+    "items": [
+      1,
+      1
+    ],
+    "itemType": [
+      0,
+      1
+    ],
+    "itemQuantity": [
+      1,
+      100
+    ],
+    "shopCategory": "RESTOCK",
+    "localPayment": false,
+    "achievementId": -1
+  },
+  {
+    "id": 6,
+    "type": 1,
+    "price": 150000,
+    "priceType": "cue_coupon",
+    "discount": 0,
+    "buyable": false,
+    "items": [
+      2,
+      1
+    ],
+    "itemType": [
+      0,
+      1
+    ],
+    "itemQuantity": [
+      1,
+      101
+    ],
+    "shopCategory": "RESTOCK",
+    "localPayment": false,
+    "achievementId": -1
+  },
+  {
+    "id": 7,
+    "type": 1,
+    "price": 150000,
+    "priceType": "cue_coupon",
+    "discount": 0,
+    "buyable": false,
+    "items": [
+      3,
+      1
+    ],
+    "itemType": [
+      0,
+      1
+    ],
+    "itemQuantity": [
+      1,
+      102
+    ],
+    "shopCategory": "RESTOCK",
+    "localPayment": false,
+    "achievementId": -1
+  },
+  {
+    "id": 8,
+    "type": 1,
+    "price": 150000,
+    "priceType": "cue_coupon",
+    "discount": 0,
+    "buyable": false,
+    "items": [
+      4,
+      1
+    ],
+    "itemType": [
+      0,
+      1
+    ],
+    "itemQuantity": [
+      1,
+      103
+    ],
+    "shopCategory": "RESTOCK",
+    "localPayment": false,
+    "achievementId": -1
+  },
+  {
+    "id": 9,
+    "type": 2,
+    "price": 150000,
+    "priceType": "gold",
+    "discount": 0,
+    "buyable": false,
+    "items": [
+      1,
+      2,
+      4,
+      1
+    ],
+    "itemType": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "itemQuantity": [
+      1,
+      10000
+    ],
+    "shopCategory": "HOT_DEALS",
+    "localPayment": false,
+    "achievementId": -1
+  }
+]

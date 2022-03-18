@@ -1,0 +1,4096 @@
+{
+  "ID": "26f35925-1a82-4122-a8a4-4e08169bb8e3",
+  "Version": "2.3.4",
+  "Name": "TutorialHUD",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Tag": 395,
+        "Children": [
+          {
+            "FileData": {
+              "Type": "Default",
+              "Path": "Default/Sprite.png",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {},
+            "Position": {
+              "X": 0.3944,
+              "Y": 0.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.0003,
+              "Y": 0.0
+            },
+            "PreSize": {
+              "X": 0.0405,
+              "Y": 0.0719
+            },
+            "LeftMargin": 0.3944,
+            "RightMargin": 1089.6056,
+            "TopMargin": 594.0,
+            "Tag": 44,
+            "ActionTag": -793228998,
+            "Size": {
+              "X": 46.0,
+              "Y": 46.0
+            },
+            "VisibleForFrame": false,
+            "Name": "fake_new_ingame_1",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Default",
+              "Path": "Default/ImageFile.png",
+              "Plist": ""
+            },
+            "Scale9OriginX": 15,
+            "Scale9OriginY": 13,
+            "Scale9Width": 16,
+            "Scale9Height": 20,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 1.0
+            },
+            "Position": {
+              "X": 64.0,
+              "Y": 630.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.0563,
+              "Y": 0.9844
+            },
+            "PreSize": {
+              "X": 0.0836,
+              "Y": 0.1594
+            },
+            "HorizontalEdge": "LeftEdge",
+            "VerticalEdge": "TopEdge",
+            "LeftMargin": 16.5,
+            "RightMargin": 1024.5,
+            "TopMargin": 10.0,
+            "BottomMargin": 528.0,
+            "Tag": 40,
+            "ActionTag": 1294167333,
+            "Size": {
+              "X": 95.0,
+              "Y": 102.0
+            },
+            "VisibleForFrame": false,
+            "Name": "bgBtnGroup",
+            "ctype": "ImageViewObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "PlistSubImage",
+              "Path": "IngameEBP_Single_Button.png",
+              "Plist": "Resources/IngameEBP.plist"
+            },
+            "Scale9OriginX": 15,
+            "Scale9OriginY": 15,
+            "Scale9Width": 66,
+            "Scale9Height": 47,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 69.9522,
+              "Y": 590.4606
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.0616,
+              "Y": 0.9226
+            },
+            "PreSize": {
+              "X": 0.0845,
+              "Y": 0.1203
+            },
+            "LeftMargin": 21.9522,
+            "RightMargin": 1018.0478,
+            "TopMargin": 11.0394,
+            "BottomMargin": 551.9606,
+            "Tag": 299,
+            "Children": [
+              {
+                "FontSize": 14,
+                "ButtonText": "",
+                "TextColor": {
+                  "R": 65,
+                  "G": 65,
+                  "B": 70
+                },
+                "DisabledFileData": {
+                  "Type": "Default",
+                  "Path": "Default/Button_Disable.png",
+                  "Plist": ""
+                },
+                "PressedFileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "IngameEBP_Icon_Menu.png",
+                  "Plist": "Resources/IngameEBP.plist"
+                },
+                "NormalFileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "IngameEBP_Icon_Menu.png",
+                  "Plist": "Resources/IngameEBP.plist"
+                },
+                "Scale9Enable": true,
+                "Scale9OriginX": 15,
+                "Scale9OriginY": 11,
+                "Scale9Width": 9,
+                "Scale9Height": 9,
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "TouchEnable": true,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 47.0784,
+                  "Y": 37.5673
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PositionPercentXEnabled": true,
+                "PrePosition": {
+                  "X": 0.4904,
+                  "Y": 0.4879
+                },
+                "PreSize": {
+                  "X": 0.4063,
+                  "Y": 0.4026
+                },
+                "VerticalEdge": "TopEdge",
+                "LeftMargin": 27.5784,
+                "RightMargin": 29.4216,
+                "TopMargin": 23.9327,
+                "BottomMargin": 22.0673,
+                "Tag": 300,
+                "ActionTag": 647840126,
+                "Size": {
+                  "X": 39.0,
+                  "Y": 31.0
+                },
+                "Name": "btnMenu2",
+                "ctype": "ButtonObjectData"
+              }
+            ],
+            "ActionTag": -1769452470,
+            "Size": {
+              "X": 96.0,
+              "Y": 77.0
+            },
+            "Name": "imgLoneMenu",
+            "ctype": "ImageViewObjectData"
+          },
+          {
+            "FontSize": 14,
+            "ButtonText": "",
+            "TextColor": {
+              "R": 65,
+              "G": 65,
+              "B": 70
+            },
+            "DisabledFileData": {
+              "Type": "Default",
+              "Path": "Default/Button_Disable.png",
+              "Plist": ""
+            },
+            "PressedFileData": {
+              "Type": "Default",
+              "Path": "Default/Button_Press.png",
+              "Plist": ""
+            },
+            "NormalFileData": {
+              "Type": "Default",
+              "Path": "Default/Button_Normal.png",
+              "Plist": ""
+            },
+            "Scale9Enable": true,
+            "Scale9OriginX": 15,
+            "Scale9OriginY": 11,
+            "Scale9Width": 16,
+            "Scale9Height": 14,
+            "OutlineColor": {
+              "G": 0,
+              "B": 0
+            },
+            "ShadowColor": {
+              "R": 110,
+              "G": 110,
+              "B": 110
+            },
+            "ShadowOffsetX": 2.0,
+            "ShadowOffsetY": -2.0,
+            "TouchEnable": true,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 64.0003,
+              "Y": 598.9994
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.0563,
+              "Y": 0.9359
+            },
+            "PreSize": {
+              "X": 0.0343,
+              "Y": 0.0484
+            },
+            "HorizontalEdge": "LeftEdge",
+            "VerticalEdge": "TopEdge",
+            "LeftMargin": 44.5003,
+            "RightMargin": 1052.4998,
+            "TopMargin": 25.5006,
+            "BottomMargin": 583.4994,
+            "Tag": 38,
+            "ActionTag": 1744938765,
+            "Size": {
+              "X": 39.0,
+              "Y": 31.0
+            },
+            "VisibleForFrame": false,
+            "Name": "btnMenu",
+            "ctype": "ButtonObjectData"
+          },
+          {
+            "FontSize": 14,
+            "ButtonText": "",
+            "TextColor": {
+              "R": 65,
+              "G": 65,
+              "B": 70
+            },
+            "DisabledFileData": {
+              "Type": "Default",
+              "Path": "Default/Button_Disable.png",
+              "Plist": ""
+            },
+            "PressedFileData": {
+              "Type": "PlistSubImage",
+              "Path": "IngameEBP_Square_Button_Box.png",
+              "Plist": "Resources/IngameEBP.plist"
+            },
+            "NormalFileData": {
+              "Type": "PlistSubImage",
+              "Path": "IngameEBP_Square_Button_Box.png",
+              "Plist": "Resources/IngameEBP.plist"
+            },
+            "Scale9Enable": true,
+            "Scale9OriginX": 128,
+            "Scale9OriginY": 133,
+            "Scale9Width": 10,
+            "Scale9Height": 1,
+            "OutlineColor": {
+              "G": 0,
+              "B": 0
+            },
+            "ShadowColor": {
+              "R": 110,
+              "G": 110,
+              "B": 110
+            },
+            "ShadowOffsetX": 2.0,
+            "ShadowOffsetY": -2.0,
+            "TouchEnable": true,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 64.8954,
+              "Y": 67.0397
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.0571,
+              "Y": 0.1047
+            },
+            "PreSize": {
+              "X": 0.0819,
+              "Y": 0.1453
+            },
+            "HorizontalEdge": "LeftEdge",
+            "VerticalEdge": "BottomEdge",
+            "LeftMargin": 18.3954,
+            "RightMargin": 1024.6046,
+            "TopMargin": 526.4603,
+            "BottomMargin": 20.5397,
+            "Tag": 126,
+            "Children": [
+              {
+                "FileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "IngameEBP_Eye.png",
+                  "Plist": "Resources/IngameEBP.plist"
+                },
+                "Scale9OriginX": 15,
+                "Scale9OriginY": 19,
+                "Scale9Width": 69,
+                "Scale9Height": 20,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 48.0717,
+                  "Y": 55.056
+                },
+                "Scale": {
+                  "ScaleX": 0.75,
+                  "ScaleY": 0.75
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PositionPercentXEnabled": true,
+                "PositionPercentYEnabled": true,
+                "PrePosition": {
+                  "X": 0.5169,
+                  "Y": 0.592
+                },
+                "PreSize": {
+                  "X": 1.0645,
+                  "Y": 0.6237
+                },
+                "LeftMargin": -1.4283,
+                "RightMargin": -4.5717,
+                "TopMargin": 8.944,
+                "BottomMargin": 26.056,
+                "Tag": 101,
+                "ActionTag": 250512573,
+                "Size": {
+                  "X": 99.0,
+                  "Y": 58.0
+                },
+                "Name": "imgEye",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "IngameEBP_Icon_2D.png",
+                  "Plist": "Resources/IngameEBP.plist"
+                },
+                "Scale9OriginX": 10,
+                "Scale9OriginY": 7,
+                "Scale9Width": 12,
+                "Scale9Height": 8,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 46.1373,
+                  "Y": 22.9524
+                },
+                "Scale": {
+                  "ScaleX": 0.75,
+                  "ScaleY": 0.75
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PositionPercentXEnabled": true,
+                "PositionPercentYEnabled": true,
+                "PrePosition": {
+                  "X": 0.4961,
+                  "Y": 0.2468
+                },
+                "PreSize": {
+                  "X": 0.3441,
+                  "Y": 0.2366
+                },
+                "LeftMargin": 30.1373,
+                "RightMargin": 30.8627,
+                "TopMargin": 59.0476,
+                "BottomMargin": 11.9524,
+                "Tag": 99,
+                "ActionTag": 134180277,
+                "Size": {
+                  "X": 32.0,
+                  "Y": 22.0
+                },
+                "Name": "img2D",
+                "ctype": "ImageViewObjectData"
+              }
+            ],
+            "ActionTag": -1678570651,
+            "Size": {
+              "X": 93.0,
+              "Y": 93.0
+            },
+            "Name": "btn2D",
+            "ctype": "ButtonObjectData"
+          },
+          {
+            "FontSize": 14,
+            "ButtonText": "",
+            "TextColor": {
+              "R": 65,
+              "G": 65,
+              "B": 70
+            },
+            "Scale9Enable": true,
+            "Scale9OriginX": -15,
+            "Scale9OriginY": -6,
+            "Scale9Width": 30,
+            "Scale9Height": 12,
+            "OutlineColor": {
+              "G": 0,
+              "B": 0
+            },
+            "ShadowColor": {
+              "R": 110,
+              "G": 110,
+              "B": 110
+            },
+            "ShadowOffsetX": 2.0,
+            "ShadowOffsetY": -2.0,
+            "TouchEnable": true,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 64.0001,
+              "Y": 554.9995
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.0563,
+              "Y": 0.8672
+            },
+            "PreSize": {
+              "X": 0.0546,
+              "Y": 0.0328
+            },
+            "HorizontalEdge": "LeftEdge",
+            "VerticalEdge": "TopEdge",
+            "LeftMargin": 33.0001,
+            "RightMargin": 1040.9999,
+            "TopMargin": 74.5005,
+            "BottomMargin": 544.4995,
+            "Tag": 396,
+            "ActionTag": -1471189857,
+            "Size": {
+              "X": 62.0,
+              "Y": 21.0
+            },
+            "VisibleForFrame": false,
+            "Name": "btnDemo",
+            "ctype": "ButtonObjectData"
+          },
+          {
+            "AnchorPoint": {},
+            "Position": {
+              "X": 117.9602,
+              "Y": 469.9781
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": true,
+            "PrePosition": {
+              "X": 0.1038,
+              "Y": 0.7343
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "HorizontalEdge": "LeftEdge",
+            "VerticalEdge": "TopEdge",
+            "LeftMargin": 117.9602,
+            "RightMargin": 1018.0398,
+            "TopMargin": 170.0219,
+            "BottomMargin": 469.9781,
+            "Tag": 398,
+            "Children": [
+              {
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 0.0001,
+                  "Y": 188.9996
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": true,
+                "PrePosition": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "PreSize": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "LeftMargin": 0.0001,
+                "RightMargin": -0.0001,
+                "TopMargin": -188.9996,
+                "BottomMargin": 188.9996,
+                "Tag": 255,
+                "Children": [
+                  {
+                    "FileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "tut_task_icon_01.png",
+                      "Plist": "Resources/tutorial.plist"
+                    },
+                    "Scale9OriginX": 8,
+                    "Scale9OriginY": 9,
+                    "Scale9Width": 11,
+                    "Scale9Height": 10,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 33.0,
+                      "Y": -44.6307
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "PreSize": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "LeftMargin": 19.5,
+                    "RightMargin": -46.5,
+                    "TopMargin": 30.6307,
+                    "BottomMargin": -58.6307,
+                    "Tag": 248,
+                    "Children": [
+                      {
+                        "FileData": {
+                          "Type": "PlistSubImage",
+                          "Path": "tut_task_black_box.png",
+                          "Plist": "Resources/tutorial.plist"
+                        },
+                        "Scale9OriginX": 138,
+                        "Scale9OriginY": 8,
+                        "Scale9Width": 143,
+                        "Scale9Height": 10,
+                        "AnchorPoint": {
+                          "ScaleY": 0.5
+                        },
+                        "Position": {
+                          "X": 13.5,
+                          "Y": 14.0
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "CColor": {},
+                        "IconVisible": false,
+                        "PositionPercentXEnabled": true,
+                        "PositionPercentYEnabled": true,
+                        "PrePosition": {
+                          "X": 0.5,
+                          "Y": 0.5
+                        },
+                        "PreSize": {
+                          "X": 15.5185,
+                          "Y": 0.9286
+                        },
+                        "LeftMargin": 13.5,
+                        "RightMargin": -405.5,
+                        "TopMargin": 1.0,
+                        "BottomMargin": 1.0,
+                        "Tag": 377,
+                        "Children": [
+                          {
+                            "FileData": {
+                              "Type": "PlistSubImage",
+                              "Path": "tut_task_line.png",
+                              "Plist": "Resources/tutorial.plist"
+                            },
+                            "Scale9OriginX": 69,
+                            "Scale9Width": 73,
+                            "Scale9Height": 1,
+                            "AnchorPoint": {
+                              "ScaleY": 0.5
+                            },
+                            "Position": {
+                              "X": 0.0,
+                              "Y": 26.0
+                            },
+                            "Scale": {
+                              "ScaleX": 1.0,
+                              "ScaleY": 1.0
+                            },
+                            "CColor": {},
+                            "IconVisible": false,
+                            "PositionPercentYEnabled": true,
+                            "PrePosition": {
+                              "X": 0.0,
+                              "Y": 1.0
+                            },
+                            "PercentWidthEnable": true,
+                            "PercentWidthEnabled": true,
+                            "PreSize": {
+                              "X": 0.5036,
+                              "Y": 0.0385
+                            },
+                            "RightMargin": 207.9916,
+                            "TopMargin": -0.5,
+                            "BottomMargin": 25.5,
+                            "Tag": 394,
+                            "ActionTag": 1466420201,
+                            "Size": {
+                              "X": 211.0084,
+                              "Y": 1.0
+                            },
+                            "Name": "line_1",
+                            "ctype": "ImageViewObjectData"
+                          },
+                          {
+                            "FileData": {
+                              "Type": "PlistSubImage",
+                              "Path": "tut_task_line.png",
+                              "Plist": "Resources/tutorial.plist"
+                            },
+                            "Scale9OriginX": 69,
+                            "Scale9Width": 73,
+                            "Scale9Height": 1,
+                            "AnchorPoint": {
+                              "ScaleY": 0.5
+                            },
+                            "Position": {
+                              "X": 0.0,
+                              "Y": 0.0
+                            },
+                            "Scale": {
+                              "ScaleX": 1.0,
+                              "ScaleY": 1.0
+                            },
+                            "CColor": {},
+                            "IconVisible": false,
+                            "PrePosition": {
+                              "X": 0.0,
+                              "Y": 0.0
+                            },
+                            "PercentWidthEnable": true,
+                            "PercentWidthEnabled": true,
+                            "PreSize": {
+                              "X": 0.5036,
+                              "Y": 0.0385
+                            },
+                            "RightMargin": 207.9916,
+                            "TopMargin": 25.5,
+                            "BottomMargin": -0.5,
+                            "Tag": 395,
+                            "ActionTag": 692562793,
+                            "Size": {
+                              "X": 211.0084,
+                              "Y": 1.0
+                            },
+                            "Name": "line_2",
+                            "ctype": "ImageViewObjectData"
+                          }
+                        ],
+                        "ActionTag": 970147546,
+                        "Size": {
+                          "X": 419.0,
+                          "Y": 26.0
+                        },
+                        "Name": "bgText",
+                        "ctype": "ImageViewObjectData"
+                      },
+                      {
+                        "FileData": {
+                          "Type": "PlistSubImage",
+                          "Path": "tut_task_icon_02.png",
+                          "Plist": "Resources/tutorial.plist"
+                        },
+                        "Scale9OriginX": 6,
+                        "Scale9OriginY": 6,
+                        "Scale9Width": 7,
+                        "Scale9Height": 8,
+                        "AnchorPoint": {
+                          "ScaleX": 0.5,
+                          "ScaleY": 0.5
+                        },
+                        "Position": {
+                          "X": 13.5,
+                          "Y": 14.0
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "CColor": {},
+                        "IconVisible": false,
+                        "PositionPercentXEnabled": true,
+                        "PositionPercentYEnabled": true,
+                        "PrePosition": {
+                          "X": 0.5,
+                          "Y": 0.5
+                        },
+                        "PreSize": {
+                          "X": 0.7037,
+                          "Y": 0.7143
+                        },
+                        "LeftMargin": 4.0,
+                        "RightMargin": 4.0,
+                        "TopMargin": 4.0,
+                        "BottomMargin": 4.0,
+                        "Tag": 245,
+                        "ActionTag": 365980834,
+                        "Size": {
+                          "X": 19.0,
+                          "Y": 20.0
+                        },
+                        "Name": "tick",
+                        "ctype": "ImageViewObjectData"
+                      },
+                      {
+                        "FontSize": 17,
+                        "LabelText": "Pull",
+                        "FontResource": {
+                          "Type": "Normal",
+                          "Path": "Font/facebook.TTF",
+                          "Plist": ""
+                        },
+                        "OutlineColor": {
+                          "G": 0,
+                          "B": 0
+                        },
+                        "ShadowColor": {
+                          "R": 0,
+                          "G": 79,
+                          "B": 192
+                        },
+                        "ShadowOffsetX": 2.0,
+                        "ShadowOffsetY": -2.0,
+                        "AnchorPoint": {
+                          "ScaleY": 0.5
+                        },
+                        "Position": {
+                          "X": 35.4998,
+                          "Y": 15.9992
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "RotationSkewX": 14.0002,
+                        "CColor": {},
+                        "IconVisible": false,
+                        "PositionPercentYEnabled": true,
+                        "PrePosition": {
+                          "X": 1.3148,
+                          "Y": 0.5714
+                        },
+                        "PreSize": {
+                          "X": 1.2963,
+                          "Y": 0.8929
+                        },
+                        "LeftMargin": 35.4998,
+                        "RightMargin": -43.4998,
+                        "TopMargin": -0.4992,
+                        "BottomMargin": 3.4992,
+                        "Tag": 389,
+                        "ActionTag": 416548399,
+                        "Size": {
+                          "X": 35.0,
+                          "Y": 25.0
+                        },
+                        "Name": "text",
+                        "ctype": "TextObjectData"
+                      }
+                    ],
+                    "ActionTag": 831049331,
+                    "Size": {
+                      "X": 27.0,
+                      "Y": 28.0
+                    },
+                    "Name": "box_1",
+                    "ctype": "ImageViewObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "tut_task_icon_01.png",
+                      "Plist": "Resources/tutorial.plist"
+                    },
+                    "Scale9OriginX": 8,
+                    "Scale9OriginY": 9,
+                    "Scale9Width": 11,
+                    "Scale9Height": 10,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 33.0,
+                      "Y": -75.7537
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "PreSize": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "LeftMargin": 19.5,
+                    "RightMargin": -46.5,
+                    "TopMargin": 61.7537,
+                    "BottomMargin": -89.7537,
+                    "Tag": 378,
+                    "Children": [
+                      {
+                        "FileData": {
+                          "Type": "PlistSubImage",
+                          "Path": "tut_task_black_box.png",
+                          "Plist": "Resources/tutorial.plist"
+                        },
+                        "Scale9OriginX": 138,
+                        "Scale9OriginY": 8,
+                        "Scale9Width": 143,
+                        "Scale9Height": 10,
+                        "AnchorPoint": {
+                          "ScaleY": 0.5
+                        },
+                        "Position": {
+                          "X": 13.5,
+                          "Y": 14.0
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "CColor": {},
+                        "IconVisible": false,
+                        "PositionPercentXEnabled": true,
+                        "PositionPercentYEnabled": true,
+                        "PrePosition": {
+                          "X": 0.5,
+                          "Y": 0.5
+                        },
+                        "PreSize": {
+                          "X": 15.5185,
+                          "Y": 0.9286
+                        },
+                        "LeftMargin": 13.5,
+                        "RightMargin": -405.5,
+                        "TopMargin": 1.0,
+                        "BottomMargin": 1.0,
+                        "Tag": 405,
+                        "Children": [
+                          {
+                            "FileData": {
+                              "Type": "PlistSubImage",
+                              "Path": "tut_task_line.png",
+                              "Plist": "Resources/tutorial.plist"
+                            },
+                            "Scale9OriginX": 69,
+                            "Scale9Width": 73,
+                            "Scale9Height": 1,
+                            "AnchorPoint": {
+                              "ScaleY": 0.5
+                            },
+                            "Position": {
+                              "X": 0.0,
+                              "Y": 26.0
+                            },
+                            "Scale": {
+                              "ScaleX": 1.0,
+                              "ScaleY": 1.0
+                            },
+                            "CColor": {},
+                            "IconVisible": false,
+                            "PositionPercentYEnabled": true,
+                            "PrePosition": {
+                              "X": 0.0,
+                              "Y": 1.0
+                            },
+                            "PercentWidthEnable": true,
+                            "PercentWidthEnabled": true,
+                            "PreSize": {
+                              "X": 0.5036,
+                              "Y": 0.0385
+                            },
+                            "RightMargin": 207.9916,
+                            "TopMargin": -0.5,
+                            "BottomMargin": 25.5,
+                            "Tag": 406,
+                            "ActionTag": 1251189474,
+                            "Size": {
+                              "X": 211.0084,
+                              "Y": 1.0
+                            },
+                            "Name": "line_1",
+                            "ctype": "ImageViewObjectData"
+                          },
+                          {
+                            "FileData": {
+                              "Type": "PlistSubImage",
+                              "Path": "tut_task_line.png",
+                              "Plist": "Resources/tutorial.plist"
+                            },
+                            "Scale9OriginX": 69,
+                            "Scale9Width": 73,
+                            "Scale9Height": 1,
+                            "AnchorPoint": {
+                              "ScaleY": 0.5
+                            },
+                            "Position": {
+                              "X": 0.0,
+                              "Y": 0.0
+                            },
+                            "Scale": {
+                              "ScaleX": 1.0,
+                              "ScaleY": 1.0
+                            },
+                            "CColor": {},
+                            "IconVisible": false,
+                            "PrePosition": {
+                              "X": 0.0,
+                              "Y": 0.0
+                            },
+                            "PercentWidthEnable": true,
+                            "PercentWidthEnabled": true,
+                            "PreSize": {
+                              "X": 0.5036,
+                              "Y": 0.0385
+                            },
+                            "RightMargin": 207.9916,
+                            "TopMargin": 25.5,
+                            "BottomMargin": -0.5,
+                            "Tag": 407,
+                            "ActionTag": 1393514089,
+                            "Size": {
+                              "X": 211.0084,
+                              "Y": 1.0
+                            },
+                            "Name": "line_2",
+                            "ctype": "ImageViewObjectData"
+                          }
+                        ],
+                        "ActionTag": 1711499212,
+                        "Size": {
+                          "X": 419.0,
+                          "Y": 26.0
+                        },
+                        "Name": "bgText",
+                        "ctype": "ImageViewObjectData"
+                      },
+                      {
+                        "FileData": {
+                          "Type": "PlistSubImage",
+                          "Path": "tut_task_icon_02.png",
+                          "Plist": "Resources/tutorial.plist"
+                        },
+                        "Scale9OriginX": 6,
+                        "Scale9OriginY": 6,
+                        "Scale9Width": 7,
+                        "Scale9Height": 8,
+                        "AnchorPoint": {
+                          "ScaleX": 0.5,
+                          "ScaleY": 0.5
+                        },
+                        "Position": {
+                          "X": 13.5,
+                          "Y": 14.0
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "CColor": {},
+                        "IconVisible": false,
+                        "PositionPercentXEnabled": true,
+                        "PositionPercentYEnabled": true,
+                        "PrePosition": {
+                          "X": 0.5,
+                          "Y": 0.5
+                        },
+                        "PreSize": {
+                          "X": 0.7037,
+                          "Y": 0.7143
+                        },
+                        "LeftMargin": 4.0,
+                        "RightMargin": 4.0,
+                        "TopMargin": 4.0,
+                        "BottomMargin": 4.0,
+                        "Tag": 380,
+                        "ActionTag": 1048291627,
+                        "Size": {
+                          "X": 19.0,
+                          "Y": 20.0
+                        },
+                        "Name": "tick",
+                        "ctype": "ImageViewObjectData"
+                      },
+                      {
+                        "FontSize": 17,
+                        "LabelText": "Text Label",
+                        "FontResource": {
+                          "Type": "Normal",
+                          "Path": "Font/facebook.TTF",
+                          "Plist": ""
+                        },
+                        "OutlineColor": {
+                          "G": 0,
+                          "B": 0
+                        },
+                        "ShadowColor": {
+                          "R": 0,
+                          "G": 79,
+                          "B": 192
+                        },
+                        "ShadowOffsetX": 2.0,
+                        "ShadowOffsetY": -2.0,
+                        "AnchorPoint": {
+                          "ScaleY": 0.5
+                        },
+                        "Position": {
+                          "X": 35.5,
+                          "Y": 15.9992
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "RotationSkewX": 14.0002,
+                        "CColor": {},
+                        "IconVisible": false,
+                        "PositionPercentYEnabled": true,
+                        "PrePosition": {
+                          "X": 1.3148,
+                          "Y": 0.5714
+                        },
+                        "PreSize": {
+                          "X": 3.3333,
+                          "Y": 0.8929
+                        },
+                        "LeftMargin": 35.5,
+                        "RightMargin": -98.5,
+                        "TopMargin": -0.4992,
+                        "BottomMargin": 3.4992,
+                        "Tag": 390,
+                        "ActionTag": -1262157760,
+                        "Size": {
+                          "X": 90.0,
+                          "Y": 25.0
+                        },
+                        "Name": "text",
+                        "ctype": "TextObjectData"
+                      }
+                    ],
+                    "ActionTag": -1755655502,
+                    "Size": {
+                      "X": 27.0,
+                      "Y": 28.0
+                    },
+                    "Name": "box_2",
+                    "ctype": "ImageViewObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "tut_task_icon_01.png",
+                      "Plist": "Resources/tutorial.plist"
+                    },
+                    "Scale9OriginX": 8,
+                    "Scale9OriginY": 9,
+                    "Scale9Width": 11,
+                    "Scale9Height": 10,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 33.0,
+                      "Y": -106.8767
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "PreSize": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "LeftMargin": 19.5,
+                    "RightMargin": -46.5,
+                    "TopMargin": 92.8767,
+                    "BottomMargin": -120.8767,
+                    "Tag": 381,
+                    "Children": [
+                      {
+                        "FileData": {
+                          "Type": "PlistSubImage",
+                          "Path": "tut_task_black_box.png",
+                          "Plist": "Resources/tutorial.plist"
+                        },
+                        "Scale9OriginX": 138,
+                        "Scale9OriginY": 8,
+                        "Scale9Width": 143,
+                        "Scale9Height": 10,
+                        "AnchorPoint": {
+                          "ScaleY": 0.5
+                        },
+                        "Position": {
+                          "X": 13.5,
+                          "Y": 14.0
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "CColor": {},
+                        "IconVisible": false,
+                        "PositionPercentXEnabled": true,
+                        "PositionPercentYEnabled": true,
+                        "PrePosition": {
+                          "X": 0.5,
+                          "Y": 0.5
+                        },
+                        "PreSize": {
+                          "X": 15.5185,
+                          "Y": 0.9286
+                        },
+                        "LeftMargin": 13.5,
+                        "RightMargin": -405.5,
+                        "TopMargin": 1.0,
+                        "BottomMargin": 1.0,
+                        "Tag": 408,
+                        "Children": [
+                          {
+                            "FileData": {
+                              "Type": "PlistSubImage",
+                              "Path": "tut_task_line.png",
+                              "Plist": "Resources/tutorial.plist"
+                            },
+                            "Scale9OriginX": 69,
+                            "Scale9Width": 73,
+                            "Scale9Height": 1,
+                            "AnchorPoint": {
+                              "ScaleY": 0.5
+                            },
+                            "Position": {
+                              "X": 0.0,
+                              "Y": 26.0
+                            },
+                            "Scale": {
+                              "ScaleX": 1.0,
+                              "ScaleY": 1.0
+                            },
+                            "CColor": {},
+                            "IconVisible": false,
+                            "PositionPercentYEnabled": true,
+                            "PrePosition": {
+                              "X": 0.0,
+                              "Y": 1.0
+                            },
+                            "PercentWidthEnable": true,
+                            "PercentWidthEnabled": true,
+                            "PreSize": {
+                              "X": 0.5036,
+                              "Y": 0.0385
+                            },
+                            "RightMargin": 207.9916,
+                            "TopMargin": -0.5,
+                            "BottomMargin": 25.5,
+                            "Tag": 409,
+                            "ActionTag": -120434789,
+                            "Size": {
+                              "X": 211.0084,
+                              "Y": 1.0
+                            },
+                            "Name": "line_1",
+                            "ctype": "ImageViewObjectData"
+                          },
+                          {
+                            "FileData": {
+                              "Type": "PlistSubImage",
+                              "Path": "tut_task_line.png",
+                              "Plist": "Resources/tutorial.plist"
+                            },
+                            "Scale9OriginX": 69,
+                            "Scale9Width": 73,
+                            "Scale9Height": 1,
+                            "AnchorPoint": {
+                              "ScaleY": 0.5
+                            },
+                            "Position": {
+                              "X": 0.0,
+                              "Y": 0.0
+                            },
+                            "Scale": {
+                              "ScaleX": 1.0,
+                              "ScaleY": 1.0
+                            },
+                            "CColor": {},
+                            "IconVisible": false,
+                            "PrePosition": {
+                              "X": 0.0,
+                              "Y": 0.0
+                            },
+                            "PercentWidthEnable": true,
+                            "PercentWidthEnabled": true,
+                            "PreSize": {
+                              "X": 0.5036,
+                              "Y": 0.0385
+                            },
+                            "RightMargin": 207.9916,
+                            "TopMargin": 25.5,
+                            "BottomMargin": -0.5,
+                            "Tag": 410,
+                            "ActionTag": 1820441919,
+                            "Size": {
+                              "X": 211.0084,
+                              "Y": 1.0
+                            },
+                            "Name": "line_2",
+                            "ctype": "ImageViewObjectData"
+                          }
+                        ],
+                        "ActionTag": 2970058,
+                        "Size": {
+                          "X": 419.0,
+                          "Y": 26.0
+                        },
+                        "Name": "bgText",
+                        "ctype": "ImageViewObjectData"
+                      },
+                      {
+                        "FileData": {
+                          "Type": "PlistSubImage",
+                          "Path": "tut_task_icon_02.png",
+                          "Plist": "Resources/tutorial.plist"
+                        },
+                        "Scale9OriginX": 6,
+                        "Scale9OriginY": 6,
+                        "Scale9Width": 7,
+                        "Scale9Height": 8,
+                        "AnchorPoint": {
+                          "ScaleX": 0.5,
+                          "ScaleY": 0.5
+                        },
+                        "Position": {
+                          "X": 13.5,
+                          "Y": 14.0
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "CColor": {},
+                        "IconVisible": false,
+                        "PositionPercentXEnabled": true,
+                        "PositionPercentYEnabled": true,
+                        "PrePosition": {
+                          "X": 0.5,
+                          "Y": 0.5
+                        },
+                        "PreSize": {
+                          "X": 0.7037,
+                          "Y": 0.7143
+                        },
+                        "LeftMargin": 4.0,
+                        "RightMargin": 4.0,
+                        "TopMargin": 4.0,
+                        "BottomMargin": 4.0,
+                        "Tag": 383,
+                        "ActionTag": 623361222,
+                        "Size": {
+                          "X": 19.0,
+                          "Y": 20.0
+                        },
+                        "Name": "tick",
+                        "ctype": "ImageViewObjectData"
+                      },
+                      {
+                        "FontSize": 17,
+                        "LabelText": "Text Label",
+                        "FontResource": {
+                          "Type": "Normal",
+                          "Path": "Font/facebook.TTF",
+                          "Plist": ""
+                        },
+                        "OutlineColor": {
+                          "G": 0,
+                          "B": 0
+                        },
+                        "ShadowColor": {
+                          "R": 0,
+                          "G": 79,
+                          "B": 192
+                        },
+                        "ShadowOffsetX": 2.0,
+                        "ShadowOffsetY": -2.0,
+                        "AnchorPoint": {
+                          "ScaleY": 0.5
+                        },
+                        "Position": {
+                          "X": 35.5,
+                          "Y": 15.9992
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "RotationSkewX": 14.0002,
+                        "CColor": {},
+                        "IconVisible": false,
+                        "PositionPercentYEnabled": true,
+                        "PrePosition": {
+                          "X": 1.3148,
+                          "Y": 0.5714
+                        },
+                        "PreSize": {
+                          "X": 3.3333,
+                          "Y": 0.8929
+                        },
+                        "LeftMargin": 35.5,
+                        "RightMargin": -98.5,
+                        "TopMargin": -0.4992,
+                        "BottomMargin": 3.4992,
+                        "Tag": 391,
+                        "ActionTag": 270103125,
+                        "Size": {
+                          "X": 90.0,
+                          "Y": 25.0
+                        },
+                        "Name": "text",
+                        "ctype": "TextObjectData"
+                      }
+                    ],
+                    "ActionTag": -70139441,
+                    "Size": {
+                      "X": 27.0,
+                      "Y": 28.0
+                    },
+                    "Name": "box_3",
+                    "ctype": "ImageViewObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "tut_task_icon_01.png",
+                      "Plist": "Resources/tutorial.plist"
+                    },
+                    "Scale9OriginX": 8,
+                    "Scale9OriginY": 9,
+                    "Scale9Width": 11,
+                    "Scale9Height": 10,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 33.0,
+                      "Y": -137.9998
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "PreSize": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "LeftMargin": 19.5,
+                    "RightMargin": -46.5,
+                    "TopMargin": 123.9998,
+                    "BottomMargin": -151.9998,
+                    "Tag": 384,
+                    "Children": [
+                      {
+                        "FileData": {
+                          "Type": "PlistSubImage",
+                          "Path": "tut_task_black_box.png",
+                          "Plist": "Resources/tutorial.plist"
+                        },
+                        "Scale9OriginX": 138,
+                        "Scale9OriginY": 8,
+                        "Scale9Width": 143,
+                        "Scale9Height": 10,
+                        "AnchorPoint": {
+                          "ScaleY": 0.5
+                        },
+                        "Position": {
+                          "X": 13.5,
+                          "Y": 14.0
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "CColor": {},
+                        "IconVisible": false,
+                        "PositionPercentXEnabled": true,
+                        "PositionPercentYEnabled": true,
+                        "PrePosition": {
+                          "X": 0.5,
+                          "Y": 0.5
+                        },
+                        "PreSize": {
+                          "X": 15.5185,
+                          "Y": 0.9286
+                        },
+                        "LeftMargin": 13.5,
+                        "RightMargin": -405.5,
+                        "TopMargin": 1.0,
+                        "BottomMargin": 1.0,
+                        "Tag": 411,
+                        "Children": [
+                          {
+                            "FileData": {
+                              "Type": "PlistSubImage",
+                              "Path": "tut_task_line.png",
+                              "Plist": "Resources/tutorial.plist"
+                            },
+                            "Scale9OriginX": 69,
+                            "Scale9Width": 73,
+                            "Scale9Height": 1,
+                            "AnchorPoint": {
+                              "ScaleY": 0.5
+                            },
+                            "Position": {
+                              "X": 0.0,
+                              "Y": 26.0
+                            },
+                            "Scale": {
+                              "ScaleX": 1.0,
+                              "ScaleY": 1.0
+                            },
+                            "CColor": {},
+                            "IconVisible": false,
+                            "PositionPercentYEnabled": true,
+                            "PrePosition": {
+                              "X": 0.0,
+                              "Y": 1.0
+                            },
+                            "PercentWidthEnable": true,
+                            "PercentWidthEnabled": true,
+                            "PreSize": {
+                              "X": 0.5036,
+                              "Y": 0.0385
+                            },
+                            "RightMargin": 207.9916,
+                            "TopMargin": -0.5,
+                            "BottomMargin": 25.5,
+                            "Tag": 412,
+                            "ActionTag": 664979105,
+                            "Size": {
+                              "X": 211.0084,
+                              "Y": 1.0
+                            },
+                            "Name": "line_1",
+                            "ctype": "ImageViewObjectData"
+                          },
+                          {
+                            "FileData": {
+                              "Type": "PlistSubImage",
+                              "Path": "tut_task_line.png",
+                              "Plist": "Resources/tutorial.plist"
+                            },
+                            "Scale9OriginX": 69,
+                            "Scale9Width": 73,
+                            "Scale9Height": 1,
+                            "AnchorPoint": {
+                              "ScaleY": 0.5
+                            },
+                            "Position": {
+                              "X": 0.0,
+                              "Y": 0.0
+                            },
+                            "Scale": {
+                              "ScaleX": 1.0,
+                              "ScaleY": 1.0
+                            },
+                            "CColor": {},
+                            "IconVisible": false,
+                            "PrePosition": {
+                              "X": 0.0,
+                              "Y": 0.0
+                            },
+                            "PercentWidthEnable": true,
+                            "PercentWidthEnabled": true,
+                            "PreSize": {
+                              "X": 0.5036,
+                              "Y": 0.0385
+                            },
+                            "RightMargin": 207.9916,
+                            "TopMargin": 25.5,
+                            "BottomMargin": -0.5,
+                            "Tag": 413,
+                            "ActionTag": 1287147713,
+                            "Size": {
+                              "X": 211.0084,
+                              "Y": 1.0
+                            },
+                            "Name": "line_2",
+                            "ctype": "ImageViewObjectData"
+                          }
+                        ],
+                        "ActionTag": 339584464,
+                        "Size": {
+                          "X": 419.0,
+                          "Y": 26.0
+                        },
+                        "Name": "bgText",
+                        "ctype": "ImageViewObjectData"
+                      },
+                      {
+                        "FileData": {
+                          "Type": "PlistSubImage",
+                          "Path": "tut_task_icon_02.png",
+                          "Plist": "Resources/tutorial.plist"
+                        },
+                        "Scale9OriginX": 6,
+                        "Scale9OriginY": 6,
+                        "Scale9Width": 7,
+                        "Scale9Height": 8,
+                        "AnchorPoint": {
+                          "ScaleX": 0.5,
+                          "ScaleY": 0.5
+                        },
+                        "Position": {
+                          "X": 13.5,
+                          "Y": 14.0
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "CColor": {},
+                        "IconVisible": false,
+                        "PositionPercentXEnabled": true,
+                        "PositionPercentYEnabled": true,
+                        "PrePosition": {
+                          "X": 0.5,
+                          "Y": 0.5
+                        },
+                        "PreSize": {
+                          "X": 0.7037,
+                          "Y": 0.7143
+                        },
+                        "LeftMargin": 4.0,
+                        "RightMargin": 4.0,
+                        "TopMargin": 4.0,
+                        "BottomMargin": 4.0,
+                        "Tag": 386,
+                        "ActionTag": 401922248,
+                        "Size": {
+                          "X": 19.0,
+                          "Y": 20.0
+                        },
+                        "Name": "tick",
+                        "ctype": "ImageViewObjectData"
+                      },
+                      {
+                        "FontSize": 17,
+                        "LabelText": "Text Label",
+                        "FontResource": {
+                          "Type": "Normal",
+                          "Path": "Font/facebook.TTF",
+                          "Plist": ""
+                        },
+                        "OutlineColor": {
+                          "G": 0,
+                          "B": 0
+                        },
+                        "ShadowColor": {
+                          "R": 0,
+                          "G": 79,
+                          "B": 192
+                        },
+                        "ShadowOffsetX": 2.0,
+                        "ShadowOffsetY": -2.0,
+                        "AnchorPoint": {
+                          "ScaleY": 0.5
+                        },
+                        "Position": {
+                          "X": 35.4999,
+                          "Y": 15.9992
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "RotationSkewX": 14.0002,
+                        "CColor": {},
+                        "IconVisible": false,
+                        "PositionPercentYEnabled": true,
+                        "PrePosition": {
+                          "X": 1.3148,
+                          "Y": 0.5714
+                        },
+                        "PreSize": {
+                          "X": 3.3333,
+                          "Y": 0.8929
+                        },
+                        "LeftMargin": 35.4999,
+                        "RightMargin": -98.4999,
+                        "TopMargin": -0.4992,
+                        "BottomMargin": 3.4992,
+                        "Tag": 392,
+                        "ActionTag": -1282906411,
+                        "Size": {
+                          "X": 90.0,
+                          "Y": 25.0
+                        },
+                        "Name": "text",
+                        "ctype": "TextObjectData"
+                      }
+                    ],
+                    "ActionTag": 513870744,
+                    "Size": {
+                      "X": 27.0,
+                      "Y": 28.0
+                    },
+                    "Name": "box_4",
+                    "ctype": "ImageViewObjectData"
+                  }
+                ],
+                "ActionTag": -1095500128,
+                "Size": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "Name": "elements",
+                "ctype": "SingleNodeObjectData"
+              }
+            ],
+            "ActionTag": 635224012,
+            "Size": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "Name": "taskPopup",
+            "ctype": "SingleNodeObjectData"
+          },
+          {
+            "AnchorPoint": {},
+            "Position": {
+              "X": 1131.9991,
+              "Y": 320.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": true,
+            "PrePosition": {
+              "X": 0.9965,
+              "Y": 0.5
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "HorizontalEdge": "RightEdge",
+            "VerticalEdge": "BothEdge",
+            "LeftMargin": 1131.9991,
+            "RightMargin": 4.0009,
+            "TopMargin": 320.0,
+            "BottomMargin": 320.0,
+            "Tag": 420,
+            "ActionTag": -437201393,
+            "Size": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "Name": "powerbar",
+            "ctype": "SingleNodeObjectData"
+          },
+          {
+            "FontSize": 14,
+            "ButtonText": "",
+            "TextColor": {
+              "R": 65,
+              "G": 65,
+              "B": 70
+            },
+            "Scale9OriginX": -15,
+            "Scale9OriginY": -11,
+            "Scale9Width": 30,
+            "Scale9Height": 22,
+            "OutlineColor": {
+              "G": 0,
+              "B": 0
+            },
+            "ShadowColor": {
+              "R": 110,
+              "G": 110,
+              "B": 110
+            },
+            "ShadowOffsetX": 2.0,
+            "ShadowOffsetY": -2.0,
+            "TouchEnable": true,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 1071.7745,
+              "Y": 68.0203
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.9435,
+              "Y": 0.1063
+            },
+            "PreSize": {
+              "X": 0.082,
+              "Y": 0.1456
+            },
+            "HorizontalEdge": "RightEdge",
+            "VerticalEdge": "BottomEdge",
+            "LeftMargin": 1025.1796,
+            "RightMargin": 17.6305,
+            "TopMargin": 525.3847,
+            "BottomMargin": 21.4253,
+            "Tag": 242,
+            "Children": [
+              {
+                "FileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "IngameEBP_Change_Cue_Active.png",
+                  "Plist": "Resources/IngameEBP.plist"
+                },
+                "Scale9OriginX": 17,
+                "Scale9OriginY": 17,
+                "Scale9Width": 20,
+                "Scale9Height": 20,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 45.398,
+                  "Y": 62.7959
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.4872,
+                  "Y": 0.6738
+                },
+                "PreSize": {
+                  "X": 0.5795,
+                  "Y": 0.5795
+                },
+                "LeftMargin": 18.398,
+                "RightMargin": 20.792,
+                "TopMargin": 3.3941,
+                "BottomMargin": 35.7959,
+                "Tag": 243,
+                "Children": [
+                  {
+                    "FileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "Icon_Active_02.png",
+                      "Plist": "Resources/CueTypes.plist"
+                    },
+                    "Scale9OriginX": 13,
+                    "Scale9OriginY": 13,
+                    "Scale9Width": 46,
+                    "Scale9Height": 29,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 27.0,
+                      "Y": 27.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.5,
+                      "Y": 0.5
+                    },
+                    "PreSize": {
+                      "X": 0.9074,
+                      "Y": 0.6852
+                    },
+                    "HorizontalEdge": "BothEdge",
+                    "VerticalEdge": "BothEdge",
+                    "LeftMargin": 2.5,
+                    "RightMargin": 2.5,
+                    "TopMargin": 8.5,
+                    "BottomMargin": 8.5,
+                    "Tag": 244,
+                    "ActionTag": -1196915997,
+                    "Size": {
+                      "X": 49.0,
+                      "Y": 37.0
+                    },
+                    "Name": "imgCueType",
+                    "ctype": "ImageViewObjectData"
+                  }
+                ],
+                "ActionTag": -1902409885,
+                "Size": {
+                  "X": 54.0,
+                  "Y": 54.0
+                },
+                "Name": "imgBox2",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "IngameEBP_Change_Cue_Inactive.png",
+                  "Plist": "Resources/IngameEBP.plist"
+                },
+                "Scale9OriginX": 17,
+                "Scale9OriginY": 17,
+                "Scale9Width": 3,
+                "Scale9Height": 3,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 19.1924,
+                  "Y": 21.6005
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.2059,
+                  "Y": 0.2318
+                },
+                "PreSize": {
+                  "X": 0.397,
+                  "Y": 0.397
+                },
+                "LeftMargin": 0.6924,
+                "RightMargin": 55.4976,
+                "TopMargin": 53.0895,
+                "BottomMargin": 3.1005,
+                "Tag": 245,
+                "Children": [
+                  {
+                    "FileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "Icon_Inactive_03.png",
+                      "Plist": "Resources/CueTypes.plist"
+                    },
+                    "Scale9OriginX": 13,
+                    "Scale9OriginY": 13,
+                    "Scale9Width": 19,
+                    "Scale9Height": 19,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 18.5,
+                      "Y": 18.5
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.5,
+                      "Y": 0.5
+                    },
+                    "PreSize": {
+                      "X": 0.8108,
+                      "Y": 0.8108
+                    },
+                    "HorizontalEdge": "BothEdge",
+                    "VerticalEdge": "BothEdge",
+                    "LeftMargin": 3.5,
+                    "RightMargin": 3.5,
+                    "TopMargin": 3.5,
+                    "BottomMargin": 3.5,
+                    "Tag": 246,
+                    "ActionTag": -465746111,
+                    "Size": {
+                      "X": 30.0,
+                      "Y": 30.0
+                    },
+                    "Name": "imgCueType",
+                    "ctype": "ImageViewObjectData"
+                  }
+                ],
+                "ActionTag": 904962249,
+                "Size": {
+                  "X": 37.0,
+                  "Y": 37.0
+                },
+                "Name": "imgBox3",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "IngameEBP_Change_Cue_Inactive.png",
+                  "Plist": "Resources/IngameEBP.plist"
+                },
+                "Scale9OriginX": 17,
+                "Scale9OriginY": 17,
+                "Scale9Width": 3,
+                "Scale9Height": 3,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 67.8421,
+                  "Y": 20.6115
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.728,
+                  "Y": 0.2212
+                },
+                "PreSize": {
+                  "X": 0.397,
+                  "Y": 0.397
+                },
+                "LeftMargin": 49.3421,
+                "RightMargin": 6.8479,
+                "TopMargin": 54.0785,
+                "BottomMargin": 2.1115,
+                "Tag": 247,
+                "Children": [
+                  {
+                    "FileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "Icon_Inactive_04.png",
+                      "Plist": "Resources/CueTypes.plist"
+                    },
+                    "Scale9OriginX": 8,
+                    "Scale9OriginY": 13,
+                    "Scale9Width": 26,
+                    "Scale9Height": 17,
+                    "AnchorPoint": {
+                      "ScaleX": 0.496,
+                      "ScaleY": 0.63
+                    },
+                    "Position": {
+                      "X": 18.4149,
+                      "Y": 21.3379
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.4977,
+                      "Y": 0.5767
+                    },
+                    "PreSize": {
+                      "X": 0.8108,
+                      "Y": 0.8108
+                    },
+                    "HorizontalEdge": "BothEdge",
+                    "VerticalEdge": "BothEdge",
+                    "LeftMargin": 3.5349,
+                    "RightMargin": 3.4651,
+                    "TopMargin": 4.5621,
+                    "BottomMargin": 2.4379,
+                    "Tag": 248,
+                    "ActionTag": -1940443832,
+                    "Size": {
+                      "X": 30.0,
+                      "Y": 30.0
+                    },
+                    "Name": "imgCueType",
+                    "ctype": "ImageViewObjectData"
+                  }
+                ],
+                "ActionTag": -1050749379,
+                "Size": {
+                  "X": 37.0,
+                  "Y": 37.0
+                },
+                "Name": "imgBox4",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "IngameEBP_Avatar_Box_02.png",
+                  "Plist": "Resources/IngameEBP.plist"
+                },
+                "Scale9OriginX": 48,
+                "Scale9OriginY": 29,
+                "Scale9Width": 1,
+                "Scale9Height": 36,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 43.19,
+                  "Y": 46.5688
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.4635,
+                  "Y": 0.4997
+                },
+                "PreSize": {
+                  "X": 1.0302,
+                  "Y": 1.0087
+                },
+                "HorizontalEdge": "RightEdge",
+                "VerticalEdge": "BottomEdge",
+                "LeftMargin": -4.81,
+                "RightMargin": 2.0,
+                "TopMargin": -0.3788,
+                "BottomMargin": -0.4312,
+                "Tag": 241,
+                "ActionTag": 1116849965,
+                "Size": {
+                  "X": 96.0,
+                  "Y": 94.0
+                },
+                "Name": "imgBgBtnCue",
+                "ctype": "ImageViewObjectData"
+              }
+            ],
+            "ActionTag": -1706287046,
+            "Size": {
+              "X": 93.19,
+              "Y": 93.19
+            },
+            "Name": "btnChangeCue",
+            "ctype": "ButtonObjectData"
+          },
+          {
+            "FontSize": 14,
+            "ButtonText": "",
+            "TextColor": {
+              "R": 65,
+              "G": 65,
+              "B": 70
+            },
+            "DisabledFileData": {
+              "Type": "Default",
+              "Path": "Default/Button_Disable.png",
+              "Plist": ""
+            },
+            "PressedFileData": {
+              "Type": "PlistSubImage",
+              "Path": "IngameEBP_Square_Button_Box.png",
+              "Plist": "Resources/IngameEBP.plist"
+            },
+            "NormalFileData": {
+              "Type": "PlistSubImage",
+              "Path": "IngameEBP_Square_Button_Box.png",
+              "Plist": "Resources/IngameEBP.plist"
+            },
+            "Scale9OriginX": 15,
+            "Scale9OriginY": 11,
+            "Scale9Width": 236,
+            "Scale9Height": 244,
+            "OutlineColor": {
+              "G": 0,
+              "B": 0
+            },
+            "ShadowColor": {
+              "R": 110,
+              "G": 110,
+              "B": 110
+            },
+            "ShadowOffsetX": 2.0,
+            "ShadowOffsetY": -2.0,
+            "TouchEnable": true,
+            "AnchorPoint": {},
+            "Position": {
+              "X": 19.0,
+              "Y": 225.1767
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.0167,
+              "Y": 0.3518
+            },
+            "PreSize": {
+              "X": 0.0819,
+              "Y": 0.1453
+            },
+            "HorizontalEdge": "LeftEdge",
+            "VerticalEdge": "BottomEdge",
+            "LeftMargin": 19.0,
+            "RightMargin": 1024.0,
+            "TopMargin": 321.8233,
+            "BottomMargin": 225.1767,
+            "Tag": 124,
+            "Children": [
+              {
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 25.3694,
+                  "Y": 28.9897
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": true,
+                "PrePosition": {
+                  "X": 0.2728,
+                  "Y": 0.3117
+                },
+                "PreSize": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "LeftMargin": 25.3694,
+                "RightMargin": 67.6306,
+                "TopMargin": 64.0103,
+                "BottomMargin": 28.9897,
+                "Tag": 136,
+                "ActionTag": 1521654243,
+                "Size": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "Name": "nodeMask",
+                "ctype": "SingleNodeObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "Game/res/nentrang_large.png",
+                  "Plist": ""
+                },
+                "BlendFunc": {
+                  "Src": 1,
+                  "Dst": 771
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 34.0,
+                  "Y": 7.5805
+                },
+                "Scale": {
+                  "ScaleX": 0.3535,
+                  "ScaleY": 0.3535
+                },
+                "CColor": {
+                  "R": 144,
+                  "G": 238,
+                  "B": 144
+                },
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.3656,
+                  "Y": 0.0815
+                },
+                "PreSize": {
+                  "X": 3.3333,
+                  "Y": 4.9462
+                },
+                "LeftMargin": -121.0,
+                "RightMargin": -96.0,
+                "TopMargin": -144.5805,
+                "BottomMargin": -222.4195,
+                "Tag": 137,
+                "ActionTag": 716125802,
+                "Size": {
+                  "X": 310.0,
+                  "Y": 460.0
+                },
+                "Alpha": 85,
+                "Name": "angleRange",
+                "ctype": "SpriteObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "IngameEBP_Cue_Angle_Icon.png",
+                  "Plist": "Resources/IngameEBP.plist"
+                },
+                "Scale9OriginX": 15,
+                "Scale9OriginY": 15,
+                "Scale9Width": 194,
+                "Scale9Height": 73,
+                "StretchWidthEnable": true,
+                "StretchHeightEnable": true,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 46.8347,
+                  "Y": 23.4231
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.5036,
+                  "Y": 0.2519
+                },
+                "PreSize": {
+                  "X": 0.871,
+                  "Y": 0.4136
+                },
+                "HorizontalEdge": "BothEdge",
+                "LeftMargin": 6.3347,
+                "RightMargin": 5.6653,
+                "TopMargin": 50.3445,
+                "BottomMargin": 4.1907,
+                "Tag": 125,
+                "ActionTag": -1797083337,
+                "Size": {
+                  "X": 81.0,
+                  "Y": 38.4648
+                },
+                "Name": "imgAngle",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "IngameEBP_Cue_Angle_Cue.png",
+                  "Plist": "Resources/IngameEBP.plist"
+                },
+                "Scale9OriginX": 15,
+                "Scale9OriginY": 5,
+                "Scale9Width": 194,
+                "Scale9Height": 8,
+                "AnchorPoint": {
+                  "ScaleX": -0.25,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 23.692,
+                  "Y": 26.8137
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "RotationSkewX": -42.7,
+                "RotationSkewY": -42.7022,
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.2548,
+                  "Y": 0.2883
+                },
+                "PreSize": {
+                  "X": 0.7527,
+                  "Y": 0.0753
+                },
+                "LeftMargin": 41.192,
+                "RightMargin": -18.192,
+                "TopMargin": 62.6863,
+                "BottomMargin": 23.3137,
+                "Tag": 126,
+                "ActionTag": -2085371808,
+                "Size": {
+                  "X": 70.0,
+                  "Y": 7.0
+                },
+                "Name": "imgCue",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FontSize": 18,
+                "LabelText": "0",
+                "FontResource": {
+                  "Type": "Normal",
+                  "Path": "Font/UTMFacebook.ttf",
+                  "Plist": ""
+                },
+                "HorizontalAlignmentType": "HT_Center",
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 23.5001,
+                  "Y": 28.8382
+                },
+                "Scale": {
+                  "ScaleX": 0.8883,
+                  "ScaleY": 0.8883
+                },
+                "CColor": {
+                  "R": 10,
+                  "G": 162,
+                  "B": 219
+                },
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.2527,
+                  "Y": 0.3101
+                },
+                "PreSize": {
+                  "X": 0.1613,
+                  "Y": 0.2796
+                },
+                "LeftMargin": 16.0001,
+                "RightMargin": 61.9999,
+                "TopMargin": 51.1618,
+                "BottomMargin": 15.8382,
+                "Tag": 59,
+                "ActionTag": 3891969,
+                "Size": {
+                  "X": 15.0,
+                  "Y": 26.0
+                },
+                "Name": "txtAngle",
+                "ctype": "TextObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "IngameEBP_Cue_Angle_Cue.png",
+                  "Plist": "Resources/IngameEBP.plist"
+                },
+                "Scale9OriginX": 73,
+                "Scale9OriginY": 5,
+                "Scale9Width": 78,
+                "Scale9Height": 8,
+                "AnchorPoint": {
+                  "ScaleX": -0.25,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 23.69,
+                  "Y": 26.81
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "RotationSkewX": -42.7,
+                "RotationSkewY": -42.7022,
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.2547,
+                  "Y": 0.2883
+                },
+                "PreSize": {
+                  "X": 0.7527,
+                  "Y": 0.0753
+                },
+                "LeftMargin": 41.19,
+                "RightMargin": -18.19,
+                "TopMargin": 62.69,
+                "BottomMargin": 23.31,
+                "Tag": 60,
+                "ActionTag": -1089720675,
+                "Size": {
+                  "X": 70.0,
+                  "Y": 7.0
+                },
+                "VisibleForFrame": false,
+                "Alpha": 76,
+                "Name": "imgCueGhost",
+                "ctype": "ImageViewObjectData"
+              }
+            ],
+            "ActionTag": -1937113074,
+            "Size": {
+              "X": 93.0,
+              "Y": 93.0
+            },
+            "Name": "btnAngle",
+            "ctype": "ButtonObjectData"
+          },
+          {
+            "FontSize": 14,
+            "ButtonText": "",
+            "TextColor": {
+              "R": 65,
+              "G": 65,
+              "B": 70
+            },
+            "DisabledFileData": {
+              "Type": "Default",
+              "Path": "Default/Button_Disable.png",
+              "Plist": ""
+            },
+            "PressedFileData": {
+              "Type": "PlistSubImage",
+              "Path": "IngameEBP_Square_Button_Box.png",
+              "Plist": "Resources/IngameEBP.plist"
+            },
+            "NormalFileData": {
+              "Type": "PlistSubImage",
+              "Path": "IngameEBP_Square_Button_Box.png",
+              "Plist": "Resources/IngameEBP.plist"
+            },
+            "Scale9Enable": true,
+            "Scale9OriginX": 128,
+            "Scale9OriginY": 133,
+            "Scale9Width": 10,
+            "Scale9Height": 1,
+            "OutlineColor": {
+              "G": 0,
+              "B": 0
+            },
+            "ShadowColor": {
+              "R": 110,
+              "G": 110,
+              "B": 110
+            },
+            "ShadowOffsetX": 2.0,
+            "ShadowOffsetY": -2.0,
+            "TouchEnable": true,
+            "AnchorPoint": {},
+            "Position": {
+              "X": 19.0,
+              "Y": 326.7431
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.0167,
+              "Y": 0.5105
+            },
+            "PreSize": {
+              "X": 0.0819,
+              "Y": 0.1453
+            },
+            "HorizontalEdge": "LeftEdge",
+            "VerticalEdge": "BottomEdge",
+            "LeftMargin": 19.0,
+            "RightMargin": 1024.0,
+            "TopMargin": 220.2569,
+            "BottomMargin": 326.7431,
+            "Tag": 187,
+            "Children": [
+              {
+                "FileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "IngameEBP_Ball_Indicator.png",
+                  "Plist": "Resources/IngameEBP.plist"
+                },
+                "Scale9OriginX": 74,
+                "Scale9OriginY": 74,
+                "Scale9Width": 79,
+                "Scale9Height": 78,
+                "StretchWidthEnable": true,
+                "StretchHeightEnable": true,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 46.5,
+                  "Y": 45.5
+                },
+                "Scale": {
+                  "ScaleX": 1.5173,
+                  "ScaleY": 1.5173
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.5,
+                  "Y": 0.4892
+                },
+                "PreSize": {
+                  "X": 0.5806,
+                  "Y": 0.5806
+                },
+                "HorizontalEdge": "BothEdge",
+                "VerticalEdge": "BothEdge",
+                "LeftMargin": 19.5,
+                "RightMargin": 19.5,
+                "TopMargin": 20.5,
+                "BottomMargin": 18.5,
+                "Tag": 188,
+                "ActionTag": 161501771,
+                "Size": {
+                  "X": 54.0,
+                  "Y": 54.0
+                },
+                "Name": "imgBall",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "IngameEBP_Red_Dot.png",
+                  "Plist": "Resources/IngameEBP.plist"
+                },
+                "Scale9OriginX": 5,
+                "Scale9OriginY": 5,
+                "Scale9Width": 14,
+                "Scale9Height": 14,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 46.5,
+                  "Y": 46.5
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.5,
+                  "Y": 0.5
+                },
+                "PreSize": {
+                  "X": 0.0968,
+                  "Y": 0.0968
+                },
+                "HorizontalEdge": "BothEdge",
+                "VerticalEdge": "BothEdge",
+                "LeftMargin": 42.0,
+                "RightMargin": 42.0,
+                "TopMargin": 42.0,
+                "BottomMargin": 42.0,
+                "Tag": 189,
+                "ActionTag": 2123399781,
+                "Size": {
+                  "X": 9.0,
+                  "Y": 9.0
+                },
+                "Name": "ballIndicator",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "IngameEBP_Red_Dot.png",
+                  "Plist": "Resources/IngameEBP.plist"
+                },
+                "Scale9OriginX": 5,
+                "Scale9OriginY": 5,
+                "Scale9Width": 14,
+                "Scale9Height": 14,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 46.5,
+                  "Y": 46.5
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.5,
+                  "Y": 0.5
+                },
+                "PreSize": {
+                  "X": 0.0968,
+                  "Y": 0.0968
+                },
+                "HorizontalEdge": "BothEdge",
+                "VerticalEdge": "BothEdge",
+                "LeftMargin": 42.0,
+                "RightMargin": 42.0,
+                "TopMargin": 42.0,
+                "BottomMargin": 42.0,
+                "Tag": 50,
+                "ActionTag": 873064095,
+                "Size": {
+                  "X": 9.0,
+                  "Y": 9.0
+                },
+                "VisibleForFrame": false,
+                "Alpha": 102,
+                "Name": "ghostBallIndicator",
+                "ctype": "ImageViewObjectData"
+              }
+            ],
+            "ActionTag": 378268866,
+            "Size": {
+              "X": 93.0,
+              "Y": 93.0
+            },
+            "Name": "btnBall",
+            "ctype": "ButtonObjectData"
+          },
+          {
+            "FontSize": 14,
+            "ButtonText": "",
+            "TextColor": {
+              "R": 65,
+              "G": 65,
+              "B": 70
+            },
+            "DisabledFileData": {
+              "Type": "Default",
+              "Path": "Default/Button_Disable.png",
+              "Plist": ""
+            },
+            "PressedFileData": {
+              "Type": "PlistSubImage",
+              "Path": "IngameEBP_Square_Button_Box.png",
+              "Plist": "Resources/IngameEBP.plist"
+            },
+            "NormalFileData": {
+              "Type": "PlistSubImage",
+              "Path": "IngameEBP_Square_Button_Box.png",
+              "Plist": "Resources/IngameEBP.plist"
+            },
+            "Scale9Enable": true,
+            "Scale9OriginX": 128,
+            "Scale9OriginY": 133,
+            "Scale9Width": 10,
+            "Scale9Height": 1,
+            "OutlineColor": {
+              "G": 0,
+              "B": 0
+            },
+            "ShadowColor": {
+              "R": 110,
+              "G": 110,
+              "B": 110
+            },
+            "ShadowOffsetX": 2.0,
+            "ShadowOffsetY": -2.0,
+            "TouchEnable": true,
+            "AnchorPoint": {},
+            "Position": {
+              "X": 19.0,
+              "Y": 121.17
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.0167,
+              "Y": 0.1893
+            },
+            "PreSize": {
+              "X": 0.0819,
+              "Y": 0.1453
+            },
+            "HorizontalEdge": "LeftEdge",
+            "VerticalEdge": "BottomEdge",
+            "LeftMargin": 19.0,
+            "RightMargin": 1024.0,
+            "TopMargin": 425.83,
+            "BottomMargin": 121.17,
+            "Tag": 183,
+            "Children": [
+              {
+                "FileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "IngameEBP_Ruler_Button.png",
+                  "Plist": "Resources/IngameEBP.plist"
+                },
+                "Scale9OriginX": 27,
+                "Scale9OriginY": 25,
+                "Scale9Width": 28,
+                "Scale9Height": 26,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 46.5,
+                  "Y": 46.5
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PositionPercentXEnabled": true,
+                "PositionPercentYEnabled": true,
+                "PrePosition": {
+                  "X": 0.5,
+                  "Y": 0.5
+                },
+                "PreSize": {
+                  "X": 0.8817,
+                  "Y": 0.8172
+                },
+                "LeftMargin": 5.5,
+                "RightMargin": 5.5,
+                "TopMargin": 8.5,
+                "BottomMargin": 8.5,
+                "Tag": 187,
+                "ActionTag": 1654872922,
+                "Size": {
+                  "X": 82.0,
+                  "Y": 76.0
+                },
+                "Name": "imgRule1",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 46.5,
+                  "Y": 46.5
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": true,
+                "PositionPercentXEnabled": true,
+                "PositionPercentYEnabled": true,
+                "PrePosition": {
+                  "X": 0.5,
+                  "Y": 0.5
+                },
+                "PreSize": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "LeftMargin": 46.5,
+                "RightMargin": 46.5,
+                "TopMargin": 46.5,
+                "BottomMargin": 46.5,
+                "Tag": 82,
+                "Children": [
+                  {
+                    "FileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "IngameEBP_Ruler_Bars.png",
+                      "Plist": "Resources/IngameEBP.plist"
+                    },
+                    "Scale9OriginX": 23,
+                    "Scale9OriginY": 6,
+                    "Scale9Width": 26,
+                    "Scale9Height": 7,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 1.0
+                    },
+                    "Position": {
+                      "X": 0.0,
+                      "Y": 38.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PositionPercentXEnabled": true,
+                    "PrePosition": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "PreSize": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "LeftMargin": -36.0,
+                    "RightMargin": -36.0,
+                    "TopMargin": -38.0,
+                    "BottomMargin": 19.0,
+                    "Tag": 188,
+                    "ActionTag": 400438865,
+                    "Size": {
+                      "X": 72.0,
+                      "Y": 19.0
+                    },
+                    "Name": "bar_1",
+                    "ctype": "ImageViewObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "IngameEBP_Ruler_Bars.png",
+                      "Plist": "Resources/IngameEBP.plist"
+                    },
+                    "Scale9OriginX": 23,
+                    "Scale9OriginY": 6,
+                    "Scale9Width": 26,
+                    "Scale9Height": 7,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 1.0
+                    },
+                    "Position": {
+                      "X": 0.0,
+                      "Y": 38.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PositionPercentXEnabled": true,
+                    "PrePosition": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "PreSize": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "LeftMargin": -36.0,
+                    "RightMargin": -36.0,
+                    "TopMargin": -38.0,
+                    "BottomMargin": 19.0,
+                    "Tag": 83,
+                    "ActionTag": -1818654671,
+                    "Size": {
+                      "X": 72.0,
+                      "Y": 19.0
+                    },
+                    "Name": "bar_2",
+                    "ctype": "ImageViewObjectData"
+                  }
+                ],
+                "ActionTag": -1690014525,
+                "Size": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "Name": "scrollArea",
+                "ctype": "SingleNodeObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "IngameEBP_Ruler_Indicator.png",
+                  "Plist": "Resources/IngameEBP.plist"
+                },
+                "Scale9OriginX": 9,
+                "Scale9OriginY": 27,
+                "Scale9Width": 12,
+                "Scale9Height": 29,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 46.5,
+                  "Y": 44.64
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PositionPercentXEnabled": true,
+                "PositionPercentYEnabled": true,
+                "PrePosition": {
+                  "X": 0.5,
+                  "Y": 0.48
+                },
+                "PreSize": {
+                  "X": 0.3226,
+                  "Y": 0.8925
+                },
+                "LeftMargin": 31.5,
+                "RightMargin": 31.5,
+                "TopMargin": 6.86,
+                "BottomMargin": 3.14,
+                "Tag": 190,
+                "ActionTag": 897941051,
+                "Size": {
+                  "X": 30.0,
+                  "Y": 83.0
+                },
+                "Name": "imgRule3",
+                "ctype": "ImageViewObjectData"
+              }
+            ],
+            "ActionTag": 340152998,
+            "Size": {
+              "X": 93.0,
+              "Y": 93.0
+            },
+            "Name": "btnAdjust",
+            "ctype": "ButtonObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "PlistSubImage",
+              "Path": "IngameEBP_Power_Bar_Box.png",
+              "Plist": "Resources/IngameEBP.plist"
+            },
+            "Scale9OriginX": 11,
+            "Scale9OriginY": 15,
+            "Scale9Width": 74,
+            "Scale9Height": 479,
+            "AnchorPoint": {
+              "ScaleX": 0.5
+            },
+            "Position": {
+              "X": 1067.3569,
+              "Y": 139.648
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.9396,
+              "Y": 0.2182
+            },
+            "PreSize": {
+              "X": 0.0845,
+              "Y": 0.748
+            },
+            "HorizontalEdge": "RightEdge",
+            "VerticalEdge": "BothEdge",
+            "LeftMargin": 1019.3569,
+            "RightMargin": 20.6431,
+            "TopMargin": 21.662,
+            "BottomMargin": 139.648,
+            "Tag": 66,
+            "Children": [
+              {
+                "FileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "IngameEBP_Power_Bar.png",
+                  "Plist": "Resources/IngameEBP.plist"
+                },
+                "Scale9Enable": true,
+                "Scale9OriginX": 17,
+                "Scale9OriginY": 15,
+                "Scale9Width": 61,
+                "Scale9Height": 478,
+                "AnchorPoint": {
+                  "ScaleX": 0.5
+                },
+                "Position": {
+                  "X": 46.2432,
+                  "Y": -9.659
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.4817,
+                  "Y": -0.0202
+                },
+                "PreSize": {
+                  "X": 0.9896,
+                  "Y": 1.0399
+                },
+                "HorizontalEdge": "BothEdge",
+                "LeftMargin": -1.2568,
+                "RightMargin": 2.2568,
+                "TopMargin": -9.441,
+                "BottomMargin": -9.659,
+                "Tag": 67,
+                "ActionTag": 1186277091,
+                "Size": {
+                  "X": 95.0,
+                  "Y": 497.79
+                },
+                "Name": "imgPowerBox",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FontSize": 24,
+                "LabelText": "91319",
+                "FontResource": {
+                  "Type": "Normal",
+                  "Path": "Font/UTMFacebook.ttf",
+                  "Plist": ""
+                },
+                "HorizontalAlignmentType": "HT_Center",
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 47.2305,
+                  "Y": 428.0751
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "RotationSkewX": 8.9996,
+                "CColor": {
+                  "R": 0,
+                  "B": 243
+                },
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.492,
+                  "Y": 0.8943
+                },
+                "PreSize": {
+                  "X": 0.6458,
+                  "Y": 0.0731
+                },
+                "LeftMargin": 16.2305,
+                "RightMargin": 17.7695,
+                "TopMargin": 33.1149,
+                "BottomMargin": 410.5751,
+                "Tag": 68,
+                "ActionTag": -911342228,
+                "Size": {
+                  "X": 62.0,
+                  "Y": 35.0
+                },
+                "Name": "lbForce",
+                "ctype": "TextObjectData"
+              },
+              {
+                "ClipAble": false,
+                "BackColorAlpha": 102,
+                "ComboBoxIndex": 1,
+                "SingleColor": {},
+                "FirstColor": {
+                  "R": 150,
+                  "G": 200
+                },
+                "EndColor": {},
+                "ColorVector": {
+                  "ScaleY": 1.0
+                },
+                "Scale9Width": 1,
+                "Scale9Height": 1,
+                "TouchEnable": true,
+                "AnchorPoint": {
+                  "ScaleX": 0.5
+                },
+                "Position": {
+                  "X": 46.8096,
+                  "Y": 87.7917
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.4876,
+                  "Y": 0.1834
+                },
+                "PreSize": {
+                  "X": 0.5208,
+                  "Y": 0.0042
+                },
+                "HorizontalEdge": "BothEdge",
+                "VerticalEdge": "BothEdge",
+                "LeftMargin": 21.8096,
+                "RightMargin": 24.1904,
+                "TopMargin": 388.8983,
+                "BottomMargin": 87.7917,
+                "Tag": 185,
+                "ActionTag": 62227283,
+                "Size": {
+                  "X": 50.0,
+                  "Y": 2.0
+                },
+                "Name": "imgBar1",
+                "ctype": "PanelObjectData"
+              },
+              {
+                "ClipAble": false,
+                "BackColorAlpha": 102,
+                "ComboBoxIndex": 1,
+                "SingleColor": {},
+                "FirstColor": {
+                  "R": 150,
+                  "G": 200
+                },
+                "EndColor": {},
+                "ColorVector": {
+                  "ScaleY": 1.0
+                },
+                "Scale9Width": 1,
+                "Scale9Height": 1,
+                "TouchEnable": true,
+                "AnchorPoint": {
+                  "ScaleX": 0.5
+                },
+                "Position": {
+                  "X": 46.8096,
+                  "Y": 156.0529
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.4876,
+                  "Y": 0.326
+                },
+                "PreSize": {
+                  "X": 0.5208,
+                  "Y": 0.0042
+                },
+                "HorizontalEdge": "BothEdge",
+                "VerticalEdge": "BothEdge",
+                "LeftMargin": 21.8096,
+                "RightMargin": 24.1904,
+                "TopMargin": 320.6371,
+                "BottomMargin": 156.0529,
+                "Tag": 184,
+                "ActionTag": 279501093,
+                "Size": {
+                  "X": 50.0,
+                  "Y": 2.0
+                },
+                "Name": "imgBar2",
+                "ctype": "PanelObjectData"
+              },
+              {
+                "ClipAble": false,
+                "BackColorAlpha": 102,
+                "ComboBoxIndex": 1,
+                "SingleColor": {},
+                "FirstColor": {
+                  "R": 150,
+                  "G": 200
+                },
+                "EndColor": {},
+                "ColorVector": {
+                  "ScaleY": 1.0
+                },
+                "Scale9Width": 1,
+                "Scale9Height": 1,
+                "TouchEnable": true,
+                "AnchorPoint": {
+                  "ScaleX": 0.5
+                },
+                "Position": {
+                  "X": 46.8096,
+                  "Y": 224.2663
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.4876,
+                  "Y": 0.4685
+                },
+                "PreSize": {
+                  "X": 0.5208,
+                  "Y": 0.0042
+                },
+                "HorizontalEdge": "BothEdge",
+                "VerticalEdge": "BothEdge",
+                "LeftMargin": 21.8096,
+                "RightMargin": 24.1904,
+                "TopMargin": 252.4237,
+                "BottomMargin": 224.2663,
+                "Tag": 183,
+                "ActionTag": 201868471,
+                "Size": {
+                  "X": 50.0,
+                  "Y": 2.0
+                },
+                "Name": "imgBar3",
+                "ctype": "PanelObjectData"
+              },
+              {
+                "ClipAble": false,
+                "BackColorAlpha": 102,
+                "ComboBoxIndex": 1,
+                "SingleColor": {},
+                "FirstColor": {
+                  "R": 150,
+                  "G": 200
+                },
+                "EndColor": {},
+                "ColorVector": {
+                  "ScaleY": 1.0
+                },
+                "Scale9Width": 1,
+                "Scale9Height": 1,
+                "TouchEnable": true,
+                "AnchorPoint": {
+                  "ScaleX": 0.5
+                },
+                "Position": {
+                  "X": 46.8096,
+                  "Y": 292.5275
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.4876,
+                  "Y": 0.6111
+                },
+                "PreSize": {
+                  "X": 0.5208,
+                  "Y": 0.0042
+                },
+                "HorizontalEdge": "BothEdge",
+                "VerticalEdge": "BothEdge",
+                "LeftMargin": 21.8096,
+                "RightMargin": 24.1904,
+                "TopMargin": 184.1625,
+                "BottomMargin": 292.5275,
+                "Tag": 182,
+                "ActionTag": 1591183421,
+                "Size": {
+                  "X": 50.0,
+                  "Y": 2.0
+                },
+                "Name": "imgBar4",
+                "ctype": "PanelObjectData"
+              },
+              {
+                "ClipAble": false,
+                "BackColorAlpha": 102,
+                "ComboBoxIndex": 1,
+                "SingleColor": {},
+                "FirstColor": {
+                  "R": 150,
+                  "G": 200
+                },
+                "EndColor": {},
+                "ColorVector": {
+                  "ScaleY": 1.0
+                },
+                "Scale9Width": 1,
+                "Scale9Height": 1,
+                "TouchEnable": true,
+                "AnchorPoint": {
+                  "ScaleX": 0.5
+                },
+                "Position": {
+                  "X": 46.8096,
+                  "Y": 360.7408
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.4876,
+                  "Y": 0.7536
+                },
+                "PreSize": {
+                  "X": 0.5208,
+                  "Y": 0.0042
+                },
+                "HorizontalEdge": "BothEdge",
+                "VerticalEdge": "BothEdge",
+                "LeftMargin": 21.8096,
+                "RightMargin": 24.1904,
+                "TopMargin": 115.9492,
+                "BottomMargin": 360.7408,
+                "Tag": 181,
+                "ActionTag": -1394636388,
+                "Size": {
+                  "X": 50.0,
+                  "Y": 2.0
+                },
+                "Name": "imgBar5",
+                "ctype": "PanelObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "IngameEBP_Power_Full.png",
+                  "Plist": "Resources/IngameEBP.plist"
+                },
+                "Scale9OriginX": 17,
+                "Scale9OriginY": 109,
+                "Scale9Width": 1,
+                "Scale9Height": 146,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 47.3472,
+                  "Y": 207.603
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.4932,
+                  "Y": 0.4337
+                },
+                "PreSize": {
+                  "X": 0.3542,
+                  "Y": 0.7625
+                },
+                "HorizontalEdge": "BothEdge",
+                "LeftMargin": 30.3472,
+                "RightMargin": 31.6528,
+                "TopMargin": 88.587,
+                "BottomMargin": 25.103,
+                "Tag": 69,
+                "Children": [
+                  {
+                    "FileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "IngameEBP_Power_Cue.png",
+                      "Plist": "Resources/IngameEBP.plist"
+                    },
+                    "Scale9Enable": true,
+                    "Scale9OriginX": 3,
+                    "Scale9OriginY": 43,
+                    "Scale9Width": 5,
+                    "Scale9Height": 206,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5
+                    },
+                    "Position": {
+                      "X": 16.7814,
+                      "Y": 3.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.4936,
+                      "Y": 0.0082
+                    },
+                    "PreSize": {
+                      "X": 0.3235,
+                      "Y": 0.9891
+                    },
+                    "LeftMargin": 11.2814,
+                    "RightMargin": 11.7186,
+                    "TopMargin": 0.9726,
+                    "BottomMargin": 3.0,
+                    "Tag": 70,
+                    "ActionTag": 1952821475,
+                    "Size": {
+                      "X": 11.0,
+                      "Y": 361.0274
+                    },
+                    "Name": "imgCue",
+                    "ctype": "ImageViewObjectData"
+                  }
+                ],
+                "ActionTag": -1559918040,
+                "Size": {
+                  "X": 34.0,
+                  "Y": 365.0
+                },
+                "Name": "imgPower",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "ClipAble": false,
+                "BackColorAlpha": 102,
+                "ComboBoxIndex": 1,
+                "SingleColor": {
+                  "R": 150,
+                  "G": 200
+                },
+                "FirstColor": {
+                  "R": 150,
+                  "G": 200
+                },
+                "EndColor": {},
+                "ColorVector": {
+                  "ScaleY": 1.0
+                },
+                "Scale9Width": 1,
+                "Scale9Height": 1,
+                "TouchEnable": true,
+                "AnchorPoint": {
+                  "ScaleX": 0.5017,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 48.0,
+                  "Y": 386.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {
+                  "R": 0,
+                  "B": 73
+                },
+                "IconVisible": false,
+                "PositionPercentXEnabled": true,
+                "PrePosition": {
+                  "X": 0.5,
+                  "Y": 0.8064
+                },
+                "PreSize": {
+                  "X": 0.6875,
+                  "Y": 0.0418
+                },
+                "LeftMargin": 14.8878,
+                "RightMargin": 15.1122,
+                "TopMargin": 82.69,
+                "BottomMargin": 376.0,
+                "Tag": 321,
+                "Children": [
+                  {
+                    "FileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "IngameEBP_Arrow.png",
+                      "Plist": "Resources/IngameEBP.plist"
+                    },
+                    "Scale9OriginX": 5,
+                    "Scale9OriginY": 10,
+                    "Scale9Width": 7,
+                    "Scale9Height": 12,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": -13.1998,
+                      "Y": 8.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "RotationSkewX": -1.5,
+                    "RotationSkewY": -1.5,
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PositionPercentYEnabled": true,
+                    "PrePosition": {
+                      "X": -0.2,
+                      "Y": 0.4
+                    },
+                    "PreSize": {
+                      "X": 0.2576,
+                      "Y": 1.6
+                    },
+                    "LeftMargin": -21.6998,
+                    "RightMargin": 70.6998,
+                    "TopMargin": -4.0,
+                    "BottomMargin": -8.0,
+                    "Tag": 322,
+                    "ActionTag": -1097334200,
+                    "Size": {
+                      "X": 17.0,
+                      "Y": 32.0
+                    },
+                    "Name": "imgTriangle",
+                    "ctype": "ImageViewObjectData"
+                  }
+                ],
+                "ActionTag": -141594942,
+                "Size": {
+                  "X": 66.0,
+                  "Y": 20.0
+                },
+                "Name": "pnHint",
+                "ctype": "PanelObjectData"
+              }
+            ],
+            "ActionTag": -1157930341,
+            "Size": {
+              "X": 96.0,
+              "Y": 478.69
+            },
+            "Name": "imgPowerBar",
+            "ctype": "ImageViewObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "PlistSubImage",
+              "Path": "big_balls_3.png",
+              "Plist": "Resources/Balls.plist"
+            },
+            "Scale9OriginX": 15,
+            "Scale9OriginY": 15,
+            "Scale9Width": 56,
+            "Scale9Height": 57,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 64.3376,
+              "Y": 469.912
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.0566,
+              "Y": 0.7342
+            },
+            "PreSize": {
+              "X": 0.0502,
+              "Y": 0.0891
+            },
+            "LeftMargin": 35.8376,
+            "RightMargin": 1043.1624,
+            "TopMargin": 141.588,
+            "BottomMargin": 441.412,
+            "Tag": 238,
+            "ActionTag": 926282272,
+            "Size": {
+              "X": 57.0,
+              "Y": 57.0
+            },
+            "Name": "imgCollideBall",
+            "ctype": "ImageViewObjectData"
+          },
+          {
+            "ClipAble": false,
+            "BackColorAlpha": 102,
+            "SingleColor": {
+              "R": 150,
+              "G": 200
+            },
+            "FirstColor": {
+              "R": 150,
+              "G": 200
+            },
+            "EndColor": {},
+            "ColorVector": {
+              "ScaleY": 1.0
+            },
+            "Scale9Width": 1,
+            "Scale9Height": 1,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 568.0,
+              "Y": 320.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PositionPercentXEnabled": true,
+            "PositionPercentYEnabled": true,
+            "PrePosition": {
+              "X": 0.5,
+              "Y": 0.5
+            },
+            "PreSize": {
+              "X": 0.1761,
+              "Y": 0.3125
+            },
+            "LeftMargin": 468.0,
+            "RightMargin": 468.0,
+            "TopMargin": 220.0,
+            "BottomMargin": 220.0,
+            "Tag": 129,
+            "Children": [
+              {
+                "FileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "IngameEBP_Change_Cue_Active.png",
+                  "Plist": "Resources/IngameEBP.plist"
+                },
+                "Scale9OriginX": 17,
+                "Scale9OriginY": 17,
+                "Scale9Width": 20,
+                "Scale9Height": 20,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 100.0,
+                  "Y": 149.3874
+                },
+                "Scale": {
+                  "ScaleX": 1.7221,
+                  "ScaleY": 1.7221
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.5,
+                  "Y": 0.7469
+                },
+                "PreSize": {
+                  "X": 0.27,
+                  "Y": 0.27
+                },
+                "LeftMargin": 73.0,
+                "RightMargin": 73.0,
+                "TopMargin": 23.6126,
+                "BottomMargin": 122.3874,
+                "Tag": 130,
+                "Children": [
+                  {
+                    "FileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "Icon_Active_02.png",
+                      "Plist": "Resources/CueTypes.plist"
+                    },
+                    "Scale9OriginX": 13,
+                    "Scale9OriginY": 13,
+                    "Scale9Width": 46,
+                    "Scale9Height": 29,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 27.0,
+                      "Y": 27.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.5,
+                      "Y": 0.5
+                    },
+                    "PreSize": {
+                      "X": 0.9259,
+                      "Y": 0.7407
+                    },
+                    "HorizontalEdge": "BothEdge",
+                    "VerticalEdge": "BothEdge",
+                    "LeftMargin": 2.0,
+                    "RightMargin": 2.0,
+                    "TopMargin": 7.0,
+                    "BottomMargin": 7.0,
+                    "Tag": 131,
+                    "ActionTag": 1795139217,
+                    "Size": {
+                      "X": 50.0,
+                      "Y": 40.0
+                    },
+                    "Name": "imgCueType",
+                    "ctype": "ImageViewObjectData"
+                  }
+                ],
+                "ActionTag": -1347256792,
+                "Size": {
+                  "X": 54.0,
+                  "Y": 54.0
+                },
+                "Name": "imgBox2",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "IngameEBP_Change_Cue_Inactive.png",
+                  "Plist": "Resources/IngameEBP.plist"
+                },
+                "Scale9OriginX": 17,
+                "Scale9OriginY": 17,
+                "Scale9Width": 3,
+                "Scale9Height": 3,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 44.1594,
+                  "Y": 49.4641
+                },
+                "Scale": {
+                  "ScaleX": 2.1,
+                  "ScaleY": 2.1
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.2208,
+                  "Y": 0.2473
+                },
+                "PreSize": {
+                  "X": 0.185,
+                  "Y": 0.185
+                },
+                "LeftMargin": 25.6594,
+                "RightMargin": 137.3406,
+                "TopMargin": 132.0359,
+                "BottomMargin": 30.9641,
+                "Tag": 132,
+                "Children": [
+                  {
+                    "FileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "Icon_Inactive_03.png",
+                      "Plist": "Resources/CueTypes.plist"
+                    },
+                    "Scale9OriginX": 13,
+                    "Scale9OriginY": 13,
+                    "Scale9Width": 19,
+                    "Scale9Height": 19,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 18.5,
+                      "Y": 18.5
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.5,
+                      "Y": 0.5
+                    },
+                    "PreSize": {
+                      "X": 0.6108,
+                      "Y": 0.6108
+                    },
+                    "HorizontalEdge": "BothEdge",
+                    "VerticalEdge": "BothEdge",
+                    "LeftMargin": 7.2,
+                    "RightMargin": 7.2,
+                    "TopMargin": 7.2,
+                    "BottomMargin": 7.2,
+                    "Tag": 133,
+                    "ActionTag": 29758639,
+                    "Size": {
+                      "X": 22.6,
+                      "Y": 22.6
+                    },
+                    "Name": "imgCueType",
+                    "ctype": "ImageViewObjectData"
+                  }
+                ],
+                "ActionTag": 445590984,
+                "Size": {
+                  "X": 37.0,
+                  "Y": 37.0
+                },
+                "Name": "imgBox3",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "IngameEBP_Change_Cue_Inactive.png",
+                  "Plist": "Resources/IngameEBP.plist"
+                },
+                "Scale9OriginX": 17,
+                "Scale9OriginY": 17,
+                "Scale9Width": 3,
+                "Scale9Height": 3,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 155.8,
+                  "Y": 49.4641
+                },
+                "Scale": {
+                  "ScaleX": 2.1,
+                  "ScaleY": 2.1
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.779,
+                  "Y": 0.2473
+                },
+                "PreSize": {
+                  "X": 0.185,
+                  "Y": 0.185
+                },
+                "LeftMargin": 137.3,
+                "RightMargin": 25.7,
+                "TopMargin": 132.0359,
+                "BottomMargin": 30.9641,
+                "Tag": 134,
+                "Children": [
+                  {
+                    "FileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "Icon_Inactive_04.png",
+                      "Plist": "Resources/CueTypes.plist"
+                    },
+                    "Scale9OriginX": 8,
+                    "Scale9OriginY": 13,
+                    "Scale9Width": 26,
+                    "Scale9Height": 17,
+                    "AnchorPoint": {
+                      "ScaleX": 0.496,
+                      "ScaleY": 0.63
+                    },
+                    "Position": {
+                      "X": 18.4149,
+                      "Y": 21.3379
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.4977,
+                      "Y": 0.5767
+                    },
+                    "PreSize": {
+                      "X": 0.5676,
+                      "Y": 0.5903
+                    },
+                    "HorizontalEdge": "BothEdge",
+                    "VerticalEdge": "BothEdge",
+                    "LeftMargin": 7.9989,
+                    "RightMargin": 8.0011,
+                    "TopMargin": 7.5813,
+                    "BottomMargin": 7.5787,
+                    "Tag": 135,
+                    "ActionTag": -668222982,
+                    "Size": {
+                      "X": 21.0,
+                      "Y": 21.84
+                    },
+                    "Name": "imgCueType",
+                    "ctype": "ImageViewObjectData"
+                  }
+                ],
+                "ActionTag": -2077770943,
+                "Size": {
+                  "X": 37.0,
+                  "Y": 37.0
+                },
+                "Name": "imgBox4",
+                "ctype": "ImageViewObjectData"
+              }
+            ],
+            "ActionTag": -2005872647,
+            "Size": {
+              "X": 200.0,
+              "Y": 200.0
+            },
+            "Name": "pnCueIcon",
+            "ctype": "PanelObjectData"
+          }
+        ],
+        "Size": {
+          "X": 1136.0,
+          "Y": 640.0
+        },
+        "Name": "Layer",
+        "ctype": "LayerObjectData"
+      },
+      "UsedResources": [
+        "../Default/Button_Disable.png",
+        "../Default/Button_Normal.png",
+        "../Default/Button_Press.png",
+        "../Default/ImageFile.png",
+        "../Default/Sprite.png",
+        "../Font/facebook.TTF",
+        "../Font/UTMFacebook.ttf",
+        "../Game/res/nentrang_large.png",
+        "../Resources/Balls.plist",
+        "../Resources/Balls.png",
+        "../Resources/CueTypes.plist",
+        "../Resources/CueTypes.png",
+        "../Resources/IngameEBP.plist",
+        "../Resources/IngameEBP.png",
+        "../Resources/tutorial.plist",
+        "../Resources/tutorial.png"
+      ],
+      "ctype": "GameFileData"
+    }
+  },
+  "Type": "Layer"
+}

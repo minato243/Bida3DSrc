@@ -1,0 +1,119 @@
+#ifndef 	_SHOPUIV3_H_
+#define 	_SHOPUIV3_H_
+
+
+#include <cocos2d.h>
+
+class ShopUIv3{
+public:
+
+	ShopUIv3);
+	void initComponent();
+	void initTimerScroll();
+	void this.timerScroll (int function ();
+	void convertPosToOffset(int posY);
+	void onSceneReload();
+	void reloadGUIHotDeals();
+	void initInterval();
+	void initData();
+	void initTabs();
+	void initSubscribers();
+	void refresh();
+	void setGoldValue(int gold);
+	void setCashValue(int cash);
+	void onButtonTouchEnded(int sender, int tag);
+	void switchTab(int id, int isInstant = false);
+	void showTabSelected(int id);
+	void onRequestClose();
+	ShopUIv3int category);
+	void initComponent();
+	void setSizeTabLayer(int category);
+	void loadData(int category);
+	void getOriginalSize();
+	void scaleToSize(int size);
+	void initEventListener();
+	void (int function ();
+	void onTouchBegan(int touch, int event);
+	void onTouchMoved(int touch, int event);
+	void onTouchEnded(int touch, int event);
+	void onButtonTouchEnded(int sender, int tag);
+	void editBoxEditingDidEnd();
+	void getSearchString();
+	void sortListByCost(int oder);
+	void let list (int function(a, int b);
+	void sortListByTypeBox(int typeBox);
+	void firstList (int function(a, int b);
+	void secondList (int function(a, int b);
+	void searchBoxByName(int name);
+	void resetListData();
+	void isCorrectSearch(int item, int name);
+	void updateGui(int string);
+	void hidePanelSelection();
+	ShopUIv3);
+	void initTimer();
+	void this.setRemainTimeDeal (int function ();
+	void initComponent();
+	void setSizeTabLayer();
+	void loadData(double idx);
+	void loadDataLimited();
+	void loadDataHotDeals();
+	void reloadHotDeals();
+	void updateDataHotDeals();
+	void getOriginalSize();
+	void scaleToSize(int size);
+	ShopUIv3int size);
+	void initComponent();
+	void getOriginalSize();
+	void scaleToSize(int size);
+	void setContainerRect(int rect);
+	void loadData(int data);
+	void loadDataItem(int data);
+	void loadDataHotDeal(int data);
+	void loadDataCueBox(int data);
+	void initEventListener();
+	void (int function ();
+	void showPopupConfirm();
+	ShopUIv3int size);
+	void scaleToSize(int size);
+	void initComponent();
+	void getOriginalSize();
+	void setContainerRect(int rect);
+	void loadData(int data);
+	ShopUIv3);
+	void initComponent();
+	void getOriginalSize();
+	void loadData(int data);
+	void onButtonTouchEnded(int sender, int tag);
+	void processConfirm();
+	ShopUIv3int data);
+	void initComponent();
+	void getOriginalSize();
+	void onTouchOutside();
+	void noticeSuccess();
+	void noticeError(int tag);
+	void onButtonTouchEnded(int sender, int tag);
+	void (int time);
+
+
+private:
+	int keep;
+	int listTabs;
+	int scrollView;
+	int listHeight;
+	int totalHeight;
+	int listBtnTab;
+	int listTabs[0];
+	int timerScroll;
+	int listData;
+	int checkSelect;
+	int listItem;
+	int _bg;
+	int remainTimeDeal;
+	int listItemLimited;
+	int setRemainTimeDeal;
+	int _size;
+	int rect;
+	int data;
+	int hasColorLayer;
+};
+#endif

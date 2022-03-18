@@ -1,0 +1,401 @@
+{
+  "ID": "381d3dd8-292e-4bb9-8d2b-f2742e59becb",
+  "Version": "2.3.4",
+  "Name": "progressLayer",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Tag": 215,
+        "Children": [
+          {
+            "FileData": {
+              "Type": "PlistSubImage",
+              "Path": "League_01_LO_02a.png",
+              "Plist": "Resources/LeagueSession.plist"
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PositionPercentXEnabled": true,
+            "PrePosition": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "PreSize": {
+              "X": 0.8968,
+              "Y": 0.0648
+            },
+            "RightMargin": 29.0,
+            "TopMargin": 313.5,
+            "BottomMargin": -10.5,
+            "Tag": 216,
+            "ActionTag": 349785057,
+            "Size": {
+              "X": 252.0,
+              "Y": 21.0
+            },
+            "Name": "League_01_LO_02a_1",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "PlistSubImage",
+              "Path": "League_01_LO_02b.png",
+              "Plist": "Resources/LeagueSession.plist"
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 252.0,
+              "Y": 0.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.8968,
+              "Y": 0.0
+            },
+            "PreSize": {
+              "X": 0.1032,
+              "Y": 0.108
+            },
+            "LeftMargin": 252.0,
+            "TopMargin": 306.5,
+            "BottomMargin": -17.5,
+            "Tag": 217,
+            "ActionTag": -1983750664,
+            "Size": {
+              "X": 29.0,
+              "Y": 35.0
+            },
+            "Name": "League_01_LO_02b_2",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "ProgressInfo": 100,
+            "ImageFileData": {
+              "Type": "PlistSubImage",
+              "Path": "League_01_LO_02c.png",
+              "Plist": "Resources/LeagueSession.plist"
+            },
+            "AnchorPoint": {
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "PreSize": {
+              "X": 0.8968,
+              "Y": 0.037
+            },
+            "RightMargin": 29.0,
+            "TopMargin": 318.0,
+            "BottomMargin": -6.0,
+            "Tag": 220,
+            "ActionTag": 1099135967,
+            "Size": {
+              "X": 252.0,
+              "Y": 12.0
+            },
+            "Name": "ldBar_0",
+            "ctype": "LoadingBarObjectData"
+          },
+          {
+            "ProgressInfo": 100,
+            "ImageFileData": {
+              "Type": "PlistSubImage",
+              "Path": "League_01_LO_02d.png",
+              "Plist": "Resources/LeagueSession.plist"
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 266.5,
+              "Y": 0.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.9484,
+              "Y": 0.0
+            },
+            "PreSize": {
+              "X": 0.1032,
+              "Y": 0.0833
+            },
+            "LeftMargin": 252.0,
+            "TopMargin": 310.5,
+            "BottomMargin": -13.5,
+            "Tag": 221,
+            "ActionTag": 359972185,
+            "Size": {
+              "X": 29.0,
+              "Y": 27.0
+            },
+            "Name": "ldBar_1",
+            "ctype": "LoadingBarObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "PlistSubImage",
+              "Path": "League_04_Diamond_1.png",
+              "Plist": "Resources/LeagueSession.plist"
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.3
+            },
+            "Position": {
+              "X": 266.5,
+              "Y": 98.6
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.9484,
+              "Y": 0.3043
+            },
+            "PreSize": {
+              "X": 0.1637,
+              "Y": 0.142
+            },
+            "LeftMargin": 243.5,
+            "RightMargin": -8.5,
+            "TopMargin": 193.2,
+            "BottomMargin": 84.8,
+            "Tag": 351,
+            "ActionTag": 226413532,
+            "Size": {
+              "X": 178.0,
+              "Y": 381.0
+            },
+            "Name": "IconRank",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FontSize": 20,
+            "LabelText": "100",
+            "FontResource": {
+              "Type": "Normal",
+              "Path": "Font/facebook.TTF",
+              "Plist": ""
+            },
+            "OutlineColor": {
+              "G": 0,
+              "B": 0
+            },
+            "ShadowColor": {
+              "R": 110,
+              "G": 110,
+              "B": 110
+            },
+            "ShadowOffsetX": 2.0,
+            "ShadowOffsetY": -2.0,
+            "AnchorPoint": {
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 270.0,
+              "Y": -34.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.9609,
+              "Y": -0.1049
+            },
+            "PreSize": {
+              "X": 0.1352,
+              "Y": 0.0895
+            },
+            "LeftMargin": 270.0,
+            "RightMargin": -27.0,
+            "TopMargin": 343.5,
+            "BottomMargin": -48.5,
+            "Tag": 358,
+            "ActionTag": -349265022,
+            "Size": {
+              "X": 38.0,
+              "Y": 29.0
+            },
+            "Name": "lb_NumberGlove",
+            "ctype": "TextObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "PlistSubImage",
+              "Path": "League_01_LO_01c.png",
+              "Plist": "Resources/LeagueSession.plist"
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 244.0658,
+              "Y": -34.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.8686,
+              "Y": -0.1049
+            },
+            "PreSize": {
+              "X": 0.1352,
+              "Y": 0.1358
+            },
+            "LeftMargin": 225.0658,
+            "RightMargin": 17.9342,
+            "TopMargin": 336.0,
+            "BottomMargin": -56.0,
+            "Tag": 359,
+            "ActionTag": 1791133233,
+            "Size": {
+              "X": 38.0,
+              "Y": 44.0
+            },
+            "Name": "League_01_LO_01c_5",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FontSize": 30,
+            "LabelText": "100zzzzzzzzzzzzzzzzzzzzzz",
+            "FontResource": {
+              "Type": "Normal",
+              "Path": "Font/facebook.TTF",
+              "Plist": ""
+            },
+            "HorizontalAlignmentType": "HT_Center",
+            "VerticalAlignmentType": "VT_Center",
+            "OutlineColor": {
+              "G": 0,
+              "B": 0
+            },
+            "ShadowColor": {
+              "R": 110,
+              "G": 110,
+              "B": 110
+            },
+            "ShadowOffsetX": 2.0,
+            "ShadowOffsetY": -2.0,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 266.5,
+              "Y": 365.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.9484,
+              "Y": 1.1265
+            },
+            "PreSize": {
+              "X": 1.4448,
+              "Y": 0.1358
+            },
+            "LeftMargin": 63.5,
+            "RightMargin": -188.5,
+            "TopMargin": -63.0,
+            "BottomMargin": 343.0,
+            "Tag": 361,
+            "ActionTag": 1801050624,
+            "Size": {
+              "X": 406.0,
+              "Y": 44.0
+            },
+            "Name": "lb_NameLeague",
+            "ctype": "TextObjectData"
+          }
+        ],
+        "Size": {
+          "X": 281.0,
+          "Y": 324.0
+        },
+        "Name": "Layer",
+        "ctype": "LayerObjectData"
+      },
+      "UsedResources": [
+        "../Font/facebook.TTF",
+        "../Resources/LeagueSession.plist",
+        "../Resources/LeagueSession.png"
+      ],
+      "ctype": "GameFileData"
+    }
+  },
+  "Type": "Layer"
+}

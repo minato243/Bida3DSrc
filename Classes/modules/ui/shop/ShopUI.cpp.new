@@ -1,0 +1,595 @@
+#include "ShopUI.cpp.h"
+
+{
+    ShopScene::ShopScene(){
+        this->_super();
+        this->waitTab = -1;
+        this->_cameras = [];
+        this->initCameras();
+    }
+
+    void ShopScene::initCameras(){
+        auto ca = new cc.Camera(
+            cc.Camera.Mode.ORTHOGRAPHIC,
+            cc.winSize.width,
+            cc.winSize.height,
+            0,
+            1);
+        ca.setDepth(0);
+        ca.setCameraFlag(GameCamera.FLAG_BG_LOWEST);
+        this->addChild(ca);
+        this->_cameras.push_back(ca);
+
+        auto ca2 = new cc.Camera(
+            cc.Camera.Mode.ORTHOGRAPHIC,
+            cc.winSize.width,
+            cc.winSize.height,
+            -10,
+            10);
+        ca2.setDepth(1);
+        ca2.setCameraFlag(GameCamera.FLAG_UI);
+        this->addChild(ca2);
+        this->_cameras.push_back(ca2);
+
+        auto ca3 = new cc.Camera(
+            cc.Camera.Mode.ORTHOGRAPHIC,
+            cc.winSize.width,
+            cc.winSize.height,
+            -1000,
+            1000
+        );
+        ca3.setDepth(4);
+        ca3.setCameraFlag(GameCamera.FLAG_UI_ALWAYS_TOP);
+        this->addChild(ca3);
+
+        auto camCueModel = new cc.Camera(
+            cc.Camera.Mode.ORTHOGRAPHIC,
+            cc.winSize.width,
+            cc.winSize.height,
+            -1000,
+            1000
+        );
+        camCueModel.setDepth(3);
+        camCueModel.setCameraFlag(GameCamera.FLAG_3D_ABOVE_UI);
+        this->addChild(camCueModel);
+
+        this->getDefaultCamera().setDepth(4);
+    }
+
+    void ShopScene::onEnter(){
+        this->_super();
+        if(!this->ui){
+            this->ui = gv.GuiMgr.getGui(Popup.SHOP_UI, ShopUIv3);
+            this->ui.show();
+        }
+        if(this->waitTab >= 0){
+            this->ui.switchTab(this->waitTab);
+        }
+
+        this->waitTab = -1;
+    }
+
+    void ShopScene::onExit(){
+    }
+
+    void ShopScene::onSceneReload(){
+        if(!!this->ui) {
+            // this.ui.show();
+            this->ui.onSceneReload();
+        }
+    }
+
+    void ShopScene::toShopTab(double tabIdx, int isInstant = false){
+        if(!!this->ui){
+            this->ui.switchTab(tabIdx, isInstant);
+        }
+        else{
+            this->waitTab = tabIdx;
+        }
+    }
+
+});
+
+ShopScene.OFFER_TAB = 0;
+ShopScene.GACHA_TAB = 1;
+ShopScene.ITEM_TAB = 2;
+
+auto ShopUI = FullScreenPopup.extend({
+    _showLocalPayment: true,
+    ShopScene::ShopScene(){
+        this->_super({tag: Popup.SHOP_UI})
+        this->keep = true;
+        this->setTitleInventory(false);
+        this->setTitle(languageMgr->localizedText('text_shop_ui').toLocaleUpperCase());
+        // this.initWithJsonFile(res.GUI.ShopGUI);
+        this->initSubComponent();
+        gv.cueGachaMgr.addCueBoxUpdateSubscriber(this->refresh.bind(this));
+        this->setCameraMask(GameCamera.FLAG_UI);
+    }
+
+    void ShopScene::initSubComponent(){
+        auto container = this->getContainer();
+        auto json = ccs.load(res.GUI.ShopGUI);
+        this->uiRoot = json.node;
+        container.addChild(this->uiRoot);
+        this->uiRoot.setContentSize(cc.winSize.width, cc.winSize.height);
+        ccui.Helper.doLayout(this->uiRoot);
+        this->autoInitComponent(this->uiRoot);
+        this->uiRoot._bg._fake.setVisible(false);
+
+        this->tabsData = [Config.ShopConfig.OfferShop, Config.ShopConfig.GachaShop, Config.ShopConfig.ItemShop];
+
+        auto offerList = new ShopItemList(this->uiRoot._bg._pnContent, cc.SCROLLVIEW_DIRECTION_HORIZONTAL, ShopItemUIAdaptive, 4, 1);
+        this->uiRoot._bg._pnContent.addChild(offerList);
+        auto offsets = [0];
+        for(auto i=0;i<this->tabsData.length;i++){
+            offsets.push_back(offsets[i] + this->tabsData[i].length);
+        }
+        offerList.setPageOffset(offsets);
+        void ShopScene::offerList.onChangePage (int i){
+            this->switchTabButton(i);
+        }.bind(this);
+        void ShopScene::offerList.onInitItem (int item){
+            item.setCameraMask(GameCamera.FLAG_UI);
+        }
+        //
+        // const gachaList = new ShopItemList(this.uiRoot._bg._pnContent, cc.SCROLLVIEW_DIRECTION_HORIZONTAL, ShopGachaItemUI, 4, 1);
+        // this.uiRoot._bg._pnContent.addChild(gachaList);
+        //
+        // const resourceList = new ShopItemList(this.uiRoot._bg._pnContent, cc.SCROLLVIEW_DIRECTION_HORIZONTAL, ShopItemUI, 4, 1);
+        // this.uiRoot._bg._pnContent.addChild(resourceList);
+
+        this->tabsContent = offerList;
+
+        this->tabButtons = [this->uiRoot._bg._btnOffers, this->uiRoot._bg._btnGacha, this->uiRoot._bg._btnResource];
+
+        this->_buttonSize = this->uiRoot._bg._btnOffers.getContentSize();
+        this->_activeButtonCapInset = this->uiRoot._bg._btnOffers.getCapInsetsNormalRenderer();
+        this->_inactiveButtonCapInset = this->uiRoot._bg._btnResource.getCapInsetsNormalRenderer();
+
+        // Refresh the cue gacha list data
+        auto rolling = gv.GuiMgr.getGui(Popup.GACHA_ROLLING, CueGachaRollingList);
+        rolling.setBoxesData(Config.ShopConfig.GachaShop);
+
+        this->switchTab(0);
+        this->refresh();
+    }
+
+    void ShopScene::switchTab(int index, int scroll = false){
+        if(index < 0 || index >= 3 || this->curTab == index) return;
+        this->curTab = index;
+        // this.tabsContent.forEach((e, idx) => e.setVisible(idx === index));
+
+        void ShopScene::(int function(){
+            this->tabsContent.goToPage(index, scroll);
+        }.bind(this), 16);
+        this->switchTabButton(index);
+    }
+
+    void ShopScene::switchTabButton(int index){
+        this->tabButtons.forEach((e, idx) => {
+            auto active = index == idx;
+            auto texture = active ? "Tab_01.png" : "Tab_02.png";
+            e.loadTextures(texture, texture, texture, Widget::TextureResType::PLIST);
+            e.setCapInsets(active ? this->_activeButtonCapInset : this->_inactiveButtonCapInset);
+            e.setContentSize(this->_buttonSize);
+            e.setOpacity(active ? 255 : 0.59 * 255);
+            e._lb.setOpacity(active ? 255 : 0.69 * 255);
+            e._lb.setTextColor(active ? cc.color(255,255,255) : cc.color(222, 119, 244));
+
+            if(active){
+                // e._lb.enableShadow(cc.color(29, 69, 128), cc.size(0, -4), 0);
+            }
+            else{
+                // e._lb.enableShadow(cc.color(255,255,255), cc.size(0, 0), 0);
+            }
+        })
+    }
+
+    void ShopScene::showLocalPayment(int visibility){
+        this->_showLocalPayment = visibility;
+        this->refresh();
+    }
+
+    void ShopScene::onSceneReload(){
+        this->refresh();
+        if(gv.GuiMgr.isCached(Popup.GACHA_ROLLING)){
+            auto rolling = gv.GuiMgr.getGui(Popup.GACHA_ROLLING, CueGachaRollingList);
+            if(rolling.rolled || !rolling.isShow){
+                this->show();
+                rolling.hide();
+            }
+            else {
+                // setTimeout(function(){
+                    rolling.show();
+                    this->hide();
+                // }.bind(this), 50);
+            }
+        }
+    }
+
+    void ShopScene::refresh(){
+        this->uiRoot._bg._lbGold.setString(utils.numToCurrency(gv.user.gold));
+        auto mergedData = [];
+        this->tabsData.forEach((data, index) => {
+            // const data = this.tabsData[index];
+            if(this->_showLocalPayment){
+                mergedData = mergedData.concat(gv.shopMgr.getShopData(data));
+            }
+            else{
+                mergedData = mergedData.concat(gv.shopMgr.getShopNonLocalPaymentData(data));
+            }
+        });
+
+        this->tabsContent.loadData(mergedData);
+        this->switchTab(0);
+    }
+
+    void ShopScene::onRequestClose(){
+        gv.gameMgr.loadSceneByTag(Scenes.MAIN_SCENE);
+    }
+
+    void ShopScene::getOffset(){
+        return this->tabsContent.tbView.getContentOffset();
+    }
+
+    void ShopScene::setOffset(int offset){
+        this->tabsContent.tbView.setContentOffset(offset);
+    }
+
+    void ShopScene::onButtonTouchEnded(int sender, int tag){
+        this->_super(sender, tag);
+        switch(tag){
+            case this->tagMap.btnBack:
+                this->onRequestClose();
+                break;
+            case this->tagMap.btnOffers:
+                this->switchTab(0, true);
+                break;
+            case this->tagMap.btnGacha:
+                this->switchTab(1, true);
+                break;
+            case this->tagMap.btnResource:
+                this->switchTab(2, true);
+                break;
+        }
+    }
+});
+
+auto ShopItemList = QuickCustomTableView.extend({
+    curItemIdx: 0,
+    curPageIdx: 0,
+
+    void ShopScene::goToPage(double pageIdx, int scroll = false){
+        auto offset = 0;
+        for(auto i=0;i<this->_offsets[pageIdx];i++){
+            offset -= this->tableCellSizeForIndex(this->tbView, i).width;
+        }
+        this->tbView.setContentOffset(cc.p(offset, 0), scroll);
+    }
+
+    void ShopScene::setPageOffset(int offsets){
+        this->_offsets = offsets;
+    }
+
+    void ShopScene::onChangeCurItem(double idx){
+        auto i = 0;
+        while(i < this->_offsets.length && idx >= this->_offsets[i]){
+            i++;
+        }
+        if(i != this->curPageIdx){
+            this->curPageIdx = i;
+            this->onChangePage(i - 1);
+        }
+    }
+
+    void ShopScene::onChangePage(){},
+
+    void ShopScene::scrollViewDidScroll(int sender){
+        auto offset = sender.getContentOffset();
+        offset.x -= this->_size.width/2;
+        auto idx = 0;
+        while(offset.x < 0){
+            offset.x += this->tableCellSizeForIndex(sender, idx).width;
+            idx++;
+        }
+        if(this->curItemIdx != idx){
+            this->curItemIdx = idx;
+            this->onChangeCurItem(idx);
+        }
+    }
+
+    void ShopScene::tableCellSizeForIndex(int tb, double idx){
+        auto defaultSize = this->_super(tb, idx);
+
+        auto specialItemRatio = 454/449; // From the art... harded code. But the general way is more complicate (and bad performance)
+        if(this->_alterDirCount > 1) return defaultSize;
+        if(this->data && this->data[idx] && this->data[idx].special == ShopItemUI.SPECIAL_OFFER){
+            if(this->_direction == cc.SCROLLVIEW_DIRECTION_HORIZONTAL) {
+                defaultSize.width *= 3 / 2;
+                if(defaultSize.width/(0.9 * defaultSize.height) > specialItemRatio){
+                    defaultSize.width = 0.9 * defaultSize.height * specialItemRatio;
+                }
+            }
+            else {
+                defaultSize.height *= 3 / 2;
+                if(defaultSize.width/defaultSize.height > specialItemRatio){
+                    defaultSize.height = defaultSize.width / specialItemRatio;
+                }
+            }
+        }
+        return defaultSize;
+    }
+
+    void ShopScene::tableCellAtIndex(int table, double idx){
+        if(this->_alterDirCount > 1) return this->_super(table, idx);
+
+        auto cell = table.dequeueCell();
+        auto cellSize = this->tableCellSizeForIndex(table, idx);
+        auto itemSize = cc.size(cellSize.width, cellSize.height);
+
+        if(!cell){
+            cell = new cc.TableViewCell();
+            auto item = new this->_itemClass(itemSize);
+            auto index = idx * this->_alterDirCount;
+            item.idx = index;
+            item.tag = 100;
+            // item has anchor point in middle
+            item.setPosition(cellSize.width/2, cellSize.height/2);
+            this->onInitItem(item, index);
+
+            // utils.log("set item position", idx, pos);
+            cell.addChild(item);
+            if(index < this->data.length){
+                item.setVisible(true);
+                item.loadData(this->data[index]);
+            }
+            else{
+                item.setVisible(false);
+            }
+            void ShopScene::cell.getItem (){return cell.getChildByTag(100);};
+            double ShopScene::cell.getItemByIdx (double idx){return cell.getChildByTag(100 + idx);};
+        }
+        else{
+            if(this->_direction == cc.SCROLLVIEW_DIRECTION_HORIZONTAL){
+                itemSize.height /= this->_alterDirCount * (1 + this->_verOffFactor);
+                itemSize.width /= 1 + this->_horOffFactor;
+            }
+            else{
+                itemSize.height /= 1 + this->_verOffFactor;
+                itemSize.width /= this->_alterDirCount * (1 + this->_horOffFactor);
+            }
+
+            auto item = cell.getChildByTag(100);
+            auto index = idx;
+
+            if(index < this->data.length) {
+                item.setSize(itemSize);
+                item.setPosition(cellSize.width/2, cellSize.height/2);
+                item.setSpecial(this->data[index].special);
+                item.loadData(this->data[index]);
+
+                item.idx = index;
+                item.setVisible(true);
+            }
+            else{
+                item.setVisible(false);
+            }
+        }
+        return cell;
+    }
+});
+
+auto ShopItemUI = {};
+ShopItemUI.NORMAL = 1;
+ShopItemUI.SPECIAL_OFFER = 2;
+ShopItemUI.OFFER = 3;
+ShopItemUI.GACHA = 4;
+
+auto ShopOfferItemUI = {};
+ShopOfferItemUI.SPECIAL_OFFER_BLINK_INTERVAL = 0.5;
+
+auto ShopItemUIAdaptive = UIBaseLayer.extend({
+    ShopScene::ShopScene(int size){
+        this->_super();
+        this->initWithJsonFile(res.GUI.ShopItem);
+        this->setSize(size);
+        this->setSpecial(ShopItemUI.NORMAL);
+        this->updateSpecial = this->updateSpecial.bind(this);
+        this->_bg._imgItem.ignoreContentAdaptWithSize(true);
+    }
+
+    void ShopScene::setSize(int size){
+        this->_size = size;
+        // gv.scaleToSize(this._bg, size.width, size.height);
+        // gv.scaleToSize(this._bg_special, size.width, size.height);
+        this->scaleUiToSize(cc.size(size.width - 10, size.height), this->_bg);
+        this->scaleUiToSize(cc.size(size.width, size.height), this->_bg_special);
+        this->scaleUiToSize(cc.size(size.width, size.height), this->_bg_offer);
+    }
+
+    void ShopScene::scaleUiToSize(int size, int ui){
+        auto oldSize = ui.getContentSize();
+        auto ratio = size.width/(4 + oldSize.width);
+        if(ratio * oldSize.height > size.height){
+            ratio = size.height/(8 + oldSize.height);
+        }
+        ui.setScale(ratio);
+    }
+
+    void ShopScene::setSpecial(int type){
+        this->special = type;
+        this->_bg.setVisible(type == ShopItemUI.NORMAL || type == ShopItemUI.GACHA);
+        this->_bg_special.setVisible(type == ShopItemUI.SPECIAL_OFFER);
+        this->_bg_offer.setVisible(type == ShopItemUI.OFFER);
+    }
+
+    void ShopScene::initComponent(){
+        this->autoInitComponent();
+        this->_bg._btnBg.setSwallowTouches(false);
+        this->_bg_special._btnBuy.setSwallowTouches(false);
+        this->_bg_offer._btnBuy.setSwallowTouches(false);
+        this->_bg._fake.setVisible(false);
+        this->_bg_special._fake.setVisible(false);
+        this->_bg_offer._fake.setVisible(false);
+
+        this->_bg._btnBuy._rt.setImgElementOffset(5, 15);
+
+        this->_bg._rtSubtitle.ignoreContentAdaptWithSize(true);
+        this->_bg_special._rtSubtitle.ignoreContentAdaptWithSize(true);
+        this->_bg_offer._rtSubtitle.ignoreContentAdaptWithSize(true);
+    }
+
+    void ShopScene::loadData(int data){
+        if(this->specialOffer){
+            this->unschedule(this->updateSpecial);
+            this->specialOffer = false;
+        }
+        switch(data.special){
+            case ShopItemUI.SPECIAL_OFFER:
+            case ShopItemUI.OFFER:
+                this->loadOfferData(data);
+                break;
+            case ShopItemUI.GACHA:
+                this->loadGachaItemData(data);
+                break;
+            default:
+                this->loadGenericData(data);
+                break;
+        }
+    }
+
+    void ShopScene::loadGenericData(int data){
+        this->_data = data;
+        auto bg = this->_bg;
+        this->setSpecial(data.special);
+        if(this->special == ShopItemUI.SPECIAL_OFFER){
+            bg = this->_bg_special;
+        }
+        else if(this->special == ShopItemUI.OFFER){
+            bg = this->_bg_offer;
+        }
+        bg._lbTitle.setString(languageMgr->localizedText(data.name) + (data.paymentMethod ? (" "  + data.paymentMethod) : ""));
+        bg._rtSubtitle.setString("x " + utils.numToCurrency(data.quantity));
+
+        auto currency = "";
+        if(data.ingameCurrency){
+            switch(data.currency){
+                case "chalk":
+                    currency = "<image=#Bleu_Icon.png>0.99</image> \ \ "; break;
+                case "gold":
+                    currency = "<image=#Gold.png>0.75</image>\ \ \ \ "; break;
+            }
+        }
+        else{
+            currency = " đ";
+        }
+        if(this->special == ShopItemUI.SPECIAL_OFFER || this->special == ShopItemUI.OFFER){
+            bg._rtPrice.setString(utils.numToCurrency(data.price) + currency);
+            if(this->special == ShopItemUI.SPECIAL_OFFER) {
+                bg._rtOldPrice.setVisible(true);
+                bg._rtOldPrice.setString(utils.numToCurrency(data.price * 2) + currency);
+                bg._rtSubtitle.setString("x " + utils.numToCurrency(data.quantity) + "<color=#FAB829><size=28>\ \ x2</size></color>");
+            }
+            else{
+                bg._rtOldPrice.setVisible(false);
+            }
+        }
+        else if(this->special == ShopItemUI.GACHA){
+            // We had a class for this changing the frame
+            bg._btnBuy._rt.setString(utils.numToCurrency(data.price) + currency);
+            bg._btnBuy.loadTextures("Shop_Gold_Button.png", "Shop_Gold_Button.png", "Shop_Gold_Button.png", Widget::TextureResType::PLIST);
+            bg._btnBuy._rt.setPositionX(bg._btnBuy.width/2);
+            bg._btnInfo.setVisible(false);
+        }
+        else{
+            bg._btnBuy._rt.setString(utils.numToCurrency(data.price) + currency);
+            bg._btnBuy.loadTextures("Green_Button.png", "Green_Button.png", "Green_Button.png", Widget::TextureResType::PLIST);
+            ccui.Helper.doLayout(bg._btnBuy);
+            bg._btnBuy._rt.setPositionX(bg._btnBuy.width/2);
+            bg._btnInfo.setVisible(false);
+        }
+    }
+
+    void ShopScene::loadGachaItemData(int data){
+        data.price = gv.cueGachaMgr.getBoxById(data.boxId).price;
+        this->loadGenericData(data);
+
+        auto bg = this->_bg;
+
+        auto frameName = "Shop_Red_box_Board.png";
+        auto boxFrameName = "Shop_Gacha_Box_RED.png";
+        switch(true){
+            case data.itemCode.indexOf("boc_pha") >= 0:
+                frameName = "Shop_Red_box_Board.png";
+                boxFrameName = "Shop_Gacha_Box_RED.png";
+                break;
+            case data.itemCode.indexOf("cau_bong") >= 0:
+                frameName = "Shop_Purple_box_Board.png";
+                boxFrameName = "Shop_Gacha_Box_PURPLE.png";
+                break;
+            case data.itemCode.indexOf("xoan_oc") >= 0:
+                frameName = "Shop_Blue_box_Board.png";
+                boxFrameName = "Shop_Gacha_Box_BLUE.png";
+                break;
+            case data.itemCode.indexOf("song_toan") >= 0:
+                frameName = "Shop_Yellow_box_Board.png";
+                boxFrameName = "Shop_Gacha_Box_YELLOW.png";
+                break;
+        }
+        bg.loadTexture(frameName, Widget::TextureResType::PLIST);
+        bg._imgItem.loadTexture(boxFrameName, Widget::TextureResType::PLIST);
+    }
+
+    void ShopScene::loadOfferData(int data){
+        this->loadGenericData(data);
+
+        this->specialOffer = data.special == ShopItemUI.SPECIAL_OFFER;
+        if(this->specialOffer){
+            this->schedule(this->updateSpecial);
+            this->updateTime = 0;
+
+            auto bg = this->_bg_special;
+            if(!data.timeRemain){
+                bg._imgLimitedTime.setVisible(false);
+                bg._lbLimitedTime.setVisible(false);
+            }
+            else{
+                bg._imgLimitedTime.setVisible(true);
+                bg._lbLimitedTime.setVisible(true);
+                bg._lbLimitedTime.setString(data.timeRemain);
+            }
+        }
+    }
+
+    void ShopScene::updateSpecial(double dt){
+        this->updateTime += dt;
+        if(this->updateTime > 2 * ShopOfferItemUI.SPECIAL_OFFER_BLINK_INTERVAL){
+            this->updateTime -= 2 * ShopOfferItemUI.SPECIAL_OFFER_BLINK_INTERVAL;
+        }
+        auto index = this->updateTime > ShopOfferItemUI.SPECIAL_OFFER_BLINK_INTERVAL ? 1 : 2;
+        auto frameName = "Light_0" + index + ".png";
+        this->_bg_special._imgLight.loadTexture(frameName, Widget::TextureResType::PLIST);
+    }
+
+    void ShopScene::onButtonTouchEnded(int sender, int tag){
+        switch(tag){
+            case this->tagMap.btnBg:
+            case this->tagMap.btnBuy:
+                switch(this->special){
+                    case ShopItemUI.GACHA:
+                        //const rolling = gv.GuiMgr.getGui(Popup.GACHA_ROLLING, CueGachaRollingList);
+                        //rolling.show();
+                        // utils.log("CLICK ON DATA", this._data);
+                        //rolling.setBoxDataIdx(this._data.id);
+                        //gv.GuiMgr.getGui(Popup.SHOP_UI, ShopUI).hide();
+                        // rolling.setRandomData(gv.cueGachaMgr.getBoxByCodeName(this._data.itemCode).cues, this._data.itemCode);
+                        break;
+                    default:
+                        gv.shopMgr.buyItem(this->_data);
+                        break;
+                }
+        }
+    }
+})
+// TODO: fix localpayment

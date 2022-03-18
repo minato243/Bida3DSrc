@@ -1,0 +1,563 @@
+{
+  "ID": "b94c6cfb-180a-44b7-951b-974a50ab4faa",
+  "Version": "2.3.4",
+  "Name": "nodeLocate",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Tag": 258,
+        "Children": [
+          {
+            "AnchorPoint": {},
+            "Position": {
+              "X": 92.0301,
+              "Y": 46.1371
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": true,
+            "PrePosition": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "LeftMargin": 92.0301,
+            "RightMargin": -92.0301,
+            "TopMargin": -46.1371,
+            "BottomMargin": 46.1371,
+            "Tag": 262,
+            "Children": [
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "Arcade/res/map_arrow_01_i5.png",
+                  "Plist": ""
+                },
+                "BlendFunc": {
+                  "Src": 1,
+                  "Dst": 771
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": -1.3821,
+                  "Y": 27.4375
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "PreSize": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "LeftMargin": -22.3821,
+                "RightMargin": -19.6179,
+                "TopMargin": -53.4375,
+                "BottomMargin": 1.4375,
+                "Tag": 259,
+                "ActionTag": 1668162284,
+                "Size": {
+                  "X": 42.0,
+                  "Y": 52.0
+                },
+                "Name": "imgTick",
+                "ctype": "SpriteObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "Arcade/res/map_circle_02_i5.png",
+                  "Plist": ""
+                },
+                "BlendFunc": {
+                  "Src": 1,
+                  "Dst": 771
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": -3.1637,
+                  "Y": -15.7248
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "PreSize": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "LeftMargin": -40.1637,
+                "RightMargin": -33.8363,
+                "TopMargin": -2.7752,
+                "BottomMargin": -34.2248,
+                "Tag": 261,
+                "ActionTag": 1833801437,
+                "Size": {
+                  "X": 74.0,
+                  "Y": 37.0
+                },
+                "Name": "imgCurLocate",
+                "ctype": "SpriteObjectData"
+              },
+              {
+                "FontSize": 14,
+                "ButtonText": "",
+                "TextColor": {
+                  "R": 65,
+                  "G": 65,
+                  "B": 70
+                },
+                "DisabledFileData": {
+                  "Type": "Default",
+                  "Path": "Default/Button_Disable.png",
+                  "Plist": ""
+                },
+                "NormalFileData": {
+                  "Type": "Normal",
+                  "Path": "Arcade/res/map_circle_01_i5.png",
+                  "Plist": ""
+                },
+                "Scale9Enable": true,
+                "Scale9OriginX": 15,
+                "Scale9OriginY": 11,
+                "Scale9Width": 17,
+                "Scale9Height": 4,
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "TouchEnable": true,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": -3.7509,
+                  "Y": -14.7951
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "PreSize": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "LeftMargin": -27.2509,
+                "RightMargin": -19.7491,
+                "TopMargin": 1.7951,
+                "BottomMargin": -27.7951,
+                "Tag": 366,
+                "ActionTag": -1135221394,
+                "Size": {
+                  "X": 47.0,
+                  "Y": 26.0
+                },
+                "Name": "btnLocate",
+                "ctype": "ButtonObjectData"
+              }
+            ],
+            "ActionTag": 1081756677,
+            "Size": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "Name": "ndLocate",
+            "ctype": "SingleNodeObjectData"
+          },
+          {
+            "AnchorPoint": {},
+            "Position": {
+              "X": -127.32,
+              "Y": -87.6619
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": true,
+            "PrePosition": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "LeftMargin": -127.32,
+            "RightMargin": 127.32,
+            "TopMargin": 87.6619,
+            "BottomMargin": -87.6619,
+            "Tag": 267,
+            "Children": [
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "Arcade/res/map_line_01_i5.png",
+                  "Plist": ""
+                },
+                "Scale9OriginX": 26,
+                "Scale9OriginY": 8,
+                "Scale9Width": 29,
+                "Scale9Height": 10,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 6.6005,
+                  "Y": 4.082
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "PreSize": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "LeftMargin": -33.8995,
+                "RightMargin": -47.1005,
+                "TopMargin": -17.082,
+                "BottomMargin": -8.918,
+                "Tag": 271,
+                "ActionTag": 237888593,
+                "Size": {
+                  "X": 81.0,
+                  "Y": 26.0
+                },
+                "Name": "imgLine",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "Arcade/res/map_line_02_i5.png",
+                  "Plist": ""
+                },
+                "BlendFunc": {
+                  "Src": 1,
+                  "Dst": 771
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": -18.6656,
+                  "Y": 3.9079
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "PreSize": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "LeftMargin": -24.1656,
+                "RightMargin": 13.1656,
+                "TopMargin": -10.4079,
+                "BottomMargin": -2.5921,
+                "Tag": 266,
+                "ActionTag": -1019126649,
+                "Size": {
+                  "X": 11.0,
+                  "Y": 13.0
+                },
+                "Name": "map_line_02_i5_7",
+                "ctype": "SpriteObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "Arcade/res/map_line_02_i5.png",
+                  "Plist": ""
+                },
+                "BlendFunc": {
+                  "Src": 1,
+                  "Dst": 771
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": -1.2067,
+                  "Y": 4.5907
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "PreSize": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "LeftMargin": -6.7067,
+                "RightMargin": -4.2933,
+                "TopMargin": -11.0907,
+                "BottomMargin": -1.9093,
+                "Tag": 269,
+                "ActionTag": -1752132025,
+                "Size": {
+                  "X": 11.0,
+                  "Y": 13.0
+                },
+                "Name": "map_line_02_i5_9",
+                "ctype": "SpriteObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "Arcade/res/map_line_02_i5.png",
+                  "Plist": ""
+                },
+                "BlendFunc": {
+                  "Src": 1,
+                  "Dst": 771
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 14.7053,
+                  "Y": 4.3992
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "PreSize": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "LeftMargin": 9.2053,
+                "RightMargin": -20.2053,
+                "TopMargin": -10.8992,
+                "BottomMargin": -2.1008,
+                "Tag": 268,
+                "ActionTag": 1052630431,
+                "Size": {
+                  "X": 11.0,
+                  "Y": 13.0
+                },
+                "Name": "map_line_02_i5_8",
+                "ctype": "SpriteObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "Arcade/res/map_line_02_i5.png",
+                  "Plist": ""
+                },
+                "BlendFunc": {
+                  "Src": 1,
+                  "Dst": 771
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 30.7668,
+                  "Y": 4.3301
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "PreSize": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "LeftMargin": 25.2668,
+                "RightMargin": -36.2668,
+                "TopMargin": -10.8301,
+                "BottomMargin": -2.1699,
+                "Tag": 270,
+                "ActionTag": 1558305018,
+                "Size": {
+                  "X": 11.0,
+                  "Y": 13.0
+                },
+                "Name": "map_line_02_i5_10",
+                "ctype": "SpriteObjectData"
+              }
+            ],
+            "ActionTag": 264221352,
+            "Size": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "Name": "ndRoad",
+            "ctype": "SingleNodeObjectData"
+          },
+          {
+            "FontSize": 14,
+            "ButtonText": "",
+            "TextColor": {
+              "R": 65,
+              "G": 65,
+              "B": 70
+            },
+            "DisabledFileData": {
+              "Type": "Default",
+              "Path": "Default/Button_Disable.png",
+              "Plist": ""
+            },
+            "NormalFileData": {
+              "Type": "Normal",
+              "Path": "Arcade/res/map_clock_01_i5.png",
+              "Plist": ""
+            },
+            "Scale9Enable": true,
+            "Scale9OriginX": 15,
+            "Scale9OriginY": 11,
+            "Scale9Width": 1,
+            "Scale9Height": 13,
+            "OutlineColor": {
+              "G": 0,
+              "B": 0
+            },
+            "ShadowColor": {
+              "R": 110,
+              "G": 110,
+              "B": 110
+            },
+            "ShadowOffsetX": 2.0,
+            "ShadowOffsetY": -2.0,
+            "TouchEnable": true,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": -260.7554,
+              "Y": 52.6223
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "LeftMargin": -276.2554,
+            "RightMargin": 245.2554,
+            "TopMargin": -70.1223,
+            "BottomMargin": 35.1223,
+            "Tag": 378,
+            "ActionTag": -20698251,
+            "Size": {
+              "X": 31.0,
+              "Y": 35.0
+            },
+            "Name": "btnLock",
+            "ctype": "ButtonObjectData"
+          }
+        ],
+        "Size": {
+          "X": 0.0,
+          "Y": 0.0
+        },
+        "Name": "Node",
+        "ctype": "SingleNodeObjectData"
+      },
+      "UsedResources": [
+        "../Default/Button_Disable.png",
+        "res/map_arrow_01_i5.png",
+        "res/map_circle_01_i5.png",
+        "res/map_circle_02_i5.png",
+        "res/map_clock_01_i5.png",
+        "res/map_line_01_i5.png",
+        "res/map_line_02_i5.png"
+      ],
+      "ctype": "GameFileData"
+    }
+  },
+  "Type": "Node"
+}

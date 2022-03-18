@@ -1,0 +1,2569 @@
+{
+  "ID": "97732e31-2bed-48e6-9616-ec3dd6ab5826",
+  "Version": "2.3.4",
+  "Name": "IngameLayerEbp",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Tag": 496,
+        "Children": [
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "Game/res/ingame_ex_Fake_Ingame_09_i5-VietNV2.png",
+              "Plist": ""
+            },
+            "Scale9OriginX": 374,
+            "Scale9OriginY": 211,
+            "Scale9Width": 388,
+            "Scale9Height": 218,
+            "AnchorPoint": {},
+            "Position": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "PreSize": {
+              "X": 1.0,
+              "Y": 1.0
+            },
+            "Tag": 203,
+            "ActionTag": -437087928,
+            "Size": {
+              "X": 1136.0,
+              "Y": 640.0
+            },
+            "Name": "fake",
+            "ctype": "ImageViewObjectData"
+          },
+          {
+            "ClipAble": false,
+            "BackColorAlpha": 102,
+            "SingleColor": {
+              "R": 150,
+              "G": 200
+            },
+            "FirstColor": {
+              "R": 150,
+              "G": 200
+            },
+            "EndColor": {},
+            "ColorVector": {
+              "ScaleY": 1.0
+            },
+            "Scale9Width": 1,
+            "Scale9Height": 1,
+            "AnchorPoint": {},
+            "Position": {
+              "X": 0.0,
+              "Y": 0.3247
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.0,
+              "Y": 0.0005
+            },
+            "PercentWidthEnable": true,
+            "PercentHeightEnable": true,
+            "PercentWidthEnabled": true,
+            "PercentHeightEnabled": true,
+            "PreSize": {
+              "X": 1.0,
+              "Y": 1.0
+            },
+            "TopMargin": -0.3247,
+            "BottomMargin": 0.3247,
+            "Tag": 202,
+            "Children": [
+              {
+                "ClipAble": false,
+                "BackColorAlpha": 102,
+                "SingleColor": {
+                  "R": 150,
+                  "G": 200
+                },
+                "FirstColor": {
+                  "R": 150,
+                  "G": 200
+                },
+                "EndColor": {},
+                "ColorVector": {
+                  "ScaleY": 1.0
+                },
+                "Scale9Width": 1,
+                "Scale9Height": 1,
+                "TouchEnable": true,
+                "AnchorPoint": {
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 125.77,
+                  "Y": 67.61
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.1107,
+                  "Y": 0.1056
+                },
+                "PreSize": {
+                  "X": 0.2746,
+                  "Y": 0.1453
+                },
+                "HorizontalEdge": "LeftEdge",
+                "VerticalEdge": "BottomEdge",
+                "LeftMargin": 125.77,
+                "RightMargin": 698.23,
+                "TopMargin": 525.89,
+                "BottomMargin": 21.11,
+                "Tag": 202,
+                "Children": [
+                  {
+                    "FileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "IngameEBP_Avatar_Box_02.png",
+                      "Plist": "Resources/IngameEBP.plist"
+                    },
+                    "BlendFunc": {
+                      "Src": 1,
+                      "Dst": 771
+                    },
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 46.5362,
+                      "Y": 46.9471
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.1492,
+                      "Y": 0.5048
+                    },
+                    "PreSize": {
+                      "X": 0.3077,
+                      "Y": 1.0108
+                    },
+                    "LeftMargin": -1.4638,
+                    "RightMargin": 217.4638,
+                    "TopMargin": -0.9471,
+                    "BottomMargin": -0.0529,
+                    "Tag": 99,
+                    "ActionTag": 1048979614,
+                    "Size": {
+                      "X": 96.0,
+                      "Y": 94.0
+                    },
+                    "Name": "boxAvatar_0",
+                    "ctype": "SpriteObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "IngameEBP_Avatar_Box_01.png",
+                      "Plist": "Resources/IngameEBP.plist"
+                    },
+                    "BlendFunc": {
+                      "Src": 1,
+                      "Dst": 771
+                    },
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 46.3151,
+                      "Y": 47.22
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.1484,
+                      "Y": 0.5077
+                    },
+                    "PreSize": {
+                      "X": 0.3077,
+                      "Y": 1.0108
+                    },
+                    "LeftMargin": -1.6849,
+                    "RightMargin": 217.6849,
+                    "TopMargin": -1.22,
+                    "BottomMargin": 0.22,
+                    "Tag": 100,
+                    "ActionTag": 1150817223,
+                    "Size": {
+                      "X": 96.0,
+                      "Y": 94.0
+                    },
+                    "Name": "boxAvatar_1",
+                    "ctype": "SpriteObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "IngameEBP_Avatar_Box_03.png",
+                      "Plist": "Resources/IngameEBP.plist"
+                    },
+                    "BlendFunc": {
+                      "Src": 1,
+                      "Dst": 771
+                    },
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 202.697,
+                      "Y": 21.88
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.6497,
+                      "Y": 0.2353
+                    },
+                    "PreSize": {
+                      "X": 0.6955,
+                      "Y": 0.4516
+                    },
+                    "LeftMargin": 94.197,
+                    "RightMargin": 0.803,
+                    "TopMargin": 50.12,
+                    "BottomMargin": 0.88,
+                    "Tag": 101,
+                    "ActionTag": 2074955247,
+                    "Size": {
+                      "X": 217.0,
+                      "Y": 42.0
+                    },
+                    "Name": "boxBia",
+                    "ctype": "SpriteObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "IngameEBP_Avatar_Mask.png",
+                      "Plist": "Resources/IngameEBP.plist"
+                    },
+                    "BlendFunc": {
+                      "Src": 1,
+                      "Dst": 771
+                    },
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 46.963,
+                      "Y": 47.0378
+                    },
+                    "Scale": {
+                      "ScaleX": 0.9131,
+                      "ScaleY": 0.9131
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.1505,
+                      "Y": 0.5058
+                    },
+                    "PreSize": {
+                      "X": 0.2532,
+                      "Y": 0.8602
+                    },
+                    "LeftMargin": 7.463,
+                    "RightMargin": 225.537,
+                    "TopMargin": 5.9622,
+                    "BottomMargin": 7.0378,
+                    "Tag": 230,
+                    "ActionTag": 1671584805,
+                    "Size": {
+                      "X": 79.0,
+                      "Y": 80.0
+                    },
+                    "Name": "mask",
+                    "ctype": "SpriteObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "IngameEBP_Avatar_Timer_Bg.png",
+                      "Plist": "Resources/IngameEBP.plist"
+                    },
+                    "Scale9OriginX": 27,
+                    "Scale9OriginY": 27,
+                    "Scale9Width": 30,
+                    "Scale9Height": 30,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 46.5181,
+                      "Y": 47.2641
+                    },
+                    "Scale": {
+                      "ScaleX": 0.9131,
+                      "ScaleY": 0.9131
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.1491,
+                      "Y": 0.5082
+                    },
+                    "PreSize": {
+                      "X": 0.2692,
+                      "Y": 0.9032
+                    },
+                    "LeftMargin": 4.5181,
+                    "RightMargin": 223.4819,
+                    "TopMargin": 3.7359,
+                    "BottomMargin": 5.2641,
+                    "Tag": 205,
+                    "ActionTag": -148099223,
+                    "Size": {
+                      "X": 84.0,
+                      "Y": 84.0
+                    },
+                    "Name": "imgAvatarBorder",
+                    "ctype": "ImageViewObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "IngameEBP_Avatar_Timer.png",
+                      "Plist": "Resources/IngameEBP.plist"
+                    },
+                    "BlendFunc": {
+                      "Src": 1,
+                      "Dst": 771
+                    },
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 46.9627,
+                      "Y": 47.0385
+                    },
+                    "Scale": {
+                      "ScaleX": 0.9131,
+                      "ScaleY": 0.9131
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.1505,
+                      "Y": 0.5058
+                    },
+                    "PreSize": {
+                      "X": 0.2692,
+                      "Y": 0.9032
+                    },
+                    "LeftMargin": 4.9627,
+                    "RightMargin": 223.0373,
+                    "TopMargin": 3.9615,
+                    "BottomMargin": 5.0385,
+                    "Tag": 233,
+                    "ActionTag": -1899829262,
+                    "Size": {
+                      "X": 84.0,
+                      "Y": 84.0
+                    },
+                    "Name": "imgTimer",
+                    "ctype": "SpriteObjectData"
+                  },
+                  {
+                    "FontSize": 36,
+                    "LabelText": "99",
+                    "FontResource": {
+                      "Type": "Normal",
+                      "Path": "Font/UTMFacebook.ttf",
+                      "Plist": ""
+                    },
+                    "HorizontalAlignmentType": "HT_Center",
+                    "OutlineSize": 2,
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "OutlineEnabled": true,
+                    "ShadowColor": {
+                      "R": 110,
+                      "G": 110,
+                      "B": 110
+                    },
+                    "ShadowOffsetX": 2.0,
+                    "ShadowOffsetY": -2.0,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 47.3283,
+                      "Y": 50.7689
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.1517,
+                      "Y": 0.5459
+                    },
+                    "PreSize": {
+                      "X": 0.1635,
+                      "Y": 0.6022
+                    },
+                    "LeftMargin": 21.8283,
+                    "RightMargin": 239.1717,
+                    "TopMargin": 14.2311,
+                    "BottomMargin": 22.7689,
+                    "Tag": 234,
+                    "ActionTag": 1303316031,
+                    "Size": {
+                      "X": 51.0,
+                      "Y": 56.0
+                    },
+                    "Name": "timeAlert",
+                    "ctype": "TextObjectData"
+                  },
+                  {
+                    "AnchorPoint": {},
+                    "Position": {
+                      "X": 86.7711,
+                      "Y": 33.2516
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": true,
+                    "PrePosition": {
+                      "X": 0.2781,
+                      "Y": 0.3575
+                    },
+                    "PreSize": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "LeftMargin": 86.7711,
+                    "RightMargin": 225.2289,
+                    "TopMargin": 59.7484,
+                    "BottomMargin": 33.2516,
+                    "Tag": 208,
+                    "Children": [
+                      {
+                        "FileData": {
+                          "Type": "PlistSubImage",
+                          "Path": "IngameEBP_Ball_Disabled.png",
+                          "Plist": "Resources/IngameEBP.plist"
+                        },
+                        "Scale9OriginX": 8,
+                        "Scale9OriginY": 8,
+                        "Scale9Width": 10,
+                        "Scale9Height": 11,
+                        "AnchorPoint": {
+                          "ScaleX": 0.5,
+                          "ScaleY": 0.5
+                        },
+                        "Position": {
+                          "X": 19.6964,
+                          "Y": -12.7213
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "CColor": {},
+                        "IconVisible": false,
+                        "PrePosition": {
+                          "X": 0.0,
+                          "Y": 0.0
+                        },
+                        "PreSize": {
+                          "X": 0.0,
+                          "Y": 0.0
+                        },
+                        "LeftMargin": 6.6964,
+                        "RightMargin": -32.6964,
+                        "TopMargin": -0.7787,
+                        "BottomMargin": -26.2213,
+                        "Tag": 209,
+                        "ActionTag": -1481037153,
+                        "Size": {
+                          "X": 26.0,
+                          "Y": 27.0
+                        },
+                        "Name": "box1",
+                        "ctype": "ImageViewObjectData"
+                      },
+                      {
+                        "FileData": {
+                          "Type": "PlistSubImage",
+                          "Path": "IngameEBP_Ball_Disabled.png",
+                          "Plist": "Resources/IngameEBP.plist"
+                        },
+                        "Scale9OriginX": 8,
+                        "Scale9OriginY": 8,
+                        "Scale9Width": 10,
+                        "Scale9Height": 11,
+                        "AnchorPoint": {
+                          "ScaleX": 0.5,
+                          "ScaleY": 0.5
+                        },
+                        "Position": {
+                          "X": 51.0979,
+                          "Y": -12.7213
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "CColor": {},
+                        "IconVisible": false,
+                        "PrePosition": {
+                          "X": 0.0,
+                          "Y": 0.0
+                        },
+                        "PreSize": {
+                          "X": 0.0,
+                          "Y": 0.0
+                        },
+                        "LeftMargin": 38.0979,
+                        "RightMargin": -64.0979,
+                        "TopMargin": -0.7787,
+                        "BottomMargin": -26.2213,
+                        "Tag": 212,
+                        "ActionTag": -1023717771,
+                        "Size": {
+                          "X": 26.0,
+                          "Y": 27.0
+                        },
+                        "Name": "box2",
+                        "ctype": "ImageViewObjectData"
+                      },
+                      {
+                        "FileData": {
+                          "Type": "PlistSubImage",
+                          "Path": "IngameEBP_Ball_Disabled.png",
+                          "Plist": "Resources/IngameEBP.plist"
+                        },
+                        "Scale9OriginX": 8,
+                        "Scale9OriginY": 8,
+                        "Scale9Width": 10,
+                        "Scale9Height": 11,
+                        "AnchorPoint": {
+                          "ScaleX": 0.5,
+                          "ScaleY": 0.5
+                        },
+                        "Position": {
+                          "X": 82.4994,
+                          "Y": -12.7213
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "CColor": {},
+                        "IconVisible": false,
+                        "PrePosition": {
+                          "X": 0.0,
+                          "Y": 0.0
+                        },
+                        "PreSize": {
+                          "X": 0.0,
+                          "Y": 0.0
+                        },
+                        "LeftMargin": 69.4994,
+                        "RightMargin": -95.4994,
+                        "TopMargin": -0.7787,
+                        "BottomMargin": -26.2213,
+                        "Tag": 213,
+                        "ActionTag": 2059232899,
+                        "Size": {
+                          "X": 26.0,
+                          "Y": 27.0
+                        },
+                        "Name": "box3",
+                        "ctype": "ImageViewObjectData"
+                      },
+                      {
+                        "FileData": {
+                          "Type": "PlistSubImage",
+                          "Path": "IngameEBP_Ball_Disabled.png",
+                          "Plist": "Resources/IngameEBP.plist"
+                        },
+                        "Scale9OriginX": 8,
+                        "Scale9OriginY": 8,
+                        "Scale9Width": 10,
+                        "Scale9Height": 11,
+                        "AnchorPoint": {
+                          "ScaleX": 0.5,
+                          "ScaleY": 0.5
+                        },
+                        "Position": {
+                          "X": 113.9008,
+                          "Y": -12.7213
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "CColor": {},
+                        "IconVisible": false,
+                        "PrePosition": {
+                          "X": 0.0,
+                          "Y": 0.0
+                        },
+                        "PreSize": {
+                          "X": 0.0,
+                          "Y": 0.0
+                        },
+                        "LeftMargin": 100.9008,
+                        "RightMargin": -126.9008,
+                        "TopMargin": -0.7787,
+                        "BottomMargin": -26.2213,
+                        "Tag": 214,
+                        "ActionTag": -1664029333,
+                        "Size": {
+                          "X": 26.0,
+                          "Y": 27.0
+                        },
+                        "Name": "box4",
+                        "ctype": "ImageViewObjectData"
+                      },
+                      {
+                        "FileData": {
+                          "Type": "PlistSubImage",
+                          "Path": "IngameEBP_Ball_Disabled.png",
+                          "Plist": "Resources/IngameEBP.plist"
+                        },
+                        "Scale9OriginX": 8,
+                        "Scale9OriginY": 8,
+                        "Scale9Width": 10,
+                        "Scale9Height": 11,
+                        "AnchorPoint": {
+                          "ScaleX": 0.5,
+                          "ScaleY": 0.5
+                        },
+                        "Position": {
+                          "X": 145.3023,
+                          "Y": -12.7213
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "CColor": {},
+                        "IconVisible": false,
+                        "PrePosition": {
+                          "X": 0.0,
+                          "Y": 0.0
+                        },
+                        "PreSize": {
+                          "X": 0.0,
+                          "Y": 0.0
+                        },
+                        "LeftMargin": 132.3023,
+                        "RightMargin": -158.3023,
+                        "TopMargin": -0.7787,
+                        "BottomMargin": -26.2213,
+                        "Tag": 215,
+                        "ActionTag": 310580510,
+                        "Size": {
+                          "X": 26.0,
+                          "Y": 27.0
+                        },
+                        "Name": "box5",
+                        "ctype": "ImageViewObjectData"
+                      },
+                      {
+                        "FileData": {
+                          "Type": "PlistSubImage",
+                          "Path": "IngameEBP_Ball_Disabled.png",
+                          "Plist": "Resources/IngameEBP.plist"
+                        },
+                        "Scale9OriginX": 8,
+                        "Scale9OriginY": 8,
+                        "Scale9Width": 10,
+                        "Scale9Height": 11,
+                        "AnchorPoint": {
+                          "ScaleX": 0.5,
+                          "ScaleY": 0.5
+                        },
+                        "Position": {
+                          "X": 176.7038,
+                          "Y": -12.7213
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "CColor": {},
+                        "IconVisible": false,
+                        "PrePosition": {
+                          "X": 0.0,
+                          "Y": 0.0
+                        },
+                        "PreSize": {
+                          "X": 0.0,
+                          "Y": 0.0
+                        },
+                        "LeftMargin": 163.7038,
+                        "RightMargin": -189.7038,
+                        "TopMargin": -0.7787,
+                        "BottomMargin": -26.2213,
+                        "Tag": 216,
+                        "ActionTag": 240219740,
+                        "Size": {
+                          "X": 26.0,
+                          "Y": 27.0
+                        },
+                        "Name": "box6",
+                        "ctype": "ImageViewObjectData"
+                      },
+                      {
+                        "FileData": {
+                          "Type": "PlistSubImage",
+                          "Path": "IngameEBP_Ball_Disabled.png",
+                          "Plist": "Resources/IngameEBP.plist"
+                        },
+                        "Scale9OriginX": 8,
+                        "Scale9OriginY": 8,
+                        "Scale9Width": 10,
+                        "Scale9Height": 11,
+                        "AnchorPoint": {
+                          "ScaleX": 0.5,
+                          "ScaleY": 0.5
+                        },
+                        "Position": {
+                          "X": 208.1052,
+                          "Y": -12.7213
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "CColor": {},
+                        "IconVisible": false,
+                        "PrePosition": {
+                          "X": 0.0,
+                          "Y": 0.0
+                        },
+                        "PreSize": {
+                          "X": 0.0,
+                          "Y": 0.0
+                        },
+                        "LeftMargin": 195.1052,
+                        "RightMargin": -221.1052,
+                        "TopMargin": -0.7787,
+                        "BottomMargin": -26.2213,
+                        "Tag": 217,
+                        "ActionTag": -1091841420,
+                        "Size": {
+                          "X": 26.0,
+                          "Y": 27.0
+                        },
+                        "Name": "box7",
+                        "ctype": "ImageViewObjectData"
+                      }
+                    ],
+                    "ActionTag": 328827242,
+                    "Size": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "Name": "nodeRemainBalls",
+                    "ctype": "SingleNodeObjectData"
+                  },
+                  {
+                    "AnchorPoint": {},
+                    "Position": {
+                      "X": 85.1609,
+                      "Y": 33.2517
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": true,
+                    "PrePosition": {
+                      "X": 0.273,
+                      "Y": 0.3575
+                    },
+                    "PreSize": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "LeftMargin": 85.1609,
+                    "RightMargin": 226.8391,
+                    "TopMargin": 59.7483,
+                    "BottomMargin": 33.2517,
+                    "Tag": 184,
+                    "Children": [
+                      {
+                        "FileData": {
+                          "Type": "PlistSubImage",
+                          "Path": "IngameEBP_Cue_Ball_Arrow.png",
+                          "Plist": "Resources/IngameEBP.plist"
+                        },
+                        "BlendFunc": {
+                          "Src": 1,
+                          "Dst": 771
+                        },
+                        "AnchorPoint": {
+                          "ScaleX": 0.5,
+                          "ScaleY": 0.5
+                        },
+                        "Position": {
+                          "X": 21.758,
+                          "Y": -13.0855
+                        },
+                        "Scale": {
+                          "ScaleX": 0.3291,
+                          "ScaleY": 0.3291
+                        },
+                        "RotationSkewX": 86.4049,
+                        "RotationSkewY": 86.4033,
+                        "CColor": {},
+                        "IconVisible": false,
+                        "PrePosition": {
+                          "X": 0.0,
+                          "Y": 0.0
+                        },
+                        "PreSize": {
+                          "X": 0.0,
+                          "Y": 0.0
+                        },
+                        "LeftMargin": -19.742,
+                        "RightMargin": -63.258,
+                        "TopMargin": -16.4145,
+                        "BottomMargin": -42.5855,
+                        "Tag": 185,
+                        "ActionTag": 764290231,
+                        "Size": {
+                          "X": 83.0,
+                          "Y": 59.0
+                        },
+                        "Name": "arrow_0",
+                        "ctype": "SpriteObjectData"
+                      },
+                      {
+                        "FileData": {
+                          "Type": "PlistSubImage",
+                          "Path": "IngameEBP_Cue_Ball_Arrow.png",
+                          "Plist": "Resources/IngameEBP.plist"
+                        },
+                        "BlendFunc": {
+                          "Src": 1,
+                          "Dst": 771
+                        },
+                        "AnchorPoint": {
+                          "ScaleX": 0.5,
+                          "ScaleY": 0.5
+                        },
+                        "Position": {
+                          "X": 53.3759,
+                          "Y": -13.0855
+                        },
+                        "Scale": {
+                          "ScaleX": 0.3291,
+                          "ScaleY": 0.3291
+                        },
+                        "RotationSkewX": 86.4003,
+                        "RotationSkewY": 86.4029,
+                        "CColor": {},
+                        "IconVisible": false,
+                        "PrePosition": {
+                          "X": 0.0,
+                          "Y": 0.0
+                        },
+                        "PreSize": {
+                          "X": 0.0,
+                          "Y": 0.0
+                        },
+                        "LeftMargin": 11.8759,
+                        "RightMargin": -94.8759,
+                        "TopMargin": -16.4145,
+                        "BottomMargin": -42.5855,
+                        "Tag": 186,
+                        "ActionTag": -1658140050,
+                        "Size": {
+                          "X": 83.0,
+                          "Y": 59.0
+                        },
+                        "Name": "arrow_1",
+                        "ctype": "SpriteObjectData"
+                      },
+                      {
+                        "FileData": {
+                          "Type": "PlistSubImage",
+                          "Path": "IngameEBP_Cue_Ball_Arrow.png",
+                          "Plist": "Resources/IngameEBP.plist"
+                        },
+                        "BlendFunc": {
+                          "Src": 1,
+                          "Dst": 771
+                        },
+                        "AnchorPoint": {
+                          "ScaleX": 0.5,
+                          "ScaleY": 0.5
+                        },
+                        "Position": {
+                          "X": 84.9937,
+                          "Y": -13.0855
+                        },
+                        "Scale": {
+                          "ScaleX": 0.3291,
+                          "ScaleY": 0.3291
+                        },
+                        "RotationSkewX": 86.4049,
+                        "RotationSkewY": 86.4036,
+                        "CColor": {},
+                        "IconVisible": false,
+                        "PrePosition": {
+                          "X": 0.0,
+                          "Y": 0.0
+                        },
+                        "PreSize": {
+                          "X": 0.0,
+                          "Y": 0.0
+                        },
+                        "LeftMargin": 43.4937,
+                        "RightMargin": -126.4937,
+                        "TopMargin": -16.4145,
+                        "BottomMargin": -42.5855,
+                        "Tag": 187,
+                        "ActionTag": -1635327236,
+                        "Size": {
+                          "X": 83.0,
+                          "Y": 59.0
+                        },
+                        "Name": "arrow_2",
+                        "ctype": "SpriteObjectData"
+                      },
+                      {
+                        "FileData": {
+                          "Type": "PlistSubImage",
+                          "Path": "IngameEBP_Cue_Ball_Arrow.png",
+                          "Plist": "Resources/IngameEBP.plist"
+                        },
+                        "BlendFunc": {
+                          "Src": 1,
+                          "Dst": 771
+                        },
+                        "AnchorPoint": {
+                          "ScaleX": 0.5,
+                          "ScaleY": 0.5
+                        },
+                        "Position": {
+                          "X": 142.4104,
+                          "Y": -13.0855
+                        },
+                        "Scale": {
+                          "ScaleX": 0.3291,
+                          "ScaleY": 0.3291
+                        },
+                        "RotationSkewX": -87.2868,
+                        "RotationSkewY": 92.7171,
+                        "CColor": {},
+                        "IconVisible": false,
+                        "PrePosition": {
+                          "X": 0.0,
+                          "Y": 0.0
+                        },
+                        "PreSize": {
+                          "X": 0.0,
+                          "Y": 0.0
+                        },
+                        "LeftMargin": 100.9104,
+                        "RightMargin": -183.9104,
+                        "TopMargin": -16.4145,
+                        "BottomMargin": -42.5855,
+                        "Tag": 188,
+                        "ActionTag": -1990658809,
+                        "Size": {
+                          "X": 83.0,
+                          "Y": 59.0
+                        },
+                        "Name": "arrow_3",
+                        "ctype": "SpriteObjectData"
+                      },
+                      {
+                        "FileData": {
+                          "Type": "PlistSubImage",
+                          "Path": "IngameEBP_Cue_Ball_Arrow.png",
+                          "Plist": "Resources/IngameEBP.plist"
+                        },
+                        "BlendFunc": {
+                          "Src": 1,
+                          "Dst": 771
+                        },
+                        "AnchorPoint": {
+                          "ScaleX": 0.5,
+                          "ScaleY": 0.5
+                        },
+                        "Position": {
+                          "X": 174.1255,
+                          "Y": -13.0855
+                        },
+                        "Scale": {
+                          "ScaleX": 0.3291,
+                          "ScaleY": 0.3291
+                        },
+                        "RotationSkewX": -87.2869,
+                        "RotationSkewY": 92.7158,
+                        "CColor": {},
+                        "IconVisible": false,
+                        "PrePosition": {
+                          "X": 0.0,
+                          "Y": 0.0
+                        },
+                        "PreSize": {
+                          "X": 0.0,
+                          "Y": 0.0
+                        },
+                        "LeftMargin": 132.6255,
+                        "RightMargin": -215.6255,
+                        "TopMargin": -16.4145,
+                        "BottomMargin": -42.5855,
+                        "Tag": 189,
+                        "ActionTag": 1405878716,
+                        "Size": {
+                          "X": 83.0,
+                          "Y": 59.0
+                        },
+                        "Name": "arrow_4",
+                        "ctype": "SpriteObjectData"
+                      },
+                      {
+                        "FileData": {
+                          "Type": "PlistSubImage",
+                          "Path": "IngameEBP_Cue_Ball_Arrow.png",
+                          "Plist": "Resources/IngameEBP.plist"
+                        },
+                        "BlendFunc": {
+                          "Src": 1,
+                          "Dst": 771
+                        },
+                        "AnchorPoint": {
+                          "ScaleX": 0.5,
+                          "ScaleY": 0.5
+                        },
+                        "Position": {
+                          "X": 205.8404,
+                          "Y": -13.0856
+                        },
+                        "Scale": {
+                          "ScaleX": 0.3291,
+                          "ScaleY": 0.3291
+                        },
+                        "RotationSkewX": -87.2868,
+                        "RotationSkewY": 92.7158,
+                        "CColor": {},
+                        "IconVisible": false,
+                        "PrePosition": {
+                          "X": 0.0,
+                          "Y": 0.0
+                        },
+                        "PreSize": {
+                          "X": 0.0,
+                          "Y": 0.0
+                        },
+                        "LeftMargin": 164.3404,
+                        "RightMargin": -247.3404,
+                        "TopMargin": -16.4144,
+                        "BottomMargin": -42.5856,
+                        "Tag": 190,
+                        "ActionTag": -1924180924,
+                        "Size": {
+                          "X": 83.0,
+                          "Y": 59.0
+                        },
+                        "Name": "arrow_5",
+                        "ctype": "SpriteObjectData"
+                      }
+                    ],
+                    "ActionTag": 684023350,
+                    "Size": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "Name": "nodeEightBall",
+                    "ctype": "SingleNodeObjectData"
+                  },
+                  {
+                    "AnchorPoint": {},
+                    "Position": {
+                      "X": 98.32,
+                      "Y": 84.78
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": true,
+                    "PrePosition": {
+                      "X": 0.3151,
+                      "Y": 0.9116
+                    },
+                    "PreSize": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "LeftMargin": 98.32,
+                    "RightMargin": 213.68,
+                    "TopMargin": 8.22,
+                    "BottomMargin": 84.78,
+                    "Tag": 429,
+                    "Children": [
+                      {
+                        "FileData": {
+                          "Type": "PlistSubImage",
+                          "Path": "IngameEBP_Cup_Inactive.png",
+                          "Plist": "Resources/IngameEBP.plist"
+                        },
+                        "Scale9OriginX": 11,
+                        "Scale9OriginY": 11,
+                        "Scale9Width": 12,
+                        "Scale9Height": 13,
+                        "AnchorPoint": {
+                          "ScaleX": 0.5,
+                          "ScaleY": 0.5
+                        },
+                        "Position": {
+                          "X": 22.2915,
+                          "Y": -18.9166
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "CColor": {},
+                        "IconVisible": false,
+                        "PrePosition": {
+                          "X": 0.0,
+                          "Y": 0.0
+                        },
+                        "PreSize": {
+                          "X": 0.0,
+                          "Y": 0.0
+                        },
+                        "LeftMargin": 5.2915,
+                        "RightMargin": -39.2915,
+                        "TopMargin": 1.4166,
+                        "BottomMargin": -36.4166,
+                        "Tag": 430,
+                        "ActionTag": 965211068,
+                        "Size": {
+                          "X": 34.0,
+                          "Y": 35.0
+                        },
+                        "Name": "box1",
+                        "ctype": "ImageViewObjectData"
+                      },
+                      {
+                        "FileData": {
+                          "Type": "PlistSubImage",
+                          "Path": "IngameEBP_Cup_Inactive.png",
+                          "Plist": "Resources/IngameEBP.plist"
+                        },
+                        "Scale9OriginX": 11,
+                        "Scale9OriginY": 11,
+                        "Scale9Width": 12,
+                        "Scale9Height": 13,
+                        "AnchorPoint": {
+                          "ScaleX": 0.5,
+                          "ScaleY": 0.5
+                        },
+                        "Position": {
+                          "X": 63.2075,
+                          "Y": -18.9166
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "CColor": {},
+                        "IconVisible": false,
+                        "PrePosition": {
+                          "X": 0.0,
+                          "Y": 0.0
+                        },
+                        "PreSize": {
+                          "X": 0.0,
+                          "Y": 0.0
+                        },
+                        "LeftMargin": 46.2075,
+                        "RightMargin": -80.2075,
+                        "TopMargin": 1.4166,
+                        "BottomMargin": -36.4166,
+                        "Tag": 431,
+                        "ActionTag": 1357734794,
+                        "Size": {
+                          "X": 34.0,
+                          "Y": 35.0
+                        },
+                        "Name": "box2",
+                        "ctype": "ImageViewObjectData"
+                      },
+                      {
+                        "FileData": {
+                          "Type": "PlistSubImage",
+                          "Path": "IngameEBP_Cup_Inactive.png",
+                          "Plist": "Resources/IngameEBP.plist"
+                        },
+                        "Scale9OriginX": 11,
+                        "Scale9OriginY": 11,
+                        "Scale9Width": 12,
+                        "Scale9Height": 13,
+                        "AnchorPoint": {
+                          "ScaleX": 0.5,
+                          "ScaleY": 0.5
+                        },
+                        "Position": {
+                          "X": 104.1234,
+                          "Y": -18.9166
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "CColor": {},
+                        "IconVisible": false,
+                        "PrePosition": {
+                          "X": 0.0,
+                          "Y": 0.0
+                        },
+                        "PreSize": {
+                          "X": 0.0,
+                          "Y": 0.0
+                        },
+                        "LeftMargin": 87.1234,
+                        "RightMargin": -121.1234,
+                        "TopMargin": 1.4166,
+                        "BottomMargin": -36.4166,
+                        "Tag": 432,
+                        "ActionTag": 381909380,
+                        "Size": {
+                          "X": 34.0,
+                          "Y": 35.0
+                        },
+                        "Name": "box3",
+                        "ctype": "ImageViewObjectData"
+                      }
+                    ],
+                    "ActionTag": -473819467,
+                    "Size": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "Name": "nodeScore",
+                    "ctype": "SingleNodeObjectData"
+                  }
+                ],
+                "ActionTag": 427672870,
+                "Size": {
+                  "X": 312.0,
+                  "Y": 93.0
+                },
+                "Name": "imgP1",
+                "ctype": "PanelObjectData"
+              },
+              {
+                "ClipAble": false,
+                "BackColorAlpha": 102,
+                "SingleColor": {
+                  "R": 150,
+                  "G": 200
+                },
+                "FirstColor": {
+                  "R": 150,
+                  "G": 200
+                },
+                "EndColor": {},
+                "ColorVector": {
+                  "ScaleY": 1.0
+                },
+                "Scale9Width": 1,
+                "Scale9Height": 1,
+                "TouchEnable": true,
+                "AnchorPoint": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 1010.71,
+                  "Y": 68.54
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.8897,
+                  "Y": 0.1071
+                },
+                "PreSize": {
+                  "X": 0.2746,
+                  "Y": 0.1453
+                },
+                "HorizontalEdge": "RightEdge",
+                "VerticalEdge": "BottomEdge",
+                "LeftMargin": 698.71,
+                "RightMargin": 125.29,
+                "TopMargin": 524.96,
+                "BottomMargin": 22.04,
+                "Tag": 203,
+                "Children": [
+                  {
+                    "FileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "IngameEBP_Avatar_Box_02.png",
+                      "Plist": "Resources/IngameEBP.plist"
+                    },
+                    "BlendFunc": {
+                      "Src": 1,
+                      "Dst": 771
+                    },
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 265.4411,
+                      "Y": 44.5869
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.8508,
+                      "Y": 0.4794
+                    },
+                    "PreSize": {
+                      "X": 0.3077,
+                      "Y": 1.0108
+                    },
+                    "LeftMargin": 217.4411,
+                    "RightMargin": -1.4411,
+                    "TopMargin": 1.4131,
+                    "BottomMargin": -2.4131,
+                    "Tag": 95,
+                    "ActionTag": 601403718,
+                    "Size": {
+                      "X": 96.0,
+                      "Y": 94.0
+                    },
+                    "VisibleForFrame": false,
+                    "Name": "boxAvatar_0",
+                    "ctype": "SpriteObjectData"
+                  },
+                  {
+                    "FlipX": true,
+                    "FileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "IngameEBP_Avatar_Box_01.png",
+                      "Plist": "Resources/IngameEBP.plist"
+                    },
+                    "BlendFunc": {
+                      "Src": 1,
+                      "Dst": 771
+                    },
+                    "AnchorPoint": {
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 215.564,
+                      "Y": 45.7861
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.6909,
+                      "Y": 0.4923
+                    },
+                    "PreSize": {
+                      "X": 0.3077,
+                      "Y": 1.0108
+                    },
+                    "LeftMargin": 215.564,
+                    "RightMargin": 0.436,
+                    "TopMargin": 0.2139,
+                    "BottomMargin": -1.2139,
+                    "Tag": 96,
+                    "ActionTag": -1210208606,
+                    "Size": {
+                      "X": 96.0,
+                      "Y": 94.0
+                    },
+                    "Name": "boxAvatar_1",
+                    "ctype": "SpriteObjectData"
+                  },
+                  {
+                    "FlipX": true,
+                    "FileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "IngameEBP_Avatar_Box_03.png",
+                      "Plist": "Resources/IngameEBP.plist"
+                    },
+                    "BlendFunc": {
+                      "Src": 1,
+                      "Dst": 771
+                    },
+                    "AnchorPoint": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 215.56,
+                      "Y": 19.64
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.6909,
+                      "Y": 0.2112
+                    },
+                    "PreSize": {
+                      "X": 0.6955,
+                      "Y": 0.4516
+                    },
+                    "LeftMargin": -1.44,
+                    "RightMargin": 96.44,
+                    "TopMargin": 52.36,
+                    "BottomMargin": -1.36,
+                    "Tag": 98,
+                    "ActionTag": -1977360936,
+                    "Size": {
+                      "X": 217.0,
+                      "Y": 42.0
+                    },
+                    "Name": "boxBia",
+                    "ctype": "SpriteObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "IngameEBP_Avatar_Mask.png",
+                      "Plist": "Resources/IngameEBP.plist"
+                    },
+                    "BlendFunc": {
+                      "Src": 1,
+                      "Dst": 771
+                    },
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 265.8013,
+                      "Y": 43.86
+                    },
+                    "Scale": {
+                      "ScaleX": 0.9193,
+                      "ScaleY": 0.9193
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.8519,
+                      "Y": 0.4716
+                    },
+                    "PreSize": {
+                      "X": 0.2532,
+                      "Y": 0.8602
+                    },
+                    "LeftMargin": 226.3013,
+                    "RightMargin": 6.6987,
+                    "TopMargin": 9.14,
+                    "BottomMargin": 3.86,
+                    "Tag": 231,
+                    "ActionTag": -1446464094,
+                    "Size": {
+                      "X": 79.0,
+                      "Y": 80.0
+                    },
+                    "Name": "mask",
+                    "ctype": "SpriteObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "IngameEBP_Avatar_Timer_Bg.png",
+                      "Plist": "Resources/IngameEBP.plist"
+                    },
+                    "Scale9OriginX": 27,
+                    "Scale9OriginY": 27,
+                    "Scale9Width": 30,
+                    "Scale9Height": 30,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 265.8,
+                      "Y": 43.87
+                    },
+                    "Scale": {
+                      "ScaleX": 0.9193,
+                      "ScaleY": 0.9193
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.8519,
+                      "Y": 0.4717
+                    },
+                    "PreSize": {
+                      "X": 0.2692,
+                      "Y": 0.9032
+                    },
+                    "LeftMargin": 223.8,
+                    "RightMargin": 4.2,
+                    "TopMargin": 7.13,
+                    "BottomMargin": 1.87,
+                    "Tag": 220,
+                    "ActionTag": -38243681,
+                    "Size": {
+                      "X": 84.0,
+                      "Y": 84.0
+                    },
+                    "Name": "imgAvatarBorder",
+                    "ctype": "ImageViewObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "IngameEBP_Avatar_Timer.png",
+                      "Plist": "Resources/IngameEBP.plist"
+                    },
+                    "BlendFunc": {
+                      "Src": 1,
+                      "Dst": 771
+                    },
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 263.5255,
+                      "Y": 43.8628
+                    },
+                    "Scale": {
+                      "ScaleX": 0.9193,
+                      "ScaleY": 0.9193
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.8446,
+                      "Y": 0.4716
+                    },
+                    "PreSize": {
+                      "X": 0.2692,
+                      "Y": 0.9032
+                    },
+                    "LeftMargin": 221.5255,
+                    "RightMargin": 6.4745,
+                    "TopMargin": 7.1372,
+                    "BottomMargin": 1.8628,
+                    "Tag": 232,
+                    "ActionTag": -920422884,
+                    "Size": {
+                      "X": 84.0,
+                      "Y": 84.0
+                    },
+                    "Name": "imgTimer",
+                    "ctype": "SpriteObjectData"
+                  },
+                  {
+                    "FontSize": 36,
+                    "LabelText": "99",
+                    "FontResource": {
+                      "Type": "Normal",
+                      "Path": "Font/UTMFacebook.ttf",
+                      "Plist": ""
+                    },
+                    "HorizontalAlignmentType": "HT_Center",
+                    "OutlineSize": 2,
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "OutlineEnabled": true,
+                    "ShadowColor": {
+                      "R": 110,
+                      "G": 110,
+                      "B": 110
+                    },
+                    "ShadowOffsetX": 2.0,
+                    "ShadowOffsetY": -2.0,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 264.2413,
+                      "Y": 47.1657
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.8469,
+                      "Y": 0.5072
+                    },
+                    "PreSize": {
+                      "X": 0.1635,
+                      "Y": 0.6022
+                    },
+                    "LeftMargin": 238.7413,
+                    "RightMargin": 22.2587,
+                    "TopMargin": 17.8343,
+                    "BottomMargin": 19.1657,
+                    "Tag": 235,
+                    "ActionTag": -116187849,
+                    "Size": {
+                      "X": 51.0,
+                      "Y": 56.0
+                    },
+                    "Name": "timeAlert",
+                    "ctype": "TextObjectData"
+                  },
+                  {
+                    "AnchorPoint": {},
+                    "Position": {
+                      "X": 86.9223,
+                      "Y": 32.6569
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": true,
+                    "PrePosition": {
+                      "X": 0.2786,
+                      "Y": 0.3511
+                    },
+                    "PreSize": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "LeftMargin": 86.9223,
+                    "RightMargin": 225.0777,
+                    "TopMargin": 60.3431,
+                    "BottomMargin": 32.6569,
+                    "Tag": 222,
+                    "Children": [
+                      {
+                        "FileData": {
+                          "Type": "PlistSubImage",
+                          "Path": "IngameEBP_Ball_Disabled.png",
+                          "Plist": "Resources/IngameEBP.plist"
+                        },
+                        "Scale9OriginX": 8,
+                        "Scale9OriginY": 8,
+                        "Scale9Width": 10,
+                        "Scale9Height": 11,
+                        "AnchorPoint": {
+                          "ScaleX": 0.5,
+                          "ScaleY": 0.5
+                        },
+                        "Position": {
+                          "X": -66.6532,
+                          "Y": -12.72
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "CColor": {},
+                        "IconVisible": false,
+                        "PrePosition": {
+                          "X": 0.0,
+                          "Y": 0.0
+                        },
+                        "PreSize": {
+                          "X": 0.0,
+                          "Y": 0.0
+                        },
+                        "LeftMargin": -79.6532,
+                        "RightMargin": 53.6532,
+                        "TopMargin": -0.78,
+                        "BottomMargin": -26.22,
+                        "Tag": 223,
+                        "ActionTag": -1808103964,
+                        "Size": {
+                          "X": 26.0,
+                          "Y": 27.0
+                        },
+                        "Name": "box7",
+                        "ctype": "ImageViewObjectData"
+                      },
+                      {
+                        "FileData": {
+                          "Type": "PlistSubImage",
+                          "Path": "IngameEBP_Ball_Disabled.png",
+                          "Plist": "Resources/IngameEBP.plist"
+                        },
+                        "Scale9OriginX": 8,
+                        "Scale9OriginY": 8,
+                        "Scale9Width": 10,
+                        "Scale9Height": 11,
+                        "AnchorPoint": {
+                          "ScaleX": 0.5,
+                          "ScaleY": 0.5
+                        },
+                        "Position": {
+                          "X": -36.3974,
+                          "Y": -13.345
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "CColor": {},
+                        "IconVisible": false,
+                        "PrePosition": {
+                          "X": 0.0,
+                          "Y": 0.0
+                        },
+                        "PreSize": {
+                          "X": 0.0,
+                          "Y": 0.0
+                        },
+                        "LeftMargin": -49.3974,
+                        "RightMargin": 23.3974,
+                        "TopMargin": -0.155,
+                        "BottomMargin": -26.845,
+                        "Tag": 224,
+                        "ActionTag": 1949243610,
+                        "Size": {
+                          "X": 26.0,
+                          "Y": 27.0
+                        },
+                        "Name": "box6",
+                        "ctype": "ImageViewObjectData"
+                      },
+                      {
+                        "FileData": {
+                          "Type": "PlistSubImage",
+                          "Path": "IngameEBP_Ball_Disabled.png",
+                          "Plist": "Resources/IngameEBP.plist"
+                        },
+                        "Scale9OriginX": 8,
+                        "Scale9OriginY": 8,
+                        "Scale9Width": 10,
+                        "Scale9Height": 11,
+                        "AnchorPoint": {
+                          "ScaleX": 0.5,
+                          "ScaleY": 0.5
+                        },
+                        "Position": {
+                          "X": -6.0641,
+                          "Y": -12.72
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "CColor": {},
+                        "IconVisible": false,
+                        "PrePosition": {
+                          "X": 0.0,
+                          "Y": 0.0
+                        },
+                        "PreSize": {
+                          "X": 0.0,
+                          "Y": 0.0
+                        },
+                        "LeftMargin": -19.0641,
+                        "RightMargin": -6.9359,
+                        "TopMargin": -0.78,
+                        "BottomMargin": -26.22,
+                        "Tag": 225,
+                        "ActionTag": 1794746213,
+                        "Size": {
+                          "X": 26.0,
+                          "Y": 27.0
+                        },
+                        "Name": "box5",
+                        "ctype": "ImageViewObjectData"
+                      },
+                      {
+                        "FileData": {
+                          "Type": "PlistSubImage",
+                          "Path": "IngameEBP_Ball_Disabled.png",
+                          "Plist": "Resources/IngameEBP.plist"
+                        },
+                        "Scale9OriginX": 8,
+                        "Scale9OriginY": 8,
+                        "Scale9Width": 10,
+                        "Scale9Height": 11,
+                        "AnchorPoint": {
+                          "ScaleX": 0.5,
+                          "ScaleY": 0.5
+                        },
+                        "Position": {
+                          "X": 25.2652,
+                          "Y": -13.3204
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "CColor": {},
+                        "IconVisible": false,
+                        "PrePosition": {
+                          "X": 0.0,
+                          "Y": 0.0
+                        },
+                        "PreSize": {
+                          "X": 0.0,
+                          "Y": 0.0
+                        },
+                        "LeftMargin": 12.2652,
+                        "RightMargin": -38.2652,
+                        "TopMargin": -0.1796,
+                        "BottomMargin": -26.8204,
+                        "Tag": 226,
+                        "ActionTag": -1240698778,
+                        "Size": {
+                          "X": 26.0,
+                          "Y": 27.0
+                        },
+                        "Name": "box4",
+                        "ctype": "ImageViewObjectData"
+                      },
+                      {
+                        "FileData": {
+                          "Type": "PlistSubImage",
+                          "Path": "IngameEBP_Ball_Disabled.png",
+                          "Plist": "Resources/IngameEBP.plist"
+                        },
+                        "Scale9OriginX": 8,
+                        "Scale9OriginY": 8,
+                        "Scale9Width": 10,
+                        "Scale9Height": 11,
+                        "AnchorPoint": {
+                          "ScaleX": 0.5,
+                          "ScaleY": 0.5
+                        },
+                        "Position": {
+                          "X": 56.4045,
+                          "Y": -13.0202
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "CColor": {},
+                        "IconVisible": false,
+                        "PrePosition": {
+                          "X": 0.0,
+                          "Y": 0.0
+                        },
+                        "PreSize": {
+                          "X": 0.0,
+                          "Y": 0.0
+                        },
+                        "LeftMargin": 43.4045,
+                        "RightMargin": -69.4045,
+                        "TopMargin": -0.4798,
+                        "BottomMargin": -26.5202,
+                        "Tag": 227,
+                        "ActionTag": -1928513472,
+                        "Size": {
+                          "X": 26.0,
+                          "Y": 27.0
+                        },
+                        "Name": "box3",
+                        "ctype": "ImageViewObjectData"
+                      },
+                      {
+                        "FileData": {
+                          "Type": "PlistSubImage",
+                          "Path": "IngameEBP_Ball_Disabled.png",
+                          "Plist": "Resources/IngameEBP.plist"
+                        },
+                        "Scale9OriginX": 8,
+                        "Scale9OriginY": 8,
+                        "Scale9Width": 10,
+                        "Scale9Height": 11,
+                        "AnchorPoint": {
+                          "ScaleX": 0.5,
+                          "ScaleY": 0.5
+                        },
+                        "Position": {
+                          "X": 87.5659,
+                          "Y": -13.3204
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "CColor": {},
+                        "IconVisible": false,
+                        "PrePosition": {
+                          "X": 0.0,
+                          "Y": 0.0
+                        },
+                        "PreSize": {
+                          "X": 0.0,
+                          "Y": 0.0
+                        },
+                        "LeftMargin": 74.5659,
+                        "RightMargin": -100.5659,
+                        "TopMargin": -0.1796,
+                        "BottomMargin": -26.8204,
+                        "Tag": 228,
+                        "ActionTag": 1706021639,
+                        "Size": {
+                          "X": 26.0,
+                          "Y": 27.0
+                        },
+                        "Name": "box2",
+                        "ctype": "ImageViewObjectData"
+                      },
+                      {
+                        "FileData": {
+                          "Type": "PlistSubImage",
+                          "Path": "IngameEBP_Ball_Disabled.png",
+                          "Plist": "Resources/IngameEBP.plist"
+                        },
+                        "Scale9OriginX": 8,
+                        "Scale9OriginY": 8,
+                        "Scale9Width": 10,
+                        "Scale9Height": 11,
+                        "AnchorPoint": {
+                          "ScaleX": 0.5,
+                          "ScaleY": 0.5
+                        },
+                        "Position": {
+                          "X": 120.0292,
+                          "Y": -13.3204
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "CColor": {},
+                        "IconVisible": false,
+                        "PrePosition": {
+                          "X": 0.0,
+                          "Y": 0.0
+                        },
+                        "PreSize": {
+                          "X": 0.0,
+                          "Y": 0.0
+                        },
+                        "LeftMargin": 107.0292,
+                        "RightMargin": -133.0292,
+                        "TopMargin": -0.1796,
+                        "BottomMargin": -26.8204,
+                        "Tag": 229,
+                        "ActionTag": 562827731,
+                        "Size": {
+                          "X": 26.0,
+                          "Y": 27.0
+                        },
+                        "Name": "box1",
+                        "ctype": "ImageViewObjectData"
+                      }
+                    ],
+                    "ActionTag": -366995405,
+                    "Size": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "Name": "nodeRemainBalls",
+                    "ctype": "SingleNodeObjectData"
+                  },
+                  {
+                    "AnchorPoint": {},
+                    "Position": {
+                      "X": 86.9225,
+                      "Y": 31.6351
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": true,
+                    "PrePosition": {
+                      "X": 0.2786,
+                      "Y": 0.3402
+                    },
+                    "PreSize": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "LeftMargin": 86.9225,
+                    "RightMargin": 225.0775,
+                    "TopMargin": 61.3649,
+                    "BottomMargin": 31.6351,
+                    "Tag": 191,
+                    "Children": [
+                      {
+                        "FileData": {
+                          "Type": "PlistSubImage",
+                          "Path": "IngameEBP_Cue_Ball_Arrow.png",
+                          "Plist": "Resources/IngameEBP.plist"
+                        },
+                        "BlendFunc": {
+                          "Src": 1,
+                          "Dst": 771
+                        },
+                        "AnchorPoint": {
+                          "ScaleX": 0.5,
+                          "ScaleY": 0.5
+                        },
+                        "Position": {
+                          "X": -64.9941,
+                          "Y": -12.4
+                        },
+                        "Scale": {
+                          "ScaleX": 0.3291,
+                          "ScaleY": 0.3291
+                        },
+                        "RotationSkewX": 86.4049,
+                        "RotationSkewY": 86.4033,
+                        "CColor": {},
+                        "IconVisible": false,
+                        "PrePosition": {
+                          "X": 0.0,
+                          "Y": 0.0
+                        },
+                        "PreSize": {
+                          "X": 0.0,
+                          "Y": 0.0
+                        },
+                        "LeftMargin": -106.4941,
+                        "RightMargin": 23.4941,
+                        "TopMargin": -17.1,
+                        "BottomMargin": -41.9,
+                        "Tag": 192,
+                        "ActionTag": -96564757,
+                        "Size": {
+                          "X": 83.0,
+                          "Y": 59.0
+                        },
+                        "Name": "arrow_0",
+                        "ctype": "SpriteObjectData"
+                      },
+                      {
+                        "FileData": {
+                          "Type": "PlistSubImage",
+                          "Path": "IngameEBP_Cue_Ball_Arrow.png",
+                          "Plist": "Resources/IngameEBP.plist"
+                        },
+                        "BlendFunc": {
+                          "Src": 1,
+                          "Dst": 771
+                        },
+                        "AnchorPoint": {
+                          "ScaleX": 0.5,
+                          "ScaleY": 0.5
+                        },
+                        "Position": {
+                          "X": -36.2024,
+                          "Y": -12.4
+                        },
+                        "Scale": {
+                          "ScaleX": 0.3291,
+                          "ScaleY": 0.3291
+                        },
+                        "RotationSkewX": 86.4003,
+                        "RotationSkewY": 86.4027,
+                        "CColor": {},
+                        "IconVisible": false,
+                        "PrePosition": {
+                          "X": 0.0,
+                          "Y": 0.0
+                        },
+                        "PreSize": {
+                          "X": 0.0,
+                          "Y": 0.0
+                        },
+                        "LeftMargin": -77.7024,
+                        "RightMargin": -5.2976,
+                        "TopMargin": -17.1,
+                        "BottomMargin": -41.9,
+                        "Tag": 193,
+                        "ActionTag": -1039271355,
+                        "Size": {
+                          "X": 83.0,
+                          "Y": 59.0
+                        },
+                        "Name": "arrow_1",
+                        "ctype": "SpriteObjectData"
+                      },
+                      {
+                        "FileData": {
+                          "Type": "PlistSubImage",
+                          "Path": "IngameEBP_Cue_Ball_Arrow.png",
+                          "Plist": "Resources/IngameEBP.plist"
+                        },
+                        "BlendFunc": {
+                          "Src": 1,
+                          "Dst": 771
+                        },
+                        "AnchorPoint": {
+                          "ScaleX": 0.5,
+                          "ScaleY": 0.5
+                        },
+                        "Position": {
+                          "X": -5.3711,
+                          "Y": -12.4
+                        },
+                        "Scale": {
+                          "ScaleX": 0.3291,
+                          "ScaleY": 0.3291
+                        },
+                        "RotationSkewX": 86.4049,
+                        "RotationSkewY": 86.4034,
+                        "CColor": {},
+                        "IconVisible": false,
+                        "PrePosition": {
+                          "X": 0.0,
+                          "Y": 0.0
+                        },
+                        "PreSize": {
+                          "X": 0.0,
+                          "Y": 0.0
+                        },
+                        "LeftMargin": -46.8711,
+                        "RightMargin": -36.1289,
+                        "TopMargin": -17.1,
+                        "BottomMargin": -41.9,
+                        "Tag": 194,
+                        "ActionTag": -903786723,
+                        "Size": {
+                          "X": 83.0,
+                          "Y": 59.0
+                        },
+                        "Name": "arrow_2",
+                        "ctype": "SpriteObjectData"
+                      },
+                      {
+                        "FileData": {
+                          "Type": "PlistSubImage",
+                          "Path": "IngameEBP_Cue_Ball_Arrow.png",
+                          "Plist": "Resources/IngameEBP.plist"
+                        },
+                        "BlendFunc": {
+                          "Src": 1,
+                          "Dst": 771
+                        },
+                        "AnchorPoint": {
+                          "ScaleX": 0.5,
+                          "ScaleY": 0.5
+                        },
+                        "Position": {
+                          "X": 85.503,
+                          "Y": -12.4
+                        },
+                        "Scale": {
+                          "ScaleX": 0.3291,
+                          "ScaleY": 0.3291
+                        },
+                        "RotationSkewX": -87.2869,
+                        "RotationSkewY": 92.716,
+                        "CColor": {},
+                        "IconVisible": false,
+                        "PrePosition": {
+                          "X": 0.0,
+                          "Y": 0.0
+                        },
+                        "PreSize": {
+                          "X": 0.0,
+                          "Y": 0.0
+                        },
+                        "LeftMargin": 44.003,
+                        "RightMargin": -127.003,
+                        "TopMargin": -17.1,
+                        "BottomMargin": -41.9,
+                        "Tag": 195,
+                        "ActionTag": -915467494,
+                        "Size": {
+                          "X": 83.0,
+                          "Y": 59.0
+                        },
+                        "Name": "arrow_3",
+                        "ctype": "SpriteObjectData"
+                      },
+                      {
+                        "FileData": {
+                          "Type": "PlistSubImage",
+                          "Path": "IngameEBP_Cue_Ball_Arrow.png",
+                          "Plist": "Resources/IngameEBP.plist"
+                        },
+                        "BlendFunc": {
+                          "Src": 1,
+                          "Dst": 771
+                        },
+                        "AnchorPoint": {
+                          "ScaleX": 0.5,
+                          "ScaleY": 0.5
+                        },
+                        "Position": {
+                          "X": 54.8565,
+                          "Y": -12.4
+                        },
+                        "Scale": {
+                          "ScaleX": 0.3291,
+                          "ScaleY": 0.3291
+                        },
+                        "RotationSkewX": -87.2869,
+                        "RotationSkewY": 92.716,
+                        "CColor": {},
+                        "IconVisible": false,
+                        "PrePosition": {
+                          "X": 0.0,
+                          "Y": 0.0
+                        },
+                        "PreSize": {
+                          "X": 0.0,
+                          "Y": 0.0
+                        },
+                        "LeftMargin": 13.3565,
+                        "RightMargin": -96.3565,
+                        "TopMargin": -17.1,
+                        "BottomMargin": -41.9,
+                        "Tag": 196,
+                        "ActionTag": 1280474668,
+                        "Size": {
+                          "X": 83.0,
+                          "Y": 59.0
+                        },
+                        "Name": "arrow_4",
+                        "ctype": "SpriteObjectData"
+                      },
+                      {
+                        "FileData": {
+                          "Type": "PlistSubImage",
+                          "Path": "IngameEBP_Cue_Ball_Arrow.png",
+                          "Plist": "Resources/IngameEBP.plist"
+                        },
+                        "BlendFunc": {
+                          "Src": 1,
+                          "Dst": 771
+                        },
+                        "AnchorPoint": {
+                          "ScaleX": 0.5,
+                          "ScaleY": 0.5
+                        },
+                        "Position": {
+                          "X": 119.154,
+                          "Y": -12.4
+                        },
+                        "Scale": {
+                          "ScaleX": 0.3291,
+                          "ScaleY": 0.3291
+                        },
+                        "RotationSkewX": -87.2869,
+                        "RotationSkewY": 92.716,
+                        "CColor": {},
+                        "IconVisible": false,
+                        "PrePosition": {
+                          "X": 0.0,
+                          "Y": 0.0
+                        },
+                        "PreSize": {
+                          "X": 0.0,
+                          "Y": 0.0
+                        },
+                        "LeftMargin": 77.654,
+                        "RightMargin": -160.654,
+                        "TopMargin": -17.1,
+                        "BottomMargin": -41.9,
+                        "Tag": 197,
+                        "ActionTag": -661140091,
+                        "Size": {
+                          "X": 83.0,
+                          "Y": 59.0
+                        },
+                        "Name": "arrow_5",
+                        "ctype": "SpriteObjectData"
+                      }
+                    ],
+                    "ActionTag": 771691377,
+                    "Size": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "Name": "nodeEightBall",
+                    "ctype": "SingleNodeObjectData"
+                  },
+                  {
+                    "AnchorPoint": {},
+                    "Position": {
+                      "X": 98.3219,
+                      "Y": 84.778
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": true,
+                    "PrePosition": {
+                      "X": 0.3151,
+                      "Y": 0.9116
+                    },
+                    "PreSize": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "LeftMargin": 98.3219,
+                    "RightMargin": 213.6781,
+                    "TopMargin": 8.222,
+                    "BottomMargin": 84.778,
+                    "Tag": 424,
+                    "Children": [
+                      {
+                        "FileData": {
+                          "Type": "PlistSubImage",
+                          "Path": "IngameEBP_Cup_Inactive.png",
+                          "Plist": "Resources/IngameEBP.plist"
+                        },
+                        "Scale9OriginX": 11,
+                        "Scale9OriginY": 11,
+                        "Scale9Width": 12,
+                        "Scale9Height": 13,
+                        "AnchorPoint": {
+                          "ScaleX": 0.5,
+                          "ScaleY": 0.5
+                        },
+                        "Position": {
+                          "X": 9.7099,
+                          "Y": -18.5589
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "CColor": {},
+                        "IconVisible": false,
+                        "PrePosition": {
+                          "X": 0.0,
+                          "Y": 0.0
+                        },
+                        "PreSize": {
+                          "X": 0.0,
+                          "Y": 0.0
+                        },
+                        "LeftMargin": -7.2901,
+                        "RightMargin": -26.7099,
+                        "TopMargin": 1.0589,
+                        "BottomMargin": -36.0589,
+                        "Tag": 425,
+                        "ActionTag": -57118687,
+                        "Size": {
+                          "X": 34.0,
+                          "Y": 35.0
+                        },
+                        "Name": "box1",
+                        "ctype": "ImageViewObjectData"
+                      },
+                      {
+                        "FileData": {
+                          "Type": "PlistSubImage",
+                          "Path": "IngameEBP_Cup_Inactive.png",
+                          "Plist": "Resources/IngameEBP.plist"
+                        },
+                        "Scale9OriginX": 11,
+                        "Scale9OriginY": 11,
+                        "Scale9Width": 12,
+                        "Scale9Height": 13,
+                        "AnchorPoint": {
+                          "ScaleX": 0.5,
+                          "ScaleY": 0.5
+                        },
+                        "Position": {
+                          "X": 50.3371,
+                          "Y": -18.7096
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "CColor": {},
+                        "IconVisible": false,
+                        "PrePosition": {
+                          "X": 0.0,
+                          "Y": 0.0
+                        },
+                        "PreSize": {
+                          "X": 0.0,
+                          "Y": 0.0
+                        },
+                        "LeftMargin": 33.3371,
+                        "RightMargin": -67.3371,
+                        "TopMargin": 1.2096,
+                        "BottomMargin": -36.2096,
+                        "Tag": 427,
+                        "ActionTag": 619039337,
+                        "Size": {
+                          "X": 34.0,
+                          "Y": 35.0
+                        },
+                        "Name": "box2",
+                        "ctype": "ImageViewObjectData"
+                      },
+                      {
+                        "FileData": {
+                          "Type": "PlistSubImage",
+                          "Path": "IngameEBP_Cup_Inactive.png",
+                          "Plist": "Resources/IngameEBP.plist"
+                        },
+                        "Scale9OriginX": 11,
+                        "Scale9OriginY": 11,
+                        "Scale9Width": 12,
+                        "Scale9Height": 13,
+                        "AnchorPoint": {
+                          "ScaleX": 0.5,
+                          "ScaleY": 0.5
+                        },
+                        "Position": {
+                          "X": 93.8247,
+                          "Y": -18.1324
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "CColor": {},
+                        "IconVisible": false,
+                        "PrePosition": {
+                          "X": 0.0,
+                          "Y": 0.0
+                        },
+                        "PreSize": {
+                          "X": 0.0,
+                          "Y": 0.0
+                        },
+                        "LeftMargin": 76.8247,
+                        "RightMargin": -110.8247,
+                        "TopMargin": 0.6324,
+                        "BottomMargin": -35.6324,
+                        "Tag": 428,
+                        "ActionTag": -413239430,
+                        "Size": {
+                          "X": 34.0,
+                          "Y": 35.0
+                        },
+                        "Name": "box3",
+                        "ctype": "ImageViewObjectData"
+                      }
+                    ],
+                    "ActionTag": -1255454326,
+                    "Size": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "Name": "nodeScore",
+                    "ctype": "SingleNodeObjectData"
+                  }
+                ],
+                "ActionTag": 691038325,
+                "Size": {
+                  "X": 312.0,
+                  "Y": 93.0
+                },
+                "Name": "imgP2",
+                "ctype": "PanelObjectData"
+              }
+            ],
+            "ActionTag": 961206321,
+            "Size": {
+              "X": 1136.0,
+              "Y": 640.0
+            },
+            "Name": "bg",
+            "ctype": "PanelObjectData"
+          }
+        ],
+        "Size": {
+          "X": 1136.0,
+          "Y": 640.0
+        },
+        "Name": "Layer",
+        "ctype": "LayerObjectData"
+      },
+      "UsedResources": [
+        "../Font/UTMFacebook.ttf",
+        "../Resources/IngameEBP.plist",
+        "../Resources/IngameEBP.png",
+        "res/ingame_ex_Fake_Ingame_09_i5-VietNV2.png"
+      ],
+      "ctype": "GameFileData"
+    }
+  },
+  "Type": "Layer"
+}

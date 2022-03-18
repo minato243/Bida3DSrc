@@ -1,0 +1,348 @@
+{
+  "ID": "f16c03a3-bd60-4936-a74f-448c6a21c18f",
+  "Version": "2.3.4",
+  "Name": "TutorialLessonUI",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Tag": 118,
+        "Children": [
+          {
+            "ClipAble": false,
+            "BackColorAlpha": 102,
+            "SingleColor": {
+              "R": 150,
+              "G": 200
+            },
+            "FirstColor": {
+              "R": 150,
+              "G": 200
+            },
+            "EndColor": {},
+            "ColorVector": {
+              "ScaleY": 1.0
+            },
+            "Scale9Width": 1,
+            "Scale9Height": 1,
+            "TouchEnable": true,
+            "StretchWidthEnable": true,
+            "StretchHeightEnable": true,
+            "AnchorPoint": {},
+            "Position": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "PreSize": {
+              "X": 1.0,
+              "Y": 1.0
+            },
+            "HorizontalEdge": "BothEdge",
+            "VerticalEdge": "BothEdge",
+            "Tag": 59,
+            "ActionTag": 1318083870,
+            "Size": {
+              "X": 1136.0,
+              "Y": 640.0
+            },
+            "Name": "blockPanel",
+            "ctype": "PanelObjectData"
+          },
+          {
+            "AnchorPoint": {},
+            "Position": {
+              "X": 568.0,
+              "Y": 75.008
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": true,
+            "PrePosition": {
+              "X": 0.5,
+              "Y": 0.1172
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "HorizontalEdge": "BothEdge",
+            "VerticalEdge": "BothEdge",
+            "LeftMargin": 568.0,
+            "RightMargin": 568.0,
+            "TopMargin": 564.992,
+            "BottomMargin": 75.008,
+            "Tag": 121,
+            "Children": [
+              {
+                "FontSize": 26,
+                "LabelText": "Learn more about the game or ",
+                "FontResource": {
+                  "Type": "Normal",
+                  "Path": "Font/facebook.TTF",
+                  "Plist": ""
+                },
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 26,
+                  "G": 26,
+                  "B": 26
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "ShadowEnabled": true,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": -106.004,
+                  "Y": 4.9996
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "RotationSkewX": 10.0,
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "PreSize": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "LeftMargin": -292.004,
+                "RightMargin": -79.996,
+                "TopMargin": -23.9996,
+                "BottomMargin": -14.0004,
+                "Tag": 122,
+                "ActionTag": 330900689,
+                "Size": {
+                  "X": 372.0,
+                  "Y": 38.0
+                },
+                "Name": "txtLearnMore",
+                "ctype": "TextObjectData"
+              },
+              {
+                "FontSize": 14,
+                "ButtonText": "",
+                "TextColor": {
+                  "R": 65,
+                  "G": 65,
+                  "B": 70
+                },
+                "DisabledFileData": {
+                  "Type": "Default",
+                  "Path": "Default/Button_Disable.png",
+                  "Plist": ""
+                },
+                "PressedFileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "Button_Red.png",
+                  "Plist": "Resources/Buttons.plist"
+                },
+                "NormalFileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "Button_Red.png",
+                  "Plist": "Resources/Buttons.plist"
+                },
+                "Scale9Enable": true,
+                "Scale9OriginX": 15,
+                "Scale9OriginY": 11,
+                "Scale9Width": 128,
+                "Scale9Height": 34,
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "TouchEnable": true,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 172.9791,
+                  "Y": 0.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "PreSize": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "LeftMargin": 93.9791,
+                "RightMargin": -251.9791,
+                "TopMargin": -28.0,
+                "BottomMargin": -28.0,
+                "Tag": 123,
+                "Children": [
+                  {
+                    "FontSize": 22,
+                    "LabelText": "Skip Tutorial",
+                    "FontResource": {
+                      "Type": "Normal",
+                      "Path": "Font/facebook.TTF",
+                      "Plist": ""
+                    },
+                    "OutlineColor": {
+                      "R": 213,
+                      "G": 162,
+                      "B": 29
+                    },
+                    "ShadowColor": {
+                      "R": 70,
+                      "G": 58,
+                      "B": 15
+                    },
+                    "ShadowOffsetX": 2.0,
+                    "ShadowOffsetY": -2.0,
+                    "ShadowEnabled": true,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 79.0,
+                      "Y": 32.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "RotationSkewX": 10.0,
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PositionPercentXEnabled": true,
+                    "PrePosition": {
+                      "X": 0.5,
+                      "Y": 0.5714
+                    },
+                    "PreSize": {
+                      "X": 0.8544,
+                      "Y": 0.5714
+                    },
+                    "LeftMargin": 11.5,
+                    "RightMargin": 11.5,
+                    "TopMargin": 8.0,
+                    "BottomMargin": 16.0,
+                    "Tag": 125,
+                    "ActionTag": -308190856,
+                    "Size": {
+                      "X": 135.0,
+                      "Y": 32.0
+                    },
+                    "Name": "txtBtnSkip",
+                    "ctype": "TextObjectData"
+                  }
+                ],
+                "ActionTag": -515314497,
+                "Size": {
+                  "X": 158.0,
+                  "Y": 56.0
+                },
+                "Name": "btnSkip",
+                "ctype": "ButtonObjectData"
+              }
+            ],
+            "ActionTag": 1323491734,
+            "Size": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "Name": "learnMore",
+            "ctype": "SingleNodeObjectData"
+          },
+          {
+            "AnchorPoint": {},
+            "Position": {
+              "X": 568.0,
+              "Y": 366.976
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": true,
+            "PositionPercentXEnabled": true,
+            "PrePosition": {
+              "X": 0.5,
+              "Y": 0.5734
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "VerticalEdge": "BothEdge",
+            "LeftMargin": 568.0,
+            "RightMargin": 568.0,
+            "TopMargin": 273.024,
+            "BottomMargin": 366.976,
+            "Tag": 124,
+            "ActionTag": 612924705,
+            "Size": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "Name": "cards",
+            "ctype": "SingleNodeObjectData"
+          }
+        ],
+        "Size": {
+          "X": 1136.0,
+          "Y": 640.0
+        },
+        "Name": "Layer",
+        "ctype": "LayerObjectData"
+      },
+      "UsedResources": [
+        "../Default/Button_Disable.png",
+        "../Font/facebook.TTF",
+        "../Resources/Buttons.plist",
+        "../Resources/Buttons.png"
+      ],
+      "ctype": "GameFileData"
+    }
+  },
+  "Type": "Layer"
+}

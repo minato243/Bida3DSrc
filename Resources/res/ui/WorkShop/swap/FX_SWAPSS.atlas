@@ -1,0 +1,62 @@
+
+FX_SWAPSS.png
+size: 2048,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+6
+  rotate: true
+  xy: 807, 280
+  size: 205, 206
+  orig: 205, 206
+  offset: 0, 0
+  index: -1
+Group 160
+  rotate: false
+  xy: 2, 342
+  size: 664, 143
+  orig: 664, 143
+  offset: 0, 0
+  index: -1
+Layer 2916
+  rotate: false
+  xy: 2, 487
+  size: 1090, 14
+  orig: 1090, 14
+  offset: 0, 0
+  index: -1
+Layer 2916 copy 2
+  rotate: false
+  xy: 668, 348
+  size: 137, 137
+  orig: 137, 137
+  offset: 0, 0
+  index: -1
+Layer 2916 copy 3
+  rotate: false
+  xy: 668, 348
+  size: 137, 137
+  orig: 137, 137
+  offset: 0, 0
+  index: -1
+Layer 2918
+  rotate: false
+  xy: 2, 2
+  size: 42, 37
+  orig: 42, 37
+  offset: 0, 0
+  index: -1
+Layer 2919
+  rotate: false
+  xy: 2, 41
+  size: 444, 299
+  orig: 444, 299
+  offset: 0, 0
+  index: -1
+flash_flare
+  rotate: false
+  xy: 448, 84
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1

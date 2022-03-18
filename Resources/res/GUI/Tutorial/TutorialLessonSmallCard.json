@@ -1,0 +1,519 @@
+{
+  "ID": "718b0f40-c60a-4110-8ab8-3965599b25f1",
+  "Version": "2.3.4",
+  "Name": "TutorialLessonSmallCard",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Tag": 54,
+        "Children": [
+          {
+            "FileData": {
+              "Type": "Default",
+              "Path": "Default/ImageFile.png",
+              "Plist": ""
+            },
+            "Scale9Width": 46,
+            "Scale9Height": 46,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "LeftMargin": -23.0,
+            "RightMargin": -23.0,
+            "TopMargin": -23.0,
+            "BottomMargin": -23.0,
+            "Tag": 99,
+            "ActionTag": 363978867,
+            "Size": {
+              "X": 46.0,
+              "Y": 46.0
+            },
+            "VisibleForFrame": false,
+            "Name": "imgContent",
+            "ctype": "ImageViewObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "PlistSubImage",
+              "Path": "tuto_practice_frame_01_i5.png",
+              "Plist": "Resources/tutorial.plist"
+            },
+            "Scale9OriginX": 88,
+            "Scale9OriginY": 69,
+            "Scale9Width": 93,
+            "Scale9Height": 73,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "LeftMargin": -134.5,
+            "RightMargin": -134.5,
+            "TopMargin": -105.5,
+            "BottomMargin": -105.5,
+            "Tag": 56,
+            "ActionTag": -405941993,
+            "Size": {
+              "X": 269.0,
+              "Y": 211.0
+            },
+            "Name": "imgCover",
+            "ctype": "ImageViewObjectData"
+          },
+          {
+            "FontSize": 20,
+            "LabelText": "Basic 1",
+            "FontResource": {
+              "Type": "Normal",
+              "Path": "Font/facebook.TTF",
+              "Plist": ""
+            },
+            "VerticalAlignmentType": "VT_Center",
+            "OutlineColor": {
+              "G": 0,
+              "B": 0
+            },
+            "ShadowColor": {
+              "R": 110,
+              "G": 110,
+              "B": 110
+            },
+            "ShadowOffsetX": 2.0,
+            "ShadowOffsetY": -2.0,
+            "AnchorPoint": {
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": -109.7181,
+              "Y": 73.0068
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "RotationSkewX": 9.9998,
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "LeftMargin": -109.7181,
+            "RightMargin": 43.7181,
+            "TopMargin": -87.5068,
+            "BottomMargin": 58.5068,
+            "Tag": 57,
+            "ActionTag": 1844152818,
+            "Size": {
+              "X": 66.0,
+              "Y": 29.0
+            },
+            "Name": "txtName",
+            "ctype": "TextObjectData"
+          },
+          {
+            "FontSize": 36,
+            "LabelText": "Take Aim",
+            "FontResource": {
+              "Type": "Normal",
+              "Path": "Font/facebook.TTF",
+              "Plist": ""
+            },
+            "HorizontalAlignmentType": "HT_Center",
+            "VerticalAlignmentType": "VT_Center",
+            "OutlineColor": {
+              "G": 0,
+              "B": 0
+            },
+            "ShadowColor": {
+              "R": 37,
+              "G": 37,
+              "B": 37
+            },
+            "ShadowOffsetX": 2.0,
+            "ShadowOffsetY": -2.0,
+            "ShadowEnabled": true,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "RotationSkewX": 9.9998,
+            "CColor": {
+              "R": 0,
+              "G": 252
+            },
+            "IconVisible": false,
+            "PositionPercentXEnabled": true,
+            "PrePosition": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "LeftMargin": -81.5,
+            "RightMargin": -81.5,
+            "TopMargin": -26.0,
+            "BottomMargin": -26.0,
+            "Tag": 66,
+            "ActionTag": -647175754,
+            "Size": {
+              "X": 163.0,
+              "Y": 52.0
+            },
+            "Name": "txtTitle",
+            "ctype": "TextObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "PlistSubImage",
+              "Path": "achievement_Reward_Box.png",
+              "Plist": "Achievement/res/Achievement_new.plist"
+            },
+            "Scale9Width": 51,
+            "Scale9Height": 51,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 95.7628,
+              "Y": -69.049
+            },
+            "Scale": {
+              "ScaleX": 0.6,
+              "ScaleY": 0.6
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "LeftMargin": 70.2628,
+            "RightMargin": -121.2628,
+            "TopMargin": 43.549,
+            "BottomMargin": -94.549,
+            "Tag": 97,
+            "Children": [
+              {
+                "FileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "achievement_Check_Icon.png",
+                  "Plist": "Achievement/res/Achievement_new.plist"
+                },
+                "Scale9OriginX": 20,
+                "Scale9OriginY": 14,
+                "Scale9Width": 22,
+                "Scale9Height": 17,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 25.5,
+                  "Y": 25.5
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PositionPercentXEnabled": true,
+                "PositionPercentYEnabled": true,
+                "PrePosition": {
+                  "X": 0.5,
+                  "Y": 0.5
+                },
+                "PreSize": {
+                  "X": 1.2157,
+                  "Y": 0.8824
+                },
+                "LeftMargin": -5.5,
+                "RightMargin": -5.5,
+                "TopMargin": 3.0,
+                "BottomMargin": 3.0,
+                "Tag": 98,
+                "ActionTag": -2144896225,
+                "Size": {
+                  "X": 62.0,
+                  "Y": 45.0
+                },
+                "Name": "tick",
+                "ctype": "ImageViewObjectData"
+              }
+            ],
+            "ActionTag": 909259995,
+            "Size": {
+              "X": 51.0,
+              "Y": 51.0
+            },
+            "Name": "checkbox",
+            "ctype": "ImageViewObjectData"
+          },
+          {
+            "AnchorPoint": {},
+            "Position": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": true,
+            "PrePosition": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "Tag": 110,
+            "Children": [
+              {
+                "FileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "tuto_practice_frame_02_i5.png",
+                  "Plist": "Resources/tutorial.plist"
+                },
+                "Scale9OriginX": 88,
+                "Scale9OriginY": 69,
+                "Scale9Width": 93,
+                "Scale9Height": 73,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "PreSize": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "LeftMargin": -134.5,
+                "RightMargin": -134.5,
+                "TopMargin": -105.5,
+                "BottomMargin": -105.5,
+                "Tag": 111,
+                "ActionTag": 1268870316,
+                "Size": {
+                  "X": 269.0,
+                  "Y": 211.0
+                },
+                "Alpha": 114,
+                "Name": "imgLockCover",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "tuto_practice_lock_01_i5.png",
+                  "Plist": "Resources/tutorial.plist"
+                },
+                "Scale9OriginX": 12,
+                "Scale9OriginY": 17,
+                "Scale9Width": 14,
+                "Scale9Height": 19,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 0.0,
+                  "Y": 29.0001
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "PreSize": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "LeftMargin": -19.0,
+                "RightMargin": -19.0,
+                "TopMargin": -55.5001,
+                "BottomMargin": 2.5001,
+                "Tag": 112,
+                "ActionTag": -650869700,
+                "Size": {
+                  "X": 38.0,
+                  "Y": 53.0
+                },
+                "Name": "imgLock",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FontSize": 24,
+                "LabelText": "Finish Tutorial 3\nto unlock",
+                "FontResource": {
+                  "Type": "Normal",
+                  "Path": "Font/facebook.TTF",
+                  "Plist": ""
+                },
+                "HorizontalAlignmentType": "HT_Center",
+                "VerticalAlignmentType": "VT_Center",
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 57,
+                  "G": 140,
+                  "B": 215
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 0.0,
+                  "Y": -33.0004
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "RotationSkewX": 9.9998,
+                "CColor": {
+                  "R": 57,
+                  "G": 140,
+                  "B": 215
+                },
+                "IconVisible": false,
+                "PositionPercentXEnabled": true,
+                "PrePosition": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "PreSize": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "LeftMargin": -91.0,
+                "RightMargin": -91.0,
+                "TopMargin": -1.9996,
+                "BottomMargin": -68.0004,
+                "Tag": 113,
+                "ActionTag": 1663430578,
+                "Size": {
+                  "X": 182.0,
+                  "Y": 70.0
+                },
+                "Name": "txtLock",
+                "ctype": "TextObjectData"
+              }
+            ],
+            "ActionTag": -1989638260,
+            "Size": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "Name": "lockCover",
+            "ctype": "SingleNodeObjectData"
+          }
+        ],
+        "Size": {
+          "X": 0.0,
+          "Y": 0.0
+        },
+        "Name": "Node",
+        "ctype": "SingleNodeObjectData"
+      },
+      "UsedResources": [
+        "../Achievement/res/Achievement_new.plist",
+        "../Achievement/res/Achievement_new.png",
+        "../Default/ImageFile.png",
+        "../Font/facebook.TTF",
+        "../Resources/tutorial.plist",
+        "../Resources/tutorial.png"
+      ],
+      "ctype": "GameFileData"
+    }
+  },
+  "Type": "Node"
+}

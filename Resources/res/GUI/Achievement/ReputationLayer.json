@@ -1,0 +1,883 @@
+{
+  "ID": "7883aa5e-264a-409c-9273-b9c7b0d8877a",
+  "Version": "2.3.4",
+  "Name": "ReputationLayer",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Tag": 84,
+        "Children": [
+          {
+            "ClipAble": false,
+            "BackColorAlpha": 102,
+            "SingleColor": {
+              "R": 150,
+              "G": 200
+            },
+            "FirstColor": {
+              "R": 150,
+              "G": 200
+            },
+            "EndColor": {},
+            "ColorVector": {
+              "ScaleY": 1.0
+            },
+            "Scale9Width": 1,
+            "Scale9Height": 1,
+            "TouchEnable": true,
+            "StretchWidthEnable": true,
+            "StretchHeightEnable": true,
+            "AnchorPoint": {},
+            "Position": {
+              "X": 0.1707,
+              "Y": -3.8028
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.0002,
+              "Y": -0.0059
+            },
+            "PreSize": {
+              "X": 1.0,
+              "Y": 1.0
+            },
+            "HorizontalEdge": "BothEdge",
+            "VerticalEdge": "BothEdge",
+            "LeftMargin": 0.1707,
+            "RightMargin": -0.1705,
+            "TopMargin": 3.8029,
+            "BottomMargin": -3.8028,
+            "Tag": 85,
+            "Children": [
+              {
+                "FileData": {
+                  "Type": "Default",
+                  "Path": "Default/ImageFile.png",
+                  "Plist": ""
+                },
+                "Scale9OriginX": -328,
+                "Scale9OriginY": -165,
+                "Scale9Width": 702,
+                "Scale9Height": 376,
+                "StretchWidthEnable": true,
+                "StretchHeightEnable": true,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "PreSize": {
+                  "X": 1.0,
+                  "Y": 1.0
+                },
+                "HorizontalEdge": "BothEdge",
+                "VerticalEdge": "BothEdge",
+                "RightMargin": -0.0001,
+                "TopMargin": -0.0001,
+                "Tag": 86,
+                "ActionTag": -1505075254,
+                "Size": {
+                  "X": 1136.0,
+                  "Y": 640.0
+                },
+                "Name": "imgBg",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FontSize": 14,
+                "ButtonText": "",
+                "TextColor": {
+                  "R": 65,
+                  "G": 65,
+                  "B": 70
+                },
+                "DisabledFileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "inven_Glass_Back.png",
+                  "Plist": "Resources/Inventory.plist"
+                },
+                "PressedFileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "inven_Glass_Back.png",
+                  "Plist": "Resources/Inventory.plist"
+                },
+                "NormalFileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "inven_Glass_Back.png",
+                  "Plist": "Resources/Inventory.plist"
+                },
+                "Scale9Enable": true,
+                "Scale9OriginX": 15,
+                "Scale9OriginY": 11,
+                "Scale9Width": 52,
+                "Scale9Height": 34,
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "TouchEnable": true,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 41.0,
+                  "Y": 602.9422
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.0361,
+                  "Y": 0.9421
+                },
+                "PreSize": {
+                  "X": 0.0722,
+                  "Y": 0.0875
+                },
+                "HorizontalEdge": "LeftEdge",
+                "VerticalEdge": "TopEdge",
+                "RightMargin": 1053.9999,
+                "TopMargin": 9.0577,
+                "BottomMargin": 574.9422,
+                "Tag": 88,
+                "Children": [
+                  {
+                    "FileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "Button_Back.png",
+                      "Plist": "Resources/Buttons.plist"
+                    },
+                    "Scale9OriginX": 18,
+                    "Scale9OriginY": 15,
+                    "Scale9Width": 19,
+                    "Scale9Height": 18,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 36.4593,
+                      "Y": 25.7657
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.4446,
+                      "Y": 0.4601
+                    },
+                    "PreSize": {
+                      "X": 0.6707,
+                      "Y": 0.8571
+                    },
+                    "HorizontalEdge": "BothEdge",
+                    "VerticalEdge": "BothEdge",
+                    "LeftMargin": 8.9593,
+                    "RightMargin": 18.0407,
+                    "TopMargin": 6.2343,
+                    "BottomMargin": 1.7657,
+                    "Tag": 89,
+                    "ActionTag": 651427422,
+                    "Size": {
+                      "X": 55.0,
+                      "Y": 48.0
+                    },
+                    "Name": "img",
+                    "ctype": "ImageViewObjectData"
+                  }
+                ],
+                "ActionTag": 351900491,
+                "Size": {
+                  "X": 82.0,
+                  "Y": 56.0
+                },
+                "Name": "btnBack",
+                "ctype": "ButtonObjectData"
+              },
+              {
+                "ClipAble": false,
+                "BackColorAlpha": 102,
+                "SingleColor": {
+                  "R": 150,
+                  "G": 200
+                },
+                "FirstColor": {
+                  "R": 150,
+                  "G": 200
+                },
+                "EndColor": {},
+                "ColorVector": {
+                  "ScaleY": 1.0
+                },
+                "Scale9Width": 1,
+                "Scale9Height": 1,
+                "TouchEnable": true,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 1.0
+                },
+                "Position": {
+                  "X": 567.9999,
+                  "Y": 640.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PositionPercentXEnabled": true,
+                "PrePosition": {
+                  "X": 0.5,
+                  "Y": 1.0
+                },
+                "PreSize": {
+                  "X": 0.3819,
+                  "Y": 0.1487
+                },
+                "VerticalEdge": "TopEdge",
+                "LeftMargin": 351.0803,
+                "RightMargin": 351.0803,
+                "TopMargin": -0.0001,
+                "BottomMargin": 544.8245,
+                "Tag": 90,
+                "Children": [
+                  {
+                    "FileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "inven_Glass_Title.png",
+                      "Plist": "Resources/Inventory.plist"
+                    },
+                    "Scale9Enable": true,
+                    "Scale9OriginX": 66,
+                    "Scale9Width": 308,
+                    "Scale9Height": 70,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 217.527,
+                      "Y": 60.1755
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.5014,
+                      "Y": 0.6323
+                    },
+                    "PreSize": {
+                      "X": 1.0142,
+                      "Y": 0.7355
+                    },
+                    "HorizontalEdge": "BothEdge",
+                    "VerticalEdge": "TopEdge",
+                    "LeftMargin": -2.473,
+                    "RightMargin": -3.6878,
+                    "BottomMargin": 25.1755,
+                    "Tag": 93,
+                    "Children": [
+                      {
+                        "FileData": {
+                          "Type": "PlistSubImage",
+                          "Path": "achievement_Achievement.png",
+                          "Plist": "Achievement/res/Achievement_new.plist"
+                        },
+                        "Scale9OriginX": 112,
+                        "Scale9OriginY": 11,
+                        "Scale9Width": 81,
+                        "Scale9Height": 13,
+                        "AnchorPoint": {
+                          "ScaleX": 0.5,
+                          "ScaleY": 0.5
+                        },
+                        "Position": {
+                          "X": 219.34,
+                          "Y": 37.723
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "CColor": {},
+                        "IconVisible": false,
+                        "PositionPercentXEnabled": true,
+                        "PositionPercentYEnabled": true,
+                        "PrePosition": {
+                          "X": 0.4985,
+                          "Y": 0.5389
+                        },
+                        "PreSize": {
+                          "X": 0.6932,
+                          "Y": 0.5
+                        },
+                        "LeftMargin": 66.84,
+                        "RightMargin": 68.16,
+                        "TopMargin": 14.777,
+                        "BottomMargin": 20.223,
+                        "Tag": 94,
+                        "ActionTag": -564109752,
+                        "Size": {
+                          "X": 305.0,
+                          "Y": 35.0
+                        },
+                        "Name": "imgTitle",
+                        "ctype": "ImageViewObjectData"
+                      }
+                    ],
+                    "ActionTag": 1841515154,
+                    "Size": {
+                      "X": 440.0,
+                      "Y": 70.0
+                    },
+                    "Name": "imgTitleBar",
+                    "ctype": "ImageViewObjectData"
+                  }
+                ],
+                "ActionTag": 2006092120,
+                "Size": {
+                  "X": 433.8392,
+                  "Y": 95.1755
+                },
+                "Name": "pnTitle",
+                "ctype": "PanelObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "achievement_Board.png",
+                  "Plist": "Achievement/res/Achievement_new.plist"
+                },
+                "Scale9OriginX": 92,
+                "Scale9OriginY": 128,
+                "Scale9Width": 96,
+                "Scale9Height": 134,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 570.868,
+                  "Y": 477.8762
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.5025,
+                  "Y": 0.7467
+                },
+                "PreSize": {
+                  "X": 0.9683,
+                  "Y": 0.2031
+                },
+                "LeftMargin": 20.868,
+                "RightMargin": 15.132,
+                "TopMargin": 97.1237,
+                "BottomMargin": 412.8762,
+                "Tag": 107,
+                "Children": [
+                  {
+                    "FileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "achievement_Icon_Box.png",
+                      "Plist": "Achievement/res/Achievement_new.plist"
+                    },
+                    "Scale9OriginX": 37,
+                    "Scale9OriginY": 37,
+                    "Scale9Width": 41,
+                    "Scale9Height": 41,
+                    "StretchWidthEnable": true,
+                    "StretchHeightEnable": true,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5275,
+                      "ScaleY": 0.5364
+                    },
+                    "Position": {
+                      "X": 85.28,
+                      "Y": 72.2007
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.0775,
+                      "Y": 0.5554
+                    },
+                    "PreSize": {
+                      "X": 0.1,
+                      "Y": 0.9167
+                    },
+                    "HorizontalEdge": "LeftEdge",
+                    "VerticalEdge": "TopEdge",
+                    "LeftMargin": 27.255,
+                    "RightMargin": 962.745,
+                    "TopMargin": 2.5516,
+                    "BottomMargin": 8.2774,
+                    "Tag": 108,
+                    "Children": [
+                      {
+                        "FileData": {
+                          "Type": "PlistSubImage",
+                          "Path": "achievement_Reward_Box.png",
+                          "Plist": "Achievement/res/Achievement_new.plist"
+                        },
+                        "Scale9Enable": true,
+                        "Scale9OriginX": 26,
+                        "Scale9OriginY": 25,
+                        "Scale9Width": 1,
+                        "Scale9Height": 1,
+                        "AnchorPoint": {
+                          "ScaleX": 0.5,
+                          "ScaleY": 0.5
+                        },
+                        "Position": {
+                          "X": 57.769,
+                          "Y": 59.0131
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "CColor": {},
+                        "IconVisible": false,
+                        "PrePosition": {
+                          "X": 0.5252,
+                          "Y": 0.4952
+                        },
+                        "PreSize": {
+                          "X": 1.0,
+                          "Y": 0.923
+                        },
+                        "LeftMargin": 2.769,
+                        "RightMargin": -2.769,
+                        "TopMargin": 5.1579,
+                        "BottomMargin": 4.0131,
+                        "Tag": 109,
+                        "ActionTag": -2115281729,
+                        "Size": {
+                          "X": 110.0,
+                          "Y": 110.0
+                        },
+                        "Name": "border",
+                        "ctype": "ImageViewObjectData"
+                      },
+                      {
+                        "FontSize": 14,
+                        "ButtonText": "",
+                        "TextColor": {
+                          "R": 65,
+                          "G": 65,
+                          "B": 70
+                        },
+                        "DisabledFileData": {
+                          "Type": "Default",
+                          "Path": "Default/Button_Disable.png",
+                          "Plist": ""
+                        },
+                        "NormalFileData": {
+                          "Type": "PlistSubImage",
+                          "Path": "achievement_Icon_Task_01.png",
+                          "Plist": "Achievement/res/Achievement_new.plist"
+                        },
+                        "Scale9Enable": true,
+                        "Scale9OriginX": 15,
+                        "Scale9OriginY": 11,
+                        "Scale9Width": 89,
+                        "Scale9Height": 100,
+                        "OutlineColor": {
+                          "G": 0,
+                          "B": 0
+                        },
+                        "ShadowColor": {
+                          "R": 110,
+                          "G": 110,
+                          "B": 110
+                        },
+                        "ShadowOffsetX": 2.0,
+                        "ShadowOffsetY": -2.0,
+                        "TouchEnable": true,
+                        "AnchorPoint": {
+                          "ScaleX": 0.5,
+                          "ScaleY": 0.5
+                        },
+                        "Position": {
+                          "X": 59.6604,
+                          "Y": 59.4768
+                        },
+                        "Scale": {
+                          "ScaleX": 0.8,
+                          "ScaleY": 0.8
+                        },
+                        "CColor": {},
+                        "IconVisible": false,
+                        "PrePosition": {
+                          "X": 0.5424,
+                          "Y": 0.4991
+                        },
+                        "PreSize": {
+                          "X": 1.0818,
+                          "Y": 1.0237
+                        },
+                        "LeftMargin": 0.1604,
+                        "RightMargin": -9.1604,
+                        "TopMargin": -1.3058,
+                        "BottomMargin": -1.5232,
+                        "Tag": 110,
+                        "ActionTag": 1424465394,
+                        "Size": {
+                          "X": 119.0,
+                          "Y": 122.0
+                        },
+                        "Name": "btnImg",
+                        "ctype": "ButtonObjectData"
+                      }
+                    ],
+                    "ActionTag": 1555254204,
+                    "Size": {
+                      "X": 110.0,
+                      "Y": 119.171
+                    },
+                    "Name": "imgRep",
+                    "ctype": "ImageViewObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "achievement_Progress_Bar_03.png",
+                      "Plist": "Achievement/res/Achievement_new.plist"
+                    },
+                    "Scale9OriginX": 102,
+                    "Scale9OriginY": 6,
+                    "Scale9Width": 106,
+                    "Scale9Height": 7,
+                    "AnchorPoint": {},
+                    "Position": {
+                      "X": 153.78,
+                      "Y": 14.0353
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PositionPercentXEnabled": true,
+                    "PrePosition": {
+                      "X": 0.1398,
+                      "Y": 0.108
+                    },
+                    "PreSize": {
+                      "X": 0.8273,
+                      "Y": 0.2462
+                    },
+                    "LeftMargin": 153.78,
+                    "RightMargin": 36.22,
+                    "TopMargin": 83.9647,
+                    "BottomMargin": 14.0353,
+                    "Tag": 299,
+                    "ActionTag": 870886686,
+                    "Size": {
+                      "X": 910.0,
+                      "Y": 32.0
+                    },
+                    "Name": "imgProgressBg",
+                    "ctype": "ImageViewObjectData"
+                  },
+                  {
+                    "ProgressInfo": 0,
+                    "ImageFileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "achievement_Progress_Bar_04.png",
+                      "Plist": "Achievement/res/Achievement_new.plist"
+                    },
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 617.8654,
+                      "Y": 30.4372
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.5617,
+                      "Y": 0.2341
+                    },
+                    "PreSize": {
+                      "X": 0.8364,
+                      "Y": 0.2308
+                    },
+                    "LeftMargin": 157.8654,
+                    "RightMargin": 22.1345,
+                    "TopMargin": 84.5628,
+                    "BottomMargin": 15.4372,
+                    "Tag": 298,
+                    "ActionTag": 715317152,
+                    "Size": {
+                      "X": 920.0,
+                      "Y": 30.0
+                    },
+                    "Alpha": 244,
+                    "Name": "imgProgressBar",
+                    "ctype": "LoadingBarObjectData"
+                  },
+                  {
+                    "IsCustomSize": true,
+                    "FontSize": 36,
+                    "LabelText": "Master the 3D physic",
+                    "FontResource": {
+                      "Type": "Normal",
+                      "Path": "Font/facebook.TTF",
+                      "Plist": ""
+                    },
+                    "VerticalAlignmentType": "VT_Center",
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "R": 110,
+                      "G": 110,
+                      "B": 110
+                    },
+                    "ShadowOffsetX": 2.0,
+                    "ShadowOffsetY": -2.0,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 550.5135,
+                      "Y": 91.5994
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "RotationSkewX": 9.9998,
+                    "CColor": {
+                      "R": 0,
+                      "G": 128,
+                      "B": 0
+                    },
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.5005,
+                      "Y": 0.7046
+                    },
+                    "PreSize": {
+                      "X": 0.6364,
+                      "Y": 0.3846
+                    },
+                    "LeftMargin": 200.5135,
+                    "RightMargin": 199.4865,
+                    "TopMargin": 13.4006,
+                    "BottomMargin": 66.5994,
+                    "Tag": 300,
+                    "ActionTag": 1218516714,
+                    "Size": {
+                      "X": 700.0,
+                      "Y": 50.0
+                    },
+                    "Name": "lbNameReputation",
+                    "ctype": "TextObjectData"
+                  },
+                  {
+                    "FontSize": 26,
+                    "LabelText": "3/5",
+                    "FontResource": {
+                      "Type": "Normal",
+                      "Path": "Font/facebook.TTF",
+                      "Plist": ""
+                    },
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "R": 110,
+                      "G": 110,
+                      "B": 110
+                    },
+                    "ShadowOffsetX": 2.0,
+                    "ShadowOffsetY": -2.0,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 589.4105,
+                      "Y": 31.675
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.5358,
+                      "Y": 0.2437
+                    },
+                    "PreSize": {
+                      "X": 0.0436,
+                      "Y": 0.2923
+                    },
+                    "LeftMargin": 565.4105,
+                    "RightMargin": 486.5895,
+                    "TopMargin": 79.325,
+                    "BottomMargin": 12.675,
+                    "Tag": 20,
+                    "ActionTag": 1269228077,
+                    "Size": {
+                      "X": 48.0,
+                      "Y": 38.0
+                    },
+                    "Name": "lbProgress",
+                    "ctype": "TextObjectData"
+                  }
+                ],
+                "ActionTag": -1565214230,
+                "Size": {
+                  "X": 1100.0,
+                  "Y": 130.0
+                },
+                "Name": "boxRep",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "ClipAble": false,
+                "BackColorAlpha": 51,
+                "ComboBoxIndex": 1,
+                "SingleColor": {
+                  "R": 150,
+                  "G": 200
+                },
+                "FirstColor": {
+                  "R": 150,
+                  "G": 200
+                },
+                "EndColor": {},
+                "ColorVector": {
+                  "ScaleY": 1.0
+                },
+                "Scale9Width": 1,
+                "Scale9Height": 1,
+                "TouchEnable": true,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 37.2383,
+                  "Y": 22.3689
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.0328,
+                  "Y": 0.035
+                },
+                "PreSize": {
+                  "X": 0.9419,
+                  "Y": 0.5938
+                },
+                "LeftMargin": 37.2383,
+                "RightMargin": 28.7616,
+                "TopMargin": 237.631,
+                "BottomMargin": 22.3689,
+                "Tag": 301,
+                "ActionTag": -2135538633,
+                "Size": {
+                  "X": 1070.0,
+                  "Y": 380.0
+                },
+                "Name": "pnContent",
+                "ctype": "PanelObjectData"
+              }
+            ],
+            "ActionTag": -182573425,
+            "Size": {
+              "X": 1135.9999,
+              "Y": 639.9999
+            },
+            "Name": "bg",
+            "ctype": "PanelObjectData"
+          }
+        ],
+        "Size": {
+          "X": 1136.0,
+          "Y": 640.0
+        },
+        "Name": "Layer",
+        "ctype": "LayerObjectData"
+      },
+      "UsedResources": [
+        "../Default/Button_Disable.png",
+        "../Default/ImageFile.png",
+        "../Font/facebook.TTF",
+        "../Resources/Buttons.plist",
+        "../Resources/Buttons.png",
+        "../Resources/Inventory.plist",
+        "../Resources/Inventory.png",
+        "res/Achievement_new.plist",
+        "res/Achievement_new.png"
+      ],
+      "ctype": "GameFileData"
+    }
+  },
+  "Type": "Layer"
+}

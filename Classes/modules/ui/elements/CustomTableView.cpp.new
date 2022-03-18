@@ -1,0 +1,159 @@
+#include "CustomTableView.cpp.h"
+
+{
+    CustomTableView::CustomTableView(int props) {
+        /**
+         * props ={
+         *      size: cc.size,
+         *      direction: cc.SCROLLVIEW_DIRECTION_VERTICAL || cc.SCROLLVIEW_DIRECTION_HORIZONTAL,
+         * }
+         */
+        this->_super();
+        this->props = props || {};
+        this->data = [];
+        this->_touching = false;
+
+        this->tbView = new cc.TableView(this, this->props.size);
+        this->tbView.setDirection(this->props.direction);
+        this->tbView.setPosition(0, 0);
+        this->tbView.setDelegate(this);
+        this->tbView.setVerticalFillOrder(cc.TABLEVIEW_FILL_TOPDOWN);
+
+        this->button = new ccui.Button(res.base.img_btn_normal);
+        this->button.setSwallowTouches(false);
+        this->button.setPosition(0, 0);
+        this->button.setAnchorPoint(0, 0);
+        this->button.setZoomScale(0);
+        this->button.setScale(this->props.size.width/46, this->props.size.height/36);
+        this->button.addTouchEventListener(this->touchBtn, this);
+        this->button.setOpacity(0);
+
+        this->addChild(this->button);
+        this->addChild(this->tbView);
+
+        this->scrollUpdate = this->scrollUpdate.bind(this);
+    }
+
+    void CustomTableView::tableCellTouched(int table, int cell) {},
+    void CustomTableView::scrollViewDidScroll(int sender) {},
+    void CustomTableView::tableCellSizeForIndex(int table, double idx) {},
+    void CustomTableView::tableCellAtIndex(int table, double idx) {},
+    void CustomTableView::numberOfCellsInTableView(int table) {},
+
+    void CustomTableView::lockScroll() {},
+
+    void CustomTableView::touchBtn(int sender, int type) {
+        this->lockScroll();
+        switch (type) {
+            case ccui.Widget.TOUCH_BEGAN:
+                this->_touching = true;
+                break;
+            case ccui.Widget.TOUCH_MOVED:
+                var p = sender.getTouchMovePosition();
+                var buttonP = this->button.convertToWorldSpace();
+                var direction = this->tbView.getDirection();
+                if (direction == cc.SCROLLVIEW_DIRECTION_HORIZONTAL) {
+                    if ((p.x > buttonP.x + this->props.size.width) || p.x < buttonP.x) {
+                        if (!this->offset) {
+                            this->offset = this->tbView.getContentOffset();
+                        }
+                        this->tbView.setContentOffset(this->offset, false);
+                    } else {
+                        this->offset = null;
+                    }
+                    //cc.log('this.tbView.getContentOffset()', this.tbView.getContentOffset());
+                } else if (direction == cc.SCROLLVIEW_DIRECTION_VERTICAL) {
+                    if ((p.y > buttonP.y + this->props.size.height) || p.y < buttonP.y) {
+                        if (!this->offset) {
+                            this->offset = this->tbView.getContentOffset();
+                        }
+                        this->tbView.setContentOffset(this->offset, false);
+                    } else {
+                        this->offset = null;
+                    }
+                }
+                //this.lockScroll();
+                break;
+            case ccui.Widget.TOUCH_ENDED:
+            case ccui.Widget.TOUCH_CANCELED:
+                this->_touching = false;
+                this->getOffset = null;
+                break;
+        }
+    }
+
+    void CustomTableView::loadData(int data) {
+        if (data) {
+            this->data = data;
+        }
+        if (!this->data) return;
+        this->unschedule(this->scrollUpdate);
+        this->tbView.reloadData();
+    }
+
+    double CustomTableView::getCellAtIdx(double idx) {
+        return this->tbView.cellAtIndex(idx);
+    }
+
+    double CustomTableView::reloadAtIdx(double idx, int type) {
+        this->tbView.updateCellAtIndex(idx);
+    }
+
+    double CustomTableView::removeCellAtIdx(double idx) {
+        this->tbView.removeCellAtIndex(idx);
+    }
+
+    void CustomTableView::scrollToIndex(int index, int scrollAnim = true){
+        auto offset;
+        if(this->tbView.getDirection() == cc.SCROLLVIEW_DIRECTION_HORIZONTAL){
+            offset = this->tbView.maxContainerOffset()
+            offset.y = 0;
+            for(auto i=0;i<index;i++) {
+                auto size = this->tableCellSizeForIndex(this->tbView, i);
+                offset.x -= size.width;
+            }
+        }
+        else if(this->tbView.getDirection() == cc.SCROLLVIEW_DIRECTION_VERTICAL){
+            offset = this->tbView.minContainerOffset();
+            offset.x = 0;
+            for(auto i=0;i<index;i++) {
+                auto size = this->tableCellSizeForIndex(this->tbView, i);
+                offset.y += size.height;
+            }
+        }
+        this->scrollTo(offset, scrollAnim);
+    }
+
+    void CustomTableView::scrollToOffsetIn(int offset, int time){
+        this->_curOffset = this->tbView.getContentOffset();
+        this->_destOffset = offset;
+        this->_scrollTime = 0;
+        this->_scrollTotalTime = time;
+        this->schedule(this->scrollUpdate);
+    }
+
+    void CustomTableView::scrollUpdate(double dt){
+        this->_scrollTime += dt;
+        if(this->_scrollTime >= this->_scrollTotalTime){
+            this->tbView.setContentOffset(this->_destOffset);
+            this->unschedule(this->scrollUpdate);
+            return;
+        }
+        auto ratio = this->_scrollTime / this->_scrollTotalTime;
+        auto offset = cc.p(this->_curOffset.x + (this->_destOffset.x - this->_curOffset.x) * ratio,
+            this->_curOffset.y + (this->_destOffset.y - this->_curOffset.y) * ratio);
+        this->tbView.setContentOffset(offset);
+    }
+
+    void CustomTableView::loadText() {},
+
+    void CustomTableView::scrollBy(int p){
+        var offset = this->tbView.getContentOffset();
+        var destinationOffset = cc.p(offset.x + p.x, offset.y + p.y);
+        this->tbView.setContentOffset(destinationOffset, true);
+    }
+
+    void CustomTableView::scrollTo(int p, int scrollAnim = true){
+        this->tbView.setContentOffset(p, scrollAnim);
+    }
+});

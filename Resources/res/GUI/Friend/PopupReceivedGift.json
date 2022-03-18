@@ -1,0 +1,504 @@
+{
+  "ID": "17c8ba6f-d134-4c30-82cf-4b2fb6575280",
+  "Version": "2.3.4",
+  "Name": "PopupReceivedGift",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Children": [
+          {
+            "FileData": {
+              "Type": "Default",
+              "Path": "Default/ImageFile.png",
+              "Plist": ""
+            },
+            "Scale9Enable": true,
+            "Scale9OriginX": 47,
+            "Scale9OriginY": 26,
+            "Scale9Width": 49,
+            "Scale9Height": 28,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 568.0,
+              "Y": 320.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PositionPercentXEnabled": true,
+            "PositionPercentYEnabled": true,
+            "PrePosition": {
+              "X": 0.5,
+              "Y": 0.5
+            },
+            "PreSize": {
+              "X": 0.3961,
+              "Y": 0.4688
+            },
+            "LeftMargin": 343.0,
+            "RightMargin": 343.0,
+            "TopMargin": 170.0,
+            "BottomMargin": 170.0,
+            "Tag": 93,
+            "Children": [
+              {
+                "FontSize": 14,
+                "ButtonText": "",
+                "TextColor": {
+                  "R": 65,
+                  "G": 65,
+                  "B": 70
+                },
+                "DisabledFileData": {
+                  "Type": "Default",
+                  "Path": "Default/Button_Disable.png",
+                  "Plist": ""
+                },
+                "NormalFileData": {
+                  "Type": "Normal",
+                  "Path": "Shop/res/BLACKMARKET/Board_box_Item.png",
+                  "Plist": ""
+                },
+                "Scale9Enable": true,
+                "Scale9OriginX": 15,
+                "Scale9OriginY": 11,
+                "Scale9Width": 501,
+                "Scale9Height": 437,
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "TouchEnable": true,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 227.6393,
+                  "Y": 36.9722
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.5059,
+                  "Y": 0.1232
+                },
+                "PreSize": {
+                  "X": 0.3333,
+                  "Y": 0.2333
+                },
+                "LeftMargin": 152.6393,
+                "RightMargin": 147.3607,
+                "TopMargin": 228.0278,
+                "BottomMargin": 1.9722,
+                "Tag": 151,
+                "Children": [
+                  {
+                    "FontSize": 36,
+                    "LabelText": "OK",
+                    "FontResource": {
+                      "Type": "Normal",
+                      "Path": "Font/facebook.TTF",
+                      "Plist": ""
+                    },
+                    "HorizontalAlignmentType": "HT_Center",
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "R": 110,
+                      "G": 110,
+                      "B": 110
+                    },
+                    "ShadowOffsetX": 2.0,
+                    "ShadowOffsetY": -2.0,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 77.149,
+                      "Y": 39.9325
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.5143,
+                      "Y": 0.5705
+                    },
+                    "PreSize": {
+                      "X": 0.3467,
+                      "Y": 0.7429
+                    },
+                    "LeftMargin": 51.149,
+                    "RightMargin": 46.851,
+                    "TopMargin": 4.0675,
+                    "BottomMargin": 13.9325,
+                    "Tag": 152,
+                    "ActionTag": 2087864657,
+                    "Size": {
+                      "X": 52.0,
+                      "Y": 52.0
+                    },
+                    "Name": "Text_12",
+                    "ctype": "TextObjectData"
+                  }
+                ],
+                "ActionTag": -311623004,
+                "Size": {
+                  "X": 150.0,
+                  "Y": 70.0
+                },
+                "Name": "btnOK",
+                "ctype": "ButtonObjectData"
+              },
+              {
+                "FontSize": 36,
+                "LabelText": "The gift is:",
+                "FontResource": {
+                  "Type": "Normal",
+                  "Path": "Font/facebook.TTF",
+                  "Plist": ""
+                },
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 225.8116,
+                  "Y": 243.7698
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {
+                  "R": 0,
+                  "G": 0,
+                  "B": 0
+                },
+                "IconVisible": false,
+                "PositionPercentXEnabled": true,
+                "PrePosition": {
+                  "X": 0.5018,
+                  "Y": 0.8126
+                },
+                "PreSize": {
+                  "X": 0.4178,
+                  "Y": 0.1733
+                },
+                "LeftMargin": 131.8116,
+                "RightMargin": 130.1884,
+                "TopMargin": 30.2302,
+                "BottomMargin": 217.7698,
+                "Tag": 154,
+                "ActionTag": -1980936424,
+                "Size": {
+                  "X": 188.0,
+                  "Y": 52.0
+                },
+                "Name": "lbTitle",
+                "ctype": "TextObjectData"
+              },
+              {
+                "FontSize": 36,
+                "LabelText": "Type:",
+                "FontResource": {
+                  "Type": "Normal",
+                  "Path": "Font/facebook.TTF",
+                  "Plist": ""
+                },
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 115.2958,
+                  "Y": 177.7698
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {
+                  "R": 0,
+                  "G": 0,
+                  "B": 0
+                },
+                "IconVisible": false,
+                "PositionPercentXEnabled": true,
+                "PrePosition": {
+                  "X": 0.2562,
+                  "Y": 0.5926
+                },
+                "PreSize": {
+                  "X": 0.2133,
+                  "Y": 0.1733
+                },
+                "LeftMargin": 67.2958,
+                "RightMargin": 286.7042,
+                "TopMargin": 96.2302,
+                "BottomMargin": 151.7698,
+                "Tag": 155,
+                "ActionTag": -235890915,
+                "Size": {
+                  "X": 96.0,
+                  "Y": 52.0
+                },
+                "Name": "notice_0",
+                "ctype": "TextObjectData"
+              },
+              {
+                "FontSize": 36,
+                "LabelText": "Num: ",
+                "FontResource": {
+                  "Type": "Normal",
+                  "Path": "Font/facebook.TTF",
+                  "Plist": ""
+                },
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 115.2958,
+                  "Y": 114.7698
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {
+                  "R": 0,
+                  "G": 0,
+                  "B": 0
+                },
+                "IconVisible": false,
+                "PositionPercentXEnabled": true,
+                "PrePosition": {
+                  "X": 0.2562,
+                  "Y": 0.3826
+                },
+                "PreSize": {
+                  "X": 0.1911,
+                  "Y": 0.1733
+                },
+                "LeftMargin": 72.2958,
+                "RightMargin": 291.7042,
+                "TopMargin": 159.2302,
+                "BottomMargin": 88.7698,
+                "Tag": 156,
+                "ActionTag": -1640341262,
+                "Size": {
+                  "X": 86.0,
+                  "Y": 52.0
+                },
+                "Name": "notice_1",
+                "ctype": "TextObjectData"
+              },
+              {
+                "FontSize": 36,
+                "LabelText": "num",
+                "FontResource": {
+                  "Type": "Normal",
+                  "Path": "Font/facebook.TTF",
+                  "Plist": ""
+                },
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 220.2659,
+                  "Y": 114.7698
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "IconVisible": false,
+                "PositionPercentXEnabled": true,
+                "PrePosition": {
+                  "X": 0.4895,
+                  "Y": 0.3826
+                },
+                "PreSize": {
+                  "X": 0.1622,
+                  "Y": 0.1733
+                },
+                "LeftMargin": 183.7659,
+                "RightMargin": 193.2341,
+                "TopMargin": 159.2302,
+                "BottomMargin": 88.7698,
+                "Tag": 157,
+                "ActionTag": -1942986964,
+                "Size": {
+                  "X": 73.0,
+                  "Y": 52.0
+                },
+                "Name": "lbType",
+                "ctype": "TextObjectData"
+              },
+              {
+                "FontSize": 36,
+                "LabelText": "type",
+                "FontResource": {
+                  "Type": "Normal",
+                  "Path": "Font/facebook.TTF",
+                  "Plist": ""
+                },
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 221.2465,
+                  "Y": 178.7698
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "IconVisible": false,
+                "PositionPercentXEnabled": true,
+                "PrePosition": {
+                  "X": 0.4917,
+                  "Y": 0.5959
+                },
+                "PreSize": {
+                  "X": 0.18,
+                  "Y": 0.1733
+                },
+                "LeftMargin": 180.7465,
+                "RightMargin": 188.2535,
+                "TopMargin": 95.2302,
+                "BottomMargin": 152.7698,
+                "Tag": 158,
+                "ActionTag": -1044354794,
+                "Size": {
+                  "X": 81.0,
+                  "Y": 52.0
+                },
+                "Name": "lbNum",
+                "ctype": "TextObjectData"
+              }
+            ],
+            "ActionTag": -996386911,
+            "Size": {
+              "X": 450.0,
+              "Y": 300.0
+            },
+            "Name": "bg",
+            "ctype": "ImageViewObjectData"
+          }
+        ],
+        "Size": {
+          "X": 1136.0,
+          "Y": 640.0
+        },
+        "Name": "Layer",
+        "ctype": "LayerObjectData"
+      },
+      "UsedResources": [
+        "../Default/Button_Disable.png",
+        "../Default/ImageFile.png",
+        "../Font/facebook.TTF",
+        "../Shop/res/BLACKMARKET/Board_box_Item.png"
+      ],
+      "ctype": "GameFileData"
+    }
+  },
+  "Type": "Layer"
+}

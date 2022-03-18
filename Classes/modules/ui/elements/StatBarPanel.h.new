@@ -1,0 +1,36 @@
+#ifndef 	_STATBARPANEL_H_
+#define 	_STATBARPANEL_H_
+
+
+#include <cocos2d.h>
+
+class StatBarPanel{
+public:
+
+	StatBarPanelint panel);
+	void setPostfix(int string);
+	void setDefaultValue();
+	void initPanel();
+	void setInfo(int val, int percent);
+	void updateInfo(double dt);
+	void _setInfo(int val, int percent);
+	void setPercent(int percentOnOne);
+	void setInfo(int val1, int val2, int percent);
+	void setDefaultValue();
+	void updateInfo(double dt);
+	void _setInfo(int val1, int val2, int percent);
+
+
+private:
+	int valid;
+	int updateInfo;
+	int animationStartTime;
+	int animationTime;
+	int panel;
+	int _postfix;
+	int _endVal;
+	int _endPercent;
+	int _endVal1;
+	int _endVal2;
+};
+#endif

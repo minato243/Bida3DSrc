@@ -1,0 +1,81 @@
+#ifndef 	_SHOPSCENE_H_
+#define 	_SHOPSCENE_H_
+
+
+#include <cocos2d.h>
+
+class ShopScene{
+public:
+
+	ShopScene);
+	void initCameras();
+	void onEnter();
+	void onExit();
+	void onSceneReload();
+	void toShopTab(double tabIdx, int isInstant = false);
+	ShopScene);
+	void initSubComponent();
+	void offerList.onChangePage (int i);
+	void offerList.onInitItem (int item);
+	void switchTab(int index, int scroll = false);
+	void (int function();
+	void switchTabButton(int index);
+	void showLocalPayment(int visibility);
+	void onSceneReload();
+	void refresh();
+	void onRequestClose();
+	void getOffset();
+	void setOffset(int offset);
+	void onButtonTouchEnded(int sender, int tag);
+	void goToPage(double pageIdx, int scroll = false);
+	void setPageOffset(int offsets);
+	void onChangeCurItem(double idx);
+	void onChangePage();
+	void scrollViewDidScroll(int sender);
+	void tableCellSizeForIndex(int tb, double idx);
+	void tableCellAtIndex(int table, double idx);
+	void cell.getItem ();
+	double cell.getItemByIdx (double idx);
+	ShopSceneint size);
+	void setSize(int size);
+	void scaleUiToSize(int size, int ui);
+	void setSpecial(int type);
+	void initComponent();
+	void loadData(int data);
+	void loadGenericData(int data);
+	void loadGachaItemData(int data);
+	void loadOfferData(int data);
+	void updateSpecial(double dt);
+	void onButtonTouchEnded(int sender, int tag);
+
+
+private:
+	int waitTab;
+	int _cameras;
+	int ui;
+	int keep;
+	int uiRoot;
+	int tabsData;
+	int tabsContent;
+	int tabButtons;
+	int _buttonSize;
+	int _activeButtonCapInset;
+	int _inactiveButtonCapInset;
+	int curTab;
+	int _showLocalPayment;
+	int _offsets;
+	double curPageIdx;
+	double curItemIdx;
+	int data;
+	int _direction;
+	int updateSpecial;
+	int _size;
+	int special;
+	int _bg;
+	int _bg_special;
+	int _bg_offer;
+	int specialOffer;
+	int _data;
+	int updateTime;
+};
+#endif

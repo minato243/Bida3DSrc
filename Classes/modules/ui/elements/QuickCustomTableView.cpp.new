@@ -1,0 +1,265 @@
+#include "QuickCustomTableView.cpp.h"
+
+{
+    QuickCustomTableView::QuickCustomTableView(int panel, int direction, int itemClass, int primaryDirCount, int alternativeDirCount){
+        this->_super({size: panel.getContentSize(), direction: direction});
+        this->_size = panel.getContentSize();
+        this->_direction = direction;
+        this->_primaryDirCount = primaryDirCount || 4;
+        this->_alterDirCount = alternativeDirCount || 1;
+        this->_itemClass = itemClass;
+        this->_horOffFactor = 0;
+        this->_verOffFactor = 0;
+        this->triggerOffset = -1;
+        this->_items = [];
+
+        auto templateItem = new itemClass();
+        auto originalSize = templateItem.getOriginalSize();
+        if(primaryDirCount < 0){
+            if(direction == cc.SCROLLVIEW_DIRECTION_VERTICAL){
+                auto scaleX = this->_size.width / (this->_alterDirCount * originalSize.width);
+                this->_primaryDirCount = this->_size.height / (originalSize.height * scaleX);
+            }
+            else{
+                auto scaleY = this->_size.height / (this->_alterDirCount * originalSize.height);
+                this->_primaryDirCount = this->_size.width / (originalSize.width * scaleY);
+            }
+        }
+        else if(alternativeDirCount < 0){
+            auto whRatio = originalSize.width / originalSize.height;
+            if(direction == cc.SCROLLVIEW_DIRECTION_VERTICAL){
+                auto itemWidth = this->_size.width / primaryDirCount;
+                auto itemHeight = itemWidth / whRatio;
+                this->_alterDirCount = this->_size.height / itemHeight;
+            }
+            else{
+                auto itemHeight = this->_size.height / primaryDirCount;
+                auto itemWidth = itemHeight * whRatio;
+                this->_alterDirCount = this->_size.width / itemWidth;
+            }
+        }
+
+    }
+
+    void QuickCustomTableView::setHorOffsetFactor(int factor){
+        this->_horOffFactor = factor;
+    }
+
+    void QuickCustomTableView::setVerOffsetFactor(int factor){
+        this->_verOffFactor = factor;
+    }
+
+    void QuickCustomTableView::setTriggerOnUIOffset(int offset){
+        this->triggerOffset = offset;
+    }
+
+    void QuickCustomTableView::getPrimaryDirCount(){
+        return this->_primaryDirCount;
+    }
+
+    void QuickCustomTableView::getItems(){
+        return this->_items;
+    }
+
+    void QuickCustomTableView::scrollViewDidScroll(int tbView){
+        if(this->triggerOffset < 0 || this->numberOfCellsInTableView() == 0) return;
+        auto currentOffset = tbView.getContentOffset();
+        auto minOffset = tbView.minContainerOffset();
+        auto itemCountOffset = 0;
+        auto offset = 0;
+        auto size = this->numberOfCellsInTableView(tbView);
+        auto curItem;
+
+        for(auto i=0;i<size;i++){
+            auto lastOffset = offset;
+            auto cellsize;
+            curItem = this->getCellAtIdx(i).getItem();
+            if(this->_direction == cc.SCROLLVIEW_DIRECTION_VERTICAL){
+                cellsize = this->tableCellSizeForIndex(tbView, i).height;
+                offset += cellsize;
+                if(offset + minOffset.y > currentOffset.y){
+                    itemCountOffset += (currentOffset.y - minOffset.y - lastOffset)/cellsize;
+                    break;
+                }
+            }
+            else{
+                cellsize = this->tableCellSizeForIndex(tbView, i).width;
+                offset += cellsize;
+                if(offset + minOffset.x > currentOffset.x){
+                    itemCountOffset += (currentOffset.x - minOffset.x - lastOffset)/cellsize;
+                    break;
+                }
+            }
+            itemCountOffset += 1;
+        }
+
+        if(this->lastItemCountOffset < this->triggerOffset && this->triggerOffset < itemCountOffset){
+            curItem.onIncreaseTriggerOffset();
+        }
+        else if(this->lastItemCountOffset > this->triggerOffset && this->triggerOffset > itemCountOffset){
+            curItem.onDecreaseTriggerOffset();
+        }
+        this->lastItemCountOffset = itemCountOffset;
+    }
+
+    void QuickCustomTableView::numberOfCellsInTableView(int table) {
+        return Math.ceil(this->data.length/this->_alterDirCount);
+    }
+
+    void QuickCustomTableView::tableCellSizeForIndex(int table, double idx){
+        auto wDiv = 1, hDiv = 1;
+        if(this->_direction == cc.SCROLLVIEW_DIRECTION_HORIZONTAL)
+            wDiv = this->_primaryDirCount;
+        else
+            hDiv = this->_primaryDirCount;
+        return cc.size(this->_size.width/wDiv, this->_size.height/hDiv);
+    }
+
+    void QuickCustomTableView::reloadData(){
+        this->loadData(this->data);
+    }
+
+    void QuickCustomTableView::onInitItem(int item){},
+
+    void QuickCustomTableView::tableCellAtIndex(int table, double idx){
+        auto cell = table.dequeueCell();
+        auto cellSize = this->tableCellSizeForIndex(table, idx);
+        auto itemSize = this->tableCellSizeForIndex(table, idx);
+        auto widthOffset = 0, heightOffset = 0;
+        auto isHor = false;
+        if(this->_direction == cc.SCROLLVIEW_DIRECTION_HORIZONTAL){
+            itemSize.height /= this->_alterDirCount * (1 + this->_verOffFactor);
+            itemSize.width /= 1 + this->_horOffFactor;
+            heightOffset = cellSize.height/this->_alterDirCount;
+            isHor = true;
+        }
+        else{
+            itemSize.height /= 1 + this->_verOffFactor;
+            itemSize.width /= this->_alterDirCount * (1 + this->_horOffFactor);
+            widthOffset = cellSize.width/this->_alterDirCount;
+        }
+
+        if(!cell){
+            cell = new cc.TableViewCell();
+            for(auto i=0;i<this->_alterDirCount;i++){
+                auto index = idx * this->_alterDirCount + i;
+                auto item = new this->_itemClass(itemSize, index);
+                item.idx = index;
+                item.tag = 100 + i;
+                this->_items.push_back(item);
+                // item has anchor point in middle
+                auto pos = cc.p(0,0);
+                if(isHor) {
+                    pos.x = cellSize.width/2;
+                    pos.y = heightOffset * (2*i+1)/2;
+                }
+                else{
+                    pos.y = cellSize.height/2;
+                    pos.x = widthOffset * (2*i+1)/2;
+                }
+                item.setPosition(pos);
+                this->onInitItem(item, index);
+                // utils.log("set item position", idx, pos);
+                cell.addChild(item);
+                if(index < this->data.length){
+                    item.setVisible(true);
+                    item.loadData(this->data[index]);
+                }
+                else{
+                    item.setVisible(false);
+                }
+            }
+            void QuickCustomTableView::cell.getItem (){return cell.getChildByTag(100);};
+            double QuickCustomTableView::cell.getItemByIdx (double idx){return cell.getChildByTag(100 + idx);};
+        }
+        else{
+            for(auto i=0;i<this->_alterDirCount;i++){
+                auto item = cell.getChildByTag(100 + i);
+                auto index = idx * this->_alterDirCount + i;
+
+                if(index < this->data.length) {
+                    item.idx = index;
+                    item.loadData(this->data[index]);
+                    item.setVisible(true);
+                }
+                else{
+                    item.setVisible(false);
+                }
+            }
+        }
+        return cell;
+    }
+})
+
+
+auto TextSimpleItem = cc.Sprite.extend({
+    QuickCustomTableView::QuickCustomTableView(int size, int index, int textSize, int color){
+        this->_super();
+
+        if(!size){
+            size = cc.size(200, 30);
+        }
+        this->btn = gv.commonButton(size.width, size.height, 0, 0, '');
+        this->addChild(this->btn);
+
+        utils.log("SIZE", textSize);
+        this->text = new ccui.Text("ABCDEFGH", res.font_facebook, textSize || 18);
+        this->addChild(this->text);
+        this->text.setTextColor(color || cc.color.BLACK);
+
+        this->btn.setTouchEnabled(true);
+        this->btn.setSwallowTouches(false);
+        this->btn.addTouchEventListener(this->onTouchListener.bind(this));
+    }
+
+    void QuickCustomTableView::getOriginalSize(){
+        return this->text.getContentSize();
+    }
+
+    void QuickCustomTableView::onTouchListener(int sender, int type){
+        switch(type){
+            case Widget::TouchEventType::BEGAN:
+                this->onTouchBegan();
+                break;
+            case Widget::TouchEventType::MOVED:
+                this->onTouchMoved();
+                break;
+            case Widget::TouchEventType::ENDED:
+                this->onTouchEnded();
+                break;
+            case Widget::TouchEventType::CANCELED:
+                this->onTouchCancelled();
+                break;
+        }
+    }
+
+    void QuickCustomTableView::onTouchBegan(){},
+    void QuickCustomTableView::onTouchMoved(){},
+    void QuickCustomTableView::onTouchCancelled(){},
+    void QuickCustomTableView::onTouchEnded(){utils.log("ENDED");},
+
+    void QuickCustomTableView::setFont(int name){
+        this->text.setFontName(name);
+    }
+
+    void QuickCustomTableView::setSize(int size){
+        this->text.setFontSize(size);
+    }
+
+    void QuickCustomTableView::setColor(int color){
+        this->text.setTextColor(color);
+    }
+
+    void QuickCustomTableView::setTextHorizontalAlignment(int align){
+        this->text.setTextHorizontalAlignment(align);
+    }
+
+    void QuickCustomTableView::getUI(){
+        return this->text;
+    }
+
+    void QuickCustomTableView::loadData(int str){
+        this->data = str;
+        this->text.setString(str);
+    }
+});

@@ -1,0 +1,396 @@
+{
+  "listBox": [
+    {
+      "boxId": 1,
+      "name": "Silver Breaker Box",
+      "price": 600,
+      "listCue": [
+        {
+          "cueId": 2106,
+          "rate": 167
+        },
+        {
+          "cueId": 2107,
+          "rate": 167
+        },
+        {
+          "cueId": 2108,
+          "rate": 167
+        },
+        {
+          "cueId": 2109,
+          "rate": 167
+        },
+        {
+          "cueId": 2202,
+          "rate": 50
+        },
+        {
+          "cueId": 2203,
+          "rate": 50
+        },
+        {
+          "cueId": 2204,
+          "rate": 50
+        },
+        {
+          "cueId": 2301,
+          "rate": 17
+        },
+        {
+          "cueId": 2302,
+          "rate": 17
+        },
+        {
+          "cueId": 2401,
+          "rate": 5
+        }
+      ]
+    },
+    {
+      "boxId": 2,
+      "name": "Silver Jumper Box",
+      "price": 600,
+      "listCue": [
+        {
+          "cueId": 3106,
+          "rate": 167
+        },
+        {
+          "cueId": 3107,
+          "rate": 167
+        },
+        {
+          "cueId": 3108,
+          "rate": 167
+        },
+        {
+          "cueId": 3109,
+          "rate": 167
+        },
+        {
+          "cueId": 3202,
+          "rate": 50
+        },
+        {
+          "cueId": 3203,
+          "rate": 50
+        },
+        {
+          "cueId": 3204,
+          "rate": 50
+        },
+        {
+          "cueId": 3301,
+          "rate": 17
+        },
+        {
+          "cueId": 3302,
+          "rate": 17
+        },
+        {
+          "cueId": 3401,
+          "rate": 5
+        }
+      ]
+    },
+    {
+      "boxId": 3,
+      "name": "Silver Masses Box",
+      "price": 600,
+      "listCue": [
+        {
+          "cueId": 4106,
+          "rate": 167
+        },
+        {
+          "cueId": 4107,
+          "rate": 167
+        },
+        {
+          "cueId": 4108,
+          "rate": 167
+        },
+        {
+          "cueId": 4109,
+          "rate": 167
+        },
+        {
+          "cueId": 4202,
+          "rate": 50
+        },
+        {
+          "cueId": 4203,
+          "rate": 50
+        },
+        {
+          "cueId": 4204,
+          "rate": 50
+        },
+        {
+          "cueId": 4301,
+          "rate": 17
+        },
+        {
+          "cueId": 4302,
+          "rate": 17
+        },
+        {
+          "cueId": 4401,
+          "rate": 5
+        }
+      ]
+    },
+    {
+      "boxId": 4,
+      "name": "Bronze Breaker Box",
+      "price": 300,
+      "listCue": [
+        {
+          "cueId": 2101,
+          "rate": 167
+        },
+        {
+          "cueId": 2102,
+          "rate": 167
+        },
+        {
+          "cueId": 2103,
+          "rate": 167
+        },
+        {
+          "cueId": 2104,
+          "rate": 167
+        },
+        {
+          "cueId": 2105,
+          "rate": 167
+        }
+      ]
+    },
+    {
+      "boxId": 5,
+      "name": "Bronze Jumper Box",
+      "price": 300,
+      "listCue": [
+        {
+          "cueId": 3101,
+          "rate": 167
+        },
+        {
+          "cueId": 3102,
+          "rate": 167
+        },
+        {
+          "cueId": 3103,
+          "rate": 167
+        },
+        {
+          "cueId": 3104,
+          "rate": 167
+        },
+        {
+          "cueId": 3105,
+          "rate": 167
+        }
+      ]
+    },
+    {
+      "boxId": 6,
+      "name": "Bronze Masses Box",
+      "price": 300,
+      "listCue": [
+        {
+          "cueId": 4101,
+          "rate": 167
+        },
+        {
+          "cueId": 4102,
+          "rate": 167
+        },
+        {
+          "cueId": 4103,
+          "rate": 167
+        },
+        {
+          "cueId": 4104,
+          "rate": 167
+        },
+        {
+          "cueId": 4105,
+          "rate": 167
+        }
+      ]
+    },
+    {
+      "boxId": 7,
+      "name": "Bronze Mixer Box",
+      "price": 460,
+      "listCue": [
+        {
+          "cueId": 1110,
+          "rate": 167
+        },
+        {
+          "cueId": 2110,
+          "rate": 167
+        },
+        {
+          "cueId": 3110,
+          "rate": 167
+        },
+        {
+          "cueId": 4110,
+          "rate": 167
+        },
+        {
+          "cueId": 1201,
+          "rate": 50
+        },
+        {
+          "cueId": 2201,
+          "rate": 50
+        },
+        {
+          "cueId": 3201,
+          "rate": 50
+        },
+        {
+          "cueId": 4201,
+          "rate": 50
+        }
+      ]
+    },
+    {
+      "boxId": 8,
+      "name": "Golden Breaker Box",
+      "price": 2000,
+      "listCue": [
+        {
+          "cueId": 2205,
+          "rate": 90
+        },
+        {
+          "cueId": 2303,
+          "rate": 10
+        },
+        {
+          "cueId": 2402,
+          "rate": 3
+        },
+        {
+          "cueId": 2501,
+          "rate": 1
+        }
+      ]
+    },
+    {
+      "boxId": 9,
+      "name": "Golden Jumper Box",
+      "price": 2000,
+      "listCue": [
+        {
+          "cueId": 3205,
+          "rate": 90
+        },
+        {
+          "cueId": 3303,
+          "rate": 10
+        },
+        {
+          "cueId": 3402,
+          "rate": 3
+        },
+        {
+          "cueId": 3501,
+          "rate": 1
+        }
+      ]
+    },
+    {
+      "boxId": 10,
+      "name": "Golden Masses Box",
+      "price": 2000,
+      "listCue": [
+        {
+          "cueId": 4205,
+          "rate": 90
+        },
+        {
+          "cueId": 4303,
+          "rate": 10
+        },
+        {
+          "cueId": 4402,
+          "rate": 3
+        },
+        {
+          "cueId": 4501,
+          "rate": 1
+        }
+      ]
+    },
+    {
+      "boxId": 11,
+      "name": "Diamond Mixer Box 1",
+      "price": 4000,
+      "listCue": [
+        {
+          "cueId": 2206,
+          "rate": 100
+        },
+        {
+          "cueId": 2304,
+          "rate": 17
+        },
+        {
+          "cueId": 3304,
+          "rate": 17
+        },
+        {
+          "cueId": 3403,
+          "rate": 5
+        },
+        {
+          "cueId": 4403,
+          "rate": 5
+        },
+        {
+          "cueId": 4502,
+          "rate": 1
+        }
+      ]
+    },
+    {
+      "boxId": 12,
+      "name": "Diamond Mixer Box 2",
+      "price": 4000,
+      "listCue": [
+        {
+          "cueId": 3206,
+          "rate": 100
+        },
+        {
+          "cueId": 4206,
+          "rate": 50
+        },
+        {
+          "cueId": 4304,
+          "rate": 17
+        },
+        {
+          "cueId": 2403,
+          "rate": 5
+        },
+        {
+          "cueId": 2502,
+          "rate": 1
+        },
+        {
+          "cueId": 3502,
+          "rate": 1
+        }
+      ]
+    }
+  ]
+}

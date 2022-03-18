@@ -1,0 +1,648 @@
+{
+  "ID": "70fdfacb-c9c3-4e4b-953e-d90254067132",
+  "Version": "2.3.4",
+  "Name": "CheatAddCue",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Tag": 33,
+        "Children": [
+          {
+            "ClipAble": false,
+            "BackColorAlpha": 102,
+            "SingleColor": {
+              "G": 242,
+              "B": 150
+            },
+            "FirstColor": {
+              "R": 150,
+              "G": 200
+            },
+            "EndColor": {},
+            "ColorVector": {
+              "ScaleY": 1.0
+            },
+            "Scale9Width": 1,
+            "Scale9Height": 1,
+            "TouchEnable": true,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 0.2538,
+              "Y": 1.2683
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "LeftMargin": -319.6334,
+            "RightMargin": -320.141,
+            "TopMargin": -201.7243,
+            "BottomMargin": -199.1877,
+            "Tag": 45,
+            "Children": [
+              {
+                "FontSize": 36,
+                "LabelText": "Loai",
+                "FontResource": {
+                  "Type": "Normal",
+                  "Path": "Font/facebook.TTF",
+                  "Plist": ""
+                },
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 73.1755,
+                  "Y": 226.5634
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.1144,
+                  "Y": 0.5651
+                },
+                "PreSize": {
+                  "X": 0.1016,
+                  "Y": 0.1297
+                },
+                "LeftMargin": 40.6755,
+                "RightMargin": 534.0989,
+                "TopMargin": 148.3486,
+                "BottomMargin": 200.5634,
+                "Tag": 46,
+                "ActionTag": 1967055232,
+                "Size": {
+                  "X": 65.0,
+                  "Y": 52.0
+                },
+                "Name": "type",
+                "ctype": "TextObjectData"
+              },
+              {
+                "FontSize": 36,
+                "IsCustomSize": true,
+                "LabelText": "",
+                "PlaceHolderText": "Loai gay",
+                "MaxLengthText": 10,
+                "TouchEnable": true,
+                "AnchorPoint": {
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 139.1286,
+                  "Y": 221.543
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.2175,
+                  "Y": 0.5526
+                },
+                "PreSize": {
+                  "X": 0.6775,
+                  "Y": 0.1157
+                },
+                "LeftMargin": 139.1286,
+                "RightMargin": 67.1872,
+                "TopMargin": 156.1814,
+                "BottomMargin": 198.3554,
+                "Tag": 47,
+                "ActionTag": -110350078,
+                "Size": {
+                  "X": 433.4586,
+                  "Y": 46.3752
+                },
+                "Name": "tfType",
+                "ctype": "TextFieldObjectData"
+              },
+              {
+                "FontSize": 14,
+                "ButtonText": "",
+                "TextColor": {
+                  "R": 65,
+                  "G": 65,
+                  "B": 70
+                },
+                "DisabledFileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "LamMoi_Button.png",
+                  "Plist": "MainLobby/Sponsor_Deprecated/SponsorGUIs.plist"
+                },
+                "PressedFileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "LamMoi_Button.png",
+                  "Plist": "MainLobby/Sponsor_Deprecated/SponsorGUIs.plist"
+                },
+                "NormalFileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "LamMoi_Button.png",
+                  "Plist": "MainLobby/Sponsor_Deprecated/SponsorGUIs.plist"
+                },
+                "Scale9Enable": true,
+                "Scale9OriginX": 15,
+                "Scale9OriginY": 11,
+                "Scale9Width": 90,
+                "Scale9Height": 21,
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "TouchEnable": true,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 491.7829,
+                  "Y": 16.2475
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.7687,
+                  "Y": 0.0405
+                },
+                "PreSize": {
+                  "X": 0.1876,
+                  "Y": 0.1073
+                },
+                "LeftMargin": 431.7829,
+                "RightMargin": 87.9915,
+                "TopMargin": 363.1645,
+                "BottomMargin": -5.2525,
+                "Tag": 127,
+                "Children": [
+                  {
+                    "FontSize": 20,
+                    "LabelText": "Submit",
+                    "FontResource": {
+                      "Type": "Normal",
+                      "Path": "Font/facebook.TTF",
+                      "Plist": ""
+                    },
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "R": 110,
+                      "G": 110,
+                      "B": 110
+                    },
+                    "ShadowOffsetX": 2.0,
+                    "ShadowOffsetY": -2.0,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 62.1229,
+                      "Y": 25.99
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.5177,
+                      "Y": 0.6044
+                    },
+                    "PreSize": {
+                      "X": 0.575,
+                      "Y": 0.6744
+                    },
+                    "LeftMargin": 27.6229,
+                    "RightMargin": 23.3771,
+                    "TopMargin": 2.51,
+                    "BottomMargin": 11.49,
+                    "Tag": 128,
+                    "ActionTag": -809375413,
+                    "Size": {
+                      "X": 69.0,
+                      "Y": 29.0
+                    },
+                    "Name": "lb",
+                    "ctype": "TextObjectData"
+                  }
+                ],
+                "ActionTag": 264137902,
+                "Size": {
+                  "X": 120.0,
+                  "Y": 43.0
+                },
+                "Name": "btnSubmit",
+                "ctype": "ButtonObjectData"
+              },
+              {
+                "FontSize": 36,
+                "LabelText": "Cap",
+                "FontResource": {
+                  "Type": "Normal",
+                  "Path": "Font/facebook.TTF",
+                  "Plist": ""
+                },
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 72.0336,
+                  "Y": 173.8545
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.1126,
+                  "Y": 0.4336
+                },
+                "PreSize": {
+                  "X": 0.0953,
+                  "Y": 0.1297
+                },
+                "LeftMargin": 41.5336,
+                "RightMargin": 537.2408,
+                "TopMargin": 201.0575,
+                "BottomMargin": 147.8545,
+                "Tag": 292,
+                "ActionTag": 2104177500,
+                "Size": {
+                  "X": 61.0,
+                  "Y": 52.0
+                },
+                "Name": "level",
+                "ctype": "TextObjectData"
+              },
+              {
+                "FontSize": 36,
+                "IsCustomSize": true,
+                "LabelText": "",
+                "PlaceHolderText": "Cap",
+                "MaxLengthText": 10,
+                "TouchEnable": true,
+                "AnchorPoint": {
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 137.9864,
+                  "Y": 168.8332
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.2157,
+                  "Y": 0.4211
+                },
+                "PreSize": {
+                  "X": 0.6775,
+                  "Y": 0.1157
+                },
+                "LeftMargin": 137.9864,
+                "RightMargin": 68.3294,
+                "TopMargin": 208.8912,
+                "BottomMargin": 145.6456,
+                "Tag": 293,
+                "ActionTag": 927936715,
+                "Size": {
+                  "X": 433.4586,
+                  "Y": 46.3752
+                },
+                "Name": "tfLevel",
+                "ctype": "TextFieldObjectData"
+              },
+              {
+                "FontSize": 36,
+                "LabelText": "Sao",
+                "FontResource": {
+                  "Type": "Normal",
+                  "Path": "Font/facebook.TTF",
+                  "Plist": ""
+                },
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 70.8902,
+                  "Y": 125.7863
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.1108,
+                  "Y": 0.3138
+                },
+                "PreSize": {
+                  "X": 0.0969,
+                  "Y": 0.1297
+                },
+                "LeftMargin": 39.8902,
+                "RightMargin": 537.8842,
+                "TopMargin": 249.1257,
+                "BottomMargin": 99.7863,
+                "Tag": 294,
+                "ActionTag": 1267356014,
+                "Size": {
+                  "X": 62.0,
+                  "Y": 52.0
+                },
+                "Name": "star",
+                "ctype": "TextObjectData"
+              },
+              {
+                "FontSize": 36,
+                "IsCustomSize": true,
+                "LabelText": "",
+                "PlaceHolderText": "So sao",
+                "MaxLengthText": 10,
+                "TouchEnable": true,
+                "AnchorPoint": {
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 136.8439,
+                  "Y": 120.7659
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.2139,
+                  "Y": 0.3012
+                },
+                "PreSize": {
+                  "X": 0.6775,
+                  "Y": 0.1157
+                },
+                "LeftMargin": 136.8439,
+                "RightMargin": 69.472,
+                "TopMargin": 256.9585,
+                "BottomMargin": 97.5783,
+                "Tag": 295,
+                "ActionTag": 744291077,
+                "Size": {
+                  "X": 433.4586,
+                  "Y": 46.3752
+                },
+                "Name": "tfStar",
+                "ctype": "TextFieldObjectData"
+              },
+              {
+                "FontSize": 36,
+                "LabelText": "Config",
+                "FontResource": {
+                  "Type": "Normal",
+                  "Path": "Font/facebook.TTF",
+                  "Plist": ""
+                },
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 70.6773,
+                  "Y": 74.9325
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.1105,
+                  "Y": 0.1869
+                },
+                "PreSize": {
+                  "X": 0.1626,
+                  "Y": 0.1297
+                },
+                "LeftMargin": 18.6773,
+                "RightMargin": 517.0971,
+                "TopMargin": 299.9794,
+                "BottomMargin": 48.9325,
+                "Tag": 296,
+                "ActionTag": -319208282,
+                "Size": {
+                  "X": 104.0,
+                  "Y": 52.0
+                },
+                "Name": "config",
+                "ctype": "TextObjectData"
+              },
+              {
+                "FontSize": 36,
+                "IsCustomSize": true,
+                "LabelText": "",
+                "PlaceHolderText": "Config ID",
+                "MaxLengthText": 10,
+                "TouchEnable": true,
+                "AnchorPoint": {
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 136.631,
+                  "Y": 69.9128
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.2136,
+                  "Y": 0.1744
+                },
+                "PreSize": {
+                  "X": 0.6775,
+                  "Y": 0.1157
+                },
+                "LeftMargin": 136.631,
+                "RightMargin": 69.6848,
+                "TopMargin": 307.8116,
+                "BottomMargin": 46.7252,
+                "Tag": 297,
+                "ActionTag": 1817921050,
+                "Size": {
+                  "X": 433.4586,
+                  "Y": 46.3752
+                },
+                "Name": "tfConfigId",
+                "ctype": "TextFieldObjectData"
+              },
+              {
+                "FontSize": 20,
+                "LabelText": "Loai gay: BocPha = 2, CauBong = 3, XoanOc = 4, Khong co loai gay 1.\nSo sao: 1 - 6\nPin: 0 - 100\nConfigID là 2 số cuối của config ID theo config (1 -> 10)\nKhong nhap chi so nao thi chi so do se lay mac dinh",
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "AnchorPoint": {
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 41.2657,
+                  "Y": 300.6741
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.0645,
+                  "Y": 0.75
+                },
+                "PreSize": {
+                  "X": 0.9785,
+                  "Y": 0.2868
+                },
+                "LeftMargin": 41.2657,
+                "RightMargin": -27.4913,
+                "TopMargin": 42.7379,
+                "BottomMargin": 243.1741,
+                "Tag": 298,
+                "ActionTag": -1935376236,
+                "Size": {
+                  "X": 626.0,
+                  "Y": 115.0
+                },
+                "Name": "lbDesc",
+                "ctype": "TextObjectData"
+              }
+            ],
+            "ActionTag": 1583175562,
+            "Size": {
+              "X": 639.7744,
+              "Y": 400.912
+            },
+            "Name": "bg",
+            "ctype": "PanelObjectData"
+          }
+        ],
+        "Size": {
+          "X": 0.0,
+          "Y": 0.0
+        },
+        "Name": "Node",
+        "ctype": "SingleNodeObjectData"
+      },
+      "UsedResources": [
+        "../Font/facebook.TTF",
+        "../MainLobby/Sponsor_Deprecated/SponsorGUIs.plist",
+        "../MainLobby/Sponsor_Deprecated/SponsorGUIs.png"
+      ],
+      "ctype": "GameFileData"
+    }
+  },
+  "Type": "Node"
+}

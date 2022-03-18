@@ -1,0 +1,48 @@
+
+FX_Text.png
+size: 2048,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+6
+  rotate: false
+  xy: 2, 257
+  size: 658, 658
+  orig: 658, 658
+  offset: 0, 0
+  index: -1
+9
+  rotate: false
+  xy: 662, 545
+  size: 658, 370
+  orig: 658, 370
+  offset: 0, 0
+  index: -1
+Layer 1 copy 5
+  rotate: true
+  xy: 2, 2
+  size: 110, 342
+  orig: 110, 342
+  offset: 0, 0
+  index: -1
+flash_flare
+  rotate: false
+  xy: 1322, 659
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+light1
+  rotate: false
+  xy: 662, 476
+  size: 162, 67
+  orig: 162, 67
+  offset: 0, 0
+  index: -1
+workshop_FUSION_SUCCESS
+  rotate: false
+  xy: 2, 114
+  size: 737, 141
+  orig: 737, 141
+  offset: 0, 0
+  index: -1

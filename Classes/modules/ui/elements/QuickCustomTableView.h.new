@@ -1,0 +1,54 @@
+#ifndef 	_QUICKCUSTOMTABLEVIEW_H_
+#define 	_QUICKCUSTOMTABLEVIEW_H_
+
+
+#include <cocos2d.h>
+
+class QuickCustomTableView{
+public:
+
+	QuickCustomTableViewint panel, int direction, int itemClass, int primaryDirCount, int alternativeDirCount);
+	void setHorOffsetFactor(int factor);
+	void setVerOffsetFactor(int factor);
+	void setTriggerOnUIOffset(int offset);
+	void getPrimaryDirCount();
+	void getItems();
+	void scrollViewDidScroll(int tbView);
+	void numberOfCellsInTableView(int table);
+	void tableCellSizeForIndex(int table, double idx);
+	void reloadData();
+	void onInitItem(int item);
+	void tableCellAtIndex(int table, double idx);
+	void cell.getItem ();
+	double cell.getItemByIdx (double idx);
+	QuickCustomTableViewint size, int index, int textSize, int color);
+	void getOriginalSize();
+	void onTouchListener(int sender, int type);
+	void onTouchBegan();
+	void onTouchMoved();
+	void onTouchCancelled();
+	void onTouchEnded();
+	void setFont(int name);
+	void setSize(int size);
+	void setColor(int color);
+	void setTextHorizontalAlignment(int align);
+	void getUI();
+	void loadData(int str);
+
+
+private:
+	int _size;
+	int _direction;
+	int _primaryDirCount;
+	int _alterDirCount;
+	int _itemClass;
+	int _horOffFactor;
+	int _verOffFactor;
+	int triggerOffset;
+	int _items;
+	int lastItemCountOffset;
+	int btn;
+	int text;
+	int data;
+};
+#endif

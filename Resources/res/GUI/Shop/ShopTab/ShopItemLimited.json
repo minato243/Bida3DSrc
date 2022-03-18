@@ -1,0 +1,238 @@
+{
+  "ID": "77620f9b-4ebd-482b-86f9-2bea975284bf",
+  "Version": "2.3.4",
+  "Name": "ShopItemLimited",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Tag": 15,
+        "Children": [
+          {
+            "FileData": {
+              "Type": "PlistSubImage",
+              "Path": "shop.v2_Noti_Board.png",
+              "Plist": "Shop/res/Shop_UI_v2.1.plist"
+            },
+            "Scale9OriginX": 15,
+            "Scale9OriginY": 15,
+            "Scale9Width": 329,
+            "Scale9Height": 280,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "PreSize": {
+              "X": 0.1496,
+              "Y": 0.2031
+            },
+            "LeftMargin": -85.0,
+            "RightMargin": 1051.0,
+            "TopMargin": 575.0,
+            "BottomMargin": -65.0,
+            "Tag": 17,
+            "Children": [
+              {
+                "FileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "Box_chip_bleu_glove.png",
+                  "Plist": "MainLobby/res/Lobby_Reworked.plist"
+                },
+                "Scale9Enable": true,
+                "Scale9OriginX": 19,
+                "Scale9Width": 147,
+                "Scale9Height": 26,
+                "AnchorPoint": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 142.5942,
+                  "Y": 20.9782
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {
+                  "R": 175,
+                  "G": 175,
+                  "B": 175
+                },
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.8388,
+                  "Y": 0.1614
+                },
+                "PreSize": {
+                  "X": 0.6471,
+                  "Y": 0.2
+                },
+                "LeftMargin": 32.5942,
+                "RightMargin": 27.4058,
+                "TopMargin": 96.0218,
+                "BottomMargin": 7.9782,
+                "Tag": 19,
+                "ActionTag": -749162075,
+                "Size": {
+                  "X": 110.0,
+                  "Y": 26.0
+                },
+                "Name": "img_box_gold",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "Icon_Coupon_Gold.png",
+                  "Plist": "Resources/ItemIcons.plist"
+                },
+                "BlendFunc": {
+                  "Src": 1,
+                  "Dst": 771
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 88.0119,
+                  "Y": 81.8076
+                },
+                "Scale": {
+                  "ScaleX": 0.8,
+                  "ScaleY": 0.8
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.5177,
+                  "Y": 0.6293
+                },
+                "PreSize": {
+                  "X": 0.9647,
+                  "Y": 0.8462
+                },
+                "LeftMargin": 6.0119,
+                "RightMargin": -0.0119,
+                "TopMargin": -6.8076,
+                "BottomMargin": 26.8076,
+                "Tag": 23,
+                "ActionTag": -1469332001,
+                "Size": {
+                  "X": 164.0,
+                  "Y": 110.0
+                },
+                "Name": "img",
+                "ctype": "SpriteObjectData"
+              },
+              {
+                "FontSize": 20,
+                "LabelText": "Bida 3D",
+                "FontResource": {
+                  "Type": "Normal",
+                  "Path": "Font/facebook.TTF",
+                  "Plist": ""
+                },
+                "HorizontalAlignmentType": "HT_Right",
+                "OutlineColor": {
+                  "G": 169,
+                  "B": 9
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "AnchorPoint": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 123.3766,
+                  "Y": 23.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "RotationSkewX": 6.9975,
+                "CColor": {
+                  "R": 30,
+                  "G": 144
+                },
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.7257,
+                  "Y": 0.1769
+                },
+                "PreSize": {
+                  "X": 0.4412,
+                  "Y": 0.2231
+                },
+                "LeftMargin": 48.3766,
+                "RightMargin": 46.6234,
+                "TopMargin": 92.5,
+                "BottomMargin": 8.5,
+                "Tag": 20,
+                "ActionTag": 839959024,
+                "Size": {
+                  "X": 75.0,
+                  "Y": 29.0
+                },
+                "Name": "lbName",
+                "ctype": "TextObjectData"
+              }
+            ],
+            "ActionTag": -1517705094,
+            "Size": {
+              "X": 170.0,
+              "Y": 130.0
+            },
+            "Name": "bg",
+            "ctype": "ImageViewObjectData"
+          }
+        ],
+        "Size": {
+          "X": 1136.0,
+          "Y": 640.0
+        },
+        "Name": "Layer",
+        "ctype": "LayerObjectData"
+      },
+      "UsedResources": [
+        "../../Font/facebook.TTF",
+        "../../MainLobby/res/Lobby_Reworked.plist",
+        "../../MainLobby/res/Lobby_Reworked.png",
+        "../../Resources/ItemIcons.plist",
+        "../../Resources/ItemIcons.png",
+        "../res/Shop_UI_v2.1.plist",
+        "../res/Shop_UI_v2.1.png"
+      ],
+      "ctype": "GameFileData"
+    }
+  },
+  "Type": "Layer"
+}

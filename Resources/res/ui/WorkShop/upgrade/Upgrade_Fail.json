@@ -1,0 +1,56 @@
+{
+"skeleton": { "hash": "ZeLXb/Vck9xP90nAsrsYfJg+RyA", "spine": "3.6.53", "width": 626, "height": 142, "images": "../Text_Upgrade/" },
+"bones": [
+	{ "name": "root" },
+	{ "name": "UPGRADE_FAIL", "parent": "root", "length": 60, "rotation": 90, "x": 7, "y": -31.98 }
+],
+"slots": [
+	{ "name": "UPGRADE_FAIL", "bone": "UPGRADE_FAIL", "attachment": "UPGRADE_FAIL" }
+],
+"skins": {
+	"default": {
+		"UPGRADE_FAIL": {
+			"UPGRADE_FAIL": { "x": 41.98, "y": 2, "rotation": -90, "width": 626, "height": 142 }
+		}
+	}
+},
+"animations": {
+	"animation": {
+		"slots": {
+			"UPGRADE_FAIL": {
+				"color": [
+					{ "time": 0, "color": "ffffff00" },
+					{ "time": 0.1667, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 2, "color": "ffffffff" },
+					{ "time": 2.3333, "color": "ffffff00" }
+				]
+			}
+		},
+		"bones": {
+			"UPGRADE_FAIL": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": 449.8,
+						"curve": [ 0, 0.35, 0.75, 1 ]
+					},
+					{ "time": 0.1667, "x": 0, "y": 0 }
+				],
+				"scale": [
+					{
+						"time": 0,
+						"x": 2.969,
+						"y": 1,
+						"curve": [ 0, 0.24, 0.75, 1 ]
+					},
+					{ "time": 0.1667, "x": 0.963, "y": 1 },
+					{ "time": 0.2333, "x": 1.037, "y": 1 },
+					{ "time": 0.3, "x": 0.994, "y": 1 },
+					{ "time": 0.3667, "x": 1, "y": 1 }
+				]
+			}
+		}
+	}
+}
+}

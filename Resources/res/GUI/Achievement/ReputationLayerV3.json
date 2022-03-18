@@ -1,0 +1,608 @@
+{
+  "ID": "5b40070b-d552-4837-8373-79f773bb8528",
+  "Version": "2.3.4",
+  "Name": "ReputationLayerV3",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Tag": 82,
+        "Children": [
+          {
+            "FileData": {
+              "Type": "PlistSubImage",
+              "Path": "GameModeV2.Board_All.png",
+              "Plist": "Resources/Channel.plist"
+            },
+            "Scale9Enable": true,
+            "Scale9OriginX": 50,
+            "Scale9OriginY": 50,
+            "Scale9Width": 733,
+            "Scale9Height": 431,
+            "AnchorPoint": {
+              "ScaleY": 1.0
+            },
+            "Position": {
+              "X": 22.72,
+              "Y": 120.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PositionPercentXEnabled": true,
+            "PrePosition": {
+              "X": 0.02,
+              "Y": 0.1875
+            },
+            "PercentWidthEnable": true,
+            "PercentWidthEnabled": true,
+            "PreSize": {
+              "X": 0.96,
+              "Y": 0.1875
+            },
+            "LeftMargin": 22.72,
+            "RightMargin": 22.7201,
+            "TopMargin": 520.0,
+            "Tag": 83,
+            "Children": [
+              {
+                "ClipAble": false,
+                "BackColorAlpha": 0,
+                "ComboBoxIndex": 1,
+                "SingleColor": {
+                  "R": 150,
+                  "G": 200
+                },
+                "FirstColor": {
+                  "R": 150,
+                  "G": 200
+                },
+                "EndColor": {},
+                "ColorVector": {
+                  "ScaleY": 1.0
+                },
+                "Scale9Width": 1,
+                "Scale9Height": 1,
+                "AnchorPoint": {
+                  "ScaleY": 1.0
+                },
+                "Position": {
+                  "X": 0.0,
+                  "Y": 120.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PositionPercentXEnabled": true,
+                "PrePosition": {
+                  "X": 0.0,
+                  "Y": 1.0
+                },
+                "PercentWidthEnable": true,
+                "PercentWidthEnabled": true,
+                "PreSize": {
+                  "X": 1.0,
+                  "Y": 1.0
+                },
+                "VerticalEdge": "TopEdge",
+                "Tag": 357,
+                "Children": [
+                  {
+                    "FontSize": 14,
+                    "ButtonText": "",
+                    "TextColor": {
+                      "R": 65,
+                      "G": 65,
+                      "B": 70
+                    },
+                    "DisabledFileData": {
+                      "Type": "Default",
+                      "Path": "Default/Button_Disable.png",
+                      "Plist": ""
+                    },
+                    "Scale9Enable": true,
+                    "Scale9OriginX": -15,
+                    "Scale9OriginY": -11,
+                    "Scale9Width": 30,
+                    "Scale9Height": 22,
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "R": 110,
+                      "G": 110,
+                      "B": 110
+                    },
+                    "ShadowOffsetX": 2.0,
+                    "ShadowOffsetY": -2.0,
+                    "TouchEnable": true,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 545.28,
+                      "Y": 60.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PositionPercentXEnabled": true,
+                    "PositionPercentYEnabled": true,
+                    "PrePosition": {
+                      "X": 0.5,
+                      "Y": 0.5
+                    },
+                    "PercentWidthEnable": true,
+                    "PercentHeightEnable": true,
+                    "PercentWidthEnabled": true,
+                    "PercentHeightEnabled": true,
+                    "PreSize": {
+                      "X": 1.0,
+                      "Y": 1.0
+                    },
+                    "Tag": 263,
+                    "ActionTag": -1226777158,
+                    "Size": {
+                      "X": 1090.5599,
+                      "Y": 120.0
+                    },
+                    "Name": "btnClick",
+                    "ctype": "ButtonObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "achievement_Reward_Box.png",
+                      "Plist": "Achievement/res/Achievement_new.plist"
+                    },
+                    "Scale9Enable": true,
+                    "Scale9OriginX": 26,
+                    "Scale9OriginY": 25,
+                    "Scale9Width": 1,
+                    "Scale9Height": 1,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 76.3392,
+                      "Y": 60.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PositionPercentXEnabled": true,
+                    "PositionPercentYEnabled": true,
+                    "PrePosition": {
+                      "X": 0.07,
+                      "Y": 0.5
+                    },
+                    "PreSize": {
+                      "X": 0.0917,
+                      "Y": 0.8333
+                    },
+                    "LeftMargin": 26.3392,
+                    "RightMargin": 964.2208,
+                    "TopMargin": 10.0,
+                    "BottomMargin": 10.0,
+                    "Tag": 425,
+                    "Children": [
+                      {
+                        "FileData": {
+                          "Type": "Normal",
+                          "Path": "Achievement/res/REPUTATION/Icon_07.png",
+                          "Plist": ""
+                        },
+                        "Scale9OriginX": 43,
+                        "Scale9OriginY": 39,
+                        "Scale9Width": 45,
+                        "Scale9Height": 42,
+                        "AnchorPoint": {
+                          "ScaleX": 0.5,
+                          "ScaleY": 0.5
+                        },
+                        "Position": {
+                          "X": 50.0,
+                          "Y": 50.0
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "CColor": {},
+                        "IconVisible": false,
+                        "PositionPercentXEnabled": true,
+                        "PositionPercentYEnabled": true,
+                        "PrePosition": {
+                          "X": 0.5,
+                          "Y": 0.5
+                        },
+                        "PreSize": {
+                          "X": 1.0,
+                          "Y": 1.0
+                        },
+                        "Tag": 427,
+                        "ActionTag": 1899506990,
+                        "Size": {
+                          "X": 100.0,
+                          "Y": 100.0
+                        },
+                        "Name": "imgCup",
+                        "ctype": "ImageViewObjectData"
+                      }
+                    ],
+                    "ActionTag": 968751559,
+                    "Size": {
+                      "X": 100.0,
+                      "Y": 100.0
+                    },
+                    "Name": "bgCup",
+                    "ctype": "ImageViewObjectData"
+                  },
+                  {
+                    "IsCustomSize": true,
+                    "FontSize": 42,
+                    "LabelText": "Master the 3D physic",
+                    "FontResource": {
+                      "Type": "Normal",
+                      "Path": "Font/facebook.TTF",
+                      "Plist": ""
+                    },
+                    "VerticalAlignmentType": "VT_Center",
+                    "OutlineColor": {
+                      "R": 0,
+                      "G": 0,
+                      "B": 0
+                    },
+                    "OutlineEnabled": true,
+                    "ShadowColor": {
+                      "R": 110,
+                      "G": 110,
+                      "B": 110
+                    },
+                    "ShadowOffsetX": 2.0,
+                    "ShadowOffsetY": -2.0,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 559.3482,
+                      "Y": 85.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "RotationSkewX": 9.9998,
+                    "CColor": {
+                      "R": 78,
+                      "G": 236
+                    },
+                    "IconVisible": false,
+                    "PositionPercentXEnabled": true,
+                    "PrePosition": {
+                      "X": 0.5129,
+                      "Y": 0.7083
+                    },
+                    "PreSize": {
+                      "X": 0.6877,
+                      "Y": 0.4167
+                    },
+                    "LeftMargin": 184.3482,
+                    "RightMargin": 156.2117,
+                    "TopMargin": 10.0,
+                    "BottomMargin": 60.0,
+                    "Tag": 361,
+                    "ActionTag": -1019586289,
+                    "Size": {
+                      "X": 750.0,
+                      "Y": 50.0
+                    },
+                    "Name": "lbNameReputation",
+                    "ctype": "TextObjectData"
+                  },
+                  {
+                    "FontSize": 32,
+                    "LabelText": "3/5",
+                    "FontResource": {
+                      "Type": "Normal",
+                      "Path": "Font/facebook.TTF",
+                      "Plist": ""
+                    },
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "R": 110,
+                      "G": 110,
+                      "B": 110
+                    },
+                    "ShadowOffsetX": 2.0,
+                    "ShadowOffsetY": -2.0,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 1028.6161,
+                      "Y": 39.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {
+                      "R": 78,
+                      "G": 236
+                    },
+                    "IconVisible": false,
+                    "PositionPercentXEnabled": true,
+                    "PrePosition": {
+                      "X": 0.9432,
+                      "Y": 0.325
+                    },
+                    "PreSize": {
+                      "X": 0.0532,
+                      "Y": 0.3917
+                    },
+                    "LeftMargin": 999.6161,
+                    "RightMargin": 32.9438,
+                    "TopMargin": 57.5,
+                    "BottomMargin": 15.5,
+                    "Tag": 362,
+                    "ActionTag": 1853406890,
+                    "Size": {
+                      "X": 58.0,
+                      "Y": 47.0
+                    },
+                    "Name": "lbProgress",
+                    "ctype": "TextObjectData"
+                  },
+                  {
+                    "ProgressInfo": 100,
+                    "ImageFileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "achievement_Progress_Bar_04.png",
+                      "Plist": "Achievement/res/Achievement_new.plist"
+                    },
+                    "AnchorPoint": {},
+                    "Position": {
+                      "X": 168.3825,
+                      "Y": 22.715
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PositionPercentXEnabled": true,
+                    "PrePosition": {
+                      "X": 0.1544,
+                      "Y": 0.1893
+                    },
+                    "PreSize": {
+                      "X": 0.7336,
+                      "Y": 0.2083
+                    },
+                    "LeftMargin": 168.3825,
+                    "RightMargin": 122.1775,
+                    "TopMargin": 72.285,
+                    "BottomMargin": 22.715,
+                    "Tag": 363,
+                    "ActionTag": -1264290865,
+                    "Size": {
+                      "X": 800.0,
+                      "Y": 25.0
+                    },
+                    "Alpha": 244,
+                    "Name": "imgProgressBar",
+                    "ctype": "LoadingBarObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "PlistSubImage",
+                      "Path": "achievement_Progress_Bar_03.png",
+                      "Plist": "Achievement/res/Achievement_new.plist"
+                    },
+                    "Scale9OriginX": 102,
+                    "Scale9OriginY": 6,
+                    "Scale9Width": 106,
+                    "Scale9Height": 7,
+                    "AnchorPoint": {},
+                    "Position": {
+                      "X": 168.3825,
+                      "Y": 19.715
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PositionPercentXEnabled": true,
+                    "PrePosition": {
+                      "X": 0.1544,
+                      "Y": 0.1643
+                    },
+                    "PreSize": {
+                      "X": 0.7336,
+                      "Y": 0.25
+                    },
+                    "LeftMargin": 168.3825,
+                    "RightMargin": 122.1775,
+                    "TopMargin": 70.285,
+                    "BottomMargin": 19.715,
+                    "Tag": 364,
+                    "ActionTag": 464047467,
+                    "Size": {
+                      "X": 800.0,
+                      "Y": 30.0
+                    },
+                    "Name": "imgProgressBg",
+                    "ctype": "ImageViewObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "Normal",
+                      "Path": "Achievement/res/REPUTATION/Arrow_lines.png",
+                      "Plist": ""
+                    },
+                    "Scale9OriginX": 198,
+                    "Scale9OriginY": 3,
+                    "Scale9Width": 204,
+                    "Scale9Height": 4,
+                    "StretchWidthEnable": true,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 1.0
+                    },
+                    "Position": {
+                      "X": 545.28,
+                      "Y": 0.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PositionPercentXEnabled": true,
+                    "PrePosition": {
+                      "X": 0.5,
+                      "Y": 0.0
+                    },
+                    "PreSize": {
+                      "X": 0.96,
+                      "Y": 0.0834
+                    },
+                    "VerticalEdge": "TopEdge",
+                    "LeftMargin": 21.8112,
+                    "RightMargin": 21.8112,
+                    "TopMargin": 120.0,
+                    "BottomMargin": -10.01,
+                    "Tag": 48,
+                    "ActionTag": -1051545794,
+                    "Size": {
+                      "X": 1046.9375,
+                      "Y": 10.01
+                    },
+                    "Name": "imgLine",
+                    "ctype": "ImageViewObjectData"
+                  }
+                ],
+                "ActionTag": 1568183796,
+                "Size": {
+                  "X": 1090.5599,
+                  "Y": 120.0
+                },
+                "Name": "bgTop",
+                "ctype": "PanelObjectData"
+              },
+              {
+                "ClipAble": false,
+                "BackColorAlpha": 102,
+                "SingleColor": {
+                  "R": 150,
+                  "G": 200
+                },
+                "FirstColor": {
+                  "R": 150,
+                  "G": 200
+                },
+                "EndColor": {},
+                "ColorVector": {
+                  "ScaleY": 1.0
+                },
+                "Scale9Width": 1,
+                "Scale9Height": 1,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": -6.6177,
+                  "Y": -200.3628
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PositionPercentXEnabled": true,
+                "PrePosition": {
+                  "X": -0.0061,
+                  "Y": -1.6697
+                },
+                "PercentWidthEnable": true,
+                "PercentWidthEnabled": true,
+                "PreSize": {
+                  "X": 1.0,
+                  "Y": 1.25
+                },
+                "VerticalEdge": "TopEdge",
+                "LeftMargin": -6.6177,
+                "RightMargin": 6.6177,
+                "TopMargin": 170.3628,
+                "BottomMargin": -200.3628,
+                "Tag": 90,
+                "ActionTag": -1217225469,
+                "Size": {
+                  "X": 1090.5599,
+                  "Y": 150.0
+                },
+                "Name": "pnContent",
+                "ctype": "PanelObjectData"
+              }
+            ],
+            "ActionTag": -1715883169,
+            "Size": {
+              "X": 1090.5599,
+              "Y": 120.0
+            },
+            "Name": "bg",
+            "ctype": "ImageViewObjectData"
+          }
+        ],
+        "Size": {
+          "X": 1136.0,
+          "Y": 640.0
+        },
+        "Name": "Layer",
+        "ctype": "LayerObjectData"
+      },
+      "UsedResources": [
+        "../Default/Button_Disable.png",
+        "../Font/facebook.TTF",
+        "../Resources/Channel.plist",
+        "../Resources/Channel.png",
+        "res/Achievement_new.plist",
+        "res/Achievement_new.png",
+        "res/REPUTATION/Arrow_lines.png",
+        "res/REPUTATION/Icon_07.png"
+      ],
+      "ctype": "GameFileData"
+    }
+  },
+  "Type": "Layer"
+}

@@ -1,0 +1,170 @@
+{
+  "1": {
+    "1": {
+      "channelId": 1,
+      "entryFee": 1000,
+      "entryFeeUnit": "gold",
+      "prize": 2000,
+      "prizeUnit": "gold",
+      "cardLevel": -1
+    },
+    "2": {
+      "channelId": 2,
+      "entryFee": 10000,
+      "entryFeeUnit": "gold",
+      "prize": 20000,
+      "prizeUnit": "gold",
+      "cardLevel": -1
+    },
+    "3": {
+      "channelId": 3,
+      "entryFee": 200000,
+      "entryFeeUnit": "gold",
+      "prize": 400000,
+      "prizeUnit": "gold",
+      "cardLevel": -1
+    },
+    "4": {
+      "channelId": 4,
+      "entryFee": 10000000,
+      "entryFeeUnit": "gold",
+      "prize": 20000000,
+      "prizeUnit": "gold",
+      "cardLevel": -1
+    },
+    "5": {
+      "channelId": 5,
+      "entryFee": 1000000000,
+      "entryFeeUnit": "gold",
+      "prize": 2000000000,
+      "prizeUnit": "gold",
+      "cardLevel": -1
+    }
+  },
+  "2": {
+    "1": {
+      "channelId": 1,
+      "entryFee": 5000,
+      "entryFeeUnit": "gold",
+      "prize": 20000,
+      "prizeUnit": "gold",
+      "cardLevel": -1
+    },
+    "2": {
+      "channelId": 2,
+      "entryFee": 100000,
+      "entryFeeUnit": "gold",
+      "prize": 400000,
+      "prizeUnit": "gold",
+      "cardLevel": -1
+    },
+    "3": {
+      "channelId": 3,
+      "entryFee": 2500000,
+      "entryFeeUnit": "gold",
+      "prize": 10000000,
+      "prizeUnit": "gold",
+      "cardLevel": -1
+    },
+    "4": {
+      "channelId": 4,
+      "entryFee": 50000000,
+      "entryFeeUnit": "gold",
+      "prize": 200000000,
+      "prizeUnit": "gold",
+      "cardLevel": -1
+    },
+    "5": {
+      "channelId": 5,
+      "entryFee": 1000000000,
+      "entryFeeUnit": "gold",
+      "prize": 4000000000,
+      "prizeUnit": "gold",
+      "cardLevel": -1
+    }
+  },
+  "3": {
+    "1": {
+      "channelId": 1,
+      "entryFee": 8000,
+      "entryFeeUnit": "gold",
+      "prize": 16000,
+      "prizeUnit": "gold",
+      "cardLevel": 1
+    },
+    "2": {
+      "channelId": 2,
+      "entryFee": 70000,
+      "entryFeeUnit": "gold",
+      "prize": 140000,
+      "prizeUnit": "gold",
+      "cardLevel": 2
+    },
+    "3": {
+      "channelId": 3,
+      "entryFee": 1000000,
+      "entryFeeUnit": "gold",
+      "prize": 2000000,
+      "prizeUnit": "gold",
+      "cardLevel": 3
+    },
+    "4": {
+      "channelId": 4,
+      "entryFee": 20000000,
+      "entryFeeUnit": "gold",
+      "prize": 40000000,
+      "prizeUnit": "gold",
+      "cardLevel": 4
+    },
+    "5": {
+      "channelId": 5,
+      "entryFee": 500000000,
+      "entryFeeUnit": "gold",
+      "prize": 1000000000,
+      "prizeUnit": "gold",
+      "cardLevel": 5
+    }
+  },
+  "4": {
+    "1": {
+      "channelId": 1,
+      "entryFee": 6000,
+      "entryFeeUnit": "gold",
+      "prize": 12000,
+      "prizeUnit": "gold",
+      "cardLevel": 1
+    },
+    "2": {
+      "channelId": 2,
+      "entryFee": 120000,
+      "entryFeeUnit": "gold",
+      "prize": 240000,
+      "prizeUnit": "gold",
+      "cardLevel": 2
+    },
+    "3": {
+      "channelId": 3,
+      "entryFee": 500000,
+      "entryFeeUnit": "gold",
+      "prize": 1000000,
+      "prizeUnit": "gold",
+      "cardLevel": 3
+    },
+    "4": {
+      "channelId": 4,
+      "entryFee": 15000000,
+      "entryFeeUnit": "gold",
+      "prize": 30000000,
+      "prizeUnit": "gold",
+      "cardLevel": 4
+    },
+    "5": {
+      "channelId": 5,
+      "entryFee": 400000000,
+      "entryFeeUnit": "gold",
+      "prize": 800000000,
+      "prizeUnit": "gold",
+      "cardLevel": 5
+    }
+  }
+}

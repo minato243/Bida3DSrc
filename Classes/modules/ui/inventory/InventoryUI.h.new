@@ -1,0 +1,87 @@
+#ifndef 	_INVENTORYUIV2_H_
+#define 	_INVENTORYUIV2_H_
+
+
+#include <cocos2d.h>
+
+class InventoryUIv2{
+public:
+
+	InventoryUIv2);
+	void initComponent();
+	void initRackDebugOffset();
+	void let updateDrawNodeHeight ();
+	void onKeyPressed(int key);
+	void onKeyReleased(int key);
+	void show();
+	void hide();
+	void initCams();
+	void initTabs();
+	void cueList.onInitItem (int item, double idx);
+	void initCues();
+	void getTypeByTabIndex(double idx);
+	void getTabIndexByType(int type);
+	void refresh();
+	void reloadTableViewData(int keep);
+	void reloadCue3DView();
+	void addCueModelToRack(int index, int path, int texPath, int mraoPath);
+	void updateCueRackOffset();
+	void selectActivatingCue(double cueIdx);
+	void switchTab(double tabIdx);
+	void onButtonTouchEnded(int sender, int tag);
+	InventoryUIv2int size);
+	void getOriginalSize();
+	void scaleToSize(int size);
+	void initComponent();
+	void initBattery();
+	void loadData(int data);
+	void setAutoRecharge(int val);
+	void setContainerRect(int rect, int scale);
+	void addCue3D(int path, int texPath);
+	void setBattery(int value, int max);
+	void setBatteryPercent(int percent);
+	void setStars(int numberOfStar);
+	void onButtonTouchEnded(int sender, int tag);
+	void ();
+	InventoryUIv2int batteryBox, int battery, int text);
+	void init();
+	void setPercent(int percent);
+	void setValue(int val, int max);
+
+
+private:
+	int keep;
+	int _drawNodeHeight;
+	int _heightDiff;
+	int cam;
+	int curTab;
+	int _cueList;
+	int _itemList;
+	int _tabActivePosX;
+	int _tabInactivePosX;
+	int btnTab;
+	int btnTab[0];
+	int btnTab[1];
+	int btnTab[2];
+	int btnTab[3];
+	int btnTab[4];
+	int _cues3d;
+	int _cues3dCache;
+	int _cues3dCache[index][path];
+	int _cues3d[index];
+	int _drawNode;
+	int btnTab[oldTab];
+	double btnTab[tabIdx];
+	int _size;
+	int cues;
+	int _bg;
+	int battery;
+	int _data;
+	int rect;
+	int cues[path];
+	int cue3d;
+	int batteryBox;
+	int text;
+	int stencil;
+};
+#endif

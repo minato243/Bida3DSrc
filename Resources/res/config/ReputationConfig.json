@@ -1,0 +1,139 @@
+{
+  "reputation" : [
+  {
+    "reputationName": "Master the 3D physic",
+    "listAchievement": [
+    {
+        "name": "Take Off",
+        "description" : "Shot the Cue ball off the table"
+    },
+    {
+      "name": "Triple kick",
+      "description" : "Poket a ball after the cue ball hit the cushion <size=30><color=#FFFF00>3</color></size> times"
+    },
+    {
+      "name": "Nice Kicker",
+      "description" : "Pocket a ball without the Cue ball touching it"
+    },
+    {
+      "name": "The Alpha Strike",
+      "description" : "Pocket <size=30><color=#FFFF00>3</color></size> ball in one stroke"
+    },
+    {
+      "name": "Calculated",
+      "description" : "Pocket a moving ball"
+    }]
+  },
+  {
+    "reputationName": "Poking around the system",
+    "listAchievement": [
+    {
+      "name": "Shhhhh, we're in a library ",
+      "description" : "Mute the SFX in the game"
+    },
+    {
+      "name": "That's not a button",
+      "description" : "Tap the lobby screen <size=30><color=#FFFF00>10</color></size> times in a row"
+    },
+    {
+      "name": "The Mall or the Lottery",
+      "description" : "Use the shop the first time"
+    },
+    {
+      "name": "Shredder",
+      "description" : "Use disenchant the first time"
+    },
+    {
+      "name": "Novice Blacksmith",
+      "description" : "Upgrade the first time"
+    }]
+  },
+  {
+    "reputationName": "Pocket the cup",
+    "listAchievement": [
+    {
+      "name": "One for you and one for me",
+      "description" : "Pocket a Striped  and a Solid ball in one stroke"
+    },
+    {
+      "name": "This table is mine",
+      "description" : "Pocket a total of <size=30><color=#FFFF00>10</color></size> balls in a game"
+    },
+    {
+      "name": "Ace in the hole",
+      "description" : "Pocket the <size=30><color=#FFFF00>8</color></size> ball during the break cue"
+    },
+    {
+      "name": "One two three four one two three four …",
+      "description" : "Win a match by pocketing ball with number ascending (except the 8 ball)"
+    }]
+  },
+  {
+    "reputationName": "Master the 3D physic",
+    "listAchievement": [
+      {
+        "name": "Take Off",
+        "description" : "Shot the Cue ball off the table"
+      },
+      {
+        "name": "Triple kick",
+        "description" : "Poket a ball after the cue ball hit the cushion <size=30><color=#FFFF00>3</color></size> times"
+      },
+      {
+        "name": "Nice Kicker",
+        "description" : "Pocket a ball without the Cue ball touching it"
+      },
+      {
+        "name": "The Alpha Strike",
+        "description" : "Pocket <size=30><color=#FFFF00>3</color></size> ball in one stroke"
+      },
+      {
+        "name": "Calculated",
+        "description" : "Pocket a moving ball"
+      }]
+  },
+  {
+    "reputationName": "Poking around the system",
+    "listAchievement": [
+      {
+        "name": "Shhhhh, we're in a library ",
+        "description" : "Mute the SFX in the game"
+      },
+      {
+        "name": "That's not a button",
+        "description" : "Tap the lobby screen <size=30><color=#FFFF00>10</color></size> times in a row"
+      },
+      {
+        "name": "The Mall or the Lottery",
+        "description" : "Use the shop the first time"
+      },
+      {
+        "name": "Shredder",
+        "description" : "Use disenchant the first time"
+      },
+      {
+        "name": "Novice Blacksmith",
+        "description" : "Upgrade the first time"
+      }]
+  },
+  {
+    "reputationName": "Pocket the cup",
+    "listAchievement": [
+      {
+        "name": "One for you and one for me",
+        "description" : "Pocket a Striped  and a Solid ball in one stroke"
+      },
+      {
+        "name": "This table is mine",
+        "description" : "Pocket a total of <size=30><color=#FFFF00>10</color></size> balls in a game"
+      },
+      {
+        "name": "Ace in the hole",
+        "description" : "Pocket the <size=30><color=#FFFF00>8</color></size> ball during the break cue"
+      },
+      {
+        "name": "One two three four one two three four …",
+        "description" : "Win a match by pocketing ball with number ascending (except the 8 ball)"
+      }]
+  }
+]}

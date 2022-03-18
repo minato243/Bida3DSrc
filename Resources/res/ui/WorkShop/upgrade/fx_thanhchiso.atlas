@@ -1,0 +1,20 @@
+
+fx_thanhchiso.png
+size: 512,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+6
+  rotate: false
+  xy: 2, 2
+  size: 205, 206
+  orig: 205, 206
+  offset: 0, 0
+  index: -1
+7
+  rotate: false
+  xy: 209, 46
+  size: 162, 162
+  orig: 162, 162
+  offset: 0, 0
+  index: -1

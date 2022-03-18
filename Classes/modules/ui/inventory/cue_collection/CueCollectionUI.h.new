@@ -1,0 +1,39 @@
+#ifndef 	_CUECOLLECTIONUI_H_
+#define 	_CUECOLLECTIONUI_H_
+
+
+#include <cocos2d.h>
+
+class CueCollectionUI{
+public:
+
+	CueCollectionUI);
+	void show();
+	void hide();
+	void refresh();
+	void updateTab();
+	void initCamera();
+	void initComponent();
+	void initTabs();
+	void switchTab(double tabIdx);
+	void getTypeByTabIndex(double idx);
+	void reloadTableViewData(int keep);
+	void (int function();
+	void initList();
+	void list.onInitItem (int item);
+	void onButtonTouchEnded(int sender, int tag);
+
+
+private:
+	int keep;
+	int cam;
+	int _curTab;
+	int _tabActivePosX;
+	int _tabInactivePosX;
+	int btnTab;
+	int btnTab[0];
+	int btnTab[1];
+	int btnTab[2];
+	int list;
+};
+#endif
