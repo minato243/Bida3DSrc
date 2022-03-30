@@ -162,7 +162,7 @@ void Cue::updateCueRotate(vector direction) {
 }
 
 void Cue::setCueDirection(const ps::ExtMath::vector& direction) {
-	//CCLOG(" Cue::setCueDirection");
+	CCLOG(" Cue::setCueDirection");
 	auto l1 = direction.x * direction.x + direction.y * direction.y;
 	auto l2 = l1 + direction.z * direction.z;
 
@@ -189,16 +189,13 @@ void Cue::setCueDirection(const ps::ExtMath::vector& direction) {
 		quaternion.y,
 		quaternion.w
 	));
-
-	// updateGuildLine(-yaw, pitch);
-
-	setDirection(ExtMath::vector::normalize(direction));
 }
 
 void Cue::doShootAnimation(double force, const CueAnimationCallBack &callback) {
 	auto p = getPosition3D();
 	auto dir = getDirection();
 	force *= 100.f / 600;
+	_shootAnimCallback = callback;
 
 	auto animCallback = std::bind(&Cue::doShootAnimationComplete, this, force);
 

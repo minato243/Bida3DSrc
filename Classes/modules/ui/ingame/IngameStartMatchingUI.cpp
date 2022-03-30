@@ -236,14 +236,16 @@ void IngameStartMatchingUI::updatePlayerInfo(int team, int idxPlayer, const Play
 	imgAvatarBoder->addChild(avatar);
 	auto pos = Vec2(imgAvatarBoder->getContentSize().width/2, imgAvatarBoder->getContentSize().height/2);
 	avatar->setPosition(pos);
-	auto scale = imgAvatarBoder->getContentSize().width / avatar->defaultAvatar->getContentSize().width;
+	auto scale = imgAvatarBoder->getContentSize().width / avatar->defaultAvatar->getContentSize().width *0.95;
 	avatar->setScale(scale);
+	avatar->setLocalZOrder(-1);
 
 	lbName->setString(player.name);
 	lbGold->setString(StringUtility::standartNumber(player.gold));
 	
 	lbGoldMinus->setPositionX(lbGold->getPositionX() + (lbGold->getContentSize().width + 10) * team == 0?1:-1);
 	lbGoldMinus->setPositionY(lbGold->getPositionY());
+	lbGoldMinus->setScale(0);
 
 	imgAvatarBoder->runAction(MoveTo::create(0.3f, _defaultPos[imgAvatarBoder]));
 }

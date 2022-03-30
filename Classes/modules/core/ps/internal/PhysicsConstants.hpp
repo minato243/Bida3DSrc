@@ -75,18 +75,18 @@ namespace ps {
 		static vector INIT_BALL_POSITIONS[15];
 		void initBallPosition();
 
-		static const int CUSHION_HEAD_ID = 2;
-		static const int CUSHION_FOOT_ID = 0;
-		static const int CUSHION_SIDE_1_ID = 1;
-		static const int CUSHION_SIDE_2_ID = 3;
+		static const int CUSHION_HEAD_ID;
+		static const int CUSHION_FOOT_ID;
+		static const int CUSHION_SIDE_1_ID;
+		static const int CUSHION_SIDE_2_ID;
 
 		// Pocket ID
-		static const int TOP_RIGHT_POCKET_ID = 0;
-		static const int TOP_SIDE_POCKET_ID = 1;
-		static const int TOP_LEFT_POCKET_ID = 2;
-		static const int BOTTOM_LEFT_POCKET_ID = 3;
-		static const int BOTTOM_SIDE_POCKET_ID = 4;
-		static const int BOTTOM_RIGHT_POCKET_ID = 5;
+		static const int TOP_RIGHT_POCKET_ID;
+		static const int TOP_SIDE_POCKET_ID;
+		static const int TOP_LEFT_POCKET_ID;
+		static const int BOTTOM_LEFT_POCKET_ID;
+		static const int BOTTOM_SIDE_POCKET_ID;
+		static const int BOTTOM_RIGHT_POCKET_ID;
 
 		static const int NOT_DETERMINED = 0;
 		static const int SOLID = 1;

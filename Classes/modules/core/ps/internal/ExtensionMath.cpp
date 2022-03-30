@@ -2,6 +2,8 @@
 #include <algorithm>
 #include <cmath>
 #include <cfloat>
+#include "core/utils/Utility.h"
+#include "../../utils/Utils.h"
 
 using namespace ps;
 
@@ -38,12 +40,18 @@ double ExtMath::asin(double value) {
 
 double ExtMath::cos(double value) {
     double ret = std::cos(value);
-    return std::round(ret * PRECISION_TRIGONOMETRY) / PRECISION_TRIGONOMETRY;
+	double tmp = std::round(ret * PRECISION_TRIGONOMETRY);
+	//CUSTOMLOG("cos (%s, %s, %s)",
+	//	getBinaryDouble(ret).c_str(), getBinaryDouble(tmp).c_str(), getBinaryDouble(tmp / PRECISION_TRIGONOMETRY).c_str());
+    return tmp / PRECISION_TRIGONOMETRY;
 }
 
 double ExtMath::sin(double value) {
     double ret = std::sin(value);
-    return std::round(ret * PRECISION_TRIGONOMETRY) / PRECISION_TRIGONOMETRY;
+	double tmp = round(ret * PRECISION_TRIGONOMETRY);
+	//CUSTOMLOG("sin (%s, %s, %s)",
+	//	getBinaryDouble(ret).c_str(), getBinaryDouble(tmp).c_str(), getBinaryDouble(tmp / PRECISION_TRIGONOMETRY).c_str());
+    return tmp / PRECISION_TRIGONOMETRY;
 }
 
 double ps::ExtMath::tan(const double & value)
@@ -537,10 +545,11 @@ double ps::ExtMath::vector::angle2D(const vector & v1, const vector & v2)
 }
 
 ExtMath::vector ps::ExtMath::vector::rotate2D(const vector &v, double angle)
-{
+{	
 	auto c = cos(angle);
 	auto s = sin(angle);
-
+	//CUSTOMLOG("rotate2D (%s, %s, %s)",
+	//	getBinaryDouble(angle).c_str(), getBinaryDouble(c).c_str(), getBinaryDouble(s).c_str());
 	return vector(
 		c * v.x - s * v.y,
 		s * v.x + c * v.y,

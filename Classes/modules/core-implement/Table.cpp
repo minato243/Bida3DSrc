@@ -222,12 +222,12 @@ void Table::initEffect()
 	//
 	auto pockets = _world->pockets();
 	
-	_pocketsPos[0] = ExtMath::vector(pockets->topRightPocket.position);
-	_pocketsPos[1] = ExtMath::vector(pockets->topSidePocket.position);
-	_pocketsPos[2] = ExtMath::vector(pockets->topLeftPocket.position);
-	_pocketsPos[3] = ExtMath::vector(pockets->bottomLeftPocket.position);
-	_pocketsPos[4] = ExtMath::vector(pockets->bottomSidePocket.position);
-	_pocketsPos[5] = ExtMath::vector(pockets->bottomRightPocket.position);
+	_pocketsPos[0] = ExtMath::vector(pockets[PhysicsConstants::TOP_RIGHT_POCKET_ID].position);
+	_pocketsPos[1] = ExtMath::vector(pockets[PhysicsConstants::TOP_SIDE_POCKET_ID].position);
+	_pocketsPos[2] = ExtMath::vector(pockets[PhysicsConstants::TOP_LEFT_POCKET_ID].position);
+	_pocketsPos[3] = ExtMath::vector(pockets[PhysicsConstants::BOTTOM_LEFT_POCKET_ID].position);
+	_pocketsPos[4] = ExtMath::vector(pockets[PhysicsConstants::BOTTOM_SIDE_POCKET_ID].position);
+	_pocketsPos[5] = ExtMath::vector(pockets[PhysicsConstants::BOTTOM_RIGHT_POCKET_ID].position);
 }
 
 void Table::initBillBoardOnPockets()
@@ -451,15 +451,25 @@ void Table::setEfkManager(efk::EffectManager * efkManager)
 int Table::subscribeOnPaused(const TableOnPauseCallBack & tableOnPauseCallBack)
 {
 	int id = _onPausedCallbacks.size();
-	_onPausedCallbacks.push_back(tableOnPauseCallBack);
+	_onPausedCallbacks[id] = tableOnPauseCallBack;
 	return id;
 }
 
 int Table::subscribeTableEvents(const TableEventCallBack & tableEventCallBack)
 {
 	int id = _tableEventListener.size();
-	_tableEventListener.push_back(tableEventCallBack);
+	_tableEventListener[id] = tableEventCallBack;
 	return id;
+}
+
+void Table::unsubscribeOnPaused(int id)
+{
+	_onPausedCallbacks[id] = NULL;
+}
+
+void Table::unsubscribeTableEvents(int id)
+{
+	_tableEventListener[id] = NULL;
 }
 
 void Table::onEnter()
@@ -478,12 +488,12 @@ void Table::step(float dt)
 
 void Table::onWorldPause(double dt)
 {
+	CCLOG("Table::onWorldPause");
 	this->updateCuePosition();
-	this->setGuildLineVisible(true);
 	this->setCueVisible(true);
 	
 	for (int i = 0; i < _onPausedCallbacks.size(); i++)
-		_onPausedCallbacks[i]();
+		if(_onPausedCallbacks[i]) _onPausedCallbacks[i]();
 
 	gameMgr->updateTrajectory();
 	interactionMgr->enablePlayingMode();
@@ -498,7 +508,8 @@ void Table::handleBallCollision(double time, ps::BallBody * ballBody1, ps::BallB
 	BallCollisionData *ballCollisionData = new BallCollisionData(ballBody1->id(), ballBody2->id(), velocity);
 
 	for (auto i = 0; i < _tableEventListener.size(); i++) {
-		_tableEventListener[i](eventType, ballCollisionData);
+		if(_tableEventListener[i])
+			_tableEventListener[i](eventType, ballCollisionData);
 	}
 	CC_SAFE_DELETE(ballCollisionData);
 }
@@ -509,7 +520,8 @@ void Table::handleCushionCollision(double time, ps::BallBody * ballBody, ps::Cus
 	CushionCollisionData *cushionCollisionData = new CushionCollisionData(ballBody->id(), cushion->id);
 
 	for (auto i = 0; i < _tableEventListener.size(); i++) {
-		_tableEventListener[i](eventType, cushionCollisionData);
+		if (_tableEventListener[i])
+			_tableEventListener[i](eventType, cushionCollisionData);
 	}
 	CC_SAFE_DELETE(cushionCollisionData);
 }
@@ -520,7 +532,8 @@ void Table::handleBallFallen(double time, BallBody * ballBody, Pocket * pocket)
 	BallFellHoleData *ballFellHoleData = new BallFellHoleData(ballBody->id(), pocket->id);
 
 	for (auto i = 0; i < _tableEventListener.size(); i++) {
-		_tableEventListener[i](eventType, ballFellHoleData);
+		if(_tableEventListener[i])
+			_tableEventListener[i](eventType, ballFellHoleData);
 	}
 	CC_SAFE_DELETE(ballFellHoleData);
 }
@@ -551,9 +564,9 @@ void Table::setCueVisible(bool visible)
 
 void Table::setGuildLineVisible(bool visible)
 {
+	CCLOG("Table::setGuildLineVisible %s", visible?"true":"false");
 	if(_drawCircleNode)
 		_drawCircleNode->setVisible(visible);
-	_guildLine->setVisible(visible);
 	getFakeCueBall()->setVisible(visible);
 }
 
@@ -761,32 +774,16 @@ void Table::drawFloatingTrajectory(TrajectoryReflectData trajectory, std::vector
 
 void Table::drawTrajSegmentPoints(std::vector<std::list<vector>> segments, bool showGhostBall)
 {
-	std::list<Node*>& circles = _drawCircles;
-	if (!_guildLineVisible) {
-		for (auto ittr = circles.begin(); ittr != circles.end(); ittr++) {
-			Utils::releaseEfkCircle(*ittr);
-		}
-		circles.clear();
-		return;
-	}
-
 	auto width = PhysicsConstants::TABLE_WIDTH;
 	auto height = PhysicsConstants::TABLE_HEIGHT;
 
 	auto pointCounter = 0;
-	
-	
+
 	double lastTimer = 0;
-	if (circles.size() > 0) {
-		Node *circle = circles.front();
-		TimerSprite *sprite = (TimerSprite *)(circle->getChildByTag(TAG_COMMON));
-		lastTimer = sprite->getTimer();
-	}
 	removeChildByTag(TAG_COMMON);
 	Node *node = Node::create();
 	node->setTag(TAG_COMMON);
 	addChild(node);
-	std::list<Node *>::iterator ittr = circles.begin();
 	for (auto i = 0; i < segments.size(); ++i) {
 		auto points = segments[i];
 		int idx = 0;
@@ -810,7 +807,6 @@ void Table::drawTrajSegmentPoints(std::vector<std::list<vector>> segments, bool 
 			node3D->setPosition3D(ccPos);
 			node3D->setCameraMask((int)GameCamera::FLAG_3D);
 			sprite->setColor(Color3B(255, 255, 255));
-			//node3D->setScale(0.01);
 			++idx;
 		}
 	}

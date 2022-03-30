@@ -2,6 +2,7 @@
 #define __FLOOR_SURFACE__
 #include "ExtensionMath.hpp"
 #include "PhysicsEntities.hpp"
+#include "PhysicsConstants.hpp"
 
 namespace ps {
 	using namespace ExtMath;
@@ -10,10 +11,10 @@ namespace ps {
 	public:
 		AABB safeZone;
 		AABB * limits = nullptr;
-		Pockets * pockets = nullptr;
+		Pocket * pockets = nullptr;
 		AABB tableEdges;
 
-		void setLimits(AABB safeZone, AABB *limits, Pockets *pockets, AABB tableEdges);
+		void setLimits(AABB safeZone, AABB *limits, Pocket *pockets, AABB tableEdges);
 
 		bool isOnTableEdges(const vector & p);
 
@@ -28,6 +29,14 @@ namespace ps {
 		vector normalAcceleration(const vector & p);
 
 		double minimumZOfPosition(const vector & p);
+
+	private:
+		static const int TOP_RIGHT_POCKET_ID;
+		static const int TOP_SIDE_POCKET_ID;
+		static const int TOP_LEFT_POCKET_ID;
+		static const int BOTTOM_LEFT_POCKET_ID;
+		static const int BOTTOM_SIDE_POCKET_ID;
+		static const int BOTTOM_RIGHT_POCKET_ID;
 		
 	};
 }

@@ -155,6 +155,7 @@ void GameMgr::preloadGUI()
 	cache->addSpriteFramesWithFile("res/GUI/Resources/Profile.plist", "res/GUI/Resources/Profile.png");
 	cache->addSpriteFramesWithFile("res/circles_efx.plist", "res/circles_efx.png");
 	cache->addSpriteFramesWithFile("res/GUI/Resources/Localize_vi.plist", "res/GUI/Resources/Localize_vi.png");
+	cache->addSpriteFramesWithFile("res/GUI/Resources/LobbyGame.plist", "res/GUI/Resources/LobbyGame.png");
 }
 
 void GameMgr::loadCache()
@@ -556,10 +557,12 @@ void GameMgr::updateBasicGuildLine()
 			}
 			else {
 				std::list<vector>& secondSegment = pointLists[1];
-				vector reflectPoint = secondSegment.back();
-				interactionMgr->setGhostBallPosition(collidedPoint, vector::unit(
-					vector::sub(reflectPoint, collidedPoint)
-				));
+				if (secondSegment.size() > 0) {
+					vector reflectPoint = secondSegment.back();
+					interactionMgr->setGhostBallPosition(collidedPoint, vector::unit(
+						vector::sub(reflectPoint, collidedPoint)
+					));
+				}
 			}
 		}
 		else {

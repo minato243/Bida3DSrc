@@ -4,6 +4,7 @@
 #include "../../inventory/CueInfo.h"
 #include "PhysicsDispatcher.hpp"
 #include "core/utils/Utility.h"
+#include "../../utils/Utils.h"
 
 using namespace ps;
 
@@ -23,7 +24,7 @@ std::vector<ps::CushionPoint> ps::PhysicsWorldV2::_cushionPoints;
 
 ps::FloorSurface ps::PhysicsWorldV2::_floorSurface;
 
-ps::Pockets ps::PhysicsWorldV2::_pockets;
+ps::Pocket ps::PhysicsWorldV2::_pockets[NUM_POCKET];
 
 const double ps::PhysicsWorldV2::BALL_DIAMETER = PhysicsConstants::BALL_DIAMETER;;
 
@@ -31,9 +32,13 @@ bool ps::PhysicsWorldV2::_initedStatic = false;
 
 const bool LOG_DEBUG = false;
 
+const int PhysicsWorldV2::CUSHION_HEAD_ID = PhysicsConstants::CUSHION_HEAD_ID;
+const int PhysicsWorldV2::CUSHION_FOOT_ID = PhysicsConstants::CUSHION_FOOT_ID;
+const int PhysicsWorldV2::CUSHION_SIDE_1_ID = PhysicsConstants::CUSHION_SIDE_1_ID;
+const int PhysicsWorldV2::CUSHION_SIDE_2_ID = PhysicsConstants::CUSHION_SIDE_2_ID;
+
 ps::PhysicsWorldV2::PhysicsWorldV2()
 {
-
 }
 
 ps::PhysicsWorldV2::PhysicsWorldV2(const int & id, const int & nBall)
@@ -100,6 +105,11 @@ void ps::PhysicsWorldV2::reset(const int & id)
 	_random->reset();
 	_cueRandom->reset();
 	deleteVector(_cues);
+}
+
+void ps::PhysicsWorldV2::reset()
+{
+	_break = false;
 }
 
 const int & ps::PhysicsWorldV2::id()
@@ -235,7 +245,9 @@ ps::PhysicSimulateResult * ps::PhysicsWorldV2::runShootOnlyLogic(BallBody *ball,
 	vector angularVelocity = velocities.angularVelocity;
 
 	CUSTOMLOG("LinearVel: %.12lf, %.12lf, %.12lf", linearVelocity.x, linearVelocity.y, linearVelocity.z);
+	CUSTOMLOG("LinearVel: %s, %s, %s", Utils::getBinary64(linearVelocity.x).c_str(), Utils::getBinary64(linearVelocity.y).c_str(), Utils::getBinary64(linearVelocity.z).c_str());
 	CUSTOMLOG("AngularVel: %.12lf, %.12lf, %.12lf", angularVelocity.x, angularVelocity.y, angularVelocity.z);
+	CUSTOMLOG("AngularVel: %s, %s, %s", Utils::getBinary64(angularVelocity.x).c_str(), Utils::getBinary64(angularVelocity.y).c_str(), Utils::getBinary64(angularVelocity.z).c_str());
 
 	if (ENABLE_STATIC_WORLD) {
 		for (int i = 0; i < _balls.size(); i++) {
@@ -265,10 +277,10 @@ ps::PhysicSimulateResult * ps::PhysicsWorldV2::runShootOnlyLogic(BallBody *ball,
 		updateSimulateStepTime(result->linearVelocity);
 		_timestamp = result->endTime;
 
-		CUSTOMLOG("Physics Static End Time: %lf", _timestamp);
-		CUSTOMLOG("Cue Ball Pos: %lf, %lf, %lf", result->position.x, result->position.y, result->position.z);
-		CUSTOMLOG("Cue Ball lv: %lf, %lf, %lf", result->linearVelocity.x, result->linearVelocity.y, result->linearVelocity.z);
-		CUSTOMLOG("Cue Ball av: %lf, %lf, %lf", result->angularVelocity.x, result->angularVelocity.y, result->angularVelocity.z);
+		CUSTOMLOG("Physics Static End Time: %.15lf", _timestamp);
+		CUSTOMLOG("Cue Ball Pos: %.12lf, %.12lf, %.12lf", result->position.x, result->position.y, result->position.z);
+		CUSTOMLOG("Cue Ball lv: %.12lf, %.12lf, %.12lf", result->linearVelocity.x, result->linearVelocity.y, result->linearVelocity.z);
+		CUSTOMLOG("Cue Ball av: %.12lf, %.12lf, %.12lf", result->angularVelocity.x, result->angularVelocity.y, result->angularVelocity.z);
 		
 		delete result;
 		deleteVector(motionGroups);
@@ -327,8 +339,13 @@ ps::PhysicSimulateResult * ps::PhysicsWorldV2::shoot(int ballId, PhysicsCue::Res
 
 ps::PhysicSimulateResult * ps::PhysicsWorldV2::shoot(BallBody *ball, PhysicsCue *cue, double force, vector & direction, vector & offset)
 {
+	CUSTOMLOG("PhysicsWorldV2::shoot");
 	CueInfo *cuePlay = cue->getCueInfo();
+	CUSTOMLOG("shoot before rand direction %s %s %s",
+		getBinaryDouble(direction.x).c_str(), getBinaryDouble(direction.y).c_str(), getBinaryDouble(direction.z).c_str());
 	direction = randomDirection(direction, cuePlay);
+	CUSTOMLOG("shoot after rand direction %s %s %s",
+		getBinaryDouble(direction.x).c_str(), getBinaryDouble(direction.y).c_str(), getBinaryDouble(direction.z).c_str());
 	offset = randomOffset(offset, cuePlay);
 
 	bool valid = (ball != NULL && cue != NULL && checkValidShoot(force, direction, offset));
@@ -362,8 +379,10 @@ ps::PhysicSimulateResult * ps::PhysicsWorldV2::shoot(BallBody *ball, PhysicsCue:
 	vector linearVelocity = velocities.linearVelocity;
 	vector angularVelocity = velocities.angularVelocity;
 
-	CUSTOMLOG("LinearVel: %.12lf, %.12lf, %.12lf", linearVelocity.x, linearVelocity.y ,linearVelocity.z);
-	CUSTOMLOG("AngularVel: %.12lf, %.12lf, %.12lf", angularVelocity.x, angularVelocity.y, angularVelocity.z);
+	CUSTOMLOG("LinearVel: %.13lf, %.13lf, %.13lf", linearVelocity.x, linearVelocity.y ,linearVelocity.z);
+	CUSTOMLOG("LinearVel: %s, %s, %s", getBinaryDouble(linearVelocity.x).c_str(), getBinaryDouble(linearVelocity.y).c_str(), getBinaryDouble(linearVelocity.z).c_str());
+	CUSTOMLOG("AngularVel: %.13lf, %.13lf, %.13lf", angularVelocity.x, angularVelocity.y, angularVelocity.z);
+	CUSTOMLOG("AngularVel: %s, %s, %s", getBinaryDouble(angularVelocity.x).c_str(), getBinaryDouble(angularVelocity.y).c_str(), getBinaryDouble(angularVelocity.z).c_str());
 
 	if (ENABLE_STATIC_WORLD) {
 		for (int i = 0; i < _balls.size(); i++) {
@@ -396,6 +415,7 @@ ps::ExtMath::vector ps::PhysicsWorldV2::randomDirection(const vector & dir, CueI
 {
 	const double PI = 3.141592653589793238;
 	double xySqrt = sqrt(dir.x*dir.x + dir.y*dir.y);
+	CUSTOMLOG("randomDirection xySqrt %s", getBinaryDouble(xySqrt).c_str());
 	double angle = ExtMath::atan(dir.z / xySqrt) * 180.0 / PI;
 	double angleMax = std::max(-cue->_angle[1], (2.0 - cue->_accuracy) * angle);
 	double angleMin = std::min(-cue->_angle[0], cue->_accuracy * angle);
@@ -424,9 +444,9 @@ ps::FloorSurface * ps::PhysicsWorldV2::floorSurface()
 	return &_floorSurface;
 }
 
-ps::Pockets * ps::PhysicsWorldV2::pockets()
+ps::Pocket * ps::PhysicsWorldV2::pockets()
 {
-	return &_pockets;
+	return _pockets;
 }
 
 void ps::PhysicsWorldV2::setBreak(bool brk)
@@ -550,42 +570,42 @@ void ps::PhysicsWorldV2::updateStaticSegmentsAndPockets()
 
 	double CornerDepthSqrt2 = CORNER_POCKET_DEPTH / sqrt(2);
 
-	Pocket &topLeftPocket = _pockets.topLeftPocket;
+	Pocket &topLeftPocket = _pockets[PhysicsConstants::TOP_LEFT_POCKET_ID];
 	topLeftPocket.id = PhysicsConstants::TOP_LEFT_POCKET_ID;
 	topLeftPocket.position = vector(limits.minX - CornerDepthSqrt2, limits.maxY + CornerDepthSqrt2);
 	topLeftPocket.radius = CORNER_POCKET_RADIUS;
 	topLeftPocket.warnPolygon = PocketAABB(&topLeftPocket);
 	
-	_pockets.topRightPocket = Pocket(
+	_pockets[PhysicsConstants::TOP_RIGHT_POCKET_ID] = Pocket(
 		PhysicsConstants::TOP_RIGHT_POCKET_ID,
 		vector(limits.maxX + CornerDepthSqrt2, limits.maxY + CornerDepthSqrt2),
 		CORNER_POCKET_RADIUS
 	);
-	_pockets.bottomRightPocket = Pocket(
+	_pockets[PhysicsConstants::BOTTOM_RIGHT_POCKET_ID] = Pocket(
 		PhysicsConstants::BOTTOM_RIGHT_POCKET_ID,
 		vector(limits.maxX + CornerDepthSqrt2, limits.minY - CornerDepthSqrt2),
 		CORNER_POCKET_RADIUS
 	);
-	_pockets.bottomLeftPocket = Pocket(
+	_pockets[PhysicsConstants::BOTTOM_LEFT_POCKET_ID] = Pocket(
 		PhysicsConstants::BOTTOM_LEFT_POCKET_ID,
 		vector(limits.minX - CornerDepthSqrt2, limits.minY - CornerDepthSqrt2),
 		CORNER_POCKET_RADIUS
 	);
-	_pockets.topSidePocket = Pocket(
+	_pockets[PhysicsConstants::TOP_SIDE_POCKET_ID] = Pocket(
 		PhysicsConstants::TOP_SIDE_POCKET_ID,
 		vector(0, limits.maxY + SIDE_POCKET_DEPTH),
 		SIDE_POCKET_RADIUS
 	);
-	_pockets.bottomSidePocket = Pocket(
+	_pockets[PhysicsConstants::BOTTOM_SIDE_POCKET_ID] = Pocket(
 		PhysicsConstants::BOTTOM_SIDE_POCKET_ID,
 		vector(0, limits.minY - SIDE_POCKET_DEPTH),
 		SIDE_POCKET_RADIUS
 	);
-	Pocket & topRightPocket = _pockets.topRightPocket;
-	Pocket & bottomRightPocket = _pockets.bottomRightPocket;
-	Pocket & bottomLeftPocket = _pockets.bottomLeftPocket;
-	Pocket & topSidePocket = _pockets.topSidePocket;
-	Pocket & bottomSidePocket = _pockets.bottomSidePocket;
+	Pocket & topRightPocket = _pockets[PhysicsConstants::TOP_RIGHT_POCKET_ID];
+	Pocket & bottomRightPocket = _pockets[PhysicsConstants::BOTTOM_RIGHT_POCKET_ID];
+	Pocket & bottomLeftPocket = _pockets[PhysicsConstants::BOTTOM_LEFT_POCKET_ID];
+	Pocket & topSidePocket = _pockets[PhysicsConstants::TOP_SIDE_POCKET_ID];
+	Pocket & bottomSidePocket = _pockets[PhysicsConstants::BOTTOM_SIDE_POCKET_ID];
 
 	double CornerRadiusSqrt2 = CORNER_POCKET_RADIUS / sqrt(2);
 	CushionSegment cushionTopLeftCorner_1 = CushionSegment(
@@ -914,7 +934,7 @@ void ps::PhysicsWorldV2::updateStaticSegmentsAndPockets()
 	);
 
 	_floorSurface.setLimits(
-		safeZone, &limits, &_pockets, tableEdgeLimits
+		safeZone, &limits, _pockets, tableEdgeLimits
 	);
 }
 
@@ -1105,12 +1125,12 @@ void ps::PhysicsWorldV2::step(double frameTime)
 	if (allBallMotionLess) {
 		_run = false;
 		CUSTOMLOG("iteration %d", stepCount);
-		CUSTOMLOG("After Shooting Seed %lf , %lf", _random->getCurrentSeed(), _random->getSeed());
+		CUSTOMLOG("After Shooting Seed %.0lf , %.0lf", _random->getCurrentSeed(), _random->getSeed());
 		for (int i = 0; i < _balls.size(); i++) {
 			BallBody* currentBall = _balls.at(i);
 			currentBall->resetShootingState();
 			vector position = currentBall->position();
-			CUSTOMLOG("%d: %.13lf, %.13lf, %.13lf", currentBall->id(), +position.x, position.y, position.z);
+			CUSTOMLOG("%d: %.12lf, %.12lf, %.12lf", currentBall->id(), +position.x, position.y, position.z);
 		}
 		
 		onWorldPause();
@@ -1131,7 +1151,9 @@ void ps::PhysicsWorldV2::stepStaticMotion(double dt)
 	cueBall->dispatch();
 
 	if (ctrl->isFinished()) {
-		CUSTOMLOG("Physics Static End Time: %lf", ctrl->getEndTime());
+		
+		CUSTOMLOG("Physics Static End Time: %.15lf", ctrl->getEndTime());
+		CUSTOMLOG("Physics Static End Time: %s", getBinaryDouble(ctrl->getEndTime()).c_str());
 		_runStaticMotion = false;
 
 		auto result = ctrl->calcFinalResult();
@@ -1218,7 +1240,7 @@ void ps::PhysicsWorldV2::checkCollisionsWithCushions(CushionCollisions & collisi
 
 }
 
-bool ps::PhysicsWorldV2::checkCacheMotionLess(std::vector<bool> & cacheMotionLess, int index)
+inline bool ps::PhysicsWorldV2::checkCacheMotionLess(std::vector<bool> & cacheMotionLess, int index)
 {
 	if (index >= MAX_BALL) {
 		return false;
@@ -1464,8 +1486,9 @@ std::string ps::PhysicsWorldV2::log()
 		aVel.y += ball->angularVelocity().y;
 		aVel.z += ball->angularVelocity().z;
 	}
-	sprintf(text, "position (%.12lf, %.12lf, %.12lf), velocity (%.13lf, %.13lf, %.13lf), aVel(%.13lf %.13lf %.13lf) \n", pos.x, pos.y, pos.z,
-		vel.x, vel.y, vel.z, aVel.x, aVel.y, aVel.z);
+	sprintf(text, "position (%.12lf, %.12lf, %.12lf),\n velocity (%s, %s, %s),\n aVel(%s %s %s) \n", pos.x, pos.y, pos.z,
+		getBinaryDouble(vel.x).c_str(), getBinaryDouble(vel.y).c_str(), getBinaryDouble(vel.z).c_str(),
+		getBinaryDouble(aVel.x).c_str(), getBinaryDouble(aVel.y).c_str(), getBinaryDouble(aVel.z).c_str());
 	ret += std::string(text);
 	return ret;
 }
@@ -1481,11 +1504,11 @@ void ps::PhysicsWorldV2::logAllBall(std::string &ret)
 		vel = ball->linearVelocity();
 		vector aVel = ball->angularVelocity();
 
-		sprintf(text, "%d: position (%.12lf, %.12lf, %.12lf), velocity (%.13lf, %.13lf, %.13lf), aVelocity (%.13lf, %.15lf, %.13lf)\n", 
+		sprintf(text, "%d: position (%.12lf, %.12lf, %.12lf), \nvelocity (%s, %s, %s), \naVelocity (%s, %s, %s)\n", 
 			ball->id(),
 			pos.x, pos.y, pos.z,
-			vel.x, vel.y, vel.z, 
-			aVel.x, aVel.y, aVel.z);
+			getBinaryDouble(vel.x).c_str(), getBinaryDouble(vel.y).c_str(), getBinaryDouble(vel.z).c_str(),
+			getBinaryDouble(aVel.x).c_str(), getBinaryDouble(aVel.y).c_str(), getBinaryDouble(aVel.z).c_str());
 		ret += std::string(text);
 		CUSTOMLOG(text);
 	}

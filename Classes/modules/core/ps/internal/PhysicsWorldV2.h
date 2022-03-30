@@ -10,6 +10,7 @@
 #include "PhysicsCue.hpp"
 #include "../static/StaticMotionController.h"
 #include "PhysicsDispatcher.hpp"
+#include "data/GameConstant.h"
 
 namespace ps {
 	class PhysicsDispatcher;
@@ -25,10 +26,10 @@ namespace ps {
 	public:
 		static const bool ENABLE_STATIC_WORLD = true;
 
-		static const int CUSHION_HEAD_ID = PhysicsConstants::CUSHION_HEAD_ID;
-		static const int CUSHION_FOOT_ID = PhysicsConstants::CUSHION_FOOT_ID;
-		static const int CUSHION_SIDE_1_ID = PhysicsConstants::CUSHION_SIDE_1_ID;
-		static const int CUSHION_SIDE_2_ID = PhysicsConstants::CUSHION_SIDE_2_ID;
+		static const int CUSHION_HEAD_ID;
+		static const int CUSHION_FOOT_ID;
+		static const int CUSHION_SIDE_1_ID;
+		static const int CUSHION_SIDE_2_ID;
 
 	private:
 		static const int RUN_TIMEOUT = 10000;
@@ -44,7 +45,7 @@ namespace ps {
 		static std::vector<CushionSegment> _cushionSegments;
 		static std::vector<CushionPoint> _cushionPoints;
 		static FloorSurface _floorSurface;
-		static Pockets _pockets;
+		static Pocket _pockets[NUM_POCKET];
 		//  static CueAttribute _defaultCueAttr;
 		//  static PhysicsCue _defaultCue; // For compatibility
 
@@ -92,6 +93,8 @@ namespace ps {
 		~PhysicsWorldV2();
 
 		void reset(const int & id);
+
+		void reset();
 
 		const int & id();
 
@@ -143,7 +146,7 @@ namespace ps {
 
 		static FloorSurface * floorSurface();
 
-		static Pockets *pockets();
+		static Pocket *pockets();
 
 		void setBreak(bool brk);
 
@@ -181,7 +184,7 @@ namespace ps {
 
 		void checkCollisionsWithCushions(CushionCollisions & cusionCollisions, std::vector<bool> & cacheMotionLess);
 
-		inline bool checkCacheMotionLess(std::vector<bool> & cacheMotionLess, int i);
+		bool checkCacheMotionLess(std::vector<bool> & cacheMotionLess, int i);
 
 		bool isPosibleToBeColliding(BallBody *ball);
 

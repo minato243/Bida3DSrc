@@ -5,6 +5,7 @@
 #include "../inventory/Inventory.h"
 #include "data/GameConstant.h"
 #include "../inventory/InventoryMgr.h"
+#include "data/config/GloveConfig.h"
 
 using namespace std;
 
@@ -32,11 +33,21 @@ void ChannelMgr::destroyInstance()
 	CC_SAFE_DELETE(_intstance);
 }
 
-std::vector<ItemInfoData> ChannelMgr::getListItemWin(int gameMode, int channelId)
+std::vector<ItemInfoData> ChannelMgr::getListItemWin(GameMode gameMode, int channelId)
 {
 	vector<ItemInfoData> r;
 	long long prize = configMgr->channelConfig->getChannelPrize(gameMode, channelId);
 	ItemInfoData item = ItemInfoData(ItemConstant::GOLD, prize);
+	r.push_back(item);
+
+	return r;
+}
+
+std::vector<ItemInfoData> ChannelMgr::getListItemFee(GameMode gameMode, int channelId)
+{
+	vector<ItemInfoData> r;
+	ChannelConfigData data = configMgr->channelConfig->getChannelConfig(gameMode, channelId);
+	ItemInfoData item = ItemInfoData(ItemConstant::GOLD, data.entryFee);
 	r.push_back(item);
 
 	return r;
@@ -58,7 +69,31 @@ bool ChannelMgr::joinChannel(GameMode gameMode, int channelId)
 	int type = Inventory::getTypeFromConfig(channelConfig.entryFeeUnit);
 	long long quantity= inventoryMgr->getInventory()->getItemQuantity(type);
 
-	return channelConfig.entryFee < quantity;
+	return channelConfig.entryFee <= quantity;
+}
+
+MatchingGloveConfigData ChannelMgr::getGloveMatchingConfigByCurrentGlove(int glove)
+{
+	int currentGlove = inventoryMgr->getInventory()->getItemQuantity(ItemConstant::GLOVE);
+	MatchingGloveConfigData data = configMgr->gloveConfig->getMatchingGloveConfig(currentGlove);
+
+	return data;
+}
+
+int ChannelMgr::getGloveFeeByCurrentGlove()
+{
+	int currentGlove = inventoryMgr->getInventory()->getItemQuantity(ItemConstant::GLOVE);
+	MatchingGloveConfigData data = configMgr->gloveConfig->getMatchingGloveConfig(currentGlove);
+
+	return data.require;
+}
+
+int ChannelMgr::getGlovePrizeByCurrentGlove()
+{
+	int currentGlove = inventoryMgr->getInventory()->getItemQuantity(ItemConstant::GLOVE);
+	MatchingGloveConfigData data = configMgr->gloveConfig->getMatchingGloveConfig(currentGlove);
+
+	return data.prize;
 }
 
 ChannelMgr * ChannelMgr::_intstance = NULL;

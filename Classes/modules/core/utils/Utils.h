@@ -3,6 +3,8 @@
 
 #include <cocos2d.h>
 
+#define getBinaryDouble Utils::getBinary64
+
 class Utils
 {
 public:
@@ -29,6 +31,8 @@ public:
 	std::list<cocos2d::Node *> _efkShadowPool;
 	std::list<cocos2d::Node *> _efkCirclePool;
 	std::map<cocos2d::Node *, bool> _isShadowMaps;
+
+	static std::string getBinary64(double value);
  
 	static Utils *getInstance();
 private:

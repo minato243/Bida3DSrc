@@ -22,6 +22,8 @@ const double ps::StaticWorld::CORNER_POCKET_WIDTH = PhysicsConstants::CORNER_POC
 const double ps::StaticWorld::CORNER_POCKET_RADIUS = PhysicsConstants::CORNER_POCKET_RADIUS;
 const double ps::StaticWorld::SIDE_POCKET_RADIUS = PhysicsConstants::SIDE_POCKET_RADIUS;
 
+const double ps::StaticWorld::SUB_SEG_OFFSET = PhysicsConstants::SUB_SEG_OFFSET;
+
 const double ps::StaticWorld::MIDDLE_SEG_OFFSET = SIDE_POCKET_WIDTH / 2;
 const double ps::StaticWorld::CORN_SEG_OFFSET = CORNER_POCKET_WIDTH / sqrt(2);
 const double ps::StaticWorld::SIDE_POCKET_DEPTH = PhysicsConstants::SIDE_POCKET_DEPTH;
@@ -86,6 +88,12 @@ const double ps::StaticWorld::DELTA_CUSHION_BALL = StaticWorld::CUSHION_HEIGHT -
 const double ps::StaticWorld::CUSHION_DISTANCE_DELTA = sqrt(BALL_RADIUS_SQUARE - DELTA_CUSHION_BALL * DELTA_CUSHION_BALL);
 
 const ps::StaticWorld::Velocities ps::StaticWorld::EmptyVelocities = Velocities(vector::ZERO, vector::ZERO);
+
+const int ps::StaticWorld::CUSHION_HEAD_ID = PhysicsConstants::CUSHION_HEAD_ID;
+const int ps::StaticWorld::CUSHION_FOOT_ID = PhysicsConstants::CUSHION_FOOT_ID;
+const int ps::StaticWorld::CUSHION_SIDE_1_ID = PhysicsConstants::CUSHION_SIDE_1_ID;
+const int ps::StaticWorld::CUSHION_SIDE_2_ID = PhysicsConstants::CUSHION_SIDE_2_ID;
+
 
 bool ps::StaticWorld::isGT(const double & a, const double & b)
 {
@@ -155,43 +163,42 @@ void ps::StaticWorld::initCushionAndPockets()
 	// vector topRight = vector(TABLE_WIDTH / 2, TABLE_HEIGHT / 2, CUSHION_Z);
 
 	CushionSegment segBottom = CushionSegment(
-		vector(-TABLE_WIDTH / 2 + CORN_SEG_OFFSET, -TABLE_HEIGHT / 2, CUSHION_Z),
-		vector(TABLE_WIDTH / 2 - CORN_SEG_OFFSET, -TABLE_HEIGHT / 2, CUSHION_Z),
+		CUSHION_SIDE_2_ID,
+		vector(-TABLE_WIDTH / 2 + CORN_SEG_OFFSET + SUB_SEG_OFFSET, -TABLE_HEIGHT / 2, CUSHION_Z),
+		vector(TABLE_WIDTH / 2 - CORN_SEG_OFFSET - SUB_SEG_OFFSET, -TABLE_HEIGHT / 2, CUSHION_Z),
 		vector(1, 0, 0),
 		new BasicSegment(
-			vector(-MIDDLE_SEG_OFFSET, -TABLE_HEIGHT / 2, CUSHION_Z),
-			vector(MIDDLE_SEG_OFFSET, -TABLE_HEIGHT / 2, CUSHION_Z),
+			vector(-MIDDLE_SEG_OFFSET - SUB_SEG_OFFSET, -TABLE_HEIGHT / 2, CUSHION_Z),
+			vector(MIDDLE_SEG_OFFSET + SUB_SEG_OFFSET, -TABLE_HEIGHT / 2, CUSHION_Z),
 			vector(1, 0, 0)
 		)
 	);
 
 	CushionSegment segRight = CushionSegment(
-		vector(TABLE_WIDTH / 2, -TABLE_HEIGHT / 2 + CORN_SEG_OFFSET, CUSHION_Z),
-		vector(TABLE_WIDTH / 2, TABLE_HEIGHT / 2 - CORN_SEG_OFFSET, CUSHION_Z),
+		CUSHION_FOOT_ID,
+		vector(TABLE_WIDTH / 2, -TABLE_HEIGHT / 2 + CORN_SEG_OFFSET + SUB_SEG_OFFSET, CUSHION_Z),
+		vector(TABLE_WIDTH / 2, TABLE_HEIGHT / 2 - CORN_SEG_OFFSET - SUB_SEG_OFFSET, CUSHION_Z),
 		vector(0, 1, 0)
 	);
 
 	CushionSegment segTop = CushionSegment(
-		vector(TABLE_WIDTH / 2 - CORN_SEG_OFFSET, TABLE_HEIGHT / 2, CUSHION_Z),
-		vector(-TABLE_WIDTH / 2 + CORN_SEG_OFFSET, TABLE_HEIGHT / 2, CUSHION_Z),
+		CUSHION_SIDE_1_ID,
+		vector(TABLE_WIDTH / 2 - CORN_SEG_OFFSET - SUB_SEG_OFFSET, TABLE_HEIGHT / 2, CUSHION_Z),
+		vector(-TABLE_WIDTH / 2 + CORN_SEG_OFFSET + SUB_SEG_OFFSET, TABLE_HEIGHT / 2, CUSHION_Z),
 		vector(-1, 0, 0),
 		new BasicSegment(
-			vector(MIDDLE_SEG_OFFSET, TABLE_HEIGHT / 2, CUSHION_Z),
-			vector(-MIDDLE_SEG_OFFSET, TABLE_HEIGHT / 2, CUSHION_Z),
+			vector(MIDDLE_SEG_OFFSET + SUB_SEG_OFFSET, TABLE_HEIGHT / 2, CUSHION_Z),
+			vector(-MIDDLE_SEG_OFFSET - SUB_SEG_OFFSET, TABLE_HEIGHT / 2, CUSHION_Z),
 			vector(-1, 0, 0)
 		)
 	);
 
 	CushionSegment segLeft = CushionSegment(
-		vector(-TABLE_WIDTH / 2, TABLE_HEIGHT / 2 - CORN_SEG_OFFSET, CUSHION_Z),
-		vector(-TABLE_WIDTH / 2, -TABLE_HEIGHT / 2 + CORN_SEG_OFFSET, CUSHION_Z),
+		CUSHION_HEAD_ID,
+		vector(-TABLE_WIDTH / 2, TABLE_HEIGHT / 2 - CORN_SEG_OFFSET - SUB_SEG_OFFSET, CUSHION_Z),
+		vector(-TABLE_WIDTH / 2, -TABLE_HEIGHT / 2 + CORN_SEG_OFFSET + SUB_SEG_OFFSET, CUSHION_Z),
 		vector(0, -1, 0)
 	);
-
-	segLeft.id = CUSHION_HEAD_ID;
-	segTop.id = CUSHION_SIDE_1_ID;
-	segRight.id = CUSHION_FOOT_ID;
-	segBottom.id = CUSHION_SIDE_2_ID;
 
 	std::vector<CushionSegment> &segments = _cushionSegments;
 	std::vector<CushionPoint> &points = _cushionPoints;
@@ -214,102 +221,148 @@ void ps::StaticWorld::initCushionAndPockets()
 	// Cushion custom segments
 	double CornerRadiusSqrt2 = CORNER_POCKET_RADIUS / sqrt(2);
 	CushionSegment segTopLeftCorner_1 = CushionSegment(
+		CUSHION_HEAD_ID,
 		vector::add(topLeftPocket.position,
 			vector(-CornerRadiusSqrt2, -CornerRadiusSqrt2, CUSHION_Z)
 		),
-		segLeft.start
+		vector(
+			segLeft.start.x,
+			segLeft.start.y + SUB_SEG_OFFSET,
+			segLeft.start.z
+		)
 	);
+	segTopLeftCorner_1.collapseEndPoint(SUB_SEG_OFFSET);
 
 	CushionSegment segTopLeftCorner_2 = CushionSegment(
-		segTop.end,
+		CUSHION_SIDE_1_ID,
+		vector(segTop.end.x - SUB_SEG_OFFSET, segTop.end.y, segTop.end.z),
 		vector::add(topLeftPocket.position,
 			vector(CornerRadiusSqrt2, CornerRadiusSqrt2, CUSHION_Z)
 		)
 	);
+	segTopLeftCorner_2.collapseStartPoint(SUB_SEG_OFFSET);
 
 	CushionSegment segTopRightCorner_1 = CushionSegment(
+		CUSHION_SIDE_1_ID,
 		vector::add(topRightPocket.position,
 			vector(-CornerRadiusSqrt2, CornerRadiusSqrt2, CUSHION_Z)
 		),
-		segTop.start
+		vector(segTop.start.x + SUB_SEG_OFFSET, segTop.start.y, segTop.start.z)
 	);
+	segTopRightCorner_1.collapseEndPoint(SUB_SEG_OFFSET);
 
 	CushionSegment segTopRightCorner_2 = CushionSegment(
-		segRight.end,
+		CUSHION_FOOT_ID,
+		vector(
+			segRight.end.x,
+			segRight.end.y + SUB_SEG_OFFSET,
+			segRight.end.z
+		),
 		vector::add(topRightPocket.position,
 			vector(CornerRadiusSqrt2, -CornerRadiusSqrt2, CUSHION_Z)
 		)
 	);
+	segTopRightCorner_2.collapseStartPoint(SUB_SEG_OFFSET);
 
 	CushionSegment segBottomRightCorner_1 = CushionSegment(
+		CUSHION_FOOT_ID,
 		vector::add(bottomRightPocket.position,
 			vector(CornerRadiusSqrt2, CornerRadiusSqrt2, CUSHION_Z)
 		),
-		segRight.start
+		vector(
+			segRight.start.x,
+			segRight.start.y - SUB_SEG_OFFSET,
+			segRight.start.z
+		)
 	);
+	segBottomRightCorner_1.collapseEndPoint(SUB_SEG_OFFSET);
 
 	CushionSegment segBottomRightCorner_2 = CushionSegment(
-		segBottom.end,
+		CUSHION_SIDE_2_ID,
+		vector(
+			segBottom.end.x + SUB_SEG_OFFSET,
+			segBottom.end.y,
+			segBottom.end.z
+		),
 		vector::add(bottomRightPocket.position,
 			vector(-CornerRadiusSqrt2, -CornerRadiusSqrt2, CUSHION_Z)
 		)
 	);
+	segBottomRightCorner_2.collapseStartPoint(SUB_SEG_OFFSET);
 
 	CushionSegment segBottomLeftCorner_1 = CushionSegment(
-		vector::add(bottomLeftPocket.position,
+		CUSHION_SIDE_2_ID,
+		vector::add(
+			bottomLeftPocket.position,
 			vector(CornerRadiusSqrt2, -CornerRadiusSqrt2, CUSHION_Z)
 		),
-		segBottom.start
+		vector(
+			segBottom.start.x - SUB_SEG_OFFSET,
+			segBottom.start.y,
+			segBottom.start.z
+		)
 	);
+	segBottomLeftCorner_1.collapseEndPoint(SUB_SEG_OFFSET);
 
 	CushionSegment segBottomLeftCorner_2 = CushionSegment(
-		segLeft.end,
+		CUSHION_HEAD_ID,
+		vector(
+			segLeft.end.x,
+			segLeft.end.y - SUB_SEG_OFFSET,
+			segLeft.end.z
+		),
 		vector::add(bottomLeftPocket.position,
 			vector(-CornerRadiusSqrt2, CornerRadiusSqrt2, CUSHION_Z)
 		)
 	);
+	segBottomLeftCorner_2.collapseStartPoint(SUB_SEG_OFFSET);
 
 	CushionSegment segMidTop_1 = CushionSegment(
+		CUSHION_SIDE_1_ID,
 		vector::add(topSidePocket.position,
 			vector(-SIDE_POCKET_RADIUS, 0, CUSHION_Z)),
-		segTop.exclude->end
+		vector(
+			segTop.exclude->end.x + SUB_SEG_OFFSET,
+			segTop.exclude->end.y,
+			segTop.exclude->end.z
+		)
 	);
+	segMidTop_1.collapseEndPoint(SUB_SEG_OFFSET);
 
 	CushionSegment segMidTop_2 = CushionSegment(
-		segTop.exclude->start,
+		CUSHION_SIDE_1_ID,
+		vector(
+			segTop.exclude->start.x - SUB_SEG_OFFSET,
+			segTop.exclude->start.y,
+			segTop.exclude->start.z
+		),
 		vector::add(topSidePocket.position,
 			vector(SIDE_POCKET_RADIUS, 0, CUSHION_Z))
 	);
+	segMidTop_2.collapseStartPoint(SUB_SEG_OFFSET);
 
 	CushionSegment segMidBottom_1 = CushionSegment(
-		segBottom.exclude->start,
+		CUSHION_SIDE_2_ID,
+		vector(
+			segBottom.exclude->start.x + SUB_SEG_OFFSET,
+			segBottom.exclude->start.y,
+			segBottom.exclude->start.z
+		),
 		vector::add(bottomSidePocket.position,
 			vector(-SIDE_POCKET_RADIUS, 0, CUSHION_Z))
 	);
 
 	CushionSegment segMidBottom_2 = CushionSegment(
+		CUSHION_SIDE_2_ID,
 		vector::add(bottomSidePocket.position,
 			vector(SIDE_POCKET_RADIUS, 0, CUSHION_Z)),
-		segBottom.exclude->end
+		vector(
+			segBottom.exclude->end.x - SUB_SEG_OFFSET,
+			segBottom.exclude->end.y,
+			segBottom.exclude->end.z
+		)
 	);
-
-	segTopLeftCorner_1.id = CUSHION_HEAD_ID;
-	segTopLeftCorner_2.id = CUSHION_SIDE_1_ID;
-
-	segMidTop_1.id = CUSHION_SIDE_1_ID;
-	segMidTop_2.id = CUSHION_SIDE_1_ID;
-
-	segTopRightCorner_1.id = CUSHION_SIDE_1_ID;
-	segTopRightCorner_2.id = CUSHION_FOOT_ID;
-
-	segBottomRightCorner_1.id = CUSHION_FOOT_ID;
-	segBottomRightCorner_2.id = CUSHION_SIDE_2_ID;
-
-	segMidBottom_1.id = CUSHION_SIDE_2_ID;
-	segMidBottom_2.id = CUSHION_SIDE_2_ID;
-
-	segBottomLeftCorner_1.id = CUSHION_SIDE_2_ID;
-	segBottomLeftCorner_2.id = CUSHION_HEAD_ID;
+	segMidBottom_2.collapseEndPoint(SUB_SEG_OFFSET);
 
 	segments.push_back(segTopLeftCorner_1);
 	segments.push_back(segTopLeftCorner_2);
@@ -323,6 +376,104 @@ void ps::StaticWorld::initCushionAndPockets()
 	segments.push_back(segMidTop_2);
 	segments.push_back(segMidBottom_1);
 	segments.push_back(segMidBottom_2);
+
+	// Sub-segments
+	CushionSegment subSegTopLeft_1 = CushionSegment(
+		segLeft.id,
+		segTopLeftCorner_1.end,
+		segLeft.start
+	);
+
+	CushionSegment subSegTopLeft_2 = CushionSegment(
+		segTop.id,
+		segTop.end,
+		segTopLeftCorner_2.start
+	);
+
+	CushionSegment subSegTopRight_1 = CushionSegment(
+		segTop.id,
+		segTopRightCorner_1.end,
+		segTop.start
+	);
+
+	CushionSegment subSegTopRight_2 = CushionSegment(
+		segRight.id,
+		segRight.end,
+		segTopRightCorner_2.start
+	);
+
+	CushionSegment subSegBottomLeft_1 = CushionSegment(
+		segBottom.id,
+		segBottomLeftCorner_1.end,
+		segBottom.start
+	);
+
+	CushionSegment subSegBottomLeft_2 = CushionSegment(
+		segLeft.id,
+		segLeft.end,
+		segBottomLeftCorner_2.start
+	);
+
+	CushionSegment subSegBottomRight_1 = CushionSegment(
+		segRight.id,
+		segBottomRightCorner_1.end,
+		segRight.start
+	);
+
+	CushionSegment subSegBottomRight_2 = CushionSegment(
+		segBottom.id,
+		segBottom.end,
+		segBottomRightCorner_2.start
+	);
+
+	CushionSegment subSegMidTop_1 = CushionSegment(
+		segTop.id,
+		segMidTop_1.end,
+		segTop.exclude->end
+	);
+
+	CushionSegment subSegMidTop_2 = CushionSegment(
+		segTop.id,
+		segTop.exclude->start,
+		segMidTop_2.start
+	);
+
+	CushionSegment subSegMidBottom_1 = CushionSegment(
+		segBottom.id,
+		segBottom.exclude->start,
+		segMidBottom_1.start
+	);
+
+	CushionSegment subSegMidBottom_2 = CushionSegment(
+		segBottom.id,
+		segMidBottom_2.end,
+		segBottom.exclude->end
+	);
+	segments.push_back(subSegTopLeft_1);
+	segments.push_back(subSegTopLeft_2);
+	segments.push_back(subSegTopRight_1);
+	segments.push_back(subSegTopRight_2);
+	segments.push_back(subSegBottomLeft_1);
+	segments.push_back(subSegBottomLeft_2);
+	segments.push_back(subSegBottomRight_1);
+	segments.push_back(subSegBottomRight_2);
+	segments.push_back(subSegMidTop_1);
+	segments.push_back(subSegMidTop_2);
+	segments.push_back(subSegMidBottom_1);
+	segments.push_back(subSegMidBottom_2);
+
+	points.push_back(CushionPoint(subSegTopLeft_1.start, subSegTopLeft_1.id));
+	points.push_back(CushionPoint(subSegTopLeft_2.end, subSegTopLeft_2.id));
+	points.push_back(CushionPoint(subSegTopRight_1.start, subSegTopRight_1.id));
+	points.push_back(CushionPoint(subSegTopRight_2.end, subSegTopRight_2.id));
+	points.push_back(CushionPoint(subSegBottomLeft_1.start, subSegBottomLeft_1.id));
+	points.push_back(CushionPoint(subSegBottomLeft_2.end, subSegBottomLeft_2.id));
+	points.push_back(CushionPoint(subSegBottomRight_1.start, subSegBottomRight_1.id));
+	points.push_back(CushionPoint(subSegBottomRight_2.end, subSegBottomRight_2.id));
+	points.push_back(CushionPoint(subSegMidTop_1.start, subSegMidTop_1.id));
+	points.push_back(CushionPoint(subSegMidTop_2.end, subSegMidTop_2.id));
+	points.push_back(CushionPoint(subSegMidBottom_1.end, subSegMidBottom_1.id));
+	points.push_back(CushionPoint(subSegMidBottom_2.start, subSegMidBottom_2.id));
 
 	// Customize values for non-special segements
 	for (int i = 0; i < segments.size(); ++i) {
@@ -1766,7 +1917,8 @@ double ps::StaticWorld::deepResolvePosition2D(double time, StaticMotion & linear
 	if (distance >= targetDistance) return time;
 
 	double delta = distance - targetDistance;
-	double velocityLength = length2D(linearMotion.calcVelocity(time));
+    vector vel =linearMotion.calcVelocity(time);
+	double velocityLength = length2D(vel);
 
 	if (velocityLength > 0) {
 		double deltaTime = delta / velocityLength;
@@ -1922,6 +2074,28 @@ ps::StaticWorld::BasicSegment::BasicSegment(const vector & s, const vector & e)
 	dir = vector::unit(vector::sub(e, s));
 }
 
+void ps::StaticWorld::BasicSegment::collapseEndPoint(double delta)
+{
+	end = vector::add(
+		start,
+		vector::multiply(
+			vector::distance(start, end) - delta,
+			dir
+		)
+	);
+}
+
+void ps::StaticWorld::BasicSegment::collapseStartPoint(double delta)
+{
+	start = vector::add(
+		end,
+		vector::multiply(
+			-vector::distance(start, end) + delta,
+			dir
+		)
+	);
+}
+
 ps::StaticWorld::BasicSegment::BasicSegment(const vector & s, const vector & e, const vector & d)
 	:start(s), end(e), dir(d)
 {
@@ -1946,9 +2120,19 @@ ps::StaticWorld::CushionPoint::CushionPoint()
 }
 
 ps::StaticWorld::CushionSegment::CushionSegment(const vector &start, const vector & end)
-	:BasicSegment(start, end)
+	:BasicSegment(start, end), exclude(NULL)
 {
-	exclude = NULL;
+}
+
+ps::StaticWorld::CushionSegment::CushionSegment(int id, const vector & start, const vector & end)
+	: BasicSegment(start, end), id(id), exclude(NULL)
+{
+
+}
+
+ps::StaticWorld::CushionSegment::CushionSegment(int id, const vector & start, const vector & end, const vector & dir)
+	: BasicSegment(start, end, dir), id(id), exclude(NULL)
+{
 }
 
 ps::StaticWorld::CushionSegment::CushionSegment(const vector & start, const vector & end, const vector & dir, BasicSegment *exclude)
@@ -1958,13 +2142,16 @@ ps::StaticWorld::CushionSegment::CushionSegment(const vector & start, const vect
 }
 
 ps::StaticWorld::CushionSegment::CushionSegment(const vector & start, const vector & end, const vector & dir)
-	:BasicSegment(start, end, dir)
+	:BasicSegment(start, end, dir), exclude(NULL)
 {
-	exclude = NULL;
+}
+
+ps::StaticWorld::CushionSegment::CushionSegment(int id, const vector & start, const vector & end, const vector & dir, BasicSegment *exclude)
+	: BasicSegment(start, end, dir), exclude(exclude), id(id)
+{
 }
 
 ps::StaticWorld::Pocket::Pocket(const vector & position, double radius, double totalRadius)
 	:position(position), radius(radius), totalRadius(totalRadius)
 {
-
 }

@@ -313,4 +313,9 @@ struct CuePart {
 	bool disabled;
 };
 
+typedef union {
+	double f;
+	uint64_t iValue;
+} mDouble;
+
 #endif // !_DataStruct_h_

@@ -39,7 +39,7 @@ public:
 
 	void loadDataStreak(const std::vector<bool> & listStreak);
 
-	void loadDataRT1(int channelId, int winner);
+	void loadDataRT1(int channelId, int winnerIdx);
 
 	void loadDataRT2(int channelId, int winner, int scoreP1, int scoreP2);
 
@@ -91,7 +91,7 @@ private:
 	GameMode _gameMode;
 	int _winner;
 	int _channelId;
-	std::vector<ItemInfo> _listGift;
+	std::vector<ItemInfoData> _listGift;
 	std::vector<Player> _listPlayer;
 
 public:

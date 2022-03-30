@@ -46,8 +46,15 @@ ItemInfo * SubInventoryItem::getItemById(int id)
 
 ItemInfo * SubInventoryItem::addItem(int id, int quantity)
 {
-	auto item = new ItemInfo(id, quantity);
-	_items.insert(pair<int, ItemInfo*>(id, item));
+	ItemInfo *item = NULL;
+	if (_items.find(id) == _items.end()) {
+		item = new ItemInfo(id, quantity);
+		_items.insert(pair<int, ItemInfo*>(id, item));
+	}
+	else {
+		item = _items[id];
+		item->_quantity += quantity;
+	}
 
 	inventoryMgr->onItemChange(id);
 	return item;
@@ -403,6 +410,20 @@ int Inventory::getCueCoupon() {
 ItemInfo* Inventory::addItem(int id, int quantity) {
 	auto ret = _item->addItem(id, quantity);
 	return ret;
+}
+
+bool Inventory::reduceItem(int id, int quantity)
+{
+	ItemInfo *item = _item->getItemById(id);
+	if (item == NULL) 
+		return false;
+	item->_quantity -= quantity;
+	if (item->_quantity < 0) {
+		item->_quantity = 0;
+		return false;
+	}
+
+	return true;
 }
 
 int Inventory::getDust(int dustType) {

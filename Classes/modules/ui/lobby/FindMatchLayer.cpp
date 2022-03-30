@@ -6,6 +6,7 @@
 #include "core/gui/SceneMgr.h"
 #include "../../scene/GameScene.h"
 #include "../../utils/SoundMgr.h"
+#include "../../network/cheat/CheatHandler.h"
 
 USING_NS_CC;
 using namespace cocos2d::ui;
@@ -65,7 +66,6 @@ void FindMatchLayer::onEnter()
 void FindMatchLayer::startTimer()
 {
 	_timeElapsed = 0;
-	setPlayer2InfoVisible(false);
 	schedule(schedule_selector(FindMatchLayer::updateTimer), 0.5f);
 }
 
@@ -107,60 +107,28 @@ void FindMatchLayer::updateTimer(float dt)
 		text += ".";
 	}
 	_lbMatching->setString(languageMgr->localizedText("text_matching") + text);
-}
 
-void FindMatchLayer::setPlayer2InfoVisible(bool isVisible)
-{
-	//auto node = _nodeP2;
-	//node->getChildByName("lbName")->setVisible(isVisible);
-	//node->getChildByName("nodeAvatar")->setVisible(false);
-	//if (node->getChildByName("avatar"))
-	//	node->getChildByName("avatar")->setVisible(isVisible);
-	//node->getChildByName("trophyBox")->setVisible(isVisible);
-	//// node._lbMoney.setVisible(val);
-
-	//_lbTime->setVisible(!isVisible);
-	//_lbMatching->setVisible(!isVisible);
+	if (_timeElapsed >= AUTO_FIND_BOT_TIME && _timeElapsed - dt < AUTO_FIND_BOT_TIME) {
+		matchHandler->requestCancelMatching();
+		scheduleOnce(schedule_selector(FindMatchLayer::playWithBot), 0.1f);
+	}
 }
 
 void FindMatchLayer::onFoundOpponent(const Player & p2Data)
 {
 	_foundOpponent = true;
-	// for(let i=0;i<_avatarsScrolling.length;i++){
-	//     _avatarsScrolling[i].removeFromParent();
-	// }
-	// _avatarsScrolling.length = 0;
 	stopTimer();
-	setPlayer2InfoVisible(true);
-
-	setPlayerInfo(1, p2Data);
-
 }
 
 void FindMatchLayer::setInfo(GameMode mode, int ccu)
 {
-	std::string modeName = "";
-	switch (mode)
-	{
-	case RT1:
-		modeName = languageMgr->localizedText("game_mode_RT1");
-		break;
-	case STREAK_MODE:
-		modeName = languageMgr->localizedText("game_mode_RT1");
-		break;
-	case RT2_MODE:
-		modeName = languageMgr->localizedText("game_mode_RT1");
-		break;
-	case RT3_MODE:
-		modeName = languageMgr->localizedText("game_mode_RT1");
-		break;
-	default:
-		break;
-	}
+	setMode(mode);
+	setCCU(ccu);
+}
 
-	_lbSubtitle->setString(modeName);
-
-	if(ccu == -1)
+void FindMatchLayer::setCCU(int ccu)
+{
+	if (ccu == -1)
 		_lbCCU->setString("CCU: ?");
 	else
 	{
@@ -168,25 +136,6 @@ void FindMatchLayer::setInfo(GameMode mode, int ccu)
 		sprintf(text, "CCU: %d", ccu);
 		_lbCCU->setString(text);
 	}
-}
-
-void FindMatchLayer::setPlayerInfo(int idx, const Player & data)
-{
-	if (idx != 0 && idx != 1)
-		return;
-
-	//playerData[idx] = data;
-	//Node *node;
-	//if (idx == 0) node = _nodeP1;
-	//else node = _nodeP2;
-	//((Text*)node->getChildByName("lbName"))->setString(data.name);
-	//// node._lbMoney.setString(data.gold);
-	//std::string avatar = data.avatar;
-	//if(data.avatar.compare("") == 0 ) avatar = Res::INGAME_AVATAR_FAKE_1;
-
-	//setPlayerAvatar(idx, data.avatar);
-
-	//node->getChildByName("nodeAvatar")->setVisible(false);
 }
 
 void FindMatchLayer::onButtonRelease(cocos2d::ui::Button * button, int id)
@@ -201,48 +150,11 @@ void FindMatchLayer::onButtonRelease(cocos2d::ui::Button * button, int id)
 		hide();
 		auto gameScene = (GameScene *)sceneMgr->getRunningScene();
 		gameScene->_lobbyUI->show();
-		
 		break;
 	}
 	default:
 		break;
 	}
-}
-
-void FindMatchLayer::setPlayerAvatar(int idx, std::string avatarTexture)
-{
-	/*Node *node;
-	if (idx == 0) node = _nodeP1;
-	else node = _nodeP2;
-
-	if (node->getChildByName("clippingNode") == nullptr) 
-	{
-		initAvatarClippingNode(node);
-	}
-	auto avatarNode = node->getChildByName("clippingNode")->getChildByName("avatar");
-	((Sprite *)avatarNode)->setTexture(avatarTexture);
-	Size avatarSize = node->getChildByName("imgAvatarBorder")->getContentSize();
-	UIFactory::scaleToSize(avatarNode, avatarSize.width, avatarSize.height);*/
-}
-
-void FindMatchLayer::initAvatarClippingNode(cocos2d::Node * node)
-{
-	auto avatar = Sprite::create();
-	auto nodeAvatar = ClippingNode::create();
-	nodeAvatar->setPosition(node->getChildByName("nodeAvatar")->getPosition());
-	auto stencil = node->getChildByName("nodeAvatar")->getChildByName("imgAvatarMask");
-	//stencil->removeFromParent();
-	// stencil.setPosition(nodeAvatar.getPosition());
-	auto imgAvatarBorder = node->getChildByName("imgAvatarBorder");
-	Size size = imgAvatarBorder->getContentSize();
-	UIFactory::scaleToSize(stencil, size.width*0.87*imgAvatarBorder->getScaleX(), size.height*0.87*imgAvatarBorder->getScaleY());
-	nodeAvatar->setStencil(stencil);
-	nodeAvatar->addChild(avatar);
-	nodeAvatar->setAlphaThreshold(0.1);
-	node->addChild(nodeAvatar);
-	
-	nodeAvatar->setName("clippingNode");
-	avatar->setName("avatar");
 }
 
 void FindMatchLayer::reset()
@@ -255,73 +167,6 @@ void FindMatchLayer::reset()
 			Res::INGAME_AVATAR_FAKE_1, 
 			Res::INGAME_AVATAR_FAKE_2 
 		};
-	startScrollingAvatarEffect(imgList);
-}
-
-void FindMatchLayer::startScrollingAvatarEffect(std::vector<std::string>& imgList)
-{
-	/*_avatarsScrolling = [];
-	return;
-
-	const nodeP2 = _bg._nodeP2;
-	if (!nodeP2._clippingNode) {
-		initAvatarClippingNode(nodeP2);
-	}
-
-	const height = nodeP2._nodeAvatar._imgAvatarMask.height;
-	const ref = this;
-	const trail = 3;
-	for (let i = 0; i < imgList.length; i++) {
-		let clippingNode = new cc.ClippingNode();
-		clippingNode.setPosition(0, -height / 2 + i * height * 1.3);
-		let stencil = new cc.Sprite(nodeP2._nodeAvatar._imgAvatarMask.getTexture());
-		stencil.setAnchorPoint(0.5, 0);
-		stencil.setScale(nodeP2._clippingNode.getStencil().getScaleX(), nodeP2._clippingNode.getStencil().getScaleY());
-		clippingNode.setAlphaThreshold(0.1);
-		clippingNode.setStencil(stencil);
-
-		const sprite = new cc.Sprite(imgList[i]);
-		let s = sprite;
-		_avatarsScrolling.push(clippingNode);
-		nodeP2._clippingNode.addChild(clippingNode, -i * 2);
-
-		const update = function(dt) {
-			if (ref._foundOpponent) return;
-			y -= 10 * height * 1.3 * dt;
-			if (y < -height * 1.5) {
-				y = height * 1.3 *(imgList.length - 1);
-			}
-		};
-
-		sprite.setAnchorPoint(0.5, 0);
-		gv.scaleToSize(sprite, nodeP2._imgAvatarBorder.width, nodeP2._imgAvatarBorder.height);
-		clippingNode.addChild(sprite);
-		clippingNode.scheduleUpdate();
-		clippingNode.update = update;
-		for (let j = 0; j < trail; j++) {
-			s.trail = new cc.Sprite(imgList[i]);
-			s.trail.setOpacity(0.6*(trail - j) / trail * 255);
-			s.trail.setAnchorPoint(0.5, 0);
-			gv.scaleToSize(s.trail, nodeP2._imgAvatarBorder.width, nodeP2._imgAvatarBorder.height);
-
-			let clippingNode = new cc.ClippingNode();
-			clippingNode.setPosition(0, -height / 2 + i * height * 1.3 + j * height * 1.3 / trail);
-			let stencil = new cc.Sprite(nodeP2._nodeAvatar._imgAvatarMask.getTexture());
-			stencil.setAnchorPoint(0.5, 0);
-			stencil.setScale(nodeP2._clippingNode.getStencil().getScaleX(), nodeP2._clippingNode.getStencil().getScaleY());
-			clippingNode.setStencil(stencil);
-			clippingNode.setAlphaThreshold(0.1);
-
-			clippingNode.addChild(s.trail);
-
-			clippingNode.scheduleUpdate();
-			clippingNode.update = update;
-			_avatarsScrolling.push(clippingNode);
-
-			s = s.trail;
-			nodeP2._clippingNode.addChild(clippingNode, -i * 2 - 1);
-		}
-	}*/
 }
 
 void FindMatchLayer::show()
@@ -339,4 +184,21 @@ void FindMatchLayer::show()
 
 	soundMgr->playBgSearchingOpponent();
 }
+
+void FindMatchLayer::setMode(GameMode mode)
+{
+	_gameMode = mode;
+	std::string modeName = "";
+	char text[20];
+	sprintf(text, "text_Mode_%d", mode);
+	modeName = languageMgr->localizedText(text);
+	_lbSubtitle->setString(modeName);
+}
+
+void FindMatchLayer::playWithBot(float dt)
+{
+	cheatHandler->requestCheatPlayWithBot(_gameMode, 0.85f);
+}
+
+const float FindMatchLayer::AUTO_FIND_BOT_TIME = 10.f;
 

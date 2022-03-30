@@ -12,6 +12,13 @@ ConfigMgr::ConfigMgr()
 ConfigMgr::~ConfigMgr()
 {
 	CC_SAFE_DELETE(typeCodecConfig);
+	CC_SAFE_DELETE(cueConfig);
+	CC_SAFE_DELETE(cueRangeConfig);
+	CC_SAFE_DELETE(shopConfig);
+	CC_SAFE_DELETE(offerConfig);
+	CC_SAFE_DELETE(channelConfig);
+	CC_SAFE_DELETE(spinConfig);
+	CC_SAFE_DELETE(gloveConfig);
 }
 
 void ConfigMgr::loadConfig()
@@ -23,6 +30,8 @@ void ConfigMgr::loadConfig()
 	channelConfig	= new ChannelConfig();
 	offerConfig		= new OfferConfig();
 	spinConfig		= new SpinConfig();
+	gloveConfig		= new GloveConfig();
+
 }
 
 rapidjson::Document * ConfigMgr::loadJsonFile(const char * pzName)

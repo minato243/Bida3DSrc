@@ -69,6 +69,19 @@ const double InitVertBallDistance = PhysicsConstants::BALL_RADIUS + 0.05;
 int TOTAL_LAYER = 5;
 double SQRT_3_InitVertBallDistance = sqrt(3) * InitVertBallDistance;
 
+const int PhysicsConstants::CUSHION_HEAD_ID = 2;
+const int PhysicsConstants::CUSHION_FOOT_ID = 0;
+const int PhysicsConstants::CUSHION_SIDE_1_ID = 1;
+const int PhysicsConstants::CUSHION_SIDE_2_ID = 3;
+
+
+const int PhysicsConstants::TOP_RIGHT_POCKET_ID = 0;
+const int PhysicsConstants::TOP_SIDE_POCKET_ID = 1;
+const int PhysicsConstants::TOP_LEFT_POCKET_ID = 2;
+const int PhysicsConstants::BOTTOM_LEFT_POCKET_ID = 3;
+const int PhysicsConstants::BOTTOM_SIDE_POCKET_ID = 4;
+const int PhysicsConstants::BOTTOM_RIGHT_POCKET_ID = 5;
+
 ps::PhysicsConstants::PhysicsConstants()
 {
 	initBallPosition();

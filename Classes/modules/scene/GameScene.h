@@ -80,7 +80,7 @@ public:
 
 	void hideLobbyGUI();
 
-	void showFindMatchLayer();
+	void showFindMatchLayer(GameMode mode);
 
 	void showIngameGUI();
 

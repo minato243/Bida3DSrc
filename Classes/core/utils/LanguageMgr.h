@@ -97,4 +97,5 @@ public:
 };
 static const std::string LANGUAGE_EN = "en";
 static const std::string LANGUAGE_ES = "es";
+static const std::string LANGUAGE_VI = "vi";
 #endif // LanguageMgr_h__

@@ -4,6 +4,7 @@
 #include "ItemConstant.h"
 #include "../../ui/GuiMgr.h"
 #include "../../network/game/GameHandler.h"
+#include "core/GameMgr.h"
 
 InventoryMgr::InventoryMgr()
 {
@@ -127,6 +128,51 @@ std::vector<CueInfoData *> InventoryMgr::getCueCollectionData(int type)
 	}
 
 	return ret;
+}
+
+void InventoryMgr::addItems(std::vector<ItemInfoData> *itemList)
+{
+	bool needUpdateLobby = false;
+	for (auto i = 0; i < itemList->size(); i++) {
+		ItemInfoData &item = itemList->at(i);
+		if (item.type == ItemConstant::GOLD) {
+			gameMgr->_userInfo->addGold(item.num);
+			needUpdateLobby = true;
+		}
+		else if (item.type == ItemConstant::CASH) {
+			gameMgr->_userInfo->addCash(item.num);
+			needUpdateLobby = true;
+		}
+		else _inventory->addItem(item.type, item.num);
+	}
+
+	if (needUpdateLobby) {
+		auto lobby = (LobbyUI *)gameMgr->_lobbyUI;
+		if (lobby->isRunning()) lobby->updateUserInfo(gameMgr->_userInfo);
+	}
+}
+
+void InventoryMgr::reduceItems(std::vector<ItemInfoData> *itemList)
+{
+	bool needUpdateLobby = false;
+	for (auto i = 0; i < itemList->size(); i++) {
+		ItemInfoData &item = itemList->at(i);
+		if (item.type == ItemConstant::GOLD) {
+			gameMgr->_userInfo->addGold(-item.num);
+			needUpdateLobby = true;
+		}
+		else if (item.type == ItemConstant::CASH) {
+			gameMgr->_userInfo->addCash(-item.num);
+			needUpdateLobby = true;
+		}
+		else _inventory->reduceItem(item.type, item.num);
+	}
+
+	if (needUpdateLobby) {
+		auto lobby = (LobbyUI *)gameMgr->_lobbyUI;
+		if (lobby->isRunning()) lobby->updateUserInfo(gameMgr->_userInfo);
+	}
+
 }
 
 void InventoryMgr::useNextCue()

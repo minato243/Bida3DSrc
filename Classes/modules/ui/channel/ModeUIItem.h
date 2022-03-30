@@ -65,7 +65,7 @@ private:
 	static const std::string BG_FEE[NUM_CHANNEL];
 
 public:
-	int _curMode;
+	GameMode _curMode;
 	int _ballRule;
 	int _channelId;
 

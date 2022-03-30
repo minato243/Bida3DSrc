@@ -33,9 +33,13 @@ public:
 
 	void showEightPoolModeSelection();
 
-	void gotoMode(int mode, int quick, int channelId = 1);
+	void gotoMode(GameMode mode, int quick, int channelId = 1);
 
-	void playWithBot(int mode, double accuracy);
+	void loadGamePrize();
+
+	void loadGameFee();
+
+	void playWithBot(GameMode mode, double accuracy);
 
 	void onResponeQuickMatch(ResponseJoinRoomMsg * pk);
 
@@ -117,9 +121,7 @@ public:
 
 	void logHistory();
 
-	void onEndGame(bool isWinner);
-
-	void onReceiveEndGame(bool isWinner, int callback);
+	void onReceiveEndGame(bool isWinner);
 
 	void onCallPocketFinish(int pocketId);
 
@@ -178,7 +180,6 @@ public:
 		bool _receivedJoinRoom;
 		
 		ResponseJoinRoomMsg *_currentGameInfo;
-		int _curGameMode;
 		int _gameId;
 		int _goldBet;
 
@@ -190,10 +191,14 @@ public:
 		ShootResultData _shootResult;
 		bool _receiveShootResult;
 
+		std::vector<ItemInfoData> _curGamePrize;
+		std::vector<ItemInfoData> _curGameFee;
+
 	public:
 		GameMode _currentMode;
 		int _channelId;
 		bool _startedMatch;
+		int _winner;
 
 		static const bool DEBUG_PLAY_ALONE = false;
 		static const ps::ExtMath::vector MIN_PLACING_BALL;

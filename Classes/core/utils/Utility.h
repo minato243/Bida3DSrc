@@ -2,6 +2,7 @@
 #define UTILITY_H_
 
 #include <stdio.h>
+#include "cocos2d.h"
 
 class Utility
 {

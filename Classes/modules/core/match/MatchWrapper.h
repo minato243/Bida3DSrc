@@ -84,7 +84,6 @@ private:
 	double _seed;
 
 	GameMode _gameMode;
-	bool _isWinner;
 	int _gameCount;
 	std::vector<int> _gameResults;
 	int _winner;

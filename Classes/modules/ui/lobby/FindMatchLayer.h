@@ -29,33 +29,22 @@ public:
 
 	void updateTimer(float dt);
 
-	void setPlayer2InfoVisible(bool isVisible);
 
 	void onFoundOpponent(const Player & p2Data);
 
 	void setInfo(GameMode mode, int ccu = -1);
 
-	void setPlayerInfo(int idx, const Player & player);
+	void setCCU(int ccu);
 
 	void onButtonRelease(cocos2d::ui::Button* button, int id);
 
-	void setLayout(GameMode mode);
-
-	void setLayoutRT1();
-
-	void setLayoutS2();
-
-	void setLayoutRT2();
-
-	void setPlayerAvatar(int idx, std::string avatarStr);
-
-	void initAvatarClippingNode(cocos2d::Node *node);
-
 	void reset();
 
-	void startScrollingAvatarEffect(std::vector<std::string> & imgList);
-
 	void show();
+
+	void setMode(GameMode mode);
+
+	void playWithBot(float dt);
 
 private:
 	cocos2d::Node *_nodeP1;
@@ -76,6 +65,10 @@ private:
 	float _timeElapsed;
 	bool _foundOpponent;
 	int _numDot;
+
+	GameMode _gameMode;
+
+	static const float AUTO_FIND_BOT_TIME;
 };
 
 #endif // !FIND_MATCH_LAYER_H

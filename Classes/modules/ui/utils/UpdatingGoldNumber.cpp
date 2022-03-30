@@ -33,11 +33,17 @@ void UpdatingGoldNumber::update(float dt)
 	{
 		_curNumber = _endNumber;
 		Director::getInstance()->getScheduler()->unschedule(_key, this);
+		_lb->setString(StringUtility::standartNumber(_curNumber));
+		delete this;
+		return;
 	}
-	else if (_curNumber < _endNumber)
+	else if (_d < 0 && _curNumber < _endNumber)
 	{
 		_curNumber = _endNumber;
 		Director::getInstance()->getScheduler()->unschedule(_key, this);
+		_lb->setString(StringUtility::standartNumber(_curNumber));
+		delete this;
+		return;
 	}
 
 	_lb->setString(StringUtility::standartNumber(_curNumber));

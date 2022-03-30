@@ -42,8 +42,6 @@ void EightBallPoolMatch::reset()
 	_players.push_back(p2);
 
 	_playerTurns[0] = 0; _playerTurns[1] = 0;
-	//_onBallPocketDelegates = [];
-	//_onWorldPauseDelegates = [];
 	
 	resetGameData();
 }
@@ -81,6 +79,8 @@ void EightBallPoolMatch::resetGameData()
 	_countTurnSkip = 0;
 	_listPockedBallByPlayer[0].clear();
 	_listPockedBallByPlayer[1].clear();
+
+	winner = -1;
 }
 
 void EightBallPoolMatch::setPlayerListOrder(const std::vector<Player>& players)
@@ -113,18 +113,19 @@ bool EightBallPoolMatch::onBreakTurnFinished(std::vector<PocketBallData>& pocket
 	CCLOG("is cue ball collide cushion: ", isCollideCushion);
 
 	if (ballCollideCushionCount < 4 && countPocketedBalls < 1) {
-		// notify(GuiMgr.ANNOUNCE_FOUL, "not enough 4 balls collide || no pocketed ball");
+		CCLOG("ballCollideCushionCount < 4 && countPocketedBalls < 1");
 		_foulList.push_back(languageMgr->localizedText("foul_break_not_enough_ball"));
 		valid = false;
 	}
 
 	if (isCollideCushion) {
+		CCLOG("isCollideCushion");
 		// notify(GuiMgr.ANNOUNCE_FOUL, "cue ball collide cushion first")
 		_foulList.push_back(languageMgr->localizedText("foul_break_touch_cushion"));
 		valid = false;
 	}
 
-	CCLOG("break turn (client) valid: " + valid);
+	CCLOG("break turn (client) valid: ", valid?"true":"false");
 	if (!valid) {
 		if (isCueBallFell) {
 			_foul = true;
@@ -198,6 +199,7 @@ int EightBallPoolMatch::getNextPlayerIdx(int idx)
 
 void EightBallPoolMatch::notifyFoul(int player, WinData * win, bool placeBall)
 {
+	CCLOG("EightBallPoolMatch::notifyFoul");
 	if (_foulList.size() == 0) return;
 	if (player == -1) player = getNextPlayerIdx();
 
@@ -679,7 +681,6 @@ void EightBallPoolMatch::letPlayerSetCueBallPosition(int pId)
 	_isSetBallPosition = true;
 	_playerThatSetBallPos = pId;
 
-	highlightValidBall(pId);
 	if(gameMgr->_userInfo->_uId == getPlayerIdFromIdx(pId))
 		_manager->startPlacingCueBall();
 }
@@ -704,10 +705,10 @@ void EightBallPoolMatch::setManager(MatchWrapper * manager)
 
 void EightBallPoolMatch::onPlayerWin(int pId, std::string msg)
 {
+	CCLOG("EightBallPoolMatch::onPlayerWin");
 	_paused = true;
 	_manager->onGameFinished(pId);
 	_table->hideAllHighlightPockets();
-	gameHandler->sendFakeEndGame();
 }
 
 void EightBallPoolMatch::notify(AnnounceType type, std::string str, const CUSTOM_CALLBACK & callback)
@@ -829,6 +830,8 @@ void EightBallPoolMatch::start(int firstPlayer)
 	_lastCollide = -1;
 	_curPlayerIdx = firstPlayer;
 	_curPlayerRemainTime = TURN_TIME;
+
+	_table->getWorld()->reset();
 }
 
 void EightBallPoolMatch::subscribeToTable(Table *table)
@@ -837,6 +840,12 @@ void EightBallPoolMatch::subscribeToTable(Table *table)
 	_table = table;
 	_pauseDelegateIdx = table->subscribeOnPaused(CC_CALLBACK_0(EightBallPoolMatch::onWorldPaused, this));
 	_eventDelegateIdx = table->subscribeTableEvents(CC_CALLBACK_2(EightBallPoolMatch::onTableEvent, this));
+}
+
+void EightBallPoolMatch::unsubscribeEverything()
+{
+	_table->unsubscribeOnPaused(_pauseDelegateIdx);
+	_table->unsubscribeTableEvents(_eventDelegateIdx);
 }
 
 void EightBallPoolMatch::onTableEvent(TableEventType eventType, TableEventData * event)
@@ -937,8 +946,6 @@ void EightBallPoolMatch::onWorldPaused()
 	// this is the first turn, has different rule
 	if (_breakTurn) {
 		bool rightBreak = onBreakTurnFinished(pocketBalls, isCueBallFell, isEightBallFell, win);
-		logAndCompareBallPosition();
-
 		if (!rightBreak) return;
 	}
 	else {
@@ -976,9 +983,6 @@ void EightBallPoolMatch::onWorldPaused()
 
 	auto ballBodys = gameMgr->_table->getWorld()->allBalls();
 	if (_foul) {
-		CCLOG("Foul!!");
-		//if (_players[_curPlayerIdx].id == gameMgr->_userInfo->_uId || _players[_curPlayerIdx].id < 0)
-		//	gameMgr->_ebpCtrl->sendFakeClientResult(_foul, !hasBallTypePocketed, _curTurnPocketBall, ballBodys);
 		notifyFoul(-1, win);
 		return;
 	}
@@ -1134,19 +1138,14 @@ void EightBallPoolMatch::startTurnPlayer(int idx, bool ignoreNotifyTurn)
 		letPlayerSelectPocket(idx);
 	}
 
-	//if (!_serverFinish && _turn != 0) return;
-
 	if (_waitingPlayerIdx != -1 && _waitingPlayerIdx != idx && _turn != 0) {
 		CCLOG("server has different result - use result of server. SERVER: %d. CLIENT: ", idx, idx);
 		if (!(EightBallPollCtrl::DEBUG_PLAY_ALONE || isCurPlayer(idx)) || !isPlayerFinishAllBallOfType(idx)) {
 			_manager->undoLetPlayerCallPocket();
 		}
 	}
-	// CCLOG("start turn player " + idx);
-
 	auto nextTurnSetBall = _foul;
 
-	// CCLOG("Start turn player", idx, ignoreNotifyTurn, _turn);
 	_foul = false;
 	_turn += ignoreNotifyTurn ? 0 : 1;
 	_playerTurns[idx]++;
@@ -1183,27 +1182,15 @@ void EightBallPoolMatch::startTurnPlayer(int idx, bool ignoreNotifyTurn)
 		letPlayerSetCueBallPosition(idx);
 	}
 
-	// CCLOG("isPlayerFinishAllBallOfType(idx)", isPlayerFinishAllBallOfType(idx));
-	// if(!nextTurnSetBall && (DEBUG_PLAY_ALONE || idx === 0) && isPlayerFinishAllBallOfType(idx)){
-	//     CCLOG("Let player select pocket");
-	//     letPlayerSelectPocket(idx);
-	// }
-
-	highlightValidBall(_curPlayerIdx);
 	int curPlayerId = getPlayerIdFromIdx(_curPlayerIdx);
 	gameMgr->_ebpCtrl->onStartPlayerTurn(curPlayerId);
 
 	if(idx != _oldPlayerIdx)
 		notify(isCurTeam(idx) ? AnnounceType::ANNOUNCE_PLAYER_TURN : AnnounceType::ANNOUNCE_OPPONENT_TURN);
-	
 
 	if (switchPlayer)
 	{
 		gameMgr->_ebpCtrl->onSwitchPlayer(_players[idx].id, _foul);
-	}
-
-	if (EightBallPollCtrl::DEBUG_PLAY_ALONE) {
-		gameMgr->_ebpCtrl->onSwitchPlayer(userInst->_uId, _breakTurn && !ignoreNotifyTurn && _isSetBallPosition);
 	}
 }
 

@@ -92,7 +92,7 @@ void GameScene::initTable() {
     this->_table = table;
 	table->setEfkManager(_efkManager);
 
-    this->_table->initGuildLine();
+    //this->_table->initGuildLine();
 }
 
 void GameScene::initCue()
@@ -464,15 +464,16 @@ void GameScene::hideLobbyGUI()
 	_lobbyUI->setVisible(false);
 }
 
-void GameScene::showFindMatchLayer()
+void GameScene::showFindMatchLayer(GameMode mode)
 {
 	if (!_findMatchUI)
 	{
 		_findMatchUI = (FindMatchLayer*) guiMgr->getGui(Popup::FIND_MATCH_LAYER);
 	}
-	_findMatchUI->show();
-	_findMatchUI->setInfo(RT1);
+	_findMatchUI->setInfo(mode);
 	_findMatchUI->reset();
+	_findMatchUI->show();
+
 	hideLobbyGUI();
 }
 

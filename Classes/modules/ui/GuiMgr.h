@@ -195,6 +195,10 @@ public:
 
 	void showOkCancelPopup(const std::string &title, const std::string &message, const MessagePoup::PopupListener & callback, std::string okText = "Ok", std::string cancelText = "Cancel");
 
+	void showNotifyPopup(const std::string& title, const std::string& message, CUSTOM_CALLBACK callback = NULL);
+
+	void showNotifyPopup(const std::string& title, const std::string& message,const std::string& confirmText, CUSTOM_CALLBACK callback = NULL);
+
 private:
 	std::vector<cocos2d::ui::Text *> _notifies;
 	std::vector<cocos2d::Action *> _actions;

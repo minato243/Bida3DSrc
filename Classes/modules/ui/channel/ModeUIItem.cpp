@@ -52,7 +52,7 @@ void ModeUIItem::initGUI()
 
 void ModeUIItem::loadData(SelectModeData *data)
 {
-	_curMode = data->mode;
+	_curMode = (GameMode)data->mode;
 	_ballRule = data->rule;
 	_channelId = data->id;
 	CCLOG("ModeUIItem::loadData, %d, %d, %d", _curMode, _ballRule, _channelId);

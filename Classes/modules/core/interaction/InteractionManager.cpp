@@ -148,9 +148,12 @@ void InteractionManager::switchTurn(Turns turn, bool isPlacingCueBall, bool isCa
 	if (!isCallingPocket)
 	{
 		_cue->animateVisible(false, [this]() {
-			gameMgr->setEnableGuildLine(true);
-			gameMgr->_table->setGuildLineVisible(true);
-			gameMgr->updateBasicGuildLine();
+			CCLOG("_cue->animateVisible");
+			if (!gameMgr->_table->getWorld()->isRunning()) {
+				gameMgr->setEnableGuildLine(true);
+				gameMgr->_table->setGuildLineVisible(true);
+				gameMgr->updateBasicGuildLine();
+			}
 		});
 	}
 	
@@ -224,6 +227,9 @@ void InteractionManager::onChangeAngle(float angle)
 
 void InteractionManager::updateCueRPTDirection(Rpt rpt)
 {
+	if (gameMgr->_ebpCtrl->getCurMatch() != NULL && !gameMgr->_ebpCtrl->getCurMatch()->_serverFinish)
+		return;
+
 	_cue->updateDirection(ps::ExtMath::vector::reverse(SphericalCoord::direction(rpt)));
 	gameMgr->updateTrajectory();
 	updateUIAngle();
@@ -299,8 +305,8 @@ void InteractionManager::handleInteractMoving3D(cocos2d::Vec2 velocity)
 	auto lookAt = cueBallLockAt();
 
 	if (abs(velocity.x) > abs(velocity.y)) {
-		//if (_ct->isLockP())
-		//	return;
+		if (_ct->isLockP())
+			return;
 
 		_cueRPT.p -= velocity.x * DX_DELTA_MOVING;
 		_cas->setOffsetV(0);
@@ -397,9 +403,6 @@ void InteractionManager::submitSelectPocket()
 	{
 		_cue->setVisible(true);
 		_flagCallPocket = false;
-		gameMgr->_table->highlightBalls();
-		gameMgr->_table->highlightCueAndEightBall(false);
-		
 		gameMgr->_ebpCtrl->onCallPocketFinish(_pocketId);
 		_pocketId = -1;
 		gameMgr->_ingameUI->setMyTurnLayout();
@@ -455,8 +458,10 @@ ps::ExtMath::vector InteractionManager::cueBallLockAt()
 
 void InteractionManager::updateIngamePlacingPosition()
 {
+	if (gameMgr->_table->getWorld()->isRunning())
+		return;
 	auto cueBallPosition = _cueBall->body()->position();
-		auto ballLocation = _camera->worldPositionToWindowLocation(cueBallPosition);
+	auto ballLocation = _camera->worldPositionToWindowLocation(cueBallPosition);
 	ballLocation.x += BALL_PLACING_OFFSET.x;
 	ballLocation.y += BALL_PLACING_OFFSET.y;
 
@@ -749,6 +754,8 @@ void InteractionManager::enableViewerMode()
 
 	_ingameUI->setEnemyTurnLayout();
 	_touchMgr->lock(_handleTouchOnPocketId);
+	_touchMgr->lock(_handleInteractMovingId);
+	_touchMgr->lock(_handleTouchDirectionId);
 
 	if (_flagCamMode != CamModes::MODE_FREE) {
 		_touchMgr->lockUntilReleaseIfTouching();

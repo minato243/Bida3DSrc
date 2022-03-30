@@ -60,9 +60,9 @@ void MatchWrapper::sendFinishAnim()
 void MatchWrapper::resetRack()
 {
 	CCLOG("MatchWrapper::resetRack");
-	//MainLayer.instance.resetBallPosition();
-	//this._table.world()._flags.break = false;
 	gameMgr->_table->reset();
+	PhysicsWorldV2 *world = gameMgr->_table->getWorld();
+	world->setBreak(false);
 }
 
 void MatchWrapper::onGameFinished(int pId)
@@ -128,9 +128,10 @@ void MatchWrapper::letPlayerCallPocket(int pId)
 	}
 }
 
-void MatchWrapper::onMatchEnd(int pId)
+void MatchWrapper::onMatchEnd(int winnerIdx)
 {
-	bool isWin = pId == 0;
+	bool isWin = winnerIdx == 0;
+	_winner = winnerIdx;
 	soundMgr->playWin(isWin);
 	notify(
 		isWin ? AnnounceType::ANNOUNCE_WIN : AnnounceType::ANNOUNCE_LOSE, 
@@ -142,7 +143,7 @@ void MatchWrapper::onMatchEnd(int pId)
 void MatchWrapper::onNotifyEndGameComplete()
 {
 	sendFinishAnim();
-	gameMgr->_ebpCtrl->onMatchEnd(_isWinner);
+	gameMgr->_ebpCtrl->onMatchEnd(_winner == 0);
 }
 
 void MatchWrapper::notify(AnnounceType type, const std::string & message, const CUSTOM_CALLBACK & callback)

@@ -77,6 +77,10 @@ public:
 
 	int subscribeTableEvents(const TableEventCallBack & tableEventCallBack);
 
+	void unsubscribeOnPaused(int id);
+
+	void unsubscribeTableEvents(int id);
+
 	virtual void onEnter();
 
 	void step(float dt);
@@ -203,8 +207,8 @@ private:
 
 	ps::ExtMath::vector _pocketsPos[6];
 
-	std::vector<TableOnPauseCallBack> _onPausedCallbacks;
-	std::vector<TableEventCallBack> _tableEventListener;
+	std::map<int, TableOnPauseCallBack> _onPausedCallbacks;
+	std::map<int, TableEventCallBack> _tableEventListener;
 
 	bool _effectChargeVisible;
 

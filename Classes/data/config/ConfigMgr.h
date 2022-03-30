@@ -9,6 +9,7 @@
 #include "ChannelConfig.h"
 #include "OfferConfig.h"
 #include "SpinConfig.h"
+#include "GloveConfig.h"
 
 #define configMgr ConfigMgr::getInstance()
 
@@ -30,6 +31,7 @@ public:
 	ChannelConfig	*channelConfig;
 	OfferConfig		*offerConfig;
 	SpinConfig		*spinConfig;
+	GloveConfig		*gloveConfig;
 
 private:
 	static ConfigMgr * _instance;

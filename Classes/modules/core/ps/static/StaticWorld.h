@@ -32,6 +32,7 @@ namespace ps
 		static const double CORNER_POCKET_WIDTH;
 		static const double CORNER_POCKET_RADIUS;
 		static const double SIDE_POCKET_RADIUS;
+		static const double SUB_SEG_OFFSET;
 
 		static const double MIDDLE_SEG_OFFSET;
 		static const double CORN_SEG_OFFSET;
@@ -75,10 +76,10 @@ namespace ps
 
 
 	public:
-		static const int CUSHION_HEAD_ID = PhysicsConstants::CUSHION_HEAD_ID;
-		static const int CUSHION_FOOT_ID = PhysicsConstants::CUSHION_FOOT_ID;
-		static const int CUSHION_SIDE_1_ID = PhysicsConstants::CUSHION_SIDE_1_ID;
-		static const int CUSHION_SIDE_2_ID = PhysicsConstants::CUSHION_SIDE_2_ID;
+		static const int CUSHION_HEAD_ID;
+		static const int CUSHION_FOOT_ID;
+		static const int CUSHION_SIDE_1_ID;
+		static const int CUSHION_SIDE_2_ID;
 
 	public:
 		class CollisionEvent
@@ -175,6 +176,10 @@ namespace ps
 			BasicSegment(const vector & s, const vector & e, const vector & dir);
 
 			virtual ~BasicSegment() {};
+
+			void collapseEndPoint(double delta);
+
+			void collapseStartPoint(double delta);
 		};
 
 		class M_Matrix
@@ -216,6 +221,11 @@ namespace ps
 
 			CushionSegment(const vector & start, const vector & end, const vector & dir, BasicSegment *exclude);
 
+			CushionSegment(int id, const vector & start, const vector & end, const vector & dir, BasicSegment *exclude);
+
+			CushionSegment(int id, const vector & start, const vector & end, const vector & dir);
+
+			CushionSegment(int id, const vector & start, const vector & end);
 		};
 
 		class Pocket

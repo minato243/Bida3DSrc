@@ -260,6 +260,11 @@ void IngameEightBallPoolUI::startMatch(EightBallPoolMatch *match)
 {
 	IngameBaseUI::startMatch(match);
 	_curPlayerIdx = -1;
+
+	_nodeRemainBall1->setVisible(false);
+	_nodeRemainBall2->setVisible(false);
+	_nodeEightBall1->setVisible(false);
+	_nodeEightBall2->setVisible(false);
 }
 
 void IngameEightBallPoolUI::updateRemainingBalls(int pId, std::vector<int> balls)
@@ -362,7 +367,7 @@ void IngameEightBallPoolUI::setDefaultUI()
 		getControl("nodeRemainBalls", img)->setOpacity(0);
 		getControl("boxAvatar_0", img)->setOpacity(255);
 		getControl("boxAvatar_1", img)->setOpacity(0);
-		getControl("_boxBia", img)->setScale(0);
+		getControl("boxBia", img)->setScale(0);
 	}
 }
 

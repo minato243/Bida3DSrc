@@ -7,6 +7,7 @@
 #include "../../../core/utils/Avatar.h"
 #include "../utils/UpdatingGoldNumber.h"
 #include "core/utils/StringUtility.h"
+#include "../../core/channel/ChannelMgr.h"
 
 USING_NS_CC;
 using namespace cocos2d::ui;
@@ -113,10 +114,16 @@ void ResultGUILayer::onButtonRelease(cocos2d::ui::Button* button, int id)
 
 void ResultGUILayer::loadData(GameMode gameMode, int channelId, int winner)
 {
+	CCLOG("ResultGUILayer::loadData %d %d %d", gameMode, channelId, winner);
 	//set list reward
 	_gameMode = gameMode;
 	_winner = winner;
 	_channelId = channelId;
+
+	if (_gameMode != GameMode::STREAK_MODE) {
+		auto itemList = channelMgr->getListItemWin(gameMode, channelId);
+		_listGift.insert(_listGift.begin(), itemList.begin(), itemList.end());
+	}
 
 	_text_Game_1->setVisible(gameMode == GameMode::STREAK_MODE);
 	_text_Game_2->setVisible(gameMode == GameMode::STREAK_MODE);
@@ -139,7 +146,7 @@ void ResultGUILayer::loadData(GameMode gameMode, int channelId, int winner)
 		_imageWinLose->setSpriteFrame("EndGame_YOULOSE.png");
 	}
 
-	_img_Channel->setSpriteFrame(ModeUIItem::NAME_CHANNEL[channelId - 1]);
+	_img_Channel->setSpriteFrame(ModeUIItem::NAME_CHANNEL[channelId]);
 	_imageMode->setSpriteFrame(ModeUIItem::NAME_MODE[gameMode - 1]);
 	getControl("left", _imageMode)->setPositionX(0);
 	getControl("right", _imageMode)->setPositionX(_imageMode->getContentSize().width);
@@ -148,7 +155,6 @@ void ResultGUILayer::loadData(GameMode gameMode, int channelId, int winner)
 
 void ResultGUILayer::loadDataStreak(const std::vector<bool> & listStreak)
 {
-
 	if (listStreak.size() > 1)
 	{
 		_check_1->setVisible(true);
@@ -166,14 +172,14 @@ void ResultGUILayer::loadDataStreak(GameMode _gameMode, int channelId, int winne
 	loadDataStreak(listStreak);
 }
 
-void ResultGUILayer::loadDataRT1(int channelId, int winner)
+void ResultGUILayer::loadDataRT1(int channelId, int winnerIdx)
 {
-	loadData(GameMode::QUICK_MODE, channelId, winner);
+	loadData(GameMode::QUICK_MODE, channelId, winnerIdx);
 	Sprite *img_Number0 = (Sprite *)getControl("img_Number", _panelUser_0);
 	Sprite *img_Number1 = (Sprite *)getControl("img_Number", _panelUser_1);
 
-	img_Number0->setSpriteFrame(winner == 0 ? "1_a.png" : "0_a.png");
-	img_Number1->setSpriteFrame(winner == 0 ? "0_b.png" : "1_b.png");
+	img_Number0->setSpriteFrame(winnerIdx == 0 ? "1_a.png" : "0_a.png");
+	img_Number1->setSpriteFrame(winnerIdx == 0 ? "0_b.png" : "1_b.png");
 }
 
 void ResultGUILayer::loadDataRT2(int channelId, int winner, int scoreP1, int scoreP2)
@@ -317,7 +323,7 @@ void ResultGUILayer::show()
 	else {
 		runAction(Sequence::create(
 			DelayTime::create(timeDelay),
-			CallFunc::create(CC_CALLBACK_0(ResultGUILayer::runFXExp, this)),
+			CallFunc::create(CC_CALLBACK_0(ResultGUILayer::runFXMinus, this)),
 			NULL
 		));
 		timeDelay += 1;
@@ -346,14 +352,14 @@ void ResultGUILayer::moveToDefaultPos(cocos2d::Node *node, float delayTime, floa
 
 void ResultGUILayer::runFXExp()
 {
-	//TODO
+	
 }
 
 void ResultGUILayer::runFXMinus()
 {
 	if (_listGift.size() == 0)
 		return;
-	long long gold = _listGift[0]._quantity;
+	long long gold = _listGift[0].num;
 	if (_gameMode == GameMode::RT3_MODE)
 		return;
 
@@ -363,7 +369,7 @@ void ResultGUILayer::runFXMinus()
 		lb = (Text *)getControl("lbGold", getControl("goldBar", _panelUser_0));
 	}
 	else {
-		lb = (Text *)getControl("lbGold", getControl("goldBar", _panelUser_0));
+		lb = (Text *)getControl("lbGold", getControl("goldBar", _panelUser_1));
 		player = _listPlayer[1];
 	}
 
@@ -465,6 +471,7 @@ bool PlayerInfoRT3::init()
 	_gui->setScale(0.8f);
 
 	initGUI();
+	return true;
 }
 
 void PlayerInfoRT3::initGUI()

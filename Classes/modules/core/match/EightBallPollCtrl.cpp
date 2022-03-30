@@ -14,6 +14,10 @@
 #include "../../utils/SoundMgr.h"
 #include "../../ui/ingame/DisconnectPopup.h"
 #include "../../ui/endgame/ResultGUILayer.h"
+#include "../utils/Utils.h"
+#include "core/utils/Utility.h"
+#include "../channel/ChannelMgr.h"
+#include "../inventory/ItemConstant.h"
 
 USING_NS_CC;
 using namespace ps;
@@ -36,6 +40,7 @@ EightBallPollCtrl::EightBallPollCtrl()
 	_currentMode = NO_MODE;
 	_channelId = 0;
 	_receiveShootResult = false;
+	_winner = -1;
 }
 
 EightBallPollCtrl::~EightBallPollCtrl()
@@ -122,7 +127,7 @@ void EightBallPollCtrl::receiveChannelInfo(int ccu)
 	if (_currentMode != RT3_MODE)
 	{
 		auto findMatchUI = (FindMatchLayer *)guiMgr->getGui(Popup::FIND_MATCH_LAYER);
-		findMatchUI->setInfo((GameMode)_curGameMode, ccu);
+		findMatchUI->setCCU(ccu);
 		findMatchUI->show();
 	}
 }
@@ -220,6 +225,8 @@ bool EightBallPollCtrl::checkShootResult()
 void EightBallPollCtrl::receiveShoot(ShootData shot)
 {
 	CCLOG("Rcv Shoot force = %f, direction (%f %f %f)", shot.force, shot.direction.x, shot.direction.y, shot.direction.z );
+	CUSTOMLOG("EightBallPollCtrl::receiveShoot, direction %s %s %s", 
+		getBinaryDouble(shot.direction.x).c_str(), getBinaryDouble(shot.direction.y).c_str(), getBinaryDouble(shot.direction.z).c_str());
 	Cue *cue = gameMgr->_table->getCue();
 	cue->updateDirection(shot.direction);
 	cue->setOffset(ps::ExtMath::vector(shot.offsetX, shot.offsetY));
@@ -244,7 +251,7 @@ void EightBallPollCtrl::startMatch(StartMatchMsg * pk, bool isFirst)
 	_callingPocket = SelectPocketState::CANNOT_SELECT;
 	interactionMgr->startNewMatch();
 
-	_curMatch->_manager->init((GameMode)_curGameMode);
+	_curMatch->_manager->init((GameMode)_currentMode);
 	_curMatch->setPlayerListOrder(pk->players);
 	_curMatch->subscribeToTable(gameMgr->_table);
 	_curMatch->start(isFirst?0:1);
@@ -266,9 +273,11 @@ void EightBallPollCtrl::startMatch(StartMatchMsg * pk, bool isFirst)
 		auto ingameUI = ((IngameEightBallPoolUI*)gameScene->_ingameUI);
 
 		ingameUI->resetActivePlayer();
-		ingameUI->setGameMode((GameMode)_curGameMode);
+		ingameUI->setGameMode((GameMode)_currentMode);
 		ingameUI->setVisible(true);
 		ingameUI->startMatch(_curMatch);
+		if (isFirst) ingameUI->setMyTurnLayout();
+		else ingameUI->setEnemyTurnLayout();
 	}
 }
 
@@ -361,7 +370,11 @@ void EightBallPollCtrl::onBeforeShoot()
 
 void EightBallPollCtrl::onMatchEnd(bool isWinner)
 {
-	switch (_curGameMode)
+	resetMatch();
+	gameMgr->_ingameUI->setVisible(false);
+	_curMatch->unsubscribeEverything();
+
+	switch (_currentMode)
 	{
 	case GameMode::QUICK_MODE:
 	{
@@ -386,14 +399,27 @@ void EightBallPollCtrl::onMatchEnd(bool isWinner)
 		break;
 	}
 	}
+
+	if (_winner == 0) {
+		inventoryMgr->addItems(&_curGamePrize);
+	}
+	inventoryMgr->reduceItems(&_curGameFee);
 }
 
 void EightBallPollCtrl::onMatchRT1End(bool isWinner)
 {
+	CCLOG("EightBallPollCtrl::onMatchRT1End isWinner = %s", isWinner?"true":"false");
+	if (isWinner) {
+		_players[1].gold -= _curGameFee.at(0).num;
+	}
+	else {
+		_players[0].gold -= _curGameFee.at(0).num;
+	}
+
 	auto resultGui = (ResultGUILayer*) guiMgr->getGui(Popup::RESULT_GIFT_LAYER);
+	resultGui->loadDataRT1(_channelId, isWinner ? 0 : 1);
 	resultGui->loadUserInfo(_players);
 	resultGui->show();
-	resultGui->loadData(QUICK_MODE, _channelId, isWinner ? 0 : 1);
 }
 
 void EightBallPollCtrl::onMatchS2End(bool isWinner)
@@ -405,13 +431,19 @@ void EightBallPollCtrl::onMatchS2End(bool isWinner)
 
 	auto resultGui = (ResultGUILayer*)guiMgr->getGui(Popup::RESULT_GIFT_LAYER);
 	resultGui->loadDataStreak(STREAK_MODE, _channelId, isWinner ? 0 : 1, listStreak);
-	resultGui->show();
-
 	resultGui->loadUserInfo(_players);
+	resultGui->show();
 }
 
 void EightBallPollCtrl::onMatchRT2End(bool isWinner)
 {
+	if (isWinner) {
+		_players[1].gold -= _curGameFee.at(0).num;
+	}
+	else {
+		_players[0].gold -= _curGameFee.at(0).num;
+	}
+
 	auto resultGui = (ResultGUILayer*)guiMgr->getGui(Popup::RESULT_GIFT_LAYER);
 
 	int *scores = _curMatch->_manager->getScore();
@@ -444,12 +476,19 @@ void EightBallPollCtrl::setShootResult(ShotResultMsg * data)
 	checkShootResult();
 }
 
-void EightBallPollCtrl::onEndGame(bool isWinner)
+void EightBallPollCtrl::onReceiveEndGame(bool isWinner)
 {
-	_curMatch->onEndGame(isWinner ? 0 : 1);
-	gameMgr->_ingameUI->setVisible(false);
-	_curMatch->reset();
-	gameMgr->_table->reset();
+	CCLOG("EightBallPollCtrl::onEndGame isWinner = %s", isWinner?"true":"false");
+	PhysicsWorldV2 *world = gameMgr->_table->getWorld();
+	if (world->isRunning()) {
+		_curMatch->winner = isWinner ? 0 : 1;;
+	}
+	else {
+		_curMatch->onEndGame(isWinner ? 0 : 1);
+		gameMgr->_ingameUI->setVisible(false);
+		_curMatch->reset();
+		gameMgr->_table->reset();
+	}
 }
 
 void EightBallPollCtrl::onCallPocketFinish(int pocketId)
@@ -481,7 +520,7 @@ void EightBallPollCtrl::cancelRT3Matching()
 	_currentMode = GameMode::NO_MODE;
 }
 
-void EightBallPollCtrl::gotoMode(int mode, int quick, int channelId)
+void EightBallPollCtrl::gotoMode(GameMode mode, int quick, int channelId)
 {
 	_currentMode = (GameMode)mode;
 	_channelId = channelId;
@@ -494,15 +533,42 @@ void EightBallPollCtrl::gotoMode(int mode, int quick, int channelId)
 
 	matchHandler->fetchChannelInfo(mode, quick);
 	matchHandler->requestQuickMatch(mode, quick, channelId);
-	((GameScene*)gameMgr->_scene)->showFindMatchLayer();
+	((GameScene*)gameMgr->_scene)->showFindMatchLayer((GameMode)mode);
+	
+	loadGameFee();
+	loadGamePrize();
 }
 
-void EightBallPollCtrl::playWithBot(int mode, double accuracy)
+void EightBallPollCtrl::loadGamePrize()
+{
+	_curGamePrize.clear();
+	std::vector<ItemInfoData> itemList = channelMgr->getListItemWin(_currentMode, _channelId);
+	_curGamePrize.insert(_curGamePrize.begin(), itemList.begin(), itemList.end());
+
+	if (_currentMode == GameMode::RT3_MODE || _currentMode == GameMode::RT2_MODE) {
+		int num = channelMgr->getGlovePrizeByCurrentGlove();
+		_curGamePrize.push_back(ItemInfoData(ItemConstant::GLOVE, num));
+	}
+}
+
+void EightBallPollCtrl::loadGameFee()
+{
+	_curGameFee.clear();
+	std::vector<ItemInfoData> itemList = channelMgr->getListItemFee(_currentMode, _channelId);
+	_curGameFee.insert(_curGameFee.begin(), itemList.begin(), itemList.end());
+
+	if (_currentMode == GameMode::RT3_MODE || _currentMode == GameMode::RT2_MODE) {
+		int num = channelMgr->getGloveFeeByCurrentGlove();
+		_curGameFee.push_back(ItemInfoData(ItemConstant::GLOVE, num));
+	}
+}
+
+void EightBallPollCtrl::playWithBot(GameMode mode, double accuracy)
 {
 	matchHandler->fetchChannelInfo(GameMode::QUICK_MODE, true);
 	cheatHandler->requestCheatPlayWithBot(mode, accuracy);
 
-	((GameScene*)gameMgr->_scene)->showFindMatchLayer();
+	((GameScene*)gameMgr->_scene)->showFindMatchLayer(mode);
 }
 
 void EightBallPollCtrl::onResponeQuickMatch(ResponseJoinRoomMsg * data)
@@ -544,7 +610,7 @@ void EightBallPollCtrl::onReceiveStartingMatchPacket(StartMatchMsg * pk)
 	}
 
 	if (_gameId == pk->gameId) {
-		if (_curGameMode == GameMode::QUICK_MODE) {
+		if (_currentMode == GameMode::QUICK_MODE) {
 		}
 
 		if (hasNextGame())
@@ -569,7 +635,6 @@ void EightBallPollCtrl::onReceiveStartNextGame(StartMatchMsg *pk)
 	interactionMgr->startNewMatch();
 
 	_curMatch->setPlayerListOrder(pk->players);
-	_curMatch->subscribeToTable(gameMgr->_table);
 	_curMatch->applySeed(pk->seed);
 	_startedMatch = true;
 
@@ -584,7 +649,7 @@ void EightBallPollCtrl::onReceiveStartNextGame(StartMatchMsg *pk)
 		auto ingameUI = ((IngameEightBallPoolUI*)gameScene->_ingameUI);
 
 		ingameUI->resetActivePlayer();
-		ingameUI->setGameMode((GameMode)_curGameMode);
+		ingameUI->setGameMode((GameMode)_currentMode);
 		ingameUI->setVisible(true);
 		ingameUI->startMatch(_curMatch);
 	}
@@ -600,7 +665,7 @@ void EightBallPollCtrl::setGameInfo(ResponseJoinRoomMsg * data)
 {
 	CC_SAFE_DELETE(_currentGameInfo);
 	_currentGameInfo = data;
-	_curGameMode = data->gameMode;
+	_currentMode = data->gameMode;
 	CCLOG("on Found opponent:", data);
 	_gameId = data->gameId;
 	

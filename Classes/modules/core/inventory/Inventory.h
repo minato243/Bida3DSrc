@@ -128,6 +128,8 @@ public:
 
 	ItemInfo * addItem(int id, int quantity);
 
+	bool reduceItem(int id, int quantity);
+
 	int getDust(int dustType);
 
 	void reduceItemQuantity(int id, int quantity);

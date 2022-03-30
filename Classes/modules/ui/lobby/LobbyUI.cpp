@@ -14,6 +14,8 @@
 #include "../global/DebugNode.h"
 #include "core/utils/StringUtility.h"
 #include "../../utils/SoundMgr.h"
+#include "../../core/channel/ChannelMgr.h"
+#include "core/utils/LanguageMgr.h"
 
 USING_NS_CC;
 using namespace cocos2d::ui;
@@ -114,16 +116,7 @@ void LobbyUI::onButtonRelease(cocos2d::ui::Button* button, int id)
 	}
 	case TAG::SETTING:
 	{
-		/*auto rt3Gui = guiMgr->getGui(Popup::RT3_FIND_MATCH_LAYER);
-		rt3Gui->show();*/
-		//guiMgr->getGui(Popup::DEBUG_DIALOG)->show();
-		auto resultGui = (ResultGUILayer *)guiMgr->getGui(Popup::RESULT_GIFT_LAYER);
-		resultGui->loadDataRT3(1, 1,1,1);
-		resultGui->fakeRT3UserData();
-		resultGui->show();
-		//auto midgameFx = (IngameMidFX *)guiMgr->getGui(Popup::INGAME_MID_GAME_FX);
-		//midgameFx->show();
-		//midgameFx->runFX(2, 1, 0);
+		guiMgr->getGui(Popup::DEBUG_DIALOG)->show();
 		break;
 	}
 		
@@ -139,12 +132,17 @@ void LobbyUI::onButtonRelease(cocos2d::ui::Button* button, int id)
 
 void LobbyUI::playNow()
 {
-	//gameMgr->_ebpCtrl->gotoMode(GameMode::RT1, true);
-	gameMgr->_ebpCtrl->playWithBot(GameMode::QUICK_MODE, 0.85);
+	if (channelMgr->joinChannel(GameMode::QUICK_MODE, 1)) {
+		gameMgr->_ebpCtrl->gotoMode(GameMode::QUICK_MODE, true);
+	}
+	else {
+		guiMgr->showNotifyPopup(languageMgr->localizedText("text_Notify"), languageMgr->localizedText("text_Not_Enough_Gold"), languageMgr->localizedText("text_agree"));
+	}
 }
 
 void LobbyUI::show()
 {
 	BaseLayer::show();
+	updateUserInfo(gameMgr->_userInfo);
 	soundMgr->playBgLobby();
 }

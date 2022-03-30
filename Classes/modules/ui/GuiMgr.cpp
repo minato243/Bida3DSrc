@@ -26,6 +26,7 @@
 #include "channel/SelectModeLayer.h"
 #include "endgame/ResultGUILayer.h"
 #include "ingame/IngameMidFX.h"
+#include "popup/NotifyPopup.h"
 
 USING_NS_CC;
 using namespace std;
@@ -42,35 +43,40 @@ GuiMgr::~GuiMgr()
 void GuiMgr::notifyAnnouncerIngame(AnnounceType announceType, std::string message, const AnnouncementCallBack & callback)
 {
 	// select notify sprite frame
-	SpriteFrame* announceRes = NULL;
-	SpriteFrame* bg = NULL;
-	double readTime = 1;
+	float readTime = 2.f;
+	string announceRes = "";
+	string nameAnim = "";
 	switch (announceType) {
 		case AnnounceType::ANNOUNCE_FOUL:
-			announceRes = SpriteFrameCache::getInstance()->getSpriteFrameByName("IngameEBP_FOUL_text.png");
-			bg = SpriteFrameCache::getInstance()->getSpriteFrameByName("IngameEBP_FOUL_box.png");
-			readTime = 1.7;
-			break;
-		case AnnounceType::ANNOUNCE_WIN:
-			announceRes = SpriteFrameCache::getInstance()->getSpriteFrameByName("win.png");
-			bg = SpriteFrameCache::getInstance()->getSpriteFrameByName("IngameEBP_FOUL_box.png");
-			readTime = 1.7;
-			break;
-		case AnnounceType::ANNOUNCE_LOSE:
-			announceRes = SpriteFrameCache::getInstance()->getSpriteFrameByName("lose.png");
-			bg = SpriteFrameCache::getInstance()->getSpriteFrameByName("IngameEBP_FOUL_box.png");
-			readTime = 1.7;
+			announceRes = Res::FOUL;
+			nameAnim = "animation_" + languageMgr->cLang;
 			break;
 		case AnnounceType::ANNOUNCE_OPPONENT_TURN:
-			announceRes = SpriteFrameCache::getInstance()->getSpriteFrameByName("opponent_turn.png");
-			bg = SpriteFrameCache::getInstance()->getSpriteFrameByName("IngameEBP_OPPO_box.png");
-			readTime = 1.7;
+			announceRes = Res::YOUR_OPP_TURN;
+			nameAnim = "oppturn_" + languageMgr->cLang;
 			break;
 		case AnnounceType::ANNOUNCE_PLAYER_TURN:
-			announceRes = SpriteFrameCache::getInstance()->getSpriteFrameByName("your_turn.png");
-			bg = SpriteFrameCache::getInstance()->getSpriteFrameByName("IngameEBP_URTURN_box.png");
-			readTime = 1.7;
+			announceRes = Res::YOUR_OPP_TURN;
+			nameAnim = "yourturn_" + languageMgr->cLang;
 			break;
+
+		case AnnounceType::NOTICE_ROUND_2:
+			announceRes = Res::ROUND;
+			nameAnim = "2";
+			break;
+
+		case AnnounceType::NOTICE_ROUND_3:
+			announceRes = Res::ROUND;
+			nameAnim = "3";
+				break;
+		case AnnounceType::NOTICE_ROUND_4:
+			announceRes = Res::ROUND;
+			nameAnim = "4";
+				break;
+		case AnnounceType::NOTICE_ROUND_END:
+			announceRes = Res::ROUND_END;
+			nameAnim = "animation";
+				break;
 		default:
 			CCLOG("announce null!");
 			if(callback != nullptr) callback();
@@ -78,55 +84,21 @@ void GuiMgr::notifyAnnouncerIngame(AnnounceType announceType, std::string messag
 			return;
 	}
 
-	// create action
-	auto winSize = Director::getInstance()->getVisibleSize();
-	auto width = winSize.width, height = winSize.height;
-	auto runningScene = Director::getInstance()->getRunningScene();
-	auto efxLength = 4;
-	for (auto i = 0; i <= efxLength; i++) {
-		auto box = Sprite::createWithSpriteFrame(bg);
-		box->setPosition(Vec2(width / 2, height / 2));
-		box->setAnchorPoint(Vec2(0.5f, 0.5f));
-		box->setScale(0.01);
-		runningScene->addChild(box);
+	auto anim = spine::SkeletonAnimation::createWithJsonFile(announceRes + ".json", announceRes + ".atlas", 1);
+	anim->setAnimation(0, nameAnim, false);
+	Size size = Director::getInstance()->getWinSize();
+	anim->setPosition(Vec2(size.width/2, 2.f/3 * size.height));
+	Director::getInstance()->getRunningScene()->addChild(anim);
+	anim->runAction(Sequence::create(
+		DelayTime::create(readTime),
+		CallFuncN::create([this, callback](Node *node) {
+		node->removeFromParent();
+		if (callback)
+			callback();
+	}),
+		NULL
+	));
 
-		auto s =  Sprite::createWithSpriteFrame(announceRes);
-		s->setAnchorPoint(Vec2(0.5, 0.5));
-		s->setPosition(width / 2, height / 2);
-		s->setScale(0.01);
-		runningScene->addChild(s);
-		
-		if (i > 0) {
-			s->setOpacity(100 - 15 * i);
-			box->setOpacity(100 - 15 * i);
-		}
-
-		auto move = EaseInOut::create(ScaleTo::create(0.3, 1), 2);
-		auto delayToRead = DelayTime::create(readTime);
-		auto moveOut = EaseInOut::create(ScaleTo::create(0.3, 0.01f), 2);
-
-		auto action = Sequence::create(
-			move,
-			delayToRead,
-			moveOut,
-			CallFuncN::create(CC_CALLBACK_1(GuiMgr::removeAfterAction, this)),
-			NULL
-		);
-		s->runAction(action);
-
-		if (i == 0)
-		{
-			std::function<void(Node *)> callf = std::bind(&GuiMgr::removeAndCallBack, this, placeholders::_1, callback);
-			box->runAction(Sequence::create(
-				move->clone(),
-				delayToRead->clone(),
-				moveOut->clone(),
-				CallFuncN::create(callf),
-				NULL
-			));
-		}
-		box->runAction(action->clone());
-	}
 }
 
 void GuiMgr::notifyDebugText(std::string message, cocos2d::Vec2 position)
@@ -280,6 +252,10 @@ BaseLayer * GuiMgr::createPopup(Popup tag)
 		case Popup::INGAME_MID_GAME_FX:
 			popup = IngameMidFX::create();
 			break;
+
+		case Popup::POPUP_CONFIRM_1_OPTION:
+			popup = NotifyPopup::create();
+			break;
 	default:
 		break;
 	}
@@ -401,6 +377,20 @@ void GuiMgr::showOkCancelPopup(const std::string &title, const std::string &mess
 	auto popup = (MessagePoup*)getGui(Popup::MESSAGE_POUP);
 	popup->setOkCancelDialog(title, message, callback);
 	popup->setBtnText(okText, cancelText);
+	popup->show();
+}
+
+void GuiMgr::showNotifyPopup(const std::string& title, const std::string& message, CUSTOM_CALLBACK callback /*= NULL*/)
+{
+	auto popup = (NotifyPopup *)getGui(Popup::POPUP_CONFIRM_1_OPTION);
+	popup->setMessage(title, message, callback);
+	popup->show();
+}
+
+void GuiMgr::showNotifyPopup(const std::string& title, const std::string& message, const std::string& confirmText, CUSTOM_CALLBACK callback /*= NULL*/)
+{
+	auto popup = (NotifyPopup *)getGui(Popup::POPUP_CONFIRM_1_OPTION);
+	popup->setMessage(title, message, confirmText, callback);
 	popup->show();
 }
 

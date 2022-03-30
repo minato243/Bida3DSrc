@@ -3,6 +3,7 @@
 #include "TimerSprite.h"
 #include "../../camera-view/GameCamera.h"
 #include "data/GameConstant.h"
+#include "data/DataStruct.h"
 
 USING_NS_CC;
 using namespace std;
@@ -180,6 +181,30 @@ void Utils::releaseEfkCircle(cocos2d::Node * efk)
 	}
 	efk->setOpacity(255);
 	efk->getChildByTag(TAG_COMMON)->setVisible(false);
+}
+
+std::string Utils::getBinary64(double value)
+{
+	mDouble mValue;
+	mValue.f = value;
+
+	bool start = false;
+	std::string ret = "";
+	for (int i = 63; i >= 0; i--)
+	{
+		char text[2];
+		if (start) {
+			sprintf(text, "%d", (mValue.iValue >> i) & 1);
+			ret += text;
+		}
+		else if ((mValue.iValue >> i) & 1) {
+			start = true;
+			sprintf(text, "%d", (mValue.iValue >> i) & 1);
+			ret += text;
+		}
+	}
+	if (!start) ret = "0";
+	return ret;
 }
 
 Utils * Utils::getInstance()

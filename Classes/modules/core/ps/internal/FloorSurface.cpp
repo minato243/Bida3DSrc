@@ -3,8 +3,17 @@
 #include "ExtensionMath.hpp"
 #include <cmath>
 #include <cfloat>
+#include "data/GameConstant.h"
 
 using namespace ps;
+
+const int FloorSurface::TOP_RIGHT_POCKET_ID = PhysicsConstants::TOP_RIGHT_POCKET_ID;
+const int FloorSurface::TOP_SIDE_POCKET_ID = PhysicsConstants::TOP_SIDE_POCKET_ID;
+const int FloorSurface::TOP_LEFT_POCKET_ID = PhysicsConstants::TOP_LEFT_POCKET_ID;
+const int FloorSurface::BOTTOM_LEFT_POCKET_ID = PhysicsConstants::BOTTOM_LEFT_POCKET_ID;
+const int FloorSurface::BOTTOM_SIDE_POCKET_ID = PhysicsConstants::BOTTOM_SIDE_POCKET_ID;
+const int FloorSurface::BOTTOM_RIGHT_POCKET_ID = PhysicsConstants::BOTTOM_RIGHT_POCKET_ID;
+
 
 bool FloorSurface::isOnTableEdges(const vector & p) {
     Pocket * regionPocket = findExtractPocket(p);
@@ -39,7 +48,7 @@ bool FloorSurface::isInSafeZone(const vector & p) {
         (safeZone.minX <= p.x && p.x <= safeZone.maxX && limits->minY <= p.y && p.y <= limits->maxY);
 }
 
-void ps::FloorSurface::setLimits(AABB sz, AABB *l, Pockets *p, AABB te)
+void ps::FloorSurface::setLimits(AABB sz, AABB *l, Pocket *p, AABB te)
 {
 	safeZone = sz;
 	limits = l;
@@ -61,12 +70,13 @@ bool ps::FloorSurface::isOutSideTable(const vector& p)
 }
 
 Pocket * FloorSurface::findExtractPocket(const vector & p) {
-    if (vector::distance(pockets->bottomLeftPocket.position, p) < pockets->bottomLeftPocket.radius) return &pockets->bottomLeftPocket;
-    if (vector::distance(pockets->bottomSidePocket.position, p) < pockets->bottomSidePocket.radius) return &pockets->bottomSidePocket;
-    if (vector::distance(pockets->bottomRightPocket.position, p) < pockets->bottomRightPocket.radius) return &pockets->bottomRightPocket;
-    if (vector::distance(pockets->topLeftPocket.position, p) < pockets->topLeftPocket.radius) return &pockets->topLeftPocket;
-    if (vector::distance(pockets->topSidePocket.position, p) < pockets->topSidePocket.radius) return &pockets->topSidePocket;
-    if (vector::distance(pockets->topRightPocket.position, p) < pockets->topRightPocket.radius) return &pockets->topRightPocket;
+	for (auto i = 0; i < NUM_POCKET; i++) {
+		Pocket pocket = pockets[i];
+		double len = vector::distance(pocket.position, p);
+		if (len < pocket.radius)
+			return &pockets[i];
+	}
+
     return nullptr;
 }
 
@@ -76,26 +86,26 @@ Pocket * FloorSurface::findRegionPocket(const vector & p) {
         // Left
         if (p.y > safeZone.maxY) {
             // Top-left
-            regionPocket = &pockets->topLeftPocket;
+            regionPocket = &pockets[TOP_LEFT_POCKET_ID];
         } else if (p.y < safeZone.minY) {
             // Bottom-left
-            regionPocket = &pockets->bottomLeftPocket;
+            regionPocket = &pockets[BOTTOM_LEFT_POCKET_ID];
         }
     } else if (p.x > safeZone.maxX) {
         // Right
         if (p.y > safeZone.maxY) {
             // Top-right
-            regionPocket = &pockets->topRightPocket;
+            regionPocket = &pockets[TOP_RIGHT_POCKET_ID];
         } else if (p.y < safeZone.minY) {
             // Bottom-right
-            regionPocket = &pockets->bottomRightPocket;
+            regionPocket = &pockets[BOTTOM_RIGHT_POCKET_ID];
         }
     } else {
         // Middle
         if (p.y > limits->maxY) {
-            regionPocket = &pockets->topSidePocket;
+            regionPocket = &pockets[TOP_SIDE_POCKET_ID];
         } else {
-            regionPocket = &pockets->bottomSidePocket;
+            regionPocket = &pockets[BOTTOM_SIDE_POCKET_ID];
         }
     }
     return regionPocket;

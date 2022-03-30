@@ -7,9 +7,9 @@ USING_NS_CC;
 using namespace std;
 
 
-static const std::string LANGUAGE_DEFAULT = LANGUAGE_EN;
+static const std::string LANGUAGE_DEFAULT = LANGUAGE_VI;
 
-static const vector<std::string> LANGUAGES_SUPPORT = { LANGUAGE_EN };
+static const vector<std::string> LANGUAGES_SUPPORT = { LANGUAGE_VI, LANGUAGE_EN };
 
 static const std::string KEY_CURRENT_LANGUAGE = "game_current_language_select_2";
 

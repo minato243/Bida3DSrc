@@ -72,7 +72,7 @@ bool GameHandler::onReceived(fr::InPacket * pk)
 		msg->readData();
 		if (msg->error == 0)
 		{
-			gameMgr->_ebpCtrl->onEndGame(msg->isWinner);
+			gameMgr->_ebpCtrl->onReceiveEndGame(msg->isWinner);
 		}
 		break;
 	}

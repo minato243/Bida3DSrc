@@ -64,7 +64,6 @@ bool CheatHandler::onReceived(fr::InPacket* pk)
 		{
 			guiMgr->showMessagePopup("Cannot join new game", NULL);
 			guiMgr->getGui(Popup::FIND_MATCH_LAYER)->hide();
-			gameHandler->sendFakeEndGame();
 			auto gameScene = (GameScene *)gameMgr->_scene;
 			gameScene->toLobby();
 		}

@@ -1,5 +1,7 @@
 #include "IngameInPacket.h"
 #include "core/utils/LanguageMgr.h"
+#include "core/utils/Utility.h"
+#include "../../core/utils/Utils.h"
 
 ShootMsg::ShootMsg(fr::InPacket * pk)
 	:BaseInPacket(pk)
@@ -19,6 +21,8 @@ void ShootMsg::readData()
 		shot.direction.x = _pk->getDouble();
 		shot.direction.y = _pk->getDouble();
 		shot.direction.z = _pk->getDouble();
+		CUSTOMLOG("ShootMsg::readData direction %s %s %s",
+			getBinaryDouble(shot.direction.x).c_str(), getBinaryDouble(shot.direction.y).c_str(), getBinaryDouble(shot.direction.z).c_str());
 
 		shot.offsetX = _pk->getDouble();
 		shot.offsetY = _pk->getDouble();
@@ -61,6 +65,7 @@ void PlayerReadyMsg::readData()
 ShotResultMsg::ShotResultMsg(fr::InPacket * pk)
 	:BaseInPacket(pk)
 {
+	ballsEnable.reserve(16);
 }
 
 ShotResultMsg::~ShotResultMsg()
@@ -94,6 +99,7 @@ void ShotResultMsg::readData()
 		ball.pos.x = _pk->getDouble();
 		ball.pos.y = _pk->getDouble();
 		ball.pos.z = _pk->getDouble();
+		ballsEnable.push_back(ball);
 	}
 }
 

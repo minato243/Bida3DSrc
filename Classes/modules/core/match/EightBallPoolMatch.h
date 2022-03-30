@@ -267,7 +267,6 @@ public:
 		std::vector<int> _curTurnOutOfTableBall;
 		std::vector<int> _listPockedBallByPlayer[2];
 
-		bool _serverFinish;
 		bool _justShoot;
 		int _shotCounter[4];
 		bool _foul;
@@ -292,7 +291,9 @@ public:
 		MatchBallSuggestion *_ballSuggestion;
 
 	public:
+		bool _serverFinish;
 		MatchWrapper *_manager;
+		int winner;
 		
 		const static double TURN_TIME;
 		

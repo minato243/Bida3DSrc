@@ -75,9 +75,9 @@ public:
 	
 	void sendCheatInventoryItem(int itemId, int quantity);
 	
-	void addItems(int itemList);
+	void addItems(std::vector<ItemInfoData> *itemList);
 	
-	void reduceItems(int itemList);
+	void reduceItems(std::vector<ItemInfoData> *itemList);
 	
 	void reduceItem(int itemId, int amount);
 	
